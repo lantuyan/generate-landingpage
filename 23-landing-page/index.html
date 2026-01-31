@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBEX | Urban Cultural Experiences</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">URBEX</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#districts">Districts</a></li>
+                <li><a href="#cities">Cities</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+            <a href="#join" class="nav-cta">Join the Culture</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#districts">Districts</a></li>
+            <li><a href="#cities">Cities</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#join" class="mobile-cta">Join the Culture</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Urban Cultural Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Discover the</span>
+                    <span class="title-line accent">Hidden Layers</span>
+                    <span class="title-line">of Cities</span>
+                </h1>
+                <p class="hero-subtitle">Curated access to underground galleries, secret performances, architectural wonders, and culinary secrets in the world's most captivating metropolises.</p>
+                <div class="hero-actions">
+                    <a href="#experiences" class="btn btn-primary">
+                        <span>Explore Experiences</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#stories" class="btn btn-secondary">Watch Stories</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="47">0</span>
+                        <span class="stat-label">Cities</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2500">0</span>
+                        <span class="stat-label">Experiences</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="89">0</span>
+                        <span class="stat-label">Curators</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-grid">
+                    <div class="visual-block block-1">
+                        <div class="block-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                            <div class="block-overlay">
+                                <span class="block-label">Tokyo</span>
+                                <span class="block-category">Underground Art</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-block block-2">
+                        <div class="block-image" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);">
+                            <div class="block-overlay">
+                                <span class="block-label">Berlin</span>
+                                <span class="block-category">Hidden Venues</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-block block-3">
+                        <div class="block-image" style="background: linear-gradient(135deg, #533483 0%, #1a1a2e 100%);">
+                            <div class="block-overlay">
+                                <span class="block-label">NYC</span>
+                                <span class="block-category">Rooftop Secrets</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-block block-4">
+                        <div class="block-image" style="background: linear-gradient(135deg, #e94560 0%, #533483 100%);">
+                            <div class="block-overlay">
+                                <span class="block-label">Paris</span>
+                                <span class="block-category">Culinary Gems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-accent"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section class="experiences" id="experiences">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="tag-number">01</span>
+                    <span class="tag-text">What We Curate</span>
+                </div>
+                <h2 class="section-title">Urban Experiences<br><span class="title-muted">Beyond the Surface</span></h2>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-card" data-category="art">
+                    <div class="card-visual">
+                        <div class="card-bg" style="background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);"></div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="M21 15l-5-5L5 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hidden Galleries</h3>
+                        <p class="card-desc">Access private collections, underground exhibitions, and artist studios rarely open to the public.</p>
+                        <div class="card-meta">
+                            <span class="meta-count">340+ venues</span>
+                            <span class="meta-cities">23 cities</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <span>Explore</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="experience-card" data-category="music">
+                    <div class="card-visual">
+                        <div class="card-bg" style="background: linear-gradient(180deg, #533483 0%, #1a1a2e 100%);"></div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Underground Performances</h3>
+                        <p class="card-desc">Secret concerts, speakeasy jazz, warehouse raves, and intimate acoustic sessions in unexpected spaces.</p>
+                        <div class="card-meta">
+                            <span class="meta-count">520+ events/month</span>
+                            <span class="meta-cities">31 cities</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <span>Explore</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="experience-card" data-category="architecture">
+                    <div class="card-visual">
+                        <div class="card-bg" style="background: linear-gradient(180deg, #0f3460 0%, #1a1a2e 100%);"></div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+                                <path d="M9 9h1M14 9h1M9 13h1M14 13h1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Architectural Tours</h3>
+                        <p class="card-desc">Behind-the-scenes access to iconic buildings, forgotten structures, and architectural masterpieces.</p>
+                        <div class="card-meta">
+                            <span class="meta-count">180+ tours</span>
+                            <span class="meta-cities">27 cities</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <span>Explore</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="experience-card" data-category="food">
+                    <div class="card-visual">
+                        <div class="card-bg" style="background: linear-gradient(180deg, #e94560 0%, #533483 100%);"></div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 8a6 6 0 00-12 0c0 7 6 13 6 13s6-6 6-13z"/>
+                                <circle cx="12" cy="8" r="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Culinary Secrets</h3>
+                        <p class="card-desc">Hidden restaurants, chef's tables, food markets, and gastronomic experiences off the beaten path.</p>
+                        <div class="card-meta">
+                            <span class="meta-count">890+ spots</span>
+                            <span class="meta-cities">41 cities</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <span>Explore</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Districts Section -->
+    <section class="districts" id="districts">
+        <div class="section-container">
+            <div class="section-header section-header-center">
+                <div class="section-tag">
+                    <span class="tag-number">02</span>
+                    <span class="tag-text">Neighborhood Exploration</span>
+                </div>
+                <h2 class="section-title">Cultural Districts<br><span class="title-muted">Each with Its Own Story</span></h2>
+            </div>
+            <div class="district-showcase">
+                <div class="district-tabs">
+                    <button class="district-tab active" data-district="art">Art District</button>
+                    <button class="district-tab" data-district="music">Music Quarter</button>
+                    <button class="district-tab" data-district="food">Food Alley</button>
+                    <button class="district-tab" data-district="history">Historic Core</button>
+                </div>
+                <div class="district-content">
+                    <div class="district-panel active" data-district="art">
+                        <div class="district-visual">
+                            <div class="district-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #533483 50%, #e94560 100%);"></div>
+                            <div class="district-overlay">
+                                <div class="overlay-pattern"></div>
+                            </div>
+                        </div>
+                        <div class="district-info">
+                            <span class="district-label">Featured District</span>
+                            <h3 class="district-name">The Art District</h3>
+                            <p class="district-desc">Where creativity lives in every corner. From world-renowned galleries to underground studio collectives, experience art beyond the museum walls. Street murals guide your journey through spaces where emerging artists reshape cultural narratives.</p>
+                            <ul class="district-features">
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Private gallery viewings</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Artist studio visits</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Street art walking tours</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Opening night access</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="district-cta">
+                                <span>Explore Art Districts</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="district-panel" data-district="music">
+                        <div class="district-visual">
+                            <div class="district-image" style="background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 50%, #533483 100%);"></div>
+                            <div class="district-overlay">
+                                <div class="overlay-pattern"></div>
+                            </div>
+                        </div>
+                        <div class="district-info">
+                            <span class="district-label">Featured District</span>
+                            <h3 class="district-name">The Music Quarter</h3>
+                            <p class="district-desc">Feel the pulse of underground sound. From intimate jazz bars to warehouse techno, discover venues where music scenes are born. Every doorway might lead to the next legendary performance space.</p>
+                            <ul class="district-features">
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Secret venue access</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Backstage experiences</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Recording studio tours</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Live session invites</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="district-cta">
+                                <span>Explore Music Quarters</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="district-panel" data-district="food">
+                        <div class="district-visual">
+                            <div class="district-image" style="background: linear-gradient(135deg, #e94560 0%, #ff9a3c 50%, #533483 100%);"></div>
+                            <div class="district-overlay">
+                                <div class="overlay-pattern"></div>
+                            </div>
+                        </div>
+                        <div class="district-info">
+                            <span class="district-label">Featured District</span>
+                            <h3 class="district-name">Food Alley</h3>
+                            <p class="district-desc">Taste the city's best-kept secrets. From hidden speakeasies to family-run establishments passed through generations, discover flavors that tell stories of migration, tradition, and innovation.</p>
+                            <ul class="district-features">
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Chef's table reservations</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Market tours at dawn</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Speakeasy coordinates</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Cooking with locals</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="district-cta">
+                                <span>Explore Food Alleys</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="district-panel" data-district="history">
+                        <div class="district-visual">
+                            <div class="district-image" style="background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 50%, #0f3460 100%);"></div>
+                            <div class="district-overlay">
+                                <div class="overlay-pattern"></div>
+                            </div>
+                        </div>
+                        <div class="district-info">
+                            <span class="district-label">Featured District</span>
+                            <h3 class="district-name">Historic Core</h3>
+                            <p class="district-desc">Walk through layers of time. Ancient foundations beneath modern facades, forgotten passages, and buildings that witnessed centuries of human stories waiting to be rediscovered.</p>
+                            <ul class="district-features">
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Underground explorations</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Architectural deep dives</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Night history walks</span>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">◆</span>
+                                    <span>Private archive access</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="district-cta">
+                                <span>Explore Historic Cores</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities" id="cities">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">
+                    <span class="tag-number">03</span>
+                    <span class="tag-text">Global Network</span>
+                </div>
+                <h2 class="section-title">World Cities<br><span class="title-muted">Where Culture Runs Deep</span></h2>
+            </div>
+            <div class="cities-grid">
+                <div class="city-card city-featured">
+                    <div class="city-bg" style="background: linear-gradient(180deg, rgba(26,26,46,0.7) 0%, rgba(26,26,46,0.95) 100%), linear-gradient(135deg, #e94560 0%, #533483 100%);"></div>
+                    <div class="city-content">
+                        <span class="city-tag">Featured City</span>
+                        <h3 class="city-name">Tokyo</h3>
+                        <p class="city-desc">Where tradition dances with neon. Underground jazz bars, hidden temples, avant-garde galleries, and culinary experiences that redefine possibility.</p>
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <span class="stat-value">247</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                            <div class="city-stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Curators</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city-hover">
+                        <span>Explore Tokyo</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-bg" style="background: linear-gradient(180deg, rgba(26,26,46,0.7) 0%, rgba(26,26,46,0.95) 100%), linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Berlin</h3>
+                        <p class="city-desc">Raw creative energy in a city that never stops reinventing itself.</p>
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <span class="stat-value">189</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city-hover">
+                        <span>Explore</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-bg" style="background: linear-gradient(180deg, rgba(26,26,46,0.7) 0%, rgba(26,26,46,0.95) 100%), linear-gradient(135deg, #533483 0%, #1a1a2e 100%);"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">New York</h3>
+                        <p class="city-desc">Layers upon layers of cultural history waiting to be discovered.</p>
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <span class="stat-value">312</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city-hover">
+                        <span>Explore</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-bg" style="background: linear-gradient(180deg, rgba(26,26,46,0.7) 0%, rgba(26,26,46,0.95) 100%), linear-gradient(135deg, #2c3e50 0%, #0f3460 100%);"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">Paris</h3>
+                        <p class="city-desc">Beyond the postcard, a city of infinite cultural corridors.</p>
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <span class="stat-value">156</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city-hover">
+                        <span>Explore</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <div class="city-bg" style="background: linear-gradient(180deg, rgba(26,26,46,0.7) 0%, rgba(26,26,46,0.95) 100%), linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);"></div>
+                    <div class="city-content">
+                        <h3 class="city-name">London</h3>
+                        <p class="city-desc">Centuries of stories hidden behind Georgian doors and modern facades.</p>
+                        <div class="city-stats">
+                            <div class="city-stat">
+                                <span class="stat-value">201</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city-hover">
+                        <span>Explore</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="cities-more">
+                <a href="#" class="cities-link">
+                    <span>View all 47 cities</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories" id="stories">
+        <div class="section-container">
+            <div class="section-header section-header-center">
+                <div class="section-tag">
+                    <span class="tag-number">04</span>
+                    <span class="tag-text">Urban Chronicles</span>
+                </div>
+                <h2 class="section-title">Stories from<br><span class="title-muted">the Streets</span></h2>
+            </div>
+            <div class="stories-grid">
+                <article class="story-card story-large">
+                    <div class="story-visual">
+                        <div class="story-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #533483 100%);"></div>
+                        <div class="story-play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag">Documentary</span>
+                        <h3 class="story-title">The Last Jazz Bar in Shinjuku</h3>
+                        <p class="story-desc">For 50 years, Master Yamamoto has kept the spirit of jazz alive in a 12-seat bar hidden beneath Tokyo's neon glow.</p>
+                        <div class="story-meta">
+                            <span class="meta-duration">12 min</span>
+                            <span class="meta-location">Tokyo, Japan</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <div class="story-visual">
+                        <div class="story-image" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);"></div>
+                        <div class="story-play">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag">Portrait</span>
+                        <h3 class="story-title">Berlin's Bunker Artists</h3>
+                        <p class="story-desc">Inside the concrete cathedral where artists create in the shadows.</p>
+                        <div class="story-meta">
+                            <span class="meta-duration">8 min</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="story-card">
+                    <div class="story-visual">
+                        <div class="story-image" style="background: linear-gradient(135deg, #e94560 0%, #533483 100%);"></div>
+                        <div class="story-play">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag">Culinary</span>
+                        <h3 class="story-title">Midnight Noodles of Taipei</h3>
+                        <p class="story-desc">When the city sleeps, the real food scene awakens.</p>
+                        <div class="story-meta">
+                            <span class="meta-duration">6 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join" id="join">
+        <div class="join-bg">
+            <div class="join-pattern"></div>
+        </div>
+        <div class="section-container">
+            <div class="join-content">
+                <div class="join-header">
+                    <span class="join-tag">Join URBEX</span>
+                    <h2 class="join-title">Ready to Discover<br>What Cities Hide?</h2>
+                    <p class="join-desc">Get exclusive access to hidden cultural experiences, connect with local curators, and become part of a global community of urban explorers.</p>
+                </div>
+                <form class="join-form" id="joinForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email address" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="" disabled selected>Select your city</option>
+                                <option value="tokyo">Tokyo</option>
+                                <option value="berlin">Berlin</option>
+                                <option value="nyc">New York</option>
+                                <option value="paris">Paris</option>
+                                <option value="london">London</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Primary interest</option>
+                                <option value="art">Hidden Galleries</option>
+                                <option value="music">Underground Music</option>
+                                <option value="architecture">Architecture</option>
+                                <option value="food">Culinary Secrets</option>
+                                <option value="all">All of the Above</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Start Exploring</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                <div class="join-trust">
+                    <div class="trust-avatars">
+                        <div class="avatar" style="background: linear-gradient(135deg, #e94560 0%, #533483 100%);"></div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);"></div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #533483 0%, #1a1a2e 100%);"></div>
+                        <div class="avatar" style="background: linear-gradient(135deg, #ff9a3c 0%, #e94560 100%);"></div>
+                    </div>
+                    <span class="trust-text">Join 15,000+ urban culture enthusiasts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-text">URBEX</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">Curating the hidden layers of the world's most captivating cities.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Explore</h4>
+                        <ul>
+                            <li><a href="#">Hidden Galleries</a></li>
+                            <li><a href="#">Underground Music</a></li>
+                            <li><a href="#">Architectural Tours</a></li>
+                            <li><a href="#">Culinary Secrets</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Cities</h4>
+                        <ul>
+                            <li><a href="#">Tokyo</a></li>
+                            <li><a href="#">Berlin</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Become a Curator</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 URBEX. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
