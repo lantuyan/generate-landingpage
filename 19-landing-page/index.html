@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOMÉTRIE | Contemporary Art Print Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Geometric Background Pattern -->
+    <div class="geo-bg">
+        <div class="geo-grid"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-shape">
+                    <span class="logo-triangle"></span>
+                    <span class="logo-circle"></span>
+                </div>
+                <span class="logo-text">GEOMÉTRIE</span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">Process</a>
+                <a href="#collection">Collection</a>
+                <a href="#artists">Artists</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <a href="#subscribe" class="nav-cta">Subscribe</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#how-it-works">Process</a>
+            <a href="#collection">Collection</a>
+            <a href="#artists">Artists</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#subscribe" class="mobile-cta">Subscribe Now</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-geometric">
+            <div class="geo-shape geo-circle-1"></div>
+            <div class="geo-shape geo-triangle-1"></div>
+            <div class="geo-shape geo-hexagon-1"></div>
+            <div class="geo-shape geo-square-1"></div>
+            <div class="geo-shape geo-triangle-2"></div>
+            <div class="geo-shape geo-circle-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-shape"></span>
+                <span>Limited Edition Monthly Prints</span>
+            </div>
+            <h1>
+                <span class="line-1">Where Mathematics</span>
+                <span class="line-2">Meets <em>Artistry</em></span>
+            </h1>
+            <p class="hero-subtitle">
+                Curated geometric artworks from emerging digital artists,
+                delivered to your door each month. Experience the perfect
+                harmony of precise mathematical relationships.
+            </p>
+            <div class="hero-actions">
+                <a href="#subscribe" class="btn btn-primary">
+                    <span class="btn-shape"></span>
+                    <span class="btn-text">Start Your Collection</span>
+                </a>
+                <a href="#collection" class="btn btn-secondary">
+                    <span class="btn-text">View Gallery</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="2847">0</span>
+                    <span class="stat-label">Collectors</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="156">0</span>
+                    <span class="stat-label">Artists</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="48">0</span>
+                    <span class="stat-label">Editions</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="featured-art">
+                <div class="art-frame">
+                    <div class="art-canvas" id="hero-canvas"></div>
+                </div>
+                <div class="art-meta">
+                    <span class="art-title">"Tessellation #47"</span>
+                    <span class="art-artist">by Elena Vorova</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-shape">
+                <span></span>
+            </div>
+            <span class="scroll-text">Explore</span>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-hex"></span>
+                    <span>The Process</span>
+                </div>
+                <h2>Geometric Precision,<br><em>Delivered Monthly</em></h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-step" data-step="01">
+                    <div class="step-shape">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="20" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Curate</h3>
+                    <p>Our panel of mathematicians and art directors select works that embody perfect geometric harmony.</p>
+                </div>
+                <div class="process-connector">
+                    <svg viewBox="0 0 100 20">
+                        <line x1="0" y1="10" x2="100" y2="10" stroke="currentColor" stroke-width="2" stroke-dasharray="8,4"/>
+                    </svg>
+                </div>
+                <div class="process-step" data-step="02">
+                    <div class="step-shape">
+                        <svg viewBox="0 0 100 100">
+                            <polygon points="50,10 90,90 10,90" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <polygon points="50,35 70,75 30,75" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Create</h3>
+                    <p>Artists produce limited editions using archival giclée printing on museum-quality cotton rag paper.</p>
+                </div>
+                <div class="process-connector">
+                    <svg viewBox="0 0 100 20">
+                        <line x1="0" y1="10" x2="100" y2="10" stroke="currentColor" stroke-width="2" stroke-dasharray="8,4"/>
+                    </svg>
+                </div>
+                <div class="process-step" data-step="03">
+                    <div class="step-shape">
+                        <svg viewBox="0 0 100 100">
+                            <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <polygon points="50,25 75,37.5 75,62.5 50,75 25,62.5 25,37.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Deliver</h3>
+                    <p>Each print arrives in protective geometric packaging, ready to display or store in your collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection" id="collection">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="section-badge">
+                    <span class="badge-triangle"></span>
+                    <span>The Collection</span>
+                </div>
+                <h2>Recent <em>Editions</em></h2>
+                <p class="section-subtitle">Each month brings new geometric explorations from our global network of digital artists.</p>
+            </div>
+            <div class="collection-grid">
+                <div class="collection-item" data-tilt>
+                    <div class="item-frame">
+                        <div class="item-art" id="art-1"></div>
+                        <div class="item-overlay">
+                            <span class="edition-tag">Edition 48</span>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>"Sacred Proportions"</h4>
+                        <span class="artist">Marcus Chen</span>
+                    </div>
+                </div>
+                <div class="collection-item" data-tilt>
+                    <div class="item-frame">
+                        <div class="item-art" id="art-2"></div>
+                        <div class="item-overlay">
+                            <span class="edition-tag">Edition 47</span>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>"Infinite Regression"</h4>
+                        <span class="artist">Yuki Tanaka</span>
+                    </div>
+                </div>
+                <div class="collection-item" data-tilt>
+                    <div class="item-frame">
+                        <div class="item-art" id="art-3"></div>
+                        <div class="item-overlay">
+                            <span class="edition-tag">Edition 46</span>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>"Crystalline Logic"</h4>
+                        <span class="artist">Sofia Álvarez</span>
+                    </div>
+                </div>
+                <div class="collection-item" data-tilt>
+                    <div class="item-frame">
+                        <div class="item-art" id="art-4"></div>
+                        <div class="item-overlay">
+                            <span class="edition-tag">Edition 45</span>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h4>"Tessellation Dreams"</h4>
+                        <span class="artist">Oluwaseun Adeyemi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artist -->
+    <section class="artists" id="artists">
+        <div class="container">
+            <div class="artists-content">
+                <div class="artists-info">
+                    <div class="section-badge">
+                        <span class="badge-circle"></span>
+                        <span>Featured Artist</span>
+                    </div>
+                    <h2>Elena <em>Vorova</em></h2>
+                    <p class="artist-bio">
+                        "My work explores the tension between rigid mathematical structures
+                        and organic flow. Each piece begins with a single geometric axiom
+                        and evolves through algorithmic iteration until it achieves what
+                        I call 'computed beauty'—the moment when logic becomes art."
+                    </p>
+                    <div class="artist-stats">
+                        <div class="artist-stat">
+                            <span class="stat-value">12</span>
+                            <span class="stat-desc">Editions Created</span>
+                        </div>
+                        <div class="artist-stat">
+                            <span class="stat-value">3,400+</span>
+                            <span class="stat-desc">Prints Collected</span>
+                        </div>
+                    </div>
+                    <a href="#subscribe" class="btn btn-primary">
+                        <span class="btn-shape"></span>
+                        <span class="btn-text">Collect Her Work</span>
+                    </a>
+                </div>
+                <div class="artists-visual">
+                    <div class="artist-portrait">
+                        <div class="portrait-frame">
+                            <div class="portrait-shapes">
+                                <div class="p-shape p-1"></div>
+                                <div class="p-shape p-2"></div>
+                                <div class="p-shape p-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-works">
+                        <div class="work-thumb" id="work-1"></div>
+                        <div class="work-thumb" id="work-2"></div>
+                        <div class="work-thumb" id="work-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <div class="section-badge">
+                    <span class="badge-square"></span>
+                    <span>Membership</span>
+                </div>
+                <h2>Choose Your <em>Plan</em></h2>
+                <p class="section-subtitle">Start with any tier and upgrade anytime. All plans include free shipping.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-shape card-shape-1"></div>
+                    <div class="card-content">
+                        <h3>Essential</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">39</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span class="check">◆</span>
+                                <span>1 Limited Edition Print</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>8×10" Format</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Certificate of Authenticity</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Digital Archive Access</span>
+                            </li>
+                        </ul>
+                        <a href="#subscribe" class="btn btn-outline">
+                            <span class="btn-text">Select Plan</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pricing-card pricing-card-featured">
+                    <div class="featured-tag">Most Popular</div>
+                    <div class="card-shape card-shape-2"></div>
+                    <div class="card-content">
+                        <h3>Collector</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span class="check">◆</span>
+                                <span>2 Limited Edition Prints</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>12×16" Premium Format</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Certificate + Artist Notes</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Exclusive Member Events</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Early Access to Drops</span>
+                            </li>
+                        </ul>
+                        <a href="#subscribe" class="btn btn-primary">
+                            <span class="btn-shape"></span>
+                            <span class="btn-text">Select Plan</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="card-shape card-shape-3"></div>
+                    <div class="card-content">
+                        <h3>Patron</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <span class="check">◆</span>
+                                <span>3 Museum-Quality Prints</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>18×24" Large Format</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Custom Framing Options</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Direct Artist Communication</span>
+                            </li>
+                            <li>
+                                <span class="check">◆</span>
+                                <span>Commission Opportunities</span>
+                            </li>
+                        </ul>
+                        <a href="#subscribe" class="btn btn-outline">
+                            <span class="btn-text">Select Plan</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-shape"></div>
+                    <blockquote>
+                        "Each print feels like owning a piece of mathematical history. The precision and beauty are unmatched."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JK</div>
+                        <div class="author-info">
+                            <span class="author-name">James Kirkland</span>
+                            <span class="author-title">Architecture Professor, MIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-shape"></div>
+                    <blockquote>
+                        "I've collected art for 20 years. GEOMÉTRIE brings a fresh perspective I haven't seen anywhere else."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Reynolds</span>
+                            <span class="author-title">Art Collector, New York</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-shape"></div>
+                    <blockquote>
+                        "The intersection of code and creativity—exactly what I've been looking for to inspire my own work."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MZ</div>
+                        <div class="author-info">
+                            <span class="author-name">Michael Zhang</span>
+                            <span class="author-title">Creative Director, Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe" id="subscribe">
+        <div class="subscribe-bg">
+            <div class="subscribe-shapes">
+                <div class="sub-shape sub-1"></div>
+                <div class="sub-shape sub-2"></div>
+                <div class="sub-shape sub-3"></div>
+                <div class="sub-shape sub-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="section-badge section-badge-light">
+                    <span class="badge-hex"></span>
+                    <span>Join the Collection</span>
+                </div>
+                <h2>Begin Your Geometric<br><em>Journey</em></h2>
+                <p>Enter your email to receive our next edition preview and exclusive subscriber pricing.</p>
+                <form class="subscribe-form" id="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="your@email.com" required>
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                    <p class="form-note">
+                        <span class="note-icon">◇</span>
+                        Cancel anytime. No commitment required.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-shape">
+                            <span class="logo-triangle"></span>
+                            <span class="logo-circle"></span>
+                        </div>
+                        <span class="logo-text">GEOMÉTRIE</span>
+                    </a>
+                    <p>Curating the intersection of mathematics and artistry since 2021.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <a href="#collection">Collection</a>
+                        <a href="#artists">Artists</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#subscribe">Subscribe</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Gift Cards</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GEOMÉTRIE. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.4-8M20 4l-6.4 8"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v12M9 15l3 3 3-3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
