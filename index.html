@@ -342,7 +342,7 @@
     </div>
 
     <script>
-        // Landing page data
+        // Landing page data - render directly without fetch (works with file:// protocol)
         const landingPages = [
             { folder: 'first-landing-page', name: 'First Landing Page', style: 'Starter', desc: 'Trang landing page đầu tiên trong bộ sưu tập.' },
             { folder: 'second-landing-page', name: 'Second Landing Page', style: 'Starter', desc: 'Trang landing page thứ hai trong bộ sưu tập.' },
@@ -359,30 +359,19 @@
             { folder: '13-landing-page', name: 'Élévation', style: 'Luxury Minimal', desc: 'Membership hàng không tư nhân với thẩm mỹ sang trọng tiết chế.' },
         ];
 
-        // Check if landing page exists and render
-        async function checkAndRender() {
+        // Render all landing pages directly
+        function renderLandingPages() {
             const grid = document.getElementById('landing-grid');
-            const existingPages = [];
             const styles = new Set();
 
-            for (const page of landingPages) {
-                try {
-                    const response = await fetch(`${page.folder}/index.html`, { method: 'HEAD' });
-                    if (response.ok) {
-                        existingPages.push(page);
-                        styles.add(page.style);
-                    }
-                } catch (e) {
-                    // Page doesn't exist, skip
-                }
-            }
+            landingPages.forEach(page => styles.add(page.style));
 
             // Update stats
-            document.getElementById('total-count').textContent = existingPages.length;
+            document.getElementById('total-count').textContent = landingPages.length;
             document.getElementById('style-count').textContent = styles.size;
 
             // Render cards
-            grid.innerHTML = existingPages.map((page, index) => `
+            grid.innerHTML = landingPages.map((page, index) => `
                 <a href="${page.folder}/index.html" class="card">
                     <div class="card-number">${index + 1}</div>
                     <h2 class="card-title">${page.name}</h2>
@@ -416,7 +405,7 @@
         }
 
         // Run on load
-        checkAndRender();
+        renderLandingPages();
     </script>
 </body>
 
