@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumCore | Next-Gen Cloud Computing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">QuantumCore</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Platform</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#docs">Docs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-secondary">Sign In</a>
+                <a href="#cta" class="btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <canvas id="quantum-canvas"></canvas>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    <span>Now Available in Beta</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Quantum Computing</span>
+                    <span class="title-line gradient-text">Made Accessible</span>
+                </h1>
+                <p class="hero-description">
+                    Harness the power of next-generation quantum processors through our intuitive APIs and managed infrastructure. No PhD required.
+                </p>
+                <div class="hero-actions">
+                    <a href="#cta" class="btn-primary btn-large">
+                        <span>Start Building</span>
+                        <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn-outline btn-large">
+                        <span>Explore Platform</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">1000+</span>
+                        <span class="stat-label">Qubits Available</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">99.9%</span>
+                        <span class="stat-label">Uptime SLA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">&lt;50ms</span>
+                        <span class="stat-label">API Latency</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="quantum-sphere">
+                    <div class="sphere-ring ring-1"></div>
+                    <div class="sphere-ring ring-2"></div>
+                    <div class="sphere-ring ring-3"></div>
+                    <div class="sphere-core"></div>
+                    <div class="sphere-particles"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <p class="trusted-label">Trusted by forward-thinking teams</p>
+            <div class="trusted-logos">
+                <div class="logo-item">TechCorp</div>
+                <div class="logo-item">NexaLabs</div>
+                <div class="logo-item">Innovate.io</div>
+                <div class="logo-item">DataFlow</div>
+                <div class="logo-item">Quantum AI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Platform</span>
+                <h2 class="section-title">Built for the Future</h2>
+                <p class="section-description">
+                    A complete quantum computing platform designed for researchers, developers, and enterprises ready to solve tomorrow's challenges today.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card featured">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                            <path d="M16 4V8M16 24V28M4 16H8M24 16H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quantum Processing Units</h3>
+                    <p class="feature-description">
+                        Access state-of-the-art superconducting quantum processors with up to 1000+ qubits and advanced error correction.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">1,024</span>
+                            <span class="metric-label">Qubits</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">99.5%</span>
+                            <span class="metric-label">Gate Fidelity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 8L24 8M8 16H24M8 24H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="8" r="2" fill="currentColor"/>
+                            <circle cx="20" cy="16" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="24" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Intuitive SDK</h3>
+                    <p class="feature-description">
+                        Write quantum circuits in Python, JavaScript, or Rust with our developer-friendly libraries and extensive documentation.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16L14 20L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Managed Infrastructure</h3>
+                    <p class="feature-description">
+                        Zero-maintenance quantum infrastructure with automatic calibration, real-time monitoring, and 24/7 support.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M16 16V28M16 16L4 10M16 16L28 10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Hybrid Computing</h3>
+                    <p class="feature-description">
+                        Seamlessly integrate quantum and classical computing for optimal performance on complex optimization problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="capabilities-section" id="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Unlock New Possibilities</h2>
+                <p class="section-description">
+                    From drug discovery to financial modeling, quantum computing opens doors to solutions previously thought impossible.
+                </p>
+            </div>
+            <div class="capabilities-content">
+                <div class="capabilities-tabs">
+                    <button class="cap-tab active" data-tab="optimization">
+                        <span class="tab-icon">⚡</span>
+                        <span class="tab-text">Optimization</span>
+                    </button>
+                    <button class="cap-tab" data-tab="simulation">
+                        <span class="tab-icon">🔬</span>
+                        <span class="tab-text">Simulation</span>
+                    </button>
+                    <button class="cap-tab" data-tab="ml">
+                        <span class="tab-icon">🧠</span>
+                        <span class="tab-text">Machine Learning</span>
+                    </button>
+                    <button class="cap-tab" data-tab="cryptography">
+                        <span class="tab-icon">🔐</span>
+                        <span class="tab-text">Cryptography</span>
+                    </button>
+                </div>
+                <div class="capabilities-panels">
+                    <div class="cap-panel active" id="panel-optimization">
+                        <div class="panel-content">
+                            <h3>Solve Complex Optimization Problems</h3>
+                            <p>
+                                Tackle logistics, scheduling, and resource allocation challenges that would take classical computers years to solve. Our quantum annealers find optimal solutions in minutes.
+                            </p>
+                            <ul class="panel-list">
+                                <li>Supply chain optimization</li>
+                                <li>Portfolio optimization</li>
+                                <li>Route planning at scale</li>
+                                <li>Energy grid management</li>
+                            </ul>
+                            <a href="#" class="panel-link">
+                                Learn more about optimization
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="panel-visual">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-title">optimize.py</span>
+                                </div>
+                                <pre class="code-content"><code><span class="keyword">from</span> quantumcore <span class="keyword">import</span> Optimizer
+
+<span class="comment"># Define optimization problem</span>
+problem = Optimizer.create_qubo(
+    variables=<span class="number">1000</span>,
+    constraints=constraints
+)
+
+<span class="comment"># Run on quantum hardware</span>
+result = problem.solve(
+    backend=<span class="string">"qpu-1024"</span>,
+    shots=<span class="number">10000</span>
+)
+
+<span class="keyword">print</span>(f<span class="string">"Optimal solution: </span>{result.best}<span class="string">"</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cap-panel" id="panel-simulation">
+                        <div class="panel-content">
+                            <h3>Molecular & Material Simulation</h3>
+                            <p>
+                                Simulate quantum systems with unprecedented accuracy. Model molecular interactions, discover new materials, and accelerate drug development.
+                            </p>
+                            <ul class="panel-list">
+                                <li>Drug discovery & design</li>
+                                <li>Catalyst development</li>
+                                <li>Battery material research</li>
+                                <li>Protein folding analysis</li>
+                            </ul>
+                            <a href="#" class="panel-link">
+                                Explore simulation capabilities
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="panel-visual">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-title">simulate.py</span>
+                                </div>
+                                <pre class="code-content"><code><span class="keyword">from</span> quantumcore <span class="keyword">import</span> Simulator
+
+<span class="comment"># Define molecular structure</span>
+molecule = Simulator.load_molecule(
+    <span class="string">"caffeine.mol2"</span>
+)
+
+<span class="comment"># Run VQE simulation</span>
+energy = molecule.ground_state(
+    method=<span class="string">"VQE"</span>,
+    ansatz=<span class="string">"UCCSD"</span>
+)
+
+<span class="keyword">print</span>(f<span class="string">"Ground state: </span>{energy:.4f}<span class="string"> Ha"</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cap-panel" id="panel-ml">
+                        <div class="panel-content">
+                            <h3>Quantum Machine Learning</h3>
+                            <p>
+                                Enhance your ML models with quantum kernels and variational circuits. Discover patterns in high-dimensional data that classical algorithms miss.
+                            </p>
+                            <ul class="panel-list">
+                                <li>Quantum neural networks</li>
+                                <li>Feature space mapping</li>
+                                <li>Anomaly detection</li>
+                                <li>Generative modeling</li>
+                            </ul>
+                            <a href="#" class="panel-link">
+                                Discover quantum ML
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="panel-visual">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-title">qml.py</span>
+                                </div>
+                                <pre class="code-content"><code><span class="keyword">from</span> quantumcore.ml <span class="keyword">import</span> QNN
+
+<span class="comment"># Create quantum neural network</span>
+model = QNN(
+    n_qubits=<span class="number">8</span>,
+    layers=<span class="number">4</span>,
+    entanglement=<span class="string">"full"</span>
+)
+
+<span class="comment"># Train on quantum hardware</span>
+model.fit(X_train, y_train,
+    epochs=<span class="number">100</span>,
+    backend=<span class="string">"qpu-1024"</span>
+)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cap-panel" id="panel-cryptography">
+                        <div class="panel-content">
+                            <h3>Post-Quantum Cryptography</h3>
+                            <p>
+                                Prepare for the quantum future with cryptographic solutions designed to withstand quantum attacks. Secure your data today against tomorrow's threats.
+                            </p>
+                            <ul class="panel-list">
+                                <li>Quantum key distribution</li>
+                                <li>Lattice-based encryption</li>
+                                <li>Hash-based signatures</li>
+                                <li>Quantum random number generation</li>
+                            </ul>
+                            <a href="#" class="panel-link">
+                                Learn about quantum security
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="panel-visual">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-dot"></span>
+                                    <span class="code-title">crypto.py</span>
+                                </div>
+                                <pre class="code-content"><code><span class="keyword">from</span> quantumcore.crypto <span class="keyword">import</span> QKD
+
+<span class="comment"># Establish quantum-secure channel</span>
+channel = QKD.connect(
+    endpoint=<span class="string">"partner-node"</span>,
+    protocol=<span class="string">"BB84"</span>
+)
+
+<span class="comment"># Generate shared secret key</span>
+key = channel.generate_key(
+    length=<span class="number">256</span>
+)
+
+<span class="keyword">print</span>(f<span class="string">"Secure key ready: </span>{key.id}<span class="string">"</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From Idea to Quantum</h2>
+                <p class="section-description">
+                    Get started in minutes with our streamlined workflow designed for both quantum newcomers and experts.
+                </p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Write Your Circuit</h3>
+                    <p class="step-description">
+                        Use our intuitive SDK to define quantum circuits in your favorite programming language.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Submit to Cloud</h3>
+                    <p class="step-description">
+                        Our API handles compilation, optimization, and queuing automatically.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Execute on QPU</h3>
+                    <p class="step-description">
+                        Your circuit runs on real quantum hardware with automatic error mitigation.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Get Results</h3>
+                    <p class="step-description">
+                        Receive processed results via API or analyze them in our visualization dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Transparent, Usage-Based Pricing</h2>
+                <p class="section-description">
+                    Start free. Scale as you grow. Only pay for the quantum compute you actually use.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Explorer</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">Free</span>
+                            <span class="price-period">forever</span>
+                        </div>
+                    </div>
+                    <p class="plan-description">Perfect for learning and experimentation</p>
+                    <ul class="plan-features">
+                        <li>100 quantum circuit executions/month</li>
+                        <li>Access to 20-qubit simulator</li>
+                        <li>Community support</li>
+                        <li>Basic documentation</li>
+                        <li>Jupyter notebook integration</li>
+                    </ul>
+                    <a href="#" class="btn-outline btn-full">Get Started Free</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">299</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <p class="plan-description">For serious research and development</p>
+                    <ul class="plan-features">
+                        <li>10,000 circuit executions/month</li>
+                        <li>Access to 100-qubit QPU</li>
+                        <li>Priority queue access</li>
+                        <li>Email & chat support</li>
+                        <li>Advanced error mitigation</li>
+                        <li>Team collaboration (5 seats)</li>
+                    </ul>
+                    <a href="#" class="btn-primary btn-full">Start 14-Day Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">Custom</span>
+                            <span class="price-period">pricing</span>
+                        </div>
+                    </div>
+                    <p class="plan-description">For organizations with advanced needs</p>
+                    <ul class="plan-features">
+                        <li>Unlimited circuit executions</li>
+                        <li>Access to 1000+ qubit QPU</li>
+                        <li>Dedicated capacity</li>
+                        <li>24/7 dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantees</li>
+                        <li>On-premise deployment option</li>
+                    </ul>
+                    <a href="#" class="btn-outline btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+            <div class="cta-grid-lines"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Explore Quantum?</h2>
+                <p class="cta-description">
+                    Join thousands of researchers and developers building the future with quantum computing. Start your journey today.
+                </p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">
+                            <span>Get Early Access</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Free tier includes 100 quantum executions. No credit card required.</p>
+                </form>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Free to start</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>No credit card</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">QuantumCore</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Making quantum computing accessible to everyone.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18.333 2.5c-.833.625-1.75 1.067-2.75 1.308A4.167 4.167 0 0012.5 2.083c-2.3 0-4.167 1.867-4.167 4.167 0 .325.042.642.117.95C5.542 7.033 3.1 5.383 1.483 3.05c-.358.617-.558 1.333-.558 2.1 0 1.442.733 2.717 1.85 3.467-.683-.025-1.325-.208-1.883-.517v.05c0 2.017 1.433 3.7 3.333 4.083-.35.1-.717.15-1.092.15-.267 0-.525-.025-.783-.075.533 1.658 2.075 2.867 3.9 2.9-1.425 1.117-3.225 1.783-5.183 1.783-.333 0-.667-.017-1-.058A11.667 11.667 0 006.35 18.333c7.617 0 11.783-6.308 11.783-11.775 0-.183-.008-.358-.017-.533.808-.583 1.508-1.317 2.067-2.15-.742.333-1.542.55-2.375.65.85-.508 1.508-1.317 1.817-2.275l.708.25z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.167 6.667h-2.5v11.666h2.5V6.667zM2.917 5.417a1.458 1.458 0 100-2.917 1.458 1.458 0 000 2.917zM18.333 11.25c0-2.533-1.483-4.583-4.166-4.583-1.25 0-2.334.583-2.917 1.25v-.917h-2.5v11.333h2.5v-6.25c0-1.25.75-2.083 1.917-2.083 1.166 0 1.833.833 1.833 2.083v6.25h2.5v-7.083h-.167z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 1.667A8.333 8.333 0 001.667 10c0 3.683 2.391 6.808 5.708 7.917.417.075.567-.183.567-.4v-1.4c-2.325.508-2.817-1.117-2.817-1.117-.383-.967-.933-1.225-.933-1.225-.758-.517.058-.508.058-.508.842.058 1.284.858 1.284.858.75 1.283 1.966.917 2.441.7.075-.542.292-.917.534-1.125-1.859-.217-3.809-.933-3.809-4.133 0-.917.325-1.667.859-2.25-.084-.208-.375-1.067.083-2.225 0 0 .7-.225 2.292.858a8.011 8.011 0 014.166 0c1.584-1.083 2.284-.858 2.284-.858.458 1.158.166 2.017.083 2.225.542.583.858 1.333.858 2.25 0 3.208-1.958 3.917-3.825 4.125.3.258.575.775.575 1.558v2.309c0 .225.15.483.575.4A8.335 8.335 0 0010 1.667z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Platform</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Compliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 QuantumCore, Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
