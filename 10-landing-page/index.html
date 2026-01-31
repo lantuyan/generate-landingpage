@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florae | Biodynamic Skincare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                    <path d="M25 5C25 5 35 15 35 25C35 35 25 45 25 45C25 45 15 35 15 25C15 15 25 5 25 5Z" fill="currentColor" opacity="0.6"/>
+                    <path d="M10 20C10 20 20 25 25 25C30 25 40 20 40 20C40 20 35 35 25 35C15 35 10 20 10 20Z" fill="currentColor" opacity="0.4"/>
+                </svg>
+                <span>Florae</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#ritual">Ritual</a></li>
+            </ul>
+            <a href="#nurture" class="nav-cta">Begin Your Journey</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#ritual">Ritual</a></li>
+            <li><a href="#nurture" class="mobile-cta">Begin Your Journey</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-label">Biodynamic Skincare</span>
+                <h1 class="hero-title">
+                    Nature's Wisdom,<br>
+                    <span class="flowing-text">Refined by Science</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the transformative power of sustainably harvested botanicals
+                    and cutting-edge fermentation science, crafted to nurture your skin
+                    as nature intended.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Discover Products</a>
+                    <a href="#philosophy" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="floating-element elem-1">
+                        <div class="botanical-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <ellipse cx="40" cy="50" rx="15" ry="25" fill="rgba(139, 168, 134, 0.3)"/>
+                                <ellipse cx="30" cy="40" rx="12" ry="20" fill="rgba(139, 168, 134, 0.4)" transform="rotate(-30 30 40)"/>
+                                <ellipse cx="50" cy="40" rx="12" ry="20" fill="rgba(139, 168, 134, 0.4)" transform="rotate(30 50 40)"/>
+                                <path d="M40 70 Q40 40 40 20" stroke="rgba(139, 168, 134, 0.6)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="floating-element elem-2">
+                        <div class="droplet-icon">
+                            <svg viewBox="0 0 60 80" fill="none">
+                                <path d="M30 5 Q50 35 50 50 Q50 70 30 75 Q10 70 10 50 Q10 35 30 5Z" fill="rgba(232, 180, 158, 0.4)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="floating-element elem-3">
+                        <div class="pebble-icon">
+                            <svg viewBox="0 0 100 60" fill="none">
+                                <ellipse cx="50" cy="30" rx="45" ry="25" fill="rgba(200, 162, 137, 0.3)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="main-product">
+                        <div class="product-glow"></div>
+                        <div class="product-bottle">
+                            <div class="bottle-cap"></div>
+                            <div class="bottle-body">
+                                <div class="bottle-label">
+                                    <span class="label-brand">Florae</span>
+                                    <span class="label-name">Essence</span>
+                                </div>
+                                <div class="bottle-liquid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-wave"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="section-container">
+            <div class="organic-shape shape-left"></div>
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <span class="section-label">Our Philosophy</span>
+                    <h2 class="section-title">Harmony Between<br>Earth & Innovation</h2>
+                    <p class="section-description">
+                        At Florae, we believe that true beauty flows from the balance between
+                        nature's ancient wisdom and modern scientific understanding. Like water
+                        shaping stone over millennia, our approach is patient, purposeful, and
+                        profoundly transformative.
+                    </p>
+                    <div class="philosophy-values">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 50 50" fill="none">
+                                    <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                    <path d="M25 10 Q35 20 35 30 Q35 40 25 42 Q15 40 15 30 Q15 20 25 10Z" fill="currentColor" opacity="0.3"/>
+                                </svg>
+                            </div>
+                            <h4>Biodynamic Sourcing</h4>
+                            <p>Botanicals harvested in harmony with lunar cycles and seasonal rhythms</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 50 50" fill="none">
+                                    <path d="M10 25 Q25 15 40 25 Q25 35 10 25Z" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                    <circle cx="25" cy="25" r="8" fill="currentColor" opacity="0.3"/>
+                                </svg>
+                            </div>
+                            <h4>Fermentation Science</h4>
+                            <p>Ancient fermentation techniques enhanced by modern biotechnology</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg viewBox="0 0 50 50" fill="none">
+                                    <path d="M25 5 C40 15 45 35 25 45 C5 35 10 15 25 5Z" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                    <path d="M25 15 C32 20 34 32 25 38 C16 32 18 20 25 15Z" fill="currentColor" opacity="0.3"/>
+                                </svg>
+                            </div>
+                            <h4>Sustainable Beauty</h4>
+                            <p>Zero-waste production that nurtures skin and planet alike</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-visual">
+                    <div class="visual-blob"></div>
+                    <div class="visual-content">
+                        <div class="stat-circle stat-1">
+                            <span class="stat-number">97%</span>
+                            <span class="stat-label">Natural Origin</span>
+                        </div>
+                        <div class="stat-circle stat-2">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Sustainable</span>
+                        </div>
+                        <div class="stat-circle stat-3">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Synthetic Fragrances</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-container">
+            <div class="products-header">
+                <span class="section-label">The Collection</span>
+                <h2 class="section-title">Curated for<br>Your Skin's Journey</h2>
+                <p class="section-subtitle">
+                    Each formulation is a symphony of fermented botanicals, designed to work
+                    in harmony with your skin's natural rhythms.
+                </p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-card-blob"></div>
+                    <div class="product-card-image">
+                        <div class="product-illustration serum">
+                            <div class="serum-bottle">
+                                <div class="serum-dropper"></div>
+                                <div class="serum-body">
+                                    <div class="serum-liquid"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <span class="product-category">Essence</span>
+                        <h3 class="product-name">Fermented Botanical Serum</h3>
+                        <p class="product-description">
+                            A potent blend of fermented rice and green tea extracts that
+                            deeply nourishes and illuminates.
+                        </p>
+                        <div class="product-ingredients">
+                            <span class="ingredient">Fermented Rice</span>
+                            <span class="ingredient">Green Tea</span>
+                            <span class="ingredient">Centella</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$78</span>
+                            <button class="product-btn">Add to Ritual</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="product-card-blob"></div>
+                    <div class="featured-badge">Bestseller</div>
+                    <div class="product-card-image">
+                        <div class="product-illustration cream">
+                            <div class="cream-jar">
+                                <div class="cream-lid"></div>
+                                <div class="cream-body">
+                                    <div class="cream-surface"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <span class="product-category">Moisturizer</span>
+                        <h3 class="product-name">Probiotic Cloud Cream</h3>
+                        <p class="product-description">
+                            Weightless yet deeply hydrating, this cream melts into skin
+                            like morning dew on petals.
+                        </p>
+                        <div class="product-ingredients">
+                            <span class="ingredient">Probiotics</span>
+                            <span class="ingredient">Squalane</span>
+                            <span class="ingredient">Ceramides</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$92</span>
+                            <button class="product-btn">Add to Ritual</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-blob"></div>
+                    <div class="product-card-image">
+                        <div class="product-illustration oil">
+                            <div class="oil-bottle">
+                                <div class="oil-cap"></div>
+                                <div class="oil-body">
+                                    <div class="oil-liquid"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <span class="product-category">Treatment</span>
+                        <h3 class="product-name">Botanical Glow Oil</h3>
+                        <p class="product-description">
+                            A luxurious elixir of adaptogenic herbs and cold-pressed
+                            oils for radiant, resilient skin.
+                        </p>
+                        <div class="product-ingredients">
+                            <span class="ingredient">Rosehip</span>
+                            <span class="ingredient">Bakuchiol</span>
+                            <span class="ingredient">Sea Buckthorn</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$85</span>
+                            <button class="product-btn">Add to Ritual</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="science" id="science">
+        <div class="section-container">
+            <div class="science-content">
+                <div class="science-visual">
+                    <div class="molecule-animation">
+                        <div class="molecule molecule-1">
+                            <div class="atom"></div>
+                            <div class="bond"></div>
+                            <div class="atom"></div>
+                        </div>
+                        <div class="molecule molecule-2">
+                            <div class="atom"></div>
+                            <div class="bond"></div>
+                            <div class="atom"></div>
+                            <div class="bond"></div>
+                            <div class="atom"></div>
+                        </div>
+                        <div class="fermentation-bubble bubble-1"></div>
+                        <div class="fermentation-bubble bubble-2"></div>
+                        <div class="fermentation-bubble bubble-3"></div>
+                        <div class="fermentation-bubble bubble-4"></div>
+                        <div class="fermentation-bubble bubble-5"></div>
+                    </div>
+                </div>
+                <div class="science-text">
+                    <span class="section-label">The Science</span>
+                    <h2 class="section-title">Fermentation:<br>Nature's Transformation</h2>
+                    <p class="section-description">
+                        Through the ancient art of fermentation, we unlock nature's most potent
+                        compounds. Our proprietary process breaks down botanicals into smaller,
+                        more bioavailable molecules that your skin can truly absorb and utilize.
+                    </p>
+                    <div class="science-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-number">3x</div>
+                            <p>More bioavailable nutrients than raw botanicals</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-number">48h</div>
+                            <p>Extended hydration with probiotic barrier support</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-number">21</div>
+                            <p>Days to visibly transformed, radiant skin</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Explore Our Research</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ritual Section -->
+    <section class="ritual" id="ritual">
+        <div class="section-container">
+            <div class="ritual-header">
+                <span class="section-label">Your Ritual</span>
+                <h2 class="section-title">A Journey of<br>Daily Transformation</h2>
+            </div>
+            <div class="ritual-timeline">
+                <div class="timeline-line"></div>
+                <div class="ritual-step">
+                    <div class="step-marker">
+                        <div class="step-blob"></div>
+                        <span class="step-number">01</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-time">Morning</div>
+                        <h3>Awaken</h3>
+                        <p>Begin with our Botanical Essence to prep and hydrate skin, creating the perfect canvas for the day ahead.</p>
+                    </div>
+                </div>
+                <div class="ritual-step">
+                    <div class="step-marker">
+                        <div class="step-blob"></div>
+                        <span class="step-number">02</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-time">Midday</div>
+                        <h3>Protect</h3>
+                        <p>A light touch of Cloud Cream shields and maintains hydration throughout your active hours.</p>
+                    </div>
+                </div>
+                <div class="ritual-step">
+                    <div class="step-marker">
+                        <div class="step-blob"></div>
+                        <span class="step-number">03</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-time">Evening</div>
+                        <h3>Restore</h3>
+                        <p>Let the Glow Oil work its magic overnight, supporting your skin's natural renewal process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="testimonials-header">
+                <span class="section-label">Community</span>
+                <h2 class="section-title">Stories of Transformation</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-blob"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "After years of harsh treatments, Florae helped me rediscover
+                            my skin's natural balance. It's like watching a garden bloom."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-blob"></div>
+                                <span>EM</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Elena M.</span>
+                                <span class="author-detail">Using for 6 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-blob"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "The texture, the scent, the results—everything about these
+                            products feels like a gentle embrace from nature itself."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-blob"></div>
+                                <span>SK</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah K.</span>
+                                <span class="author-detail">Using for 1 year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-blob"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            "Finally, skincare that works with my sensitive skin rather
+                            than against it. My morning ritual has become a moment of joy."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-blob"></div>
+                                <span>JT</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">James T.</span>
+                                <span class="author-detail">Using for 3 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <button class="dot active" aria-label="Slide 1"></button>
+                <button class="dot" aria-label="Slide 2"></button>
+                <button class="dot" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="nurture">
+        <div class="cta-blob cta-blob-1"></div>
+        <div class="cta-blob cta-blob-2"></div>
+        <div class="section-container">
+            <div class="cta-content">
+                <span class="section-label">Begin Today</span>
+                <h2 class="cta-title">Your Skin's Journey<br>Starts Here</h2>
+                <p class="cta-description">
+                    Join our community of mindful beauty enthusiasts and receive 15% off
+                    your first order, plus exclusive access to skincare rituals and
+                    seasonal botanical guides.
+                </p>
+                <form class="cta-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Join the Journey</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Free shipping on all orders. 30-day natural transformation guarantee.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1350,60 1440,50 L1440,100 L0,100 Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" fill="none">
+                            <path d="M25 5C25 5 35 15 35 25C35 35 25 45 25 45C25 45 15 35 15 25C15 15 25 5 25 5Z" fill="currentColor" opacity="0.6"/>
+                            <path d="M10 20C10 20 20 25 25 25C30 25 40 20 40 20C40 20 35 35 25 35C15 35 10 20 10 20Z" fill="currentColor" opacity="0.4"/>
+                        </svg>
+                        <span>Florae</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Nurturing skin through the harmony of biodynamic botanicals
+                        and fermentation science.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v8M8 18c1-2 2-4 4-4s3 2 4 4"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="4"/>
+                                <path d="M10 9l5 3-5 3V9z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#">All Products</a></li>
+                            <li><a href="#">Serums & Essences</a></li>
+                            <li><a href="#">Moisturizers</a></li>
+                            <li><a href="#">Treatments</a></li>
+                            <li><a href="#">Gift Sets</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Ingredients</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Track Order</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Florae. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
