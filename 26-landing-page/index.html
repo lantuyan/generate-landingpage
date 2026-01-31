@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSync - Smart Home Ecosystem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App Bar -->
+    <header class="app-bar" id="appBar">
+        <div class="app-bar-content">
+            <div class="app-bar-left">
+                <div class="logo">
+                    <span class="material-icons logo-icon">home</span>
+                    <span class="logo-text">HomeSync</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#features" class="nav-link ripple">Features</a>
+                <a href="#devices" class="nav-link ripple">Devices</a>
+                <a href="#automation" class="nav-link ripple">Automation</a>
+                <a href="#pricing" class="nav-link ripple">Pricing</a>
+            </nav>
+            <div class="app-bar-right">
+                <button class="btn btn-text ripple">Sign In</button>
+                <button class="btn btn-contained ripple">Get Started</button>
+            </div>
+            <button class="menu-toggle ripple" id="menuToggle" aria-label="Toggle menu">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-drawer" id="navDrawer">
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <span class="material-icons logo-icon">home</span>
+                <span class="logo-text">HomeSync</span>
+            </div>
+            <nav class="drawer-nav">
+                <a href="#features" class="drawer-link ripple">
+                    <span class="material-icons">star</span>
+                    Features
+                </a>
+                <a href="#devices" class="drawer-link ripple">
+                    <span class="material-icons">devices</span>
+                    Devices
+                </a>
+                <a href="#automation" class="drawer-link ripple">
+                    <span class="material-icons">auto_awesome</span>
+                    Automation
+                </a>
+                <a href="#pricing" class="drawer-link ripple">
+                    <span class="material-icons">payments</span>
+                    Pricing
+                </a>
+            </nav>
+            <div class="drawer-actions">
+                <button class="btn btn-outlined btn-block ripple">Sign In</button>
+                <button class="btn btn-contained btn-block ripple">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">One Interface.<br>Every Device.<br><span class="text-accent">Infinite Possibilities.</span></h1>
+                <p class="hero-subtitle">HomeSync unifies your entire smart home ecosystem under one intuitive platform. Create automation recipes, optimize energy usage, and control everything with a single touch.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-contained btn-large ripple">
+                        <span class="material-icons">play_arrow</span>
+                        Start Free Trial
+                    </button>
+                    <button class="btn btn-outlined btn-large ripple">
+                        <span class="material-icons">smart_display</span>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Compatible Devices</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">2M+</span>
+                        <span class="stat-label">Smart Homes</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">35%</span>
+                        <span class="stat-label">Energy Saved</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="device-mockup">
+                    <div class="mockup-screen">
+                        <div class="mockup-header">
+                            <span class="mockup-time">9:41</span>
+                            <div class="mockup-indicators">
+                                <span class="material-icons">signal_cellular_alt</span>
+                                <span class="material-icons">wifi</span>
+                                <span class="material-icons">battery_full</span>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-greeting">Good Morning, Alex</div>
+                            <div class="mockup-temp">
+                                <span class="material-icons">thermostat</span>
+                                <span>72°F</span>
+                            </div>
+                            <div class="mockup-rooms">
+                                <div class="mockup-room active">
+                                    <span class="material-icons">weekend</span>
+                                    <span>Living</span>
+                                </div>
+                                <div class="mockup-room">
+                                    <span class="material-icons">bed</span>
+                                    <span>Bedroom</span>
+                                </div>
+                                <div class="mockup-room">
+                                    <span class="material-icons">kitchen</span>
+                                    <span>Kitchen</span>
+                                </div>
+                            </div>
+                            <div class="mockup-devices-grid">
+                                <div class="mockup-device on">
+                                    <span class="material-icons">lightbulb</span>
+                                    <span>Lights</span>
+                                    <span class="device-status">On</span>
+                                </div>
+                                <div class="mockup-device">
+                                    <span class="material-icons">speaker</span>
+                                    <span>Speaker</span>
+                                    <span class="device-status">Off</span>
+                                </div>
+                                <div class="mockup-device on">
+                                    <span class="material-icons">ac_unit</span>
+                                    <span>AC</span>
+                                    <span class="device-status">72°</span>
+                                </div>
+                                <div class="mockup-device">
+                                    <span class="material-icons">tv</span>
+                                    <span>TV</span>
+                                    <span class="device-status">Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-1">
+                        <span class="material-icons">wb_sunny</span>
+                        <div class="floating-card-content">
+                            <span class="floating-card-title">Morning Routine</span>
+                            <span class="floating-card-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-2">
+                        <span class="material-icons">bolt</span>
+                        <div class="floating-card-content">
+                            <span class="floating-card-title">Energy Saved</span>
+                            <span class="floating-card-value">-23% today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="material-icons">expand_more</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-overline">Features</span>
+                <h2 class="section-title">Everything You Need to Control Your Home</h2>
+                <p class="section-subtitle">Powerful features designed to make your smart home experience seamless, intuitive, and efficient.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card elevation-1" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <span class="material-icons">hub</span>
+                    </div>
+                    <h3 class="feature-title">Unified Control Hub</h3>
+                    <p class="feature-description">Connect and control 500+ device brands from a single, intuitive interface. No more switching between apps.</p>
+                </div>
+                <div class="feature-card elevation-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <span class="material-icons">auto_fix_high</span>
+                    </div>
+                    <h3 class="feature-title">Smart Automation</h3>
+                    <p class="feature-description">Create custom automation recipes that respond to your routines. Your home learns and adapts to your lifestyle.</p>
+                </div>
+                <div class="feature-card elevation-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <span class="material-icons">eco</span>
+                    </div>
+                    <h3 class="feature-title">Energy Optimization</h3>
+                    <p class="feature-description">AI-powered energy management reduces consumption by up to 35%. Save money while helping the planet.</p>
+                </div>
+                <div class="feature-card elevation-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <span class="material-icons">security</span>
+                    </div>
+                    <h3 class="feature-title">Advanced Security</h3>
+                    <p class="feature-description">End-to-end encryption and local processing keep your home data private and secure. Your castle, your rules.</p>
+                </div>
+                <div class="feature-card elevation-1" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <span class="material-icons">mic</span>
+                    </div>
+                    <h3 class="feature-title">Voice Integration</h3>
+                    <p class="feature-description">Works seamlessly with Alexa, Google Assistant, and Siri. Control your home with natural voice commands.</p>
+                </div>
+                <div class="feature-card elevation-1" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <span class="material-icons">insights</span>
+                    </div>
+                    <h3 class="feature-title">Smart Insights</h3>
+                    <p class="feature-description">Detailed analytics and usage patterns help you understand and optimize your home's performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devices Section -->
+    <section class="devices" id="devices">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-overline">Compatibility</span>
+                <h2 class="section-title">Works With All Your Devices</h2>
+                <p class="section-subtitle">From smart bulbs to security systems, HomeSync connects with the brands you already love.</p>
+            </div>
+            <div class="devices-showcase">
+                <div class="device-category" data-aos="fade-right">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">lightbulb</span>
+                        </div>
+                        <h3 class="category-title">Lighting</h3>
+                        <p class="category-count">120+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">Philips Hue</span>
+                            <span class="brand-chip">LIFX</span>
+                            <span class="brand-chip">Nanoleaf</span>
+                            <span class="brand-chip">+117 more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-category" data-aos="fade-up">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">thermostat</span>
+                        </div>
+                        <h3 class="category-title">Climate</h3>
+                        <p class="category-count">85+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">Nest</span>
+                            <span class="brand-chip">Ecobee</span>
+                            <span class="brand-chip">Honeywell</span>
+                            <span class="brand-chip">+82 more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-category" data-aos="fade-left">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">videocam</span>
+                        </div>
+                        <h3 class="category-title">Security</h3>
+                        <p class="category-count">95+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">Ring</span>
+                            <span class="brand-chip">Arlo</span>
+                            <span class="brand-chip">Wyze</span>
+                            <span class="brand-chip">+92 more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-category" data-aos="fade-right">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">speaker_group</span>
+                        </div>
+                        <h3 class="category-title">Audio</h3>
+                        <p class="category-count">70+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">Sonos</span>
+                            <span class="brand-chip">Bose</span>
+                            <span class="brand-chip">JBL</span>
+                            <span class="brand-chip">+67 more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-category" data-aos="fade-up">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">kitchen</span>
+                        </div>
+                        <h3 class="category-title">Appliances</h3>
+                        <p class="category-count">60+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">Samsung</span>
+                            <span class="brand-chip">LG</span>
+                            <span class="brand-chip">GE</span>
+                            <span class="brand-chip">+57 more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="device-category" data-aos="fade-left">
+                    <div class="category-card elevation-2">
+                        <div class="category-icon">
+                            <span class="material-icons">lock</span>
+                        </div>
+                        <h3 class="category-title">Locks & Access</h3>
+                        <p class="category-count">45+ brands</p>
+                        <div class="category-brands">
+                            <span class="brand-chip">August</span>
+                            <span class="brand-chip">Yale</span>
+                            <span class="brand-chip">Schlage</span>
+                            <span class="brand-chip">+42 more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Section -->
+    <section class="automation" id="automation">
+        <div class="container">
+            <div class="automation-content">
+                <div class="automation-text" data-aos="fade-right">
+                    <span class="section-overline">Automation</span>
+                    <h2 class="section-title">Create Recipes That Work For You</h2>
+                    <p class="section-subtitle">Build powerful automation workflows with our intuitive visual builder. No coding required.</p>
+                    <div class="automation-features">
+                        <div class="auto-feature">
+                            <span class="material-icons">schedule</span>
+                            <div>
+                                <h4>Time-Based Triggers</h4>
+                                <p>Schedule actions for specific times or sunrise/sunset.</p>
+                            </div>
+                        </div>
+                        <div class="auto-feature">
+                            <span class="material-icons">location_on</span>
+                            <div>
+                                <h4>Geofencing</h4>
+                                <p>Automate based on who's home or away.</p>
+                            </div>
+                        </div>
+                        <div class="auto-feature">
+                            <span class="material-icons">sensors</span>
+                            <div>
+                                <h4>Sensor Responses</h4>
+                                <p>React to motion, temperature, humidity, and more.</p>
+                            </div>
+                        </div>
+                        <div class="auto-feature">
+                            <span class="material-icons">psychology</span>
+                            <div>
+                                <h4>AI Suggestions</h4>
+                                <p>Get smart recommendations based on your habits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="automation-visual" data-aos="fade-left">
+                    <div class="recipe-builder elevation-3">
+                        <div class="recipe-header">
+                            <span class="material-icons">auto_awesome</span>
+                            <span>Morning Routine</span>
+                            <span class="recipe-status active">Active</span>
+                        </div>
+                        <div class="recipe-flow">
+                            <div class="recipe-trigger">
+                                <div class="trigger-icon">
+                                    <span class="material-icons">alarm</span>
+                                </div>
+                                <div class="trigger-content">
+                                    <span class="trigger-label">When</span>
+                                    <span class="trigger-value">7:00 AM on Weekdays</span>
+                                </div>
+                            </div>
+                            <div class="flow-connector">
+                                <div class="connector-line"></div>
+                                <span class="material-icons">arrow_downward</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <div class="action-item">
+                                    <span class="material-icons">lightbulb</span>
+                                    <span>Bedroom lights to 50%</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="material-icons">coffee</span>
+                                    <span>Start coffee maker</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="material-icons">thermostat</span>
+                                    <span>Set temp to 72°F</span>
+                                </div>
+                                <div class="action-item">
+                                    <span class="material-icons">radio</span>
+                                    <span>Play morning news</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe-footer">
+                            <button class="btn btn-text btn-small ripple">
+                                <span class="material-icons">edit</span>
+                                Edit
+                            </button>
+                            <button class="btn btn-text btn-small ripple">
+                                <span class="material-icons">content_copy</span>
+                                Duplicate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="floating-recipes">
+                        <div class="mini-recipe">
+                            <span class="material-icons">nightlight</span>
+                            <span>Bedtime Mode</span>
+                        </div>
+                        <div class="mini-recipe">
+                            <span class="material-icons">directions_car</span>
+                            <span>Leaving Home</span>
+                        </div>
+                        <div class="mini-recipe">
+                            <span class="material-icons">movie</span>
+                            <span>Movie Night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-overline">Pricing</span>
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you need more. No hidden fees, ever.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label" data-period="monthly">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" data-period="annual">Annual</span>
+                <span class="save-badge">Save 20%</span>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card elevation-1" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <p class="plan-description">Perfect for getting started</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="0" data-annual="0">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="material-icons">check</span> Up to 10 devices</li>
+                        <li><span class="material-icons">check</span> 5 automation recipes</li>
+                        <li><span class="material-icons">check</span> Basic energy insights</li>
+                        <li><span class="material-icons">check</span> Mobile app access</li>
+                        <li class="disabled"><span class="material-icons">close</span> Voice assistant integration</li>
+                        <li class="disabled"><span class="material-icons">close</span> Advanced analytics</li>
+                    </ul>
+                    <button class="btn btn-outlined btn-block ripple">Get Started Free</button>
+                </div>
+                <div class="pricing-card featured elevation-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-description">For the connected home</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="9.99" data-annual="7.99">9.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="material-icons">check</span> Unlimited devices</li>
+                        <li><span class="material-icons">check</span> Unlimited automations</li>
+                        <li><span class="material-icons">check</span> Advanced energy optimization</li>
+                        <li><span class="material-icons">check</span> All voice assistants</li>
+                        <li><span class="material-icons">check</span> Priority support</li>
+                        <li><span class="material-icons">check</span> Family sharing (5 users)</li>
+                    </ul>
+                    <button class="btn btn-contained btn-block ripple">Start Free Trial</button>
+                </div>
+                <div class="pricing-card elevation-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-description">For property managers</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price" data-monthly="29.99" data-annual="23.99">29.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="material-icons">check</span> Everything in Pro</li>
+                        <li><span class="material-icons">check</span> Multi-property management</li>
+                        <li><span class="material-icons">check</span> Admin dashboard</li>
+                        <li><span class="material-icons">check</span> API access</li>
+                        <li><span class="material-icons">check</span> Custom integrations</li>
+                        <li><span class="material-icons">check</span> Dedicated support</li>
+                    </ul>
+                    <button class="btn btn-outlined btn-block ripple">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-card elevation-4" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Transform Your Home?</h2>
+                    <p class="cta-subtitle">Join over 2 million smart homes already using HomeSync. Start your free trial today.</p>
+                    <div class="cta-actions">
+                        <button class="btn btn-contained btn-large ripple">
+                            <span class="material-icons">rocket_launch</span>
+                            Start Free Trial
+                        </button>
+                        <button class="btn btn-text btn-large ripple">
+                            <span class="material-icons">calendar_month</span>
+                            Schedule Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-devices">
+                        <span class="material-icons cta-icon cta-icon-1">smartphone</span>
+                        <span class="material-icons cta-icon cta-icon-2">tablet</span>
+                        <span class="material-icons cta-icon cta-icon-3">laptop</span>
+                        <span class="material-icons cta-icon cta-icon-4">watch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="material-icons logo-icon">home</span>
+                        <span class="logo-text">HomeSync</span>
+                    </div>
+                    <p class="footer-tagline">Unifying your smart home experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link ripple" aria-label="Twitter">
+                            <span class="material-icons">tag</span>
+                        </a>
+                        <a href="#" class="social-link ripple" aria-label="Facebook">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="#" class="social-link ripple" aria-label="Instagram">
+                            <span class="material-icons">photo_camera</span>
+                        </a>
+                        <a href="#" class="social-link ripple" aria-label="LinkedIn">
+                            <span class="material-icons">work</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Community</a>
+                        <a href="#">API</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Security</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HomeSync. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">
+                        <span class="material-icons">verified</span>
+                        SOC 2 Certified
+                    </span>
+                    <span class="badge">
+                        <span class="material-icons">lock</span>
+                        GDPR Compliant
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab ripple" id="fab" aria-label="Quick actions">
+        <span class="material-icons">support_agent</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
