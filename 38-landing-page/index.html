@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension3D | Virtual Product Visualization Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+                <span class="logo-text">Dimension<span class="accent">3D</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#demo" class="btn btn-outline">Request Demo</a>
+                <a href="#signup" class="btn btn-primary">Start Free Trial</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="#demo" class="btn btn-outline">Request Demo</a>
+            <a href="#signup" class="btn btn-primary">Start Free Trial</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-depth-layer layer-1"></div>
+        <div class="hero-depth-layer layer-2"></div>
+        <div class="hero-depth-layer layer-3"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Next-Generation Product Visualization
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Transform Your</span>
+                    <span class="title-line gradient-text">Products Into</span>
+                    <span class="title-line">Interactive 3D</span>
+                </h1>
+                <p class="hero-description">
+                    Give your customers the power to examine every detail.
+                    Our AI-powered platform creates photorealistic 3D models
+                    that bring your products to life.
+                </p>
+                <div class="hero-cta">
+                    <a href="#signup" class="btn btn-primary btn-large">
+                        <span>Start Creating</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn btn-ghost btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">500K+</span>
+                        <span class="stat-label">3D Models Created</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">98%</span>
+                        <span class="stat-label">Customer Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">40%</span>
+                        <span class="stat-label">Conversion Boost</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-3d-showcase">
+                <div class="showcase-container" id="heroShowcase">
+                    <div class="product-stage">
+                        <div class="stage-light light-1"></div>
+                        <div class="stage-light light-2"></div>
+                        <div class="stage-light light-3"></div>
+
+                        <div class="product-3d" id="heroProduct">
+                            <!-- Sneaker 3D Object -->
+                            <div class="sneaker-3d">
+                                <div class="sneaker-sole"></div>
+                                <div class="sneaker-body">
+                                    <div class="sneaker-side left"></div>
+                                    <div class="sneaker-side right"></div>
+                                    <div class="sneaker-top"></div>
+                                    <div class="sneaker-front"></div>
+                                    <div class="sneaker-back"></div>
+                                    <div class="sneaker-tongue"></div>
+                                    <div class="sneaker-laces"></div>
+                                </div>
+                                <div class="sneaker-shadow"></div>
+                            </div>
+                        </div>
+
+                        <div class="stage-reflection"></div>
+                    </div>
+
+                    <div class="showcase-controls">
+                        <button class="control-btn active" data-view="front">Front</button>
+                        <button class="control-btn" data-view="side">Side</button>
+                        <button class="control-btn" data-view="back">Back</button>
+                        <button class="control-btn" data-view="top">Top</button>
+                    </div>
+
+                    <div class="drag-hint">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 4l-4 4 4 4"/>
+                            <path d="M10 4l4 4-4 4"/>
+                        </svg>
+                        Drag to rotate
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">
+                    <span class="title-3d">Powerful Tools</span>
+                    <span>For Stunning Visuals</span>
+                </h2>
+                <p class="section-description">
+                    Everything you need to create, manage, and deploy interactive 3D product experiences at scale.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-depth="1">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 3L2 9l10 6 10-6-10-6z"/>
+                                <path d="M2 15l10 6 10-6"/>
+                                <path d="M2 9v6M22 9v6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Generation</h3>
+                    <p class="feature-description">
+                        Upload product photos and our AI creates photorealistic 3D models automatically. No 3D expertise required.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+
+                <div class="feature-card" data-depth="2">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Real-Time Rendering</h3>
+                    <p class="feature-description">
+                        60 FPS smooth interactions with physically-based rendering. Materials and lighting that look absolutely real.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+
+                <div class="feature-card" data-depth="3">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Cross-Platform</h3>
+                    <p class="feature-description">
+                        Works seamlessly on desktop, mobile, and AR devices. One model, infinite possibilities.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+
+                <div class="feature-card" data-depth="2">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Material Library</h3>
+                    <p class="feature-description">
+                        Access thousands of realistic materials—metals, fabrics, glass, leather. Apply with a click.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+
+                <div class="feature-card" data-depth="1">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                                <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Easy Integration</h3>
+                    <p class="feature-description">
+                        Simple embed codes for Shopify, WooCommerce, Magento, and any custom platform. Deploy in minutes.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+
+                <div class="feature-card" data-depth="3">
+                    <div class="feature-icon">
+                        <div class="icon-3d">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 20V10M18 20V4M6 20v-4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-description">
+                        Track engagement, interactions, and conversions. Understand how customers explore your products.
+                    </p>
+                    <div class="feature-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2 class="section-title">
+                    <span>See It In</span>
+                    <span class="title-3d">Action</span>
+                </h2>
+                <p class="section-description">
+                    Interactive 3D models that convert browsers into buyers. Experience the difference.
+                </p>
+            </div>
+
+            <div class="showcase-gallery">
+                <div class="gallery-item active" data-product="watch">
+                    <div class="gallery-3d-container">
+                        <div class="product-wrapper" id="watchWrapper">
+                            <div class="watch-3d">
+                                <div class="watch-case">
+                                    <div class="watch-bezel"></div>
+                                    <div class="watch-face">
+                                        <div class="watch-dial"></div>
+                                        <div class="watch-hands">
+                                            <div class="hour-hand"></div>
+                                            <div class="minute-hand"></div>
+                                            <div class="second-hand"></div>
+                                        </div>
+                                        <div class="watch-markers"></div>
+                                    </div>
+                                    <div class="watch-crown"></div>
+                                </div>
+                                <div class="watch-band top"></div>
+                                <div class="watch-band bottom"></div>
+                                <div class="watch-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-category">Luxury</span>
+                        <h3 class="gallery-title">Premium Watch</h3>
+                        <p class="gallery-description">
+                            Every detail matters. From the brushed metal finish to the sapphire crystal,
+                            customers can inspect it all before buying.
+                        </p>
+                        <div class="gallery-stats">
+                            <div class="g-stat">
+                                <span class="g-stat-value">+52%</span>
+                                <span class="g-stat-label">Engagement</span>
+                            </div>
+                            <div class="g-stat">
+                                <span class="g-stat-value">3.2x</span>
+                                <span class="g-stat-label">Time on Page</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-product="chair">
+                    <div class="gallery-3d-container">
+                        <div class="product-wrapper" id="chairWrapper">
+                            <div class="chair-3d">
+                                <div class="chair-seat"></div>
+                                <div class="chair-back"></div>
+                                <div class="chair-legs">
+                                    <div class="leg leg-1"></div>
+                                    <div class="leg leg-2"></div>
+                                    <div class="leg leg-3"></div>
+                                    <div class="leg leg-4"></div>
+                                </div>
+                                <div class="chair-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-category">Furniture</span>
+                        <h3 class="gallery-title">Designer Chair</h3>
+                        <p class="gallery-description">
+                            See how it fits your space. Rotate, zoom, and examine the craftsmanship
+                            from every angle.
+                        </p>
+                        <div class="gallery-stats">
+                            <div class="g-stat">
+                                <span class="g-stat-value">-45%</span>
+                                <span class="g-stat-label">Returns</span>
+                            </div>
+                            <div class="g-stat">
+                                <span class="g-stat-value">+38%</span>
+                                <span class="g-stat-label">Conversions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-product="headphones">
+                    <div class="gallery-3d-container">
+                        <div class="product-wrapper" id="headphonesWrapper">
+                            <div class="headphones-3d">
+                                <div class="headband">
+                                    <div class="headband-padding"></div>
+                                </div>
+                                <div class="earcup left">
+                                    <div class="earcup-outer"></div>
+                                    <div class="earcup-padding"></div>
+                                </div>
+                                <div class="earcup right">
+                                    <div class="earcup-outer"></div>
+                                    <div class="earcup-padding"></div>
+                                </div>
+                                <div class="headphones-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <span class="gallery-category">Electronics</span>
+                        <h3 class="gallery-title">Wireless Headphones</h3>
+                        <p class="gallery-description">
+                            Show off premium materials and comfort features. Let customers experience
+                            the product before they buy.
+                        </p>
+                        <div class="gallery-stats">
+                            <div class="g-stat">
+                                <span class="g-stat-value">+67%</span>
+                                <span class="g-stat-label">Add to Cart</span>
+                            </div>
+                            <div class="g-stat">
+                                <span class="g-stat-value">4.8★</span>
+                                <span class="g-stat-label">Avg Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-nav">
+                <button class="gallery-nav-btn active" data-index="0"></button>
+                <button class="gallery-nav-btn" data-index="1"></button>
+                <button class="gallery-nav-btn" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">
+                    <span>How It</span>
+                    <span class="title-3d">Works</span>
+                </h2>
+                <p class="section-description">
+                    From product photos to interactive 3D in three simple steps.
+                </p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step" data-step="1">
+                    <div class="step-visual">
+                        <div class="step-3d-box">
+                            <div class="upload-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="17,8 12,3 7,8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                            </div>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Upload Photos</h3>
+                        <p class="step-description">
+                            Upload 6-12 photos of your product from different angles.
+                            Our AI handles the rest.
+                        </p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="step" data-step="2">
+                    <div class="step-visual">
+                        <div class="step-3d-box">
+                            <div class="processing-icon">
+                                <div class="process-ring"></div>
+                                <div class="process-core"></div>
+                            </div>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">AI Processing</h3>
+                        <p class="step-description">
+                            Our neural network reconstructs your product in full 3D
+                            with accurate materials and lighting.
+                        </p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="step" data-step="3">
+                    <div class="step-visual">
+                        <div class="step-3d-box">
+                            <div class="deploy-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                            </div>
+                            <div class="box-shadow"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Embed & Launch</h3>
+                        <p class="step-description">
+                            Copy your embed code and add interactive 3D to your
+                            product pages. Start converting today.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">
+                    <span>Simple,</span>
+                    <span class="title-3d">Transparent</span>
+                    <span>Pricing</span>
+                </h2>
+                <p class="section-description">
+                    Start free, scale as you grow. No hidden fees.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-tier="starter">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-tagline">Perfect for trying out</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            5 3D Models
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Basic materials
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Standard viewer
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Community support
+                        </li>
+                    </ul>
+                    <a href="#signup" class="btn btn-outline btn-full">Get Started</a>
+                    <div class="card-shadow"></div>
+                </div>
+
+                <div class="pricing-card featured" data-tier="professional">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-tagline">For growing businesses</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">79</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            100 3D Models
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Premium materials
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Custom branding
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Analytics dashboard
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            AR viewer
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Priority support
+                        </li>
+                    </ul>
+                    <a href="#signup" class="btn btn-primary btn-full">Start Free Trial</a>
+                    <div class="card-shadow"></div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="pricing-card" data-tier="enterprise">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-tagline">For large catalogs</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">299</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Unlimited models
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Custom materials
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            White-label solution
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            API access
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Custom integrations
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Contact Sales</a>
+                    <div class="card-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">
+                    <span>Trusted by</span>
+                    <span class="title-3d">Industry Leaders</span>
+                </h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">
+                            Dimension3D transformed our online jewelry store. Customers can now see
+                            every facet of our diamonds. Returns dropped by 60% and conversions are up 45%.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-3d">SM</div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Mitchell</span>
+                            <span class="author-role">CEO, LuxeGems</span>
+                        </div>
+                    </div>
+                    <div class="card-shadow"></div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">
+                            The AI-powered model generation is incredible. We uploaded photos on Monday
+                            and had 200 products live in 3D by Friday. Game changer for our furniture catalog.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-3d">JC</div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">James Chen</span>
+                            <span class="author-role">Head of Digital, ModernHome</span>
+                        </div>
+                    </div>
+                    <div class="card-shadow"></div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">
+                            Our customers spend 3x more time on product pages now. The interactive 3D
+                            viewer gives them confidence to buy. Best ROI of any tool we've implemented.
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="avatar-3d">AR</div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Amanda Rodriguez</span>
+                            <span class="author-role">Marketing Director, TechStyle</span>
+                        </div>
+                    </div>
+                    <div class="card-shadow"></div>
+                </div>
+            </div>
+
+            <div class="brands-strip">
+                <p class="brands-label">Trusted by 2,000+ brands worldwide</p>
+                <div class="brands-logos">
+                    <div class="brand-logo">LUXE</div>
+                    <div class="brand-logo">MODERN</div>
+                    <div class="brand-logo">TECHSTYLE</div>
+                    <div class="brand-logo">ARTISAN</div>
+                    <div class="brand-logo">ELEVATE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+            <div class="cta-shape shape-3"></div>
+        </div>
+
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    Ready to Bring Your
+                    <span class="gradient-text">Products to Life?</span>
+                </h2>
+                <p class="cta-description">
+                    Join thousands of brands creating immersive shopping experiences.
+                    Start your free trial today—no credit card required.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#signup" class="btn btn-primary btn-large">
+                        <span>Start Free Trial</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn btn-outline-light btn-large">Schedule a Demo</a>
+                </div>
+                <p class="cta-note">
+                    Free 14-day trial • No credit card required • Cancel anytime
+                </p>
+            </div>
+
+            <div class="cta-visual">
+                <div class="floating-cube cube-1">
+                    <div class="cube-inner"></div>
+                </div>
+                <div class="floating-cube cube-2">
+                    <div class="cube-inner"></div>
+                </div>
+                <div class="floating-cube cube-3">
+                    <div class="cube-inner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-cube">
+                            <div class="cube-face front"></div>
+                            <div class="cube-face back"></div>
+                            <div class="cube-face left"></div>
+                            <div class="cube-face right"></div>
+                            <div class="cube-face top"></div>
+                            <div class="cube-face bottom"></div>
+                        </div>
+                        <span class="logo-text">Dimension<span class="accent">3D</span></span>
+                    </div>
+                    <p class="footer-tagline">
+                        Transform your products into interactive 3D experiences
+                        that convert browsers into buyers.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dimension3D. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">SOC 2 Certified</span>
+                    <span class="badge">GDPR Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
