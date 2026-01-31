@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komorebi — Artisanal Home Goods</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Komorebi</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#craftsmanship">Craftsmanship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-tagline fade-in">Where wabi-sabi meets hygge</p>
+            <h1 class="hero-title fade-in delay-1">Intentional Living,<br>Artfully Crafted</h1>
+            <p class="hero-description fade-in delay-2">Handcrafted furniture and decor that celebrate the beauty of imperfection, the warmth of natural materials, and the tranquility of mindful spaces.</p>
+            <a href="#collection" class="btn btn-primary fade-in delay-3">Explore Collection</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section philosophy" id="philosophy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label fade-up">Our Philosophy</span>
+                <h2 class="section-title fade-up">Finding beauty<br>in simplicity</h2>
+            </div>
+            <div class="philosophy-grid">
+                <div class="philosophy-card fade-up">
+                    <div class="philosophy-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M24 12 C20 20, 28 28, 24 36"/>
+                        </svg>
+                    </div>
+                    <h3>Wabi-Sabi</h3>
+                    <p>We embrace imperfection as a form of beauty. Each piece carries the authentic marks of handcraft—subtle variations that tell stories of human touch.</p>
+                </div>
+                <div class="philosophy-card fade-up delay-1">
+                    <div class="philosophy-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M12 36 L24 12 L36 36"/>
+                            <path d="M16 28 L32 28"/>
+                        </svg>
+                    </div>
+                    <h3>Hygge</h3>
+                    <p>Creating spaces that nurture warmth and togetherness. Our designs invite you to slow down, gather close, and find comfort in simplicity.</p>
+                </div>
+                <div class="philosophy-card fade-up delay-2">
+                    <div class="philosophy-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="24" cy="24" r="8"/>
+                            <circle cx="24" cy="24" r="16"/>
+                            <circle cx="24" cy="24" r="20"/>
+                        </svg>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Earth-conscious by design. We source responsibly, craft mindfully, and create pieces meant to be treasured across generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="section collection" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label fade-up">The Collection</span>
+                <h2 class="section-title fade-up">Objects of<br>quiet intention</h2>
+            </div>
+            <div class="collection-grid">
+                <article class="collection-item fade-up">
+                    <div class="collection-image">
+                        <div class="image-placeholder" style="background-color: #c4b5a4;">
+                            <span>Shoji Chair</span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Shoji Lounge Chair</h3>
+                        <p>Oak & Linen</p>
+                        <span class="price">$1,480</span>
+                    </div>
+                </article>
+                <article class="collection-item fade-up delay-1">
+                    <div class="collection-image">
+                        <div class="image-placeholder" style="background-color: #a8b5a0;">
+                            <span>Hygge Table</span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Hygge Dining Table</h3>
+                        <p>Walnut & Stone</p>
+                        <span class="price">$2,890</span>
+                    </div>
+                </article>
+                <article class="collection-item fade-up delay-2">
+                    <div class="collection-image">
+                        <div class="image-placeholder" style="background-color: #d4c4b5;">
+                            <span>Zen Shelf</span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Zen Floating Shelf</h3>
+                        <p>Ash Wood</p>
+                        <span class="price">$420</span>
+                    </div>
+                </article>
+                <article class="collection-item fade-up delay-3">
+                    <div class="collection-image">
+                        <div class="image-placeholder" style="background-color: #b5a89a;">
+                            <span>Sabi Vase</span>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Sabi Ceramic Vase</h3>
+                        <p>Hand-thrown Clay</p>
+                        <span class="price">$185</span>
+                    </div>
+                </article>
+            </div>
+            <div class="collection-cta fade-up">
+                <a href="#" class="btn btn-secondary">View Full Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Banner -->
+    <section class="feature-banner">
+        <div class="container">
+            <blockquote class="quote fade-up">
+                <p>"In the pursuit of more, we lost touch with enough. Komorebi brings us back—to presence, to craft, to the quiet joy of less."</p>
+                <cite>— A moment of reflection</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section class="section craftsmanship" id="craftsmanship">
+        <div class="container">
+            <div class="craftsmanship-layout">
+                <div class="craftsmanship-content">
+                    <span class="section-label fade-up">The Process</span>
+                    <h2 class="section-title fade-up">Crafted with<br>reverence</h2>
+                    <div class="craftsmanship-text fade-up">
+                        <p>Every Komorebi piece begins as a meditation. Our artisans—trained in both Japanese joinery and Scandinavian woodworking traditions—approach each creation with the focused calm of a tea ceremony.</p>
+                        <p>We work with sustainably harvested hardwoods, hand-spun textiles, and ceramics fired in small batches. No shortcuts. No compromise. Just honest craft that honors both maker and material.</p>
+                    </div>
+                    <div class="craftsmanship-stats fade-up">
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Hours per piece</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Master artisans</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Sustainable materials</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="craftsmanship-visual fade-up">
+                    <div class="image-placeholder large" style="background-color: #a8b0a0;">
+                        <span>Artisan at Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="section materials">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label fade-up">Materials</span>
+                <h2 class="section-title fade-up">Honest, natural,<br>enduring</h2>
+            </div>
+            <div class="materials-grid">
+                <div class="material-item fade-up">
+                    <div class="material-swatch" style="background-color: #8b7355;"></div>
+                    <h4>Solid Hardwoods</h4>
+                    <p>FSC-certified oak, walnut, and ash</p>
+                </div>
+                <div class="material-item fade-up delay-1">
+                    <div class="material-swatch" style="background-color: #c4b5a4;"></div>
+                    <h4>Natural Textiles</h4>
+                    <p>Organic linen, wool, and hemp</p>
+                </div>
+                <div class="material-item fade-up delay-2">
+                    <div class="material-swatch" style="background-color: #9a8b7a;"></div>
+                    <h4>Raw Ceramics</h4>
+                    <p>Locally sourced, hand-finished clay</p>
+                </div>
+                <div class="material-item fade-up delay-3">
+                    <div class="material-swatch" style="background-color: #6b7b6a;"></div>
+                    <h4>Natural Stone</h4>
+                    <p>Ethically quarried marble and granite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="testimonials-slider">
+                <div class="testimonial active fade-up">
+                    <p class="testimonial-text">"Our Komorebi dining table has become the heart of our home. Every meal feels like a small ceremony now—unhurried, intentional, connected."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Emma & Johan</span>
+                        <span class="author-location">Copenhagen, Denmark</span>
+                    </div>
+                </div>
+                <div class="testimonial fade-up">
+                    <p class="testimonial-text">"The imperfections in my ceramic vase make it perfect. It's become my daily reminder that beauty exists in authenticity."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Yuki Tanaka</span>
+                        <span class="author-location">Kyoto, Japan</span>
+                    </div>
+                </div>
+                <div class="testimonial fade-up">
+                    <p class="testimonial-text">"Finally, furniture that feels alive. The warmth of the wood, the weight of quality—these pieces have soul."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Marcus Weber</span>
+                        <span class="author-location">Munich, Germany</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-content">
+                    <span class="section-label fade-up">Begin Your Journey</span>
+                    <h2 class="section-title fade-up">Let's create<br>your sanctuary</h2>
+                    <p class="contact-description fade-up">Whether you're seeking a single statement piece or designing an entire space, we're here to guide you. Each consultation begins with listening—understanding your rhythms, your needs, your vision of home.</p>
+                    <div class="contact-details fade-up">
+                        <div class="contact-item">
+                            <span class="contact-label">Studio</span>
+                            <span>123 Serenity Lane, Portland, OR</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Hours</span>
+                            <span>Tue—Sat, 10am—6pm</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@komorebi.com">hello@komorebi.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-up">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select an option</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="decor">Decor & Accessories</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="custom">Custom Commission</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content fade-up">
+                <h3>Join our quiet community</h3>
+                <p>Receive occasional reflections on mindful living, early access to new collections, and invitations to intimate studio events.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Komorebi</a>
+                    <p>Artisanal home goods celebrating the harmony of Japanese and Scandinavian design traditions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#collection">Collection</a></li>
+                            <li><a href="#craftsmanship">Our Process</a></li>
+                            <li><a href="#">Lookbook</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Care Guide</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">Journal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Komorebi. All rights reserved.</p>
+                <p class="footer-meaning">木漏れ日 — Sunlight filtering through leaves</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
