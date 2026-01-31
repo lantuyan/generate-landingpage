@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS_UNDERGROUND | Independent Tech Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Rain Effect Container -->
+    <div class="rain-container" id="rain"></div>
+
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text" data-text="NEXUS_">NEXUS_</span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <div class="nav-links">
+            <a href="#services" class="nav-link" data-text="SERVICES">SERVICES</a>
+            <a href="#network" class="nav-link" data-text="NETWORK">NETWORK</a>
+            <a href="#manifesto" class="nav-link" data-text="MANIFESTO">MANIFESTO</a>
+            <a href="#access" class="nav-link cta-link">JACK_IN</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" class="mobile-link">SERVICES</a>
+        <a href="#network" class="mobile-link">NETWORK</a>
+        <a href="#manifesto" class="mobile-link">MANIFESTO</a>
+        <a href="#access" class="mobile-link cta-link">JACK_IN</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="city-silhouette"></div>
+            <div class="neon-glow neon-1"></div>
+            <div class="neon-glow neon-2"></div>
+            <div class="neon-glow neon-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">root@nexus:~$</span>
+            </div>
+            <div class="glitch-container">
+                <h1 class="hero-title glitch" data-text="TECHNOLOGY FOR THE PEOPLE">
+                    TECHNOLOGY FOR THE PEOPLE
+                </h1>
+            </div>
+            <p class="hero-subtitle typing-effect">
+                <span class="cursor">&gt;</span> Connecting underground tech specialists with those who refuse corporate solutions_
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value" data-target="2847">0</span>
+                    <span class="stat-label">OPERATORS</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-value" data-target="12453">0</span>
+                    <span class="stat-label">TRANSACTIONS</span>
+                </div>
+                <div class="stat-divider">|</div>
+                <div class="stat-item">
+                    <span class="stat-value" data-target="99">0</span>
+                    <span class="stat-label">% ENCRYPTED</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#access" class="btn-primary">
+                    <span class="btn-text">INITIATE_CONNECTION</span>
+                    <span class="btn-glitch"></span>
+                </a>
+                <a href="#services" class="btn-secondary">
+                    <span>DECRYPT_INFO</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL_DOWN</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-tag">&lt;SERVICES/&gt;</span>
+            <h2 class="section-title glitch-hover" data-text="DECRYPTED_OFFERINGS">DECRYPTED_OFFERINGS</h2>
+            <p class="section-subtitle">// Access underground expertise beyond corporate reach</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-delay="0">
+                <div class="card-border"></div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0-6v6m18-6v6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">HARDWARE_MODS</h3>
+                <p class="card-desc">Custom PC builds, GPU modifications, overclocking specialists. Hardware that corporations don't want you to have.</p>
+                <div class="card-footer">
+                    <span class="card-tag">#CUSTOM_RIGS</span>
+                    <span class="card-tag">#OVERCLOCKING</span>
+                </div>
+                <div class="card-data-stream"></div>
+            </div>
+            <div class="service-card" data-delay="100">
+                <div class="card-border"></div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">SECURITY_OPS</h3>
+                <p class="card-desc">Penetration testing, vulnerability assessment, privacy hardening. Protect yourself from surveillance capitalism.</p>
+                <div class="card-footer">
+                    <span class="card-tag">#PENTESTING</span>
+                    <span class="card-tag">#PRIVACY</span>
+                </div>
+                <div class="card-data-stream"></div>
+            </div>
+            <div class="service-card" data-delay="200">
+                <div class="card-border"></div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">CODE_FORGE</h3>
+                <p class="card-desc">Open-source development, firmware hacking, custom tooling. Software that liberates, not controls.</p>
+                <div class="card-footer">
+                    <span class="card-tag">#OPENSOURCE</span>
+                    <span class="card-tag">#FIRMWARE</span>
+                </div>
+                <div class="card-data-stream"></div>
+            </div>
+            <div class="service-card" data-delay="300">
+                <div class="card-border"></div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">NETWORK_ANARCHY</h3>
+                <p class="card-desc">Mesh networks, decentralized infrastructure, anonymity tools. Build networks they can't shut down.</p>
+                <div class="card-footer">
+                    <span class="card-tag">#MESHNET</span>
+                    <span class="card-tag">#DECENTRALIZED</span>
+                </div>
+                <div class="card-data-stream"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Section -->
+    <section class="network" id="network">
+        <div class="network-bg">
+            <canvas id="networkCanvas"></canvas>
+        </div>
+        <div class="section-header">
+            <span class="section-tag">&lt;NETWORK/&gt;</span>
+            <h2 class="section-title glitch-hover" data-text="THE_UNDERGROUND">THE_UNDERGROUND</h2>
+            <p class="section-subtitle">// Trusted operators in the shadow network</p>
+        </div>
+        <div class="network-content">
+            <div class="operator-showcase">
+                <div class="operator-card featured">
+                    <div class="operator-avatar">
+                        <div class="avatar-glitch">零</div>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="operator-info">
+                        <h3 class="operator-handle">@ZERO_COOL</h3>
+                        <p class="operator-specialty">HARDWARE ARCHITECT</p>
+                        <div class="operator-rating">
+                            <span class="rating-bar" style="--rating: 98%"></span>
+                            <span class="rating-text">TRUST: 98%</span>
+                        </div>
+                        <p class="operator-bio">"Every machine deserves to reach its true potential. I unlock what manufacturers fear."</p>
+                        <div class="operator-stats">
+                            <span>423 MODS</span>
+                            <span>|</span>
+                            <span>12 YRS EXP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="operator-grid">
+                    <div class="operator-mini">
+                        <span class="mini-avatar">幽</span>
+                        <span class="mini-handle">@PHANTOM_</span>
+                        <span class="mini-spec">SECURITY</span>
+                    </div>
+                    <div class="operator-mini">
+                        <span class="mini-avatar">龍</span>
+                        <span class="mini-handle">@DRAGONFLY</span>
+                        <span class="mini-spec">NETWORKS</span>
+                    </div>
+                    <div class="operator-mini">
+                        <span class="mini-avatar">電</span>
+                        <span class="mini-handle">@VOLT_AGE</span>
+                        <span class="mini-spec">FIRMWARE</span>
+                    </div>
+                    <div class="operator-mini">
+                        <span class="mini-avatar">影</span>
+                        <span class="mini-handle">@SH4D0W</span>
+                        <span class="mini-spec">PRIVACY</span>
+                    </div>
+                </div>
+            </div>
+            <div class="network-stats-panel">
+                <div class="panel-header">
+                    <span class="panel-title">NETWORK_STATUS</span>
+                    <span class="panel-status online">● ACTIVE</span>
+                </div>
+                <div class="panel-content">
+                    <div class="panel-stat">
+                        <span class="panel-label">ACTIVE_NODES</span>
+                        <span class="panel-value counter" data-target="347">0</span>
+                    </div>
+                    <div class="panel-stat">
+                        <span class="panel-label">SECURE_CHANNELS</span>
+                        <span class="panel-value counter" data-target="89">0</span>
+                    </div>
+                    <div class="panel-stat">
+                        <span class="panel-label">UPTIME</span>
+                        <span class="panel-value">99.97%</span>
+                    </div>
+                    <div class="panel-stat">
+                        <span class="panel-label">ENCRYPTION</span>
+                        <span class="panel-value">AES-256</span>
+                    </div>
+                </div>
+                <div class="panel-activity">
+                    <div class="activity-line" data-type="connect">[+] New operator connected: SECTOR_7</div>
+                    <div class="activity-line" data-type="transaction">[TX] Transaction verified: 0x7f3a...</div>
+                    <div class="activity-line" data-type="secure">[!] Encryption handshake complete</div>
+                    <div class="activity-line" data-type="connect">[+] Node activated: GRID_42</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto" id="manifesto">
+        <div class="manifesto-bg">
+            <div class="code-rain" id="codeRain"></div>
+        </div>
+        <div class="section-header">
+            <span class="section-tag">&lt;MANIFESTO/&gt;</span>
+            <h2 class="section-title glitch-hover" data-text="DIGITAL_RESISTANCE">DIGITAL_RESISTANCE</h2>
+        </div>
+        <div class="manifesto-content">
+            <div class="manifesto-text">
+                <div class="manifesto-line" data-index="01">
+                    <span class="line-number">01</span>
+                    <p>TECHNOLOGY BELONGS TO THE PEOPLE, NOT CORPORATIONS.</p>
+                </div>
+                <div class="manifesto-line" data-index="02">
+                    <span class="line-number">02</span>
+                    <p>INFORMATION WANTS TO BE FREE. WE MAKE IT SO.</p>
+                </div>
+                <div class="manifesto-line" data-index="03">
+                    <span class="line-number">03</span>
+                    <p>PRIVACY IS A RIGHT, NOT A PRIVILEGE.</p>
+                </div>
+                <div class="manifesto-line" data-index="04">
+                    <span class="line-number">04</span>
+                    <p>WE BUILD WHAT THEY WON'T. WE FIX WHAT THEY BREAK.</p>
+                </div>
+                <div class="manifesto-line" data-index="05">
+                    <span class="line-number">05</span>
+                    <p>THE UNDERGROUND SERVES THOSE THE SYSTEM FORGOT.</p>
+                </div>
+            </div>
+            <div class="manifesto-visual">
+                <div class="hex-grid">
+                    <div class="hex" data-symbol="自"></div>
+                    <div class="hex" data-symbol="由"></div>
+                    <div class="hex" data-symbol="抵"></div>
+                    <div class="hex" data-symbol="抗"></div>
+                    <div class="hex" data-symbol="力"></div>
+                    <div class="hex" data-symbol="量"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section (CTA) -->
+    <section class="access" id="access">
+        <div class="access-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">SYSTEM_OVERRIDE.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-output">
+                        <p class="output-line">> Initializing secure connection...</p>
+                        <p class="output-line">> Encryption protocols active...</p>
+                        <p class="output-line">> Ready for input_</p>
+                    </div>
+                    <form class="access-form" id="accessForm">
+                        <div class="form-group">
+                            <label class="form-label">HANDLE_</label>
+                            <input type="text" class="form-input" placeholder="Enter your alias" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">ENCRYPTED_CHANNEL_</label>
+                            <input type="email" class="form-input" placeholder="Secure contact method" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">REQUEST_TYPE_</label>
+                            <select class="form-input form-select">
+                                <option value="">SELECT_OPERATION</option>
+                                <option value="hardware">HARDWARE_MODS</option>
+                                <option value="security">SECURITY_OPS</option>
+                                <option value="code">CODE_FORGE</option>
+                                <option value="network">NETWORK_ANARCHY</option>
+                                <option value="other">OTHER_REQUEST</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">MESSAGE_</label>
+                            <textarea class="form-input form-textarea" placeholder="Describe your needs..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">EXECUTE_OVERRIDE</span>
+                            <span class="btn-loader"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="access-info">
+                <h3 class="access-title">JACK INTO THE NETWORK</h3>
+                <p class="access-desc">Submit your request through our encrypted channel. All communications are end-to-end encrypted. We verify all operators. Your privacy is absolute.</p>
+                <div class="access-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">◈</span>
+                        <span>256-bit encryption</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">◈</span>
+                        <span>No logs policy</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">◈</span>
+                        <span>Verified operators</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">◈</span>
+                        <span>Escrow protection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">NEXUS_</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">PROTOCOLS</a>
+                <a href="#" class="footer-link">SECURITY</a>
+                <a href="#" class="footer-link">OPERATORS</a>
+                <a href="#" class="footer-link">CONTACT</a>
+            </div>
+            <div class="footer-social">
+                <span class="social-text">FIND_US:</span>
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Matrix">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033c.309-.443.683-.784 1.117-1.024.433-.245.936-.365 1.5-.365.54 0 1.033.107 1.481.314.448.208.785.582 1.02 1.108.254-.374.6-.706 1.034-.992.434-.287.95-.43 1.546-.43.452 0 .868.06 1.242.183.374.123.69.318.953.58a2.56 2.56 0 01.602.96c.14.384.21.832.21 1.346v5.458h-2.467V11.4c0-.243-.017-.468-.05-.68a1.347 1.347 0 00-.18-.513.872.872 0 00-.364-.327c-.152-.076-.353-.114-.6-.114-.243 0-.455.053-.635.16-.18.108-.328.254-.443.439a1.98 1.98 0 00-.26.628 3.04 3.04 0 00-.083.727v4.363h-2.467V11.4c0-.213-.013-.427-.037-.643a1.557 1.557 0 00-.158-.548.882.882 0 00-.358-.368c-.152-.09-.368-.135-.646-.135-.133 0-.28.024-.44.074a1.26 1.26 0 00-.442.243 1.34 1.34 0 00-.347.46c-.093.192-.14.437-.14.734v4.866H5.32V7.81zM23.37.55v22.9h-1.65V24H24V0h-2.28v.55z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2084 NEXUS_UNDERGROUND // ALL_RIGHTS_SUBVERTED</p>
+            <p class="footer-quote">"The street finds its own uses for things." — William Gibson</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
