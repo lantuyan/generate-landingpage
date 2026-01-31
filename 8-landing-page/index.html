@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusShield | Enterprise Cybersecurity Intelligence Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2L4 10v12c0 9.5 6.8 18.4 16 20 9.2-1.6 16-10.5 16-20V10L20 2z" stroke="url(#shield-gradient)" stroke-width="2" fill="none"/>
+                    <path d="M20 8L10 12v8c0 6 4 11 10 12.5" stroke="url(#shield-gradient)" stroke-width="2" fill="none"/>
+                    <circle cx="20" cy="18" r="4" fill="url(#shield-gradient)"/>
+                    <defs>
+                        <linearGradient id="shield-gradient" x1="4" y1="2" x2="36" y2="42">
+                            <stop offset="0%" stop-color="#00D9FF"/>
+                            <stop offset="100%" stop-color="#0066FF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>NexusShield</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#stats">Intelligence</a></li>
+                <li><a href="#testimonials">Clients</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-ghost">Login</a>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#stats">Intelligence</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-lines"></div>
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            <div class="particle-field" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Real-time Threat Intelligence Active</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="text-gradient">Illuminate</span> the Shadows.<br>
+                    <span class="text-white">Neutralize</span> the Threats.
+                </h1>
+                <p class="hero-description">
+                    NexusShield delivers enterprise-grade cybersecurity intelligence,
+                    transforming darkness into vigilance. Monitor, detect, and neutralize
+                    threats before they strike with our AI-powered command center.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Activate Protection</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#platform" class="btn btn-ghost btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="99.97">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Threat Detection Rate</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="50">&lt;50</span><span class="stat-suffix">ms</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="2500">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Enterprise Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="command-center">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="terminal-title">NexusShield Command Center</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="scan-line"></div>
+                        <div class="terminal-output" id="terminal-output">
+                            <div class="log-entry success">[SHIELD] System initialized successfully</div>
+                            <div class="log-entry info">[SCAN] Deep network analysis in progress...</div>
+                            <div class="log-entry warning">[ALERT] Suspicious activity detected: 192.168.1.45</div>
+                            <div class="log-entry success">[BLOCK] Threat neutralized automatically</div>
+                            <div class="log-entry info">[INTEL] Updating threat signatures...</div>
+                        </div>
+                        <div class="threat-map">
+                            <div class="map-grid"></div>
+                            <div class="threat-point" style="left: 20%; top: 30%;"></div>
+                            <div class="threat-point blocked" style="left: 60%; top: 45%;"></div>
+                            <div class="threat-point" style="left: 80%; top: 25%;"></div>
+                            <div class="threat-point blocked" style="left: 35%; top: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Capabilities</span>
+                <h2 class="section-title">Precision-Engineered <span class="text-gradient">Protection</span></h2>
+                <p class="section-description">
+                    Our platform combines cutting-edge AI with decades of security expertise
+                    to deliver unmatched threat intelligence and response capabilities.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="12" stroke="url(#icon-gradient-1)" stroke-width="2" stroke-dasharray="4 2"/>
+                            <circle cx="24" cy="24" r="4" fill="url(#icon-gradient-1)"/>
+                            <line x1="24" y1="4" x2="24" y2="12" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <line x1="24" y1="36" x2="24" y2="44" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <line x1="4" y1="24" x2="12" y2="24" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <line x1="36" y1="24" x2="44" y2="24" stroke="url(#icon-gradient-1)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#00D9FF"/>
+                                    <stop offset="100%" stop-color="#0066FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Threat Detection</h3>
+                    <p class="feature-description">
+                        AI-powered scanning analyzes millions of data points per second,
+                        identifying threats before they materialize into attacks.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10M+</span>
+                            <span class="metric-label">Events/sec</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">0.001s</span>
+                            <span class="metric-label">Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L4 14v10c0 12.8 8.5 24.7 20 28 11.5-3.3 20-15.2 20-28V14L24 4z" stroke="url(#icon-gradient-2)" stroke-width="2"/>
+                            <path d="M17 24l5 5 10-10" stroke="url(#icon-gradient-2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-2" x1="4" y1="4" x2="44" y2="46">
+                                    <stop offset="0%" stop-color="#00FF88"/>
+                                    <stop offset="100%" stop-color="#00D9FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Autonomous Response</h3>
+                    <p class="feature-description">
+                        Automated countermeasures neutralize threats instantly,
+                        reducing response time from hours to milliseconds.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">99.9%</span>
+                            <span class="metric-label">Auto-blocked</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">24/7</span>
+                            <span class="metric-label">Protection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="12" width="36" height="28" rx="4" stroke="url(#icon-gradient-3)" stroke-width="2"/>
+                            <path d="M6 20h36" stroke="url(#icon-gradient-3)" stroke-width="2"/>
+                            <circle cx="12" cy="16" r="2" fill="url(#icon-gradient-3)"/>
+                            <circle cx="18" cy="16" r="2" fill="url(#icon-gradient-3)"/>
+                            <circle cx="24" cy="16" r="2" fill="url(#icon-gradient-3)"/>
+                            <path d="M14 28h20M14 34h12" stroke="url(#icon-gradient-3)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-3" x1="6" y1="12" x2="42" y2="40">
+                                    <stop offset="0%" stop-color="#FF6B00"/>
+                                    <stop offset="100%" stop-color="#FFB800"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Intelligence Dashboard</h3>
+                    <p class="feature-description">
+                        Command center interface provides complete visibility into your
+                        security posture with real-time analytics and reporting.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">360°</span>
+                            <span class="metric-label">Visibility</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100+</span>
+                            <span class="metric-label">Integrations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 8v32M8 24h32" stroke="url(#icon-gradient-4)" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="18" stroke="url(#icon-gradient-4)" stroke-width="2"/>
+                            <circle cx="24" cy="8" r="3" fill="url(#icon-gradient-4)"/>
+                            <circle cx="24" cy="40" r="3" fill="url(#icon-gradient-4)"/>
+                            <circle cx="8" cy="24" r="3" fill="url(#icon-gradient-4)"/>
+                            <circle cx="40" cy="24" r="3" fill="url(#icon-gradient-4)"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-4" x1="8" y1="8" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#A855F7"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Global Threat Network</h3>
+                    <p class="feature-description">
+                        Tap into collective intelligence from thousands of sensors
+                        worldwide, sharing threat data in real-time.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">195</span>
+                            <span class="metric-label">Countries</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">50K+</span>
+                            <span class="metric-label">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 36V26M20 36V20M28 36V24M36 36V16" stroke="url(#icon-gradient-5)" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M8 12l8 8 8-6 8 4 8-10" stroke="url(#icon-gradient-5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="12" r="3" fill="url(#icon-gradient-5)"/>
+                            <circle cx="16" cy="20" r="3" fill="url(#icon-gradient-5)"/>
+                            <circle cx="24" cy="14" r="3" fill="url(#icon-gradient-5)"/>
+                            <circle cx="32" cy="18" r="3" fill="url(#icon-gradient-5)"/>
+                            <circle cx="40" cy="8" r="3" fill="url(#icon-gradient-5)"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-5" x1="8" y1="8" x2="40" y2="36">
+                                    <stop offset="0%" stop-color="#00D9FF"/>
+                                    <stop offset="100%" stop-color="#00FF88"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Predictive Analytics</h3>
+                    <p class="feature-description">
+                        Machine learning models predict attack vectors before they're
+                        exploited, keeping you ahead of emerging threats.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">72h</span>
+                            <span class="metric-label">Early Warning</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="14" height="14" rx="3" stroke="url(#icon-gradient-6)" stroke-width="2"/>
+                            <rect x="26" y="8" width="14" height="14" rx="3" stroke="url(#icon-gradient-6)" stroke-width="2"/>
+                            <rect x="8" y="26" width="14" height="14" rx="3" stroke="url(#icon-gradient-6)" stroke-width="2"/>
+                            <rect x="26" y="26" width="14" height="14" rx="3" stroke="url(#icon-gradient-6)" stroke-width="2"/>
+                            <path d="M22 15h4M22 33h4M15 22v4M33 22v4" stroke="url(#icon-gradient-6)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="icon-gradient-6" x1="8" y1="8" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#00D9FF"/>
+                                    <stop offset="100%" stop-color="#0066FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Seamless Integration</h3>
+                    <p class="feature-description">
+                        Connect with your existing security stack through our extensive
+                        API library and pre-built integrations.
+                    </p>
+                    <div class="feature-metrics">
+                        <div class="metric">
+                            <span class="metric-value">500+</span>
+                            <span class="metric-label">APIs</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">5min</span>
+                            <span class="metric-label">Setup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform" id="platform">
+        <div class="container">
+            <div class="platform-content">
+                <div class="platform-info">
+                    <span class="section-tag">The Platform</span>
+                    <h2 class="section-title">Your <span class="text-gradient">Command Center</span> Awaits</h2>
+                    <p class="section-description">
+                        Experience unprecedented visibility into your security landscape.
+                        Our platform transforms complex threat data into actionable intelligence.
+                    </p>
+                    <ul class="platform-features">
+                        <li>
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </span>
+                            <span>Real-time threat visualization and mapping</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </span>
+                            <span>Customizable security workflows and automation</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </span>
+                            <span>Executive-level reporting and compliance dashboards</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </span>
+                            <span>AI-assisted threat hunting and investigation</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </span>
+                            <span>24/7 SOC support with dedicated analysts</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Schedule Demo</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="platform-visual">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="dashboard-tabs">
+                                <span class="tab active">Overview</span>
+                                <span class="tab">Threats</span>
+                                <span class="tab">Analytics</span>
+                                <span class="tab">Reports</span>
+                            </div>
+                            <div class="dashboard-time">
+                                <span class="live-indicator"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-body">
+                            <div class="dashboard-widget threat-level">
+                                <h4>Threat Level</h4>
+                                <div class="threat-gauge">
+                                    <div class="gauge-fill" style="--level: 23%;"></div>
+                                    <span class="gauge-value">LOW</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-widget active-threats">
+                                <h4>Active Threats</h4>
+                                <div class="threat-list">
+                                    <div class="threat-item">
+                                        <span class="threat-status blocked"></span>
+                                        <span class="threat-name">DDoS Attempt</span>
+                                        <span class="threat-time">2m ago</span>
+                                    </div>
+                                    <div class="threat-item">
+                                        <span class="threat-status blocked"></span>
+                                        <span class="threat-name">SQL Injection</span>
+                                        <span class="threat-time">15m ago</span>
+                                    </div>
+                                    <div class="threat-item">
+                                        <span class="threat-status monitoring"></span>
+                                        <span class="threat-name">Suspicious Login</span>
+                                        <span class="threat-time">1h ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-widget network-graph">
+                                <h4>Network Activity</h4>
+                                <div class="graph-container">
+                                    <svg class="activity-graph" viewBox="0 0 200 60">
+                                        <defs>
+                                            <linearGradient id="graph-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.5"/>
+                                                <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="graph-area" d="M0,60 L0,45 Q25,20 50,35 T100,25 T150,40 T200,20 L200,60 Z" fill="url(#graph-gradient)"/>
+                                        <path class="graph-line" d="M0,45 Q25,20 50,35 T100,25 T150,40 T200,20" fill="none" stroke="#00D9FF" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="dashboard-widget geo-map">
+                                <h4>Global Activity</h4>
+                                <div class="mini-map">
+                                    <div class="map-dot" style="left: 25%; top: 35%;"></div>
+                                    <div class="map-dot active" style="left: 48%; top: 30%;"></div>
+                                    <div class="map-dot" style="left: 75%; top: 40%;"></div>
+                                    <div class="map-dot blocked" style="left: 85%; top: 55%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-header">
+                <span class="section-tag">Intelligence Metrics</span>
+                <h2 class="section-title">Numbers That <span class="text-gradient">Speak Power</span></h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" stroke-dasharray="125.6" stroke-dashoffset="0"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="47">0</span><span class="stat-unit">B+</span>
+                        <span class="stat-text">Threats analyzed daily</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L4 14v10c0 12.8 8.5 24.7 20 28 11.5-3.3 20-15.2 20-28V14L24 4z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="12">0</span><span class="stat-unit">M+</span>
+                        <span class="stat-text">Attacks blocked monthly</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="500">0</span><span class="stat-unit">+</span>
+                        <span class="stat-text">Fortune 500 clients</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12v12l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-count="99.99">0</span><span class="stat-unit">%</span>
+                        <span class="stat-text">Platform uptime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Stories</span>
+                <h2 class="section-title">Trusted by <span class="text-gradient">Industry Leaders</span></h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <path d="M14 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                                <path d="M38 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "NexusShield transformed our security operations. We went from reactive firefighting
+                            to proactive threat hunting. Their platform detected and neutralized a sophisticated
+                            APT attack that would have cost us millions."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>JC</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">James Chen</span>
+                                <span class="author-title">CISO, Global Financial Services Corp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <path d="M14 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                                <path d="M38 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "The visibility we gained into our infrastructure was game-changing. NexusShield's
+                            AI detected patterns our previous solution missed entirely. It's like having a
+                            world-class SOC team watching our back 24/7."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SR</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Rodriguez</span>
+                                <span class="author-title">VP of Security, TechForward Inc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <svg viewBox="0 0 48 48" fill="currentColor">
+                                <path d="M14 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                                <path d="M38 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8v-8c0-8.8-7.2-16-16-16v6c5.5 0 10 4.5 10 10h-2z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            "Implementation was seamless, and the ROI was immediate. Within the first month,
+                            NexusShield prevented three zero-day exploits. The predictive analytics alone
+                            justify the investment."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>MK</span>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Michael Kim</span>
+                                <span class="author-title">Head of IT Security, Healthcare Plus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+            <div class="clients-logos">
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-weight="600" font-size="14">GLOBAL BANK</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-weight="600" font-size="14">TECH CORP</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-weight="600" font-size="14">AERO SYSTEMS</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-weight="600" font-size="14">MEDICA INC</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 120 40" fill="currentColor">
+                        <text x="10" y="28" font-family="Inter" font-weight="600" font-size="14">ENERGY PLUS</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing Plans</span>
+                <h2 class="section-title">Choose Your <span class="text-gradient">Shield Level</span></h2>
+                <p class="section-description">
+                    Scalable protection for organizations of all sizes. All plans include
+                    our core threat intelligence and 24/7 monitoring.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Sentinel</h3>
+                        <p class="plan-description">Essential protection for growing organizations</p>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2,499</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Up to 1,000 endpoints</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Real-time threat detection</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Automated response</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Weekly reports</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Email support</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ghost btn-block">Start Trial</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Guardian</h3>
+                        <p class="plan-description">Advanced protection with AI-powered analytics</p>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">5,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Up to 10,000 endpoints</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Everything in Sentinel</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Predictive threat analytics</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Custom security workflows</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Dedicated account manager</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>24/7 phone support</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-block">Start Trial</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Fortress</h3>
+                        <p class="plan-description">Enterprise-grade protection with full SOC</p>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">Custom</span>
+                            <span class="period"></span>
+                        </div>
+                        <ul class="features-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Unlimited endpoints</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Everything in Guardian</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Dedicated SOC team</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>Custom threat hunting</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>On-premise deployment</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                                <span>SLA guarantee</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ghost btn-block">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-glow"></div>
+                <h2 class="cta-title">
+                    Ready to <span class="text-gradient">Fortify</span> Your Defenses?
+                </h2>
+                <p class="cta-description">
+                    Join the ranks of industry leaders who trust NexusShield to protect their
+                    most critical assets. Start your journey to uncompromising security today.
+                </p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Work Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <select id="company-size" name="company-size">
+                                <option value="">Company Size</option>
+                                <option value="1-50">1-50 employees</option>
+                                <option value="51-200">51-200 employees</option>
+                                <option value="201-1000">201-1000 employees</option>
+                                <option value="1001+">1001+ employees</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <span>Request Demo</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                <p class="form-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    Your data is protected. We never share your information.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L4 10v12c0 9.5 6.8 18.4 16 20 9.2-1.6 16-10.5 16-20V10L20 2z" stroke="url(#footer-gradient)" stroke-width="2" fill="none"/>
+                            <path d="M20 8L10 12v8c0 6 4 11 10 12.5" stroke="url(#footer-gradient)" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="18" r="4" fill="url(#footer-gradient)"/>
+                            <defs>
+                                <linearGradient id="footer-gradient" x1="4" y1="2" x2="36" y2="42">
+                                    <stop offset="0%" stop-color="#00D9FF"/>
+                                    <stop offset="100%" stop-color="#0066FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>NexusShield</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Enterprise cybersecurity intelligence. Protecting what matters most.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">API Docs</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Security Center</a></li>
+                            <li><a href="#">Threat Reports</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Trust Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NexusShield. All rights reserved.</p>
+                <div class="compliance-badges">
+                    <span>SOC 2 Type II</span>
+                    <span>ISO 27001</span>
+                    <span>GDPR</span>
+                    <span>HIPAA</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
