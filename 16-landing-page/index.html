@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromaForge AI | Intelligent Visual Identity Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                <stop offset="50%" style="stop-color:#9B59B6"/>
+                                <stop offset="100%" style="stop-color:#3498DB"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="20" cy="20" r="18" stroke="url(#logoGradient)" stroke-width="3" fill="none"/>
+                        <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="url(#logoGradient)" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="20" cy="20" r="4" fill="url(#logoGradient)"/>
+                    </svg>
+                </span>
+                <span class="logo-text">ChromaForge</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-secondary">Log In</a>
+                <a href="#cta" class="btn-primary">Start Creating</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="gradient-mesh"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                AI-Powered Design Evolution
+            </div>
+            <h1 class="hero-title">
+                Where <span class="gradient-text">Colors</span> Meet
+                <span class="gradient-text-alt">Intelligence</span>
+            </h1>
+            <p class="hero-subtitle">
+                Transform your brand's visual identity with our AI-driven creative studio.
+                Watch your ideas evolve through intelligent design systems that learn, adapt, and inspire.
+            </p>
+            <div class="hero-cta">
+                <a href="#cta" class="btn-primary btn-large">
+                    <span>Launch Your Vision</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#showcase" class="btn-ghost">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                    </svg>
+                    <span>See It in Action</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-label">Brands Transformed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span><span class="stat-suffix">M+</span>
+                    <span class="stat-label">Designs Generated</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-bg gradient-bg-1"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Design Without <span class="gradient-text">Limits</span></h2>
+                <p class="section-subtitle">
+                    Our AI understands the language of visual design—color theory, composition,
+                    brand psychology—and translates your vision into stunning reality.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon gradient-icon-1">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="20"/>
+                            <circle cx="24" cy="24" r="12"/>
+                            <circle cx="24" cy="24" r="4"/>
+                            <line x1="24" y1="4" x2="24" y2="8"/>
+                            <line x1="24" y1="40" x2="24" y2="44"/>
+                            <line x1="4" y1="24" x2="8" y2="24"/>
+                            <line x1="40" y1="24" x2="44" y2="24"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Intelligent Color Systems</h3>
+                    <p class="feature-desc">
+                        AI-generated palettes that understand emotion, accessibility, and brand resonance.
+                        Every color choice is intentional.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon gradient-icon-2">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="6" width="36" height="36" rx="4"/>
+                            <path d="M6 18h36"/>
+                            <path d="M18 18v24"/>
+                            <circle cx="30" cy="30" r="6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Adaptive Layouts</h3>
+                    <p class="feature-desc">
+                        Dynamic composition engine that creates harmonious designs
+                        across every format—from mobile screens to billboards.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon gradient-icon-3">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+                            <path d="M4 14l20 10 20-10"/>
+                            <path d="M24 24v20"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Brand DNA Learning</h3>
+                    <p class="feature-desc">
+                        Upload your existing assets and watch our AI extract, understand,
+                        and evolve your brand's unique visual language.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon gradient-icon-4">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 24c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+                            <path d="M8 24c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+                            <circle cx="24" cy="24" r="4"/>
+                            <path d="M24 28v12"/>
+                            <path d="M18 40h12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Evolution</h3>
+                    <p class="feature-desc">
+                        See your designs transform as you provide feedback.
+                        Our AI iterates instantly, learning your preferences with each interaction.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon gradient-icon-5">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 8h32v32H8z"/>
+                            <path d="M16 16h16v16H16z"/>
+                            <path d="M8 8L16 16"/>
+                            <path d="M40 8L32 16"/>
+                            <path d="M8 40L16 32"/>
+                            <path d="M40 40L32 32"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Multi-Format Export</h3>
+                    <p class="feature-desc">
+                        One design, infinite possibilities. Export to any format—SVG, PNG,
+                        PDF, CSS, Figma, and more—with perfect quality every time.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon gradient-icon-6">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="16" cy="16" r="8"/>
+                            <circle cx="32" cy="16" r="8"/>
+                            <circle cx="24" cy="32" r="8"/>
+                            <path d="M16 24v0a8 8 0 018 8"/>
+                            <path d="M32 24v0a8 8 0 00-8 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-desc">
+                        Shared workspaces where creativity flows freely. Comment, iterate,
+                        and build together in real-time with intelligent version control.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="section-bg gradient-bg-2"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From Vision to <span class="gradient-text-alt">Reality</span></h2>
+                <p class="section-subtitle">
+                    Three simple steps to transform your brand identity with the power of AI.
+                </p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="32" cy="32" r="28"/>
+                                <path d="M32 20v24"/>
+                                <path d="M20 32h24"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Define Your Vision</h3>
+                        <p class="step-desc">
+                            Share your brand story, upload existing assets, or simply describe your ideal aesthetic.
+                            Our AI listens and understands the nuances of your creative direction.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-card">
+                            <div class="visual-gradient gradient-card-1"></div>
+                            <div class="visual-content">
+                                <div class="visual-line"></div>
+                                <div class="visual-line short"></div>
+                                <div class="visual-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reverse" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M32 8L8 24v16l24 16 24-16V24L32 8z"/>
+                                <path d="M8 24l24 16 24-16"/>
+                                <path d="M32 40v16"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Watch AI Create</h3>
+                        <p class="step-desc">
+                            Witness the magic as ChromaForge generates dozens of unique design concepts.
+                            Each option explores different directions while staying true to your brand essence.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-card generating">
+                            <div class="visual-gradient gradient-card-2"></div>
+                            <div class="visual-content">
+                                <div class="generating-grid">
+                                    <span></span><span></span><span></span>
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="32" cy="32" r="24"/>
+                                <path d="M20 32l8 8 16-16"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Refine & Launch</h3>
+                        <p class="step-desc">
+                            Fine-tune your favorites with intuitive controls. Export production-ready assets
+                            and comprehensive brand guidelines—ready to deploy across all channels.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-card complete">
+                            <div class="visual-gradient gradient-card-3"></div>
+                            <div class="visual-content">
+                                <div class="complete-check">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                        <path d="M4 12l6 6 10-12"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+        <div class="section-bg gradient-bg-3"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Brands <span class="gradient-text">Reimagined</span></h2>
+                <p class="section-subtitle">
+                    Explore the stunning transformations our AI has created for brands across industries.
+                </p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item large" data-aos="zoom-in">
+                    <div class="showcase-gradient gradient-showcase-1"></div>
+                    <div class="showcase-content">
+                        <span class="showcase-category">Tech Startup</span>
+                        <h3 class="showcase-title">NeuraPulse</h3>
+                        <p class="showcase-desc">AI-driven health monitoring rebrand</p>
+                    </div>
+                </div>
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="showcase-gradient gradient-showcase-2"></div>
+                    <div class="showcase-content">
+                        <span class="showcase-category">Fashion</span>
+                        <h3 class="showcase-title">Lumière</h3>
+                        <p class="showcase-desc">Sustainable luxury visual identity</p>
+                    </div>
+                </div>
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="showcase-gradient gradient-showcase-3"></div>
+                    <div class="showcase-content">
+                        <span class="showcase-category">Finance</span>
+                        <h3 class="showcase-title">Quantum Bank</h3>
+                        <p class="showcase-desc">Next-gen digital banking presence</p>
+                    </div>
+                </div>
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="showcase-gradient gradient-showcase-4"></div>
+                    <div class="showcase-content">
+                        <span class="showcase-category">Food & Beverage</span>
+                        <h3 class="showcase-title">Bloom Café</h3>
+                        <p class="showcase-desc">Artisanal coffee chain branding</p>
+                    </div>
+                </div>
+                <div class="showcase-item tall" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="showcase-gradient gradient-showcase-5"></div>
+                    <div class="showcase-content">
+                        <span class="showcase-category">Entertainment</span>
+                        <h3 class="showcase-title">Prism Studios</h3>
+                        <p class="showcase-desc">Immersive gaming experience identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-bg gradient-bg-4"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Loved by <span class="gradient-text-alt">Creators</span></h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active" data-aos="fade-up">
+                    <div class="testimonial-gradient"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            ChromaForge transformed our entire brand identity in days, not months.
+                            The AI understood our vision better than we could articulate it ourselves.
+                            Absolutely revolutionary.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar gradient-avatar-1"></div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Chen</span>
+                                <span class="author-role">CEO, NeuraPulse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-gradient"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            The color intelligence is unlike anything I've seen. It generated palettes
+                            that perfectly capture our sustainable ethos while feeling fresh and modern.
+                            Our customers noticed immediately.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar gradient-avatar-2"></div>
+                            <div class="author-info">
+                                <span class="author-name">Marcus Rivera</span>
+                                <span class="author-role">Creative Director, Lumière</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-gradient"></div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            We've tried every design tool on the market. ChromaForge is the first
+                            that truly feels like collaborating with a creative genius who never sleeps.
+                            Game-changing for our workflow.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar gradient-avatar-3"></div>
+                            <div class="author-info">
+                                <span class="author-name">Emma Watson</span>
+                                <span class="author-role">Head of Design, Quantum Bank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-bg gradient-bg-5"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Invest in <span class="gradient-text">Excellence</span></h2>
+                <p class="section-subtitle">
+                    Choose the plan that matches your creative ambitions.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">49</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-desc">Perfect for freelancers and small projects</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon"></span>50 AI generations/month</li>
+                        <li><span class="check-icon"></span>3 brand projects</li>
+                        <li><span class="check-icon"></span>Basic color intelligence</li>
+                        <li><span class="check-icon"></span>PNG & SVG exports</li>
+                        <li><span class="check-icon"></span>Email support</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-gradient"></div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">149</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-desc">For agencies and growing teams</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon"></span>Unlimited AI generations</li>
+                        <li><span class="check-icon"></span>15 brand projects</li>
+                        <li><span class="check-icon"></span>Advanced color systems</li>
+                        <li><span class="check-icon"></span>All export formats</li>
+                        <li><span class="check-icon"></span>Brand DNA analysis</li>
+                        <li><span class="check-icon"></span>Team collaboration (5 seats)</li>
+                        <li><span class="check-icon"></span>Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn-primary btn-block">Start Free Trial</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">Custom</span>
+                        </div>
+                        <p class="pricing-desc">For large organizations with complex needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon"></span>Everything in Professional</li>
+                        <li><span class="check-icon"></span>Unlimited brand projects</li>
+                        <li><span class="check-icon"></span>Custom AI model training</li>
+                        <li><span class="check-icon"></span>API access</li>
+                        <li><span class="check-icon"></span>SSO & advanced security</li>
+                        <li><span class="check-icon"></span>Unlimited team seats</li>
+                        <li><span class="check-icon"></span>Dedicated account manager</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg">
+            <div class="cta-orb orb-1"></div>
+            <div class="cta-orb orb-2"></div>
+            <div class="cta-orb orb-3"></div>
+            <div class="cta-mesh"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Transform Your Brand?</h2>
+                <p class="cta-subtitle">
+                    Join thousands of forward-thinking brands already creating
+                    the future of visual identity with ChromaForge AI.
+                </p>
+                <form class="cta-form" id="cta-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">
+                            <span>Start Free Trial</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">14-day free trial • No credit card required • Cancel anytime</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                        <stop offset="50%" style="stop-color:#9B59B6"/>
+                                        <stop offset="100%" style="stop-color:#3498DB"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="20" cy="20" r="18" stroke="url(#logoGradientFooter)" stroke-width="3" fill="none"/>
+                                <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="url(#logoGradientFooter)" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="20" cy="20" r="4" fill="url(#logoGradientFooter)"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">ChromaForge</span>
+                    </a>
+                    <p class="footer-desc">
+                        Transforming brands through the power of AI-driven design.
+                        Where creativity meets intelligence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm7.369 5.897a10.212 10.212 0 012.466 6.391c-2.872-.576-5.478-.51-7.818-.088a33.67 33.67 0 00-.811-1.757c2.556-1.08 4.764-2.57 6.163-4.546zM12 1.857c2.552 0 4.89.926 6.695 2.459-1.28 1.807-3.339 3.18-5.722 4.158a42.37 42.37 0 00-3.9-6.016A10.144 10.144 0 0112 1.857zm-4.053.884a40.87 40.87 0 013.858 5.907c-3.139.884-6.815 1.261-10.028 1.139a10.174 10.174 0 016.17-7.046zm-6.09 8.39c3.592.07 7.61-.364 11.063-1.408.227.45.447.906.655 1.365-4.227 1.313-7.457 4.222-9.36 7.55a10.175 10.175 0 01-2.358-7.507zm4.171 8.817c1.755-3.154 4.734-5.907 8.63-7.101.886 2.305 1.555 4.782 1.9 7.332a10.195 10.195 0 01-10.53-.231zm12.397-1.028c-.385-2.345-1-4.646-1.8-6.793 2.088-.337 4.429-.303 7.027.21a10.178 10.178 0 01-5.227 6.583z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ChromaForge AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
