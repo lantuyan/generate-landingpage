@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --accent-1: #6366f1;
+            --accent-2: #ec4899;
+            --accent-3: #22d3ee;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Background gradient orbs */
+        .bg-orbs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: var(--accent-1);
+            top: -200px;
+            left: -200px;
+        }
+
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent-2);
+            bottom: -150px;
+            right: -150px;
+            animation-delay: -10s;
+        }
+
+        .orb-3 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent-3);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -30px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a0a0b0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-3), var(--accent-1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+            padding: 40px 0 80px;
+        }
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            border-radius: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .card-style {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent-3);
+            margin-bottom: 12px;
+        }
+
+        .card-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .card-arrow {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .card:hover .card-arrow {
+            background: var(--accent-1);
+            transform: translateX(4px);
+        }
+
+        .card-arrow svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--text-secondary);
+            transition: stroke 0.3s;
+        }
+
+        .card:hover .card-arrow svg {
+            stroke: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 0 24px;
+            }
+
+            .stats {
+                gap: 32px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="badge">🎨 Design Collection</div>
+            <h1>Landing Page Gallery</h1>
+            <p class="subtitle">Bộ sưu tập các landing page với đa dạng phong cách thiết kế, từ Japandi thanh lịch đến
+                Cyberpunk táo bạo.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value" id="total-count">0</div>
+                    <div class="stat-label">Landing Pages</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" id="style-count">0</div>
+                    <div class="stat-label">Design Styles</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="grid" id="landing-grid">
+            <!-- Cards will be injected by JavaScript -->
+        </main>
+
+        <footer>
+            <p>Landing Page Collection &copy; 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        // Landing page data
+        const landingPages = [
+            { folder: 'first-landing-page', name: 'First Landing Page', style: 'Starter', desc: 'Trang landing page đầu tiên trong bộ sưu tập.' },
+            { folder: 'second-landing-page', name: 'Second Landing Page', style: 'Starter', desc: 'Trang landing page thứ hai trong bộ sưu tập.' },
+            { folder: '3-landing-page', name: 'Serenity', style: 'Japandi', desc: 'Dịch vụ tư vấn sống có chủ đích, kết hợp minimalism Nhật Bản và hygge Scandinavia.' },
+            { folder: '4-landing-page', name: 'Swiss Design', style: 'Swiss/International', desc: 'Thiết kế chính xác với grid system, typography mạnh mẽ và màu đỏ accent.' },
+            { folder: '5-landing-page', name: 'Serenity Cloud', style: 'Glassmorphism', desc: 'Nền tảng wellness với hiệu ứng kính mờ, gradient orbs và animations mượt mà.' },
+            { folder: '6-landing-page', name: 'The Gilded Glass', style: 'Art Deco', desc: 'Dịch vụ cocktail subscription cao cấp với họa tiết hình học và tông màu jewel.' },
+            { folder: '7-landing-page', name: 'Komorebi', style: 'Japandi', desc: 'Bộ sưu tập nội thất thủ công, thể hiện tinh thần wabi-sabi và hygge.' },
+            { folder: '8-landing-page', name: 'NexusShield', style: 'Dark Mode First', desc: 'Nền tảng bảo mật mạng với giao diện command center và neon accents.' },
+            { folder: '9-landing-page', name: 'Neon Grid Arcade', style: 'Retro-Futuristic', desc: 'Trung tâm gaming VR với synthwave aesthetics và grid perspective.' },
+            { folder: '10-landing-page', name: 'Florae', style: 'Organic/Fluid', desc: 'Thương hiệu skincare sinh học với blob animations và màu sắc đất.' },
+            { folder: '11-landing-page', name: 'The Broadsheet', style: 'Typography First', desc: 'Newsletter editorial cao cấp với typography là trung tâm thiết kế.' },
+            { folder: '12-landing-page', name: 'Formwerk', style: 'Bauhaus', desc: 'Không gian co-working với hình học cơ bản và màu primary colors.' },
+            { folder: '13-landing-page', name: 'Élévation', style: 'Luxury Minimal', desc: 'Membership hàng không tư nhân với thẩm mỹ sang trọng tiết chế.' },
+        ];
+
+        // Check if landing page exists and render
+        async function checkAndRender() {
+            const grid = document.getElementById('landing-grid');
+            const existingPages = [];
+            const styles = new Set();
+
+            for (const page of landingPages) {
+                try {
+                    const response = await fetch(`${page.folder}/index.html`, { method: 'HEAD' });
+                    if (response.ok) {
+                        existingPages.push(page);
+                        styles.add(page.style);
+                    }
+                } catch (e) {
+                    // Page doesn't exist, skip
+                }
+            }
+
+            // Update stats
+            document.getElementById('total-count').textContent = existingPages.length;
+            document.getElementById('style-count').textContent = styles.size;
+
+            // Render cards
+            grid.innerHTML = existingPages.map((page, index) => `
+                <a href="${page.folder}/index.html" class="card">
+                    <div class="card-number">${index + 1}</div>
+                    <h2 class="card-title">${page.name}</h2>
+                    <span class="card-style">${page.style}</span>
+                    <p class="card-desc">${page.desc}</p>
+                    <div class="card-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </div>
+                </a>
+            `).join('');
+
+            // Animate cards on scroll
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach((card, i) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.5s ease ${i * 0.05}s`;
+                observer.observe(card);
+            });
+        }
+
+        // Run on load
+        checkAndRender();
+    </script>
+</body>
+
+</html>
