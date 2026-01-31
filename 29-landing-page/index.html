@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaySpace | Where Serious Work Gets Unserious</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating geometric shapes -->
+    <div class="floating-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+        <div class="shape shape-7"></div>
+        <div class="shape shape-8"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">PlaySpace</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#spaces">Spaces</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join" class="nav-cta">Join The Party</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="wiggle">★</span> NOW OPEN IN 12 CITIES <span class="wiggle">★</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Work Is</span>
+                <span class="title-line title-accent">Play.</span>
+                <span class="title-line">Play Is</span>
+                <span class="title-line title-accent">Work.</span>
+            </h1>
+            <p class="hero-subtitle">
+                A creative co-working space where deadlines meet doodles,
+                brainstorms become art, and your best ideas happen while bouncing on a yoga ball.
+            </p>
+            <div class="hero-cta">
+                <a href="#join" class="btn btn-primary">
+                    <span>Get Your Desk</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#spaces" class="btn btn-secondary">Take A Tour</a>
+            </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+            <div class="geo-composition">
+                <div class="geo geo-circle"></div>
+                <div class="geo geo-triangle"></div>
+                <div class="geo geo-squiggle"></div>
+                <div class="geo geo-dots"></div>
+                <div class="geo geo-zigzag"></div>
+                <div class="geo geo-square"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="spaces">
+        <div class="section-header">
+            <div class="squiggle-line" aria-hidden="true"></div>
+            <h2 class="section-title">Our Playgrounds</h2>
+            <p class="section-subtitle">Where cubicles go to die and creativity comes to life</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-color="yellow">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <circle cx="50" cy="50" r="40" fill="currentColor"/>
+                        <rect x="35" y="35" width="30" height="30" fill="#000"/>
+                    </svg>
+                </div>
+                <h3>The Bounce Zone</h3>
+                <p>Standing desks are so 2015. Try our bouncy ball workstations, hammock pods, and swing chairs. Your spine will thank us.</p>
+                <div class="feature-pattern pattern-dots" aria-hidden="true"></div>
+            </div>
+            <div class="feature-card" data-color="pink">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <polygon points="50,10 90,90 10,90" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Chaos Corner</h3>
+                <p>A dedicated space for messy brainstorming. Whiteboards everywhere, markers galore, and zero judgment for talking to yourself.</p>
+                <div class="feature-pattern pattern-zigzag" aria-hidden="true"></div>
+            </div>
+            <div class="feature-card" data-color="blue">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <rect x="20" y="20" width="60" height="60" fill="currentColor" transform="rotate(15 50 50)"/>
+                    </svg>
+                </div>
+                <h3>The Quiet Riot</h3>
+                <p>Silent focus rooms for when you need to ship. Soundproofed, distraction-free, but still aesthetically rebellious.</p>
+                <div class="feature-pattern pattern-lines" aria-hidden="true"></div>
+            </div>
+            <div class="feature-card" data-color="green">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M50,10 Q90,50 50,90 Q10,50 50,10" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Collision Lab</h3>
+                <p>Open collaboration space designed for accidental genius. Serendipitous encounters mandatory. Networking happens naturally.</p>
+                <div class="feature-pattern pattern-squiggle" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="workshops" id="workshops">
+        <div class="workshops-bg" aria-hidden="true">
+            <div class="memphis-pattern"></div>
+        </div>
+        <div class="section-header">
+            <h2 class="section-title">Creative Fuel</h2>
+            <p class="section-subtitle">Weekly workshops to stretch your brain in weird directions</p>
+        </div>
+        <div class="workshops-carousel">
+            <div class="workshop-card">
+                <div class="workshop-date">
+                    <span class="day">MON</span>
+                    <span class="time">2PM</span>
+                </div>
+                <h3>Doodle Your Way to Solutions</h3>
+                <p>Turn complex problems into silly drawings. Watch as clarity emerges from chaos.</p>
+                <span class="workshop-tag">Thinking</span>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-date">
+                    <span class="day">WED</span>
+                    <span class="time">11AM</span>
+                </div>
+                <h3>Improv for Introverts</h3>
+                <p>Yes-and your way through social anxiety. No audience, just awkward fun together.</p>
+                <span class="workshop-tag">Connection</span>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-date">
+                    <span class="day">THU</span>
+                    <span class="time">4PM</span>
+                </div>
+                <h3>Bad Idea Brainstorm</h3>
+                <p>The worst ideas often hide the best ones. We celebrate terrible suggestions.</p>
+                <span class="workshop-tag">Innovation</span>
+            </div>
+            <div class="workshop-card">
+                <div class="workshop-date">
+                    <span class="day">FRI</span>
+                    <span class="time">3PM</span>
+                </div>
+                <h3>Cardboard Prototyping</h3>
+                <p>Build your app, product, or dreams out of boxes and tape. Lo-fi magic.</p>
+                <span class="workshop-tag">Making</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="12">0</div>
+                <div class="stat-label">Cities Worldwide</div>
+                <div class="stat-shape shape-circle" aria-hidden="true"></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="4500">0</div>
+                <div class="stat-label">Happy Weirdos</div>
+                <div class="stat-shape shape-triangle" aria-hidden="true"></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="89">0</div>
+                <div class="stat-label">% Report More Joy</div>
+                <div class="stat-shape shape-square" aria-hidden="true"></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="∞">∞</div>
+                <div class="stat-label">Coffee Refills</div>
+                <div class="stat-shape shape-squiggle" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="section-header">
+            <h2 class="section-title">Upcoming Chaos</h2>
+            <p class="section-subtitle">Monthly events that spark unexpected connections</p>
+        </div>
+        <div class="events-grid">
+            <article class="event-card event-featured">
+                <div class="event-image">
+                    <div class="event-visual" aria-hidden="true">
+                        <div class="event-geo geo-1"></div>
+                        <div class="event-geo geo-2"></div>
+                        <div class="event-geo geo-3"></div>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <span class="event-date">FEB 14</span>
+                    <h3>Anti-Valentine's Networking</h3>
+                    <p>Skip the romance, find a co-founder. Speed networking with zero small talk about weather allowed.</p>
+                    <a href="#" class="event-link">RSVP →</a>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-content">
+                    <span class="event-date">FEB 21</span>
+                    <h3>Show & Tell Night</h3>
+                    <p>Share what you're building. No pitch decks. Just passion projects and honest feedback.</p>
+                    <a href="#" class="event-link">RSVP →</a>
+                </div>
+            </article>
+            <article class="event-card">
+                <div class="event-content">
+                    <span class="event-date">FEB 28</span>
+                    <h3>Failure Festival</h3>
+                    <p>Celebrate your biggest flops. Learn from spectacular mistakes. Prizes for worst pivot story.</p>
+                    <a href="#" class="event-link">RSVP →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-pattern" aria-hidden="true"></div>
+        <div class="section-header">
+            <h2 class="section-title">Happy Rebels</h2>
+        </div>
+        <div class="testimonials-grid">
+            <blockquote class="testimonial-card">
+                <div class="testimonial-shape" aria-hidden="true"></div>
+                <p>"I thought I needed a 'real' office. Turns out I needed a ball pit adjacent to my desk. Productivity up 200%."</p>
+                <cite>
+                    <strong>Maya Chen</strong>
+                    <span>Founder, PixelPop Studios</span>
+                </cite>
+            </blockquote>
+            <blockquote class="testimonial-card">
+                <div class="testimonial-shape" aria-hidden="true"></div>
+                <p>"Met my technical co-founder during a paper airplane competition. Now we're Series A funded. Thanks, PlaySpace."</p>
+                <cite>
+                    <strong>Jordan Rivera</strong>
+                    <span>CEO, CloudBounce</span>
+                </cite>
+            </blockquote>
+            <blockquote class="testimonial-card">
+                <div class="testimonial-shape" aria-hidden="true"></div>
+                <p>"The chaos here is intentional and magical. It's like kindergarten for adults who take their work seriously."</p>
+                <cite>
+                    <strong>Sam Okonkwo</strong>
+                    <span>Creative Director, Freelance</span>
+                </cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="join">
+        <div class="section-header">
+            <div class="confetti" aria-hidden="true"></div>
+            <h2 class="section-title">Join The Party</h2>
+            <p class="section-subtitle">Pick your level of creative chaos</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Dabbler</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">◆</span> 5 days per month access</li>
+                    <li><span class="check">◆</span> All common areas</li>
+                    <li><span class="check">◆</span> 2 workshops included</li>
+                    <li><span class="check">◆</span> Unlimited coffee & snacks</li>
+                    <li><span class="check">◆</span> Community events</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Start Dabbling</a>
+            </div>
+            <div class="pricing-card pricing-featured">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Rebel</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">◆</span> Unlimited access</li>
+                    <li><span class="check">◆</span> Dedicated desk</li>
+                    <li><span class="check">◆</span> All workshops free</li>
+                    <li><span class="check">◆</span> Meeting room credits</li>
+                    <li><span class="check">◆</span> 24/7 access</li>
+                    <li><span class="check">◆</span> Mail handling</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Go Rebel</a>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Crew</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">799</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">◆</span> Team of up to 5</li>
+                    <li><span class="check">◆</span> Private team zone</li>
+                    <li><span class="check">◆</span> Custom workshops</li>
+                    <li><span class="check">◆</span> Unlimited meeting rooms</li>
+                    <li><span class="check">◆</span> Event hosting privileges</li>
+                    <li><span class="check">◆</span> VIP parking</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Bring Your Crew</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-shapes" aria-hidden="true">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+            <div class="cta-shape cta-shape-4"></div>
+        </div>
+        <div class="cta-content">
+            <h2>Ready to Work Different?</h2>
+            <p>Book a tour and see why boring offices are becoming extinct.</p>
+            <form class="cta-form">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit" class="btn btn-primary">
+                    <span>Book A Tour</span>
+                    <span class="btn-confetti" aria-hidden="true">🎉</span>
+                </button>
+            </form>
+            <p class="cta-note">Free trial week for first-timers. No credit card needed.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern" aria-hidden="true"></div>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">PlaySpace</span>
+                </a>
+                <p>Where serious work gets unserious. Making creativity contagious since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Spaces</h4>
+                    <ul>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Berlin</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PlaySpace. All rights reserved. Stay weird.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#spaces">Spaces</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#join" class="nav-cta">Join The Party</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
