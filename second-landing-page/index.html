@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stillroom — Seasonal Rituals for Quiet Living</title>
+    <meta name="description" content="A quarterly curation of artisan-made objects for mindful daily rituals. Ceramic, botanical, linen, light.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ========================================
+           CSS CUSTOM PROPERTIES — JAPANDI PALETTE
+           ======================================== */
+        :root {
+            /* Warm neutrals */
+            --color-cream: #F7F5F2;
+            --color-warm-white: #FDFCFA;
+            --color-paper: #EDE9E3;
+            --color-linen: #E5E0D8;
+
+            /* Earth tones */
+            --color-stone: #A8A39A;
+            --color-clay: #C4AA8C;
+            --color-terracotta: #B8917A;
+            --color-moss: #8B9A82;
+            --color-sage: #A3B09A;
+
+            /* Deep tones */
+            --color-charcoal: #2D2926;
+            --color-ink: #1A1816;
+            --color-warm-gray: #6B6560;
+
+            /* Accent */
+            --color-blush: #D4C4BC;
+            --color-mist: #C8D1CA;
+
+            /* Typography */
+            --font-serif: 'Cormorant', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+
+            /* Spacing scale */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+            --space-2xl: 10rem;
+
+            /* Transitions */
+            --ease-slow: cubic-bezier(0.4, 0, 0.2, 1);
+            --duration-slow: 0.8s;
+            --duration-medium: 0.5s;
+        }
+
+        /* ========================================
+           RESET & BASE
+           ======================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 300;
+            background-color: var(--color-cream);
+            color: var(--color-charcoal);
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: var(--color-sage);
+            color: var(--color-warm-white);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        .heading-xl {
+            font-family: var(--font-serif);
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 300;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .heading-lg {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        .heading-md {
+            font-family: var(--font-serif);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        .heading-sm {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-stone);
+        }
+
+        .body-lg {
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+
+        .body-md {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .body-sm {
+            font-size: 0.875rem;
+            line-height: 1.7;
+            color: var(--color-warm-gray);
+        }
+
+        /* ========================================
+           LAYOUT UTILITIES
+           ======================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .container--narrow {
+            max-width: 800px;
+        }
+
+        .container--wide {
+            max-width: 1400px;
+        }
+
+        .section {
+            padding: var(--space-2xl) 0;
+        }
+
+        .section--compact {
+            padding: var(--space-xl) 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* ========================================
+           ANIMATION UTILITIES
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity var(--duration-slow) var(--ease-slow),
+                        transform var(--duration-slow) var(--ease-slow);
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ========================================
+           HEADER / NAVIGATION
+           ======================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: var(--space-md) 0;
+            background: transparent;
+            transition: background var(--duration-medium) var(--ease-slow),
+                        padding var(--duration-medium) var(--ease-slow);
+        }
+
+        .header.is-scrolled {
+            background: rgba(247, 245, 242, 0.95);
+            backdrop-filter: blur(10px);
+            padding: var(--space-sm) 0;
+        }
+
+        .header__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .logo span {
+            font-weight: 300;
+            opacity: 0.6;
+        }
+
+        .nav {
+            display: flex;
+            gap: var(--space-lg);
+        }
+
+        .nav__link {
+            font-size: 0.8125rem;
+            letter-spacing: 0.05em;
+            position: relative;
+            transition: color var(--duration-medium) var(--ease-slow);
+        }
+
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--color-charcoal);
+            transition: width var(--duration-medium) var(--ease-slow);
+        }
+
+        .nav__link:hover::after {
+            width: 100%;
+        }
+
+        .nav__cta {
+            font-size: 0.8125rem;
+            letter-spacing: 0.05em;
+            padding: 0.625rem 1.25rem;
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+            border-radius: 2px;
+            transition: all var(--duration-medium) var(--ease-slow);
+        }
+
+        .nav__cta:hover {
+            background: var(--color-ink);
+        }
+
+        /* Mobile nav toggle */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .nav-toggle span {
+            width: 24px;
+            height: 1px;
+            background: var(--color-charcoal);
+            transition: all var(--duration-medium) var(--ease-slow);
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background: var(--color-cream);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--space-lg);
+                transition: right var(--duration-medium) var(--ease-slow);
+            }
+
+            .nav.is-open {
+                right: 0;
+            }
+
+            .nav__link {
+                font-size: 1.25rem;
+            }
+        }
+
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(
+                180deg,
+                var(--color-warm-white) 0%,
+                var(--color-cream) 100%
+            );
+            overflow: hidden;
+        }
+
+        .hero__bg-element {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .hero__bg-element--1 {
+            top: 10%;
+            right: 15%;
+            width: 400px;
+            height: 400px;
+            background: var(--color-sage);
+            animation: float-slow 20s ease-in-out infinite;
+        }
+
+        .hero__bg-element--2 {
+            bottom: 20%;
+            left: 10%;
+            width: 300px;
+            height: 300px;
+            background: var(--color-clay);
+            animation: float-slow 25s ease-in-out infinite reverse;
+        }
+
+        .hero__bg-element--3 {
+            top: 40%;
+            left: 30%;
+            width: 200px;
+            height: 200px;
+            background: var(--color-mist);
+            animation: float-slow 18s ease-in-out infinite;
+        }
+
+        @keyframes float-slow {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .hero__content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 var(--space-md);
+        }
+
+        .hero__overline {
+            display: inline-block;
+            margin-bottom: var(--space-md);
+            padding: 0.5rem 1rem;
+            background: rgba(139, 154, 130, 0.15);
+            border-radius: 2px;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-moss);
+        }
+
+        .hero__title {
+            margin-bottom: var(--space-md);
+        }
+
+        .hero__subtitle {
+            max-width: 600px;
+            margin: 0 auto var(--space-lg);
+            color: var(--color-warm-gray);
+        }
+
+        .hero__cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            justify-content: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .hero__scroll {
+            position: absolute;
+            bottom: var(--space-lg);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--color-stone);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            animation: gentle-bounce 3s ease-in-out infinite;
+        }
+
+        .hero__scroll-line {
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--color-stone), transparent);
+        }
+
+        @keyframes gentle-bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.875rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all var(--duration-medium) var(--ease-slow);
+        }
+
+        .btn--primary {
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+        }
+
+        .btn--primary:hover {
+            background: var(--color-ink);
+            transform: translateY(-2px);
+        }
+
+        .btn--secondary {
+            background: transparent;
+            color: var(--color-charcoal);
+            border: 1px solid var(--color-linen);
+        }
+
+        .btn--secondary:hover {
+            border-color: var(--color-charcoal);
+        }
+
+        .btn--ghost {
+            background: transparent;
+            color: var(--color-charcoal);
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-linen);
+            border-radius: 0;
+        }
+
+        .btn--ghost:hover {
+            border-color: var(--color-charcoal);
+        }
+
+        .btn__arrow {
+            transition: transform var(--duration-medium) var(--ease-slow);
+        }
+
+        .btn:hover .btn__arrow {
+            transform: translateX(4px);
+        }
+
+        /* ========================================
+           PHILOSOPHY SECTION
+           ======================================== */
+        .philosophy {
+            background: var(--color-cream);
+            position: relative;
+        }
+
+        .philosophy__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .philosophy__grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        .philosophy__visual {
+            position: relative;
+            aspect-ratio: 4/5;
+            background: var(--color-paper);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .philosophy__image-placeholder {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: var(--space-sm);
+            background: linear-gradient(
+                135deg,
+                var(--color-paper) 0%,
+                var(--color-linen) 100%
+            );
+        }
+
+        /* Decorative ceramic illustration */
+        .ceramic-vessel {
+            width: 120px;
+            height: 160px;
+            position: relative;
+        }
+
+        .ceramic-vessel__body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                135deg,
+                var(--color-warm-white) 0%,
+                var(--color-blush) 50%,
+                var(--color-linen) 100%
+            );
+            border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+            box-shadow:
+                inset -20px -10px 30px rgba(0,0,0,0.05),
+                inset 10px 10px 20px rgba(255,255,255,0.8);
+        }
+
+        .ceramic-vessel__rim {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 15px;
+            background: var(--color-cream);
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .philosophy__accent {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: var(--color-sage);
+            opacity: 0.3;
+            border-radius: 50%;
+            filter: blur(40px);
+            top: 20%;
+            right: -10%;
+        }
+
+        .philosophy__content {
+            padding: var(--space-lg) 0;
+        }
+
+        .philosophy__overline {
+            margin-bottom: var(--space-sm);
+        }
+
+        .philosophy__title {
+            margin-bottom: var(--space-md);
+        }
+
+        .philosophy__text {
+            margin-bottom: var(--space-md);
+            color: var(--color-warm-gray);
+        }
+
+        .philosophy__values {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        @media (max-width: 500px) {
+            .philosophy__values {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .value-item {
+            padding: var(--space-md);
+            background: var(--color-warm-white);
+            border-radius: 2px;
+            border-left: 2px solid var(--color-sage);
+        }
+
+        .value-item__title {
+            font-family: var(--font-serif);
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-item__text {
+            font-size: 0.875rem;
+            color: var(--color-warm-gray);
+        }
+
+        /* ========================================
+           RITUAL / PRODUCT SECTION
+           ======================================== */
+        .ritual {
+            background: var(--color-warm-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ritual::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                var(--color-linen) 20%,
+                var(--color-linen) 80%,
+                transparent 100%
+            );
+        }
+
+        .ritual__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        .ritual__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+
+        @media (max-width: 900px) {
+            .ritual__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .ritual__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ritual-card {
+            background: var(--color-cream);
+            border-radius: 2px;
+            overflow: hidden;
+            transition: transform var(--duration-medium) var(--ease-slow);
+        }
+
+        .ritual-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .ritual-card__image {
+            aspect-ratio: 1;
+            background: var(--color-paper);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ritual-card__icon {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ritual-icon {
+            width: 80px;
+            height: 80px;
+            opacity: 0.7;
+        }
+
+        /* SVG icon styles */
+        .ritual-icon--tea {
+            background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-moss) 100%);
+            border-radius: 50% 50% 45% 45% / 40% 40% 60% 60%;
+        }
+
+        .ritual-icon--candle {
+            background: linear-gradient(135deg, var(--color-clay) 0%, var(--color-terracotta) 100%);
+            border-radius: 5% 5% 50% 50% / 5% 5% 30% 30%;
+            position: relative;
+        }
+
+        .ritual-icon--candle::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 20px;
+            background: linear-gradient(to top, var(--color-clay), #FFE4B5);
+            border-radius: 50% 50% 20% 20%;
+        }
+
+        .ritual-icon--linen {
+            background: linear-gradient(135deg, var(--color-linen) 0%, var(--color-blush) 100%);
+            border-radius: 2px;
+            transform: rotate(5deg);
+        }
+
+        .ritual-icon--botanical {
+            background: radial-gradient(circle at 30% 30%, var(--color-mist) 0%, var(--color-sage) 100%);
+            border-radius: 60% 40% 50% 50% / 50% 50% 50% 50%;
+        }
+
+        .ritual-icon--stone {
+            background: linear-gradient(160deg, var(--color-stone) 0%, var(--color-warm-gray) 100%);
+            border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
+        }
+
+        .ritual-icon--paper {
+            background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-paper) 100%);
+            border-radius: 2px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .ritual-card__content {
+            padding: var(--space-md);
+        }
+
+        .ritual-card__category {
+            font-size: 0.6875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-stone);
+            margin-bottom: 0.5rem;
+        }
+
+        .ritual-card__title {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ritual-card__text {
+            font-size: 0.875rem;
+            color: var(--color-warm-gray);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           SEASONAL SECTION
+           ======================================== */
+        .seasonal {
+            background: var(--color-paper);
+            position: relative;
+        }
+
+        .seasonal__grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .seasonal__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .seasonal__content {
+            order: 1;
+        }
+
+        @media (max-width: 900px) {
+            .seasonal__content {
+                order: 2;
+            }
+        }
+
+        .seasonal__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--color-moss);
+            color: var(--color-cream);
+            font-size: 0.6875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            margin-bottom: var(--space-md);
+        }
+
+        .seasonal__badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--color-cream);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .seasonal__title {
+            margin-bottom: var(--space-sm);
+        }
+
+        .seasonal__subtitle {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--color-terracotta);
+            margin-bottom: var(--space-md);
+        }
+
+        .seasonal__text {
+            margin-bottom: var(--space-lg);
+            color: var(--color-warm-gray);
+        }
+
+        .seasonal__includes {
+            margin-bottom: var(--space-lg);
+        }
+
+        .seasonal__includes-title {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-stone);
+            margin-bottom: var(--space-sm);
+        }
+
+        .seasonal__list {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .seasonal__list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.9375rem;
+        }
+
+        .seasonal__list-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .seasonal__list-icon circle {
+            fill: var(--color-sage);
+        }
+
+        .seasonal__list-icon path {
+            stroke: var(--color-cream);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .seasonal__visual {
+            position: relative;
+            order: 2;
+        }
+
+        @media (max-width: 900px) {
+            .seasonal__visual {
+                order: 1;
+            }
+        }
+
+        .seasonal__box {
+            aspect-ratio: 4/3;
+            background: var(--color-cream);
+            border-radius: 2px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .box-illustration {
+            width: 200px;
+            height: 140px;
+            background: var(--color-warm-white);
+            border-radius: 4px;
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.08),
+                0 5px 20px rgba(0,0,0,0.04);
+            position: relative;
+        }
+
+        .box-illustration::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            background: var(--color-linen);
+            transform: translateY(-50%);
+        }
+
+        .box-illustration::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 50%;
+            width: 1px;
+            background: var(--color-linen);
+            transform: translateX(-50%);
+        }
+
+        .seasonal__accent {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.5;
+        }
+
+        .seasonal__accent--1 {
+            background: var(--color-terracotta);
+            top: -50px;
+            right: -50px;
+        }
+
+        .seasonal__accent--2 {
+            background: var(--color-sage);
+            bottom: -50px;
+            left: -50px;
+        }
+
+        /* ========================================
+           PROCESS SECTION
+           ======================================== */
+        .process {
+            background: var(--color-cream);
+        }
+
+        .process__header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        .process__steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-md);
+            position: relative;
+        }
+
+        .process__steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 1px;
+            background: var(--color-linen);
+        }
+
+        @media (max-width: 900px) {
+            .process__steps {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process__steps::before {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .process__steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 0 var(--space-sm);
+        }
+
+        .process-step__number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--space-md);
+            background: var(--color-warm-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--color-moss);
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step__title {
+            font-family: var(--font-serif);
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step__text {
+            font-size: 0.875rem;
+            color: var(--color-warm-gray);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           TESTIMONIALS SECTION
+           ======================================== */
+        .testimonials {
+            background: var(--color-warm-white);
+            position: relative;
+        }
+
+        .testimonials__header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .testimonials__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+
+        @media (max-width: 900px) {
+            .testimonials__grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        .testimonial {
+            background: var(--color-cream);
+            padding: var(--space-lg);
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: var(--space-md);
+            left: var(--space-md);
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--color-sage);
+            opacity: 0.3;
+        }
+
+        .testimonial__text {
+            font-family: var(--font-serif);
+            font-size: 1.125rem;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .testimonial__avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-linen) 0%, var(--color-blush) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--color-warm-gray);
+        }
+
+        .testimonial__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial__name {
+            font-weight: 400;
+            font-size: 0.9375rem;
+        }
+
+        .testimonial__location {
+            font-size: 0.8125rem;
+            color: var(--color-stone);
+        }
+
+        /* ========================================
+           PRICING SECTION
+           ======================================== */
+        .pricing {
+            background: var(--color-paper);
+        }
+
+        .pricing__header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        .pricing__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 700px) {
+            .pricing__cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pricing-card {
+            background: var(--color-cream);
+            border-radius: 2px;
+            padding: var(--space-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card--featured {
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+        }
+
+        .pricing-card--featured .pricing-card__price,
+        .pricing-card--featured .pricing-card__period,
+        .pricing-card--featured .pricing-card__feature {
+            color: var(--color-cream);
+        }
+
+        .pricing-card--featured .pricing-card__feature::before {
+            background: var(--color-sage);
+        }
+
+        .pricing-card__badge {
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            padding: 0.375rem 0.75rem;
+            background: var(--color-sage);
+            color: var(--color-cream);
+            font-size: 0.6875rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 2px;
+        }
+
+        .pricing-card__name {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-stone);
+            margin-bottom: var(--space-sm);
+        }
+
+        .pricing-card--featured .pricing-card__name {
+            color: var(--color-stone);
+        }
+
+        .pricing-card__price {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .pricing-card__period {
+            font-size: 0.875rem;
+            color: var(--color-warm-gray);
+            margin-bottom: var(--space-md);
+        }
+
+        .pricing-card__description {
+            font-size: 0.9375rem;
+            color: var(--color-warm-gray);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--color-linen);
+        }
+
+        .pricing-card--featured .pricing-card__description {
+            border-color: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        .pricing-card__features {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .pricing-card__feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.9375rem;
+        }
+
+        .pricing-card__feature::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            margin-top: 3px;
+            background: var(--color-moss);
+            border-radius: 50%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F7F5F2' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E");
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .pricing-card__cta {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .pricing-card--featured .btn--primary {
+            background: var(--color-cream);
+            color: var(--color-charcoal);
+        }
+
+        .pricing-card--featured .btn--primary:hover {
+            background: var(--color-warm-white);
+        }
+
+        /* ========================================
+           FINAL CTA SECTION
+           ======================================== */
+        .cta-final {
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-final__bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background:
+                radial-gradient(circle at 20% 50%, var(--color-sage) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, var(--color-terracotta) 0%, transparent 50%);
+        }
+
+        .cta-final__content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-final__title {
+            margin-bottom: var(--space-md);
+        }
+
+        .cta-final__text {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: var(--space-lg);
+        }
+
+        .cta-final .btn--primary {
+            background: var(--color-cream);
+            color: var(--color-charcoal);
+        }
+
+        .cta-final .btn--primary:hover {
+            background: var(--color-warm-white);
+        }
+
+        .cta-final__note {
+            margin-top: var(--space-md);
+            font-size: 0.8125rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            background: var(--color-ink);
+            color: var(--color-cream);
+            padding: var(--space-xl) 0 var(--space-lg);
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        @media (max-width: 900px) {
+            .footer__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .footer__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer__brand {
+            max-width: 300px;
+        }
+
+        .footer__logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer__tagline {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.7;
+        }
+
+        .footer__nav-title {
+            font-size: 0.6875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer__nav-list {
+            list-style: none;
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        .footer__nav-link {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.7);
+            transition: color var(--duration-medium) var(--ease-slow);
+        }
+
+        .footer__nav-link:hover {
+            color: var(--color-cream);
+        }
+
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 600px) {
+            .footer__bottom {
+                flex-direction: column;
+                gap: var(--space-sm);
+                text-align: center;
+            }
+        }
+
+        .footer__copyright {
+            font-size: 0.8125rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .footer__social {
+            display: flex;
+            gap: var(--space-sm);
+        }
+
+        .footer__social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            transition: background var(--duration-medium) var(--ease-slow);
+        }
+
+        .footer__social-link:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .footer__social-link svg {
+            width: 18px;
+            height: 18px;
+            fill: rgba(255,255,255,0.6);
+        }
+
+        /* ========================================
+           DECORATIVE ELEMENTS
+           ======================================== */
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: var(--color-linen);
+            margin: var(--space-md) auto;
+        }
+
+        .divider--accent {
+            background: var(--color-sage);
+        }
+
+        /* Japanese-inspired stamp */
+        .stamp {
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--color-terracotta);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--color-terracotta);
+            transform: rotate(-5deg);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Stillroom <span>Co.</span></a>
+
+                <nav class="nav" id="nav">
+                    <a href="#philosophy" class="nav__link">Philosophy</a>
+                    <a href="#rituals" class="nav__link">Rituals</a>
+                    <a href="#seasonal" class="nav__link">Current Box</a>
+                    <a href="#pricing" class="nav__link">Subscribe</a>
+                    <a href="#subscribe" class="nav__cta">Begin Your Ritual</a>
+                </nav>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-element hero__bg-element--1"></div>
+        <div class="hero__bg-element hero__bg-element--2"></div>
+        <div class="hero__bg-element hero__bg-element--3"></div>
+
+        <div class="hero__content">
+            <span class="hero__overline reveal">Seasonal Ritual Subscription</span>
+
+            <h1 class="heading-xl hero__title reveal reveal-delay-1">
+                Objects for<br>Quiet Living
+            </h1>
+
+            <p class="body-lg hero__subtitle reveal reveal-delay-2">
+                A quarterly curation of artisan-made vessels, botanicals, and textiles—designed to bring intention to your everyday rituals.
+            </p>
+
+            <div class="hero__cta-group reveal reveal-delay-3">
+                <a href="#subscribe" class="btn btn--primary">
+                    Discover Your First Box
+                    <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#philosophy" class="btn btn--secondary">Learn More</a>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Scroll to explore</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PHILOSOPHY SECTION
+         ======================================== -->
+    <section class="philosophy section" id="philosophy">
+        <div class="container">
+            <div class="philosophy__grid">
+                <div class="philosophy__visual reveal">
+                    <div class="philosophy__image-placeholder">
+                        <div class="ceramic-vessel">
+                            <div class="ceramic-vessel__rim"></div>
+                            <div class="ceramic-vessel__body"></div>
+                        </div>
+                    </div>
+                    <div class="philosophy__accent"></div>
+                </div>
+
+                <div class="philosophy__content">
+                    <span class="heading-sm philosophy__overline reveal">Our Philosophy</span>
+
+                    <h2 class="heading-lg philosophy__title reveal reveal-delay-1">
+                        Where Intention<br>Meets Everyday
+                    </h2>
+
+                    <p class="body-md philosophy__text reveal reveal-delay-2">
+                        We believe that the objects we surround ourselves with shape the quality of our days. Stillroom curates handcrafted pieces that transform routine moments—morning tea, evening unwinding, weekend quiet—into small ceremonies of presence.
+                    </p>
+
+                    <p class="body-md philosophy__text reveal reveal-delay-2">
+                        Each quarterly box follows the rhythm of the seasons, bringing you tactile, purposeful items made by independent artisans who share our reverence for craft, material, and restraint.
+                    </p>
+
+                    <div class="philosophy__values reveal reveal-delay-3">
+                        <div class="value-item">
+                            <h3 class="value-item__title">Ma (間)</h3>
+                            <p class="value-item__text">The Japanese concept of purposeful emptiness—space that allows meaning to breathe.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3 class="value-item__title">Hygge</h3>
+                            <p class="value-item__text">The Scandinavian art of cozy contentment, found in simple, warm moments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         RITUAL / PRODUCT SECTION
+         ======================================== -->
+    <section class="ritual section" id="rituals">
+        <div class="container">
+            <header class="ritual__header">
+                <span class="heading-sm reveal">The Curation</span>
+                <div class="divider reveal reveal-delay-1"></div>
+                <h2 class="heading-lg reveal reveal-delay-1">Rituals, Not Just Products</h2>
+                <p class="body-md reveal reveal-delay-2" style="color: var(--color-warm-gray); margin-top: var(--space-sm);">
+                    Each box contains 4–6 thoughtfully selected items that work together to create a cohesive ritual experience.
+                </p>
+            </header>
+
+            <div class="ritual__grid">
+                <article class="ritual-card reveal">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--tea"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Ceramic</span>
+                        <h3 class="ritual-card__title">Tea Vessels</h3>
+                        <p class="ritual-card__text">Hand-thrown cups, pots, and pourers crafted by studio potters for mindful tea moments.</p>
+                    </div>
+                </article>
+
+                <article class="ritual-card reveal reveal-delay-1">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--candle"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Light</span>
+                        <h3 class="ritual-card__title">Candles & Holders</h3>
+                        <p class="ritual-card__text">Beeswax tapers and soy vessels with subtle, natural fragrances that shift with the seasons.</p>
+                    </div>
+                </article>
+
+                <article class="ritual-card reveal reveal-delay-2">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--linen"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Textile</span>
+                        <h3 class="ritual-card__title">Linen & Cloth</h3>
+                        <p class="ritual-card__text">Napkins, towels, and wraps woven from natural fibers—softening with each use.</p>
+                    </div>
+                </article>
+
+                <article class="ritual-card reveal reveal-delay-1">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--botanical"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Botanical</span>
+                        <h3 class="ritual-card__title">Room Mists & Oils</h3>
+                        <p class="ritual-card__text">Small-batch aromatics distilled from responsibly sourced plants and flowers.</p>
+                    </div>
+                </article>
+
+                <article class="ritual-card reveal reveal-delay-2">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--stone"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Stone</span>
+                        <h3 class="ritual-card__title">Incense & Holders</h3>
+                        <p class="ritual-card__text">Carved stone and ceramic vessels paired with Japanese-style incense sticks.</p>
+                    </div>
+                </article>
+
+                <article class="ritual-card reveal reveal-delay-3">
+                    <div class="ritual-card__image">
+                        <div class="ritual-card__icon">
+                            <div class="ritual-icon ritual-icon--paper"></div>
+                        </div>
+                    </div>
+                    <div class="ritual-card__content">
+                        <span class="ritual-card__category">Paper</span>
+                        <h3 class="ritual-card__title">Journals & Notes</h3>
+                        <p class="ritual-card__text">Handbound notebooks and reflection cards for quiet morning pages.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEASONAL SECTION
+         ======================================== -->
+    <section class="seasonal section" id="seasonal">
+        <div class="container">
+            <div class="seasonal__grid">
+                <div class="seasonal__content">
+                    <div class="seasonal__badge reveal">
+                        <span class="seasonal__badge-dot"></span>
+                        Now Shipping
+                    </div>
+
+                    <h2 class="heading-lg seasonal__title reveal reveal-delay-1">
+                        Winter Stillness
+                    </h2>
+
+                    <p class="heading-md seasonal__subtitle reveal reveal-delay-1">
+                        A collection for the quiet season
+                    </p>
+
+                    <p class="body-md seasonal__text reveal reveal-delay-2">
+                        As the light softens and the world turns inward, this curation invites you to embrace the slower rhythms of winter. Each piece is chosen to bring warmth, comfort, and a gentle invitation to pause.
+                    </p>
+
+                    <div class="seasonal__includes reveal reveal-delay-2">
+                        <span class="seasonal__includes-title">This box includes</span>
+                        <ul class="seasonal__list">
+                            <li class="seasonal__list-item">
+                                <svg class="seasonal__list-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="12"/>
+                                    <path d="M7 12l3 3 7-7"/>
+                                </svg>
+                                Handmade stoneware mug with ash glaze
+                            </li>
+                            <li class="seasonal__list-item">
+                                <svg class="seasonal__list-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="12"/>
+                                    <path d="M7 12l3 3 7-7"/>
+                                </svg>
+                                Hinoki & cedarwood room mist (100ml)
+                            </li>
+                            <li class="seasonal__list-item">
+                                <svg class="seasonal__list-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="12"/>
+                                    <path d="M7 12l3 3 7-7"/>
+                                </svg>
+                                Set of 3 hand-dipped beeswax tapers
+                            </li>
+                            <li class="seasonal__list-item">
+                                <svg class="seasonal__list-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="12"/>
+                                    <path d="M7 12l3 3 7-7"/>
+                                </svg>
+                                Oatmeal linen tea towel
+                            </li>
+                            <li class="seasonal__list-item">
+                                <svg class="seasonal__list-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="12"/>
+                                    <path d="M7 12l3 3 7-7"/>
+                                </svg>
+                                Winter reflection journal (32 pages)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#subscribe" class="btn btn--primary reveal reveal-delay-3">
+                        Reserve This Box
+                        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="seasonal__visual reveal">
+                    <div class="seasonal__box">
+                        <div class="box-illustration"></div>
+                        <div class="seasonal__accent seasonal__accent--1"></div>
+                        <div class="seasonal__accent seasonal__accent--2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROCESS SECTION
+         ======================================== -->
+    <section class="process section--compact" id="process">
+        <div class="container">
+            <header class="process__header">
+                <span class="heading-sm reveal">How It Works</span>
+                <div class="divider reveal reveal-delay-1"></div>
+                <h2 class="heading-lg reveal reveal-delay-1">A Ritual, Delivered</h2>
+            </header>
+
+            <div class="process__steps">
+                <div class="process-step reveal">
+                    <div class="process-step__number">01</div>
+                    <h3 class="process-step__title">Choose Your Rhythm</h3>
+                    <p class="process-step__text">Select quarterly or annual membership based on your pace.</p>
+                </div>
+
+                <div class="process-step reveal reveal-delay-1">
+                    <div class="process-step__number">02</div>
+                    <h3 class="process-step__title">We Curate</h3>
+                    <p class="process-step__text">Our team selects pieces from artisans who share our values.</p>
+                </div>
+
+                <div class="process-step reveal reveal-delay-2">
+                    <div class="process-step__number">03</div>
+                    <h3 class="process-step__title">Thoughtful Delivery</h3>
+                    <p class="process-step__text">Your box arrives at the turn of each season, wrapped in care.</p>
+                </div>
+
+                <div class="process-step reveal reveal-delay-3">
+                    <div class="process-step__number">04</div>
+                    <h3 class="process-step__title">Ritual Begins</h3>
+                    <p class="process-step__text">Unbox, arrange, and let the objects guide your practice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+         ======================================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <header class="testimonials__header">
+                <span class="heading-sm reveal">Member Reflections</span>
+                <div class="divider reveal reveal-delay-1"></div>
+            </header>
+
+            <div class="testimonials__grid">
+                <article class="testimonial reveal">
+                    <p class="testimonial__text">
+                        "Opening each box feels like a small ceremony. The items aren't just beautiful—they've genuinely changed how I approach my mornings."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">E</div>
+                        <div class="testimonial__info">
+                            <span class="testimonial__name">Elena M.</span>
+                            <span class="testimonial__location">Copenhagen, DK</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial reveal reveal-delay-1">
+                    <p class="testimonial__text">
+                        "I've subscribed to many boxes before, but this is the first that feels truly intentional. Every piece has a purpose and a story."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">J</div>
+                        <div class="testimonial__info">
+                            <span class="testimonial__name">James K.</span>
+                            <span class="testimonial__location">Portland, OR</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial reveal reveal-delay-2">
+                    <p class="testimonial__text">
+                        "The quality is remarkable—these are objects I'll keep for years. It's a quarterly reminder to slow down and appreciate craft."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">S</div>
+                        <div class="testimonial__info">
+                            <span class="testimonial__name">Sora T.</span>
+                            <span class="testimonial__location">Kyoto, JP</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRICING SECTION
+         ======================================== -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <header class="pricing__header">
+                <span class="heading-sm reveal">Membership</span>
+                <div class="divider reveal reveal-delay-1"></div>
+                <h2 class="heading-lg reveal reveal-delay-1">Choose Your Path</h2>
+                <p class="body-md reveal reveal-delay-2" style="color: var(--color-warm-gray); margin-top: var(--space-sm);">
+                    Simple, transparent pricing. Pause or cancel anytime.
+                </p>
+            </header>
+
+            <div class="pricing__cards">
+                <article class="pricing-card reveal">
+                    <span class="pricing-card__name">Quarterly</span>
+                    <div class="pricing-card__price">$89</div>
+                    <div class="pricing-card__period">per season</div>
+                    <p class="pricing-card__description">
+                        Perfect for those beginning their ritual journey.
+                    </p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">4–6 artisan-made items</li>
+                        <li class="pricing-card__feature">Seasonal ritual guide included</li>
+                        <li class="pricing-card__feature">Free carbon-neutral shipping</li>
+                        <li class="pricing-card__feature">Skip or pause anytime</li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn--secondary pricing-card__cta">
+                        Start Quarterly
+                    </a>
+                </article>
+
+                <article class="pricing-card pricing-card--featured reveal reveal-delay-1">
+                    <span class="pricing-card__badge">Best Value</span>
+                    <span class="pricing-card__name">Annual</span>
+                    <div class="pricing-card__price">$320</div>
+                    <div class="pricing-card__period">per year (save $36)</div>
+                    <p class="pricing-card__description">
+                        For the committed practitioner of slow living.
+                    </p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">All quarterly benefits</li>
+                        <li class="pricing-card__feature">Early access to new collections</li>
+                        <li class="pricing-card__feature">Annual member gift box</li>
+                        <li class="pricing-card__feature">Exclusive artisan interviews</li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn--primary pricing-card__cta">
+                        Begin Annual Membership
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FINAL CTA SECTION
+         ======================================== -->
+    <section class="cta-final section" id="subscribe">
+        <div class="cta-final__bg"></div>
+        <div class="container container--narrow">
+            <div class="cta-final__content">
+                <h2 class="heading-lg cta-final__title reveal">
+                    Your ritual awaits
+                </h2>
+                <p class="body-lg cta-final__text reveal reveal-delay-1">
+                    Join a community of thoughtful individuals who believe that how we spend our quiet moments shapes who we become.
+                </p>
+                <a href="#" class="btn btn--primary reveal reveal-delay-2">
+                    Begin Your First Season
+                    <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <p class="cta-final__note reveal reveal-delay-3">
+                    Cancel anytime. Your satisfaction is our quiet promise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">Stillroom Co.</div>
+                    <p class="footer__tagline">
+                        Curating objects for quiet living since 2024. Each piece chosen with intention, delivered with care.
+                    </p>
+                </div>
+
+                <nav class="footer__nav">
+                    <span class="footer__nav-title">Explore</span>
+                    <ul class="footer__nav-list">
+                        <li><a href="#philosophy" class="footer__nav-link">Philosophy</a></li>
+                        <li><a href="#rituals" class="footer__nav-link">The Curation</a></li>
+                        <li><a href="#seasonal" class="footer__nav-link">Current Box</a></li>
+                        <li><a href="#pricing" class="footer__nav-link">Membership</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav">
+                    <span class="footer__nav-title">Company</span>
+                    <ul class="footer__nav-list">
+                        <li><a href="#" class="footer__nav-link">Our Story</a></li>
+                        <li><a href="#" class="footer__nav-link">Artisan Partners</a></li>
+                        <li><a href="#" class="footer__nav-link">Sustainability</a></li>
+                        <li><a href="#" class="footer__nav-link">Press</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__nav">
+                    <span class="footer__nav-title">Support</span>
+                    <ul class="footer__nav-list">
+                        <li><a href="#" class="footer__nav-link">FAQ</a></li>
+                        <li><a href="#" class="footer__nav-link">Shipping</a></li>
+                        <li><a href="#" class="footer__nav-link">Returns</a></li>
+                        <li><a href="#" class="footer__nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Stillroom Co. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT
+         ======================================== -->
+    <script>
+        // ========================================
+        // SCROLL REVEAL ANIMATIONS
+        // ========================================
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Once revealed, no need to observe anymore
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all reveal elements
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // ========================================
+        // HEADER SCROLL STATE
+        // ========================================
+        const header = document.getElementById('header');
+        let lastScrollY = window.scrollY;
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > 50) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+
+            lastScrollY = currentScrollY;
+        };
+
+        // Throttle scroll events
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    handleScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // ========================================
+        // MOBILE NAVIGATION
+        // ========================================
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('is-open');
+            navToggle.classList.toggle('is-active');
+        });
+
+        // Close mobile nav when clicking a link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('is-open');
+                navToggle.classList.remove('is-active');
+            });
+        });
+
+        // ========================================
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ========================================
+        // GENTLE PARALLAX ON HERO ELEMENTS
+        // ========================================
+        const heroElements = document.querySelectorAll('.hero__bg-element');
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroSection = document.querySelector('.hero');
+            const heroHeight = heroSection.offsetHeight;
+
+            if (scrolled < heroHeight) {
+                const ratio = scrolled / heroHeight;
+                heroElements.forEach((el, index) => {
+                    const speed = 0.1 + (index * 0.05);
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            }
+        });
+
+        // ========================================
+        // INITIAL LOAD ANIMATION
+        // ========================================
+        window.addEventListener('load', () => {
+            document.body.classList.add('is-loaded');
+
+            // Reveal hero elements with stagger
+            const heroReveals = document.querySelectorAll('.hero .reveal');
+            heroReveals.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('is-visible');
+                }, 200 + (index * 150));
+            });
+        });
+    </script>
+</body>
+</html>
