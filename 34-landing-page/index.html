@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BASEMENT | Underground Music Collective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Permanent+Marker&family=Courier+Prime:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Noise overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="tape-piece"></span>
+                THE BASEMENT
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#shows">SHOWS</a></li>
+                <li><a href="#artists">ARTISTS</a></li>
+                <li><a href="#zine">ZINE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-layers">
+            <div class="hero-bg-texture"></div>
+            <div class="hero-poster poster-1"></div>
+            <div class="hero-poster poster-2"></div>
+            <div class="hero-poster poster-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="stamp">EST. 2019</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line title-line-1">THE</span>
+                <span class="title-line title-line-2">BASEMENT</span>
+            </h1>
+            <p class="hero-tagline typewriter">
+                <span class="crossed-out">mainstream</span> underground music collective
+            </p>
+            <div class="hero-note">
+                <div class="tape tape-top"></div>
+                <p>Real shows. Real artists. No bullshit.</p>
+                <div class="tape tape-bottom"></div>
+            </div>
+            <a href="#shows" class="hero-cta torn-paper">
+                <span>SEE UPCOMING SHOWS →</span>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span class="marker-text">scroll down</span>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-bg xerox-texture"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title stamp-title">
+                    <span class="tape-corner"></span>
+                    WHAT WE'RE ABOUT
+                </h2>
+                <div class="underline-scribble"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card worn-paper" data-animate>
+                    <div class="card-tape"></div>
+                    <div class="about-icon">✦</div>
+                    <h3>DIY OR DIE</h3>
+                    <p>We book our own shows, print our own posters, and answer to no one. Every penny goes back to the artists.</p>
+                    <div class="coffee-stain"></div>
+                </div>
+                <div class="about-card worn-paper" data-animate>
+                    <div class="card-tape"></div>
+                    <div class="about-icon">☆</div>
+                    <h3>ALL AGES ALWAYS</h3>
+                    <p>Music shouldn't have an age limit. If you're here for the music, you're in. No exceptions.</p>
+                </div>
+                <div class="about-card worn-paper" data-animate>
+                    <div class="card-tape"></div>
+                    <div class="about-icon">◈</div>
+                    <h3>SAFE SPACE</h3>
+                    <p>No racism. No sexism. No homophobia. No transpobia. No bullshit. This is a community, act like it.</p>
+                    <div class="marker-circle"></div>
+                </div>
+            </div>
+            <div class="manifesto">
+                <div class="manifesto-tape tape-left"></div>
+                <div class="manifesto-tape tape-right"></div>
+                <blockquote>
+                    "We started this because every venue in town sold out. Literally. Now they book cover bands and charge $15 for watered-down beer. We wanted a place where the music matters more than the margins."
+                </blockquote>
+                <cite>— Marcus & Luna, Founders (written on a napkin, 2019)</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shows Section -->
+    <section class="shows" id="shows">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title newspaper-cut">
+                    UPCOMING SHOWS
+                </h2>
+                <p class="section-subtitle marker-text">all shows $5-10 sliding scale · no one turned away for lack of funds</p>
+            </div>
+            <div class="shows-grid">
+                <article class="show-card flyer" data-animate>
+                    <div class="flyer-bg"></div>
+                    <div class="show-date">
+                        <span class="day">15</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">STATIC VEIL</h3>
+                        <p class="show-genre">noise rock / post-punk</p>
+                        <div class="show-details">
+                            <span class="show-time">DOORS 7PM</span>
+                            <span class="show-price">$7</span>
+                        </div>
+                        <p class="show-with">w/ PALE WIRE + DUST HYMN</p>
+                    </div>
+                    <div class="show-stamp">SOLD OUT</div>
+                </article>
+                <article class="show-card flyer" data-animate>
+                    <div class="flyer-bg"></div>
+                    <div class="show-date">
+                        <span class="day">22</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">GHOST FREQUENCY</h3>
+                        <p class="show-genre">shoegaze / dream pop</p>
+                        <div class="show-details">
+                            <span class="show-time">DOORS 8PM</span>
+                            <span class="show-price">$5-10</span>
+                        </div>
+                        <p class="show-with">w/ VELVET STATIC</p>
+                    </div>
+                </article>
+                <article class="show-card flyer featured" data-animate>
+                    <div class="flyer-bg"></div>
+                    <div class="corner-tear"></div>
+                    <div class="show-date">
+                        <span class="day">01</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">5 YEAR ANNIVERSARY</h3>
+                        <p class="show-genre">ALL DAY FEST · 12 BANDS</p>
+                        <div class="show-details">
+                            <span class="show-time">NOON - MIDNIGHT</span>
+                            <span class="show-price">$15</span>
+                        </div>
+                        <p class="show-with">HEADLINERS TBA</p>
+                    </div>
+                    <div class="handwritten-note">this is gonna be massive!</div>
+                </article>
+                <article class="show-card flyer" data-animate>
+                    <div class="flyer-bg"></div>
+                    <div class="show-date">
+                        <span class="day">08</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">LOCAL SHOWCASE</h3>
+                        <p class="show-genre">mixed genres</p>
+                        <div class="show-details">
+                            <span class="show-time">DOORS 6PM</span>
+                            <span class="show-price">FREE</span>
+                        </div>
+                        <p class="show-with">5 LOCAL ACTS · ALL WELCOME</p>
+                    </div>
+                    <div class="show-badge free">FREE!</div>
+                </article>
+            </div>
+            <div class="shows-cta">
+                <a href="#" class="btn-torn">
+                    <span>FULL CALENDAR</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section class="artists" id="artists">
+        <div class="section-bg collage-texture"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="bracket">[</span>
+                    THE COLLECTIVE
+                    <span class="bracket">]</span>
+                </h2>
+                <p class="section-subtitle typewriter-text">resident artists & regular troublemakers</p>
+            </div>
+            <div class="artists-wall">
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 0deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">RUST PROPHET</span>
+                        <span class="artist-genre">sludge metal</span>
+                    </div>
+                </div>
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 45deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">NEON BURIAL</span>
+                        <span class="artist-genre">synth punk</span>
+                    </div>
+                </div>
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 180deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">HOLLOW SHRINE</span>
+                        <span class="artist-genre">doom / drone</span>
+                    </div>
+                </div>
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 270deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">GLASS TEETH</span>
+                        <span class="artist-genre">noise rock</span>
+                    </div>
+                </div>
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 320deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">MOTH SIGNAL</span>
+                        <span class="artist-genre">post-punk</span>
+                    </div>
+                </div>
+                <div class="artist-polaroid" data-animate>
+                    <div class="polaroid-tape"></div>
+                    <div class="polaroid-image" style="--hue: 90deg"></div>
+                    <div class="polaroid-caption">
+                        <span class="artist-name">DEAD FLOWERS</span>
+                        <span class="artist-genre">garage rock</span>
+                    </div>
+                </div>
+            </div>
+            <div class="join-collective">
+                <div class="xerox-box">
+                    <div class="staple staple-left"></div>
+                    <div class="staple staple-right"></div>
+                    <h3>WANT TO PLAY HERE?</h3>
+                    <p>We're always looking for new artists. No cover bands. No egos. Just bring the noise.</p>
+                    <a href="mailto:booking@thebasement.diy" class="handwritten-link">booking@thebasement.diy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zine Section -->
+    <section class="zine" id="zine">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title cut-paste">
+                    <span class="cut-letter">T</span>
+                    <span class="cut-letter">H</span>
+                    <span class="cut-letter">E</span>
+                    <span class="cut-space"></span>
+                    <span class="cut-letter">Z</span>
+                    <span class="cut-letter">I</span>
+                    <span class="cut-letter">N</span>
+                    <span class="cut-letter">E</span>
+                </h2>
+            </div>
+            <div class="zine-content">
+                <div class="zine-cover" data-animate>
+                    <div class="zine-page page-back"></div>
+                    <div class="zine-page page-front">
+                        <span class="zine-issue">ISSUE #23</span>
+                        <span class="zine-title">BASEMENT<br>DWELLER</span>
+                        <span class="zine-subtitle">WINTER 2024</span>
+                        <div class="zine-stamp">$3 OR TRADE</div>
+                    </div>
+                </div>
+                <div class="zine-info">
+                    <div class="zine-description worn-paper">
+                        <div class="paper-clip"></div>
+                        <h3>BASEMENT DWELLER</h3>
+                        <p>Our quarterly zine featuring interviews with underground artists, scene reports from across the country, photo essays from our shows, and whatever weird art our community wants to contribute.</p>
+                        <ul class="zine-features">
+                            <li>✗ 40+ pages of DIY content</li>
+                            <li>✗ Printed on recycled paper</li>
+                            <li>✗ Hand-assembled with love (& staples)</li>
+                            <li>✗ Available at shows or by mail</li>
+                        </ul>
+                    </div>
+                    <div class="zine-subscribe">
+                        <div class="subscribe-note">
+                            <span class="marker-text">GET IT DELIVERED:</span>
+                            <form class="subscribe-form" id="subscribeForm">
+                                <input type="email" placeholder="your@email.com" class="input-torn" required>
+                                <button type="submit" class="btn-stamped">SUBSCRIBE</button>
+                            </form>
+                            <span class="small-print">* 4 issues/year · pay what you can</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-bg brick-texture"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title spray-paint">FIND US</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-note pinned-note" data-animate>
+                    <div class="pushpin"></div>
+                    <div class="note-content">
+                        <h3>THE LOCATION</h3>
+                        <address>
+                            <strong>THE BASEMENT</strong><br>
+                            247 Industrial Ave<br>
+                            Unit B (the one with all the stickers)<br>
+                            Somewhere, USA 12345
+                        </address>
+                        <p class="directions marker-scrawl">
+                            Look for the red door. If you smell coffee, you're at the wrong place (that's the roasters next door).
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-note pinned-note" data-animate>
+                    <div class="pushpin"></div>
+                    <div class="note-content">
+                        <h3>GET IN TOUCH</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <span class="label">BOOKING:</span>
+                                <a href="mailto:booking@thebasement.diy">booking@thebasement.diy</a>
+                            </li>
+                            <li>
+                                <span class="label">GENERAL:</span>
+                                <a href="mailto:hello@thebasement.diy">hello@thebasement.diy</a>
+                            </li>
+                            <li>
+                                <span class="label">PHONE:</span>
+                                <span>(we don't do phones)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-note pinned-note" data-animate>
+                    <div class="pushpin"></div>
+                    <div class="note-content">
+                        <h3>FOLLOW THE NOISE</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <span class="social-icon">IG</span>
+                                <span class="social-handle">@thebasement.diy</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Bandcamp">
+                                <span class="social-icon">BC</span>
+                                <span class="social-handle">thebasement.bandcamp.com</span>
+                            </a>
+                        </div>
+                        <p class="anti-social">(we're not on the other platforms. on purpose.)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="final-note">
+                <div class="tape-x"></div>
+                <p class="goodbye-message">
+                    See you in the pit. ✗
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-torn-edge"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">THE BASEMENT</div>
+                <p class="footer-tagline">keeping it real since 2019</p>
+                <div class="footer-credits">
+                    <p>made with cheap beer & loud music</p>
+                    <p class="copyright">© 2024 THE BASEMENT COLLECTIVE · ALL RIGHTS IGNORED</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
