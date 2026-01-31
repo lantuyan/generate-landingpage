@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VECTOR — Precision Strategy Design</title>
+    <meta name="description" content="Strategic clarity through geometric thinking. We help ambitious companies find the optimal path forward.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Geometric Background Grid -->
+    <div class="geo-grid" aria-hidden="true">
+        <svg class="grid-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <pattern id="grid-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.1"/>
+                </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#grid-pattern)"/>
+        </svg>
+    </div>
+
+    <!-- Floating Geometric Accents -->
+    <div class="geo-accents" aria-hidden="true">
+        <div class="accent accent-1"></div>
+        <div class="accent accent-2"></div>
+        <div class="accent accent-3"></div>
+        <div class="accent accent-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 2L30 16L16 30L2 16L16 2Z" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M16 8L24 16L16 24" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <span class="logo-text">VECTOR</span>
+            </a>
+            <div class="nav-links">
+                <a href="#method" class="nav-link">Method</a>
+                <a href="#proof" class="nav-link">Proof</a>
+                <a href="#begin" class="nav-cta">Begin</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-line"></span>
+                    <span class="badge-text">Precision Strategy Design</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Complexity has</span>
+                    <span class="title-line">a <em>structure.</em></span>
+                    <span class="title-line">We reveal it.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Strategic clarity for companies navigating inflection points.
+                    We transform ambiguity into geometric precision—illuminating
+                    the path your competition cannot see.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#begin" class="btn btn-primary">
+                        <span>Start with Clarity</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="#method" class="btn btn-ghost">Explore the Method</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <svg class="hero-geometry" viewBox="0 0 400 400">
+                        <!-- Outer rotating frame -->
+                        <g class="geo-rotate-slow">
+                            <rect x="50" y="50" width="300" height="300" fill="none" stroke="var(--accent-cyan)" stroke-width="1" opacity="0.3"/>
+                        </g>
+                        <!-- Middle frame -->
+                        <g class="geo-rotate-medium">
+                            <rect x="100" y="100" width="200" height="200" fill="none" stroke="var(--accent-coral)" stroke-width="1.5" transform="rotate(45 200 200)"/>
+                        </g>
+                        <!-- Inner elements -->
+                        <g class="geo-pulse">
+                            <circle cx="200" cy="200" r="60" fill="none" stroke="var(--text-primary)" stroke-width="1"/>
+                            <circle cx="200" cy="200" r="40" fill="var(--accent-cyan)" opacity="0.1"/>
+                            <circle cx="200" cy="200" r="4" fill="var(--accent-coral)"/>
+                        </g>
+                        <!-- Axis lines -->
+                        <line x1="200" y1="50" x2="200" y2="350" stroke="var(--text-tertiary)" stroke-width="0.5" stroke-dasharray="4 4"/>
+                        <line x1="50" y1="200" x2="350" y2="200" stroke="var(--text-tertiary)" stroke-width="0.5" stroke-dasharray="4 4"/>
+                        <!-- Corner markers -->
+                        <g class="corner-marks">
+                            <path d="M60 60 L80 60 M60 60 L60 80" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                            <path d="M340 60 L320 60 M340 60 L340 80" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                            <path d="M60 340 L80 340 M60 340 L60 320" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                            <path d="M340 340 L320 340 M340 340 L340 320" stroke="var(--accent-coral)" stroke-width="1.5"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="problem" id="problem">
+            <div class="section-container">
+                <div class="problem-grid">
+                    <div class="problem-label">
+                        <span class="label-number">01</span>
+                        <span class="label-text">The Challenge</span>
+                    </div>
+
+                    <div class="problem-content">
+                        <h2 class="problem-title reveal-text">
+                            Growth creates complexity.<br>
+                            Complexity obscures direction.
+                        </h2>
+
+                        <div class="problem-stats">
+                            <div class="stat reveal-up" style="--delay: 0.1s">
+                                <span class="stat-value">73%</span>
+                                <span class="stat-label">of strategic initiatives fail due to unclear execution paths</span>
+                            </div>
+                            <div class="stat reveal-up" style="--delay: 0.2s">
+                                <span class="stat-value">4.2×</span>
+                                <span class="stat-label">longer decision cycles at inflection points</span>
+                            </div>
+                            <div class="stat reveal-up" style="--delay: 0.3s">
+                                <span class="stat-value">$2.1M</span>
+                                <span class="stat-label">average cost of strategic misalignment per quarter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section -->
+        <section class="method" id="method">
+            <div class="section-container">
+                <div class="method-header">
+                    <div class="problem-label">
+                        <span class="label-number">02</span>
+                        <span class="label-text">The Method</span>
+                    </div>
+
+                    <h2 class="method-title reveal-text">
+                        Geometric thinking<br>
+                        applied to strategy.
+                    </h2>
+
+                    <p class="method-intro reveal-up">
+                        We've developed a proprietary framework that maps strategic terrain
+                        with mathematical precision. Three interlocking phases that transform
+                        noise into signal, and signal into decisive action.
+                    </p>
+                </div>
+
+                <div class="method-phases">
+                    <div class="phase reveal-up" style="--delay: 0.1s">
+                        <div class="phase-visual">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border-subtle)" stroke-width="1"/>
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-dasharray="78.5 235.5" class="phase-progress"/>
+                                <text x="60" y="65" text-anchor="middle" fill="var(--text-primary)" font-size="24" font-weight="600">01</text>
+                            </svg>
+                        </div>
+                        <h3 class="phase-title">Map</h3>
+                        <p class="phase-description">
+                            We audit your strategic landscape—market forces, competitive vectors,
+                            internal capabilities—and render them as precise geometric relationships.
+                        </p>
+                        <ul class="phase-outputs">
+                            <li>Competitive topology analysis</li>
+                            <li>Capability-opportunity matrix</li>
+                            <li>Strategic constraint identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-connector" aria-hidden="true">
+                        <svg viewBox="0 0 100 20">
+                            <line x1="0" y1="10" x2="100" y2="10" stroke="var(--accent-cyan)" stroke-width="1" stroke-dasharray="4 4"/>
+                            <polygon points="95,5 100,10 95,15" fill="var(--accent-cyan)"/>
+                        </svg>
+                    </div>
+
+                    <div class="phase reveal-up" style="--delay: 0.2s">
+                        <div class="phase-visual">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border-subtle)" stroke-width="1"/>
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--accent-coral)" stroke-width="2" stroke-dasharray="157 157" class="phase-progress"/>
+                                <text x="60" y="65" text-anchor="middle" fill="var(--text-primary)" font-size="24" font-weight="600">02</text>
+                            </svg>
+                        </div>
+                        <h3 class="phase-title">Triangulate</h3>
+                        <p class="phase-description">
+                            Using our geometric models, we identify the optimal trajectory—the path
+                            of least resistance to maximum impact. Strategy becomes visible.
+                        </p>
+                        <ul class="phase-outputs">
+                            <li>Vector alignment workshop</li>
+                            <li>Decision tree optimization</li>
+                            <li>Resource allocation geometry</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-connector" aria-hidden="true">
+                        <svg viewBox="0 0 100 20">
+                            <line x1="0" y1="10" x2="100" y2="10" stroke="var(--accent-coral)" stroke-width="1" stroke-dasharray="4 4"/>
+                            <polygon points="95,5 100,10 95,15" fill="var(--accent-coral)"/>
+                        </svg>
+                    </div>
+
+                    <div class="phase reveal-up" style="--delay: 0.3s">
+                        <div class="phase-visual">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border-subtle)" stroke-width="1"/>
+                                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--text-primary)" stroke-width="2" stroke-dasharray="314 0" class="phase-progress"/>
+                                <text x="60" y="65" text-anchor="middle" fill="var(--text-primary)" font-size="24" font-weight="600">03</text>
+                            </svg>
+                        </div>
+                        <h3 class="phase-title">Execute</h3>
+                        <p class="phase-description">
+                            We translate geometric insights into executable blueprints—clear milestones,
+                            accountable owners, and measurable coordinates of progress.
+                        </p>
+                        <ul class="phase-outputs">
+                            <li>90-day execution framework</li>
+                            <li>Progress coordinate system</li>
+                            <li>Adaptive recalibration protocol</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="proof" id="proof">
+            <div class="section-container">
+                <div class="proof-header">
+                    <div class="problem-label">
+                        <span class="label-number">03</span>
+                        <span class="label-text">The Proof</span>
+                    </div>
+
+                    <h2 class="proof-title reveal-text">
+                        Precision in practice.
+                    </h2>
+                </div>
+
+                <div class="proof-metrics">
+                    <div class="metric reveal-scale" style="--delay: 0.1s">
+                        <div class="metric-visual">
+                            <svg viewBox="0 0 100 100">
+                                <rect x="10" y="10" width="80" height="80" fill="none" stroke="var(--border-subtle)" stroke-width="0.5"/>
+                                <rect x="10" y="10" width="80" height="80" fill="var(--accent-cyan)" opacity="0.1"/>
+                                <text x="50" y="58" text-anchor="middle" fill="var(--accent-cyan)" font-size="28" font-weight="600">47</text>
+                            </svg>
+                        </div>
+                        <span class="metric-label">Leadership teams aligned</span>
+                    </div>
+
+                    <div class="metric reveal-scale" style="--delay: 0.2s">
+                        <div class="metric-visual">
+                            <svg viewBox="0 0 100 100">
+                                <polygon points="50,10 90,90 10,90" fill="none" stroke="var(--border-subtle)" stroke-width="0.5"/>
+                                <polygon points="50,10 90,90 10,90" fill="var(--accent-coral)" opacity="0.1"/>
+                                <text x="50" y="65" text-anchor="middle" fill="var(--accent-coral)" font-size="24" font-weight="600">$3.2B</text>
+                            </svg>
+                        </div>
+                        <span class="metric-label">Strategic decisions guided</span>
+                    </div>
+
+                    <div class="metric reveal-scale" style="--delay: 0.3s">
+                        <div class="metric-visual">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="var(--border-subtle)" stroke-width="0.5"/>
+                                <circle cx="50" cy="50" r="40" fill="var(--text-primary)" opacity="0.05"/>
+                                <text x="50" y="55" text-anchor="middle" fill="var(--text-primary)" font-size="20" font-weight="600">94%</text>
+                            </svg>
+                        </div>
+                        <span class="metric-label">Execution completion rate</span>
+                    </div>
+                </div>
+
+                <div class="testimonials">
+                    <div class="testimonial reveal-up" style="--delay: 0.1s">
+                        <blockquote class="testimonial-quote">
+                            "Vector gave us something rare: the ability to see our market position
+                            with crystalline clarity. Within six weeks, our entire leadership team
+                            was aligned on a path we hadn't known existed."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="var(--accent-cyan)" opacity="0.2"/>
+                                    <text x="20" y="25" text-anchor="middle" fill="var(--accent-cyan)" font-size="14" font-weight="600">SR</text>
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Reinholt</span>
+                                <span class="author-role">CEO, Meridian Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial reveal-up" style="--delay: 0.2s">
+                        <blockquote class="testimonial-quote">
+                            "The geometric framework sounds abstract until you experience it.
+                            Suddenly, decisions that paralyzed us for months became obvious.
+                            The methodology is rigorous, but the results are remarkably intuitive."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg viewBox="0 0 40 40">
+                                    <polygon points="20,2 38,38 2,38" fill="var(--accent-coral)" opacity="0.2"/>
+                                    <text x="20" y="28" text-anchor="middle" fill="var(--accent-coral)" font-size="14" font-weight="600">MK</text>
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <span class="author-name">Marcus Chen</span>
+                                <span class="author-role">COO, Altitude Ventures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-logos reveal-up">
+                    <span class="logos-label">Trusted by leaders at</span>
+                    <div class="logos-grid">
+                        <div class="logo-placeholder"><span>MERIDIAN</span></div>
+                        <div class="logo-placeholder"><span>ALTITUDE</span></div>
+                        <div class="logo-placeholder"><span>NEXUS</span></div>
+                        <div class="logo-placeholder"><span>APEX</span></div>
+                        <div class="logo-placeholder"><span>STRATUM</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Promise -->
+        <section class="transformation">
+            <div class="section-container">
+                <div class="transform-grid">
+                    <div class="transform-before reveal-up">
+                        <h3 class="transform-label">Before Vector</h3>
+                        <ul class="transform-list">
+                            <li>Strategic discussions that circle without resolution</li>
+                            <li>Competing priorities that drain execution energy</li>
+                            <li>Market opportunities glimpsed but not captured</li>
+                            <li>Leadership alignment that fractures under pressure</li>
+                        </ul>
+                    </div>
+
+                    <div class="transform-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 60 200">
+                            <defs>
+                                <linearGradient id="arrow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="var(--accent-cyan)"/>
+                                    <stop offset="100%" stop-color="var(--accent-coral)"/>
+                                </linearGradient>
+                            </defs>
+                            <line x1="30" y1="20" x2="30" y2="180" stroke="url(#arrow-gradient)" stroke-width="2"/>
+                            <polygon points="20,170 30,190 40,170" fill="var(--accent-coral)"/>
+                        </svg>
+                    </div>
+
+                    <div class="transform-after reveal-up" style="--delay: 0.2s">
+                        <h3 class="transform-label accent">After Vector</h3>
+                        <ul class="transform-list">
+                            <li>Strategic clarity that accelerates every decision</li>
+                            <li>Unified direction that compounds execution power</li>
+                            <li>Market position designed with geometric precision</li>
+                            <li>Leadership cohesion that strengthens under challenge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="begin">
+            <div class="cta-background" aria-hidden="true">
+                <svg class="cta-geometry" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <linearGradient id="cta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.1"/>
+                            <stop offset="100%" stop-color="var(--accent-coral)" stop-opacity="0.1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="100" y="50" width="600" height="300" fill="url(#cta-gradient)" transform="rotate(3 400 200)"/>
+                    <rect x="150" y="80" width="500" height="240" fill="none" stroke="var(--text-primary)" stroke-width="0.5" opacity="0.2"/>
+                </svg>
+            </div>
+
+            <div class="section-container">
+                <div class="cta-content">
+                    <div class="problem-label">
+                        <span class="label-number">04</span>
+                        <span class="label-text">Begin</span>
+                    </div>
+
+                    <h2 class="cta-title reveal-text">
+                        Ready to see your<br>
+                        strategic geometry?
+                    </h2>
+
+                    <p class="cta-description reveal-up">
+                        Start with a complimentary Strategic Clarity Session—a focused
+                        45-minute conversation where we'll map your current position
+                        and identify the vectors with highest potential.
+                    </p>
+
+                    <form class="cta-form reveal-up" style="--delay: 0.2s">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="your@email.com" required>
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <span>Request Your Session</span>
+                                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="form-note">No commitment. No pitch deck. Just clarity.</p>
+                    </form>
+
+                    <div class="cta-alternate reveal-up" style="--delay: 0.3s">
+                        <span>Prefer a direct conversation?</span>
+                        <a href="mailto:clarity@vector.studio" class="cta-link">clarity@vector.studio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg class="logo-mark" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2L30 16L16 30L2 16L16 2Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M16 8L24 16L16 24" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span class="logo-text">VECTOR</span>
+                </a>
+                <p class="footer-tagline">Precision Strategy Design</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#method">Method</a>
+                <a href="#proof">Proof</a>
+                <a href="#begin">Begin</a>
+                <a href="mailto:clarity@vector.studio">Contact</a>
+            </div>
+
+            <div class="footer-legal">
+                <span>&copy; 2025 Vector Strategy Studio. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
