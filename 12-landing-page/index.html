@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMWERK | Modular Co-Working Spaces</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-shape circle"></span>
+                <span class="logo-shape square"></span>
+                <span class="logo-shape triangle"></span>
+                <span class="logo-text">FORMWERK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#spaces">Spaces</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#network">Network</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+            <button class="nav-cta">Book a Tour</button>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#spaces">Spaces</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#network">Network</a></li>
+            <li><a href="#membership">Membership</a></li>
+        </ul>
+        <button class="mobile-cta">Book a Tour</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-circle red" data-speed="0.05"></div>
+            <div class="shape shape-square yellow" data-speed="0.08"></div>
+            <div class="shape shape-triangle blue" data-speed="0.03"></div>
+            <div class="shape shape-circle-outline" data-speed="0.06"></div>
+            <div class="shape shape-square-small black" data-speed="0.04"></div>
+            <div class="shape shape-line-1" data-speed="0.07"></div>
+            <div class="shape shape-line-2" data-speed="0.05"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Form</span>
+                <span class="title-line">Follows</span>
+                <span class="title-line accent">Function</span>
+            </h1>
+            <p class="hero-subtitle">Modular workspaces designed with purpose. Every element serves a function. Every function creates possibility.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary">
+                    <span class="btn-shape"></span>
+                    Explore Spaces
+                </button>
+                <button class="btn btn-secondary">Our Philosophy</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span class="scroll-line"></span>
+                <span class="scroll-text">Scroll</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto">
+        <div class="manifesto-grid">
+            <div class="manifesto-shape">
+                <div class="rotating-shapes">
+                    <div class="rot-circle"></div>
+                    <div class="rot-square"></div>
+                    <div class="rot-triangle"></div>
+                </div>
+            </div>
+            <div class="manifesto-content">
+                <span class="section-label">Our Manifesto</span>
+                <h2 class="section-title">Design is not decoration.<br>It is <span class="highlight">organization</span>.</h2>
+                <p class="manifesto-text">We believe workspaces should be as functional as they are beautiful. Every desk, every wall, every corner is designed with intention. No superfluous elements. No wasted space. Only purposeful design that enables your best work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Section -->
+    <section id="spaces" class="spaces">
+        <div class="section-header">
+            <span class="section-label">Modular Spaces</span>
+            <h2 class="section-title">Three primitives.<br>Infinite <span class="highlight">configurations</span>.</h2>
+        </div>
+        <div class="spaces-grid">
+            <div class="space-card" data-shape="circle">
+                <div class="card-shape circle-icon">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Focus Pods</h3>
+                <p class="card-desc">Circular, enclosed spaces for deep concentration. Sound-isolated. Distraction-free. Perfect geometry for perfect focus.</p>
+                <ul class="card-features">
+                    <li>Sound isolation</li>
+                    <li>Adjustable lighting</li>
+                    <li>Single occupancy</li>
+                </ul>
+                <span class="card-price">From €15/hour</span>
+            </div>
+            <div class="space-card featured" data-shape="square">
+                <div class="card-shape square-icon">
+                    <svg viewBox="0 0 100 100">
+                        <rect x="10" y="10" width="80" height="80" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Workshop Studios</h3>
+                <p class="card-desc">Square modules that connect. Expand your space as your team grows. Rational, flexible, modular architecture.</p>
+                <ul class="card-features">
+                    <li>Connectable units</li>
+                    <li>Whiteboard walls</li>
+                    <li>2-12 capacity</li>
+                </ul>
+                <span class="card-price">From €45/hour</span>
+            </div>
+            <div class="space-card" data-shape="triangle">
+                <div class="card-shape triangle-icon">
+                    <svg viewBox="0 0 100 100">
+                        <polygon points="50,10 90,90 10,90" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Collaboration Corners</h3>
+                <p class="card-desc">Triangular meeting points where ideas converge. Dynamic seating. Standing options. Built for spontaneous innovation.</p>
+                <ul class="card-features">
+                    <li>Standing desks</li>
+                    <li>Display screens</li>
+                    <li>3-6 capacity</li>
+                </ul>
+                <span class="card-price">From €25/hour</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
+        <div class="philosophy-content">
+            <span class="section-label">Design Principles</span>
+            <h2 class="section-title">Built on Bauhaus <span class="highlight">foundations</span>.</h2>
+        </div>
+        <div class="principles-grid">
+            <div class="principle">
+                <div class="principle-number">01</div>
+                <div class="principle-shape red"></div>
+                <h3>Unity of Art & Function</h3>
+                <p>Every aesthetic choice serves a purpose. Beautiful spaces that work as hard as you do.</p>
+            </div>
+            <div class="principle">
+                <div class="principle-number">02</div>
+                <div class="principle-shape yellow"></div>
+                <h3>Geometric Clarity</h3>
+                <p>Primary shapes create primary experiences. Clean lines. Clear thinking. No visual noise.</p>
+            </div>
+            <div class="principle">
+                <div class="principle-number">03</div>
+                <div class="principle-shape blue"></div>
+                <h3>Modular Flexibility</h3>
+                <p>Spaces that adapt to your needs. Combine, reconfigure, expand. Your work evolves, so do we.</p>
+            </div>
+            <div class="principle">
+                <div class="principle-number">04</div>
+                <div class="principle-shape black"></div>
+                <h3>Honest Materials</h3>
+                <p>Wood, steel, glass—materials that show their nature. Authentic spaces for authentic work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Section -->
+    <section id="network" class="network">
+        <div class="network-visual">
+            <div class="network-nodes">
+                <div class="node node-1" data-city="Berlin">
+                    <span class="node-dot"></span>
+                    <span class="node-label">Berlin</span>
+                </div>
+                <div class="node node-2" data-city="Amsterdam">
+                    <span class="node-dot"></span>
+                    <span class="node-label">Amsterdam</span>
+                </div>
+                <div class="node node-3" data-city="Copenhagen">
+                    <span class="node-dot"></span>
+                    <span class="node-label">Copenhagen</span>
+                </div>
+                <div class="node node-4" data-city="Vienna">
+                    <span class="node-dot"></span>
+                    <span class="node-label">Vienna</span>
+                </div>
+                <div class="node node-5" data-city="Zurich">
+                    <span class="node-dot"></span>
+                    <span class="node-label">Zurich</span>
+                </div>
+                <svg class="network-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <line x1="20" y1="30" x2="35" y2="50" class="network-line"/>
+                    <line x1="35" y1="50" x2="50" y2="25" class="network-line"/>
+                    <line x1="50" y1="25" x2="70" y2="45" class="network-line"/>
+                    <line x1="70" y1="45" x2="80" y2="70" class="network-line"/>
+                    <line x1="35" y1="50" x2="70" y2="45" class="network-line"/>
+                </svg>
+            </div>
+        </div>
+        <div class="network-content">
+            <span class="section-label">European Network</span>
+            <h2 class="section-title">5 cities.<br>One <span class="highlight">system</span>.</h2>
+            <p class="network-text">Work from any FORMWERK location with a single membership. Same design principles. Same quality. Same experience. From the Bauhaus birthplace in Germany to design capitals across Europe.</p>
+            <div class="network-stats">
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Cities</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">23</span>
+                    <span class="stat-label">Locations</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2,400+</span>
+                    <span class="stat-label">Workspaces</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-header">
+            <span class="section-label">Amenities</span>
+            <h2 class="section-title">Function in every <span class="highlight">detail</span>.</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="8" y="8" width="32" height="32"/>
+                        <line x1="8" y1="16" x2="40" y2="16"/>
+                        <circle cx="14" cy="12" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h4>High-Speed Internet</h4>
+                <p>1Gbps symmetric fiber. Redundant connections. Work without limits.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="24" cy="24" r="16"/>
+                        <path d="M24 14v10l6 6"/>
+                    </svg>
+                </div>
+                <h4>24/7 Access</h4>
+                <p>Your schedule is your own. Key card access around the clock.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="24,8 40,40 8,40"/>
+                        <circle cx="24" cy="28" r="4"/>
+                    </svg>
+                </div>
+                <h4>Meeting Rooms</h4>
+                <p>Book instantly via app. Screen sharing ready. Professional environment.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="12" y="20" width="24" height="16"/>
+                        <path d="M8 36h32M24 12v8M20 12h8"/>
+                    </svg>
+                </div>
+                <h4>Craft Coffee</h4>
+                <p>Specialty roasters. Professional equipment. Fuel for thought.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="10" y="10" width="12" height="12"/>
+                        <rect x="26" y="10" width="12" height="12"/>
+                        <rect x="10" y="26" width="12" height="12"/>
+                        <rect x="26" y="26" width="12" height="12"/>
+                    </svg>
+                </div>
+                <h4>Locker Storage</h4>
+                <p>Secure personal storage. Leave your gear. Travel light.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="24" cy="20" r="8"/>
+                        <path d="M12 40c0-8 5-12 12-12s12 4 12 12"/>
+                    </svg>
+                </div>
+                <h4>Community Events</h4>
+                <p>Workshops, talks, gatherings. Connect with fellow makers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="membership-header">
+            <span class="section-label">Membership</span>
+            <h2 class="section-title">Choose your <span class="highlight">module</span>.</h2>
+        </div>
+        <div class="membership-grid">
+            <div class="membership-card">
+                <div class="card-header">
+                    <div class="card-icon circle-small"></div>
+                    <h3>Explorer</h3>
+                </div>
+                <div class="card-price-block">
+                    <span class="price">€99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="card-benefits">
+                    <li>5 day passes per month</li>
+                    <li>Access to all 5 cities</li>
+                    <li>High-speed internet</li>
+                    <li>Coffee & refreshments</li>
+                    <li>Community events</li>
+                </ul>
+                <button class="btn btn-outline">Select Plan</button>
+            </div>
+            <div class="membership-card featured">
+                <div class="card-badge">Most Popular</div>
+                <div class="card-header">
+                    <div class="card-icon square-small"></div>
+                    <h3>Builder</h3>
+                </div>
+                <div class="card-price-block">
+                    <span class="price">€299</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="card-benefits">
+                    <li>Unlimited hot desk access</li>
+                    <li>Access to all 23 locations</li>
+                    <li>4 hours meeting rooms/month</li>
+                    <li>Personal locker</li>
+                    <li>Priority support</li>
+                    <li>Guest passes (2/month)</li>
+                </ul>
+                <button class="btn btn-primary">Select Plan</button>
+            </div>
+            <div class="membership-card">
+                <div class="card-header">
+                    <div class="card-icon triangle-small"></div>
+                    <h3>Architect</h3>
+                </div>
+                <div class="card-price-block">
+                    <span class="price">€599</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="card-benefits">
+                    <li>Dedicated desk</li>
+                    <li>24/7 access</li>
+                    <li>Unlimited meeting rooms</li>
+                    <li>Mail handling</li>
+                    <li>Phone booth priority</li>
+                    <li>Team management tools</li>
+                </ul>
+                <button class="btn btn-outline">Select Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-shapes">
+            <div class="cta-circle"></div>
+            <div class="cta-square"></div>
+            <div class="cta-triangle"></div>
+        </div>
+        <div class="cta-content">
+            <h2>Ready to work with <span class="highlight">purpose</span>?</h2>
+            <p>Book a tour of your nearest FORMWERK location. Experience design that works.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large">Book a Free Tour</button>
+                <button class="btn btn-ghost">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-shape circle"></span>
+                    <span class="logo-shape square"></span>
+                    <span class="logo-shape triangle"></span>
+                    <span class="logo-text">FORMWERK</span>
+                </a>
+                <p>Modular workspaces designed with Bauhaus principles. Form follows function.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Spaces</h4>
+                <ul>
+                    <li><a href="#">Focus Pods</a></li>
+                    <li><a href="#">Workshop Studios</a></li>
+                    <li><a href="#">Collaboration Corners</a></li>
+                    <li><a href="#">Virtual Office</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Locations</h4>
+                <ul>
+                    <li><a href="#">Berlin</a></li>
+                    <li><a href="#">Amsterdam</a></li>
+                    <li><a href="#">Copenhagen</a></li>
+                    <li><a href="#">Vienna</a></li>
+                    <li><a href="#">Zurich</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FORMWERK. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
