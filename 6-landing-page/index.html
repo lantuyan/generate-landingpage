@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Glass | Exclusive Cocktail Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="art-deco-spinner"></div>
+            <p class="preloader-text">Preparing Your Experience</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">&#9830;</span>
+                <span class="logo-text">The Gilded Glass</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+                <li><a href="#testimonials" class="nav-link">Society</a></li>
+                <li><a href="#join" class="nav-link nav-cta">Request Invitation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-frame">
+                <div class="frame-corner top-left"></div>
+                <div class="frame-corner top-right"></div>
+                <div class="frame-corner bottom-left"></div>
+                <div class="frame-corner bottom-right"></div>
+                <div class="hero-text">
+                    <p class="hero-subtitle reveal-text">Members Only Since 1924</p>
+                    <h1 class="hero-title reveal-text">
+                        <span class="title-line">The Gilded</span>
+                        <span class="title-line">Glass</span>
+                    </h1>
+                    <div class="hero-divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-diamond">&#9830;</span>
+                        <span class="divider-line"></span>
+                    </div>
+                    <p class="hero-tagline reveal-text">Curated Spirits & Mixology Experiences<br>For The Discerning Enthusiast</p>
+                    <a href="#experience" class="hero-cta reveal-text">
+                        <span>Discover More</span>
+                        <span class="cta-arrow">&#8595;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-pattern left"></div>
+        <div class="section-pattern right"></div>
+        <div class="container">
+            <header class="section-header">
+                <div class="section-ornament">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-diamond">&#9830;</span>
+                    <span class="ornament-line"></span>
+                </div>
+                <h2 class="section-title">The Experience</h2>
+                <p class="section-subtitle">A Journey Through Liquid Artistry</p>
+            </header>
+            <div class="experience-grid">
+                <article class="experience-card" data-reveal>
+                    <div class="card-frame">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 60 60" class="icon-svg">
+                                <polygon points="30,5 55,30 30,55 5,30" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <polygon points="30,15 45,30 30,45 15,30" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Curated Selection</h3>
+                        <p class="card-text">Each month, our master sommeliers handpick rare and exceptional spirits from distinguished distilleries across the globe.</p>
+                    </div>
+                </article>
+                <article class="experience-card" data-reveal>
+                    <div class="card-frame">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 60 60" class="icon-svg">
+                                <circle cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <circle cx="30" cy="30" r="15" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <line x1="30" y1="5" x2="30" y2="15" stroke="currentColor" stroke-width="1"/>
+                                <line x1="30" y1="45" x2="30" y2="55" stroke="currentColor" stroke-width="1"/>
+                                <line x1="5" y1="30" x2="15" y2="30" stroke="currentColor" stroke-width="1"/>
+                                <line x1="45" y1="30" x2="55" y2="30" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Artisanal Recipes</h3>
+                        <p class="card-text">Exclusive cocktail recipes crafted by world-renowned mixologists, paired with premium garnishes and bespoke glassware.</p>
+                    </div>
+                </article>
+                <article class="experience-card" data-reveal>
+                    <div class="card-frame">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 60 60" class="icon-svg">
+                                <path d="M30,5 L45,20 L45,40 L30,55 L15,40 L15,20 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <path d="M30,15 L40,25 L40,35 L30,45 L20,35 L20,25 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Private Events</h3>
+                        <p class="card-text">Exclusive access to intimate tasting soirées, masterclasses with industry legends, and members-only speakeasy gatherings.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="geometric-bg"></div>
+        <div class="container">
+            <header class="section-header light">
+                <div class="section-ornament">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-diamond">&#9830;</span>
+                    <span class="ornament-line"></span>
+                </div>
+                <h2 class="section-title">Monthly Collections</h2>
+                <p class="section-subtitle">Treasures Await The Connoisseur</p>
+            </header>
+            <div class="collections-showcase">
+                <article class="collection-item" data-reveal>
+                    <div class="collection-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder emerald">
+                                <span class="placeholder-icon">&#9827;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <span class="collection-label">January Collection</span>
+                        <h3 class="collection-title">The Emerald Hour</h3>
+                        <p class="collection-desc">A celebration of botanical spirits featuring a rare Japanese gin, artisanal absinthe, and handcrafted chartreuse from the French Alps.</p>
+                        <ul class="collection-features">
+                            <li><span class="feature-diamond">&#9830;</span> 3 Premium Spirits</li>
+                            <li><span class="feature-diamond">&#9830;</span> Crystal Coupe Glass</li>
+                            <li><span class="feature-diamond">&#9830;</span> 5 Exclusive Recipes</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="collection-item reverse" data-reveal>
+                    <div class="collection-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder sapphire">
+                                <span class="placeholder-icon">&#9824;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <span class="collection-label">February Collection</span>
+                        <h3 class="collection-title">Midnight Sapphire</h3>
+                        <p class="collection-desc">Voyage through azure depths with aged cognac, butterfly pea-infused vodka, and a century-old port from Portugal's Douro Valley.</p>
+                        <ul class="collection-features">
+                            <li><span class="feature-diamond">&#9830;</span> 3 Premium Spirits</li>
+                            <li><span class="feature-diamond">&#9830;</span> Art Deco Shaker</li>
+                            <li><span class="feature-diamond">&#9830;</span> 5 Exclusive Recipes</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="collection-item" data-reveal>
+                    <div class="collection-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder gold">
+                                <span class="placeholder-icon">&#9829;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <span class="collection-label">March Collection</span>
+                        <h3 class="collection-title">Golden Reverie</h3>
+                        <p class="collection-desc">Indulge in liquid gold with 25-year single malt, saffron-kissed rum, and champagne from a legendary Épernay house.</p>
+                        <ul class="collection-features">
+                            <li><span class="feature-diamond">&#9830;</span> 3 Premium Spirits</li>
+                            <li><span class="feature-diamond">&#9830;</span> Gold-Rimmed Flutes</li>
+                            <li><span class="feature-diamond">&#9830;</span> 5 Exclusive Recipes</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <div class="container">
+            <header class="section-header">
+                <div class="section-ornament">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-diamond">&#9830;</span>
+                    <span class="ornament-line"></span>
+                </div>
+                <h2 class="section-title">Membership Tiers</h2>
+                <p class="section-subtitle">Select Your Path to Distinction</p>
+            </header>
+            <div class="membership-grid">
+                <article class="membership-card" data-reveal>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <span class="tier-label">Silver</span>
+                        <h3 class="tier-name">The Connoisseur</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">195</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="tier-benefits">
+                            <li>Monthly curated box (2 spirits)</li>
+                            <li>Digital recipe collection</li>
+                            <li>Members-only newsletter</li>
+                            <li>10% event discount</li>
+                        </ul>
+                        <a href="#join" class="tier-cta">Select Tier</a>
+                    </div>
+                </article>
+                <article class="membership-card featured" data-reveal>
+                    <div class="card-badge">Most Popular</div>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <span class="tier-label">Gold</span>
+                        <h3 class="tier-name">The Aficionado</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">395</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="tier-benefits">
+                            <li>Monthly curated box (3 spirits)</li>
+                            <li>Premium glassware included</li>
+                            <li>Quarterly virtual masterclass</li>
+                            <li>Priority event access</li>
+                            <li>Complimentary garnish kit</li>
+                        </ul>
+                        <a href="#join" class="tier-cta gold">Select Tier</a>
+                    </div>
+                </article>
+                <article class="membership-card" data-reveal>
+                    <div class="card-accent"></div>
+                    <div class="card-body">
+                        <span class="tier-label">Platinum</span>
+                        <h3 class="tier-name">The Patron</h3>
+                        <div class="tier-price">
+                            <span class="currency">$</span>
+                            <span class="amount">795</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="tier-benefits">
+                            <li>Monthly curated box (5 spirits)</li>
+                            <li>Bespoke crystal collection</li>
+                            <li>Private mixologist consultation</li>
+                            <li>All events included</li>
+                            <li>Annual distillery tour</li>
+                            <li>Concierge service</li>
+                        </ul>
+                        <a href="#join" class="tier-cta">Select Tier</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonial-pattern"></div>
+        <div class="container">
+            <header class="section-header light">
+                <div class="section-ornament">
+                    <span class="ornament-line"></span>
+                    <span class="ornament-diamond">&#9830;</span>
+                    <span class="ornament-line"></span>
+                </div>
+                <h2 class="section-title">The Society Speaks</h2>
+                <p class="section-subtitle">Words From Distinguished Members</p>
+            </header>
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <div class="testimonial-track">
+                    <article class="testimonial-card">
+                        <div class="quote-mark">&#8220;</div>
+                        <blockquote class="testimonial-quote">
+                            The Gilded Glass has transformed my understanding of mixology. Each delivery feels like unwrapping a treasure from a bygone era of elegance.
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>VL</span>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">Victoria Laurent</cite>
+                                <span class="author-title">Patron Member, Paris</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="quote-mark">&#8220;</div>
+                        <blockquote class="testimonial-quote">
+                            The attention to detail is extraordinary. From the packaging to the spirits themselves, every element speaks of impeccable taste and sophistication.
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>JM</span>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">James Montgomery</cite>
+                                <span class="author-title">Aficionado Member, London</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="quote-mark">&#8220;</div>
+                        <blockquote class="testimonial-quote">
+                            The private events are simply unparalleled. I've made invaluable connections while savoring the finest spirits in the most enchanting settings.
+                        </blockquote>
+                        <footer class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SC</span>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">Sophia Chen</cite>
+                                <span class="author-title">Patron Member, New York</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" aria-label="Previous testimonial">&#8249;</button>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-btn next" aria-label="Next testimonial">&#8250;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join" id="join">
+        <div class="join-pattern"></div>
+        <div class="container">
+            <div class="join-content" data-reveal>
+                <div class="join-frame">
+                    <div class="frame-top">
+                        <span class="frame-line"></span>
+                        <span class="frame-diamond">&#9830;</span>
+                        <span class="frame-line"></span>
+                    </div>
+                    <header class="join-header">
+                        <h2 class="join-title">Request Your Invitation</h2>
+                        <p class="join-subtitle">Join the ranks of the distinguished few who appreciate the art of exceptional spirits.</p>
+                    </header>
+                    <form class="join-form" id="join-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="membership" class="form-label">Preferred Membership</label>
+                            <select id="membership" name="membership" class="form-select" required>
+                                <option value="">Select your tier</option>
+                                <option value="silver">Silver - The Connoisseur</option>
+                                <option value="gold">Gold - The Aficionado</option>
+                                <option value="platinum">Platinum - The Patron</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span>Submit Request</span>
+                            <span class="submit-ornament">&#9830;</span>
+                        </button>
+                    </form>
+                    <p class="join-note">Membership is by invitation only. All applications are reviewed by our selection committee.</p>
+                    <div class="frame-bottom">
+                        <span class="frame-line"></span>
+                        <span class="frame-diamond">&#9830;</span>
+                        <span class="frame-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-icon">&#9830;</span>
+                        <span class="logo-text">The Gilded Glass</span>
+                    </a>
+                    <p class="footer-tagline">Curating Excellence Since 1924</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4 class="footer-nav-title">Navigate</h4>
+                        <ul class="footer-links">
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#collections">Collections</a></li>
+                            <li><a href="#membership">Membership</a></li>
+                            <li><a href="#testimonials">Society</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4 class="footer-nav-title">Connect</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4 class="footer-nav-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Age Policy</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond">&#9830;</span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="footer-copyright">&copy; 2024 The Gilded Glass. All rights reserved. Please drink responsibly.</p>
+                <p class="footer-age">Must be 21+ to join. By submitting, you confirm you are of legal drinking age.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-frame">
+                <div class="modal-icon">&#9830;</div>
+                <h3 class="modal-title">Application Received</h3>
+                <p class="modal-text">Thank you for your interest in The Gilded Glass. Our selection committee will review your application and respond within 48 hours.</p>
+                <button class="modal-close" id="modal-close">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
