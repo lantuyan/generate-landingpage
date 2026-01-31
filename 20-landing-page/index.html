@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KineticPro | Performance Analytics for Athletes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Motion Lines Background -->
+    <div class="motion-lines" aria-hidden="true">
+        <div class="motion-line"></div>
+        <div class="motion-line"></div>
+        <div class="motion-line"></div>
+        <div class="motion-line"></div>
+        <div class="motion-line"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 32L20 8L32 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 24H28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                    </svg>
+                </span>
+                <span class="logo-text">KineticPro</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#testimonials">Athletes</a></li>
+            </ul>
+            <a href="#cta" class="nav-cta">Start Moving</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#testimonials">Athletes</a></li>
+            <li><a href="#cta" class="mobile-cta">Start Moving</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span>Next-Gen Motion Capture</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Track Every</span>
+                <span class="title-line title-accent">Movement</span>
+                <span class="title-line">Perfect Every</span>
+                <span class="title-line title-accent">Motion</span>
+            </h1>
+            <p class="hero-description">
+                Advanced motion capture technology that analyzes, visualizes, and optimizes your athletic performance in real-time. Transform data into victory.
+            </p>
+            <div class="hero-actions">
+                <a href="#cta" class="btn btn-primary">
+                    <span class="btn-text">Launch Your Performance</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#technology" class="btn btn-secondary">
+                    <span class="btn-text">See It In Action</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99.7">0</span>
+                    <span class="stat-unit">%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-unit">+</span>
+                    <span class="stat-label">Pro Athletes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-unit">ms</span>
+                    <span class="stat-label">Response Time</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="athlete-silhouette">
+                <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Running athlete silhouette -->
+                    <path class="athlete-path" d="M200 60 C200 60 180 80 185 100 C190 120 210 130 220 150 C230 170 225 190 220 210 C215 230 200 250 190 280 C180 310 160 350 140 400 C135 415 130 440 135 460" stroke="url(#athleteGradient)" stroke-width="3" fill="none"/>
+                    <path class="athlete-path delay-1" d="M200 60 C200 60 220 80 215 100 C210 120 230 140 250 160 C270 180 290 220 300 260 C310 300 320 350 310 400" stroke="url(#athleteGradient)" stroke-width="3" fill="none"/>
+                    <path class="athlete-path delay-2" d="M200 60 C210 70 230 75 250 80 C270 85 290 85 310 80" stroke="url(#athleteGradient)" stroke-width="3" fill="none"/>
+                    <path class="athlete-path delay-3" d="M200 60 C190 70 170 75 150 80 C130 85 110 85 90 80" stroke="url(#athleteGradient)" stroke-width="3" fill="none"/>
+                    <!-- Motion trail circles -->
+                    <circle class="motion-circle" cx="200" cy="60" r="8" fill="url(#circleGradient)"/>
+                    <circle class="motion-circle delay-1" cx="220" cy="150" r="6" fill="url(#circleGradient)"/>
+                    <circle class="motion-circle delay-2" cx="190" cy="280" r="5" fill="url(#circleGradient)"/>
+                    <circle class="motion-circle delay-3" cx="250" cy="160" r="5" fill="url(#circleGradient)"/>
+                    <defs>
+                        <linearGradient id="athleteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0EA5E9"/>
+                            <stop offset="50%" stop-color="#F97316"/>
+                            <stop offset="100%" stop-color="#EF4444"/>
+                        </linearGradient>
+                        <radialGradient id="circleGradient">
+                            <stop offset="0%" stop-color="#0EA5E9"/>
+                            <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="velocity-rings">
+                <div class="velocity-ring"></div>
+                <div class="velocity-ring"></div>
+                <div class="velocity-ring"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Engineered for <em>Speed</em></h2>
+                <p class="section-description">Every feature designed to capture the essence of motion and transform it into actionable insights.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-velocity="1">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12v12l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-Time Tracking</h3>
+                    <p class="feature-description">Capture motion data at 240fps with sub-millimeter precision. Every movement analyzed instantly.</p>
+                    <div class="feature-trail"></div>
+                </div>
+                <div class="feature-card" data-velocity="2">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 36L16 28L24 32L32 20L40 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="28" r="3" fill="currentColor"/>
+                            <circle cx="24" cy="32" r="3" fill="currentColor"/>
+                            <circle cx="32" cy="20" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Pattern Recognition</h3>
+                    <p class="feature-description">AI-powered analysis identifies movement patterns and suggests optimizations for peak performance.</p>
+                    <div class="feature-trail"></div>
+                </div>
+                <div class="feature-card" data-velocity="3">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Performance Scoring</h3>
+                    <p class="feature-description">Comprehensive scoring system that quantifies technique, power, and efficiency across all movements.</p>
+                    <div class="feature-trail"></div>
+                </div>
+                <div class="feature-card" data-velocity="4">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">3D Visualization</h3>
+                    <p class="feature-description">Immersive 3D replays that let you examine every angle and moment of athletic performance.</p>
+                    <div class="feature-trail"></div>
+                </div>
+                <div class="feature-card" data-velocity="5">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 24C12 17.4 17.4 12 24 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M36 24C36 30.6 30.6 36 24 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 18v-6M24 36v-6M30 24h6M12 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Biomechanical Analysis</h3>
+                    <p class="feature-description">Deep biomechanical insights that reveal the physics behind your movement for injury prevention.</p>
+                    <div class="feature-trail"></div>
+                </div>
+                <div class="feature-card" data-velocity="6">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 40V20L24 8L40 20V40" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="18" y="28" width="12" height="12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Integration</h3>
+                    <p class="feature-description">Seamless collaboration tools for coaches and trainers to analyze and compare athlete data.</p>
+                    <div class="feature-trail"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-info">
+                    <span class="section-tag">The Engine</span>
+                    <h2 class="section-title">Powered by <em>Motion Intelligence</em></h2>
+                    <p class="tech-description">Our proprietary sensor fusion technology combines multiple data streams into a unified, real-time motion profile. Every microsecond counts.</p>
+                    <ul class="tech-features">
+                        <li class="tech-feature">
+                            <span class="tech-bullet"></span>
+                            <span>Multi-sensor fusion with IMU, optical, and pressure data</span>
+                        </li>
+                        <li class="tech-feature">
+                            <span class="tech-bullet"></span>
+                            <span>Edge computing for zero-latency feedback</span>
+                        </li>
+                        <li class="tech-feature">
+                            <span class="tech-bullet"></span>
+                            <span>Neural network trained on 10M+ athletic movements</span>
+                        </li>
+                        <li class="tech-feature">
+                            <span class="tech-bullet"></span>
+                            <span>Predictive injury prevention algorithms</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-visual">
+                    <div class="data-flow">
+                        <div class="data-node node-input">
+                            <span class="node-label">Sensors</span>
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="data-stream">
+                            <div class="stream-particle"></div>
+                            <div class="stream-particle"></div>
+                            <div class="stream-particle"></div>
+                        </div>
+                        <div class="data-node node-process">
+                            <span class="node-label">AI Engine</span>
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="data-stream">
+                            <div class="stream-particle"></div>
+                            <div class="stream-particle"></div>
+                            <div class="stream-particle"></div>
+                        </div>
+                        <div class="data-node node-output">
+                            <span class="node-label">Insights</span>
+                            <div class="node-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="tech-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics" id="metrics">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Results</span>
+                <h2 class="section-title">Numbers in <em>Motion</em></h2>
+                <p class="section-description">Real results from real athletes pushing the boundaries of human performance.</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-visual">
+                        <svg class="metric-ring" viewBox="0 0 100 100">
+                            <circle class="ring-bg" cx="50" cy="50" r="45"/>
+                            <circle class="ring-progress" cx="50" cy="50" r="45" data-progress="23"/>
+                        </svg>
+                        <span class="metric-value">23%</span>
+                    </div>
+                    <h3 class="metric-title">Performance Increase</h3>
+                    <p class="metric-description">Average improvement in athletic output after 3 months</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-visual">
+                        <svg class="metric-ring" viewBox="0 0 100 100">
+                            <circle class="ring-bg" cx="50" cy="50" r="45"/>
+                            <circle class="ring-progress" cx="50" cy="50" r="45" data-progress="67"/>
+                        </svg>
+                        <span class="metric-value">67%</span>
+                    </div>
+                    <h3 class="metric-title">Injury Reduction</h3>
+                    <p class="metric-description">Decrease in training-related injuries with predictive alerts</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-visual">
+                        <svg class="metric-ring" viewBox="0 0 100 100">
+                            <circle class="ring-bg" cx="50" cy="50" r="45"/>
+                            <circle class="ring-progress" cx="50" cy="50" r="45" data-progress="89"/>
+                        </svg>
+                        <span class="metric-value">89%</span>
+                    </div>
+                    <h3 class="metric-title">Data Accuracy</h3>
+                    <p class="metric-description">Precision in movement pattern recognition and analysis</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-visual">
+                        <svg class="metric-ring" viewBox="0 0 100 100">
+                            <circle class="ring-bg" cx="50" cy="50" r="45"/>
+                            <circle class="ring-progress" cx="50" cy="50" r="45" data-progress="45"/>
+                        </svg>
+                        <span class="metric-value">45%</span>
+                    </div>
+                    <h3 class="metric-title">Recovery Speed</h3>
+                    <p class="metric-description">Faster recovery with optimized training load management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Athletes</span>
+                <h2 class="section-title">Voices of <em>Velocity</em></h2>
+            </div>
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"KineticPro transformed how I understand my body. Every stride, every push, every landing—now I see it all in data that actually makes sense."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MJ</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Johnson</span>
+                            <span class="author-title">Olympic Sprinter</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-trail"></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The real-time feedback during training sessions is incredible. I've shaved seconds off my times and prevented two potential injuries this season."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>SK</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Kim</span>
+                            <span class="author-title">Professional Swimmer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-trail"></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a coach, having this level of biomechanical insight for my entire team has been game-changing. We train smarter, not just harder."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>DR</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">David Rodriguez</span>
+                            <span class="author-title">NBA Performance Coach</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-trail"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg">
+            <div class="cta-particle"></div>
+            <div class="cta-particle"></div>
+            <div class="cta-particle"></div>
+            <div class="cta-wave"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to <em>Accelerate</em>?</h2>
+                <p class="cta-description">Join 500+ elite athletes already transforming their performance with KineticPro. Your breakthrough awaits.</p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required class="form-input">
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Launch</span>
+                            <span class="submit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="form-note">Free 30-day trial. No credit card required.</p>
+                </form>
+                <div class="cta-brands">
+                    <span>Trusted by teams from</span>
+                    <div class="brand-logos">
+                        <div class="brand-logo">NFL</div>
+                        <div class="brand-logo">NBA</div>
+                        <div class="brand-logo">MLB</div>
+                        <div class="brand-logo">Olympics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 32L20 8L32 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 24H28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">KineticPro</span>
+                    </a>
+                    <p class="footer-tagline">Movement perfected through technology.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#technology">Technology</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KineticPro. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
