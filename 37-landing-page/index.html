@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityVision Studio | Interactive 3D City Models</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <div class="iso-cube"></div>
+                </div>
+                <span>CityVision</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-tag">Urban Planning Visualization</span>
+                <h1>See Your City's Future in <span class="highlight">Three Dimensions</span></h1>
+                <p>We create interactive 3D city models that help municipalities communicate development plans clearly to citizens and stakeholders.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#process" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="isometric-city">
+                    <!-- Building Row 1 -->
+                    <div class="iso-building building-1" data-delay="0">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <div class="iso-building building-2" data-delay="100">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <div class="iso-building building-3" data-delay="200">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <!-- Building Row 2 -->
+                    <div class="iso-building building-4" data-delay="150">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <div class="iso-building building-5" data-delay="250">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <div class="iso-building building-6" data-delay="350">
+                        <div class="building-top"></div>
+                        <div class="building-left"></div>
+                        <div class="building-right"></div>
+                    </div>
+                    <!-- Infrastructure -->
+                    <div class="iso-road road-1"></div>
+                    <div class="iso-road road-2"></div>
+                    <!-- Green Spaces -->
+                    <div class="iso-park park-1">
+                        <div class="tree"></div>
+                        <div class="tree tree-2"></div>
+                    </div>
+                    <div class="iso-park park-2">
+                        <div class="tree"></div>
+                    </div>
+                    <!-- Grid Lines -->
+                    <div class="iso-grid"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2>Building Understanding Through <span class="highlight">Dimensional Clarity</span></h2>
+                <p>We transform complex urban development plans into interactive visualizations that everyone can understand.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="build-up">
+                    <div class="service-icon">
+                        <div class="iso-icon icon-model">
+                            <div class="icon-layer layer-1"></div>
+                            <div class="icon-layer layer-2"></div>
+                            <div class="icon-layer layer-3"></div>
+                        </div>
+                    </div>
+                    <h3>3D City Models</h3>
+                    <p>Interactive digital twins of your city, rendered in precise isometric detail for complete spatial understanding.</p>
+                    <ul class="service-features">
+                        <li>Complete district modeling</li>
+                        <li>Real-time data integration</li>
+                        <li>Multiple viewing angles</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="build-up">
+                    <div class="service-icon">
+                        <div class="iso-icon icon-timeline">
+                            <div class="timeline-bar bar-1"></div>
+                            <div class="timeline-bar bar-2"></div>
+                            <div class="timeline-bar bar-3"></div>
+                        </div>
+                    </div>
+                    <h3>Development Timeline</h3>
+                    <p>Animated visualizations showing how projects will transform neighborhoods over months and years.</p>
+                    <ul class="service-features">
+                        <li>Phase-by-phase animations</li>
+                        <li>Before & after comparisons</li>
+                        <li>Impact projections</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="build-up">
+                    <div class="service-icon">
+                        <div class="iso-icon icon-interact">
+                            <div class="interact-cube"></div>
+                            <div class="interact-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Public Engagement</h3>
+                    <p>Interactive platforms where citizens can explore proposed changes and provide meaningful feedback.</p>
+                    <ul class="service-features">
+                        <li>Web-based exploration</li>
+                        <li>Comment integration</li>
+                        <li>Voting mechanisms</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="build-up">
+                    <div class="service-icon">
+                        <div class="iso-icon icon-data">
+                            <div class="data-block block-1"></div>
+                            <div class="data-block block-2"></div>
+                            <div class="data-block block-3"></div>
+                            <div class="data-block block-4"></div>
+                        </div>
+                    </div>
+                    <h3>Data Visualization</h3>
+                    <p>Layer traffic, population, environmental data onto your city model for informed decision-making.</p>
+                    <ul class="service-features">
+                        <li>Traffic flow analysis</li>
+                        <li>Environmental impact</li>
+                        <li>Population density</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Process</span>
+                <h2>From <span class="highlight">Data</span> to <span class="highlight">Dimension</span></h2>
+                <p>A systematic approach to building understanding through visual clarity.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-step="01">
+                    <div class="step-visual">
+                        <div class="iso-scene scene-collect">
+                            <div class="collect-layer layer-base"></div>
+                            <div class="collect-layer layer-mid"></div>
+                            <div class="collect-layer layer-top"></div>
+                            <div class="collect-arrow"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Gather & Analyze</h3>
+                        <p>We collect GIS data, architectural plans, zoning documents, and stakeholder requirements to build a comprehensive foundation.</p>
+                    </div>
+                </div>
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+                <div class="process-step" data-step="02">
+                    <div class="step-visual">
+                        <div class="iso-scene scene-build">
+                            <div class="build-base"></div>
+                            <div class="build-block block-a"></div>
+                            <div class="build-block block-b"></div>
+                            <div class="build-block block-c"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Model & Construct</h3>
+                        <p>Our team builds detailed isometric models, layer by layer, ensuring accuracy and visual consistency across all elements.</p>
+                    </div>
+                </div>
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+                <div class="process-step" data-step="03">
+                    <div class="step-visual">
+                        <div class="iso-scene scene-animate">
+                            <div class="animate-city">
+                                <div class="animate-building ab-1"></div>
+                                <div class="animate-building ab-2"></div>
+                                <div class="animate-building ab-3"></div>
+                            </div>
+                            <div class="animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Animate & Interact</h3>
+                        <p>We bring models to life with smooth animations and intuitive interactions that reveal how spaces evolve over time.</p>
+                    </div>
+                </div>
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+                <div class="process-step" data-step="04">
+                    <div class="step-visual">
+                        <div class="iso-scene scene-deploy">
+                            <div class="deploy-screen"></div>
+                            <div class="deploy-users">
+                                <div class="user user-1"></div>
+                                <div class="user user-2"></div>
+                                <div class="user user-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Deploy & Engage</h3>
+                        <p>Your visualization goes live on web platforms, enabling citizens to explore, understand, and contribute to the conversation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Projects</span>
+                <h2>Cities We've <span class="highlight">Visualized</span></h2>
+                <p>Explore how we've helped municipalities communicate complex developments to their communities.</p>
+            </div>
+            <div class="projects-showcase">
+                <div class="project-card" data-aos="assemble">
+                    <div class="project-visual">
+                        <div class="iso-project project-downtown">
+                            <div class="project-building pb-1"></div>
+                            <div class="project-building pb-2"></div>
+                            <div class="project-building pb-3"></div>
+                            <div class="project-road"></div>
+                            <div class="project-park"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-type">Mixed-Use Development</span>
+                        <h3>Downtown Riverside District</h3>
+                        <p>A comprehensive visualization of a 12-block redevelopment project, enabling over 5,000 citizens to explore proposed changes.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">City Blocks</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5K+</span>
+                                <span class="stat-label">User Sessions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">89%</span>
+                                <span class="stat-label">Approval Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="assemble">
+                    <div class="project-visual">
+                        <div class="iso-project project-transit">
+                            <div class="transit-station"></div>
+                            <div class="transit-line line-1"></div>
+                            <div class="transit-line line-2"></div>
+                            <div class="transit-hub"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-type">Infrastructure</span>
+                        <h3>Metro Transit Expansion</h3>
+                        <p>Interactive timeline showing the 5-year construction phases of a new light rail system connecting suburban communities.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">23</span>
+                                <span class="stat-label">Stations</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15mi</span>
+                                <span class="stat-label">Track Length</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12K+</span>
+                                <span class="stat-label">Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="assemble">
+                    <div class="project-visual">
+                        <div class="iso-project project-green">
+                            <div class="green-area area-1"></div>
+                            <div class="green-area area-2"></div>
+                            <div class="green-tree gt-1"></div>
+                            <div class="green-tree gt-2"></div>
+                            <div class="green-tree gt-3"></div>
+                            <div class="green-path"></div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-type">Environmental</span>
+                        <h3>Green Corridor Initiative</h3>
+                        <p>Visualization of a city-wide park system connecting neighborhoods through pedestrian-friendly green pathways.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Parks Connected</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.5mi</span>
+                                <span class="stat-label">Pathways</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">92%</span>
+                                <span class="stat-label">Approval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="iso-stat-icon">
+                        <div class="stat-cube"></div>
+                    </div>
+                    <span class="stat-number" data-target="47">0</span>
+                    <span class="stat-label">Cities Visualized</span>
+                </div>
+                <div class="stat-item">
+                    <div class="iso-stat-icon">
+                        <div class="stat-cube"></div>
+                    </div>
+                    <span class="stat-number" data-target="125">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <div class="iso-stat-icon">
+                        <div class="stat-cube"></div>
+                    </div>
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-suffix">M+</span>
+                    <span class="stat-label">Citizens Engaged</span>
+                </div>
+                <div class="stat-item">
+                    <div class="iso-stat-icon">
+                        <div class="stat-cube"></div>
+                    </div>
+                    <span class="stat-number" data-target="94">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Approval Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What <span class="highlight">City Leaders</span> Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <blockquote>"CityVision transformed how we communicate with our residents. Complex zoning changes that used to spark confusion now generate genuine understanding and constructive feedback."</blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="iso-avatar"></div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Chen</span>
+                            <span class="author-title">Director of Urban Planning, Riverside City</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <blockquote>"The interactive 3D model allowed our council members to fully grasp the scope of the transit expansion. It shortened our approval timeline significantly."</blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="iso-avatar"></div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Thompson</span>
+                            <span class="author-title">Transportation Commissioner, Metro County</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <blockquote>"Citizens went from opposing our green corridor plan to championing it—all because they could finally see how it would enhance their neighborhoods."</blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div class="iso-avatar"></div>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Dr. Emily Rodriguez</span>
+                            <span class="author-title">Parks & Recreation Director, Greenfield</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-visual">
+                    <div class="iso-cta-scene">
+                        <div class="cta-building cta-b1"></div>
+                        <div class="cta-building cta-b2"></div>
+                        <div class="cta-building cta-b3"></div>
+                        <div class="cta-road"></div>
+                        <div class="cta-glow"></div>
+                    </div>
+                </div>
+                <div class="cta-text">
+                    <h2>Ready to Visualize Your City's Future?</h2>
+                    <p>Let's build understanding together. Our team is ready to transform your urban development plans into interactive experiences that engage and inform.</p>
+                    <form class="cta-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="organization" name="organization" placeholder="Municipality / Organization">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Start Your Project</span>
+                            <div class="btn-iso-icon"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <div class="iso-cube"></div>
+                        </div>
+                        <span>CityVision</span>
+                    </a>
+                    <p>Transforming urban planning through dimensional clarity and interactive visualization.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">3D City Models</a></li>
+                            <li><a href="#services">Development Timeline</a></li>
+                            <li><a href="#services">Public Engagement</a></li>
+                            <li><a href="#services">Data Visualization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#process">Our Process</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CityVision Studio. All rights reserved.</p>
+                <div class="footer-iso-decoration">
+                    <div class="mini-building mb-1"></div>
+                    <div class="mini-building mb-2"></div>
+                    <div class="mini-building mb-3"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
