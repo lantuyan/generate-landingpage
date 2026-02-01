@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERO VELOCITY | Urban Air Mobility</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Speed Lines Background -->
+    <div class="speed-lines" aria-hidden="true">
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+        <div class="speed-line"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">AERO<span class="accent">VELOCITY</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">LAUNCH</a></li>
+                <li><a href="#features">PROPULSION</a></li>
+                <li><a href="#fleet">FLEET</a></li>
+                <li><a href="#routes">ROUTES</a></li>
+                <li><a href="#cta" class="nav-cta">TAKE FLIGHT →</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-diagonal"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-line"></span>
+                <span>FIRST URBAN AIR TAXI NETWORK</span>
+                <span class="badge-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">VELOCITY</span>
+                <span class="title-line">ABOVE THE</span>
+                <span class="title-line accent-line">SKYLINE</span>
+            </h1>
+            <p class="hero-subtitle">
+                Short-hop flights across metropolitan areas via electric vertical takeoff aircraft.
+                <strong>The future of urban mobility has arrived.</strong>
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">CITIES</span>
+                </div>
+                <div class="stat-divider">/</div>
+                <div class="stat">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">MPH</span>
+                </div>
+                <div class="stat-divider">/</div>
+                <div class="stat">
+                    <span class="stat-number" data-target="0">0</span>
+                    <span class="stat-label">EMISSIONS</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#cta" class="btn btn-primary">
+                    <span class="btn-text">BOOK YOUR FLIGHT</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span class="btn-text">EXPLORE</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="aircraft">
+                <div class="aircraft-body">
+                    <div class="aircraft-nose"></div>
+                    <div class="aircraft-cabin"></div>
+                    <div class="aircraft-tail"></div>
+                </div>
+                <div class="aircraft-wings">
+                    <div class="wing wing-left"></div>
+                    <div class="wing wing-right"></div>
+                </div>
+                <div class="aircraft-rotors">
+                    <div class="rotor rotor-1"></div>
+                    <div class="rotor rotor-2"></div>
+                    <div class="rotor rotor-3"></div>
+                    <div class="rotor rotor-4"></div>
+                </div>
+                <div class="motion-blur"></div>
+            </div>
+            <div class="trajectory-lines">
+                <svg viewBox="0 0 400 300" preserveAspectRatio="none">
+                    <path class="trajectory" d="M0,200 Q100,150 200,100 T400,0" />
+                    <path class="trajectory trajectory-2" d="M0,250 Q150,180 250,100 T400,20" />
+                </svg>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">PROPULSION TECHNOLOGY</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 60 60">
+                        <polygon points="30,5 55,50 5,50" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <line x1="30" y1="20" x2="30" y2="35" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="30" cy="42" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">VERTICAL ASCENT</h3>
+                <p class="feature-desc">No runway required. Launch from rooftop vertiports directly into your urban trajectory.</p>
+                <div class="feature-metric">
+                    <span class="metric-value">90</span>
+                    <span class="metric-unit">SEC TAKEOFF</span>
+                </div>
+            </div>
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M30,10 L30,30 L45,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">HYPER VELOCITY</h3>
+                <p class="feature-desc">Cruise at 200+ MPH above traffic. What takes an hour now takes minutes.</p>
+                <div class="feature-metric">
+                    <span class="metric-value">15</span>
+                    <span class="metric-unit">MIN AVG TRIP</span>
+                </div>
+            </div>
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 60 60">
+                        <path d="M10,45 Q30,20 50,45" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <line x1="30" y1="22" x2="30" y2="15" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">ZERO EMISSIONS</h3>
+                <p class="feature-desc">100% electric propulsion. The future of flight leaves no carbon footprint behind.</p>
+                <div class="feature-metric">
+                    <span class="metric-value">0</span>
+                    <span class="metric-unit">CO₂ OUTPUT</span>
+                </div>
+            </div>
+            <div class="feature-card" data-tilt>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 60 60">
+                        <rect x="15" y="20" width="30" height="20" fill="none" stroke="currentColor" stroke-width="2" rx="3"/>
+                        <line x1="20" y1="30" x2="40" y2="30" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="25" cy="30" r="3" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">AUTONOMOUS NAVIGATION</h3>
+                <p class="feature-desc">AI-powered flight systems ensure precision routing and ultimate safety.</p>
+                <div class="feature-metric">
+                    <span class="metric-value">99.9</span>
+                    <span class="metric-unit">% ACCURACY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="fleet-diagonal"></div>
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">THE FLEET</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="fleet-showcase">
+            <div class="fleet-item active" data-model="swift">
+                <div class="fleet-visual">
+                    <div class="aircraft-display">
+                        <div class="display-aircraft">
+                            <div class="display-body"></div>
+                            <div class="display-wings"></div>
+                            <div class="display-rotors">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specs-overlay">
+                        <div class="spec-item">
+                            <span class="spec-label">RANGE</span>
+                            <span class="spec-value">150 MI</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">CAPACITY</span>
+                            <span class="spec-value">4 PAX</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">TOP SPEED</span>
+                            <span class="spec-value">220 MPH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fleet-info">
+                    <span class="fleet-tag">FLAGSHIP</span>
+                    <h3 class="fleet-name">SWIFT X-1</h3>
+                    <p class="fleet-desc">Our premier urban cruiser. Designed for executive travel with whisper-quiet operation and luxurious cabin appointments.</p>
+                </div>
+            </div>
+            <div class="fleet-selector">
+                <button class="selector-btn active" data-model="swift">
+                    <span class="selector-line"></span>
+                    <span class="selector-name">SWIFT X-1</span>
+                </button>
+                <button class="selector-btn" data-model="dash">
+                    <span class="selector-line"></span>
+                    <span class="selector-name">DASH E-2</span>
+                </button>
+                <button class="selector-btn" data-model="apex">
+                    <span class="selector-line"></span>
+                    <span class="selector-name">APEX V-3</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="routes">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">FLIGHT CORRIDORS</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="routes-content">
+            <div class="route-map">
+                <div class="map-grid">
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                </div>
+                <div class="route-nodes">
+                    <div class="node node-hub" style="--x: 50%; --y: 40%;">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">DOWNTOWN HUB</span>
+                    </div>
+                    <div class="node" style="--x: 20%; --y: 25%;">
+                        <span class="node-label">AIRPORT</span>
+                    </div>
+                    <div class="node" style="--x: 80%; --y: 30%;">
+                        <span class="node-label">TECH DISTRICT</span>
+                    </div>
+                    <div class="node" style="--x: 30%; --y: 70%;">
+                        <span class="node-label">MARINA</span>
+                    </div>
+                    <div class="node" style="--x: 75%; --y: 65%;">
+                        <span class="node-label">STADIUM</span>
+                    </div>
+                </div>
+                <svg class="route-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <line class="route-line" x1="50" y1="40" x2="20" y2="25"/>
+                    <line class="route-line" x1="50" y1="40" x2="80" y2="30"/>
+                    <line class="route-line" x1="50" y1="40" x2="30" y2="70"/>
+                    <line class="route-line" x1="50" y1="40" x2="75" y2="65"/>
+                </svg>
+            </div>
+            <div class="route-details">
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="route-from">DOWNTOWN</span>
+                        <span class="route-arrow">→</span>
+                        <span class="route-to">AIRPORT</span>
+                    </div>
+                    <div class="route-time">
+                        <span class="time-value">8</span>
+                        <span class="time-unit">MIN</span>
+                    </div>
+                    <div class="route-compare">
+                        <span class="compare-label">vs. 45 min drive</span>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="route-from">TECH DISTRICT</span>
+                        <span class="route-arrow">→</span>
+                        <span class="route-to">MARINA</span>
+                    </div>
+                    <div class="route-time">
+                        <span class="time-value">12</span>
+                        <span class="time-unit">MIN</span>
+                    </div>
+                    <div class="route-compare">
+                        <span class="compare-label">vs. 55 min drive</span>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="route-from">STADIUM</span>
+                        <span class="route-arrow">→</span>
+                        <span class="route-to">DOWNTOWN</span>
+                    </div>
+                    <div class="route-time">
+                        <span class="time-value">6</span>
+                        <span class="time-unit">MIN</span>
+                    </div>
+                    <div class="route-compare">
+                        <span class="compare-label">vs. 35 min drive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="cta-diagonal"></div>
+        <div class="cta-content">
+            <div class="cta-header">
+                <span class="cta-eyebrow">INITIATE LAUNCH SEQUENCE</span>
+                <h2 class="cta-title">
+                    <span>READY FOR</span>
+                    <span class="accent">LIFTOFF?</span>
+                </h2>
+            </div>
+            <form class="cta-form" id="launch-form">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="YOUR EMAIL ADDRESS" required>
+                    <div class="input-line"></div>
+                </div>
+                <div class="form-group">
+                    <select id="city" required>
+                        <option value="" disabled selected>SELECT YOUR CITY</option>
+                        <option value="sf">San Francisco</option>
+                        <option value="la">Los Angeles</option>
+                        <option value="nyc">New York City</option>
+                        <option value="miami">Miami</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="seattle">Seattle</option>
+                    </select>
+                    <div class="input-line"></div>
+                </div>
+                <button type="submit" class="btn btn-launch">
+                    <span class="btn-text">IGNITE</span>
+                    <span class="btn-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 19V5M5 12l7-7 7 7"/>
+                        </svg>
+                    </span>
+                    <span class="btn-glow"></span>
+                </button>
+            </form>
+            <p class="cta-note">Join the waitlist. First flights launching Q2 2026.</p>
+        </div>
+        <div class="cta-decoration">
+            <div class="thrust-lines">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">AERO<span class="accent">VELOCITY</span></span>
+            </div>
+            <div class="footer-links">
+                <a href="#">CAREERS</a>
+                <a href="#">SAFETY</a>
+                <a href="#">INVESTORS</a>
+                <a href="#">PRESS</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Instagram">◎</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AEROVELOCITY. THE FUTURE IS VERTICAL.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
