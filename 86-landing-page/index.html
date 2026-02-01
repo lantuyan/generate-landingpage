@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder - Discover the Undiscovered</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🧭</span>
+                <span class="logo-text">Pathfinder</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#locals">Meet Locals</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+            <a href="#book" class="nav-cta">Start Your Journey</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">Beyond the tourist trail</p>
+            <h1 class="hero-title">
+                <span class="title-line">Discover the</span>
+                <span class="title-line accent">Undiscovered</span>
+            </h1>
+            <p class="hero-description">Connect with local guides who reveal hidden hiking trails, secret food spots, and authentic cultural experiences that no guidebook can offer.</p>
+            <div class="hero-cta-group">
+                <a href="#destinations" class="btn btn-primary">Explore Destinations</a>
+                <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="127">0</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4500">0</span>
+                    <span class="stat-label">Local Guides</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="28000">0</span>
+                    <span class="stat-label">Adventures</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Your Journey Begins</span>
+                <h2 class="section-title">How Pathfinder Works</h2>
+                <p class="section-description">Three simple steps to unlock authentic travel experiences</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-step="01">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                            <path d="M11 8v6M8 11h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Choose Your Adventure</h3>
+                    <p class="step-description">Browse hidden gems curated by locals—from secret waterfalls to grandmother's kitchen.</p>
+                </div>
+                <div class="step-card" data-step="02">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Connect With Locals</h3>
+                    <p class="step-description">Match with passionate local guides who share your interests and travel style.</p>
+                </div>
+                <div class="step-card" data-step="03">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Travel Authentically</h3>
+                    <p class="step-description">Experience places like a local—not a tourist. Create memories, not just photos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Where Will You Go?</span>
+                <h2 class="section-title">Featured Destinations</h2>
+                <p class="section-description">Hand-picked locations where our local guides create unforgettable experiences</p>
+            </div>
+            <div class="destinations-grid">
+                <article class="destination-card featured">
+                    <div class="destination-image">
+                        <div class="destination-overlay"></div>
+                        <div class="destination-badge">Popular</div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">Southeast Asia</span>
+                        <h3 class="destination-name">Hidden Bali</h3>
+                        <p class="destination-desc">Beyond the tourist beaches—sacred temples, rice terrace treks, and village ceremonies.</p>
+                        <div class="destination-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                23 Local Guides
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                4.9
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image dest-morocco">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">North Africa</span>
+                        <h3 class="destination-name">Secret Morocco</h3>
+                        <p class="destination-desc">Desert camps, artisan workshops, and medina adventures with local storytellers.</p>
+                        <div class="destination-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                18 Local Guides
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                4.8
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image dest-peru">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">South America</span>
+                        <h3 class="destination-name">Untouched Peru</h3>
+                        <p class="destination-desc">Ancient trails, indigenous communities, and culinary secrets of the Andes.</p>
+                        <div class="destination-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                15 Local Guides
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                4.9
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="destination-image dest-japan">
+                        <div class="destination-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <span class="destination-region">East Asia</span>
+                        <h3 class="destination-name">Rural Japan</h3>
+                        <p class="destination-desc">Mountain temples, sake breweries, and centuries-old traditions beyond Tokyo.</p>
+                        <div class="destination-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                21 Local Guides
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                5.0
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="destinations-cta">
+                <a href="#" class="btn btn-outline">View All 127 Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experiences" id="experiences">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">What Will You Do?</span>
+                <h2 class="section-title">Authentic Experiences</h2>
+                <p class="section-description">Choose your adventure style—every experience curated by passionate locals</p>
+            </div>
+            <div class="experience-tabs">
+                <button class="exp-tab active" data-tab="adventure">Adventure</button>
+                <button class="exp-tab" data-tab="culture">Culture</button>
+                <button class="exp-tab" data-tab="food">Food</button>
+                <button class="exp-tab" data-tab="nature">Nature</button>
+            </div>
+            <div class="experience-content">
+                <div class="experience-panel active" id="adventure">
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="exp-image exp-hiking"></div>
+                            <div class="exp-details">
+                                <h4>Secret Trail Hikes</h4>
+                                <p>Paths known only to locals, leading to hidden waterfalls and panoramic viewpoints.</p>
+                                <span class="exp-tag">Physical</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-climbing"></div>
+                            <div class="exp-details">
+                                <h4>Mountain Expeditions</h4>
+                                <p>Summit untouched peaks with experienced local mountaineers as your guides.</p>
+                                <span class="exp-tag">Challenging</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-diving"></div>
+                            <div class="exp-details">
+                                <h4>Hidden Dive Spots</h4>
+                                <p>Underwater caves and reefs that tour boats never reach.</p>
+                                <span class="exp-tag">Aquatic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-panel" id="culture">
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="exp-image exp-ceremony"></div>
+                            <div class="exp-details">
+                                <h4>Sacred Ceremonies</h4>
+                                <p>Witness authentic rituals and traditions as a welcomed guest, not a spectator.</p>
+                                <span class="exp-tag">Spiritual</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-crafts"></div>
+                            <div class="exp-details">
+                                <h4>Artisan Workshops</h4>
+                                <p>Learn centuries-old crafts from master artisans in their family workshops.</p>
+                                <span class="exp-tag">Creative</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-village"></div>
+                            <div class="exp-details">
+                                <h4>Village Homestays</h4>
+                                <p>Live with local families and experience daily life beyond the tourist bubble.</p>
+                                <span class="exp-tag">Immersive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-panel" id="food">
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="exp-image exp-market"></div>
+                            <div class="exp-details">
+                                <h4>Market Adventures</h4>
+                                <p>Navigate bustling local markets with guides who know every vendor by name.</p>
+                                <span class="exp-tag">Discovery</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-cooking"></div>
+                            <div class="exp-details">
+                                <h4>Home Cooking</h4>
+                                <p>Learn secret family recipes in local kitchens, from grandmother herself.</p>
+                                <span class="exp-tag">Hands-on</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-street"></div>
+                            <div class="exp-details">
+                                <h4>Secret Food Spots</h4>
+                                <p>Hole-in-the-wall eateries that locals guard jealously from tourists.</p>
+                                <span class="exp-tag">Authentic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-panel" id="nature">
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="exp-image exp-wildlife"></div>
+                            <div class="exp-details">
+                                <h4>Wildlife Encounters</h4>
+                                <p>Ethical wildlife experiences guided by local conservationists.</p>
+                                <span class="exp-tag">Ecological</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-forest"></div>
+                            <div class="exp-details">
+                                <h4>Forest Bathing</h4>
+                                <p>Meditative nature walks in ancient forests with indigenous guides.</p>
+                                <span class="exp-tag">Mindful</span>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <div class="exp-image exp-stars"></div>
+                            <div class="exp-details">
+                                <h4>Stargazing Camps</h4>
+                                <p>Remote locations with zero light pollution and local astronomy knowledge.</p>
+                                <span class="exp-tag">Celestial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Locals -->
+    <section class="locals" id="locals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Heart of Pathfinder</span>
+                <h2 class="section-title">Meet Our Local Guides</h2>
+                <p class="section-description">Passionate locals who transform trips into life-changing adventures</p>
+            </div>
+            <div class="locals-grid">
+                <div class="local-card">
+                    <div class="local-image local-1"></div>
+                    <div class="local-content">
+                        <h4 class="local-name">Ketut Suardana</h4>
+                        <span class="local-location">Bali, Indonesia</span>
+                        <p class="local-bio">"I show travelers the Bali my grandmother knew—sacred springs, village ceremonies, and rice terraces where time stands still."</p>
+                        <div class="local-specialties">
+                            <span>Cultural Immersion</span>
+                            <span>Spiritual Journeys</span>
+                        </div>
+                        <div class="local-stats">
+                            <span>⭐ 4.9 (142 reviews)</span>
+                            <span>🗣️ English, Bahasa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="local-card">
+                    <div class="local-image local-2"></div>
+                    <div class="local-content">
+                        <h4 class="local-name">Fatima El-Rashid</h4>
+                        <span class="local-location">Fez, Morocco</span>
+                        <p class="local-bio">"The medina is a maze that tells a thousand stories. I help travelers find theirs—through food, crafts, and hidden riads."</p>
+                        <div class="local-specialties">
+                            <span>Food Tours</span>
+                            <span>Artisan Crafts</span>
+                        </div>
+                        <div class="local-stats">
+                            <span>⭐ 5.0 (98 reviews)</span>
+                            <span>🗣️ English, French, Arabic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="local-card">
+                    <div class="local-image local-3"></div>
+                    <div class="local-content">
+                        <h4 class="local-name">Hiroshi Tanaka</h4>
+                        <span class="local-location">Nagano, Japan</span>
+                        <p class="local-bio">"I traded Tokyo corporate life for mountain guiding. Now I share trails, onsens, and sake breweries that tourists never find."</p>
+                        <div class="local-specialties">
+                            <span>Mountain Hiking</span>
+                            <span>Traditional Culture</span>
+                        </div>
+                        <div class="local-stats">
+                            <span>⭐ 4.9 (76 reviews)</span>
+                            <span>🗣️ English, Japanese</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="become-guide">
+                <div class="guide-cta-content">
+                    <span class="handwritten">Share your world</span>
+                    <h3>Become a Local Guide</h3>
+                    <p>Are you passionate about your home? Do you know secrets that no tourist ever discovers? Join our community of local guides and share authentic experiences with curious travelers.</p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories/Testimonials -->
+    <section class="stories" id="stories">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Traveler Tales</span>
+                <h2 class="section-title">Stories From the Road</h2>
+                <p class="section-description">Real adventures, real transformations, real connections</p>
+            </div>
+            <div class="stories-carousel">
+                <div class="story-card active">
+                    <div class="story-image story-1"></div>
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                            <blockquote>
+                                "I've traveled to 40 countries, but my week with Ketut in Bali was the first time I truly felt I understood a place. We visited temples at dawn, learned to make offerings with his mother, and hiked to waterfalls I'll never share on Instagram. This is what travel should be."
+                            </blockquote>
+                        </div>
+                        <div class="story-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah Mitchell</span>
+                                <span class="author-trip">Hidden Bali Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image story-2"></div>
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                            <blockquote>
+                                "Fatima took us through Fez's medina like family. We ate at her cousin's hidden restaurant, watched her uncle craft leather, and ended up at a rooftop dinner we'll never forget. No tour could give you this—these are real relationships."
+                            </blockquote>
+                        </div>
+                        <div class="story-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-name">James & Emily Chen</span>
+                                <span class="author-trip">Secret Morocco Journey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image story-3"></div>
+                    <div class="story-content">
+                        <div class="story-quote">
+                            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                            </svg>
+                            <blockquote>
+                                "Hiroshi showed me a Japan that doesn't exist in guidebooks. We hiked to mountain shrines, soaked in hidden onsens, and shared sake with elderly craftsmen. I went looking for adventure and found a lifelong friend."
+                            </blockquote>
+                        </div>
+                        <div class="story-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <span class="author-name">Marcus Thompson</span>
+                                <span class="author-trip">Rural Japan Discovery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-nav">
+                <button class="story-nav-btn prev" aria-label="Previous story">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="story-dots">
+                    <button class="story-dot active" aria-label="Story 1"></button>
+                    <button class="story-dot" aria-label="Story 2"></button>
+                    <button class="story-dot" aria-label="Story 3"></button>
+                </div>
+                <button class="story-nav-btn next" aria-label="Next story">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book/CTA Section -->
+    <section class="book" id="book">
+        <div class="book-bg">
+            <div class="book-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="book-content">
+                <span class="handwritten">Your adventure awaits</span>
+                <h2 class="book-title">Ready to Discover the Undiscovered?</h2>
+                <p class="book-description">Join 28,000+ travelers who've traded tourist traps for authentic connections. Your next adventure is one local guide away.</p>
+                <form class="book-form" id="bookForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Where do you want to go?</label>
+                            <select id="destination" required>
+                                <option value="">Select a destination</option>
+                                <option value="bali">Hidden Bali, Indonesia</option>
+                                <option value="morocco">Secret Morocco</option>
+                                <option value="peru">Untouched Peru</option>
+                                <option value="japan">Rural Japan</option>
+                                <option value="other">Somewhere else...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">What interests you?</label>
+                            <select id="experience" required>
+                                <option value="">Select experience type</option>
+                                <option value="adventure">Adventure & Hiking</option>
+                                <option value="culture">Culture & Heritage</option>
+                                <option value="food">Food & Culinary</option>
+                                <option value="nature">Nature & Wildlife</option>
+                                <option value="mixed">A bit of everything</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" placeholder="explorer@email.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Start My Journey</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </form>
+                <p class="form-note">No commitment—we'll match you with perfect local guides for your dream adventure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🧭</span>
+                        <span class="logo-text">Pathfinder</span>
+                    </a>
+                    <p class="footer-tagline">Connecting curious travelers with passionate locals since 2019.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#locals">Local Guides</a></li>
+                        <li><a href="#stories">Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Guide</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Cancellation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pathfinder. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
