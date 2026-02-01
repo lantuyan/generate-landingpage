@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdant Capital | Values-Aligned Investing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 8V32M12 16L20 8L28 16M12 24L20 32L28 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Verdant Capital</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#start" class="btn btn-nav">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    SEC Registered Investment Advisor
+                </div>
+                <h1>Invest in What <span class="highlight">Matters</span></h1>
+                <p class="hero-subtitle">Build a portfolio that reflects your values without sacrificing returns. Our ESG screening identifies companies making positive environmental, social, and governance impact.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" data-count="2.4">$0</span>
+                        <span class="stat-suffix">B+</span>
+                        <span class="stat-label">Assets Under Management</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" data-count="12.8">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Avg. Annual Return (5yr)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" data-count="47000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Values-Aligned Investors</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#start" class="btn btn-primary">Start Investing</a>
+                    <a href="#approach" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                        </svg>
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portfolio-preview">
+                    <div class="preview-header">
+                        <span class="preview-title">Your Portfolio</span>
+                        <span class="preview-badge positive">+18.4%</span>
+                    </div>
+                    <div class="preview-chart">
+                        <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#10B981;stop-opacity:0"/>
+                                </linearGradient>
+                            </defs>
+                            <path class="chart-area" d="M0,100 Q30,90 60,85 T120,70 T180,50 T240,40 T300,20 L300,120 L0,120 Z" fill="url(#chartGradient)"/>
+                            <path class="chart-line" d="M0,100 Q30,90 60,85 T120,70 T180,50 T240,40 T300,20" fill="none" stroke="#10B981" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <div class="preview-holdings">
+                        <div class="holding">
+                            <div class="holding-info">
+                                <span class="holding-name">Clean Energy ETF</span>
+                                <span class="holding-esg">ESG Score: A+</span>
+                            </div>
+                            <span class="holding-value positive">+24.2%</span>
+                        </div>
+                        <div class="holding">
+                            <div class="holding-info">
+                                <span class="holding-name">Social Impact Fund</span>
+                                <span class="holding-esg">ESG Score: A</span>
+                            </div>
+                            <span class="holding-value positive">+15.8%</span>
+                        </div>
+                        <div class="holding">
+                            <div class="holding-info">
+                                <span class="holding-name">Governance Leaders</span>
+                                <span class="holding-esg">ESG Score: A+</span>
+                            </div>
+                            <span class="holding-value positive">+12.1%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-trust">
+            <div class="container">
+                <span class="trust-label">Trusted by investors from</span>
+                <div class="trust-logos">
+                    <div class="trust-logo">Google</div>
+                    <div class="trust-logo">Microsoft</div>
+                    <div class="trust-logo">Apple</div>
+                    <div class="trust-logo">Meta</div>
+                    <div class="trust-logo">Amazon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Methodology</span>
+                <h2>Rigorous ESG Screening, <br>Competitive Returns</h2>
+                <p>We analyze over 15,000 companies across 50+ ESG metrics to build portfolios that align with your values while targeting market-beating performance.</p>
+            </div>
+            <div class="approach-grid">
+                <div class="approach-card" data-animate>
+                    <div class="approach-icon environmental">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 8.25 3.75a6.5 6.5 0 0 0-.162 2.035"/>
+                            <path d="M17 3a2.828 2.828 0 1 1 4 4l-7 7H10v-4l7-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Environmental</h3>
+                    <p>Carbon emissions, renewable energy adoption, waste management, water usage, and biodiversity impact.</p>
+                    <ul class="approach-metrics">
+                        <li>Carbon Footprint Analysis</li>
+                        <li>Climate Risk Assessment</li>
+                        <li>Resource Efficiency Scoring</li>
+                    </ul>
+                </div>
+                <div class="approach-card" data-animate>
+                    <div class="approach-icon social">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Social</h3>
+                    <p>Labor practices, diversity & inclusion, community relations, human rights, and product safety.</p>
+                    <ul class="approach-metrics">
+                        <li>Workforce Diversity Index</li>
+                        <li>Supply Chain Ethics</li>
+                        <li>Community Impact Score</li>
+                    </ul>
+                </div>
+                <div class="approach-card" data-animate>
+                    <div class="approach-icon governance">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l7-4 7 4v14"/>
+                            <path d="M9 21v-8h6v8"/>
+                            <path d="M9 9h6"/>
+                        </svg>
+                    </div>
+                    <h3>Governance</h3>
+                    <p>Board diversity, executive compensation, shareholder rights, business ethics, and transparency.</p>
+                    <ul class="approach-metrics">
+                        <li>Board Independence Rating</li>
+                        <li>Executive Pay Ratio</li>
+                        <li>Transparency Score</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="approach-process">
+                <div class="process-step">
+                    <span class="step-number">01</span>
+                    <h4>Define Your Values</h4>
+                    <p>Tell us what matters most—climate action, social justice, ethical governance, or all three.</p>
+                </div>
+                <div class="process-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">02</span>
+                    <h4>We Screen & Select</h4>
+                    <p>Our algorithm analyzes thousands of companies against your criteria, optimizing for values and returns.</p>
+                </div>
+                <div class="process-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">03</span>
+                    <h4>Build Your Portfolio</h4>
+                    <p>Get a diversified, professionally managed portfolio tailored to your risk tolerance and goals.</p>
+                </div>
+                <div class="process-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">04</span>
+                    <h4>Track Your Impact</h4>
+                    <p>See exactly how your investments are making a difference with real-time impact reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="performance">
+        <div class="container">
+            <div class="performance-content">
+                <div class="section-header">
+                    <span class="section-tag">Performance Data</span>
+                    <h2>Values Don't Mean <br>Sacrificing Returns</h2>
+                    <p>Our ESG-focused portfolios have consistently delivered competitive returns while screening out companies that don't meet our standards.</p>
+                </div>
+                <div class="performance-comparison">
+                    <div class="comparison-header">
+                        <button class="period-btn active" data-period="1y">1Y</button>
+                        <button class="period-btn" data-period="3y">3Y</button>
+                        <button class="period-btn" data-period="5y">5Y</button>
+                        <button class="period-btn" data-period="10y">10Y</button>
+                    </div>
+                    <div class="comparison-chart">
+                        <div class="chart-container">
+                            <div class="chart-y-axis">
+                                <span>30%</span>
+                                <span>20%</span>
+                                <span>10%</span>
+                                <span>0%</span>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="chart-bar-group">
+                                    <div class="chart-bar verdant" data-value="14.2" style="--bar-height: 47%">
+                                        <span class="bar-value">14.2%</span>
+                                    </div>
+                                    <div class="chart-bar sp500" data-value="12.8" style="--bar-height: 42%">
+                                        <span class="bar-value">12.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot verdant"></span>
+                                Verdant ESG Portfolio
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot sp500"></span>
+                                S&P 500
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="performance-metrics">
+                <div class="metric-card" data-animate>
+                    <div class="metric-header">
+                        <span class="metric-label">Sharpe Ratio</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="metric-info">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <span class="metric-value">1.24</span>
+                    <span class="metric-comparison positive">+0.18 vs S&P 500</span>
+                </div>
+                <div class="metric-card" data-animate>
+                    <div class="metric-header">
+                        <span class="metric-label">Max Drawdown</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="metric-info">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <span class="metric-value">-18.3%</span>
+                    <span class="metric-comparison positive">+4.2% vs S&P 500</span>
+                </div>
+                <div class="metric-card" data-animate>
+                    <div class="metric-header">
+                        <span class="metric-label">Beta</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="metric-info">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <span class="metric-value">0.92</span>
+                    <span class="metric-comparison">Lower volatility</span>
+                </div>
+                <div class="metric-card" data-animate>
+                    <div class="metric-header">
+                        <span class="metric-label">Alpha</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="metric-info">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <span class="metric-value">2.4%</span>
+                    <span class="metric-comparison positive">Excess returns</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Your Impact</span>
+                <h2>See Where Your Money Goes</h2>
+                <p>Every dollar you invest sends a message. Track the real-world impact of your portfolio with our transparent reporting.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card large" data-animate>
+                    <div class="impact-visual">
+                        <div class="impact-circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#10B981" stroke-width="8" stroke-dasharray="282.7" stroke-dashoffset="56.5" class="progress-ring"/>
+                            </svg>
+                            <span class="impact-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="impact-content">
+                        <h3>Carbon Reduction</h3>
+                        <p>Your portfolio companies produce 80% less carbon emissions than the market average.</p>
+                        <span class="impact-stat">
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            2.4M tons CO2 avoided annually
+                        </span>
+                    </div>
+                </div>
+                <div class="impact-card" data-animate>
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h4>Jobs Created</h4>
+                    <span class="impact-number">127,000+</span>
+                    <p>Living wage jobs in sustainable industries</p>
+                </div>
+                <div class="impact-card" data-animate>
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h4>Clean Energy</h4>
+                    <span class="impact-number">4.2 GW</span>
+                    <p>Renewable capacity funded</p>
+                </div>
+                <div class="impact-card" data-animate>
+                    <div class="impact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h4>Ethical Standards</h4>
+                    <span class="impact-number">100%</span>
+                    <p>Companies meeting our ethics criteria</p>
+                </div>
+            </div>
+            <div class="impact-exclusions">
+                <h3>What We Screen Out</h3>
+                <div class="exclusion-tags">
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Fossil Fuels
+                    </span>
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Weapons
+                    </span>
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Tobacco
+                    </span>
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Private Prisons
+                    </span>
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Gambling
+                    </span>
+                    <span class="exclusion-tag">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                        Animal Testing
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Pricing</span>
+                <h2>Transparent, Simple Pricing</h2>
+                <p>No hidden fees. No surprises. Just straightforward pricing that scales with your success.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-animate>
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>For beginning investors</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="pricing-fee">
+                        <span>0.35% annual management fee</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            ESG portfolio customization
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Automatic rebalancing
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Impact dashboard
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Tax-loss harvesting
+                        </li>
+                    </ul>
+                    <a href="#start" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card featured" data-animate>
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <p>For serious investors</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="pricing-fee">
+                        <span>0.25% annual management fee</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Everything in Starter
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Priority support
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Advanced ESG reporting
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Socially responsible IRAs
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Quarterly impact reports
+                        </li>
+                    </ul>
+                    <a href="#start" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card" data-animate>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p>For high-net-worth investors</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span>
+                        <span class="price">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="pricing-fee">
+                        <span>0.15% annual management fee</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Everything in Growth
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Dedicated advisor
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Custom portfolio construction
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Direct indexing
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Estate planning integration
+                        </li>
+                    </ul>
+                    <a href="#start" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <p>All accounts include SIPC insurance up to $500,000 and are held at our SEC-registered custodian.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="start" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Align Your Money With Your Values?</h2>
+                <p>Join thousands of investors who are building wealth while building a better world. Open your account in minutes.</p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            Get Started
+                            <svg viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <span class="form-note">No minimums to start. Free to try for 30 days.</span>
+                </form>
+                <div class="cta-trust">
+                    <div class="trust-item">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Bank-level security
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        SEC registered
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                        </svg>
+                        47,000+ investors
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 8V32M12 16L20 8L28 16M12 24L20 32L28 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Verdant Capital</span>
+                    </a>
+                    <p>Building wealth while building a better world through values-aligned investing.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Investing</h4>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">ESG Methodology</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">ESG Research</a></li>
+                        <li><a href="#">Impact Reports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclosures</a></li>
+                        <li><a href="#">Form CRS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Verdant Capital. All rights reserved.</p>
+                <p class="disclaimer">Investing involves risk, including the possible loss of principal. Past performance does not guarantee future results. Verdant Capital is a registered investment advisor with the SEC. Registration does not imply a certain level of skill or training.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
