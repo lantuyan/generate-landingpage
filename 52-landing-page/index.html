@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDFORM | Modular Furniture System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="logo-grid">
+                <span class="logo-block red"></span>
+                <span class="logo-block yellow"></span>
+                <span class="logo-block blue"></span>
+            </span>
+            <span class="logo-text">GRIDFORM</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#configurator">Configure</a></li>
+            <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#configurator">Configure</a></li>
+            <li><a href="#contact">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <div class="grid-block block-1 red" data-animate="slide-right"></div>
+            <div class="grid-block block-2 yellow" data-animate="slide-down"></div>
+            <div class="grid-block block-3 blue" data-animate="slide-up"></div>
+            <div class="grid-block block-4 white" data-animate="slide-left"></div>
+            <div class="grid-block block-5 black" data-animate="fade"></div>
+            <div class="grid-line line-h-1"></div>
+            <div class="grid-line line-h-2"></div>
+            <div class="grid-line line-h-3"></div>
+            <div class="grid-line line-v-1"></div>
+            <div class="grid-line line-v-2"></div>
+            <div class="grid-line line-v-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">DESIGN</span>
+                <span class="title-line">YOUR</span>
+                <span class="title-line">HARMONY</span>
+            </h1>
+            <p class="hero-subtitle">Modular furniture system inspired by pure geometric principles. Create, customize, reconfigure—infinite possibilities within perfect balance.</p>
+            <a href="#configurator" class="hero-cta">Start Configuring</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-grid">
+            <div class="about-content">
+                <h2 class="section-title">Pure Form.<br>Absolute Function.</h2>
+                <p class="about-text">GRIDFORM is a revolutionary modular furniture system built on the principles of De Stijl—the art movement that reduced design to its essential elements. Every piece follows the logic of horizontal and vertical lines, primary colors, and asymmetric balance.</p>
+                <p class="about-text">Our intuitive online configurator lets you become the architect of your own living space, combining modules that follow the same geometric harmony as a Mondrian masterpiece.</p>
+            </div>
+            <div class="about-visual">
+                <div class="mondrian-composition">
+                    <div class="m-block m-1 red"></div>
+                    <div class="m-block m-2 white"></div>
+                    <div class="m-block m-3 blue"></div>
+                    <div class="m-block m-4 yellow"></div>
+                    <div class="m-block m-5 white"></div>
+                    <div class="m-block m-6 black"></div>
+                    <div class="m-block m-7 white"></div>
+                    <div class="m-block m-8 red"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title center">The Grid System</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-color="red">
+                <div class="feature-accent"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Configure</h3>
+                    <p class="feature-text">Use our grid-based configurator to design furniture that perfectly fits your space. Every module aligns to the universal grid.</p>
+                </div>
+            </div>
+            <div class="feature-card" data-color="yellow">
+                <div class="feature-accent"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Customize</h3>
+                    <p class="feature-text">Choose from the essential palette—red, yellow, blue, black, and white. Each color block becomes a statement of pure design.</p>
+                </div>
+            </div>
+            <div class="feature-card" data-color="blue">
+                <div class="feature-accent"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Reconfigure</h3>
+                    <p class="feature-text">Life changes, and so can your furniture. Modules connect and reconnect, allowing endless reconfigurations as your needs evolve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configurator Preview Section -->
+    <section class="configurator" id="configurator">
+        <div class="configurator-wrapper">
+            <div class="configurator-preview">
+                <div class="furniture-builder">
+                    <div class="builder-grid">
+                        <div class="builder-cell" data-row="0" data-col="0"></div>
+                        <div class="builder-cell" data-row="0" data-col="1"></div>
+                        <div class="builder-cell" data-row="0" data-col="2"></div>
+                        <div class="builder-cell" data-row="0" data-col="3"></div>
+                        <div class="builder-cell" data-row="1" data-col="0"></div>
+                        <div class="builder-cell" data-row="1" data-col="1"></div>
+                        <div class="builder-cell" data-row="1" data-col="2"></div>
+                        <div class="builder-cell" data-row="1" data-col="3"></div>
+                        <div class="builder-cell" data-row="2" data-col="0"></div>
+                        <div class="builder-cell" data-row="2" data-col="1"></div>
+                        <div class="builder-cell" data-row="2" data-col="2"></div>
+                        <div class="builder-cell" data-row="2" data-col="3"></div>
+                        <div class="builder-cell" data-row="3" data-col="0"></div>
+                        <div class="builder-cell" data-row="3" data-col="1"></div>
+                        <div class="builder-cell" data-row="3" data-col="2"></div>
+                        <div class="builder-cell" data-row="3" data-col="3"></div>
+                    </div>
+                </div>
+                <div class="color-palette">
+                    <button class="palette-btn active" data-color="red" aria-label="Red"></button>
+                    <button class="palette-btn" data-color="yellow" aria-label="Yellow"></button>
+                    <button class="palette-btn" data-color="blue" aria-label="Blue"></button>
+                    <button class="palette-btn" data-color="black" aria-label="Black"></button>
+                    <button class="palette-btn" data-color="white" aria-label="White"></button>
+                    <button class="palette-btn clear" data-color="clear" aria-label="Clear">✕</button>
+                </div>
+            </div>
+            <div class="configurator-content">
+                <h2 class="section-title">Build Your Vision</h2>
+                <p class="configurator-text">Experience the power of systematic design. Click on the grid to place color blocks and create your own Mondrian-inspired furniture configuration.</p>
+                <p class="configurator-text">Select a color from the palette and click cells to paint. Watch as your creation takes shape through the language of pure geometry.</p>
+                <a href="#contact" class="configurator-cta">Order Your Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials/Philosophy Section -->
+    <section class="philosophy">
+        <div class="philosophy-grid">
+            <div class="philosophy-block red">
+                <blockquote class="philosophy-quote">"The purpose of De Stijl was to work toward a universal harmony."</blockquote>
+                <cite class="philosophy-cite">— Theo van Doesburg</cite>
+            </div>
+            <div class="philosophy-block white">
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Configurations</span>
+                </div>
+            </div>
+            <div class="philosophy-block yellow">
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Pure Colors</span>
+                </div>
+            </div>
+            <div class="philosophy-block blue">
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Grid System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section class="contact" id="contact">
+        <div class="contact-grid">
+            <div class="contact-content">
+                <h2 class="section-title">Begin Your Composition</h2>
+                <p class="contact-text">Join the movement toward universal harmony. Enter your details and we'll help you create furniture that transcends mere function to become pure form.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your space" rows="4"></textarea>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <span class="btn-blocks">
+                            <span class="btn-block red"></span>
+                            <span class="btn-block yellow"></span>
+                            <span class="btn-block blue"></span>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="contact-visual">
+                <div class="rietveld-chair">
+                    <div class="chair-back"></div>
+                    <div class="chair-seat"></div>
+                    <div class="chair-arm-left"></div>
+                    <div class="chair-arm-right"></div>
+                    <div class="chair-leg chair-leg-1"></div>
+                    <div class="chair-leg chair-leg-2"></div>
+                    <div class="chair-leg chair-leg-3"></div>
+                    <div class="chair-leg chair-leg-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-grid">
+                    <span class="logo-block red"></span>
+                    <span class="logo-block yellow"></span>
+                    <span class="logo-block blue"></span>
+                </span>
+                <span class="logo-text">GRIDFORM</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#configurator">Configure</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">© 2025 GRIDFORM. Universal harmony through systematic design.</p>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-block red"></div>
+            <div class="footer-block yellow"></div>
+            <div class="footer-block blue"></div>
+            <div class="footer-block black"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
