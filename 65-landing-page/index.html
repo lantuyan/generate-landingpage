@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest & Hearth | Farm-to-Table Meal Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5C20 5 8 12 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 12 20 5 20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M15 14C15 14 17 16 20 16C23 16 25 14 25 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Harvest & Hearth</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#our-farms">Our Farms</a></li>
+                <li><a href="#boxes">Weekly Boxes</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#subscribe" class="btn btn-nav">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-tagline">From Local Farms to Your Table</span>
+                <h1 class="hero-title">Honest Food,<br>Simply Delivered</h1>
+                <p class="hero-description">Weekly boxes of prepared meals, recipes, and fresh produce from family farms within 50 miles of your home. Celebrate the seasons with food you can trust.</p>
+                <div class="hero-cta">
+                    <a href="#subscribe" class="btn btn-primary">Start Your Box</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-number">24</span>
+                        <span class="trust-label">Partner Farms</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-number">5K+</span>
+                        <span class="trust-label">Happy Families</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-number">50mi</span>
+                        <span class="trust-label">Max Distance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-frame">
+                    <div class="hero-image">
+                        <svg viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Farm basket illustration -->
+                            <rect x="100" y="250" width="300" height="200" rx="20" fill="#D4C4B0"/>
+                            <path d="M80 280H420" stroke="#8B7355" stroke-width="8" stroke-linecap="round"/>
+                            <ellipse cx="250" cy="200" rx="120" ry="60" fill="#7A9B6D"/>
+                            <circle cx="200" cy="180" r="35" fill="#E85D4C"/>
+                            <circle cx="280" cy="160" r="30" fill="#E85D4C"/>
+                            <circle cx="320" cy="200" r="25" fill="#F4A259"/>
+                            <ellipse cx="180" cy="220" rx="40" ry="25" fill="#7A9B6D"/>
+                            <path d="M250 120C250 120 260 80 250 60" stroke="#7A9B6D" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M245 65C245 65 250 50 270 55" stroke="#7A9B6D" stroke-width="4" stroke-linecap="round"/>
+                            <rect x="120" y="320" width="260" height="20" fill="#C4B4A0"/>
+                            <rect x="120" y="360" width="260" height="20" fill="#C4B4A0"/>
+                            <rect x="120" y="400" width="260" height="20" fill="#C4B4A0"/>
+                            <ellipse cx="160" cy="290" rx="25" ry="20" fill="#F5E6D3"/>
+                            <ellipse cx="220" cy="295" rx="25" ry="20" fill="#F5E6D3"/>
+                            <ellipse cx="280" cy="290" rx="25" ry="20" fill="#F5E6D3"/>
+                            <ellipse cx="340" cy="295" rx="25" ry="20" fill="#F5E6D3"/>
+                            <path d="M150 500C150 500 180 480 250 480C320 480 350 500 350 500" stroke="#8B7355" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-icon">🌿</span>
+                        <span class="badge-text">100% Local</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Simple & Honest</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">From our partner farms to your kitchen in three simple steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="35" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 40L35 50L55 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Choose Your Box</h3>
+                    <p class="step-description">Select from our weekly offerings based on your household size and dietary preferences. Vegetarian, family-sized, or chef's choice—we have options for every table.</p>
+                </div>
+                <div class="step-card" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="25" width="50" height="35" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 35H65" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="47" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 43V51M36 47H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">We Harvest Fresh</h3>
+                    <p class="step-description">Our partner farms harvest your produce the morning of delivery. Meals are prepared with the same ingredients by local chefs who understand seasonal cooking.</p>
+                </div>
+                <div class="step-card" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 20V60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M25 35L40 20L55 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 60H60" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Delivered to You</h3>
+                    <p class="step-description">Your box arrives at your doorstep each week, packed in sustainable materials. Inside: ready meals, fresh produce, and recipe cards for the week ahead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Farms Section -->
+    <section id="our-farms" class="section farms-section">
+        <div class="farms-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Meet Our Partners</span>
+                <h2 class="section-title">Family Farms,<br>Generations of Care</h2>
+                <p class="section-description">Every ingredient tells a story. These are the families who grow your food with love and expertise passed down through generations.</p>
+            </div>
+            <div class="farms-grid">
+                <div class="farm-card" data-animate>
+                    <div class="farm-image">
+                        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#E8E0D5"/>
+                            <rect x="150" y="120" width="100" height="120" fill="#8B7355"/>
+                            <polygon points="200,60 280,120 120,120" fill="#C4B4A0"/>
+                            <rect x="175" y="180" width="50" height="60" fill="#5C4A3A"/>
+                            <circle cx="320" cy="80" r="30" fill="#F4D03F"/>
+                            <ellipse cx="80" cy="250" rx="60" ry="30" fill="#7A9B6D"/>
+                            <ellipse cx="320" cy="260" rx="50" ry="25" fill="#7A9B6D"/>
+                        </svg>
+                    </div>
+                    <div class="farm-content">
+                        <span class="farm-location">Willowbrook, 12 miles</span>
+                        <h3 class="farm-name">Morrison Family Farm</h3>
+                        <p class="farm-description">Third-generation organic vegetable farmers specializing in heirloom tomatoes and leafy greens. The Morrison family has been enriching local soil since 1952.</p>
+                        <div class="farm-specialties">
+                            <span class="specialty-tag">Heirloom Tomatoes</span>
+                            <span class="specialty-tag">Leafy Greens</span>
+                            <span class="specialty-tag">Herbs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-card" data-animate>
+                    <div class="farm-image">
+                        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#E8E0D5"/>
+                            <rect x="100" y="140" width="80" height="100" fill="#C4B4A0"/>
+                            <rect x="220" y="160" width="100" height="80" fill="#8B7355"/>
+                            <polygon points="150,100 200,140 100,140" fill="#7A9B6D"/>
+                            <rect x="130" y="180" width="20" height="30" fill="#5C4A3A"/>
+                            <ellipse cx="60" cy="240" rx="40" ry="40" fill="#7A9B6D"/>
+                            <ellipse cx="340" cy="250" rx="45" ry="35" fill="#7A9B6D"/>
+                            <circle cx="50" cy="220" r="15" fill="#E85D4C"/>
+                            <circle cx="70" cy="250" r="12" fill="#E85D4C"/>
+                        </svg>
+                    </div>
+                    <div class="farm-content">
+                        <span class="farm-location">Cedar Valley, 28 miles</span>
+                        <h3 class="farm-name">Sunny Meadows Orchard</h3>
+                        <p class="farm-description">A family orchard known for stone fruits and apples grown using regenerative practices. Their cider has won regional awards for five consecutive years.</p>
+                        <div class="farm-specialties">
+                            <span class="specialty-tag">Stone Fruits</span>
+                            <span class="specialty-tag">Apples</span>
+                            <span class="specialty-tag">Fresh Cider</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-card" data-animate>
+                    <div class="farm-image">
+                        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#E8E0D5"/>
+                            <rect x="160" y="130" width="120" height="110" fill="#F5E6D3"/>
+                            <rect x="180" y="160" width="30" height="40" fill="#8B7355"/>
+                            <rect x="230" y="165" width="25" height="25" fill="#87CEEB" opacity="0.5"/>
+                            <polygon points="220,80 300,130 140,130" fill="#C4B4A0"/>
+                            <ellipse cx="80" cy="260" rx="50" ry="25" fill="#F4A259"/>
+                            <ellipse cx="140" cy="270" rx="40" ry="20" fill="#F4A259"/>
+                            <ellipse cx="320" cy="255" rx="55" ry="30" fill="#7A9B6D"/>
+                        </svg>
+                    </div>
+                    <div class="farm-content">
+                        <span class="farm-location">Riverside, 35 miles</span>
+                        <h3 class="farm-name">Hawthorne Heritage Farm</h3>
+                        <p class="farm-description">Specializing in heritage grains and root vegetables, the Hawthorne family practices no-till farming that nurtures soil health for future generations.</p>
+                        <div class="farm-specialties">
+                            <span class="specialty-tag">Heritage Grains</span>
+                            <span class="specialty-tag">Root Vegetables</span>
+                            <span class="specialty-tag">Squash</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="farms-cta">
+                <a href="#" class="btn btn-outline">Meet All 24 Farms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Boxes Section -->
+    <section id="boxes" class="section boxes-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Weekly Offerings</span>
+                <h2 class="section-title">Choose Your Harvest</h2>
+                <p class="section-description">Flexible options that grow with your needs. Pause or change anytime—we're here to nourish, not to bind.</p>
+            </div>
+            <div class="boxes-grid">
+                <div class="box-card" data-animate>
+                    <div class="box-header">
+                        <h3 class="box-name">The Seedling</h3>
+                        <p class="box-subtitle">Perfect for individuals or couples</p>
+                    </div>
+                    <div class="box-price">
+                        <span class="price-amount">$59</span>
+                        <span class="price-period">/week</span>
+                    </div>
+                    <ul class="box-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            3 prepared meals for 2
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Seasonal produce basket
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            2 recipe cards with ingredients
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Farm story newsletter
+                        </li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-box">Select Box</a>
+                </div>
+                <div class="box-card box-featured" data-animate>
+                    <div class="box-badge">Most Popular</div>
+                    <div class="box-header">
+                        <h3 class="box-name">The Homestead</h3>
+                        <p class="box-subtitle">Ideal for families of 3-4</p>
+                    </div>
+                    <div class="box-price">
+                        <span class="price-amount">$99</span>
+                        <span class="price-period">/week</span>
+                    </div>
+                    <ul class="box-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            5 prepared meals for 4
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Large seasonal produce basket
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            4 recipe cards with ingredients
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Artisan bread loaf
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Priority delivery window
+                        </li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-primary">Select Box</a>
+                </div>
+                <div class="box-card" data-animate>
+                    <div class="box-header">
+                        <h3 class="box-name">The Gathering</h3>
+                        <p class="box-subtitle">For large families or meal preppers</p>
+                    </div>
+                    <div class="box-price">
+                        <span class="price-amount">$149</span>
+                        <span class="price-period">/week</span>
+                    </div>
+                    <ul class="box-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            7 prepared meals for 6
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Family-sized produce basket
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            6 recipe cards with ingredients
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Artisan bread + farm eggs
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Seasonal preserves jar
+                        </li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-box">Select Box</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Banner -->
+    <section class="seasonal-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <span class="banner-season">This Week's Harvest</span>
+                    <h3 class="banner-title">Winter Root Celebration</h3>
+                    <p class="banner-description">Featuring carrots, parsnips, and beets from Morrison Farm, paired with hearty prepared stews and a special recipe for roasted root medley.</p>
+                </div>
+                <div class="banner-cta">
+                    <a href="#subscribe" class="btn btn-light">See This Week's Box</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">From Our Table</span>
+                <h2 class="section-title">Stories from the Community</h2>
+                <p class="section-description">Real families sharing their Harvest & Hearth experience</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M10 20c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2zm16 0c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2z"/>
+                        </svg>
+                        <p class="testimonial-text">"I never thought I'd become someone who gets excited about vegetables. But knowing exactly which farm grew my carrots—meeting the Morrisons at their open day—changed everything. This isn't just food delivery; it's community."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>SM</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Mitchell</span>
+                            <span class="author-detail">Member since 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M10 20c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2zm16 0c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2z"/>
+                        </svg>
+                        <p class="testimonial-text">"The prepared meals saved our busy weeknights, but the recipes taught our kids where food comes from. Last summer, they asked to visit the orchard. Now they're the ones checking when our box arrives."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JR</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">James & Rachel Park</span>
+                            <span class="author-detail">The Homestead box, family of 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M10 20c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2zm16 0c-2.2 0-4-1.8-4-4s1.8-4 4-4c.7 0 1.4.2 2 .5-.5-3-2.5-5.5-5.5-7l1-2c5 2 8.5 7 8.5 12.5 0 2.2-1.8 4-4 4h-2z"/>
+                        </svg>
+                        <p class="testimonial-text">"As a chef, I'm picky about ingredients. The quality here rivals what I source for my restaurant—sometimes better. That first bite of a tomato still warm from the morning sun? That's why I cook."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MC</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Chen</span>
+                            <span class="author-detail">Executive Chef, The Willow Room</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-item" data-animate>
+                    <div class="value-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="25" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 15V30L40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Freshness Guaranteed</h3>
+                    <p class="value-description">Harvested the morning of delivery. Produce travels from soil to your table in under 24 hours.</p>
+                </div>
+                <div class="value-item" data-animate>
+                    <div class="value-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 10L35 25H50L38 33L43 48L30 39L17 48L22 33L10 25H25L30 10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Fair Farm Prices</h3>
+                    <p class="value-description">Our farmers receive 60% of your payment—triple the typical grocery store share. Fair prices mean sustainable farming.</p>
+                </div>
+                <div class="value-item" data-animate>
+                    <div class="value-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="25" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 50C15 42 22 36 30 36C38 36 45 42 45 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Know Your Farmer</h3>
+                    <p class="value-description">Every box includes the story of who grew your food. Visit our partner farms at seasonal open days.</p>
+                </div>
+                <div class="value-item" data-animate>
+                    <div class="value-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 10C30 10 15 20 15 32C15 40 22 47 30 47C38 47 45 40 45 32C45 20 30 10 30 10Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 25V35M25 30H35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Sustainable Packaging</h3>
+                    <p class="value-description">Returnable crates, compostable containers, zero plastic. Return your box each week for a $5 credit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="section subscribe-section">
+        <div class="container">
+            <div class="subscribe-wrapper">
+                <div class="subscribe-content">
+                    <span class="section-label">Join the Table</span>
+                    <h2 class="section-title">Ready to Taste<br>the Difference?</h2>
+                    <p class="section-description">Start with your first box at 20% off. No commitment—pause or cancel anytime. Your table, your terms.</p>
+                    <div class="subscribe-benefits">
+                        <div class="benefit-item">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>First box 20% off</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Free delivery, always</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Skip or cancel anytime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-form-wrapper">
+                    <form class="subscribe-form" id="subscribeForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code</label>
+                            <input type="text" id="zip" name="zip" placeholder="To check delivery area" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="box">Preferred Box</label>
+                            <select id="box" name="box">
+                                <option value="seedling">The Seedling - $59/week</option>
+                                <option value="homestead" selected>The Homestead - $99/week</option>
+                                <option value="gathering">The Gathering - $149/week</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Get Your First Box</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <p class="form-note">By subscribing, you agree to our Terms of Service and Privacy Policy.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5C20 5 8 12 8 22C8 28.627 13.373 34 20 34C26.627 34 32 28.627 32 22C32 12 20 5 20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M15 14C15 14 17 16 20 16C23 16 25 14 25 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">Harvest & Hearth</span>
+                    </a>
+                    <p class="footer-tagline">Connecting local farms to family tables since 2019.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v12M8 14l4 4 4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#our-farms">Our Farms</a></li>
+                        <li><a href="#boxes">Weekly Boxes</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Farm Visits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Delivery Areas</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Harvest & Hearth. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
