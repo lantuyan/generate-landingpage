@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX AI | Your AI-Powered Athletic Coach</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">APEX<span class="logo-accent">AI</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#coaches">Coaches</a></li>
+                <li><a href="#stats">Results</a></li>
+            </ul>
+            <a href="#cta" class="nav-cta">Start Training</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-diagonal"></div>
+        <div class="hero-content">
+            <div class="hero-badge">AI-POWERED COACHING PLATFORM</div>
+            <h1 class="hero-title">
+                <span class="title-line">TRAIN</span>
+                <span class="title-line accent">SMARTER.</span>
+                <span class="title-line">ACHIEVE</span>
+                <span class="title-line accent">MORE.</span>
+            </h1>
+            <p class="hero-subtitle">Your wearable data. Elite coaching insights. Personalized programming that adapts to your performance in real-time.</p>
+            <div class="hero-cta-group">
+                <a href="#cta" class="btn btn-primary">
+                    <span class="btn-text">Start Free Trial</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    <span class="btn-icon-play">▶</span>
+                    <span class="btn-text">Watch Demo</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Athletes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Improvement Rate</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Certified Coaches</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="athlete-silhouette"></div>
+            <div class="data-pulse pulse-1"></div>
+            <div class="data-pulse pulse-2"></div>
+            <div class="data-pulse pulse-3"></div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-diagonal top"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Performance Advantages</span>
+                <h2 class="section-title">YOUR COMPETITIVE <span class="accent">EDGE</span></h2>
+                <p class="section-subtitle">AI-driven insights that transform how you train, recover, and compete.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="slide-up">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Real-Time Analytics</h3>
+                    <p class="feature-desc">Syncs with all major wearables to analyze heart rate, power output, cadence, and recovery metrics in real-time.</p>
+                    <div class="feature-stats">
+                        <span class="mini-stat">23+ Wearables</span>
+                        <span class="mini-stat">Live Sync</span>
+                    </div>
+                </div>
+                <div class="feature-card featured" data-aos="slide-up" data-aos-delay="100">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Adaptive Programming</h3>
+                    <p class="feature-desc">AI that learns your patterns, adjusts intensity based on fatigue, and optimizes periodization for peak performance.</p>
+                    <div class="feature-stats">
+                        <span class="mini-stat">AI-Powered</span>
+                        <span class="mini-stat">Auto-Adjust</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="slide-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Expert Coaching</h3>
+                    <p class="feature-desc">Connect with certified coaches who review your technique via video and provide personalized feedback.</p>
+                    <div class="feature-stats">
+                        <span class="mini-stat">500+ Coaches</span>
+                        <span class="mini-stat">Video Review</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="slide-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 20V10"/>
+                            <path d="M12 20V4"/>
+                            <path d="M6 20v-6"/>
+                        </svg>
+                    </div>
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Progress Tracking</h3>
+                    <p class="feature-desc">Visualize your journey with detailed analytics, personal records, and predictive performance modeling.</p>
+                    <div class="feature-stats">
+                        <span class="mini-stat">PR Tracking</span>
+                        <span class="mini-stat">Predictions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Process</span>
+                <h2 class="section-title">FROM DATA TO <span class="accent">DOMINANCE</span></h2>
+                <p class="section-subtitle">Three steps to unlock your athletic potential.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M8 21h8"/>
+                                <path d="M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3>Connect Your Devices</h3>
+                        <p>Link your smartwatch, heart rate monitor, power meter, or any wearable. We integrate with Garmin, Apple, Whoop, Polar, and more.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="device-icons">
+                            <div class="device-icon d1">⌚</div>
+                            <div class="device-icon d2">📱</div>
+                            <div class="device-icon d3">💪</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reverse" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <h3>AI Analyzes & Programs</h3>
+                        <p>Our neural networks process your training data, identify patterns, and create a periodized program tailored to your goals and recovery capacity.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="ai-brain">
+                            <div class="brain-pulse"></div>
+                            <div class="brain-core">AI</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Train & Improve</h3>
+                        <p>Execute your workouts with real-time guidance. Upload technique videos for coach feedback. Watch your performance metrics climb.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="progress-chart">
+                            <div class="chart-bar" style="--height: 40%"></div>
+                            <div class="chart-bar" style="--height: 55%"></div>
+                            <div class="chart-bar" style="--height: 45%"></div>
+                            <div class="chart-bar" style="--height: 70%"></div>
+                            <div class="chart-bar" style="--height: 85%"></div>
+                            <div class="chart-bar active" style="--height: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches" id="coaches">
+        <div class="section-diagonal top"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expert Network</span>
+                <h2 class="section-title">COACHED BY THE <span class="accent">BEST</span></h2>
+                <p class="section-subtitle">World-class coaches available for personalized technique feedback.</p>
+            </div>
+            <div class="coaches-grid">
+                <div class="coach-card" data-aos="zoom-in">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>MR</span>
+                        </div>
+                        <div class="coach-badge">⭐ Top Rated</div>
+                    </div>
+                    <div class="coach-info">
+                        <h4>Marcus Rodriguez</h4>
+                        <span class="coach-specialty">Strength & Conditioning</span>
+                        <div class="coach-stats">
+                            <span>🏆 Olympic Coach</span>
+                            <span>📹 2,400+ Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>SK</span>
+                        </div>
+                        <div class="coach-badge">🔥 Trending</div>
+                    </div>
+                    <div class="coach-info">
+                        <h4>Sarah Kim</h4>
+                        <span class="coach-specialty">Endurance & Triathlon</span>
+                        <div class="coach-stats">
+                            <span>🥇 Ironman Champion</span>
+                            <span>📹 1,850+ Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>JT</span>
+                        </div>
+                        <div class="coach-badge">💪 Elite</div>
+                    </div>
+                    <div class="coach-info">
+                        <h4>James Thompson</h4>
+                        <span class="coach-specialty">Sports Performance</span>
+                        <div class="coach-stats">
+                            <span>🏀 NBA Trainer</span>
+                            <span>📹 3,100+ Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>EN</span>
+                        </div>
+                        <div class="coach-badge">🎯 Specialist</div>
+                    </div>
+                    <div class="coach-info">
+                        <h4>Elena Novak</h4>
+                        <span class="coach-specialty">Running & Recovery</span>
+                        <div class="coach-stats">
+                            <span>🏃 Marathon Pro</span>
+                            <span>📹 2,200+ Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats/Results Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-content">
+                <div class="stats-text">
+                    <span class="section-tag">Proven Results</span>
+                    <h2 class="section-title">NUMBERS DON'T <span class="accent">LIE</span></h2>
+                    <p>Athletes using APEX AI see measurable improvements within weeks. Our data-driven approach and expert coaching network deliver real results.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="flip-up">
+                        <div class="stat-value">
+                            <span class="counter" data-target="34">0</span>
+                            <span class="stat-unit">%</span>
+                        </div>
+                        <span class="stat-title">Average Performance Increase</span>
+                        <div class="stat-bar"><div class="stat-fill" style="--width: 34%"></div></div>
+                    </div>
+                    <div class="stat-card" data-aos="flip-up" data-aos-delay="100">
+                        <div class="stat-value">
+                            <span class="counter" data-target="2.4">0</span>
+                            <span class="stat-unit">x</span>
+                        </div>
+                        <span class="stat-title">Faster Goal Achievement</span>
+                        <div class="stat-bar"><div class="stat-fill" style="--width: 80%"></div></div>
+                    </div>
+                    <div class="stat-card" data-aos="flip-up" data-aos-delay="200">
+                        <div class="stat-value">
+                            <span class="counter" data-target="89">0</span>
+                            <span class="stat-unit">%</span>
+                        </div>
+                        <span class="stat-title">Injury Reduction Rate</span>
+                        <div class="stat-bar"><div class="stat-fill" style="--width: 89%"></div></div>
+                    </div>
+                    <div class="stat-card" data-aos="flip-up" data-aos-delay="300">
+                        <div class="stat-value">
+                            <span class="counter" data-target="4.9">0</span>
+                            <span class="stat-unit">/5</span>
+                        </div>
+                        <span class="stat-title">User Satisfaction Rating</span>
+                        <div class="stat-bar"><div class="stat-fill" style="--width: 98%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">APEX AI transformed my marathon training. The AI caught patterns in my data that I never noticed—like how my form degrades after 18 miles. My coach's video feedback helped me fix it. New PR by 12 minutes!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <strong>Jake Morrison</strong>
+                            <span>Marathon Runner • Chicago, IL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">As a triathlete, managing three sports was overwhelming. APEX AI balances my training load perfectly and my coach Sarah has been incredible with swim technique. Qualified for Kona in my first year!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RP</div>
+                        <div class="author-info">
+                            <strong>Rachel Park</strong>
+                            <span>Triathlete • Austin, TX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">The recovery insights alone are worth it. I used to overtrain constantly. Now the AI tells me exactly when to push and when to rest. Stronger than ever at 42.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DL</div>
+                        <div class="author-info">
+                            <strong>David Lee</strong>
+                            <span>CrossFit Athlete • Denver, CO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-diagonal"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">READY TO <span class="accent">DOMINATE?</span></h2>
+                <p class="cta-subtitle">Join 50,000+ athletes who are training smarter. Start your 14-day free trial today.</p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Start Free Trial</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                    <p class="form-note">No credit card required • Cancel anytime</p>
+                </form>
+                <div class="cta-badges">
+                    <div class="badge-item">
+                        <span class="badge-icon">🔒</span>
+                        <span>Bank-Level Security</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">⚡</span>
+                        <span>Instant Setup</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">🎯</span>
+                        <span>Results Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">APEX<span class="logo-accent">AI</span></span>
+                    </a>
+                    <p>AI-powered coaching for athletes who demand excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 APEX AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
