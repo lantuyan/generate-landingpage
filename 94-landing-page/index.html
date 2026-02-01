@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA — Immersive Digital Art Exhibitions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">LUMINA</a>
+        <div class="nav-links">
+            <a href="#exhibitions" class="nav-link">Exhibitions</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#visit" class="nav-link nav-link-cta">Enter</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#exhibitions" class="mobile-link">Exhibitions</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#visit" class="mobile-link">Enter the Experience</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="projection-layer projection-1"></div>
+            <div class="projection-layer projection-2"></div>
+            <div class="projection-layer projection-3"></div>
+            <div class="light-beam beam-1"></div>
+            <div class="light-beam beam-2"></div>
+            <div class="light-beam beam-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-overline">
+                <span class="overline-text">Now Showing</span>
+                <span class="overline-divider"></span>
+                <span class="overline-date">Feb 2026 — May 2026</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Where Light</span>
+                <span class="title-line">Becomes</span>
+                <span class="title-line title-accent">Experience</span>
+            </h1>
+            <p class="hero-description">
+                Step into warehouse spaces transformed by projection mapping,
+                interactive technology, and immersive soundscapes.
+                Art you don't just see—art you inhabit.
+            </p>
+            <div class="hero-cta">
+                <a href="#visit" class="btn btn-primary">
+                    <span class="btn-text">Book Your Journey</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#exhibitions" class="btn btn-ghost">
+                    <span class="btn-text">View Exhibitions</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Installations</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">40K</span>
+                <span class="stat-label">SQ FT</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">360°</span>
+                <span class="stat-label">Immersion</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section id="exhibitions" class="exhibitions">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Current Installations</h2>
+            <p class="section-subtitle">Each exhibition transforms our 40,000 sq ft warehouse into an entirely new universe</p>
+        </div>
+
+        <div class="exhibition-grid">
+            <article class="exhibition-card exhibition-featured">
+                <div class="card-visual">
+                    <div class="card-gradient gradient-1"></div>
+                    <div class="card-particles"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Featured</span>
+                    <h3 class="card-title">Echoes of Tomorrow</h3>
+                    <p class="card-description">A journey through time rendered in light. 8 interconnected rooms explore humanity's relationship with technology through reactive projections that respond to your movement and heartbeat.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">◐</span>
+                            <span>45 min experience</span>
+                        </span>
+                        <span class="meta-item">
+                            <span class="meta-icon">◇</span>
+                            <span>Interactive</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="exhibition-card">
+                <div class="card-visual">
+                    <div class="card-gradient gradient-2"></div>
+                    <div class="card-particles"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Sound Design</span>
+                    <h3 class="card-title">Frequency</h3>
+                    <p class="card-description">Sound becomes visible. Your voice, footsteps, and breath trigger cascading visual symphonies across floor-to-ceiling screens.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">◐</span>
+                            <span>30 min</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="exhibition-card">
+                <div class="card-visual">
+                    <div class="card-gradient gradient-3"></div>
+                    <div class="card-particles"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Projection Mapping</span>
+                    <h3 class="card-title">Liquid Architecture</h3>
+                    <p class="card-description">Walls dissolve. Floors become oceans. Experience a space that continuously reshapes itself around you.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">◐</span>
+                            <span>35 min</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="exhibition-card">
+                <div class="card-visual">
+                    <div class="card-gradient gradient-4"></div>
+                    <div class="card-particles"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">New</span>
+                    <h3 class="card-title">The Collective</h3>
+                    <p class="card-description">A shared experience where visitors' movements combine to create a ever-evolving collaborative artwork.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">◐</span>
+                            <span>Open duration</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="exhibitions-footer">
+            <a href="#" class="link-arrow">
+                <span>View all 12 installations</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-bg">
+            <div class="experience-gradient"></div>
+        </div>
+
+        <div class="section-header section-header-light">
+            <span class="section-number">02</span>
+            <h2 class="section-title">The Experience</h2>
+            <p class="section-subtitle">More than observation. Complete immersion.</p>
+        </div>
+
+        <div class="experience-features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" class="icon-projection">
+                        <circle cx="50" cy="50" r="40" class="icon-circle"/>
+                        <path d="M50 10 L50 90 M10 50 L90 50" class="icon-cross"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Projection Mapping</h3>
+                <p class="feature-text">State-of-the-art laser projectors transform every surface into living canvas. 16K resolution. Infinite depth.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" class="icon-sound">
+                        <circle cx="50" cy="50" r="20" class="icon-circle"/>
+                        <circle cx="50" cy="50" r="30" class="icon-ring"/>
+                        <circle cx="50" cy="50" r="40" class="icon-ring"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Spatial Audio</h3>
+                <p class="feature-text">128-channel sound system. Audio that moves around you, through you. Sound becomes physical.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" class="icon-interactive">
+                        <polygon points="50,10 90,90 10,90" class="icon-triangle"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Interactive Technology</h3>
+                <p class="feature-text">Motion sensors, biometric readers, touch surfaces. The art responds to you. You become part of it.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 100 100" class="icon-space">
+                        <rect x="20" y="20" width="60" height="60" class="icon-square"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Transformed Spaces</h3>
+                <p class="feature-text">Industrial warehouse architecture becomes infinite. Rooms that breathe. Corridors that shift.</p>
+            </div>
+        </div>
+
+        <div class="experience-quote">
+            <blockquote>
+                <p>"The first time I walked through, I forgot I was in a building. I was somewhere else entirely."</p>
+                <cite>— The New York Times</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-content">
+                <span class="section-number">03</span>
+                <h2 class="about-title">Democratizing Contemporary Art</h2>
+                <p class="about-text">LUMINA was founded on a simple belief: transformative art experiences shouldn't be exclusive. Our rotating exhibitions bring world-renowned digital artists to accessible warehouse spaces, creating gallery-quality immersion at accessible prices.</p>
+                <p class="about-text">Each installation is a collaboration between visual artists, sound designers, technologists, and architects—crafted to transport every visitor, regardless of their art background.</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="about-stat-number">250K+</span>
+                        <span class="about-stat-label">Annual visitors</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-number">47</span>
+                        <span class="about-stat-label">Artist collaborations</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-number">3</span>
+                        <span class="about-stat-label">Locations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-shape shape-1"></div>
+                        <div class="placeholder-shape shape-2"></div>
+                        <div class="placeholder-shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section id="visit" class="visit">
+        <div class="visit-bg">
+            <div class="visit-gradient"></div>
+            <div class="visit-particles"></div>
+        </div>
+
+        <div class="visit-content">
+            <h2 class="visit-title">Enter the Experience</h2>
+            <p class="visit-subtitle">Your journey begins the moment you step through our doors</p>
+
+            <div class="visit-options">
+                <div class="visit-card">
+                    <h3 class="visit-card-title">General Admission</h3>
+                    <div class="visit-price">
+                        <span class="price-amount">$35</span>
+                        <span class="price-label">per person</span>
+                    </div>
+                    <ul class="visit-features">
+                        <li>Access to all 12 installations</li>
+                        <li>Self-guided experience</li>
+                        <li>2-hour time slot</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Book Now</a>
+                </div>
+
+                <div class="visit-card visit-card-featured">
+                    <span class="card-badge">Most Popular</span>
+                    <h3 class="visit-card-title">Immersive Pass</h3>
+                    <div class="visit-price">
+                        <span class="price-amount">$55</span>
+                        <span class="price-label">per person</span>
+                    </div>
+                    <ul class="visit-features">
+                        <li>Access to all 12 installations</li>
+                        <li>Guided artist tour</li>
+                        <li>Unlimited time</li>
+                        <li>Priority entry</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <div class="visit-card">
+                    <h3 class="visit-card-title">Private Experience</h3>
+                    <div class="visit-price">
+                        <span class="price-amount">$500</span>
+                        <span class="price-label">up to 10 guests</span>
+                    </div>
+                    <ul class="visit-features">
+                        <li>Exclusive after-hours access</li>
+                        <li>Personal guide</li>
+                        <li>Champagne reception</li>
+                        <li>Photo opportunities</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Inquire</a>
+                </div>
+            </div>
+
+            <div class="visit-info">
+                <div class="info-item">
+                    <h4 class="info-label">Location</h4>
+                    <p class="info-text">The Warehouse District<br>450 Industrial Ave, Brooklyn NY</p>
+                </div>
+                <div class="info-item">
+                    <h4 class="info-label">Hours</h4>
+                    <p class="info-text">Wed–Sun: 11am–10pm<br>Mon–Tue: Closed</p>
+                </div>
+                <div class="info-item">
+                    <h4 class="info-label">Contact</h4>
+                    <p class="info-text">hello@lumina.art<br>+1 (718) 555-0192</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">LUMINA</span>
+                <p class="footer-tagline">Where light becomes experience</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Visit</h4>
+                    <a href="#" class="footer-link">Tickets</a>
+                    <a href="#" class="footer-link">Hours & Location</a>
+                    <a href="#" class="footer-link">Accessibility</a>
+                    <a href="#" class="footer-link">Group Bookings</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Exhibitions</h4>
+                    <a href="#" class="footer-link">Current Shows</a>
+                    <a href="#" class="footer-link">Upcoming</a>
+                    <a href="#" class="footer-link">Past Exhibitions</a>
+                    <a href="#" class="footer-link">Artist Residency</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Connect</h4>
+                    <a href="#" class="footer-link">Instagram</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">Newsletter</a>
+                    <a href="#" class="footer-link">Press</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 LUMINA. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#" class="footer-link-small">Privacy</a>
+                <a href="#" class="footer-link-small">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
