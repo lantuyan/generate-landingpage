@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realm Weaver | Immersive Tabletop RPG Mystery Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Magical Particle Background -->
+    <div class="magic-particles" id="particles"></div>
+
+    <!-- Mystical Fog Overlay -->
+    <div class="fog-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">⚔</span>
+                <span class="logo-text">Realm Weaver</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#discovery">The Quest</a></li>
+                <li><a href="#treasures">Treasures</a></li>
+                <li><a href="#realms">Realms</a></li>
+                <li><a href="#fellowship">Fellowship</a></li>
+            </ul>
+            <a href="#summon" class="nav-cta">Begin Your Journey</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-frame">
+            <div class="frame-corner frame-corner-tl"></div>
+            <div class="frame-corner frame-corner-tr"></div>
+            <div class="frame-corner frame-corner-bl"></div>
+            <div class="frame-corner frame-corner-br"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-glow"></span>
+                <span class="badge-text">Monthly Mystery Awaits</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Unlock the</span>
+                <span class="title-main">Portal to Adventure</span>
+            </h1>
+            <p class="hero-subtitle">Immersive tabletop RPG mystery boxes crafted for dedicated gaming groups. Each month, receive custom campaigns, handcrafted props, original miniatures, and ambient soundscapes to transform your game night into legend.</p>
+            <div class="hero-actions">
+                <a href="#summon" class="btn btn-primary">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">Accept the Quest</span>
+                </a>
+                <a href="#discovery" class="btn btn-secondary">
+                    <span class="btn-text">Explore the Mysteries</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">50K+</span>
+                    <span class="stat-label">Adventurers</span>
+                </div>
+                <div class="stat-divider">✦</div>
+                <div class="stat">
+                    <span class="stat-value">12</span>
+                    <span class="stat-label">Unique Realms</span>
+                </div>
+                <div class="stat-divider">✦</div>
+                <div class="stat">
+                    <span class="stat-value">100+</span>
+                    <span class="stat-label">Quests Delivered</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">Descend into wonder</span>
+            <div class="scroll-indicator">
+                <span class="scroll-arrow"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Discovery Section -->
+    <section class="discovery" id="discovery">
+        <div class="section-ornament section-ornament-top">
+            <svg viewBox="0 0 200 30" preserveAspectRatio="none">
+                <path d="M0,30 Q50,0 100,15 Q150,30 200,0" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Sacred Covenant</span>
+                <h2 class="section-title">How the Magic Unfolds</h2>
+                <p class="section-subtitle">Each mystery box is a portal to adventure, meticulously crafted to transport your gaming group to realms beyond imagination.</p>
+            </div>
+            <div class="discovery-grid">
+                <div class="discovery-card" data-animate>
+                    <div class="card-frame">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <span>📜</span>
+                        </div>
+                        <h3 class="card-title">The Scroll Arrives</h3>
+                        <p class="card-text">Each month, a sealed mystery box appears at your threshold, containing a complete campaign arc designed for 4-6 sessions of epic adventure.</p>
+                        <div class="card-number">I</div>
+                    </div>
+                </div>
+                <div class="discovery-card" data-animate>
+                    <div class="card-frame">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <span>🗝️</span>
+                        </div>
+                        <h3 class="card-title">Secrets Unveiled</h3>
+                        <p class="card-text">Break the seal to discover handcrafted props, sealed envelopes with plot twists, and artifacts that bring your story to life.</p>
+                        <div class="card-number">II</div>
+                    </div>
+                </div>
+                <div class="discovery-card" data-animate>
+                    <div class="card-frame">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <span>⚔️</span>
+                        </div>
+                        <h3 class="card-title">Heroes Assemble</h3>
+                        <p class="card-text">Gather your fellowship around the table. Access ambient soundscapes and guided narratives through our companion app.</p>
+                        <div class="card-number">III</div>
+                    </div>
+                </div>
+                <div class="discovery-card" data-animate>
+                    <div class="card-frame">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <span>✨</span>
+                        </div>
+                        <h3 class="card-title">Legends Are Born</h3>
+                        <p class="card-text">Experience collaborative storytelling at its finest. Your choices shape the tale, creating memories that last a lifetime.</p>
+                        <div class="card-number">IV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treasures Section -->
+    <section class="treasures" id="treasures">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Hoard Revealed</span>
+                <h2 class="section-title">What Lies Within</h2>
+                <p class="section-subtitle">Every box is a treasure chest overflowing with handcrafted wonders, each piece designed to deepen your immersion.</p>
+            </div>
+            <div class="treasures-showcase">
+                <div class="treasure-item" data-animate>
+                    <div class="treasure-visual">
+                        <div class="treasure-orb">
+                            <span>📖</span>
+                        </div>
+                        <div class="treasure-ring"></div>
+                    </div>
+                    <div class="treasure-content">
+                        <h3>Campaign Grimoire</h3>
+                        <p>A beautifully bound campaign book with original storylines, NPC profiles, encounter maps, and branching narrative paths. Each grimoire spans 80-120 pages of adventure.</p>
+                    </div>
+                </div>
+                <div class="treasure-item treasure-item-reverse" data-animate>
+                    <div class="treasure-visual">
+                        <div class="treasure-orb">
+                            <span>🎭</span>
+                        </div>
+                        <div class="treasure-ring"></div>
+                    </div>
+                    <div class="treasure-content">
+                        <h3>Handcrafted Props</h3>
+                        <p>Physical artifacts your party discovers during play—aged maps, mysterious letters, enchanted tokens, and sealed prophecies. Touch the story, feel the magic.</p>
+                    </div>
+                </div>
+                <div class="treasure-item" data-animate>
+                    <div class="treasure-visual">
+                        <div class="treasure-orb">
+                            <span>🐉</span>
+                        </div>
+                        <div class="treasure-ring"></div>
+                    </div>
+                    <div class="treasure-content">
+                        <h3>Original Miniatures</h3>
+                        <p>Exclusive resin miniatures depicting key NPCs, legendary creatures, and boss encounters. Unpainted for those who craft, or pre-painted for instant play.</p>
+                    </div>
+                </div>
+                <div class="treasure-item treasure-item-reverse" data-animate>
+                    <div class="treasure-visual">
+                        <div class="treasure-orb">
+                            <span>🎵</span>
+                        </div>
+                        <div class="treasure-ring"></div>
+                    </div>
+                    <div class="treasure-content">
+                        <h3>Ambient Soundscapes</h3>
+                        <p>Original musical scores and environmental audio accessed through our app. Scene-specific tracks that sync with your adventure's emotional beats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Realms Section -->
+    <section class="realms" id="realms">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Worlds Await</span>
+                <h2 class="section-title">Choose Your Realm</h2>
+                <p class="section-subtitle">Subscribe to a realm that calls to your spirit. Each path offers unique adventures tailored to different playstyles.</p>
+            </div>
+            <div class="realms-grid">
+                <div class="realm-card" data-animate>
+                    <div class="realm-banner">
+                        <span class="realm-icon">🏰</span>
+                        <span class="realm-badge">Classic</span>
+                    </div>
+                    <div class="realm-content">
+                        <h3 class="realm-name">The Wanderer</h3>
+                        <div class="realm-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-value">49</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="realm-features">
+                            <li><span class="feature-icon">✦</span> Monthly campaign module</li>
+                            <li><span class="feature-icon">✦</span> 3-5 handcrafted props</li>
+                            <li><span class="feature-icon">✦</span> Digital soundscape access</li>
+                            <li><span class="feature-icon">✦</span> Community forum access</li>
+                        </ul>
+                        <a href="#summon" class="realm-cta">Choose Path</a>
+                    </div>
+                </div>
+                <div class="realm-card realm-card-featured" data-animate>
+                    <div class="realm-glow"></div>
+                    <div class="realm-banner">
+                        <span class="realm-icon">⚔️</span>
+                        <span class="realm-badge">Most Popular</span>
+                    </div>
+                    <div class="realm-content">
+                        <h3 class="realm-name">The Champion</h3>
+                        <div class="realm-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-value">89</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="realm-features">
+                            <li><span class="feature-icon">✦</span> Extended campaign arc</li>
+                            <li><span class="feature-icon">✦</span> 6-8 premium props</li>
+                            <li><span class="feature-icon">✦</span> 2 exclusive miniatures</li>
+                            <li><span class="feature-icon">✦</span> Premium soundscapes</li>
+                            <li><span class="feature-icon">✦</span> Early access to new realms</li>
+                        </ul>
+                        <a href="#summon" class="realm-cta realm-cta-primary">Choose Path</a>
+                    </div>
+                </div>
+                <div class="realm-card" data-animate>
+                    <div class="realm-banner">
+                        <span class="realm-icon">👑</span>
+                        <span class="realm-badge">Elite</span>
+                    </div>
+                    <div class="realm-content">
+                        <h3 class="realm-name">The Legend</h3>
+                        <div class="realm-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-value">149</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="realm-features">
+                            <li><span class="feature-icon">✦</span> Epic saga campaigns</li>
+                            <li><span class="feature-icon">✦</span> 10+ collector props</li>
+                            <li><span class="feature-icon">✦</span> 4 limited edition minis</li>
+                            <li><span class="feature-icon">✦</span> Custom GM support</li>
+                            <li><span class="feature-icon">✦</span> Exclusive Discord access</li>
+                        </ul>
+                        <a href="#summon" class="realm-cta">Choose Path</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fellowship Section -->
+    <section class="fellowship" id="fellowship">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tales from the Realm</span>
+                <h2 class="section-title">Words of the Fellowship</h2>
+                <p class="section-subtitle">Hear from adventurers who have walked the path before you.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Our weekly game nights have been transformed. The props alone create moments of pure magic—when I handed my players the sealed letter from the mysterious stranger, their faces lit up like children on Midwinter's Eve.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>🧙</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus the Ever-Ready</span>
+                            <span class="author-role">GM for 15 years</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">As a new Game Master, I was intimidated by world-building. Realm Weaver gave me the confidence to lead epic adventures. The campaign books are so well-written, I feel like a master storyteller.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>🧝</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Elena Starweaver</span>
+                            <span class="author-role">Rising GM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">The miniatures are museum-quality, and the soundscapes? We've had players tear up during emotional scenes. This isn't just a subscription—it's a portal to another world.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>🐲</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">The Dragon's Table</span>
+                            <span class="author-role">Gaming group since 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summon Section (CTA) -->
+    <section class="summon" id="summon">
+        <div class="summon-backdrop"></div>
+        <div class="summon-frame">
+            <div class="frame-border frame-border-top"></div>
+            <div class="frame-border frame-border-right"></div>
+            <div class="frame-border frame-border-bottom"></div>
+            <div class="frame-border frame-border-left"></div>
+        </div>
+        <div class="container">
+            <div class="summon-content" data-animate>
+                <div class="summon-seal">
+                    <div class="seal-outer"></div>
+                    <div class="seal-inner">
+                        <span>⚔</span>
+                    </div>
+                    <div class="seal-glow"></div>
+                </div>
+                <h2 class="summon-title">The Quest Awaits</h2>
+                <p class="summon-text">Join thousands of adventurers who have answered the call. Your first mystery box ships within 48 hours of subscribing. Cancel anytime—though few ever wish to leave.</p>
+                <form class="summon-form" id="summonForm">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="btn btn-legendary">
+                        <span class="btn-glow"></span>
+                        <span class="btn-text">Begin Your Legend</span>
+                        <span class="btn-sparkle"></span>
+                    </button>
+                </form>
+                <p class="summon-note">✦ Free shipping on your first box ✦ 30-day satisfaction guarantee ✦</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-ornament">
+            <svg viewBox="0 0 200 20" preserveAspectRatio="none">
+                <path d="M0,20 Q50,0 100,10 Q150,20 200,0" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">⚔</span>
+                        <span class="logo-text">Realm Weaver</span>
+                    </a>
+                    <p class="footer-tagline">Crafting adventures, forging legends, one mystery box at a time.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <span>💬</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <span>🐦</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <span>🎬</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>The Quest</h4>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Past Boxes</a></li>
+                        <li><a href="#">Gift Subscriptions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>The Guild</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Artisans</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Realm Weaver. All rights reserved. May your dice roll true.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Scroll</a>
+                    <a href="#">Terms of the Covenant</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
