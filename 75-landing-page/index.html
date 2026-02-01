@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ResolveNow - Professional Online Mediation and Arbitration Services. Efficient dispute resolution without traditional courtroom litigation.">
+    <title>ResolveNow | Professional Dispute Resolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <svg class="nav__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4L4 14V16H44V14L24 4Z" fill="currentColor"/>
+                    <rect x="8" y="18" width="4" height="20" fill="currentColor"/>
+                    <rect x="18" y="18" width="4" height="20" fill="currentColor"/>
+                    <rect x="26" y="18" width="4" height="20" fill="currentColor"/>
+                    <rect x="36" y="18" width="4" height="20" fill="currentColor"/>
+                    <rect x="4" y="40" width="40" height="4" fill="currentColor"/>
+                </svg>
+                <span class="nav__logo-text">ResolveNow</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#process" class="nav__link">Process</a></li>
+                <li><a href="#credentials" class="nav__link">Credentials</a></li>
+                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Begin Resolution</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__content container">
+                <div class="hero__badge animate-on-scroll">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                        <path d="M2 17L12 22L22 17"/>
+                        <path d="M2 12L12 17L22 12"/>
+                    </svg>
+                    <span>Trusted by Fortune 500 Companies</span>
+                </div>
+                <h1 class="hero__title animate-on-scroll">
+                    Justice Delivered.<br>
+                    <span class="hero__title-accent">Without the Courtroom.</span>
+                </h1>
+                <p class="hero__subtitle animate-on-scroll">
+                    Professional mediation and arbitration services that resolve disputes efficiently,
+                    fairly, and enforceably—saving you time, reducing costs, and preserving relationships.
+                </p>
+                <div class="hero__actions animate-on-scroll">
+                    <a href="#contact" class="btn btn--primary">
+                        <span>Schedule Consultation</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#process" class="btn btn--secondary">
+                        <span>View Our Process</span>
+                    </a>
+                </div>
+                <div class="hero__stats animate-on-scroll">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="94">0</span>
+                        <span class="hero__stat-label">Resolution Rate</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="60">0</span>
+                        <span class="hero__stat-label">Days Faster</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="75">0</span>
+                        <span class="hero__stat-label">Cost Reduction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span>Scroll to explore</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-header__label">Our Services</span>
+                    <h2 class="section-header__title">Comprehensive Dispute Resolution</h2>
+                    <p class="section-header__subtitle">
+                        From commercial disagreements to employment matters, we provide structured pathways
+                        to resolution that honor the gravity of your concerns while delivering efficiency.
+                    </p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card animate-on-scroll">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="44" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 44V56M24 56H40" stroke="currentColor" stroke-width="2"/>
+                                <path d="M28 28H36" stroke="currentColor" stroke-width="2" stroke-dasharray="2 2"/>
+                                <circle cx="32" cy="12" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Mediation</h3>
+                        <p class="service-card__description">
+                            Facilitated negotiation where our neutral mediators guide parties toward
+                            mutually acceptable solutions while preserving business relationships.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Confidential proceedings</li>
+                            <li>Voluntary participation</li>
+                            <li>Relationship preservation</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                    <article class="service-card service-card--featured animate-on-scroll">
+                        <div class="service-card__badge">Most Popular</div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="8" width="40" height="48" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 20H44M20 28H44M20 36H36" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 44L28 48L32 52" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 44L36 48L32 52" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="48" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Binding Arbitration</h3>
+                        <p class="service-card__description">
+                            Formal proceedings with experienced arbitrators who render enforceable decisions,
+                            providing the finality of litigation without courtroom delays.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Legally binding decisions</li>
+                            <li>Expedited timeline</li>
+                            <li>Expert arbitrators</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                    <article class="service-card animate-on-scroll">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 8L8 20V24H56V20L32 8Z" stroke="currentColor" stroke-width="2"/>
+                                <rect x="12" y="28" width="8" height="24" stroke="currentColor" stroke-width="2"/>
+                                <rect x="28" y="28" width="8" height="24" stroke="currentColor" stroke-width="2"/>
+                                <rect x="44" y="28" width="8" height="24" stroke="currentColor" stroke-width="2"/>
+                                <rect x="8" y="54" width="48" height="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Med-Arb Hybrid</h3>
+                        <p class="service-card__description">
+                            Begin with mediation's flexibility; if impasse occurs, transition to
+                            arbitration for guaranteed resolution—the best of both approaches.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Flexible starting point</li>
+                            <li>Guaranteed resolution</li>
+                            <li>Cost-efficient process</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-header__label">The Process</span>
+                    <h2 class="section-header__title">Structured Path to Resolution</h2>
+                    <p class="section-header__subtitle">
+                        Our methodical approach ensures every step is transparent, fair, and
+                        purposefully designed to move disputes toward resolution.
+                    </p>
+                </div>
+                <div class="process__timeline">
+                    <div class="process__step animate-on-scroll">
+                        <div class="process__step-number">01</div>
+                        <div class="process__step-content">
+                            <h3 class="process__step-title">Initial Consultation</h3>
+                            <p class="process__step-description">
+                                Confidential assessment of your dispute. We analyze the nature of the conflict,
+                                parties involved, and recommend the most appropriate resolution pathway.
+                            </p>
+                            <div class="process__step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>1-2 Business Days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__step animate-on-scroll">
+                        <div class="process__step-number">02</div>
+                        <div class="process__step-content">
+                            <h3 class="process__step-title">Agreement & Scheduling</h3>
+                            <p class="process__step-description">
+                                All parties sign the resolution agreement, select their preferred neutral,
+                                and establish the procedural framework and timeline.
+                            </p>
+                            <div class="process__step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>3-5 Business Days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__step animate-on-scroll">
+                        <div class="process__step-number">03</div>
+                        <div class="process__step-content">
+                            <h3 class="process__step-title">Document Exchange</h3>
+                            <p class="process__step-description">
+                                Parties submit relevant documents and position statements through our
+                                secure platform. Limited, focused discovery keeps proceedings efficient.
+                            </p>
+                            <div class="process__step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>1-2 Weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__step animate-on-scroll">
+                        <div class="process__step-number">04</div>
+                        <div class="process__step-content">
+                            <h3 class="process__step-title">Resolution Sessions</h3>
+                            <p class="process__step-description">
+                                Virtual or in-person proceedings conducted with professional rigor.
+                                Our neutrals guide discussions toward fair, practical outcomes.
+                            </p>
+                            <div class="process__step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>1-3 Sessions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__step animate-on-scroll">
+                        <div class="process__step-number">05</div>
+                        <div class="process__step-content">
+                            <h3 class="process__step-title">Final Resolution</h3>
+                            <p class="process__step-description">
+                                Settlement agreement or arbitration award issued. Binding decisions are
+                                enforceable in courts under the Federal Arbitration Act.
+                            </p>
+                            <div class="process__step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>Within 30 Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials Section -->
+        <section class="credentials" id="credentials">
+            <div class="container">
+                <div class="credentials__grid">
+                    <div class="credentials__content animate-on-scroll">
+                        <span class="section-header__label">Credentials</span>
+                        <h2 class="credentials__title">Institutional Authority You Can Trust</h2>
+                        <p class="credentials__description">
+                            Our panel of neutrals comprises former judges, senior litigators, and
+                            industry specialists with decades of experience in complex dispute resolution.
+                        </p>
+                        <ul class="credentials__list">
+                            <li class="credentials__item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <strong>Bar-Certified Neutrals</strong>
+                                    <span>All mediators and arbitrators hold active bar memberships</span>
+                                </div>
+                            </li>
+                            <li class="credentials__item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <strong>AAA/JAMS Certified</strong>
+                                    <span>Recognized by leading arbitration associations</span>
+                                </div>
+                            </li>
+                            <li class="credentials__item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <strong>Industry Expertise</strong>
+                                    <span>Specialists in finance, technology, healthcare, and construction</span>
+                                </div>
+                            </li>
+                            <li class="credentials__item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <div>
+                                    <strong>Federal Court Experience</strong>
+                                    <span>Former federal judges and appellate practitioners</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="credentials__visual animate-on-scroll">
+                        <div class="credentials__card">
+                            <div class="credentials__card-header">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 8L8 20V24H56V20L32 8Z" fill="currentColor"/>
+                                    <rect x="12" y="28" width="6" height="20" fill="currentColor" opacity="0.3"/>
+                                    <rect x="22" y="28" width="6" height="20" fill="currentColor" opacity="0.5"/>
+                                    <rect x="36" y="28" width="6" height="20" fill="currentColor" opacity="0.5"/>
+                                    <rect x="46" y="28" width="6" height="20" fill="currentColor" opacity="0.3"/>
+                                    <rect x="8" y="50" width="48" height="6" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="credentials__card-stats">
+                                <div class="credentials__card-stat">
+                                    <span class="credentials__card-number">250+</span>
+                                    <span class="credentials__card-label">Panel Neutrals</span>
+                                </div>
+                                <div class="credentials__card-stat">
+                                    <span class="credentials__card-number">12K+</span>
+                                    <span class="credentials__card-label">Cases Resolved</span>
+                                </div>
+                                <div class="credentials__card-stat">
+                                    <span class="credentials__card-number">$4.2B</span>
+                                    <span class="credentials__card-label">Total Value Managed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credentials__logos">
+                            <span class="credentials__logos-label">Recognized By</span>
+                            <div class="credentials__logos-grid">
+                                <div class="credentials__logo">AAA</div>
+                                <div class="credentials__logo">JAMS</div>
+                                <div class="credentials__logo">CPR</div>
+                                <div class="credentials__logo">ABA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-header__label">Client Testimonials</span>
+                    <h2 class="section-header__title">Trusted by Industry Leaders</h2>
+                </div>
+                <div class="testimonials__grid">
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "What would have been two years of litigation was resolved in six weeks.
+                            The arbitrator's expertise in IP law was immediately apparent, and the
+                            process maintained the professionalism our board expected."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MR</div>
+                            <div class="testimonial-card__info">
+                                <strong>Margaret Reynolds</strong>
+                                <span>General Counsel, TechVenture Inc.</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "The mediation preserved our partnership. We came in ready for battle,
+                            but left with a fair agreement and, remarkably, a working relationship.
+                            The mediator's skill in finding common ground was exceptional."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">DK</div>
+                            <div class="testimonial-card__info">
+                                <strong>David Kowalski</strong>
+                                <span>Managing Partner, Kowalski & Associates</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial-card__quote">
+                            "After experiencing their construction arbitration service, we've now
+                            included ResolveNow in all our standard contracts. The cost savings
+                            alone justify it, but the speed and fairness seal the deal."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">SC</div>
+                            <div class="testimonial-card__info">
+                                <strong>Sarah Chen</strong>
+                                <span>VP Legal Affairs, BuildRight Corporation</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="contact">
+            <div class="container">
+                <div class="cta__content animate-on-scroll">
+                    <h2 class="cta__title">Take the First Step Toward Resolution</h2>
+                    <p class="cta__subtitle">
+                        Schedule a confidential consultation with our intake team. We'll assess
+                        your matter and recommend the most effective path forward.
+                    </p>
+                </div>
+                <form class="cta__form animate-on-scroll" id="contactForm">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required placeholder="John Doe">
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" required placeholder="john@company.com">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form__group">
+                            <label for="service" class="form__label">Service Interest</label>
+                            <select id="service" name="service" class="form__input form__select" required>
+                                <option value="">Select a service</option>
+                                <option value="mediation">Mediation</option>
+                                <option value="arbitration">Binding Arbitration</option>
+                                <option value="med-arb">Med-Arb Hybrid</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="matter" class="form__label">Brief Description of Matter</label>
+                        <textarea id="matter" name="matter" class="form__input form__textarea" rows="4" placeholder="Please provide a brief, confidential overview of your dispute..."></textarea>
+                    </div>
+                    <div class="form__disclaimer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                        <span>All communications are protected by attorney-client privilege and our strict confidentiality policy.</span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Request Consultation</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L4 14V16H44V14L24 4Z" fill="currentColor"/>
+                            <rect x="8" y="18" width="4" height="20" fill="currentColor"/>
+                            <rect x="18" y="18" width="4" height="20" fill="currentColor"/>
+                            <rect x="26" y="18" width="4" height="20" fill="currentColor"/>
+                            <rect x="36" y="18" width="4" height="20" fill="currentColor"/>
+                            <rect x="4" y="40" width="40" height="4" fill="currentColor"/>
+                        </svg>
+                        <span>ResolveNow</span>
+                    </a>
+                    <p class="footer__tagline">Professional dispute resolution for the modern era.</p>
+                </div>
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Services</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#services">Mediation</a></li>
+                        <li><a href="#services">Arbitration</a></li>
+                        <li><a href="#services">Med-Arb Hybrid</a></li>
+                        <li><a href="#contact">Consultation</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Company</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#credentials">About Us</a></li>
+                        <li><a href="#credentials">Our Neutrals</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Legal</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Confidentiality</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 ResolveNow. All rights reserved.</p>
+                <div class="footer__certifications">
+                    <span>Member of:</span>
+                    <span class="footer__cert">AAA</span>
+                    <span class="footer__cert">JAMS</span>
+                    <span class="footer__cert">ABA-DR</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
