@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolisticBridge - Integrated Health Coordination Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M20 8C20 8 12 14 12 20C12 26 20 32 20 32C20 32 28 26 28 20C28 14 20 8 20 8Z" fill="currentColor" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                </svg>
+                <span>HolisticBridge</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#practitioners">Practitioners</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#get-started" class="btn btn-nav">Start Your Journey</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="organic-shape shape-1"></div>
+            <div class="organic-shape shape-2"></div>
+            <div class="organic-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge fade-in">Whole-Person Healthcare</span>
+                <h1 class="fade-in">Navigating Your Health<br>Shouldn't Feel<br><span class="highlight">Fragmented</span></h1>
+                <p class="hero-subtitle fade-in">Finally, a platform that connects your doctors, therapists, nutritionists, and wellness practitioners—creating one unified journey toward complete wellbeing.</p>
+                <div class="hero-cta fade-in">
+                    <a href="#get-started" class="btn btn-primary">Begin Your Wellness Journey</a>
+                    <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+                </div>
+                <div class="hero-trust fade-in">
+                    <div class="trust-avatars">
+                        <div class="avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="User"></div>
+                        <div class="avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User"></div>
+                        <div class="avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User"></div>
+                        <div class="avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" alt="User"></div>
+                    </div>
+                    <p>Join <strong>12,000+</strong> patients experiencing coordinated care</p>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <div class="wellness-circle">
+                    <div class="circle-center">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <path d="M40 10C40 10 20 25 20 40C20 55 40 70 40 70C40 70 60 55 60 40C60 25 40 10 40 10Z" fill="currentColor" opacity="0.2"/>
+                            <circle cx="40" cy="40" r="8" fill="currentColor"/>
+                        </svg>
+                        <span>You</span>
+                    </div>
+                    <div class="orbit-item orbit-1">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <span>Primary Care</span>
+                    </div>
+                    <div class="orbit-item orbit-2">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+                            </svg>
+                        </div>
+                        <span>Nutrition</span>
+                    </div>
+                    <div class="orbit-item orbit-3">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <span>Therapy</span>
+                    </div>
+                    <div class="orbit-item orbit-4">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <span>Acupuncture</span>
+                    </div>
+                    <div class="orbit-item orbit-5">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.93 4.93A10 10 0 0 0 2 12h4"/>
+                                <path d="M19.07 4.93A10 10 0 0 1 22 12h-4"/>
+                                <path d="M12 2v4"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <span>Yoga</span>
+                    </div>
+                    <div class="orbit-item orbit-6">
+                        <div class="orbit-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <span>Wellness</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#problem" class="scroll-indicator">
+            <span>Discover More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">The Challenge</span>
+                <h2>Healthcare Shouldn't<br>Feel This Complicated</h2>
+                <p>You deserve care that sees all of you—not just separate symptoms treated in isolation.</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                            <circle cx="14" cy="18" r="4" fill="currentColor" opacity="0.3"/>
+                            <circle cx="34" cy="18" r="4" fill="currentColor" opacity="0.3"/>
+                            <circle cx="24" cy="34" r="4" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Fragmented Records</h3>
+                    <p>Your health story is scattered across different providers, clinics, and systems—with no one seeing the full picture.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M8 24h32" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 8v32" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.3"/>
+                            <circle cx="36" cy="36" r="3" fill="currentColor" opacity="0.3"/>
+                            <path d="M12 12L36 36" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
+                        </svg>
+                    </div>
+                    <h3>Communication Gaps</h3>
+                    <p>Your massage therapist doesn't know what your doctor prescribed. Your nutritionist can't see your lab results.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>You're the Coordinator</h3>
+                    <p>Endless hours managing appointments, explaining your history repeatedly, and feeling like you're navigating alone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="how-it-works">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">The Solution</span>
+                <h2>One Platform.<br>Complete Coordination.</h2>
+                <p>HolisticBridge connects every aspect of your care into one seamless experience.</p>
+            </div>
+            <div class="solution-visual">
+                <div class="solution-flow">
+                    <div class="flow-step fade-in">
+                        <div class="flow-number">01</div>
+                        <div class="flow-content">
+                            <h3>Create Your Health Profile</h3>
+                            <p>Import existing records or start fresh. Your complete health story in one secure place—finally accessible to the practitioners who need it.</p>
+                        </div>
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <rect x="12" y="8" width="40" height="48" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 44c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-step fade-in">
+                        <div class="flow-number">02</div>
+                        <div class="flow-content">
+                            <h3>Connect Your Care Team</h3>
+                            <p>Invite your doctors, therapists, and wellness practitioners. They get relevant insights while you maintain complete control over your information.</p>
+                        </div>
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="48" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="16" cy="48" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="48" cy="48" r="6" stroke="currentColor" stroke-width="2"/>
+                                <path d="M21 21L27 27M43 21L37 27M21 43L27 37M43 43L37 37" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-step fade-in">
+                        <div class="flow-number">03</div>
+                        <div class="flow-content">
+                            <h3>Experience Coordinated Care</h3>
+                            <p>Watch as your providers collaborate seamlessly. Receive personalized recommendations based on your complete health picture, not just fragments.</p>
+                        </div>
+                        <div class="flow-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <path d="M32 8L38 20L52 22L42 32L44 46L32 40L20 46L22 32L12 22L26 20L32 8Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Platform Features</span>
+                <h2>Everything You Need for<br>Integrated Wellness</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon sage">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="24" height="24" rx="4"/>
+                            <path d="M10 16h12M16 10v12"/>
+                        </svg>
+                    </div>
+                    <h3>Unified Health Records</h3>
+                    <p>All your health data—conventional and complementary—organized in one secure, accessible location.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon lavender">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="16" cy="16" r="12"/>
+                            <path d="M16 8v8l6 3"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Scheduling</h3>
+                    <p>Coordinate appointments across all your practitioners. Never double-book or miss an important treatment.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon warm">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 12a8 8 0 1 1 16 0v4a8 8 0 1 1-16 0v-4z"/>
+                            <path d="M12 20v6M20 20v6M16 20v8"/>
+                        </svg>
+                    </div>
+                    <h3>Provider Messaging</h3>
+                    <p>Secure communication between you and your care team—and between practitioners when you authorize.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon sage">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 8h24M4 16h24M4 24h16"/>
+                            <circle cx="26" cy="24" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Treatment Tracking</h3>
+                    <p>Monitor medications, supplements, therapies, and lifestyle interventions—see what's working holistically.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon lavender">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4v24M4 16h24"/>
+                            <circle cx="16" cy="16" r="4"/>
+                            <circle cx="16" cy="16" r="10"/>
+                        </svg>
+                    </div>
+                    <h3>Wellness Insights</h3>
+                    <p>AI-powered analysis finds patterns across your health data, helping identify what impacts your wellbeing.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon warm">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4C10 4 4 10 4 16s6 12 12 12 12-6 12-12"/>
+                            <path d="M20 8l4-4 4 4M24 4v10"/>
+                        </svg>
+                    </div>
+                    <h3>Progress Journaling</h3>
+                    <p>Document your healing journey. Share relevant updates with practitioners automatically or manually.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practitioners Section -->
+    <section class="practitioners" id="practitioners">
+        <div class="container">
+            <div class="practitioners-content fade-in">
+                <span class="section-badge">For Practitioners</span>
+                <h2>Join a Network of Integrative Care Providers</h2>
+                <p>Whether you practice conventional medicine, naturopathy, acupuncture, massage therapy, or any wellness modality—collaborate with colleagues to provide truly coordinated patient care.</p>
+                <div class="practitioner-types">
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        <span>MDs & DOs</span>
+                    </div>
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <span>Naturopaths</span>
+                    </div>
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10"/>
+                            <path d="M12 6v6"/>
+                        </svg>
+                        <span>Acupuncturists</span>
+                    </div>
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78"/>
+                        </svg>
+                        <span>Therapists</span>
+                    </div>
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="5" r="3"/>
+                            <path d="M12 22V8M7 12l5-4 5 4"/>
+                        </svg>
+                        <span>Yoga Teachers</span>
+                    </div>
+                    <div class="practitioner-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
+                        </svg>
+                        <span>Nutritionists</span>
+                    </div>
+                </div>
+                <a href="#get-started" class="btn btn-outline">Join as a Practitioner</a>
+            </div>
+            <div class="practitioners-visual fade-in">
+                <div class="collaboration-graphic">
+                    <div class="collab-center">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12v24M12 24h24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="collab-node node-1">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=80&h=80&fit=crop" alt="Doctor">
+                    </div>
+                    <div class="collab-node node-2">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=80&h=80&fit=crop" alt="Therapist">
+                    </div>
+                    <div class="collab-node node-3">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=80&h=80&fit=crop" alt="Nutritionist">
+                    </div>
+                    <div class="collab-node node-4">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=80&h=80&fit=crop" alt="Wellness Coach">
+                    </div>
+                    <svg class="connection-lines" viewBox="0 0 300 300">
+                        <line x1="150" y1="150" x2="50" y2="80" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="150" y1="150" x2="250" y2="80" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="150" y1="150" x2="50" y2="220" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                        <line x1="150" y1="150" x2="250" y2="220" stroke="currentColor" stroke-width="1" stroke-dasharray="4"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Patient Stories</span>
+                <h2>Real People.<br>Real Healing Journeys.</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 32 32" fill="currentColor" opacity="0.2">
+                            <path d="M6 18c0-3.314 2.686-6 6-6V8c-5.523 0-10 4.477-10 10v10h10V18H6zm20 0c0-3.314-2.686-6-6-6V8c5.523 0 10 4.477 10 10v10H20V18h6z"/>
+                        </svg>
+                    </div>
+                    <p>"For years, I managed chronic fatigue by seeing multiple specialists who never communicated. HolisticBridge connected my rheumatologist, naturopath, and acupuncturist—and for the first time, I have a coordinated treatment plan that actually works."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&h=60&fit=crop" alt="Sarah M.">
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Living with Chronic Fatigue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 32 32" fill="currentColor" opacity="0.2">
+                            <path d="M6 18c0-3.314 2.686-6 6-6V8c-5.523 0-10 4.477-10 10v10h10V18H6zm20 0c0-3.314-2.686-6-6-6V8c5.523 0 10 4.477 10 10v10H20V18h6z"/>
+                        </svg>
+                    </div>
+                    <p>"As someone who values both conventional medicine and holistic approaches, I always felt like I had to choose sides. This platform honors both—and my providers can finally see how all my treatments work together."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="James K.">
+                        <div>
+                            <strong>James K.</strong>
+                            <span>Integrative Health Advocate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 32 32" fill="currentColor" opacity="0.2">
+                            <path d="M6 18c0-3.314 2.686-6 6-6V8c-5.523 0-10 4.477-10 10v10h10V18H6zm20 0c0-3.314-2.686-6-6-6V8c5.523 0 10 4.477 10 10v10H20V18h6z"/>
+                        </svg>
+                    </div>
+                    <p>"My therapist can now see patterns between my stress levels and physical symptoms that my doctor tracks. The insight from having everything connected has been transformative for my anxiety treatment."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop" alt="Elena R.">
+                        <div>
+                            <strong>Elena R.</strong>
+                            <span>Mental Health Journey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-count="12000">0</div>
+                    <div class="stat-label">Active Patients</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-count="850">0</div>
+                    <div class="stat-label">Practitioners</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-label">Modalities Supported</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-count="94">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Report Better Coordination</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="get-started">
+        <div class="cta-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Your Wellness Journey<br>Starts Here</h2>
+                <p>Take the first step toward truly coordinated, whole-person healthcare. Join thousands who've discovered what integrated wellness feels like.</p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Get Started Free</button>
+                    </div>
+                    <p class="form-note">Free 30-day trial. No credit card required.</p>
+                </form>
+                <div class="cta-options">
+                    <a href="#" class="option-card">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="16" cy="12" r="6"/>
+                                <path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>I'm a Patient</strong>
+                            <span>Start coordinating your care</span>
+                        </div>
+                    </a>
+                    <a href="#" class="option-card">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="8" width="24" height="16" rx="2"/>
+                                <path d="M12 16h8M16 12v8"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>I'm a Practitioner</strong>
+                            <span>Join our care network</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 8C20 8 12 14 12 20C12 26 20 32 20 32C20 32 28 26 28 20C28 14 20 8 20 8Z" fill="currentColor" opacity="0.3"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        </svg>
+                        <span>HolisticBridge</span>
+                    </a>
+                    <p>Connecting conventional and complementary care for whole-person wellness.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#">For Patients</a></li>
+                            <li><a href="#">For Practitioners</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HolisticBridge. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
