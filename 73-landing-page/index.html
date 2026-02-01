@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenomIQ | Personalized Nutrition Through DNA Science</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 20C12 20 14 12 20 12C26 12 28 20 28 20C28 20 26 28 20 28C14 28 12 20 12 20Z" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                </svg>
+                <span>GenomIQ</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#science">Our Science</a>
+                <a href="#process">Process</a>
+                <a href="#biomarkers">Biomarkers</a>
+                <a href="#research">Research</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Log In</a>
+                <a href="#cta" class="btn-primary">Start Analysis</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="dna-helix" id="dnaHelix"></div>
+            <div class="grid-overlay"></div>
+            <div class="particle-field" id="particleField"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Peer-Reviewed Methodology</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Precision Nutrition</span>
+                <span class="title-line">Powered by Your</span>
+                <span class="title-line highlight">Unique Genome</span>
+            </h1>
+            <p class="hero-subtitle">
+                Unlock scientifically-optimized dietary recommendations through comprehensive DNA analysis
+                and continuous biomarker tracking. Evidence-based. Personalized. Proven.
+            </p>
+            <div class="hero-cta">
+                <a href="#cta" class="btn-primary btn-large">
+                    <span>Begin Your Analysis</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#science" class="btn-secondary">
+                    <span>View Research</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value" data-count="847">0</span>
+                    <span class="stat-unit">K</span>
+                    <span class="stat-label">Genetic Markers Analyzed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" data-count="94">0</span>
+                    <span class="stat-unit">%</span>
+                    <span class="stat-label">Accuracy Rate</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" data-count="156">0</span>
+                    <span class="stat-unit">+</span>
+                    <span class="stat-label">Published Studies</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="section science" id="science">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / Our Science</span>
+                <h2 class="section-title">Evidence-Based Precision Medicine</h2>
+                <p class="section-desc">
+                    Our methodology combines cutting-edge genomic sequencing with continuous biomarker monitoring,
+                    translating complex genetic data into actionable nutritional guidance.
+                </p>
+            </div>
+            <div class="science-grid">
+                <div class="science-card" data-reveal>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4V44M16 8C16 8 24 16 24 24C24 32 16 40 16 40M32 8C32 8 24 16 24 24C24 32 32 40 32 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="12" r="3" fill="currentColor"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                            <circle cx="24" cy="36" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Genomic Sequencing</h3>
+                    <p>Analysis of 847,000+ genetic variants using next-generation sequencing technology with 99.9% accuracy.</p>
+                    <div class="card-data">
+                        <div class="data-bar">
+                            <div class="bar-fill" data-width="99.9"></div>
+                        </div>
+                        <span class="data-label">Sequencing Accuracy</span>
+                    </div>
+                </div>
+                <div class="science-card" data-reveal>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 18H42M18 6V42" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Biomarker Tracking</h3>
+                    <p>Continuous monitoring of 45+ key biomarkers through at-home collection kits and real-time analysis.</p>
+                    <div class="card-data">
+                        <div class="data-bar">
+                            <div class="bar-fill" data-width="45"></div>
+                        </div>
+                        <span class="data-label">Biomarkers Monitored</span>
+                    </div>
+                </div>
+                <div class="science-card" data-reveal>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 36L12 28L20 32L28 20L36 24L44 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="28" r="3" fill="currentColor"/>
+                            <circle cx="28" cy="20" r="3" fill="currentColor"/>
+                            <circle cx="44" cy="12" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Machine learning algorithms trained on 2.3M+ data points to generate personalized recommendations.</p>
+                    <div class="card-data">
+                        <div class="data-bar">
+                            <div class="bar-fill" data-width="92"></div>
+                        </div>
+                        <span class="data-label">Prediction Accuracy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / The Process</span>
+                <h2 class="section-title">From Sample to Solution</h2>
+                <p class="section-desc">
+                    A scientifically rigorous four-phase methodology designed to translate your unique
+                    genetic profile into actionable nutritional protocols.
+                </p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-line">
+                    <div class="line-progress" id="lineProgress"></div>
+                </div>
+                <div class="process-step" data-step="1">
+                    <div class="step-marker">
+                        <span class="marker-number">01</span>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Sample Collection</h3>
+                            <span class="step-duration">Day 1-3</span>
+                        </div>
+                        <p>Receive your at-home collection kit. Simple saliva sample with clear instructions and prepaid return shipping.</p>
+                        <div class="step-visual">
+                            <div class="specimen-tube">
+                                <div class="tube-liquid"></div>
+                                <div class="tube-cap"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="2">
+                    <div class="step-marker">
+                        <span class="marker-number">02</span>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Laboratory Analysis</h3>
+                            <span class="step-duration">Day 4-10</span>
+                        </div>
+                        <p>CLIA-certified lab processing with comprehensive genomic sequencing and initial biomarker panel.</p>
+                        <div class="step-visual">
+                            <div class="lab-equipment">
+                                <div class="centrifuge">
+                                    <div class="centrifuge-arm"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="3">
+                    <div class="step-marker">
+                        <span class="marker-number">03</span>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Data Synthesis</h3>
+                            <span class="step-duration">Day 11-14</span>
+                        </div>
+                        <p>AI algorithms analyze your genetic data against our proprietary database of 2.3M+ validated correlations.</p>
+                        <div class="step-visual">
+                            <div class="data-viz">
+                                <div class="viz-bar" style="--height: 60%"></div>
+                                <div class="viz-bar" style="--height: 85%"></div>
+                                <div class="viz-bar" style="--height: 45%"></div>
+                                <div class="viz-bar" style="--height: 95%"></div>
+                                <div class="viz-bar" style="--height: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step" data-step="4">
+                    <div class="step-marker">
+                        <span class="marker-number">04</span>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>Protocol Delivery</h3>
+                            <span class="step-duration">Day 14+</span>
+                        </div>
+                        <p>Receive your personalized nutrition protocol with ongoing optimization through continuous biomarker tracking.</p>
+                        <div class="step-visual">
+                            <div class="report-stack">
+                                <div class="report-page"></div>
+                                <div class="report-page"></div>
+                                <div class="report-page"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biomarkers Section -->
+    <section class="section biomarkers" id="biomarkers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / Biomarker Panel</span>
+                <h2 class="section-title">Comprehensive Health Metrics</h2>
+                <p class="section-desc">
+                    We analyze 45+ biomarkers across six critical health domains, providing a complete
+                    picture of your metabolic and nutritional status.
+                </p>
+            </div>
+            <div class="biomarker-dashboard">
+                <div class="dashboard-sidebar">
+                    <button class="biomarker-tab active" data-tab="metabolic">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Metabolic Function</span>
+                        <span class="tab-count">12</span>
+                    </button>
+                    <button class="biomarker-tab" data-tab="nutrition">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Nutritional Status</span>
+                        <span class="tab-count">9</span>
+                    </button>
+                    <button class="biomarker-tab" data-tab="inflammation">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Inflammation</span>
+                        <span class="tab-count">7</span>
+                    </button>
+                    <button class="biomarker-tab" data-tab="hormonal">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Hormonal Balance</span>
+                        <span class="tab-count">8</span>
+                    </button>
+                    <button class="biomarker-tab" data-tab="genetic">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16v16H4zM9 9h6v6H9z"/>
+                                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Genetic Variants</span>
+                        <span class="tab-count">6</span>
+                    </button>
+                    <button class="biomarker-tab" data-tab="oxidative">
+                        <span class="tab-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 3v18M5.636 5.636l12.728 12.728M3 12h18M5.636 18.364L18.364 5.636"/>
+                            </svg>
+                        </span>
+                        <span class="tab-text">Oxidative Stress</span>
+                        <span class="tab-count">3</span>
+                    </button>
+                </div>
+                <div class="dashboard-content">
+                    <div class="biomarker-panel active" id="metabolic">
+                        <div class="panel-header">
+                            <h3>Metabolic Function Markers</h3>
+                            <p>Key indicators of metabolic health and energy processing efficiency</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="33" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">72%</span>
+                                </div>
+                                <span class="marker-name">HbA1c</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="22" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">86%</span>
+                                </div>
+                                <span class="marker-name">Insulin Sensitivity</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="55" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">54%</span>
+                                </div>
+                                <span class="marker-name">Lipid Metabolism</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="28" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">78%</span>
+                                </div>
+                                <span class="marker-name">Thyroid Function</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biomarker-panel" id="nutrition">
+                        <div class="panel-header">
+                            <h3>Nutritional Status Markers</h3>
+                            <p>Essential vitamin and mineral levels for optimal function</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="16" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">91%</span>
+                                </div>
+                                <span class="marker-name">Vitamin D</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="44" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">62%</span>
+                                </div>
+                                <span class="marker-name">B12 Status</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="33" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">74%</span>
+                                </div>
+                                <span class="marker-name">Iron Panel</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="22" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">83%</span>
+                                </div>
+                                <span class="marker-name">Omega-3 Index</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biomarker-panel" id="inflammation">
+                        <div class="panel-header">
+                            <h3>Inflammation Markers</h3>
+                            <p>Systemic inflammation indicators affecting overall health</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="11" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">95%</span>
+                                </div>
+                                <span class="marker-name">hs-CRP</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="27" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">79%</span>
+                                </div>
+                                <span class="marker-name">Homocysteine</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="49" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">58%</span>
+                                </div>
+                                <span class="marker-name">IL-6 Levels</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="16" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">88%</span>
+                                </div>
+                                <span class="marker-name">TNF-Alpha</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biomarker-panel" id="hormonal">
+                        <div class="panel-header">
+                            <h3>Hormonal Balance Markers</h3>
+                            <p>Endocrine system function and hormone optimization</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="33" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">73%</span>
+                                </div>
+                                <span class="marker-name">Cortisol Pattern</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="22" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">82%</span>
+                                </div>
+                                <span class="marker-name">DHEA-S</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="44" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">64%</span>
+                                </div>
+                                <span class="marker-name">Testosterone</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="27" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">77%</span>
+                                </div>
+                                <span class="marker-name">Estrogen Panel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biomarker-panel" id="genetic">
+                        <div class="panel-header">
+                            <h3>Genetic Variant Analysis</h3>
+                            <p>Key SNPs affecting nutrient metabolism and response</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="55" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">52%</span>
+                                </div>
+                                <span class="marker-name">MTHFR Status</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="16" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">89%</span>
+                                </div>
+                                <span class="marker-name">APOE Genotype</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="33" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">71%</span>
+                                </div>
+                                <span class="marker-name">FTO Variants</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="22" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">84%</span>
+                                </div>
+                                <span class="marker-name">VDR Polymorphism</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="biomarker-panel" id="oxidative">
+                        <div class="panel-header">
+                            <h3>Oxidative Stress Markers</h3>
+                            <p>Cellular damage and antioxidant capacity assessment</p>
+                        </div>
+                        <div class="marker-grid">
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#0066FF" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="27" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">76%</span>
+                                </div>
+                                <span class="marker-name">Glutathione</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#00C853" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="16" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">87%</span>
+                                </div>
+                                <span class="marker-name">CoQ10 Level</span>
+                            </div>
+                            <div class="marker-item">
+                                <div class="marker-gauge">
+                                    <svg viewBox="0 0 100 50">
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                                        <path d="M10 45 A35 35 0 0 1 90 45" fill="none" stroke="#FF6D00" stroke-width="8" stroke-dasharray="110" stroke-dashoffset="44" class="gauge-fill"/>
+                                    </svg>
+                                    <span class="gauge-value">65%</span>
+                                </div>
+                                <span class="marker-name">8-OHdG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section research" id="research">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 / Research Foundation</span>
+                <h2 class="section-title">Peer-Reviewed Science</h2>
+                <p class="section-desc">
+                    Our recommendations are grounded in rigorous scientific research, with methodology
+                    validated through peer-reviewed publications and ongoing clinical studies.
+                </p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card featured" data-reveal>
+                    <div class="card-label">Featured Study</div>
+                    <h3>Precision Nutrition Outcomes: A 12-Month Randomized Controlled Trial</h3>
+                    <p>Multi-center study demonstrating 47% greater improvement in metabolic markers compared to standard dietary guidelines.</p>
+                    <div class="study-meta">
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            n=2,847
+                        </span>
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            2024
+                        </span>
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                            Nature Medicine
+                        </span>
+                    </div>
+                    <a href="#" class="study-link">
+                        <span>Read Full Study</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="research-stats">
+                    <div class="stat-block" data-reveal>
+                        <div class="stat-number">156</div>
+                        <div class="stat-desc">Published peer-reviewed papers citing our methodology</div>
+                    </div>
+                    <div class="stat-block" data-reveal>
+                        <div class="stat-number">23</div>
+                        <div class="stat-desc">Active clinical trials in partnership with research institutions</div>
+                    </div>
+                    <div class="stat-block" data-reveal>
+                        <div class="stat-number">2.3M</div>
+                        <div class="stat-desc">Data points in our validated correlation database</div>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-logos">
+                <span class="partner-label">Research Partners</span>
+                <div class="logos-track">
+                    <div class="logo-item">Harvard Medical School</div>
+                    <div class="logo-item">Stanford Medicine</div>
+                    <div class="logo-item">MIT</div>
+                    <div class="logo-item">Johns Hopkins</div>
+                    <div class="logo-item">Mayo Clinic</div>
+                    <div class="logo-item">Cleveland Clinic</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 / Pricing</span>
+                <h2 class="section-title">Choose Your Protocol</h2>
+                <p class="section-desc">
+                    Select the analysis depth that matches your health optimization goals.
+                    All plans include our comprehensive genetic analysis and personalized recommendations.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-reveal>
+                    <div class="card-tier">Essential</div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount">199</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <p class="card-desc">Foundational genetic analysis for nutrition optimization</p>
+                    <ul class="card-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Core genetic panel (50+ markers)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Personalized nutrition report</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Food sensitivity insights</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Digital dashboard access</span>
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-card">Get Started</a>
+                </div>
+                <div class="pricing-card recommended" data-reveal>
+                    <div class="recommended-badge">Most Popular</div>
+                    <div class="card-tier">Comprehensive</div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount">399</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <p class="card-desc">Complete genomic analysis with biomarker tracking</p>
+                    <ul class="card-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Full genetic panel (200+ markers)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Quarterly biomarker testing</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>AI-powered meal planning</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Supplement protocol</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>1 consultation call</span>
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-card btn-primary-card">Get Started</a>
+                </div>
+                <div class="pricing-card" data-reveal>
+                    <div class="card-tier">Elite</div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount">149</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="card-desc">Continuous optimization with dedicated support</p>
+                    <ul class="card-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Complete genetic analysis</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Monthly biomarker tracking</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Real-time protocol adjustments</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Dedicated health coach</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Priority lab processing</span>
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-card">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="cta">
+        <div class="cta-bg">
+            <div class="dna-strand" id="dnaStrand"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <span class="cta-tag">Begin Your Journey</span>
+                <h2>Your Personalized Protocol Awaits</h2>
+                <p>Join over 50,000 individuals who have transformed their health through precision nutrition science.</p>
+                <form class="cta-form" id="ctaForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-submit">
+                            <span>Start Analysis</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        HIPAA compliant. Your data is encrypted and never shared.
+                    </p>
+                </form>
+                <div class="cta-trust">
+                    <div class="trust-item">
+                        <span class="trust-value">50K+</span>
+                        <span class="trust-label">Users</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-value">4.9</span>
+                        <span class="trust-label">Rating</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-value">CLIA</span>
+                        <span class="trust-label">Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20C12 20 14 12 20 12C26 12 28 20 28 20C28 20 26 28 20 28C14 28 12 20 12 20Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        </svg>
+                        <span>GenomIQ</span>
+                    </a>
+                    <p>Advancing personalized nutrition through precision genomics and evidence-based science.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <a href="#">How It Works</a>
+                    <a href="#">Our Science</a>
+                    <a href="#">Biomarkers</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Research</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GenomIQ. All rights reserved.</p>
+                <div class="footer-certifications">
+                    <span>CLIA Certified</span>
+                    <span>HIPAA Compliant</span>
+                    <span>CAP Accredited</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
