@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeTable | Learn Authentic Recipes from Home Cooks Worldwide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍳</span>
+                <span class="logo-text">HomeTable</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#instructors">Our Cooks</a></li>
+                <li><a href="#journey">How It Works</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#reserve" class="btn btn-nav">Book a Seat</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-tag animate-fade-up">Live Virtual Cooking Classes</span>
+            <h1 class="hero-title animate-fade-up">
+                Cook with <span class="text-accent">Grandmothers</span> in Bologna,<br>
+                <span class="text-accent">Street Vendors</span> in Bangkok,<br>
+                & <span class="text-accent">Home Chefs</span> Worldwide
+            </h1>
+            <p class="hero-subtitle animate-fade-up">
+                Join live cooking sessions with authentic home cooks from around the globe.
+                Learn secret family recipes, discover regional techniques, and share meals across borders.
+            </p>
+            <div class="hero-cta animate-fade-up">
+                <a href="#reserve" class="btn btn-primary">Reserve Your Spot</a>
+                <a href="#classes" class="btn btn-secondary">Explore Classes</a>
+            </div>
+            <div class="hero-stats animate-fade-up">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Home Cooks</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Recipes</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- Featured Classes Section -->
+    <section class="classes" id="classes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Today's Menu</span>
+                <h2 class="section-title">Featured Cooking Classes</h2>
+                <p class="section-subtitle">Hand-picked sessions happening this week. Each class is a journey to a different kitchen, a different culture, a different story.</p>
+            </div>
+
+            <div class="classes-grid">
+                <article class="class-card featured">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80" alt="Italian grandmother making fresh pasta">
+                        <div class="class-overlay">
+                            <span class="class-cuisine">Italian</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-meta">
+                            <span class="class-location">📍 Bologna, Italy</span>
+                            <span class="class-duration">⏱️ 90 min</span>
+                        </div>
+                        <h3 class="class-title">Nonna Maria's Fresh Tagliatelle</h3>
+                        <p class="class-description">Learn the art of hand-rolled pasta from a third-generation Italian grandmother. Her secret? Love and 80 years of practice.</p>
+                        <div class="class-footer">
+                            <div class="class-instructor">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Nonna Maria">
+                                <span>with Nonna Maria</span>
+                            </div>
+                            <span class="class-price">$35</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="class-card">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80" alt="Thai street food cooking">
+                        <div class="class-overlay">
+                            <span class="class-cuisine">Thai</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-meta">
+                            <span class="class-location">📍 Bangkok, Thailand</span>
+                            <span class="class-duration">⏱️ 75 min</span>
+                        </div>
+                        <h3 class="class-title">Authentic Pad Thai Secrets</h3>
+                        <p class="class-description">Bangkok street vendor Somchai reveals the wok techniques that make his pad thai legendary.</p>
+                        <div class="class-footer">
+                            <div class="class-instructor">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Chef Somchai">
+                                <span>with Somchai</span>
+                            </div>
+                            <span class="class-price">$28</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="class-card">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&q=80" alt="Japanese home cooking">
+                        <div class="class-overlay">
+                            <span class="class-cuisine">Japanese</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-meta">
+                            <span class="class-location">📍 Kyoto, Japan</span>
+                            <span class="class-duration">⏱️ 60 min</span>
+                        </div>
+                        <h3 class="class-title">Home-Style Ramen Mastery</h3>
+                        <p class="class-description">Yuki teaches the art of crafting rich, soul-warming ramen from scratch in her cozy Kyoto kitchen.</p>
+                        <div class="class-footer">
+                            <div class="class-instructor">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Yuki">
+                                <span>with Yuki</span>
+                            </div>
+                            <span class="class-price">$32</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="class-card">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80" alt="Indian home cooking">
+                        <div class="class-overlay">
+                            <span class="class-cuisine">Indian</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <div class="class-meta">
+                            <span class="class-location">📍 Jaipur, India</span>
+                            <span class="class-duration">⏱️ 80 min</span>
+                        </div>
+                        <h3 class="class-title">Royal Rajasthani Thali</h3>
+                        <p class="class-description">Discover the spice secrets of royal Rajasthani cuisine with Priya's family recipes passed down through generations.</p>
+                        <div class="class-footer">
+                            <div class="class-instructor">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Priya">
+                                <span>with Priya</span>
+                            </div>
+                            <span class="class-price">$30</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="classes-cta">
+                <a href="#" class="btn btn-outline">View Full Menu of Classes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors" id="instructors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Meet the Cooks</span>
+                <h2 class="section-title">Stories from Real Kitchens</h2>
+                <p class="section-subtitle">Our instructors aren't celebrity chefs. They're grandmothers, street vendors, and home cooks who've spent lifetimes perfecting dishes that define their cultures.</p>
+            </div>
+
+            <div class="instructors-showcase">
+                <div class="instructor-featured">
+                    <div class="instructor-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80" alt="Home cook in their kitchen">
+                    </div>
+                    <div class="instructor-quote">
+                        <blockquote>
+                            "When I cook, I'm not just making food. I'm sharing my grandmother's stories, my mother's love, my country's soul. Every dish carries a thousand memories."
+                        </blockquote>
+                        <cite>— Nonna Maria, Bologna</cite>
+                    </div>
+                </div>
+
+                <div class="instructor-grid">
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200&q=80" alt="Carlos from Mexico">
+                        </div>
+                        <h4>Carlos</h4>
+                        <span class="instructor-origin">Oaxaca, Mexico</span>
+                        <p class="instructor-specialty">Mole Master • 40 years experience</p>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <img src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?w=200&q=80" alt="Fatima from Morocco">
+                        </div>
+                        <h4>Fatima</h4>
+                        <span class="instructor-origin">Marrakech, Morocco</span>
+                        <p class="instructor-specialty">Tagine Expert • Traditional Spice Blends</p>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Pierre from France">
+                        </div>
+                        <h4>Pierre</h4>
+                        <span class="instructor-origin">Lyon, France</span>
+                        <p class="instructor-specialty">Pastry Artisan • Family Boulangerie</p>
+                    </div>
+                    <div class="instructor-card">
+                        <div class="instructor-avatar">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&q=80" alt="Min-ji from Korea">
+                        </div>
+                        <h4>Min-ji</h4>
+                        <span class="instructor-origin">Seoul, Korea</span>
+                        <p class="instructor-specialty">Fermentation Expert • Kimchi Arts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Your Culinary Journey</span>
+                <h2 class="section-title">How HomeTable Works</h2>
+                <p class="section-subtitle">From choosing your class to plating your creation, here's what to expect.</p>
+            </div>
+
+            <div class="journey-steps">
+                <div class="journey-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📋</div>
+                    <h3>Choose Your Adventure</h3>
+                    <p>Browse our menu of live classes. Filter by cuisine, skill level, or schedule. Each class includes an ingredient list sent in advance.</p>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🛒</div>
+                    <h3>Gather Ingredients</h3>
+                    <p>Receive a detailed shopping list with substitution suggestions. We partner with local grocers in many cities for easy ingredient kits.</p>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">👩‍🍳</div>
+                    <h3>Cook Together Live</h3>
+                    <p>Join your instructor's kitchen via video. Ask questions, get real-time feedback, and cook alongside food lovers from around the world.</p>
+                </div>
+                <div class="journey-connector"></div>
+                <div class="journey-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">🍽️</div>
+                    <h3>Feast & Share</h3>
+                    <p>Plate your creation, share photos with your class community, and keep the recipe card forever. New friends, new skills, new flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">From Our Table</span>
+                <h2 class="section-title">Stories from Our Community</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"I've taken cooking classes before, but nothing compares to learning from Maria's actual kitchen in Bologna. When she told stories about her mother teaching her the same recipe, I nearly cried into my tagliatelle."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&q=80" alt="Sarah">
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"As a Thai-American, I wanted to reconnect with my heritage. Somchai's class didn't just teach me pad thai—it transported me to the streets of Bangkok where my grandmother grew up."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=100&q=80" alt="Kevin">
+                        <div>
+                            <strong>Kevin T.</strong>
+                            <span>Los Angeles, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p>"My 10-year-old daughter and I took the Japanese ramen class together. Yuki was so patient and kind. Now we have a new Saturday tradition—ramen from scratch!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="David">
+                        <div>
+                            <strong>David L.</strong>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="reserve" id="reserve">
+        <div class="reserve-bg"></div>
+        <div class="container reserve-content">
+            <div class="reserve-text">
+                <span class="section-tag">Your Seat Awaits</span>
+                <h2 class="reserve-title">Ready to Cook with the World?</h2>
+                <p class="reserve-subtitle">Join our global community of food lovers. Learn recipes that have been passed down for generations. Create memories that last a lifetime.</p>
+
+                <form class="reserve-form" id="reserveForm">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Get Started Free</button>
+                    </div>
+                    <p class="form-note">Start with a free 30-minute taster class. No credit card required.</p>
+                </form>
+
+                <div class="reserve-features">
+                    <div class="reserve-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Free taster class included</span>
+                    </div>
+                    <div class="reserve-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Cancel anytime</span>
+                    </div>
+                    <div class="reserve-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Recipe cards forever</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reserve-image">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80" alt="Cooking together">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🍳</span>
+                        <span class="logo-text">HomeTable</span>
+                    </a>
+                    <p>Connecting kitchens, cultures, and communities through the universal language of food.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#classes">All Classes</a></li>
+                        <li><a href="#instructors">Our Cooks</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Corporate Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Become an Instructor</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 HomeTable. Made with ❤️ from kitchens around the world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
