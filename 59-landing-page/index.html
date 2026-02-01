@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROSTBITE | True Crime Investigations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Atmospheric Overlay -->
+    <div class="fog-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">FROSTBITE</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#cases">Active Cases</a></li>
+                <li><a href="#investigations">Investigations</a></li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#evidence">Evidence Room</a></li>
+                <li><a href="#join" class="nav-cta">Join Investigation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-grain"></div>
+            <div class="hero-vignette"></div>
+        </div>
+        <div class="hero-content">
+            <div class="case-stamp">CASE FILE #2024-OPEN</div>
+            <h1 class="hero-title">
+                <span class="title-line">Some Cases</span>
+                <span class="title-line title-accent">Never Freeze</span>
+            </h1>
+            <p class="hero-subtitle">
+                Serialized investigations. Cold case analyses. Criminal justice reform.
+                We shine a light into the darkest corners—because the truth deserves persistence.
+            </p>
+            <div class="hero-actions">
+                <a href="#cases" class="btn btn-primary">
+                    <span class="btn-text">Enter the Case Files</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#podcast" class="btn btn-secondary">Listen Now</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="127">0</span>
+                    <span class="stat-label">Cases Investigated</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="23">0</span>
+                    <span class="stat-label">Cases Solved</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4.2">0</span>
+                    <span class="stat-label">Million Listeners</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Investigate</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Featured Case Section -->
+    <section id="cases" class="featured-case">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CURRENTLY INVESTIGATING</span>
+                <h2 class="section-title">The Vanishing at Lake Siljan</h2>
+            </div>
+            <div class="case-grid">
+                <div class="case-image">
+                    <div class="case-image-frame">
+                        <div class="case-image-placeholder">
+                            <div class="placeholder-icon">
+                                <svg viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="1" stroke-dasharray="4 4"/>
+                                    <path d="M50 30 L50 70 M30 50 L70 50" stroke="currentColor" stroke-width="1"/>
+                                </svg>
+                            </div>
+                            <span class="placeholder-text">EVIDENCE PHOTO REDACTED</span>
+                        </div>
+                        <div class="case-status">ACTIVE</div>
+                    </div>
+                </div>
+                <div class="case-details">
+                    <div class="case-meta">
+                        <span class="meta-item"><strong>Case #:</strong> 2024-SIL-0047</span>
+                        <span class="meta-item"><strong>Status:</strong> Open Investigation</span>
+                        <span class="meta-item"><strong>Location:</strong> Dalarna, Sweden</span>
+                    </div>
+                    <p class="case-description">
+                        Three winters ago, journalist Astrid Lindqvist disappeared during her investigation
+                        into decades-old corruption in a remote Swedish municipality. Her notes suggested
+                        she was close to uncovering something significant. Now, new evidence has emerged
+                        from the frozen depths of Lake Siljan.
+                    </p>
+                    <div class="case-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">Dec 2021</span>
+                            <span class="timeline-event">Last confirmed sighting</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Mar 2024</span>
+                            <span class="timeline-event">New evidence discovered</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Now</span>
+                            <span class="timeline-event">Active investigation</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <span class="btn-text">Follow This Case</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigations Section -->
+    <section id="investigations" class="investigations">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="section-tag">CASE FILES</span>
+                <h2 class="section-title">Ongoing Investigations</h2>
+                <p class="section-subtitle">Each case demands attention. Each story deserves to be told.</p>
+            </div>
+            <div class="cases-filter">
+                <button class="filter-btn active" data-filter="all">All Cases</button>
+                <button class="filter-btn" data-filter="cold">Cold Cases</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="solved">Solved</button>
+            </div>
+            <div class="cases-grid">
+                <article class="case-card" data-category="cold">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #1987-OSL-0012</span>
+                        <span class="case-badge cold">COLD CASE</span>
+                    </div>
+                    <h3 class="case-card-title">The Oslo Cipher Letters</h3>
+                    <p class="case-card-excerpt">
+                        Encrypted messages sent to newspapers in 1987. After 37 years,
+                        cryptographers may have finally cracked the code.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">12 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="active">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #2019-HEL-0089</span>
+                        <span class="case-badge active">ACTIVE</span>
+                    </div>
+                    <h3 class="case-card-title">Silent Witness: Helsinki Docks</h3>
+                    <p class="case-card-excerpt">
+                        A shipping container, a missing dockworker, and a conspiracy of
+                        silence that stretches across the Baltic Sea.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">8 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="solved">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #2003-CPH-0034</span>
+                        <span class="case-badge solved">SOLVED</span>
+                    </div>
+                    <h3 class="case-card-title">The Nyhavn Photographs</h3>
+                    <p class="case-card-excerpt">
+                        A box of photographs led to solving a 20-year-old disappearance.
+                        How community investigation brought closure.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">6 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="active">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #2022-REY-0156</span>
+                        <span class="case-badge active">ACTIVE</span>
+                    </div>
+                    <h3 class="case-card-title">Beneath the Northern Lights</h3>
+                    <p class="case-card-excerpt">
+                        In Iceland's remote highlands, a researcher's field notes reveal
+                        something troubling about what happens after dark.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">4 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="cold">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #1995-STO-0078</span>
+                        <span class="case-badge cold">COLD CASE</span>
+                    </div>
+                    <h3 class="case-card-title">The Archipelago Disappearances</h3>
+                    <p class="case-card-excerpt">
+                        Between 1995 and 1998, four people vanished from Stockholm's
+                        outer islands. A pattern has finally emerged.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">10 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+
+                <article class="case-card" data-category="solved">
+                    <div class="case-card-header">
+                        <span class="case-number">CASE #2015-TRO-0023</span>
+                        <span class="case-badge solved">SOLVED</span>
+                    </div>
+                    <h3 class="case-card-title">Winter's Last Confession</h3>
+                    <p class="case-card-excerpt">
+                        A deathbed confession in Tromsø led investigators to reopen
+                        a case everyone had forgotten—except one family.
+                    </p>
+                    <div class="case-card-footer">
+                        <span class="episode-count">5 Episodes</span>
+                        <span class="case-link">Access File →</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section id="podcast" class="podcast">
+        <div class="container">
+            <div class="podcast-grid">
+                <div class="podcast-info">
+                    <span class="section-tag">THE PODCAST</span>
+                    <h2 class="section-title">Listen in the Dark</h2>
+                    <p class="podcast-description">
+                        Award-winning investigative journalism meets immersive audio storytelling.
+                        Each season, we dive deep into cases that demand attention—following evidence
+                        trails, interviewing witnesses, and seeking justice for those whose stories
+                        might otherwise be forgotten.
+                    </p>
+                    <div class="podcast-features">
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <div class="feature-content">
+                                <h4>Serialized Investigations</h4>
+                                <p>Deep-dive seasons that follow cases from first leads to resolution</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <div class="feature-content">
+                                <h4>Cold Case Chronicles</h4>
+                                <p>Revisiting unsolved mysteries with fresh eyes and new technology</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <div class="feature-content">
+                                <h4>Justice Reform Spotlight</h4>
+                                <p>Examining systemic issues and advocating for meaningful change</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="podcast-platforms">
+                        <span class="platforms-label">Available on:</span>
+                        <div class="platform-icons">
+                            <a href="#" class="platform" aria-label="Spotify">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                            </a>
+                            <a href="#" class="platform" aria-label="Apple Podcasts">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0H5.34zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392.12.59-.12.72-.48.72-.36 0-.48-.12-.6-.6-.36-1.512-.96-2.7-1.932-3.732-1.44-1.512-3.264-2.328-5.328-2.328-4.2 0-7.56 3.48-7.56 7.68 0 2.328.96 4.392 2.52 5.904 1.56 1.512 3.6 2.352 5.88 2.352.84 0 1.68-.12 2.52-.36.48-.12.72 0 .84.36.12.48-.12.72-.48.84-.96.24-1.92.36-2.88.36-2.64 0-5.04-.96-6.84-2.76C3.6 15.816 2.52 13.176 2.52 10.296c0-5.52 4.32-9.84 9.72-9.84zm.12 4.56c.6 0 1.08.48 1.08 1.08s-.48 1.08-1.08 1.08-1.08-.48-1.08-1.08.48-1.08 1.08-1.08zM12 10.056c1.32 0 2.4 1.08 2.4 2.4 0 .84-.36 1.56-.96 2.04v5.64c0 .84-.6 1.44-1.44 1.44-.84 0-1.44-.6-1.44-1.44v-5.64c-.6-.48-.96-1.2-.96-2.04 0-1.32 1.08-2.4 2.4-2.4z"/></svg>
+                            </a>
+                            <a href="#" class="platform" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                            <a href="#" class="platform" aria-label="RSS Feed">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast-player">
+                    <div class="player-card">
+                        <div class="player-header">
+                            <span class="now-playing">NOW PLAYING</span>
+                            <span class="episode-number">S4 E7</span>
+                        </div>
+                        <h3 class="player-title">The Vanishing at Lake Siljan</h3>
+                        <p class="player-episode">Episode 7: Beneath the Ice</p>
+                        <div class="player-waveform">
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                            <div class="waveform-bar"></div>
+                        </div>
+                        <div class="player-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="progress-time">
+                                <span>23:47</span>
+                                <span>52:18</span>
+                            </div>
+                        </div>
+                        <div class="player-controls">
+                            <button class="control-btn" aria-label="Previous episode">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                            </button>
+                            <button class="control-btn control-play" aria-label="Play">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                            <button class="control-btn" aria-label="Next episode">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Room Section -->
+    <section id="evidence" class="evidence">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="section-tag">THE ARCHIVE</span>
+                <h2 class="section-title">Evidence Room</h2>
+                <p class="section-subtitle">Explore the resources, documents, and tools that power our investigations.</p>
+            </div>
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <div class="evidence-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="4" width="32" height="40" rx="2"/>
+                            <line x1="14" y1="14" x2="34" y2="14"/>
+                            <line x1="14" y1="22" x2="34" y2="22"/>
+                            <line x1="14" y1="30" x2="26" y2="30"/>
+                            <circle cx="30" cy="36" r="6"/>
+                            <line x1="34" y1="40" x2="38" y2="44"/>
+                        </svg>
+                    </div>
+                    <h3 class="evidence-title">Case Documents</h3>
+                    <p class="evidence-description">Access public records, court documents, and investigation notes for featured cases.</p>
+                    <a href="#" class="evidence-link">Browse Archive →</a>
+                </div>
+                <div class="evidence-card">
+                    <div class="evidence-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="18"/>
+                            <path d="M24 10 L24 24 L34 28"/>
+                            <circle cx="24" cy="24" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="evidence-title">Interactive Timelines</h3>
+                    <p class="evidence-description">Explore detailed chronologies of events, evidence, and developments in each investigation.</p>
+                    <a href="#" class="evidence-link">View Timelines →</a>
+                </div>
+                <div class="evidence-card">
+                    <div class="evidence-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 36 L12 24 L20 30 L32 14 L44 22"/>
+                            <circle cx="12" cy="24" r="2"/>
+                            <circle cx="20" cy="30" r="2"/>
+                            <circle cx="32" cy="14" r="2"/>
+                            <circle cx="44" cy="22" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="evidence-title">Data Analysis</h3>
+                    <p class="evidence-description">Pattern analysis, statistical insights, and data-driven investigation methodologies.</p>
+                    <a href="#" class="evidence-link">Explore Data →</a>
+                </div>
+                <div class="evidence-card">
+                    <div class="evidence-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4 L24 8 M24 40 L24 44 M4 24 L8 24 M40 24 L44 24"/>
+                            <circle cx="24" cy="24" r="16"/>
+                            <circle cx="24" cy="24" r="8"/>
+                            <circle cx="24" cy="24" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="evidence-title">Tip Line</h3>
+                    <p class="evidence-description">Submit tips securely and anonymously. Every piece of information could matter.</p>
+                    <a href="#" class="evidence-link">Submit a Tip →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Investigation CTA -->
+    <section id="join" class="join-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-stamp">CLASSIFIED</div>
+                <h2 class="cta-title">Join the Investigation</h2>
+                <p class="cta-description">
+                    Become part of a community dedicated to truth, justice, and the belief that
+                    every case deserves attention. Receive exclusive case updates, early access
+                    to new episodes, and participate in crowdsourced investigations.
+                </p>
+                <form class="cta-form">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Request Access</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+                    <p class="form-note">
+                        <span class="note-icon">🔒</span>
+                        Your information is secure. We take privacy as seriously as we take justice.
+                    </p>
+                </form>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Early episode access</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Exclusive case files</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="feature-check">✓</span>
+                        <span>Community investigations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">FROSTBITE</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Truth-seeking journalism. Cold case investigations.
+                        Criminal justice reform. Since 2019.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Investigations</h4>
+                    <ul>
+                        <li><a href="#">Active Cases</a></li>
+                        <li><a href="#">Cold Cases</a></li>
+                        <li><a href="#">Solved Cases</a></li>
+                        <li><a href="#">Justice Reform</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Evidence Room</a></li>
+                        <li><a href="#">Case Timelines</a></li>
+                        <li><a href="#">Submit a Tip</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Methodology</a></li>
+                        <li><a href="#">Ethics Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Frostbite Investigations. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
