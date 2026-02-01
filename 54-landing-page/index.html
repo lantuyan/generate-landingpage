@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omakase Books — Curated Reading Journeys</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">お任せ</a>
+            <ul class="nav-links">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-label">Omakase Books</span>
+                <h1 class="hero-title">One book.<br>Chosen for you.</h1>
+                <p class="hero-subtitle">A literary curator studies your reading journey,<br>then selects the perfect next chapter.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="book-silhouette">
+                    <div class="book-spine"></div>
+                    <div class="book-cover"></div>
+                    <div class="book-shadow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="section-container">
+            <div class="philosophy-header">
+                <span class="section-label">哲学</span>
+                <h2 class="section-title">The Art of<br>Omakase</h2>
+            </div>
+            <div class="philosophy-content">
+                <p class="philosophy-text">In Japanese tradition, <em>omakase</em> means "I leave it up to you" — an act of trust between guest and master. We bring this philosophy to literature.</p>
+                <div class="philosophy-principles">
+                    <article class="principle" data-reveal>
+                        <span class="principle-number">一</span>
+                        <h3 class="principle-title">Deep Understanding</h3>
+                        <p class="principle-text">We listen to your reading history, your moods, your aspirations. Each recommendation reflects months of attentive curation.</p>
+                    </article>
+                    <article class="principle" data-reveal>
+                        <span class="principle-number">二</span>
+                        <h3 class="principle-title">Singular Focus</h3>
+                        <p class="principle-text">One book. Not ten options to overwhelm. One carefully chosen volume that arrives like a gift from a knowing friend.</p>
+                    </article>
+                    <article class="principle" data-reveal>
+                        <span class="principle-number">三</span>
+                        <h3 class="principle-title">Patient Discovery</h3>
+                        <p class="principle-text">No algorithms. No trending lists. Just a human curator who understands that the right book at the right moment can change everything.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey" id="journey">
+        <div class="section-container">
+            <div class="journey-header">
+                <span class="section-label">旅</span>
+                <h2 class="section-title">Your Reading<br>Journey</h2>
+            </div>
+            <div class="journey-steps">
+                <div class="journey-step" data-reveal>
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h3 class="step-title">Share Your Story</h3>
+                        <p class="step-text">Tell us about the books that have shaped you. The ones you return to, the ones that surprised you, the ones you wish you could read again for the first time.</p>
+                    </div>
+                </div>
+                <div class="journey-step" data-reveal>
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h3 class="step-title">Meet Your Curator</h3>
+                        <p class="step-text">You're paired with a literary curator who specializes in your areas of interest. They study your profile with the attention of a tea master preparing for a guest.</p>
+                    </div>
+                </div>
+                <div class="journey-step" data-reveal>
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h3 class="step-title">Receive Your Book</h3>
+                        <p class="step-text">Each month, a single book arrives wrapped in washi paper, accompanied by a handwritten note explaining why this book, at this moment, is meant for you.</p>
+                    </div>
+                </div>
+                <div class="journey-step" data-reveal>
+                    <div class="step-marker"></div>
+                    <div class="step-content">
+                        <h3 class="step-title">Continue the Conversation</h3>
+                        <p class="step-text">Share your thoughts after reading. Your reflections become part of an ongoing dialogue, deepening your curator's understanding for the next selection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="section-container">
+            <blockquote class="testimonial-quote" data-reveal>
+                <p>"In a world of infinite choices, the greatest luxury is having someone who truly understands what you need."</p>
+                <footer class="testimonial-author">— A Subscriber, Tokyo</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe" id="subscribe">
+        <div class="section-container">
+            <div class="subscribe-inner">
+                <div class="subscribe-header">
+                    <span class="section-label">始める</span>
+                    <h2 class="section-title">Begin Your<br>Journey</h2>
+                </div>
+                <div class="subscribe-content">
+                    <p class="subscribe-text">Trust us with your reading. We promise to choose with care.</p>
+                    <form class="subscribe-form" id="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Begin</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+                    <p class="subscribe-note">Monthly curation · ¥4,800 · Cancel anytime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">お任せ</div>
+            <p class="footer-text">Omakase Books — The art of curated reading</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

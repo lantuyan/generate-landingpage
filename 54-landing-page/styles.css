@@ -1,0 +1,731 @@
+/* ===================================
+   Minimalist Japanese Design System
+   Omakase Books Landing Page
+   =================================== */
+
+/* --- CSS Variables --- */
+:root {
+    /* Colors - Washi paper, sumi ink, natural wood */
+    --color-paper: #f7f5f0;
+    --color-paper-warm: #f0ebe0;
+    --color-ink: #1a1a1a;
+    --color-ink-light: #3d3d3d;
+    --color-ink-soft: #6b6b6b;
+    --color-wood: #c4a77d;
+    --color-accent: #8b4513;
+    --color-line: rgba(26, 26, 26, 0.1);
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Noto Sans JP', sans-serif;
+
+    /* Spacing - Based on Japanese modular system */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+    --space-xxl: 12rem;
+
+    /* Transitions - Slow, meditative */
+    --transition-slow: 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --transition-medium: 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --transition-fast: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    font-weight: 200;
+}
+
+em {
+    font-style: italic;
+    font-family: var(--font-serif);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* --- Navigation --- */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: var(--space-md) var(--space-lg);
+    background: linear-gradient(to bottom, var(--color-paper) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    pointer-events: auto;
+}
+
+.nav-logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* --- Hero Section --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xl) var(--space-lg);
+    position: relative;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s var(--transition-slow) forwards;
+    animation-delay: 0.5s;
+}
+
+.hero-label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    margin-bottom: var(--space-md);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-md);
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: var(--color-ink-soft);
+    max-width: 400px;
+    line-height: 2;
+}
+
+/* Book Silhouette */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.book-silhouette {
+    position: relative;
+    width: 180px;
+    height: 260px;
+    transform: perspective(800px) rotateY(-15deg);
+    transition: transform var(--transition-medium);
+}
+
+.book-silhouette:hover {
+    transform: perspective(800px) rotateY(-5deg);
+}
+
+.book-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-ink);
+    border-radius: 0 3px 3px 0;
+}
+
+.book-spine {
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    height: 100%;
+    background: var(--color-ink-light);
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+
+.book-shadow {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 30px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, transparent 70%);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: var(--space-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.scroll-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+}
+
+.scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--color-ink-soft), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* --- Section Shared Styles --- */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xxl) var(--space-lg);
+}
+
+.section-label {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-ink-soft);
+    margin-bottom: var(--space-sm);
+    opacity: 0.5;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-lg);
+}
+
+/* --- Philosophy Section --- */
+.philosophy {
+    background-color: var(--color-paper-warm);
+}
+
+.philosophy-header {
+    margin-bottom: var(--space-xl);
+}
+
+.philosophy-text {
+    font-family: var(--font-serif);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    line-height: 1.8;
+    max-width: 700px;
+    margin-bottom: var(--space-xl);
+    color: var(--color-ink-light);
+}
+
+.philosophy-principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.principle {
+    padding: var(--space-lg) 0;
+    border-top: 1px solid var(--color-line);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all var(--transition-slow);
+}
+
+.principle.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.principle-number {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--color-wood);
+    display: block;
+    margin-bottom: var(--space-md);
+}
+
+.principle-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-serif);
+}
+
+.principle-text {
+    font-size: 0.9rem;
+    color: var(--color-ink-soft);
+    line-height: 1.9;
+}
+
+/* --- Journey Section --- */
+.journey {
+    background-color: var(--color-paper);
+}
+
+.journey-header {
+    margin-bottom: var(--space-xl);
+}
+
+.journey-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 700px;
+    margin-left: auto;
+}
+
+.journey-step {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all var(--transition-slow);
+}
+
+.journey-step.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step-marker {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--color-ink);
+    border-radius: 50%;
+    margin-top: 0.6rem;
+    position: relative;
+}
+
+.journey-step:not(:last-child) .step-marker::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: calc(100% + var(--space-lg) + var(--space-md));
+    background: var(--color-line);
+}
+
+.step-title {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: var(--space-xs);
+}
+
+.step-text {
+    font-size: 0.9rem;
+    color: var(--color-ink-soft);
+    line-height: 1.9;
+}
+
+/* --- Testimonial Section --- */
+.testimonial {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    padding: var(--space-xxl) 0;
+}
+
+.testimonial-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all var(--transition-slow);
+}
+
+.testimonial-quote.revealed {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.testimonial-quote p {
+    font-family: var(--font-serif);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+}
+
+.testimonial-author {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+}
+
+/* --- Subscribe Section --- */
+.subscribe {
+    background-color: var(--color-paper-warm);
+}
+
+.subscribe-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.subscribe-content {
+    max-width: 400px;
+}
+
+.subscribe-text {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--color-ink-light);
+    margin-bottom: var(--space-lg);
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: var(--space-sm) 0;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 200;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-line);
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus {
+    border-color: var(--color-ink);
+}
+
+.form-group input::placeholder {
+    color: var(--color-ink-soft);
+    opacity: 0.5;
+}
+
+.form-group label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    pointer-events: none;
+    opacity: 0;
+    transition: all var(--transition-fast);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    opacity: 1;
+}
+
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background: var(--color-ink-light);
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+.btn-icon {
+    transition: transform var(--transition-fast);
+}
+
+.subscribe-note {
+    margin-top: var(--space-md);
+    font-size: 0.75rem;
+    color: var(--color-ink-soft);
+    letter-spacing: 0.05em;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--color-paper);
+    padding: var(--space-xl) var(--space-lg);
+    border-top: 1px solid var(--color-line);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: var(--color-ink-soft);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.footer-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollPulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scaleY(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleY(1.2);
+    }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    :root {
+        --space-lg: 3rem;
+        --space-xl: 6rem;
+        --space-xxl: 8rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-xl);
+    }
+
+    .hero-subtitle {
+        margin: 0 auto;
+    }
+
+    .philosophy-principles {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .subscribe-inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .journey-steps {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 2rem;
+        --space-xl: 4rem;
+        --space-xxl: 6rem;
+    }
+
+    .nav {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .section-container {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .book-silhouette {
+        width: 140px;
+        height: 200px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .journey-step {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .step-marker {
+        margin-top: 0;
+    }
+
+    .journey-step:not(:last-child) .step-marker::after {
+        display: none;
+    }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
