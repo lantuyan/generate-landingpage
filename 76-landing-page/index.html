@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathwayAI - Your Personalized Career Learning Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2L4 8v8c0 7.732 5.12 14.96 12 17 6.88-2.04 12-9.268 12-17V8L16 2z" fill="url(#logoGrad)"/>
+                        <path d="M12 16l3 3 6-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="4" y1="2" x2="28" y2="27" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3B82F6"/>
+                                <stop offset="1" stop-color="#1D4ED8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="logo-text">PathwayAI</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#paths">Learning Paths</a></li>
+                <li><a href="#success">Success Stories</a></li>
+                <li><a href="#cta" class="nav-cta">Start Free</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-elements">
+            <div class="hero-circle circle-1"></div>
+            <div class="hero-circle circle-2"></div>
+            <div class="hero-circle circle-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-icon">🎯</span>
+                    <span>AI-Powered Career Transitions</span>
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    Transform Your Career with <span class="highlight">Personalized Learning</span>
+                </h1>
+                <p class="hero-description animate-fade-up delay-2">
+                    Our AI analyzes your skills, identifies gaps, and creates a customized curriculum
+                    designed specifically for your career goals. Learn at your pace, master what matters.
+                </p>
+                <div class="hero-actions animate-fade-up delay-3">
+                    <a href="#cta" class="btn btn-primary">
+                        <span>Start Your Journey</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <span>See How It Works</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-up delay-4">
+                    <div class="stat">
+                        <span class="stat-number" data-count="15000">0</span>
+                        <span class="stat-label">Career Changers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="94">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="200">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Learning Paths</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-left delay-2">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="dashboard-title">Your Learning Dashboard</span>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="progress-card">
+                            <div class="progress-header">
+                                <span class="progress-label">Current Progress</span>
+                                <span class="progress-percent">67%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 67%"></div>
+                            </div>
+                            <div class="progress-modules">
+                                <div class="module completed">
+                                    <span class="module-check">✓</span>
+                                    <span>Fundamentals</span>
+                                </div>
+                                <div class="module completed">
+                                    <span class="module-check">✓</span>
+                                    <span>Core Skills</span>
+                                </div>
+                                <div class="module active">
+                                    <span class="module-dot"></span>
+                                    <span>Advanced Topics</span>
+                                </div>
+                                <div class="module">
+                                    <span class="module-lock">🔒</span>
+                                    <span>Specialization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag new">+3 New Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Simple Process</span>
+                <h2 class="section-title">Your Learning Journey in <span class="highlight">4 Steps</span></h2>
+                <p class="section-description">
+                    From skill assessment to career success, our AI guides you through every step
+                    of your personalized learning path.
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="steps-line"></div>
+                <div class="step" data-step="1">
+                    <div class="step-number">
+                        <span>01</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Skill Assessment</h3>
+                        <p class="step-description">
+                            Take our AI-powered assessment to identify your current skills,
+                            strengths, and areas for growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">
+                        <span>02</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M6 16h20M6 8h20M6 24h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Gap Analysis</h3>
+                        <p class="step-description">
+                            Our AI compares your skills with your target career requirements,
+                            identifying exact gaps to fill.
+                        </p>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">
+                        <span>03</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M4 24V8a2 2 0 012-2h20a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 12h14M9 16h10M9 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Custom Curriculum</h3>
+                        <p class="step-description">
+                            Receive a personalized learning path with curated courses,
+                            projects, and milestones tailored to you.
+                        </p>
+                    </div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">
+                        <span>04</span>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4l3.09 6.26L26 11.27l-5 4.87 1.18 6.88L16 19.77l-6.18 3.25L11 16.14l-5-4.87 6.91-1.01L16 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Achieve Success</h3>
+                        <p class="step-description">
+                            Master new skills, earn certifications, and transition
+                            confidently into your dream career.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why PathwayAI</span>
+                <h2 class="section-title">Learning That <span class="highlight">Adapts to You</span></h2>
+                <p class="section-description">
+                    Traditional courses teach everyone the same way. We believe your learning
+                    journey should be as unique as your career goals.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-main">
+                    <div class="feature-visual">
+                        <div class="ai-brain">
+                            <div class="brain-core"></div>
+                            <div class="brain-orbit orbit-1">
+                                <span></span>
+                            </div>
+                            <div class="brain-orbit orbit-2">
+                                <span></span>
+                            </div>
+                            <div class="brain-orbit orbit-3">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Adaptive AI Engine</h3>
+                        <p>
+                            Our AI continuously learns your patterns, adjusting difficulty,
+                            pace, and content style to optimize your learning experience.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Real-time difficulty adjustment</li>
+                            <li>Learning style detection</li>
+                            <li>Smart content recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 3.5v21M3.5 14h21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="14" cy="14" r="10.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Skill Gap Mapping</h3>
+                    <p>
+                        Precise identification of missing skills between your current
+                        abilities and career requirements.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-gold">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M7 14l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="3.5" y="3.5" width="21" height="21" rx="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>
+                        Visual dashboards showing your advancement, completed modules,
+                        and time-to-goal estimates.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 7v7l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="14" cy="14" r="10.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>
+                        Learn at your own pace with smart scheduling that adapts
+                        to your busy life and commitments.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <circle cx="14" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 24v-2a7 7 0 0114 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Mentorship</h3>
+                    <p>
+                        Connect with industry professionals who've made similar
+                        career transitions successfully.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-coral">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M4 8h20M4 14h20M4 20h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="10" cy="8" r="2" fill="currentColor"/>
+                            <circle cx="18" cy="14" r="2" fill="currentColor"/>
+                            <circle cx="14" cy="20" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Hands-on Projects</h3>
+                    <p>
+                        Build a portfolio of real projects that demonstrate your
+                        new skills to potential employers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section id="paths" class="paths">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Popular Transitions</span>
+                <h2 class="section-title">Explore <span class="highlight">Learning Paths</span></h2>
+                <p class="section-description">
+                    Discover curated pathways designed for the most in-demand career transitions.
+                    Each path is customized further based on your unique background.
+                </p>
+            </div>
+            <div class="paths-grid">
+                <div class="path-card">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="5" y="8" width="30" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 18l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="path-duration">3-6 months</span>
+                    </div>
+                    <h3 class="path-title">Data Science</h3>
+                    <p class="path-description">
+                        From any background to data scientist. Master Python, statistics,
+                        machine learning, and data visualization.
+                    </p>
+                    <div class="path-skills">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>ML</span>
+                        <span>Stats</span>
+                    </div>
+                    <div class="path-footer">
+                        <div class="path-learners">
+                            <div class="learner-avatars">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>2,340 learners</span>
+                        </div>
+                        <a href="#cta" class="path-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+                <div class="path-card featured">
+                    <div class="path-featured-badge">Most Popular</div>
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 32V12a4 4 0 014-4h16a4 4 0 014 4v20" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 16h12M14 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="path-duration">4-8 months</span>
+                    </div>
+                    <h3 class="path-title">Software Engineering</h3>
+                    <p class="path-description">
+                        Become a full-stack developer. Learn modern frameworks,
+                        system design, and best engineering practices.
+                    </p>
+                    <div class="path-skills">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Cloud</span>
+                    </div>
+                    <div class="path-footer">
+                        <div class="path-learners">
+                            <div class="learner-avatars">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>4,120 learners</span>
+                        </div>
+                        <a href="#cta" class="path-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+                <div class="path-card">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 12v8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="path-duration">2-4 months</span>
+                    </div>
+                    <h3 class="path-title">Product Management</h3>
+                    <p class="path-description">
+                        Lead product development. Master user research, roadmapping,
+                        stakeholder management, and agile methodologies.
+                    </p>
+                    <div class="path-skills">
+                        <span>Strategy</span>
+                        <span>Analytics</span>
+                        <span>Agile</span>
+                        <span>UX</span>
+                    </div>
+                    <div class="path-footer">
+                        <div class="path-learners">
+                            <div class="learner-avatars">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>1,890 learners</span>
+                        </div>
+                        <a href="#cta" class="path-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+                <div class="path-card">
+                    <div class="path-header">
+                        <div class="path-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 20c0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20 14v6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="path-duration">3-5 months</span>
+                    </div>
+                    <h3 class="path-title">UX/UI Design</h3>
+                    <p class="path-description">
+                        Create beautiful user experiences. Learn design thinking,
+                        prototyping, user research, and design systems.
+                    </p>
+                    <div class="path-skills">
+                        <span>Figma</span>
+                        <span>Research</span>
+                        <span>Prototyping</span>
+                        <span>UI</span>
+                    </div>
+                    <div class="path-footer">
+                        <div class="path-learners">
+                            <div class="learner-avatars">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>1,560 learners</span>
+                        </div>
+                        <a href="#cta" class="path-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success" class="success">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Success Stories</span>
+                <h2 class="section-title">Real <span class="highlight">Transformations</span></h2>
+                <p class="section-description">
+                    Meet learners who've successfully transitioned into their dream careers
+                    using PathwayAI's personalized learning approach.
+                </p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "After 10 years in marketing, I felt stuck. PathwayAI identified
+                                exactly what I needed to learn to transition into data analytics.
+                                Six months later, I landed my dream job at a Fortune 500 company."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SM</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>Marketing → Data Analyst</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-transition">
+                            <div class="transition-item from">
+                                <span class="transition-label">From</span>
+                                <span class="transition-role">Marketing Manager</span>
+                            </div>
+                            <div class="transition-arrow">→</div>
+                            <div class="transition-item to">
+                                <span class="transition-label">To</span>
+                                <span class="transition-role">Sr. Data Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "The personalized curriculum was a game-changer. As a teacher,
+                                I knew how to learn, but PathwayAI showed me what to learn.
+                                Now I'm a full-stack developer and love every day of work."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>JC</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>James Chen</h4>
+                                <p>Teacher → Software Engineer</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-transition">
+                            <div class="transition-item from">
+                                <span class="transition-label">From</span>
+                                <span class="transition-role">High School Teacher</span>
+                            </div>
+                            <div class="transition-arrow">→</div>
+                            <div class="transition-item to">
+                                <span class="transition-label">To</span>
+                                <span class="transition-role">Full-Stack Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "I was skeptical about AI-driven learning, but the skill gap
+                                analysis was incredibly accurate. PathwayAI helped me leverage
+                                my nursing background for a health tech PM role."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>ER</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Nurse → Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-transition">
+                            <div class="transition-item from">
+                                <span class="transition-label">From</span>
+                                <span class="transition-role">ICU Nurse</span>
+                            </div>
+                            <div class="transition-arrow">→</div>
+                            <div class="transition-item to">
+                                <span class="transition-label">To</span>
+                                <span class="transition-role">Health Tech PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="slider-dots">
+                        <button class="dot active" aria-label="Slide 1"></button>
+                        <button class="dot" aria-label="Slide 2"></button>
+                        <button class="dot" aria-label="Slide 3"></button>
+                    </div>
+                    <button class="slider-btn next" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-bg-elements">
+                    <div class="cta-circle cta-circle-1"></div>
+                    <div class="cta-circle cta-circle-2"></div>
+                </div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your <span class="highlight">Career Transformation?</span></h2>
+                    <p class="cta-description">
+                        Take our free 5-minute skill assessment and discover your personalized
+                        learning path. No credit card required—just your ambition.
+                    </p>
+                    <form class="cta-form" id="signup-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                            <button type="submit" class="btn btn-primary">
+                                <span>Get Started Free</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="form-note">Join 15,000+ learners on their career transformation journey</p>
+                    </form>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Free skill assessment</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Personalized curriculum</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Cancel anytime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 2L4 8v8c0 7.732 5.12 14.96 12 17 6.88-2.04 12-9.268 12-17V8L16 2z" fill="url(#logoGrad2)"/>
+                                <path d="M12 16l3 3 6-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="logoGrad2" x1="4" y1="2" x2="28" y2="27" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3B82F6"/>
+                                        <stop offset="1" stop-color="#1D4ED8"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="logo-text">PathwayAI</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Empowering career changers with AI-personalized learning paths.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#paths">Learning Paths</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Career Guide</a></li>
+                            <li><a href="#">Skill Assessments</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PathwayAI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
