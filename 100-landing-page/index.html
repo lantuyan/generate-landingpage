@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARCHIVE.RAW - Digital Preservation Service. We capture and store the disappearing internet.">
+    <title>ARCHIVE.RAW | Digital Preservation Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <h1><a href="#">ARCHIVE.RAW</a></h1>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#stats">STATS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-container">
+            <pre class="ascii-art">
+    ╔═══════════════════════════════════════════════════════╗
+    ║                                                       ║
+    ║   ████████╗██╗  ██╗███████╗    ██╗    ██╗███████╗██████╗  ║
+    ║   ╚══██╔══╝██║  ██║██╔════╝    ██║    ██║██╔════╝██╔══██╗ ║
+    ║      ██║   ███████║█████╗      ██║ █╗ ██║█████╗  ██████╔╝ ║
+    ║      ██║   ██╔══██║██╔══╝      ██║███╗██║██╔══╝  ██╔══██╗ ║
+    ║      ██║   ██║  ██║███████╗    ╚███╔███╔╝███████╗██████╔╝ ║
+    ║      ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚══╝╚══╝ ╚══════╝╚═════╝  ║
+    ║                                                       ║
+    ║   ██╗███████╗    ██████╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ║
+    ║   ██║██╔════╝    ██╔══██╗██║██╔════╝██╔══██╗██╔══██╗██╔══██╗║
+    ║   ██║███████╗    ██║  ██║██║███████╗███████║██████╔╝██████╔╝║
+    ║   ██║╚════██║    ██║  ██║██║╚════██║██╔══██║██╔═══╝ ██╔═══╝ ║
+    ║   ██║███████║    ██████╔╝██║███████║██║  ██║██║     ██║     ║
+    ║   ╚═╝╚══════╝    ╚═════╝ ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝     ║
+    ║                                                       ║
+    ╚═══════════════════════════════════════════════════════╝
+            </pre>
+            <h2>THE WEB IS DISAPPEARING.</h2>
+            <h3>WE PRESERVE IT.</h3>
+            <p class="hero-text">
+                Every day, websites vanish. Links rot. Digital history erases itself.<br>
+                <strong>ARCHIVE.RAW</strong> captures and stores the internet before it's gone forever.
+            </p>
+            <div class="cta-primary">
+                <a href="#contact">&gt;&gt; START PRESERVING NOW &lt;&lt;</a>
+            </div>
+            <hr>
+            <p class="timestamp">Last crawl: <span id="current-time"></span> UTC | Pages archived today: <span id="pages-count">847,293</span></p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>/* ABOUT */</h2>
+        <hr>
+        <div class="about-content">
+            <blockquote>
+                "The average lifespan of a webpage is 100 days."<br>
+                <cite>— Internet Archive Studies, 2024</cite>
+            </blockquote>
+            <p>
+                <strong>ARCHIVE.RAW</strong> is a digital preservation service for researchers, historians,
+                journalists, and organizations who understand that <u>the internet is not permanent</u>.
+            </p>
+            <p>
+                We operate on a simple principle: <em>function over form</em>. Our infrastructure captures
+                websites exactly as they appear—HTML, CSS, JavaScript, media, and all dependencies.
+                No beautification. No interpretation. Just raw, authentic digital artifacts.
+            </p>
+            <table>
+                <tr>
+                    <td>FOUNDED:</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>HEADQUARTERS:</td>
+                    <td>Distributed (No single point of failure)</td>
+                </tr>
+                <tr>
+                    <td>STORAGE:</td>
+                    <td>Petabyte-scale, geographically redundant</td>
+                </tr>
+                <tr>
+                    <td>PHILOSOPHY:</td>
+                    <td>Honest. Raw. Functional.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <h2>/* SERVICES */</h2>
+        <hr>
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>[01] WEB CAPTURE</h3>
+                <pre>
+┌─────────────────────────┐
+│  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+│  █ FULL-PAGE SNAPSHOTS █  │
+│  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+└─────────────────────────┘
+                </pre>
+                <p>Complete website captures including:</p>
+                <ul>
+                    <li>- HTML source code</li>
+                    <li>- Stylesheets & scripts</li>
+                    <li>- Images & media files</li>
+                    <li>- Interactive elements</li>
+                    <li>- Metadata & headers</li>
+                </ul>
+                <p><a href="#contact">Request capture &gt;</a></p>
+            </div>
+
+            <div class="service-box">
+                <h3>[02] SCHEDULED MONITORING</h3>
+                <pre>
+┌─────────────────────────┐
+│  ░░░░░░░░░░░░░░░░░░░  │
+│  █ AUTOMATED CRAWLS  █  │
+│  ░░░░░░░░░░░░░░░░░░░  │
+└─────────────────────────┘
+                </pre>
+                <p>Automated preservation schedules:</p>
+                <ul>
+                    <li>- Hourly captures</li>
+                    <li>- Daily snapshots</li>
+                    <li>- Change detection alerts</li>
+                    <li>- Version diff reports</li>
+                    <li>- API access to archives</li>
+                </ul>
+                <p><a href="#contact">Set up monitoring &gt;</a></p>
+            </div>
+
+            <div class="service-box">
+                <h3>[03] BULK ARCHIVAL</h3>
+                <pre>
+┌─────────────────────────┐
+│  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  │
+│  █ DOMAIN-WIDE CRAWL █  │
+│  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  │
+└─────────────────────────┘
+                </pre>
+                <p>Enterprise-scale solutions:</p>
+                <ul>
+                    <li>- Full domain archival</li>
+                    <li>- Social media preservation</li>
+                    <li>- News site monitoring</li>
+                    <li>- Government record keeping</li>
+                    <li>- Legal compliance archives</li>
+                </ul>
+                <p><a href="#contact">Contact for pricing &gt;</a></p>
+            </div>
+
+            <div class="service-box">
+                <h3>[04] RESEARCH ACCESS</h3>
+                <pre>
+┌─────────────────────────┐
+│  ████████████████████  │
+│  █ HISTORICAL DATA  █  │
+│  ████████████████████  │
+└─────────────────────────┘
+                </pre>
+                <p>For academics & journalists:</p>
+                <ul>
+                    <li>- Historical web access</li>
+                    <li>- Deleted content retrieval</li>
+                    <li>- Timeline reconstruction</li>
+                    <li>- Citation-ready exports</li>
+                    <li>- Bulk data downloads</li>
+                </ul>
+                <p><a href="#contact">Apply for access &gt;</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section id="stats">
+        <h2>/* STATISTICS */</h2>
+        <hr>
+        <div class="stats-terminal">
+            <pre>
+$ archive-raw --status
+
+SYSTEM STATUS: <span class="status-online">ONLINE</span>
+UPTIME: 99.97%
+
+┌────────────────────────────────────────────────────────┐
+│                    ARCHIVE METRICS                      │
+├────────────────────────────────────────────────────────┤
+│                                                         │
+│  TOTAL PAGES ARCHIVED:     <span id="stat-pages">12,847,293,847</span>            │
+│  UNIQUE DOMAINS:           <span id="stat-domains">847,293</span>                   │
+│  TOTAL STORAGE:            <span id="stat-storage">4.7 PB</span>                    │
+│  AVERAGE RESPONSE TIME:    <span id="stat-response">127ms</span>                    │
+│  CAPTURES TODAY:           <span id="stat-today">2,847,293</span>                 │
+│                                                         │
+├────────────────────────────────────────────────────────┤
+│                                                         │
+│  OLDEST ARCHIVE:           1996-12-17                  │
+│  NEWEST ARCHIVE:           NOW                          │
+│  COUNTRIES SERVED:         194                          │
+│  RESEARCH INSTITUTIONS:    2,847                        │
+│                                                         │
+└────────────────────────────────────────────────────────┘
+
+$ _
+            </pre>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <h2>/* TESTIMONIALS */</h2>
+        <hr>
+        <div class="testimonials-list">
+            <div class="testimonial">
+                <p>"ARCHIVE.RAW helped us recover three years of deleted government websites for our investigation. Essential."</p>
+                <cite>— J. Martinez, Investigative Journalist</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The raw, unprocessed captures are exactly what we need for academic research. No interpretation, just data."</p>
+                <cite>— Dr. S. Chen, Digital Humanities, MIT</cite>
+            </div>
+            <div class="testimonial">
+                <p>"We use ARCHIVE.RAW for legal compliance. When clients need proof of web content at specific dates, we deliver."</p>
+                <cite>— Thompson & Associates, Law Firm</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <h2>/* PRICING */</h2>
+        <hr>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>PLAN</th>
+                    <th>CAPTURES/MO</th>
+                    <th>STORAGE</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BASIC</td>
+                    <td>1,000</td>
+                    <td>10 GB</td>
+                    <td>$29/mo</td>
+                </tr>
+                <tr>
+                    <td>PRO</td>
+                    <td>10,000</td>
+                    <td>100 GB</td>
+                    <td>$99/mo</td>
+                </tr>
+                <tr>
+                    <td>ENTERPRISE</td>
+                    <td>UNLIMITED</td>
+                    <td>UNLIMITED</td>
+                    <td><a href="#contact">CONTACT</a></td>
+                </tr>
+                <tr>
+                    <td>ACADEMIC</td>
+                    <td>5,000</td>
+                    <td>50 GB</td>
+                    <td>FREE*</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pricing-note">* Academic plan requires .edu email verification</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>/* CONTACT */</h2>
+        <hr>
+        <div class="contact-container">
+            <div class="contact-info">
+                <pre>
+┌─────────────────────────────────┐
+│         CONTACT INFO            │
+├─────────────────────────────────┤
+│                                 │
+│  EMAIL: archive@raw.net        │
+│  IRC: #archive-raw @ Libera    │
+│  PGP: 0xDEAD BEEF CAFE         │
+│                                 │
+│  SUPPORT HOURS:                 │
+│  24/7/365 (Automated)          │
+│  Human: Mon-Fri 09:00-17:00 UTC│
+│                                 │
+└─────────────────────────────────┘
+                </pre>
+            </div>
+            <div class="contact-form">
+                <form id="archiveForm">
+                    <fieldset>
+                        <legend>REQUEST ARCHIVE ACCESS</legend>
+
+                        <label for="name">NAME:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">EMAIL:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="organization">ORGANIZATION:</label><br>
+                        <input type="text" id="organization" name="organization"><br><br>
+
+                        <label for="purpose">PURPOSE:</label><br>
+                        <select id="purpose" name="purpose">
+                            <option value="">-- SELECT --</option>
+                            <option value="research">Academic Research</option>
+                            <option value="journalism">Journalism</option>
+                            <option value="legal">Legal/Compliance</option>
+                            <option value="personal">Personal Archive</option>
+                            <option value="enterprise">Enterprise Solution</option>
+                        </select><br><br>
+
+                        <label for="url">URL TO ARCHIVE (optional):</label><br>
+                        <input type="url" id="url" name="url" placeholder="https://"><br><br>
+
+                        <label for="message">MESSAGE:</label><br>
+                        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+                        <button type="submit">&gt;&gt; SUBMIT REQUEST &lt;&lt;</button>
+                    </fieldset>
+                </form>
+                <div id="form-response"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <pre>
+═══════════════════════════════════════════════════════════════════════════════
+                            ARCHIVE.RAW © 2019-2025
+                    PRESERVING THE INTERNET, ONE PAGE AT A TIME
+═══════════════════════════════════════════════════════════════════════════════
+            </pre>
+            <nav class="footer-nav">
+                <a href="#">HOME</a> |
+                <a href="#about">ABOUT</a> |
+                <a href="#services">SERVICES</a> |
+                <a href="#pricing">PRICING</a> |
+                <a href="#contact">CONTACT</a> |
+                <a href="#">TERMS</a> |
+                <a href="#">PRIVACY</a> |
+                <a href="#">API DOCS</a>
+            </nav>
+            <p class="footer-meta">
+                This page was intentionally designed with brutalist aesthetics.<br>
+                No cookies. No tracking. No JavaScript frameworks. Just HTML.
+            </p>
+            <p class="view-source">
+                <a href="view-source:">&lt;VIEW SOURCE&gt;</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
