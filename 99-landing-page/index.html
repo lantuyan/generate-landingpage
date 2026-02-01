@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handcraft Guild | Master Traditional Crafts with Artisan Makers</title>
+    <meta name="description" content="Learn woodworking, ceramics, metalsmithing, and textiles from master artisans. Online and in-person workshops with kit materials shipped to your door.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4L4 12V28L20 36L36 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M20 4V20M4 12L20 20M36 12L20 20" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                </svg>
+                <span>Handcraft Guild</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#crafts">Crafts</a></li>
+                <li><a href="#artisans">Artisans</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#start" class="nav-cta">Start Making</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-texture"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Est. 2024 • Traditional Craft Education</span>
+            <h1 class="hero-title">
+                <span class="title-line">Create with</span>
+                <span class="title-line title-accent">Your Hands</span>
+            </h1>
+            <p class="hero-description">
+                Learn woodworking, ceramics, metalsmithing, and textiles from master artisans.
+                Kits shipped to your door. Skills for a lifetime.
+            </p>
+            <div class="hero-actions">
+                <a href="#workshops" class="btn btn-primary">
+                    <span>Explore Workshops</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#process" class="btn btn-secondary">See How It Works</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Master Artisans</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="48">0</span>
+                    <span class="stat-label">Workshop Series</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3500">0</span>
+                    <span class="stat-label">Makers Trained</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-stack">
+                <div class="stack-item stack-wood" data-parallax="0.1">
+                    <div class="craft-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <rect x="10" y="30" width="60" height="40" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 30V15L40 10L55 15V30" stroke="currentColor" stroke-width="2"/>
+                            <line x1="40" y1="30" x2="40" y2="70" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>Woodworking</span>
+                </div>
+                <div class="stack-item stack-ceramic" data-parallax="0.15">
+                    <div class="craft-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <path d="M25 70C25 70 20 50 20 40C20 25 30 15 40 15C50 15 60 25 60 40C60 50 55 70 55 70" stroke="currentColor" stroke-width="2"/>
+                            <ellipse cx="40" cy="70" rx="15" ry="5" stroke="currentColor" stroke-width="2"/>
+                            <ellipse cx="40" cy="15" rx="8" ry="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>Ceramics</span>
+                </div>
+                <div class="stack-item stack-metal" data-parallax="0.2">
+                    <div class="craft-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <path d="M40 10L15 35L40 70L65 35L40 10Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 10V70M15 35H65" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span>Metalsmithing</span>
+                </div>
+                <div class="stack-item stack-textile" data-parallax="0.25">
+                    <div class="craft-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <path d="M15 20H65M15 35H65M15 50H65M15 65H65" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 15V70M40 15V70M55 15V70" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                    <span>Textiles</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Featured Workshops Section -->
+    <section class="workshops" id="workshops">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Workshops</span>
+                <h2 class="section-title">Learn From Masters</h2>
+                <p class="section-description">
+                    Each workshop combines live instruction with premium materials shipped directly to you.
+                    Create real objects while building lasting skills.
+                </p>
+            </div>
+
+            <div class="workshop-filters">
+                <button class="filter-btn active" data-filter="all">All Crafts</button>
+                <button class="filter-btn" data-filter="woodworking">Woodworking</button>
+                <button class="filter-btn" data-filter="ceramics">Ceramics</button>
+                <button class="filter-btn" data-filter="metalsmithing">Metalsmithing</button>
+                <button class="filter-btn" data-filter="textiles">Textiles</button>
+            </div>
+
+            <div class="workshop-grid">
+                <article class="workshop-card" data-category="woodworking">
+                    <div class="card-image">
+                        <div class="card-placeholder wood-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <rect x="20" y="40" width="80" height="60" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M35 40V25C35 22 40 20 60 20C80 20 85 22 85 25V40" stroke="currentColor" stroke-width="2"/>
+                                <line x1="40" y1="55" x2="80" y2="55" stroke="currentColor" stroke-width="2"/>
+                                <line x1="40" y1="70" x2="70" y2="70" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">Beginner</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Woodworking</span>
+                            <span class="duration">6 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Hand-Cut Dovetail Joinery</h3>
+                        <p class="card-description">Master the art of precision joinery. Create a beautiful keepsake box using traditional hand tools.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">JM</div>
+                                <span>with James Morrison</span>
+                            </div>
+                            <span class="card-price">$185</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card" data-category="ceramics">
+                    <div class="card-image">
+                        <div class="card-placeholder ceramic-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <path d="M40 100C40 100 30 70 30 50C30 30 45 15 60 15C75 15 90 30 90 50C90 70 80 100 80 100" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="60" cy="100" rx="20" ry="6" stroke="currentColor" stroke-width="2"/>
+                                <path d="M48 50C48 50 55 55 60 55C65 55 72 50 72 50" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">Intermediate</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Ceramics</span>
+                            <span class="duration">8 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Wheel-Thrown Vessels</h3>
+                        <p class="card-description">From centering clay to glazing techniques. Create a set of functional pottery for your home.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">SK</div>
+                                <span>with Sarah Kinoshita</span>
+                            </div>
+                            <span class="card-price">$245</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card" data-category="metalsmithing">
+                    <div class="card-image">
+                        <div class="card-placeholder metal-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <circle cx="60" cy="50" r="25" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="60" cy="50" r="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M60 75V100M50 95L60 100L70 95" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="60" cy="50" r="6" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">Beginner</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Metalsmithing</span>
+                            <span class="duration">4 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Silver Ring Forging</h3>
+                        <p class="card-description">Learn fundamental metalworking skills. Forge, texture, and finish your own sterling silver ring.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">RP</div>
+                                <span>with Rosa Petrov</span>
+                            </div>
+                            <span class="card-price">$165</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card" data-category="textiles">
+                    <div class="card-image">
+                        <div class="card-placeholder textile-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <rect x="25" y="20" width="70" height="80" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <line x1="35" y1="20" x2="35" y2="100" stroke="currentColor" stroke-width="1"/>
+                                <line x1="50" y1="20" x2="50" y2="100" stroke="currentColor" stroke-width="1"/>
+                                <line x1="65" y1="20" x2="65" y2="100" stroke="currentColor" stroke-width="1"/>
+                                <line x1="80" y1="20" x2="80" y2="100" stroke="currentColor" stroke-width="1"/>
+                                <path d="M25 40H95M25 60H95M25 80H95" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">All Levels</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Textiles</span>
+                            <span class="duration">10 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Floor Loom Weaving</h3>
+                        <p class="card-description">Weave from warp to weft. Create a handwoven table runner using traditional patterns.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">EN</div>
+                                <span>with Elena Nguyen</span>
+                            </div>
+                            <span class="card-price">$295</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card" data-category="woodworking">
+                    <div class="card-image">
+                        <div class="card-placeholder wood-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <ellipse cx="60" cy="60" rx="35" ry="8" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="60" cy="50" rx="35" ry="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M25 50V60M95 50V60" stroke="currentColor" stroke-width="2"/>
+                                <path d="M45 35L40 25M60 33V22M75 35L80 25" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">Intermediate</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Woodworking</span>
+                            <span class="duration">8 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Carved Wooden Bowl</h3>
+                        <p class="card-description">Shape wood with gouges and spokeshaves. Create a hand-carved bowl from a single block.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">TH</div>
+                                <span>with Thomas Henriksen</span>
+                            </div>
+                            <span class="card-price">$225</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="workshop-card" data-category="ceramics">
+                    <div class="card-image">
+                        <div class="card-placeholder ceramic-bg">
+                            <svg viewBox="0 0 120 120" fill="none">
+                                <rect x="30" y="40" width="60" height="50" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 55H90" stroke="currentColor" stroke-width="2"/>
+                                <path d="M90 50C100 50 100 70 90 70" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="60" cy="30" rx="20" ry="6" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 30V40M80 30V40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="card-badge">Beginner</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="craft-type">Ceramics</span>
+                            <span class="duration">5 Sessions</span>
+                        </div>
+                        <h3 class="card-title">Hand-Built Mugs</h3>
+                        <p class="card-description">No wheel required. Learn slab construction techniques to create unique, personal mugs.</p>
+                        <div class="card-footer">
+                            <div class="artisan">
+                                <div class="artisan-avatar">MW</div>
+                                <span>with Maria Wong</span>
+                            </div>
+                            <span class="card-price">$145</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="workshops-cta">
+                <a href="#start" class="btn btn-outline">View All 48 Workshops</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craft Categories Section -->
+    <section class="crafts" id="crafts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Craft Traditions</span>
+                <h2 class="section-title">Four Paths of Making</h2>
+                <p class="section-description">
+                    Each craft tradition offers unique ways to work with your hands,
+                    connect with materials, and create objects of lasting beauty.
+                </p>
+            </div>
+
+            <div class="craft-paths">
+                <div class="craft-path" data-craft="wood">
+                    <div class="path-visual">
+                        <div class="path-icon">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <path d="M50 10C35 10 25 20 25 35V90H75V35C75 20 65 10 50 10Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M35 30H65M35 50H65M35 70H65" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                <circle cx="50" cy="25" r="5" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="path-texture wood-texture"></div>
+                    </div>
+                    <div class="path-content">
+                        <h3>Woodworking</h3>
+                        <p>Shape timber with hand tools. From joinery to carving, discover the meditative rhythm of working with grain.</p>
+                        <ul class="path-skills">
+                            <li>Hand-cut joinery</li>
+                            <li>Carving & shaping</li>
+                            <li>Finishing techniques</li>
+                        </ul>
+                        <a href="#workshops" class="path-link">
+                            12 Workshops
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="craft-path" data-craft="ceramic">
+                    <div class="path-visual">
+                        <div class="path-icon">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <path d="M30 85C30 85 22 55 22 40C22 20 35 10 50 10C65 10 78 20 78 40C78 55 70 85 70 85" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="50" cy="85" rx="20" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M35 40C40 45 45 45 50 40C55 35 60 35 65 40" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="path-texture ceramic-texture"></div>
+                    </div>
+                    <div class="path-content">
+                        <h3>Ceramics</h3>
+                        <p>Transform earth into functional art. Experience the ancient alchemy of clay, glaze, and fire.</p>
+                        <ul class="path-skills">
+                            <li>Wheel throwing</li>
+                            <li>Hand building</li>
+                            <li>Glazing & firing</li>
+                        </ul>
+                        <a href="#workshops" class="path-link">
+                            14 Workshops
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="craft-path" data-craft="metal">
+                    <div class="path-visual">
+                        <div class="path-icon">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <path d="M50 15L20 45L50 85L80 45L50 15Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M50 15V85M20 45H80" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                <circle cx="50" cy="50" r="12" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="50" cy="50" r="5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="path-texture metal-texture"></div>
+                    </div>
+                    <div class="path-content">
+                        <h3>Metalsmithing</h3>
+                        <p>Forge, shape, and refine precious metals. Create jewelry and objects that last generations.</p>
+                        <ul class="path-skills">
+                            <li>Forging & forming</li>
+                            <li>Soldering & joining</li>
+                            <li>Surface finishing</li>
+                        </ul>
+                        <a href="#workshops" class="path-link">
+                            10 Workshops
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="craft-path" data-craft="textile">
+                    <div class="path-visual">
+                        <div class="path-icon">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect x="15" y="15" width="70" height="70" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 15V85M45 15V85M60 15V85M75 15V85" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+                                <path d="M15 30H85M15 45H85M15 60H85M15 75H85" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+                                <path d="M25 25L40 40L25 55L40 70" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="path-texture textile-texture"></div>
+                    </div>
+                    <div class="path-content">
+                        <h3>Textiles</h3>
+                        <p>Weave, dye, and stitch. Master the fiber arts that have clothed humanity for millennia.</p>
+                        <ul class="path-skills">
+                            <li>Loom weaving</li>
+                            <li>Natural dyeing</li>
+                            <li>Embroidery & stitching</li>
+                        </ul>
+                        <a href="#workshops" class="path-link">
+                            12 Workshops
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artisans Section -->
+    <section class="artisans" id="artisans">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Master Artisans</span>
+                <h2 class="section-title">Learn From the Best</h2>
+                <p class="section-description">
+                    Our instructors have decades of experience and a passion for passing on traditional skills.
+                    Each brings their unique perspective to time-honored techniques.
+                </p>
+            </div>
+
+            <div class="artisan-carousel">
+                <div class="artisan-track" id="artisanTrack">
+                    <div class="artisan-card">
+                        <div class="artisan-photo">
+                            <div class="photo-placeholder">
+                                <span>JM</span>
+                            </div>
+                        </div>
+                        <div class="artisan-info">
+                            <h4>James Morrison</h4>
+                            <span class="artisan-craft">Woodworking</span>
+                            <p>Fourth-generation furniture maker. 30 years mastering traditional joinery techniques in his Vermont workshop.</p>
+                            <div class="artisan-stats">
+                                <span>4 Workshops</span>
+                                <span>850+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artisan-card">
+                        <div class="artisan-photo">
+                            <div class="photo-placeholder">
+                                <span>SK</span>
+                            </div>
+                        </div>
+                        <div class="artisan-info">
+                            <h4>Sarah Kinoshita</h4>
+                            <span class="artisan-craft">Ceramics</span>
+                            <p>Trained in Mashiko, Japan. Blends Eastern and Western pottery traditions in her California studio.</p>
+                            <div class="artisan-stats">
+                                <span>5 Workshops</span>
+                                <span>720+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artisan-card">
+                        <div class="artisan-photo">
+                            <div class="photo-placeholder">
+                                <span>RP</span>
+                            </div>
+                        </div>
+                        <div class="artisan-info">
+                            <h4>Rosa Petrov</h4>
+                            <span class="artisan-craft">Metalsmithing</span>
+                            <p>Goldsmith and jewelry artist. Trained at the Florence Academy, now teaching from her Brooklyn forge.</p>
+                            <div class="artisan-stats">
+                                <span>3 Workshops</span>
+                                <span>480+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artisan-card">
+                        <div class="artisan-photo">
+                            <div class="photo-placeholder">
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <div class="artisan-info">
+                            <h4>Elena Nguyen</h4>
+                            <span class="artisan-craft">Textiles</span>
+                            <p>Master weaver preserving Vietnamese textile traditions. Creates contemporary pieces on century-old looms.</p>
+                            <div class="artisan-stats">
+                                <span>4 Workshops</span>
+                                <span>560+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevArtisan" aria-label="Previous artisan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="nextArtisan" aria-label="Next artisan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From Curiosity to Craft</h2>
+                <p class="section-description">
+                    Everything you need to start making, delivered to your door.
+                    Learn at your pace with expert guidance every step of the way.
+                </p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="25" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 15V30L40 40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Choose Your Craft</h3>
+                        <p>Browse workshops by craft tradition or project type. Select a skill level that matches your experience.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <rect x="10" y="15" width="40" height="35" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 25H50" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="10" r="5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Receive Your Kit</h3>
+                        <p>Premium materials and tools arrive at your door. Everything sourced for quality and curated for your project.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <rect x="8" y="12" width="44" height="30" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 42L30 52L52 42" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="27" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M27 27L30 30L33 24" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Learn Live</h3>
+                        <p>Join live sessions with your artisan instructor. Get real-time feedback as you develop your technique.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 60 60" fill="none">
+                                <path d="M30 10L35 25H50L38 35L43 50L30 40L17 50L22 35L10 25H25L30 10Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Create & Share</h3>
+                        <p>Complete your handmade object. Join our maker community to share your work and continue learning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kit-preview">
+                <div class="kit-visual">
+                    <div class="kit-box">
+                        <div class="kit-layer layer-1">
+                            <span>Tools</span>
+                        </div>
+                        <div class="kit-layer layer-2">
+                            <span>Materials</span>
+                        </div>
+                        <div class="kit-layer layer-3">
+                            <span>Guides</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kit-info">
+                    <h3>What's in Your Kit</h3>
+                    <ul class="kit-contents">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Professional-grade tools (yours to keep)</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Premium materials for your project</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Illustrated step-by-step workbook</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Access to session recordings</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Community forum membership</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Maker Stories</span>
+                <h2 class="section-title">From Our Community</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <blockquote class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"After years of screen fatigue, I finally found something that brings me fully into the present. The dovetail box I made sits on my desk as a daily reminder that I can create beautiful, lasting things."</p>
+                    </div>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <cite>Michael K.</cite>
+                            <span>Woodworking • San Francisco</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Sarah's teaching style is incredibly patient and thorough. I never thought I'd be able to throw on a wheel, but now I make mugs for everyone I know. It's become my meditation practice."</p>
+                    </div>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div class="author-info">
+                            <cite>Amanda L.</cite>
+                            <span>Ceramics • Austin</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The kit arrived perfectly organized with tools I'll use for years. Learning metalsmithing from Rosa felt like being let into a secret world. I've since taken three more workshops."</p>
+                    </div>
+                    <footer class="testimonial-author">
+                        <div class="author-avatar">DP</div>
+                        <div class="author-info">
+                            <cite>David P.</cite>
+                            <span>Metalsmithing • Denver</span>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="start">
+        <div class="cta-texture"></div>
+        <div class="container">
+            <div class="cta-content">
+                <span class="cta-tag">Begin Your Journey</span>
+                <h2 class="cta-title">Ready to Make Something Beautiful?</h2>
+                <p class="cta-description">
+                    Join thousands of makers discovering the joy of traditional craft.
+                    Your first workshop includes everything you need to start creating.
+                </p>
+                <form class="cta-form" id="ctaForm">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Start Making</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Get early access to new workshops and 15% off your first kit.</p>
+                </form>
+                <div class="cta-crafts">
+                    <span>Explore:</span>
+                    <a href="#workshops">Woodworking</a>
+                    <a href="#workshops">Ceramics</a>
+                    <a href="#workshops">Metalsmithing</a>
+                    <a href="#workshops">Textiles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4L4 12V28L20 36L36 28V12L20 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 4V20M4 12L20 20M36 12L20 20" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        </svg>
+                        <span>Handcraft Guild</span>
+                    </a>
+                    <p>Traditional craft education for the modern maker. Learn skills that last a lifetime.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v12M8 10l4 4 4-4"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Workshops</h4>
+                        <ul>
+                            <li><a href="#workshops">Woodworking</a></li>
+                            <li><a href="#workshops">Ceramics</a></li>
+                            <li><a href="#workshops">Metalsmithing</a></li>
+                            <li><a href="#workshops">Textiles</a></li>
+                            <li><a href="#workshops">All Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#artisans">Our Artisans</a></li>
+                            <li><a href="#">Teach With Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Kit Care</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Handcraft Guild. Made with care.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
