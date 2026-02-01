@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankofa Collective | Pan-African Artisan Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◆</span>
+                Sankofa
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#artisans">Artisans</a></li>
+                <li><a href="#crafts">Crafts</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#join" class="nav-cta">Join the Movement</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-pattern hero-pattern-left"></div>
+        <div class="hero-pattern hero-pattern-right"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">●</span>
+                Fair Trade · Heritage Craft · Global Connection
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Where African</span>
+                <span class="title-line title-accent">Craft Meets</span>
+                <span class="title-line">The World</span>
+            </h1>
+            <p class="hero-description">
+                Connecting traditional artisans across Africa with conscious consumers worldwide.
+                Every piece tells a story. Every purchase preserves heritage.
+            </p>
+            <div class="hero-actions">
+                <a href="#crafts" class="btn btn-primary">
+                    <span>Explore Crafts</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#stories" class="btn btn-secondary">Meet the Makers</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2,400+</span>
+                    <span class="stat-label">Artisans</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">32</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">$4.2M</span>
+                    <span class="stat-label">Paid to Makers</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Artisans Section -->
+    <section id="artisans" class="artisans">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Makers</span>
+                <h2 class="section-title">Masters of Their Craft</h2>
+                <p class="section-description">
+                    Each artisan brings generations of knowledge, cultural heritage, and
+                    personal artistry to every creation. Their hands hold traditions spanning centuries.
+                </p>
+            </div>
+            <div class="artisans-grid">
+                <div class="artisan-card">
+                    <div class="artisan-image">
+                        <div class="artisan-placeholder" style="background: linear-gradient(135deg, var(--ochre), var(--terracotta));">
+                            <span>AK</span>
+                        </div>
+                        <div class="artisan-badge">Ghana</div>
+                    </div>
+                    <div class="artisan-info">
+                        <h3>Ama Koranteng</h3>
+                        <p class="artisan-craft">Kente Weaver · 25 Years</p>
+                        <p class="artisan-bio">Third-generation weaver preserving ancient Ashanti patterns while innovating contemporary designs.</p>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-image">
+                        <div class="artisan-placeholder" style="background: linear-gradient(135deg, var(--indigo), var(--deep-purple));">
+                            <span>OD</span>
+                        </div>
+                        <div class="artisan-badge">Mali</div>
+                    </div>
+                    <div class="artisan-info">
+                        <h3>Oumar Diallo</h3>
+                        <p class="artisan-craft">Mud Cloth Artist · 18 Years</p>
+                        <p class="artisan-bio">Master of Bogolanfini tradition, creating symbolic patterns using fermented mud and plant dyes.</p>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-image">
+                        <div class="artisan-placeholder" style="background: linear-gradient(135deg, var(--leaf-green), var(--forest));">
+                            <span>ZM</span>
+                        </div>
+                        <div class="artisan-badge">Kenya</div>
+                    </div>
+                    <div class="artisan-info">
+                        <h3>Zawadi Mwangi</h3>
+                        <p class="artisan-craft">Beadwork Artist · 12 Years</p>
+                        <p class="artisan-bio">Maasai beadwork innovator blending ceremonial traditions with modern jewelry design.</p>
+                    </div>
+                </div>
+                <div class="artisan-card">
+                    <div class="artisan-image">
+                        <div class="artisan-placeholder" style="background: linear-gradient(135deg, var(--gold), var(--ochre));">
+                            <span>TN</span>
+                        </div>
+                        <div class="artisan-badge">Nigeria</div>
+                    </div>
+                    <div class="artisan-info">
+                        <h3>Tunde Nwosu</h3>
+                        <p class="artisan-craft">Bronze Caster · 30 Years</p>
+                        <p class="artisan-bio">Continuing the legendary Benin bronze tradition with contemporary sculptural vision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crafts Section -->
+    <section id="crafts" class="crafts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Collection</span>
+                <h2 class="section-title">Heritage Crafts, Global Reach</h2>
+                <p class="section-description">
+                    From textiles woven with ancestral patterns to sculptures cast in ancient traditions,
+                    discover authentic African artistry made for the modern world.
+                </p>
+            </div>
+            <div class="crafts-categories">
+                <button class="craft-tab active" data-category="all">All Crafts</button>
+                <button class="craft-tab" data-category="textiles">Textiles</button>
+                <button class="craft-tab" data-category="jewelry">Jewelry</button>
+                <button class="craft-tab" data-category="sculpture">Sculpture</button>
+                <button class="craft-tab" data-category="ceramics">Ceramics</button>
+            </div>
+            <div class="crafts-grid">
+                <div class="craft-card" data-category="textiles">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-kente"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">Ghana</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Kente Cloth</h3>
+                        <p>Hand-woven silk and cotton with symbolic patterns</p>
+                        <span class="craft-price">From $180</span>
+                    </div>
+                </div>
+                <div class="craft-card" data-category="textiles">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-mudcloth"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">Mali</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Bogolanfini</h3>
+                        <p>Traditional mud cloth with geometric designs</p>
+                        <span class="craft-price">From $95</span>
+                    </div>
+                </div>
+                <div class="craft-card" data-category="jewelry">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-beads"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">Kenya</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Maasai Beadwork</h3>
+                        <p>Ceremonial-inspired contemporary jewelry</p>
+                        <span class="craft-price">From $45</span>
+                    </div>
+                </div>
+                <div class="craft-card" data-category="sculpture">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-bronze"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Bronze Sculptures</h3>
+                        <p>Lost-wax cast figures in Benin tradition</p>
+                        <span class="craft-price">From $320</span>
+                    </div>
+                </div>
+                <div class="craft-card" data-category="ceramics">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-pottery"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">Morocco</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Berber Ceramics</h3>
+                        <p>Hand-painted pottery with tribal motifs</p>
+                        <span class="craft-price">From $65</span>
+                    </div>
+                </div>
+                <div class="craft-card" data-category="textiles">
+                    <div class="craft-image">
+                        <div class="craft-placeholder pattern-shweshwe"></div>
+                        <div class="craft-overlay">
+                            <span class="craft-origin">South Africa</span>
+                        </div>
+                    </div>
+                    <div class="craft-info">
+                        <h3>Shweshwe Fabric</h3>
+                        <p>Indigo-dyed printed cotton textiles</p>
+                        <span class="craft-price">From $55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="crafts-cta">
+                <a href="#" class="btn btn-primary">
+                    <span>View Full Collection</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="stories">
+        <div class="stories-pattern"></div>
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-tag">The Stories</span>
+                <h2 class="section-title">Every Piece Has a Voice</h2>
+                <p class="section-description">
+                    Behind every craft lies a narrative of heritage, skill, and cultural pride.
+                    These are the stories that make each piece meaningful.
+                </p>
+            </div>
+            <div class="stories-featured">
+                <div class="story-card story-large">
+                    <div class="story-content">
+                        <span class="story-category">Tradition</span>
+                        <h3>The Mathematics of Kente</h3>
+                        <p>
+                            Each kente pattern follows precise mathematical sequences passed down through generations.
+                            The geometric precision isn't just aesthetic—it carries encoded messages about history,
+                            proverbs, and social values within the Akan culture.
+                        </p>
+                        <a href="#" class="story-link">
+                            Read the full story
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="story-visual">
+                        <div class="story-placeholder pattern-kente-large"></div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-content">
+                        <span class="story-category">Innovation</span>
+                        <h3>Young Makers, Ancient Skills</h3>
+                        <p>
+                            A new generation of artisans are blending traditional techniques with
+                            contemporary design, ensuring these crafts survive and evolve.
+                        </p>
+                        <a href="#" class="story-link">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-content">
+                        <span class="story-category">Community</span>
+                        <h3>Cooperatives of Creation</h3>
+                        <p>
+                            Women-led artisan cooperatives across West Africa are transforming
+                            local economies while preserving cultural knowledge.
+                        </p>
+                        <a href="#" class="story-link">
+                            Read more
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Impact</span>
+                <h2 class="section-title">Commerce with Conscience</h2>
+                <p class="section-description">
+                    When you buy from Sankofa, you're not just acquiring a beautiful object—you're
+                    participating in a fair trade economy that honors makers and preserves culture.
+                </p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Fair Pricing</h3>
+                    <p>Artisans set their own prices. They receive 70% of every sale—far above industry average.</p>
+                    <span class="impact-stat">70%</span>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Direct Connection</h3>
+                    <p>No middlemen. Customers connect directly with makers through video introductions and messaging.</p>
+                    <span class="impact-stat">Direct</span>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Community Fund</h3>
+                    <p>5% of profits fund artisan training programs, helping pass traditional skills to new generations.</p>
+                    <span class="impact-stat">5%</span>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Local Impact</h3>
+                    <p>Supporting one artisan typically supports a network of 8-12 family and community members.</p>
+                    <span class="impact-stat">12x</span>
+                </div>
+            </div>
+            <div class="impact-testimonial">
+                <blockquote>
+                    "Sankofa didn't just give me a platform—they gave my community a future.
+                    My daughter now learns the loom beside me, knowing there's a world that values our work."
+                </blockquote>
+                <cite>
+                    <span class="cite-name">Ama Koranteng</span>
+                    <span class="cite-role">Kente Weaver, Ghana</span>
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join">
+        <div class="join-pattern"></div>
+        <div class="container">
+            <div class="join-content">
+                <h2 class="join-title">Join the Movement</h2>
+                <p class="join-description">
+                    Be part of a global community celebrating African artistry. Get early access to new collections,
+                    artisan stories, and exclusive pieces that preserve heritage while creating futures.
+                </p>
+                <form class="join-form" id="joinForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Get Started</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Join 12,000+ members. No spam, just stories and craft.</p>
+                </form>
+                <div class="join-options">
+                    <a href="#" class="join-option">
+                        <span class="option-icon">◆</span>
+                        <span class="option-text">
+                            <strong>Shop as Collector</strong>
+                            <small>Discover and purchase authentic pieces</small>
+                        </span>
+                    </a>
+                    <a href="#" class="join-option">
+                        <span class="option-icon">◇</span>
+                        <span class="option-text">
+                            <strong>Join as Artisan</strong>
+                            <small>Share your craft with the world</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        Sankofa
+                    </a>
+                    <p>Connecting African artisans with the world. Every piece tells a story. Every purchase preserves heritage.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Crafts</a></li>
+                        <li><a href="#">Textiles</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Sculpture</a></li>
+                        <li><a href="#">Ceramics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Our Artisans</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Impact Report</a></li>
+                        <li><a href="#">Join as Artisan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Fair Trade Promise</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sankofa Collective. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
