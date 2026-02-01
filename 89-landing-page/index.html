@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowSync - AI-Powered Workflow Automation for Small Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 20h6l4-8 4 16 4-8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>FlowSync</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#integrations">Integrations</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Log In</a>
+                <a href="#cta" class="btn-primary">Start Free Trial</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#" class="btn-text">Log In</a>
+        <a href="#cta" class="btn-primary">Start Free Trial</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Now with AI-powered suggestions
+                </div>
+                <h1>Stop doing busywork.<br><span class="gradient-text">Let automation do it.</span></h1>
+                <p class="hero-subtitle">FlowSync connects your favorite tools and creates intelligent automations that eliminate repetitive tasks—no coding required. Built for small businesses who'd rather focus on growth.</p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn-primary btn-large">
+                        Start Free Trial
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#how-it-works" class="btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M8 7l5 3-5 3V7z" fill="currentColor"/>
+                        </svg>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="avatars">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=2" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=3" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=4" alt="User">
+                        <span class="avatar-count">+2k</span>
+                    </div>
+                    <p>Trusted by <strong>2,000+</strong> small businesses saving <strong>15+ hours</strong> weekly</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="workflow-diagram">
+                    <div class="workflow-node node-trigger" data-delay="0">
+                        <div class="node-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M3 9h18" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span>New Email</span>
+                    </div>
+                    <div class="workflow-connector"></div>
+                    <div class="workflow-node node-ai" data-delay="200">
+                        <div class="node-icon ai-glow">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span>AI Analysis</span>
+                    </div>
+                    <div class="workflow-connector"></div>
+                    <div class="workflow-branch">
+                        <div class="branch-line branch-top"></div>
+                        <div class="branch-line branch-bottom"></div>
+                        <div class="workflow-node node-action action-1" data-delay="400">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2v4m0 12v4M2 12h4m12 0h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Create Task</span>
+                        </div>
+                        <div class="workflow-node node-action action-2" data-delay="500">
+                            <div class="node-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span>Send Reply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <div class="card-status success"></div>
+                    <span>47 tasks automated today</span>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-status active"></div>
+                    <span>AI processing...</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-gradient"></div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos-section">
+        <div class="container">
+            <p class="logos-title">Connects seamlessly with your favorite tools</p>
+            <div class="logos-grid">
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M24 4L4 14v20l20 10 20-10V14L24 4zm0 4.5l14.5 7.25L24 23 9.5 15.75 24 8.5zM7 17.5l15 7.5v15.5l-15-7.5v-15.5zm34 0v15.5l-15 7.5V25l15-7.5z"/>
+                    </svg>
+                    <span>Slack</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <rect x="8" y="8" width="32" height="32" rx="4"/>
+                        <rect x="12" y="12" width="10" height="10" rx="1" fill="white"/>
+                        <rect x="26" y="12" width="10" height="10" rx="1" fill="white"/>
+                        <rect x="12" y="26" width="10" height="10" rx="1" fill="white"/>
+                        <rect x="26" y="26" width="10" height="10" rx="1" fill="white"/>
+                    </svg>
+                    <span>Notion</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M44 24c0 11-9 20-20 20S4 35 4 24 13 4 24 4s20 9 20 20zm-20-8c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"/>
+                    </svg>
+                    <span>Gmail</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 30V14l14 10-14 10z"/>
+                    </svg>
+                    <span>Google Drive</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M42 12H6v24h36V12zm-18 18l-12-9 2.5-3 9.5 7 9.5-7 2.5 3-12 9z"/>
+                    </svg>
+                    <span>HubSpot</span>
+                </div>
+                <div class="logo-item">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <rect x="4" y="10" width="40" height="28" rx="3"/>
+                        <rect x="8" y="14" width="14" height="20" rx="1" fill="white"/>
+                        <rect x="26" y="14" width="14" height="20" rx="1" fill="white"/>
+                    </svg>
+                    <span>Trello</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2>Automation that actually<br><span class="gradient-text">makes sense</span></h2>
+                <p>No flowcharts. No code. Just describe what you need, and FlowSync figures out the rest.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-main">
+                    <div class="feature-icon-large">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="8" y="8" width="48" height="48" rx="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 32h24M32 20v24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            <circle cx="44" cy="20" r="4" fill="currentColor"/>
+                            <circle cx="20" cy="44" r="4" fill="currentColor"/>
+                            <circle cx="44" cy="44" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Visual Workflow Builder</h3>
+                    <p>Drag, drop, connect. Build complex automations with a visual interface that anyone can use—no training required.</p>
+                    <div class="feature-demo">
+                        <div class="demo-blocks">
+                            <div class="demo-block block-1">Trigger</div>
+                            <div class="demo-arrow">→</div>
+                            <div class="demo-block block-2">Action</div>
+                            <div class="demo-arrow">→</div>
+                            <div class="demo-block block-3">Result</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 24v20M24 24L6 14M24 24l18-10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Powered Suggestions</h3>
+                    <p>Our AI learns your patterns and suggests automations you didn't know you needed. Average user discovers 5 new workflows in week one.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Watch your automations work in real-time. Get instant alerts if anything needs attention—before problems become fires.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M12 8h24v32H12z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 16h12M18 24h12M18 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Templates</h3>
+                    <p>Start with 200+ pre-built templates for common tasks. Customize them or use as-is—either way, you're automated in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="6" y="26" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="26" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 14h4M14 22v4M34 22v4M22 34h4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Unlimited Integrations</h3>
+                    <p>Connect 500+ apps out of the box. If it has an API, FlowSync can connect it. Custom webhooks for everything else.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How It Works</span>
+                <h2>From chaos to clarity<br><span class="gradient-text">in three steps</span></h2>
+                <p>Set up your first automation in under 5 minutes. No technical skills required.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-visual">
+                        <div class="connect-demo">
+                            <div class="connect-app app-1">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+                            </div>
+                            <div class="connect-line">
+                                <svg viewBox="0 0 60 20">
+                                    <path d="M0 10h60" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+                                </svg>
+                            </div>
+                            <div class="connect-app app-2">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Connect Your Apps</h3>
+                    <p>Link your existing tools with one-click authentication. We support 500+ popular apps—and adding more every week.</p>
+                </div>
+                <div class="step-connector">
+                    <svg viewBox="0 0 100 20">
+                        <path d="M0 10h100" stroke="currentColor" stroke-width="2" stroke-dasharray="8,4"/>
+                        <path d="M90 5l10 5-10 5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-visual">
+                        <div class="describe-demo">
+                            <div class="chat-bubble">
+                                <span class="typing-text">When I get a new lead, add them to my CRM and send a welcome email...</span>
+                                <span class="cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Describe Your Workflow</h3>
+                    <p>Tell FlowSync what you want in plain English. Our AI understands context and creates the automation for you.</p>
+                </div>
+                <div class="step-connector">
+                    <svg viewBox="0 0 100 20">
+                        <path d="M0 10h100" stroke="currentColor" stroke-width="2" stroke-dasharray="8,4"/>
+                        <path d="M90 5l10 5-10 5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-visual">
+                        <div class="automate-demo">
+                            <div class="automation-status">
+                                <div class="status-ring"></div>
+                                <span>Active</span>
+                            </div>
+                            <div class="automation-stats">
+                                <div class="stat">
+                                    <span class="stat-value counter" data-target="847">0</span>
+                                    <span class="stat-label">Tasks Done</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12h</span>
+                                    <span class="stat-label">Time Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Let It Run</h3>
+                    <p>Activate and forget. FlowSync handles everything 24/7 while you focus on what actually matters—growing your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations-section">
+        <div class="container">
+            <div class="integrations-content">
+                <div class="integrations-text">
+                    <span class="section-badge">Integrations</span>
+                    <h2>Your tools, finally<br><span class="gradient-text">talking to each other</span></h2>
+                    <p>Stop copying and pasting between apps. FlowSync connects your entire tech stack so data flows automatically—accurately, instantly, and without you lifting a finger.</p>
+                    <ul class="integration-benefits">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            500+ native integrations
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Custom webhook support
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            API-first architecture
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            New integrations weekly
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-primary">Explore All Integrations</a>
+                </div>
+                <div class="integrations-visual">
+                    <div class="integration-orbit">
+                        <div class="orbit-center">
+                            <svg class="flowsync-logo" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 20h6l4-8 4 16 4-8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-ring ring-1">
+                            <div class="orbit-item" style="--angle: 0deg;">
+                                <div class="orbit-icon">📧</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 90deg;">
+                                <div class="orbit-icon">📊</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 180deg;">
+                                <div class="orbit-icon">💬</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 270deg;">
+                                <div class="orbit-icon">📁</div>
+                            </div>
+                        </div>
+                        <div class="orbit-ring ring-2">
+                            <div class="orbit-item" style="--angle: 45deg;">
+                                <div class="orbit-icon">🗓️</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 135deg;">
+                                <div class="orbit-icon">💳</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 225deg;">
+                                <div class="orbit-icon">📝</div>
+                            </div>
+                            <div class="orbit-item" style="--angle: 315deg;">
+                                <div class="orbit-icon">🔔</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>Loved by small businesses<br><span class="gradient-text">everywhere</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"I used to spend 3 hours a day on data entry. Now FlowSync does it all automatically. I literally got my evenings back."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=11" alt="Sarah Chen">
+                        <div>
+                            <strong>Sarah Chen</strong>
+                            <span>Founder, Bloom Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"We tried 4 different automation tools before FlowSync. This is the only one that didn't require a developer to set up. Our whole team was using it within a day."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=12" alt="Marcus Williams">
+                        <div>
+                            <strong>Marcus Williams</strong>
+                            <span>Operations Director, TechStart Inc</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The AI suggestions are spooky good. It recommended an automation I didn't even know I needed—saved us $2k/month in manual processing."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/48?img=15" alt="Emily Rodriguez">
+                        <div>
+                            <strong>Emily Rodriguez</strong>
+                            <span>CEO, Crafted Commerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2>Simple pricing that<br><span class="gradient-text">scales with you</span></h2>
+                <p>Start free. Upgrade when you're ready. Cancel anytime.</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Monthly</span>
+                <button class="toggle-switch" aria-label="Toggle pricing period">
+                    <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label" data-period="yearly">Yearly <span class="save-badge">Save 20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for trying out FlowSync</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="0" data-yearly="0">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            5 active workflows
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            500 tasks/month
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Core integrations
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Community support
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary btn-full">Get Started Free</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>For growing businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="29" data-yearly="23">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Unlimited workflows
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            10,000 tasks/month
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            All 500+ integrations
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            AI-powered suggestions
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Priority support
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-primary btn-full">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>For larger organizations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount" data-monthly="99" data-yearly="79">$99</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Everything in Pro
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Unlimited tasks
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            SSO & advanced security
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                            Dedicated success manager
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to eliminate busywork?</h2>
+                <p>Join 2,000+ small businesses who've reclaimed their time with FlowSync. Start your free trial today—no credit card required.</p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your work email" required>
+                        <button type="submit" class="btn-primary">
+                            Start Free Trial
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">14-day free trial • No credit card required • Cancel anytime</p>
+                </form>
+            </div>
+            <div class="cta-background">
+                <div class="cta-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20h6l4-8 4 16 4-8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>FlowSync</span>
+                    </a>
+                    <p>AI-powered workflow automation for small businesses. Eliminate busywork and focus on growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#integrations">Integrations</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#">Templates</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">Guides</a>
+                        <a href="#">Community</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Security</a>
+                        <a href="#">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlowSync. All rights reserved.</p>
+                <p>Made with care for small businesses everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
