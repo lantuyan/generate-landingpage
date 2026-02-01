@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGE ATHLETICS | Urban Functional Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span>FORGE<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#programs">PROGRAMS</a></li>
+                <li><a href="#space">THE SPACE</a></li>
+                <li><a href="#coaches">COACHES</a></li>
+                <li><a href="#community">COMMUNITY</a></li>
+                <li><a href="#join" class="nav-cta">JOIN THE FORGE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-line"></span>
+                <span class="tag-text">EST. 2019 // BROOKLYN, NY</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-animate>BREAK</span>
+                <span class="title-line" data-animate>YOUR</span>
+                <span class="title-line title-accent" data-animate>LIMITS</span>
+            </h1>
+            <p class="hero-subtitle">Raw. Functional. Unapologetic.</p>
+            <p class="hero-desc">Urban fitness forged in converted warehouse space. Obstacle course racing, parkour, and functional training for those who refuse ordinary gyms.</p>
+            <div class="hero-actions">
+                <a href="#join" class="btn btn-primary">
+                    <span class="btn-text">START YOUR TRIAL</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#programs" class="btn btn-secondary">EXPLORE PROGRAMS</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="15000">0</span>
+                    <span class="stat-label">SQ FT</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">MEMBERS</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">COACHES</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">TRAINING ZONES</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="programs-grid">
+            <article class="program-card" data-animate-scroll>
+                <div class="program-image">
+                    <div class="program-overlay"></div>
+                    <span class="program-tag">SIGNATURE</span>
+                </div>
+                <div class="program-content">
+                    <span class="program-number">01</span>
+                    <h3 class="program-title">OBSTACLE COURSE</h3>
+                    <p class="program-desc">Conquer our 40+ obstacle course featuring rope climbs, monkey bars, wall traverses, and mud-free urban challenges. Train like an OCR athlete.</p>
+                    <ul class="program-features">
+                        <li>40+ obstacles</li>
+                        <li>3 difficulty levels</li>
+                        <li>Race prep training</li>
+                    </ul>
+                    <a href="#join" class="program-link">
+                        <span>VIEW SCHEDULE</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </article>
+            <article class="program-card" data-animate-scroll>
+                <div class="program-image program-image-2">
+                    <div class="program-overlay"></div>
+                    <span class="program-tag">MOVEMENT</span>
+                </div>
+                <div class="program-content">
+                    <span class="program-number">02</span>
+                    <h3 class="program-title">URBAN PARKOUR</h3>
+                    <p class="program-desc">Transform the city into your playground. Learn vaults, precision jumps, wall runs, and flow techniques in our purpose-built urban environment.</p>
+                    <ul class="program-features">
+                        <li>All skill levels</li>
+                        <li>Indoor & outdoor</li>
+                        <li>Movement philosophy</li>
+                    </ul>
+                    <a href="#join" class="program-link">
+                        <span>VIEW SCHEDULE</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </article>
+            <article class="program-card" data-animate-scroll>
+                <div class="program-image program-image-3">
+                    <div class="program-overlay"></div>
+                    <span class="program-tag">STRENGTH</span>
+                </div>
+                <div class="program-content">
+                    <span class="program-number">03</span>
+                    <h3 class="program-title">FUNCTIONAL FITNESS</h3>
+                    <p class="program-desc">Build real-world strength with kettlebells, sandbags, tires, and unconventional implements. No machines, no mirrors—just raw functional power.</p>
+                    <ul class="program-features">
+                        <li>Olympic lifting</li>
+                        <li>Strongman training</li>
+                        <li>Metabolic conditioning</li>
+                    </ul>
+                    <a href="#join" class="program-link">
+                        <span>VIEW SCHEDULE</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Space Section -->
+    <section class="space" id="space">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">THE WAREHOUSE</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="space-content">
+            <div class="space-main" data-animate-scroll>
+                <div class="space-image-main">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="space-caption">
+                    <span class="caption-tag">MAIN FLOOR</span>
+                    <p>15,000 sq ft of raw industrial space featuring exposed brick, 30-foot ceilings, and natural light flooding through original factory windows.</p>
+                </div>
+            </div>
+            <div class="space-features">
+                <div class="feature" data-animate-scroll>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4M5 21V10.87M19 21V10.87"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">CONVERTED WAREHOUSE</h4>
+                    <p class="feature-desc">1920s textile factory transformed into Brooklyn's most authentic training ground.</p>
+                </div>
+                <div class="feature" data-animate-scroll>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">MODULAR ZONES</h4>
+                    <p class="feature-desc">Reconfigurable training areas that adapt to class size and workout demands.</p>
+                </div>
+                <div class="feature" data-animate-scroll>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">24/7 OPEN GYM</h4>
+                    <p class="feature-desc">Unlimited access for members. Train on your schedule, not ours.</p>
+                </div>
+                <div class="feature" data-animate-scroll>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">COMMUNITY HUB</h4>
+                    <p class="feature-desc">Lounge, recovery zone, and cafe. More than a gym—a gathering place.</p>
+                </div>
+            </div>
+        </div>
+        <div class="space-gallery">
+            <div class="gallery-item" data-animate-scroll>
+                <div class="gallery-image gallery-1"></div>
+                <span class="gallery-label">OBSTACLE ZONE</span>
+            </div>
+            <div class="gallery-item" data-animate-scroll>
+                <div class="gallery-image gallery-2"></div>
+                <span class="gallery-label">PARKOUR AREA</span>
+            </div>
+            <div class="gallery-item" data-animate-scroll>
+                <div class="gallery-image gallery-3"></div>
+                <span class="gallery-label">STRENGTH FLOOR</span>
+            </div>
+            <div class="gallery-item" data-animate-scroll>
+                <div class="gallery-image gallery-4"></div>
+                <span class="gallery-label">RECOVERY LOUNGE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches" id="coaches">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">THE CREW</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="coaches-intro">
+            <p>Our coaches aren't fitness models—they're athletes, competitors, and movement specialists who've earned their stripes in the field.</p>
+        </div>
+        <div class="coaches-grid">
+            <div class="coach-card" data-animate-scroll>
+                <div class="coach-image">
+                    <div class="coach-overlay">
+                        <div class="coach-socials">
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="Twitter">TW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <h4 class="coach-name">MARCUS COLE</h4>
+                    <span class="coach-role">HEAD COACH // OCR</span>
+                    <p class="coach-bio">Spartan Race Elite. 50+ podium finishes. Building champions since 2015.</p>
+                </div>
+            </div>
+            <div class="coach-card" data-animate-scroll>
+                <div class="coach-image coach-image-2">
+                    <div class="coach-overlay">
+                        <div class="coach-socials">
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="Twitter">TW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <h4 class="coach-name">NINA VASQUEZ</h4>
+                    <span class="coach-role">PARKOUR DIRECTOR</span>
+                    <p class="coach-bio">Pioneering female traceur. Featured in Red Bull Art of Motion. 15 years in movement.</p>
+                </div>
+            </div>
+            <div class="coach-card" data-animate-scroll>
+                <div class="coach-image coach-image-3">
+                    <div class="coach-overlay">
+                        <div class="coach-socials">
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="Twitter">TW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <h4 class="coach-name">DEREK OKONKWO</h4>
+                    <span class="coach-role">STRENGTH & CONDITIONING</span>
+                    <p class="coach-bio">Former D1 athlete. Strongman competitor. CSCS certified with 10+ years experience.</p>
+                </div>
+            </div>
+            <div class="coach-card" data-animate-scroll>
+                <div class="coach-image coach-image-4">
+                    <div class="coach-overlay">
+                        <div class="coach-socials">
+                            <a href="#" aria-label="Instagram">IG</a>
+                            <a href="#" aria-label="Twitter">TW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <h4 class="coach-name">SARAH CHEN</h4>
+                    <span class="coach-role">MOBILITY & RECOVERY</span>
+                    <p class="coach-bio">DPT, FMS certified. Keeping athletes moving and injury-free for 8 years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="section-header section-header-light">
+            <span class="section-number">04</span>
+            <h2 class="section-title">THE TRIBE</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="community-content">
+            <div class="testimonials">
+                <div class="testimonial active" data-testimonial="1">
+                    <blockquote class="testimonial-quote">
+                        "I came for the obstacle course. I stayed for the community. FORGE changed how I think about fitness—it's not about looking good, it's about being capable."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <span class="author-name">JAKE MORRISON</span>
+                            <span class="author-title">Member since 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" data-testimonial="2">
+                    <blockquote class="testimonial-quote">
+                        "The coaches here actually know what they're doing. No gimmicks, no BS—just real training that translates to real life. Best decision I've made."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-image author-image-2"></div>
+                        <div class="author-info">
+                            <span class="author-name">LISA PARK</span>
+                            <span class="author-title">Member since 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" data-testimonial="3">
+                    <blockquote class="testimonial-quote">
+                        "After 10 years in traditional gyms, FORGE feels like coming home. Raw space, real equipment, people who actually want to work. This is fitness."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-image author-image-3"></div>
+                        <div class="author-info">
+                            <span class="author-name">MARCUS REED</span>
+                            <span class="author-title">Member since 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-btn active" data-slide="1" aria-label="Testimonial 1"></button>
+                <button class="testimonial-btn" data-slide="2" aria-label="Testimonial 2"></button>
+                <button class="testimonial-btn" data-slide="3" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+        <div class="community-stats">
+            <div class="community-stat" data-animate-scroll>
+                <span class="community-stat-number" data-count="4.9">0</span>
+                <span class="community-stat-label">GOOGLE RATING</span>
+            </div>
+            <div class="community-stat" data-animate-scroll>
+                <span class="community-stat-number" data-count="92">0</span><span class="stat-suffix">%</span>
+                <span class="community-stat-label">RETENTION RATE</span>
+            </div>
+            <div class="community-stat" data-animate-scroll>
+                <span class="community-stat-number" data-count="200">0</span><span class="stat-suffix">+</span>
+                <span class="community-stat-label">5-STAR REVIEWS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="join">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">JOIN THE FORGE</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="pricing-intro">
+            <p>No contracts. No hidden fees. Just honest pricing for serious training.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card" data-animate-scroll>
+                <div class="pricing-header">
+                    <span class="pricing-tag">STARTER</span>
+                    <h3 class="pricing-name">DROP-IN</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">35</span>
+                    <span class="price-period">/class</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Single class access</li>
+                    <li>All programs included</li>
+                    <li>Equipment provided</li>
+                    <li>Locker room access</li>
+                </ul>
+                <a href="#" class="btn btn-outline">BOOK A CLASS</a>
+            </div>
+            <div class="pricing-card pricing-featured" data-animate-scroll>
+                <div class="pricing-badge">MOST POPULAR</div>
+                <div class="pricing-header">
+                    <span class="pricing-tag">UNLIMITED</span>
+                    <h3 class="pricing-name">ALL ACCESS</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">199</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Unlimited classes</li>
+                    <li>24/7 open gym access</li>
+                    <li>All programs & zones</li>
+                    <li>Recovery lounge access</li>
+                    <li>Guest passes (2/month)</li>
+                    <li>Member events</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-full">START FREE TRIAL</a>
+            </div>
+            <div class="pricing-card" data-animate-scroll>
+                <div class="pricing-header">
+                    <span class="pricing-tag">COMMITMENT</span>
+                    <h3 class="pricing-name">ANNUAL</h3>
+                </div>
+                <div class="pricing-price">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">149</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <div class="pricing-savings">Save $600/year</div>
+                <ul class="pricing-features">
+                    <li>Everything in All Access</li>
+                    <li>Priority class booking</li>
+                    <li>Free merchandise</li>
+                    <li>Quarterly assessments</li>
+                </ul>
+                <a href="#" class="btn btn-outline">COMMIT NOW</a>
+            </div>
+        </div>
+        <div class="trial-banner" data-animate-scroll>
+            <div class="trial-content">
+                <h3 class="trial-title">NOT SURE YET?</h3>
+                <p class="trial-desc">Start with a free 7-day trial. No credit card required. Come see what we're about.</p>
+            </div>
+            <a href="#" class="btn btn-primary">
+                <span class="btn-text">CLAIM FREE TRIAL</span>
+                <span class="btn-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-grid">
+            <div class="contact-info" data-animate-scroll>
+                <h3 class="contact-title">FIND US</h3>
+                <address class="contact-address">
+                    <p>147 Industrial Way</p>
+                    <p>Brooklyn, NY 11222</p>
+                </address>
+                <div class="contact-details">
+                    <a href="tel:+17185551234" class="contact-link">
+                        <span class="contact-label">PHONE</span>
+                        <span>(718) 555-1234</span>
+                    </a>
+                    <a href="mailto:hello@forgeathetics.com" class="contact-link">
+                        <span class="contact-label">EMAIL</span>
+                        <span>hello@forgeathletics.com</span>
+                    </a>
+                </div>
+                <div class="contact-hours">
+                    <span class="contact-label">HOURS</span>
+                    <p>Staffed: Mon-Fri 6AM-9PM, Sat-Sun 8AM-6PM</p>
+                    <p>Open Gym: 24/7 for members</p>
+                </div>
+            </div>
+            <div class="contact-map" data-animate-scroll>
+                <div class="map-placeholder">
+                    <div class="map-pin"></div>
+                    <span class="map-label">FORGE ATHLETICS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">[</span>FORGE<span class="logo-bracket">]</span>
+                </a>
+                <p class="footer-tagline">Where limits go to die.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">TRAINING</h4>
+                    <ul>
+                        <li><a href="#programs">Obstacle Course</a></li>
+                        <li><a href="#programs">Parkour</a></li>
+                        <li><a href="#programs">Functional Fitness</a></li>
+                        <li><a href="#">Class Schedule</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#coaches">Our Coaches</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">CONNECT</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2024 FORGE Athletics. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Waiver</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
