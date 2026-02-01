@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvan Sanctuary | Forest Therapy & Wilderness Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="forest-particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L25 15H15L20 5Z" fill="currentColor"/>
+                    <path d="M20 10L28 25H12L20 10Z" fill="currentColor" opacity="0.8"/>
+                    <path d="M20 18L30 35H10L20 18Z" fill="currentColor" opacity="0.6"/>
+                    <rect x="18" y="32" width="4" height="6" fill="currentColor" opacity="0.9"/>
+                </svg>
+                <span>Sylvan Sanctuary</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">Our Philosophy</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#science">The Science</a></li>
+                <li><a href="#retreat" class="nav-cta">Begin Your Journey</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-trees">
+            <div class="tree tree-1"></div>
+            <div class="tree tree-2"></div>
+            <div class="tree tree-3"></div>
+            <div class="tree tree-4"></div>
+            <div class="tree tree-5"></div>
+        </div>
+        <div class="hero-light-rays">
+            <div class="light-ray"></div>
+            <div class="light-ray"></div>
+            <div class="light-ray"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle leaf-decoration">Japanese Shinrin-yoku & Forest Therapy</p>
+            <h1 class="hero-title">Find Healing<br>Among the Trees</h1>
+            <p class="hero-description">
+                Step away from the noise of modern life and into the ancient embrace of the forest.
+                Our guided wilderness wellness programs reconnect you with nature's profound healing power.
+            </p>
+            <div class="hero-buttons">
+                <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                <a href="#experience" class="btn btn-secondary">Watch the Journey</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Wander Deeper</span>
+            <div class="scroll-indicator">
+                <div class="scroll-leaf"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-bg-leaves">
+            <div class="floating-leaf leaf-1"></div>
+            <div class="floating-leaf leaf-2"></div>
+            <div class="floating-leaf leaf-3"></div>
+        </div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Our Philosophy</span>
+                    <h2 class="section-title">The Ancient Art of<br>Forest Bathing</h2>
+                    <p class="about-lead">
+                        <em>Shinrin-yoku</em>—the Japanese practice of "forest bathing"—is not merely a walk in the woods.
+                        It is a mindful immersion, a slowing of time, a return to our ancestral home among the trees.
+                    </p>
+                    <p>
+                        For millions of years, humans evolved within forest ecosystems. Our nervous systems are calibrated
+                        to the fractal patterns of branches, the phytoncides released by trees, the symphony of natural sounds.
+                        Modern life has severed this connection, leaving us stressed, fragmented, and longing for something
+                        we cannot name.
+                    </p>
+                    <p>
+                        At Sylvan Sanctuary, we guide you back to the forest's embrace. Through carefully designed
+                        therapeutic immersions, we help you remember what your body already knows—that healing happens
+                        naturally when we return to nature.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Years of Practice</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3000">0</span>
+                            <span class="stat-label">Guests Guided</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="500">0</span>
+                            <span class="stat-label">Acres of Forest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="image-frame">
+                            <div class="image-placeholder forest-image-1">
+                                <div class="image-overlay"></div>
+                                <span class="image-text">Guided Forest Immersion</span>
+                            </div>
+                        </div>
+                        <div class="image-accent"></div>
+                    </div>
+                    <blockquote class="forest-quote">
+                        <p>"In every walk with nature, one receives far more than he seeks."</p>
+                        <cite>— John Muir</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="programs-bg">
+            <div class="tree-silhouette tree-bg-1"></div>
+            <div class="tree-silhouette tree-bg-2"></div>
+            <div class="tree-silhouette tree-bg-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Healing Journeys</span>
+                <h2 class="section-title">Forest Therapy Programs</h2>
+                <p class="section-subtitle">
+                    Each program is a pathway deeper into the forest—and deeper into yourself.
+                    Choose the journey that calls to you.
+                </p>
+            </div>
+            <div class="programs-grid">
+                <article class="program-card" data-aos="fade-up">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 28V48" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 36L32 28L40 36" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 48C20 48 26 40 32 40C38 40 44 48 44 48" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="program-title">Morning Mist Walk</h3>
+                    <p class="program-duration">Half-Day Experience</p>
+                    <p class="program-description">
+                        Begin at dawn when the forest awakens. A gentle 3-hour guided walk through
+                        mist-shrouded trails, incorporating breathing exercises, sensory awakening practices,
+                        and silent contemplation.
+                    </p>
+                    <ul class="program-features">
+                        <li>Sunrise forest entry ritual</li>
+                        <li>Guided breathing meditation</li>
+                        <li>Herbal tea ceremony</li>
+                        <li>Nature journaling</li>
+                    </ul>
+                    <a href="#retreat" class="program-link">Reserve Your Walk <span>→</span></a>
+                </article>
+
+                <article class="program-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-badge">Most Popular</div>
+                    <div class="program-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8L36 20H48L38 28L42 40L32 32L22 40L26 28L16 20H28L32 8Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="44" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 38V50M26 44H38" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="program-title">Deep Forest Immersion</h3>
+                    <p class="program-duration">Full-Day Retreat</p>
+                    <p class="program-description">
+                        A complete forest therapy experience from sunrise to sunset. Journey through
+                        varied woodland ecosystems with extended meditation, therapeutic activities,
+                        and forest-sourced meals.
+                    </p>
+                    <ul class="program-features">
+                        <li>8 hours of guided immersion</li>
+                        <li>Multiple ecosystem exploration</li>
+                        <li>Forest lunch & foraging intro</li>
+                        <li>Sunset closing ceremony</li>
+                    </ul>
+                    <a href="#retreat" class="program-link">Reserve Your Day <span>→</span></a>
+                </article>
+
+                <article class="program-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="16" y="24" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 24V16C24 12 28 8 32 8C36 8 40 12 40 16V24" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="36" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 56L32 48L48 56" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="program-title">Woodland Residence</h3>
+                    <p class="program-duration">3-7 Day Program</p>
+                    <p class="program-description">
+                        Live within the forest for transformative extended therapy. Stay in our
+                        treehouse cabins, participate in daily practices, and experience the
+                        profound shift that comes from sustained forest connection.
+                    </p>
+                    <ul class="program-features">
+                        <li>Treehouse accommodation</li>
+                        <li>Daily shinrin-yoku sessions</li>
+                        <li>One-on-one therapy sessions</li>
+                        <li>Integration workshops</li>
+                    </ul>
+                    <a href="#retreat" class="program-link">Plan Your Stay <span>→</span></a>
+                </article>
+
+                <article class="program-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="44" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="44" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 28L28 40M40 28L36 40M26 24H38" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="program-title">Corporate Reconnection</h3>
+                    <p class="program-duration">Team Experiences</p>
+                    <p class="program-description">
+                        Bring your team into the forest for workshops that rebuild connection,
+                        reduce burnout, and foster authentic communication through shared
+                        wilderness experience.
+                    </p>
+                    <ul class="program-features">
+                        <li>Groups of 8-20 people</li>
+                        <li>Team building in nature</li>
+                        <li>Stress reduction focus</li>
+                        <li>Custom program design</li>
+                    </ul>
+                    <a href="#retreat" class="program-link">Inquire Now <span>→</span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Journey</span>
+                <h2 class="section-title">A Day in the Forest</h2>
+                <p class="section-subtitle">
+                    From the moment you step beneath the canopy, the forest begins its work of healing.
+                </p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-path"></div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">6:00 AM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Dawn Awakening</h3>
+                        <p>
+                            We gather as first light touches the treetops. After a grounding tea ceremony,
+                            we enter the forest in silence, allowing the transition from civilized space to
+                            wild sanctuary to wash over us naturally.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">8:00 AM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sensory Opening</h3>
+                        <p>
+                            Through guided exercises, we awaken each sense to the forest's offerings.
+                            The texture of bark beneath fingertips. The layered symphony of birdsong.
+                            The green-filtered light playing on leaves. The earth's fragrance after rain.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">10:30 AM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Deep Stillness</h3>
+                        <p>
+                            We find a clearing and settle into extended sitting meditation. Here, with
+                            trees as our companions, the mind naturally quiets. Many guests report this
+                            as the moment when something profound shifts within them.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">12:30 PM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Forest Nourishment</h3>
+                        <p>
+                            A simple lunch prepared with foraged ingredients is shared in a sun-dappled
+                            glade. We eat mindfully, tasting the forest itself, feeling how nourishment
+                            from this place differs from food consumed elsewhere.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">3:00 PM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Walking Meditation</h3>
+                        <p>
+                            The afternoon brings movement—a slow, mindful walk along winding trails.
+                            Each step becomes a meditation, each breath a prayer. The forest teaches us
+                            that the journey matters more than any destination.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-time">5:30 PM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Sunset Integration</h3>
+                        <p>
+                            As golden light filters through the canopy, we gather for closing reflection.
+                            Guests share insights, release what no longer serves them, and carry the
+                            forest's peace back into their lives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="science" id="science">
+        <div class="container">
+            <div class="science-grid">
+                <div class="science-content">
+                    <span class="section-tag">Research-Backed Healing</span>
+                    <h2 class="section-title">The Science of Forest Medicine</h2>
+                    <p class="science-lead">
+                        What ancient cultures knew intuitively, modern science now confirms:
+                        time in forests produces measurable, significant health benefits.
+                    </p>
+                    <div class="science-facts">
+                        <div class="fact-card" data-aos="fade-up">
+                            <div class="fact-icon">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 4V44M4 24H44" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>Reduced Cortisol</h4>
+                            <p>Studies show 12-16% decrease in cortisol levels after just 15 minutes among trees.</p>
+                        </div>
+                        <div class="fact-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="fact-icon">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 24C8 24 16 12 24 12C32 12 40 24 40 24C40 24 32 36 24 36C16 36 8 24 8 24Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>Boosted Immunity</h4>
+                            <p>Natural killer cell activity increases up to 50% and remains elevated for 30 days post-visit.</p>
+                        </div>
+                        <div class="fact-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="fact-icon">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 8C24 8 32 16 32 24C32 32 24 40 24 40C24 40 16 32 16 24C16 16 24 8 24 8Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M24 16V32M18 24H30" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>Lower Blood Pressure</h4>
+                            <p>Both systolic and diastolic blood pressure show significant reduction during forest exposure.</p>
+                        </div>
+                        <div class="fact-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="fact-icon">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M24 14V24L30 30" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>Improved Mood</h4>
+                            <p>Anxiety, depression, and fatigue scores decrease significantly while vigor increases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="science-visual">
+                    <div class="phytoncide-graphic">
+                        <div class="tree-center">
+                            <svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 10L70 50H30L50 10Z" fill="currentColor"/>
+                                <path d="M50 30L75 80H25L50 30Z" fill="currentColor" opacity="0.8"/>
+                                <path d="M50 55L80 115H20L50 55Z" fill="currentColor" opacity="0.6"/>
+                                <rect x="45" y="110" width="10" height="30" fill="currentColor" opacity="0.9"/>
+                            </svg>
+                        </div>
+                        <div class="phytoncide-particles">
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                        </div>
+                        <p class="phytoncide-label">Phytoncides: Natural aromatics released by trees that boost human immune function</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Voices from the Forest</span>
+                <h2 class="section-title">Stories of Transformation</h2>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>
+                                "I came to Sylvan Sanctuary at my breaking point—burned out from a decade in tech,
+                                unable to sleep, constantly anxious. Within hours of entering the forest, something
+                                shifted. By the end of my week-long stay, I felt like myself again for the first
+                                time in years."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>M.C.</span>
+                            </div>
+                            <div class="author-info">
+                                <strong>Michael C.</strong>
+                                <span>7-Day Woodland Residence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>
+                                "As a therapist myself, I was curious about the clinical applications of shinrin-yoku.
+                                What I experienced went far beyond professional interest—it was a personal
+                                transformation. I now incorporate forest therapy into my own practice."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>Dr. S</span>
+                            </div>
+                            <div class="author-info">
+                                <strong>Dr. Sarah L.</strong>
+                                <span>Deep Forest Immersion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>
+                                "Our team retreat in the forest accomplished more for our company culture than
+                                years of conventional team building. The forest strips away pretense—we returned
+                                as colleagues who truly see each other. Productivity and morale transformed."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>J.P.</span>
+                            </div>
+                            <div class="author-info">
+                                <strong>Jennifer P.</strong>
+                                <span>Corporate Reconnection Program</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18L9 12L15 6"/>
+                        </svg>
+                    </button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-next" aria-label="Next testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18L15 12L9 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Retreat Section -->
+    <section class="retreat" id="retreat">
+        <div class="retreat-bg">
+            <div class="mist-layer mist-1"></div>
+            <div class="mist-layer mist-2"></div>
+            <div class="canopy-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="retreat-content">
+                <span class="section-tag">Your Invitation</span>
+                <h2 class="retreat-title">The Forest is Waiting</h2>
+                <p class="retreat-description">
+                    You've felt the call—the pull toward something greener, quieter, more real.
+                    The forest has been your home for millennia; it remembers you even when you've forgotten.
+                    Take the first step on the path back to yourself.
+                </p>
+                <form class="retreat-form" id="retreatForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="program">Program Interest</label>
+                            <select id="program" name="program" required>
+                                <option value="">Select a program...</option>
+                                <option value="morning">Morning Mist Walk</option>
+                                <option value="immersion">Deep Forest Immersion</option>
+                                <option value="residence">Woodland Residence (3-7 Days)</option>
+                                <option value="corporate">Corporate Reconnection</option>
+                                <option value="unsure">Not sure yet—help me choose</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dates">Preferred Timing</label>
+                            <select id="dates" name="dates">
+                                <option value="">When would you like to visit?</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="month">Within the next month</option>
+                                <option value="quarter">Within 3 months</option>
+                                <option value="flexible">I'm flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">What brings you to the forest?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Share what you're seeking from this experience..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Begin Your Journey</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12H19M12 5L19 12L12 19"/>
+                        </svg>
+                    </button>
+                </form>
+                <p class="retreat-note">
+                    We'll respond within 24 hours to help plan your forest experience.
+                    No obligations—just the first step on the path.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-trees">
+            <div class="footer-tree"></div>
+            <div class="footer-tree"></div>
+            <div class="footer-tree"></div>
+            <div class="footer-tree"></div>
+            <div class="footer-tree"></div>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L25 15H15L20 5Z" fill="currentColor"/>
+                            <path d="M20 10L28 25H12L20 10Z" fill="currentColor" opacity="0.8"/>
+                            <path d="M20 18L30 35H10L20 18Z" fill="currentColor" opacity="0.6"/>
+                            <rect x="18" y="32" width="4" height="6" fill="currentColor" opacity="0.9"/>
+                        </svg>
+                        <span>Sylvan Sanctuary</span>
+                    </a>
+                    <p>Reconnecting humanity with the healing power of forests through guided wilderness therapy and Japanese shinrin-yoku practices.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42C22.4212 5.94541 22.1792 5.51057 21.8386 5.15941C21.498 4.80824 21.0707 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16137 5.19941C1.82076 5.55057 1.57878 5.98541 1.46 6.46C1 8.18 1 12 1 12C1 12 1 15.82 1.46 17.54C1.69 18.5 2.45 19.26 3.4 19.54C5.12 20 12 20 12 20C12 20 18.88 20 20.6 19.54C21.55 19.26 22.31 18.5 22.54 17.54C23 15.82 23 12 23 12C23 12 23 8.18 22.54 6.42Z"/>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#programs">Morning Mist Walk</a></li>
+                        <li><a href="#programs">Deep Forest Immersion</a></li>
+                        <li><a href="#programs">Woodland Residence</a></li>
+                        <li><a href="#programs">Corporate Retreats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#about">Our Philosophy</a></li>
+                        <li><a href="#science">Forest Science</a></li>
+                        <li><a href="#experience">What to Expect</a></li>
+                        <li><a href="#">Shinrin-yoku Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="#">Location & Directions</a></li>
+                        <li><a href="#">Accommodation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#retreat">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sylvan Sanctuary. All rights reserved.</p>
+                <p class="footer-tagline">Let the forest heal you.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
