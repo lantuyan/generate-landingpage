@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX EV | Premium Electric Vehicle Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">FLUX<span class="logo-accent">EV</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#fleet">Fleet</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#subscribe" class="nav-cta">Start Driving</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span>Next-Gen EV Subscription</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Drive The</span>
+                <span class="title-line accent">Future Today</span>
+            </h1>
+            <p class="hero-subtitle">
+                Unlimited access to our premium electric fleet. Swap vehicles to match your lifestyle.
+                City commuter today, weekend roadster tomorrow.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Premium EVs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">mi</span>
+                    <span class="stat-label">Max Range</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="0">0</span><span class="stat-suffix">$</span>
+                    <span class="stat-label">Maintenance</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#subscribe" class="btn btn-primary">
+                    <span>Start Your Journey</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#fleet" class="btn btn-secondary">Explore Fleet</a>
+            </div>
+        </div>
+        <div class="hero-vehicle" id="heroVehicle">
+            <div class="vehicle-glow"></div>
+            <div class="vehicle-image">
+                <svg viewBox="0 0 800 400" class="ev-silhouette">
+                    <!-- EV Silhouette SVG -->
+                    <defs>
+                        <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#2a2a2a"/>
+                            <stop offset="50%" style="stop-color:#1a1a1a"/>
+                            <stop offset="100%" style="stop-color:#0d0d0d"/>
+                        </linearGradient>
+                        <linearGradient id="glassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4a5568"/>
+                            <stop offset="100%" style="stop-color:#2d3748"/>
+                        </linearGradient>
+                        <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                            <stop offset="100%" style="stop-color:#00ff88"/>
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Car Body -->
+                    <path class="car-body" d="M100,280 L120,280 L140,260 L200,240 L280,200 L350,180 L450,175 L550,180 L620,200 L680,240 L720,260 L740,280 L760,280 L760,300 L740,320 L100,320 L80,300 Z" fill="url(#bodyGradient)" stroke="#333" stroke-width="2"/>
+                    <!-- Windows -->
+                    <path class="car-windows" d="M290,205 L360,185 L450,180 L540,185 L600,205 L580,240 L300,240 Z" fill="url(#glassGradient)" opacity="0.9"/>
+                    <!-- Front Light Bar -->
+                    <rect class="light-bar front-light" x="130" y="255" width="80" height="8" rx="4" fill="url(#lightGradient)" filter="url(#glow)"/>
+                    <!-- Rear Light Bar -->
+                    <rect class="light-bar rear-light" x="690" y="255" width="50" height="8" rx="4" fill="#ff3366" filter="url(#glow)"/>
+                    <!-- Wheels -->
+                    <circle class="wheel" cx="220" cy="310" r="45" fill="#1a1a1a" stroke="#333" stroke-width="3"/>
+                    <circle class="wheel-rim" cx="220" cy="310" r="30" fill="none" stroke="#444" stroke-width="2"/>
+                    <circle class="wheel-center" cx="220" cy="310" r="10" fill="#00d4ff"/>
+                    <circle class="wheel" cx="620" cy="310" r="45" fill="#1a1a1a" stroke="#333" stroke-width="3"/>
+                    <circle class="wheel-rim" cx="620" cy="310" r="30" fill="none" stroke="#444" stroke-width="2"/>
+                    <circle class="wheel-center" cx="620" cy="310" r="10" fill="#00d4ff"/>
+                    <!-- Accent Lines -->
+                    <path class="accent-line" d="M150,270 L650,270" stroke="url(#lightGradient)" stroke-width="1" opacity="0.5"/>
+                    <path class="accent-line" d="M200,250 L600,250" stroke="#444" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="vehicle-reflection"></div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Our Fleet</span>
+                <h2 class="section-title">One Subscription.<br><span class="accent">Every Drive.</span></h2>
+                <p class="section-subtitle">Switch between vehicles as your needs change. City commute, family trip, or weekend getaway—there's always a perfect match.</p>
+            </div>
+            <div class="fleet-grid">
+                <!-- Vehicle Card 1 -->
+                <div class="vehicle-card" data-category="city">
+                    <div class="card-glow"></div>
+                    <div class="card-image">
+                        <svg viewBox="0 0 400 200" class="vehicle-svg city-car">
+                            <defs>
+                                <linearGradient id="cityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2d3748"/>
+                                    <stop offset="100%" style="stop-color:#1a202c"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M50,140 L70,140 L90,120 L130,100 L180,90 L250,90 L300,100 L330,120 L350,140 L370,140 L370,150 L50,150 Z" fill="url(#cityGrad)" stroke="#4a5568" stroke-width="1"/>
+                            <path d="M140,95 L180,85 L240,85 L280,95 L270,115 L150,115 Z" fill="#4a5568" opacity="0.8"/>
+                            <circle cx="110" cy="150" r="22" fill="#1a1a1a" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="310" cy="150" r="22" fill="#1a1a1a" stroke="#00d4ff" stroke-width="2"/>
+                            <rect x="60" y="125" width="30" height="4" rx="2" fill="#00d4ff"/>
+                        </svg>
+                    </div>
+                    <div class="card-category">City</div>
+                    <h3 class="card-title">Urban Pulse</h3>
+                    <div class="card-specs">
+                        <div class="spec">
+                            <span class="spec-value">280</span>
+                            <span class="spec-unit">mi range</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">0-60</span>
+                            <span class="spec-unit">5.2s</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">4</span>
+                            <span class="spec-unit">seats</span>
+                        </div>
+                    </div>
+                    <p class="card-description">Compact agility for urban adventures. Perfect for daily commutes and city parking.</p>
+                </div>
+
+                <!-- Vehicle Card 2 -->
+                <div class="vehicle-card featured" data-category="performance">
+                    <div class="card-badge">Most Popular</div>
+                    <div class="card-glow"></div>
+                    <div class="card-image">
+                        <svg viewBox="0 0 400 200" class="vehicle-svg performance-car">
+                            <defs>
+                                <linearGradient id="perfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a2e"/>
+                                    <stop offset="100%" style="stop-color:#0f0f1a"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M40,145 L60,145 L80,125 L120,95 L180,75 L260,75 L320,95 L355,125 L370,145 L380,145 L380,155 L40,155 Z" fill="url(#perfGrad)" stroke="#00ff88" stroke-width="1"/>
+                            <path d="M130,85 L185,70 L255,70 L305,85 L290,110 L145,110 Z" fill="#1e3a5f" opacity="0.8"/>
+                            <circle cx="100" cy="155" r="24" fill="#0a0a0a" stroke="#00ff88" stroke-width="2"/>
+                            <circle cx="320" cy="155" r="24" fill="#0a0a0a" stroke="#00ff88" stroke-width="2"/>
+                            <rect x="50" y="130" width="40" height="5" rx="2" fill="#00ff88"/>
+                            <rect x="330" y="130" width="35" height="5" rx="2" fill="#ff3366"/>
+                        </svg>
+                    </div>
+                    <div class="card-category">Performance</div>
+                    <h3 class="card-title">Apex GT</h3>
+                    <div class="card-specs">
+                        <div class="spec">
+                            <span class="spec-value">400</span>
+                            <span class="spec-unit">mi range</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">0-60</span>
+                            <span class="spec-unit">2.9s</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">2+2</span>
+                            <span class="spec-unit">seats</span>
+                        </div>
+                    </div>
+                    <p class="card-description">Track-ready performance meets everyday usability. The ultimate driving experience.</p>
+                </div>
+
+                <!-- Vehicle Card 3 -->
+                <div class="vehicle-card" data-category="family">
+                    <div class="card-glow"></div>
+                    <div class="card-image">
+                        <svg viewBox="0 0 400 200" class="vehicle-svg family-car">
+                            <defs>
+                                <linearGradient id="famGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2d3748"/>
+                                    <stop offset="100%" style="stop-color:#1a202c"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M35,150 L55,150 L75,130 L110,100 L160,80 L280,80 L330,100 L360,130 L375,150 L385,150 L385,165 L35,165 Z" fill="url(#famGrad)" stroke="#4a5568" stroke-width="1"/>
+                            <path d="M120,90 L165,75 L275,75 L315,90 L305,120 L130,120 Z" fill="#4a5568" opacity="0.8"/>
+                            <circle cx="95" cy="160" r="26" fill="#1a1a1a" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="330" cy="160" r="26" fill="#1a1a1a" stroke="#00d4ff" stroke-width="2"/>
+                            <rect x="45" y="135" width="35" height="4" rx="2" fill="#00d4ff"/>
+                        </svg>
+                    </div>
+                    <div class="card-category">Family</div>
+                    <h3 class="card-title">Voyager SUV</h3>
+                    <div class="card-specs">
+                        <div class="spec">
+                            <span class="spec-value">350</span>
+                            <span class="spec-unit">mi range</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">0-60</span>
+                            <span class="spec-unit">4.5s</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">7</span>
+                            <span class="spec-unit">seats</span>
+                        </div>
+                    </div>
+                    <p class="card-description">Spacious luxury for the whole family. Road trip ready with premium comfort.</p>
+                </div>
+
+                <!-- Vehicle Card 4 -->
+                <div class="vehicle-card" data-category="luxury">
+                    <div class="card-glow"></div>
+                    <div class="card-image">
+                        <svg viewBox="0 0 400 200" class="vehicle-svg luxury-car">
+                            <defs>
+                                <linearGradient id="luxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a2e"/>
+                                    <stop offset="100%" style="stop-color:#0d0d1a"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M30,145 L50,145 L70,125 L110,100 L170,85 L290,85 L340,100 L365,125 L380,145 L390,145 L390,160 L30,160 Z" fill="url(#luxGrad)" stroke="#c9a961" stroke-width="1"/>
+                            <path d="M125,95 L175,80 L285,80 L325,95 L315,120 L135,120 Z" fill="#2d3748" opacity="0.8"/>
+                            <circle cx="90" cy="158" r="25" fill="#0a0a0a" stroke="#c9a961" stroke-width="2"/>
+                            <circle cx="340" cy="158" r="25" fill="#0a0a0a" stroke="#c9a961" stroke-width="2"/>
+                            <rect x="40" y="130" width="40" height="4" rx="2" fill="#c9a961"/>
+                        </svg>
+                    </div>
+                    <div class="card-category">Luxury</div>
+                    <h3 class="card-title">Sovereign S</h3>
+                    <div class="card-specs">
+                        <div class="spec">
+                            <span class="spec-value">500</span>
+                            <span class="spec-unit">mi range</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">0-60</span>
+                            <span class="spec-unit">3.2s</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-value">5</span>
+                            <span class="spec-unit">seats</span>
+                        </div>
+                    </div>
+                    <p class="card-description">Executive presence with uncompromising luxury. Arrive in absolute refinement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Why FLUX EV</span>
+                <h2 class="section-title">Freedom Without<br><span class="accent">Compromise</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
+                            <circle cx="24" cy="24" r="8"/>
+                            <path d="M24 16a8 8 0 0 1 0 16"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Swap Anytime</h3>
+                    <p class="feature-description">Change vehicles as often as you like. City car for Monday, roadster for the weekend—it's all included.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 32l8-16h16l8 16"/>
+                            <circle cx="16" cy="32" r="4"/>
+                            <circle cx="32" cy="32" r="4"/>
+                            <path d="M20 32h8"/>
+                            <path d="M24 8v8"/>
+                            <path d="M18 12l6-4 6 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Charging Included</h3>
+                    <p class="feature-description">Access to our network of fast chargers. Home charging setup assistance included in premium tiers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8h24v32H12z"/>
+                            <path d="M16 14h16M16 20h16M16 26h10"/>
+                            <circle cx="30" cy="34" r="6"/>
+                            <path d="M28 34l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Zero Maintenance</h3>
+                    <p class="feature-description">All service, repairs, and maintenance handled. Tires, insurance, registration—we cover everything.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="18"/>
+                            <path d="M24 12v12l8 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Delivery</h3>
+                    <p class="feature-description">Vehicles delivered to your location. Swap requests fulfilled within 24 hours in metro areas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Premium Fleet</h3>
+                    <p class="feature-description">Only the finest electric vehicles from world-leading manufacturers. Every car under 2 years old.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 40V20l16-12 16 12v20H8z"/>
+                            <path d="M18 40V28h12v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Flexible Terms</h3>
+                    <p class="feature-description">Month-to-month flexibility. Pause or cancel anytime. No long-term commitments required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="plans">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Subscription Plans</span>
+                <h2 class="section-title">Select Your<br><span class="accent">Drive Mode</span></h2>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Commuter</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">899</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> City & Compact EVs</li>
+                        <li><span class="check">✓</span> 1,000 miles/month</li>
+                        <li><span class="check">✓</span> Public charging access</li>
+                        <li><span class="check">✓</span> Insurance included</li>
+                        <li><span class="check">✓</span> 2 swaps/month</li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Best Value</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Explorer</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">1,499</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Full fleet access</li>
+                        <li><span class="check">✓</span> 2,000 miles/month</li>
+                        <li><span class="check">✓</span> Premium charging network</li>
+                        <li><span class="check">✓</span> Insurance included</li>
+                        <li><span class="check">✓</span> Unlimited swaps</li>
+                        <li><span class="check">✓</span> Priority delivery</li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Executive</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">2,499</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Luxury & Performance EVs</li>
+                        <li><span class="check">✓</span> Unlimited miles</li>
+                        <li><span class="check">✓</span> Home charger installation</li>
+                        <li><span class="check">✓</span> Premium insurance</li>
+                        <li><span class="check">✓</span> Unlimited swaps</li>
+                        <li><span class="check">✓</span> Concierge service</li>
+                    </ul>
+                    <a href="#subscribe" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="subscribe">
+        <div class="cta-bg-grid"></div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to <span class="accent">Electrify</span> Your Drive?</h2>
+                <p class="cta-subtitle">Join thousands of drivers who've discovered the freedom of flexible EV access. Start your subscription today.</p>
+                <form class="cta-form" id="subscribeForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Get Early Access</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <p class="cta-note">No credit card required. We'll notify you when spots open in your area.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">FLUX<span class="logo-accent">EV</span></span>
+                    </a>
+                    <p class="footer-tagline">Driving the future, one subscription at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Fleet</h4>
+                        <ul>
+                            <li><a href="#">City Vehicles</a></li>
+                            <li><a href="#">Performance</a></li>
+                            <li><a href="#">Family SUVs</a></li>
+                            <li><a href="#">Luxury</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Charging Network</a></li>
+                            <li><a href="#">Insurance</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FLUX EV. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram">◉</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
