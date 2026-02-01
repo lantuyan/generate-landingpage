@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Enigma | Steampunk Escape Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative Gears Background -->
+    <div class="gears-bg">
+        <div class="gear gear-1"></div>
+        <div class="gear gear-2"></div>
+        <div class="gear gear-3"></div>
+        <div class="gear gear-4"></div>
+        <div class="gear gear-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-gear"></div>
+                <span class="logo-text">Chronos Enigma</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="gear-icon"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#adventures">Adventures</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Chronicles</a></li>
+                <li><a href="#booking" class="nav-cta">Book Expedition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-frame">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+                <div class="hero-badge">
+                    <span class="badge-text">Est. 1887</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Unlock the</span>
+                    <span class="title-main">Mysteries of Time</span>
+                </h1>
+                <p class="hero-subtitle">Enter a world where brass and copper gleam, where gears whisper secrets, and every mechanism holds the key to your escape.</p>
+                <div class="hero-gauges">
+                    <div class="gauge">
+                        <div class="gauge-dial" data-value="87">
+                            <div class="gauge-needle"></div>
+                        </div>
+                        <span class="gauge-label">Thrill Level</span>
+                    </div>
+                    <div class="gauge">
+                        <div class="gauge-dial" data-value="92">
+                            <div class="gauge-needle"></div>
+                        </div>
+                        <span class="gauge-label">Immersion</span>
+                    </div>
+                    <div class="gauge">
+                        <div class="gauge-dial" data-value="78">
+                            <div class="gauge-needle"></div>
+                        </div>
+                        <span class="gauge-label">Difficulty</span>
+                    </div>
+                </div>
+                <a href="#booking" class="cta-button">
+                    <span class="cta-text">Begin Your Expedition</span>
+                    <span class="cta-gears">
+                        <span class="mini-gear"></span>
+                        <span class="mini-gear"></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-wheel"></div>
+            <span>Descend</span>
+        </div>
+    </section>
+
+    <!-- Adventures Section -->
+    <section class="adventures" id="adventures">
+        <div class="section-header">
+            <div class="header-decoration left"></div>
+            <h2 class="section-title">Expeditionary Chambers</h2>
+            <div class="header-decoration right"></div>
+        </div>
+        <p class="section-intro">Choose your adventure from our collection of meticulously crafted Victorian mysteries</p>
+
+        <div class="rooms-grid">
+            <!-- Room 1 -->
+            <article class="room-card" data-room="clocktower">
+                <div class="card-frame">
+                    <div class="card-gears">
+                        <span class="card-gear cg-1"></span>
+                        <span class="card-gear cg-2"></span>
+                    </div>
+                    <div class="card-image">
+                        <div class="image-placeholder clocktower-img"></div>
+                        <div class="difficulty-badge">
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog dim"></span>
+                            <span class="cog dim"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="room-title">The Clockmaker's Conspiracy</h3>
+                        <p class="room-description">The city's master clockmaker has vanished, leaving behind a workshop of intricate automata and a ticking bomb. Decode his mechanical messages before time runs out.</p>
+                        <div class="room-meta">
+                            <span class="meta-item"><span class="meta-icon clock"></span>60 min</span>
+                            <span class="meta-item"><span class="meta-icon team"></span>2-6 players</span>
+                        </div>
+                        <button class="room-cta">Investigate</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Room 2 -->
+            <article class="room-card" data-room="airship">
+                <div class="card-frame">
+                    <div class="card-gears">
+                        <span class="card-gear cg-1"></span>
+                        <span class="card-gear cg-2"></span>
+                    </div>
+                    <div class="card-image">
+                        <div class="image-placeholder airship-img"></div>
+                        <div class="difficulty-badge">
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog dim"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="room-title">Airship Heist</h3>
+                        <p class="room-description">Aboard the luxury airship Prometheus, a precious artifact is under threat. Navigate the steam-powered vessel and outwit the notorious Sky Pirates before landing.</p>
+                        <div class="room-meta">
+                            <span class="meta-item"><span class="meta-icon clock"></span>75 min</span>
+                            <span class="meta-item"><span class="meta-icon team"></span>4-8 players</span>
+                        </div>
+                        <button class="room-cta">Board Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Room 3 -->
+            <article class="room-card" data-room="inventor">
+                <div class="card-frame">
+                    <div class="card-gears">
+                        <span class="card-gear cg-1"></span>
+                        <span class="card-gear cg-2"></span>
+                    </div>
+                    <div class="card-image">
+                        <div class="image-placeholder inventor-img"></div>
+                        <div class="difficulty-badge">
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                            <span class="cog"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="room-title">The Inventor's Paradox</h3>
+                        <p class="room-description">Professor Aldrich's time machine malfunctions during a demonstration, trapping you in a temporal loop. Repair the chronometer before reality collapses.</p>
+                        <div class="room-meta">
+                            <span class="meta-item"><span class="meta-icon clock"></span>90 min</span>
+                            <span class="meta-item"><span class="meta-icon team"></span>3-6 players</span>
+                        </div>
+                        <button class="room-cta">Enter Loop</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-bg">
+            <div class="blueprint-grid"></div>
+        </div>
+        <div class="section-header">
+            <div class="header-decoration left"></div>
+            <h2 class="section-title">The Apparatus of Adventure</h2>
+            <div class="header-decoration right"></div>
+        </div>
+
+        <div class="features-container">
+            <div class="feature-item" data-feature="1">
+                <div class="feature-icon">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 100 100" class="gear-svg">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="15" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Authentic Machinery</h3>
+                <p class="feature-desc">Real brass mechanisms, functional pneumatic systems, and tactile puzzles that respond to your touch with satisfying clicks and whirs.</p>
+            </div>
+
+            <div class="feature-item" data-feature="2">
+                <div class="feature-icon">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 100 100" class="book-svg">
+                            <rect x="20" y="25" width="60" height="50" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <line x1="50" y1="25" x2="50" y2="75" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Immersive Narratives</h3>
+                <p class="feature-desc">Each room tells a complete story—with characters, plot twists, and dramatic conclusions. You're not just solving puzzles; you're living an adventure.</p>
+            </div>
+
+            <div class="feature-item" data-feature="3">
+                <div class="feature-icon">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 100 100" class="mask-svg">
+                            <ellipse cx="50" cy="50" rx="30" ry="35" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="35" cy="45" r="8" fill="currentColor"/>
+                            <circle cx="65" cy="45" r="8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Theatrical Actors</h3>
+                <p class="feature-desc">Live performers in period costume inhabit our worlds, providing guidance, misdirection, and unforgettable dramatic moments.</p>
+            </div>
+
+            <div class="feature-item" data-feature="4">
+                <div class="feature-icon">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 100 100" class="team-svg">
+                            <circle cx="35" cy="40" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="65" cy="40" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <path d="M20 80 Q35 60 50 70 Q65 60 80 80" fill="none" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Team Bonding</h3>
+                <p class="feature-desc">Designed for collaboration, our puzzles require diverse skills—observation, logic, dexterity, and creativity. Everyone contributes to victory.</p>
+            </div>
+        </div>
+
+        <div class="schematic-display">
+            <div class="schematic-frame">
+                <div class="schematic-content">
+                    <div class="pipe pipe-1"></div>
+                    <div class="pipe pipe-2"></div>
+                    <div class="valve valve-1">
+                        <div class="valve-wheel"></div>
+                    </div>
+                    <div class="pressure-gauge">
+                        <div class="pg-face">
+                            <div class="pg-needle"></div>
+                        </div>
+                        <span class="pg-label">Excitement Pressure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <div class="header-decoration left"></div>
+            <h2 class="section-title">Chronicles of Adventurers</h2>
+            <div class="header-decoration right"></div>
+        </div>
+
+        <div class="testimonials-carousel">
+            <button class="carousel-btn prev" aria-label="Previous testimonial">
+                <span class="btn-gear"></span>
+            </button>
+
+            <div class="carousel-track">
+                <div class="testimonial-card active">
+                    <div class="testimonial-frame">
+                        <div class="quote-mark">"</div>
+                        <blockquote class="testimonial-text">
+                            The attention to detail is extraordinary. When I turned that brass valve and heard the steam hiss, I genuinely forgot I was in an escape room. Pure Victorian magic!
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-portrait">
+                                <div class="portrait-frame"></div>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">Lady Eleanor Whitmore</cite>
+                                <span class="author-title">Adventure Enthusiast</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-frame">
+                        <div class="quote-mark">"</div>
+                        <blockquote class="testimonial-text">
+                            Our corporate team has done dozens of escape rooms. This is the first where our CEO forgot about her phone entirely. The immersion is unmatched.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-portrait">
+                                <div class="portrait-frame"></div>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">Sir Theodore Pemberton</cite>
+                                <span class="author-title">Industrial Magnate</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-frame">
+                        <div class="quote-mark">"</div>
+                        <blockquote class="testimonial-text">
+                            The Inventor's Paradox broke my brain in the most delightful way. We've returned three times—each visit reveals new details we missed.
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-portrait">
+                                <div class="portrait-frame"></div>
+                            </div>
+                            <div class="author-info">
+                                <cite class="author-name">Professor Marcus Chen</cite>
+                                <span class="author-title">Puzzle Aficionado</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next" aria-label="Next testimonial">
+                <span class="btn-gear"></span>
+            </button>
+        </div>
+
+        <div class="carousel-dots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="booking-bg">
+            <div class="cog-pattern"></div>
+        </div>
+        <div class="section-header">
+            <div class="header-decoration left"></div>
+            <h2 class="section-title">Reserve Your Expedition</h2>
+            <div class="header-decoration right"></div>
+        </div>
+
+        <div class="booking-container">
+            <div class="booking-info">
+                <div class="info-card">
+                    <div class="info-icon location"></div>
+                    <h3>Our Workshop</h3>
+                    <p>42 Cogsworth Lane<br>Steamhaven Industrial District<br>London, SW1A 1AA</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon hours"></div>
+                    <h3>Operating Hours</h3>
+                    <p>Expeditions depart:<br>Tuesday–Sunday<br>10:00 – 22:00</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon telegraph"></div>
+                    <h3>Telegraph Us</h3>
+                    <p>Tel: +44 20 7946 0958<br>bookings@chronosenigma.co.uk</p>
+                </div>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-header">
+                    <div class="form-gear"></div>
+                    <h3>Expedition Booking Form</h3>
+                </div>
+                <div class="form-group">
+                    <label for="expedition">Select Expedition</label>
+                    <div class="select-wrapper">
+                        <select id="expedition" name="expedition" required>
+                            <option value="">Choose your adventure...</option>
+                            <option value="clocktower">The Clockmaker's Conspiracy (60 min)</option>
+                            <option value="airship">Airship Heist (75 min)</option>
+                            <option value="inventor">The Inventor's Paradox (90 min)</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Expedition Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Departure Time</label>
+                        <div class="select-wrapper">
+                            <select id="time" name="time" required>
+                                <option value="">Select time...</option>
+                                <option value="10:00">10:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adventurers">Number of Adventurers</label>
+                        <div class="number-input">
+                            <button type="button" class="num-btn minus">−</button>
+                            <input type="number" id="adventurers" name="adventurers" value="4" min="2" max="8">
+                            <button type="button" class="num-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Lead Adventurer</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Telegraph Address (Email)</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Confirm Expedition</span>
+                    <span class="btn-gears">
+                        <span class="s-gear"></span>
+                        <span class="s-gear"></span>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-gear"></div>
+                <span class="logo-text">Chronos Enigma</span>
+            </div>
+            <div class="footer-links">
+                <a href="#adventures">Adventures</a>
+                <a href="#experience">Experience</a>
+                <a href="#testimonials">Chronicles</a>
+                <a href="#booking">Book Now</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <span class="social-gear"></span>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <span class="social-gear"></span>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <span class="social-gear"></span>
+                </a>
+            </div>
+            <p class="footer-copyright">© 1887–2024 Chronos Enigma Escape Rooms. All Rights Reserved.</p>
+            <p class="footer-tagline">Where Time Becomes Your Greatest Puzzle</p>
+        </div>
+        <div class="footer-gears">
+            <div class="f-gear f-gear-1"></div>
+            <div class="f-gear f-gear-2"></div>
+            <div class="f-gear f-gear-3"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
