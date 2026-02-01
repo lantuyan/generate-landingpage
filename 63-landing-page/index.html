@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmo Latino - Immersive Latin Music Festival Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Music Notes Background -->
+    <div class="floating-notes" aria-hidden="true">
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+        <span class="note">♪</span>
+        <span class="note">♫</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🎺</span>
+                <span class="logo-text">RITMO<span class="logo-highlight">LATINO</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#lineup">Lineup</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#tickets" class="nav-cta">Get Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span>August 15-17, 2025 • Miami Beach</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Feel the</span>
+                <span class="title-accent">RITMO</span>
+                <span class="title-line">of Latin Soul</span>
+            </h1>
+            <p class="hero-subtitle">Three days of pure Latin energy. From traditional son to reggaeton, bachata to electronic cumbia—experience the full spectrum of Latin music under the Miami sky.</p>
+            <div class="hero-cta">
+                <a href="#tickets" class="btn btn-primary">
+                    <span class="btn-text">Join the Fiesta</span>
+                    <span class="btn-icon">💃</span>
+                </a>
+                <a href="#lineup" class="btn btn-secondary">
+                    <span class="btn-text">See Lineup</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Artists</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Days</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Stages</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- Lineup Section -->
+    <section class="lineup" id="lineup">
+        <div class="section-pattern left"></div>
+        <div class="section-pattern right"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">2025 Lineup</span>
+                <h2 class="section-title">Headliners That Move You</h2>
+                <p class="section-desc">An unprecedented gathering of Latin music legends and rising stars, curated to celebrate every corner of our rich musical heritage.</p>
+            </div>
+            <div class="lineup-grid">
+                <div class="artist-card featured">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 340;">
+                            <span>🎤</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">Headliner</span>
+                        <h3 class="artist-name">Los Ritmos del Fuego</h3>
+                        <p class="artist-genre">Cumbia • Salsa Fusion</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 45;">
+                            <span>🎸</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">Saturday</span>
+                        <h3 class="artist-name">María Soledad</h3>
+                        <p class="artist-genre">Bachata • Bolero</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 180;">
+                            <span>🎹</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">Friday</span>
+                        <h3 class="artist-name">DJ Fuego Tropical</h3>
+                        <p class="artist-genre">Electronic Cumbia</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 280;">
+                            <span>🎺</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">Sunday</span>
+                        <h3 class="artist-name">Orquesta Caribe</h3>
+                        <p class="artist-genre">Traditional Son</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 15;">
+                            <span>🥁</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">All Days</span>
+                        <h3 class="artist-name">Bomba Estéreo</h3>
+                        <p class="artist-genre">Electro-Tropical</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-img">
+                        <div class="artist-placeholder" style="--hue: 200;">
+                            <span>🎵</span>
+                        </div>
+                        <div class="artist-overlay"></div>
+                    </div>
+                    <div class="artist-info">
+                        <span class="artist-tag">Saturday</span>
+                        <h3 class="artist-name">Reggaeton Kings</h3>
+                        <p class="artist-genre">Reggaeton • Dembow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lineup-more">
+                <a href="#" class="btn btn-outline">
+                    <span>View Full Lineup</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Experience</span>
+                <h2 class="section-title">More Than a Festival</h2>
+                <p class="section-desc">Immerse yourself in a complete celebration of Latin culture—where music, art, food, and community come together.</p>
+            </div>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <span>🎭</span>
+                    </div>
+                    <h3 class="exp-title">5 Unique Stages</h3>
+                    <p class="exp-desc">From intimate acoustic sets to massive main stage performances, each venue offers a distinct vibe and genre focus.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <span>🍹</span>
+                    </div>
+                    <h3 class="exp-title">Latin Gastronomy</h3>
+                    <p class="exp-desc">Savor authentic flavors from across Latin America—street tacos to gourmet ceviche, all paired with craft cocktails.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <span>💃</span>
+                    </div>
+                    <h3 class="exp-title">Dance Workshops</h3>
+                    <p class="exp-desc">Learn salsa, bachata, and cumbia from master instructors. All skill levels welcome—just bring your passion!</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">
+                        <span>🎨</span>
+                    </div>
+                    <h3 class="exp-title">Art Installations</h3>
+                    <p class="exp-desc">Interactive murals, live painting, and immersive art experiences celebrating Latin visual traditions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="experience-marquee">
+            <div class="marquee-content">
+                <span>SALSA</span>
+                <span class="marquee-dot">•</span>
+                <span>CUMBIA</span>
+                <span class="marquee-dot">•</span>
+                <span>REGGAETON</span>
+                <span class="marquee-dot">•</span>
+                <span>BACHATA</span>
+                <span class="marquee-dot">•</span>
+                <span>SON CUBANO</span>
+                <span class="marquee-dot">•</span>
+                <span>MERENGUE</span>
+                <span class="marquee-dot">•</span>
+                <span>VALLENATO</span>
+                <span class="marquee-dot">•</span>
+                <span>BOLERO</span>
+                <span class="marquee-dot">•</span>
+                <span>SALSA</span>
+                <span class="marquee-dot">•</span>
+                <span>CUMBIA</span>
+                <span class="marquee-dot">•</span>
+                <span>REGGAETON</span>
+                <span class="marquee-dot">•</span>
+                <span>BACHATA</span>
+                <span class="marquee-dot">•</span>
+                <span>SON CUBANO</span>
+                <span class="marquee-dot">•</span>
+                <span>MERENGUE</span>
+                <span class="marquee-dot">•</span>
+                <span>VALLENATO</span>
+                <span class="marquee-dot">•</span>
+                <span>BOLERO</span>
+                <span class="marquee-dot">•</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genres Section -->
+    <section class="genres" id="genres">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Musical Journey</span>
+                <h2 class="section-title">Every Rhythm, One Festival</h2>
+                <p class="section-desc">From the roots of traditional son to the pulse of modern reggaeton, we celebrate the complete evolution of Latin music.</p>
+            </div>
+            <div class="genres-showcase">
+                <div class="genre-item" data-genre="traditional">
+                    <div class="genre-visual">
+                        <div class="genre-circle" style="--accent: #FF6B6B;">
+                            <span>🎺</span>
+                        </div>
+                    </div>
+                    <div class="genre-content">
+                        <h3>Traditional Roots</h3>
+                        <p>Son Cubano, Bolero, Trova—the soulful origins that birthed a musical revolution.</p>
+                    </div>
+                </div>
+                <div class="genre-item" data-genre="tropical">
+                    <div class="genre-visual">
+                        <div class="genre-circle" style="--accent: #FFD93D;">
+                            <span>🥁</span>
+                        </div>
+                    </div>
+                    <div class="genre-content">
+                        <h3>Tropical Heat</h3>
+                        <p>Salsa, Merengue, Cumbia—rhythms that make it impossible to stay still.</p>
+                    </div>
+                </div>
+                <div class="genre-item" data-genre="romantic">
+                    <div class="genre-visual">
+                        <div class="genre-circle" style="--accent: #C56CF0;">
+                            <span>❤️</span>
+                        </div>
+                    </div>
+                    <div class="genre-content">
+                        <h3>Romantic Soul</h3>
+                        <p>Bachata, Balada, Latin Pop—music that speaks directly to the heart.</p>
+                    </div>
+                </div>
+                <div class="genre-item" data-genre="urban">
+                    <div class="genre-visual">
+                        <div class="genre-circle" style="--accent: #17D7A0;">
+                            <span>🔥</span>
+                        </div>
+                    </div>
+                    <div class="genre-content">
+                        <h3>Urban Energy</h3>
+                        <p>Reggaeton, Dembow, Latin Trap—the pulse of today's generation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section class="tickets" id="tickets">
+        <div class="tickets-bg">
+            <div class="tickets-shape shape-1"></div>
+            <div class="tickets-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Limited Availability</span>
+                <h2 class="section-title">Secure Your Spot</h2>
+                <p class="section-desc">Early bird pricing available until July 1st. Don't miss the biggest Latin music celebration of 2025.</p>
+            </div>
+            <div class="tickets-grid">
+                <div class="ticket-card">
+                    <div class="ticket-header">
+                        <span class="ticket-type">Single Day</span>
+                        <div class="ticket-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">149</span>
+                        </div>
+                    </div>
+                    <ul class="ticket-features">
+                        <li>Access to all 5 stages</li>
+                        <li>Entry to dance workshops</li>
+                        <li>Art installation access</li>
+                        <li>Festival map & schedule app</li>
+                    </ul>
+                    <a href="#" class="btn btn-ticket">Select Day</a>
+                </div>
+                <div class="ticket-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="ticket-header">
+                        <span class="ticket-type">3-Day Pass</span>
+                        <div class="ticket-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">349</span>
+                        </div>
+                    </div>
+                    <ul class="ticket-features">
+                        <li>All Single Day benefits</li>
+                        <li>Priority entry each day</li>
+                        <li>Exclusive merch discount</li>
+                        <li>VIP lounge happy hour</li>
+                        <li>Meet & greet lottery</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get 3-Day Pass</a>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-header">
+                        <span class="ticket-type">VIP Experience</span>
+                        <div class="ticket-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">699</span>
+                        </div>
+                    </div>
+                    <ul class="ticket-features">
+                        <li>All 3-Day Pass benefits</li>
+                        <li>Front-stage viewing areas</li>
+                        <li>Private VIP lounge</li>
+                        <li>Complimentary drinks</li>
+                        <li>Artist meet & greet</li>
+                    </ul>
+                    <a href="#" class="btn btn-ticket">Go VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay in the Rhythm</h3>
+                    <p>Get exclusive updates, artist announcements, and early access to ticket sales.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Subscribe</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🎺</span>
+                        <span class="logo-text">RITMO<span class="logo-highlight">LATINO</span></span>
+                    </a>
+                    <p>Celebrating the vibrant spirit of Latin music. Three days of rhythm, culture, and unforgettable memories.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Festival</h4>
+                        <ul>
+                            <li><a href="#lineup">Lineup</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#tickets">Tickets</a></li>
+                            <li><a href="#">Schedule</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Venue</a></li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram">📸</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="TikTok">🎵</a>
+                            <a href="#" aria-label="YouTube">▶️</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ritmo Latino Festival. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
