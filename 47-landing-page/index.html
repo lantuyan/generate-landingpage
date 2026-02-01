@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightBite | Late-Night Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Flickering Background Elements -->
+    <div class="neon-bg-elements">
+        <div class="neon-circle circle-1"></div>
+        <div class="neon-circle circle-2"></div>
+        <div class="neon-circle circle-3"></div>
+        <div class="neon-line line-1"></div>
+        <div class="neon-line line-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🌙</span>
+                <span class="logo-text">Night<span class="neon-pink">Bite</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#download" class="nav-cta">Get The App</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#testimonials">Stories</a></li>
+            <li><a href="#download" class="nav-cta">Get The App</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Open 24/7 • Delivering Now</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">The City</span>
+                <span class="title-line neon-glow-text">Never Sleeps</span>
+                <span class="title-line">Neither Do We</span>
+            </h1>
+            <p class="hero-description">
+                Discover the best late-night eats from food trucks, 24-hour diners,
+                and hidden gems. Curated for night owls, shift workers, and anyone
+                who knows the magic of 3AM cravings.
+            </p>
+            <div class="hero-cta">
+                <a href="#download" class="btn btn-primary neon-btn">
+                    <span>Order Now</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    <span>Explore Menu</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Late-Night Spots</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+                    <span class="stat-label">Always Open</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">min</span>
+                    <span class="stat-label">Avg. Delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="neon-sign">
+                <div class="sign-frame">
+                    <div class="sign-content">
+                        <span class="sign-text sign-open">OPEN</span>
+                        <span class="sign-text sign-late">LATE</span>
+                    </div>
+                </div>
+                <div class="sign-reflection"></div>
+            </div>
+            <div class="floating-foods">
+                <div class="food-item food-1">🍔</div>
+                <div class="food-item food-2">🌮</div>
+                <div class="food-item food-3">🍜</div>
+                <div class="food-item food-4">🍕</div>
+                <div class="food-item food-5">🥡</div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From <span class="neon-blue">Craving</span> to <span class="neon-green">Delivery</span></h2>
+                <p class="section-subtitle">Three simple steps to satisfy your late-night hunger</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-step="01">
+                    <div class="step-icon">
+                        <div class="icon-glow"></div>
+                        <span>📍</span>
+                    </div>
+                    <h3>Discover</h3>
+                    <p>Browse curated selections from the best after-hours spots in your area. Food trucks, diners, and hidden gems.</p>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card" data-step="02">
+                    <div class="step-icon">
+                        <div class="icon-glow"></div>
+                        <span>🛒</span>
+                    </div>
+                    <h3>Order</h3>
+                    <p>Pick your favorites, customize your order, and check out in seconds. No minimum orders, ever.</p>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-card" data-step="03">
+                    <div class="step-icon">
+                        <div class="icon-glow"></div>
+                        <span>🚀</span>
+                    </div>
+                    <h3>Enjoy</h3>
+                    <p>Track your order in real-time as it makes its way through the neon-lit streets to your door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="section featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Tonight</span>
+                <h2 class="section-title">Tonight's <span class="neon-pink">Hot</span> Picks</h2>
+                <p class="section-subtitle">Trending spots loved by fellow night owls</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card card-large">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge">🔥 Trending</div>
+                        <div class="card-emoji">🍔</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.9 (2.3k)</span>
+                        </div>
+                        <h3>Midnight Burger Co.</h3>
+                        <p>Smashed patties, secret sauce, open till 4AM</p>
+                        <div class="card-meta">
+                            <span class="meta-item">🕐 Open Now</span>
+                            <span class="meta-item">⚡ 12 min</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="card-emoji">🌮</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.8</span>
+                        </div>
+                        <h3>Taco Nocturno</h3>
+                        <p>Street tacos, authentic flavors</p>
+                        <div class="card-meta">
+                            <span class="meta-item">⚡ 18 min</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="card-emoji">🍜</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.9</span>
+                        </div>
+                        <h3>Neon Noodle House</h3>
+                        <p>Ramen & late-night comfort</p>
+                        <div class="card-meta">
+                            <span class="meta-item">⚡ 20 min</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="card-emoji">🍕</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">4.7</span>
+                        </div>
+                        <h3>Slice After Dark</h3>
+                        <p>NYC-style, by the slice</p>
+                        <div class="card-meta">
+                            <span class="meta-item">⚡ 15 min</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="card-emoji">🥡</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.8</span>
+                        </div>
+                        <h3>Dragon's Den</h3>
+                        <p>Chinese favorites, 24 hours</p>
+                        <div class="card-meta">
+                            <span class="meta-item">⚡ 22 min</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+            <div class="featured-cta">
+                <a href="#download" class="btn btn-primary neon-btn">
+                    <span>View All 500+ Spots</span>
+                    <span class="btn-glow"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Night Owl Stories</span>
+                <h2 class="section-title">Tales From The <span class="neon-orange">Night Shift</span></h2>
+                <p class="section-subtitle">Real stories from our community of night dwellers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-glow"></div>
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">After my overnight shift at the hospital, NightBite is my lifeline. Found the best ramen spot I never knew existed. The city really does have a whole other personality after midnight.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍⚕️</div>
+                            <div class="author-info">
+                                <span class="author-name">Sarah M.</span>
+                                <span class="author-role">Night Shift Nurse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-glow"></div>
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">As a DJ, my dinner is everyone else's breakfast. NightBite gets it. They've connected me with food trucks I'd never find otherwise. The 3AM tacos hit different.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">🎧</div>
+                            <div class="author-info">
+                                <span class="author-name">Marcus D.</span>
+                                <span class="author-role">Club DJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-glow"></div>
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">Game launches mean all-nighters. My whole dev team now uses NightBite. The real-time tracking is clutch when you're debugging and starving simultaneously.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">💻</div>
+                            <div class="author-info">
+                                <span class="author-name">James K.</span>
+                                <span class="author-role">Game Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-index="0"></button>
+                <button class="nav-dot" data-index="1"></button>
+                <button class="nav-dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section id="download" class="section download">
+        <div class="container">
+            <div class="download-wrapper">
+                <div class="download-content">
+                    <span class="section-tag">Get The App</span>
+                    <h2 class="section-title">Your <span class="neon-pink">Night</span> Starts <span class="neon-blue">Here</span></h2>
+                    <p class="download-description">
+                        Download NightBite and unlock a world of late-night flavors.
+                        First order? It's on us. Use code <span class="promo-code">NIGHTOWL</span> for free delivery.
+                    </p>
+                    <div class="download-buttons">
+                        <a href="#" class="store-btn">
+                            <span class="store-icon">🍎</span>
+                            <div class="store-text">
+                                <span class="store-label">Download on the</span>
+                                <span class="store-name">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn">
+                            <span class="store-icon">▶️</span>
+                            <div class="store-text">
+                                <span class="store-label">Get it on</span>
+                                <span class="store-name">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Real-time tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>No minimum orders</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>24/7 support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-preview">
+                                    <div class="app-header">
+                                        <span class="app-time">3:47 AM</span>
+                                        <span class="app-logo">NightBite</span>
+                                    </div>
+                                    <div class="app-content">
+                                        <div class="app-search">🔍 What are you craving?</div>
+                                        <div class="app-cards">
+                                            <div class="mini-card">🍔</div>
+                                            <div class="mini-card">🌮</div>
+                                            <div class="mini-card">🍜</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🌙</span>
+                        <span class="logo-text">Night<span class="neon-pink">Bite</span></span>
+                    </a>
+                    <p class="footer-tagline">Feeding the night, one delivery at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Partners</h4>
+                        <ul>
+                            <li><a href="#">Become a Driver</a></li>
+                            <li><a href="#">Add Your Restaurant</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                </div>
+                <p class="footer-copy">© 2025 NightBite. All rights reserved. Made for night owls, by night owls.</p>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
