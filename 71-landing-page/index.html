@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Expeditions | Guided Mountaineering Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5L35 35H5L20 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M20 12L28 30H12L20 12Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+                <span>SUMMIT</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#expeditions">Expeditions</a></li>
+                <li><a href="#preparation">Preparation</a></li>
+                <li><a href="#guides">Our Guides</a></li>
+                <li><a href="#stories">Summit Stories</a></li>
+                <li><a href="#contact" class="btn-nav">Start Your Journey</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="mountain-layer mountain-back"></div>
+            <div class="mountain-layer mountain-mid"></div>
+            <div class="mountain-layer mountain-front"></div>
+            <div class="snow-particles"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">Adventure Awaits Above</p>
+            <h1 class="hero-title">
+                <span class="title-line">CONQUER</span>
+                <span class="title-line accent">THE PEAKS</span>
+            </h1>
+            <p class="hero-description">
+                Expert-led mountaineering expeditions for every skill level.
+                From first summits to elite high-altitude challenges.
+            </p>
+            <div class="hero-cta">
+                <a href="#expeditions" class="btn btn-primary">Explore Expeditions</a>
+                <a href="#preparation" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="250">0</span>
+                    <span class="stat-label">Successful Summits</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="45">0</span>
+                    <span class="stat-label">Certified Guides</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Expeditions Section -->
+    <section class="expeditions" id="expeditions">
+        <div class="section-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Choose Your Challenge</span>
+                <h2 class="section-title">Our Expeditions</h2>
+                <p class="section-subtitle">From beginner-friendly peaks to legendary high-altitude challenges</p>
+            </div>
+            <div class="expedition-grid">
+                <article class="expedition-card" data-level="beginner">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="altitude-badge">
+                            <span class="altitude-number">4,167m</span>
+                            <span class="altitude-label">Peak Altitude</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="difficulty-badge beginner">First Summit</span>
+                        <h3>Mount Rainier</h3>
+                        <p>Perfect introduction to mountaineering. Learn essential skills while conquering an iconic Pacific Northwest peak.</p>
+                        <ul class="card-features">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                5-day expedition
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Full gear provided
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Skills training included
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-card">Book Expedition</a>
+                    </div>
+                </article>
+
+                <article class="expedition-card featured" data-level="intermediate">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="altitude-badge">
+                            <span class="altitude-number">5,895m</span>
+                            <span class="altitude-label">Peak Altitude</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="difficulty-badge intermediate">Intermediate</span>
+                        <h3>Kilimanjaro</h3>
+                        <p>Africa's highest peak offers a life-changing journey through five distinct climate zones to the Roof of Africa.</p>
+                        <ul class="card-features">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                8-day expedition
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Acclimatization protocol
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Porter support team
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-card">Book Expedition</a>
+                    </div>
+                </article>
+
+                <article class="expedition-card" data-level="advanced">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="altitude-badge">
+                            <span class="altitude-number">6,962m</span>
+                            <span class="altitude-label">Peak Altitude</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="difficulty-badge advanced">Advanced</span>
+                        <h3>Aconcagua</h3>
+                        <p>The highest peak in the Americas. A true high-altitude challenge requiring technical skills and mental fortitude.</p>
+                        <ul class="card-features">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                18-day expedition
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Technical climbing sections
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Prior experience required
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-card">Book Expedition</a>
+                    </div>
+                </article>
+
+                <article class="expedition-card" data-level="elite">
+                    <div class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="altitude-badge">
+                            <span class="altitude-number">8,849m</span>
+                            <span class="altitude-label">Peak Altitude</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="difficulty-badge elite">Elite Challenge</span>
+                        <h3>Everest</h3>
+                        <p>The ultimate mountaineering achievement. Join our elite expedition to stand on top of the world.</p>
+                        <ul class="card-features">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                60-day expedition
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Supplemental oxygen
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                Sherpa team support
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-card">Inquire Now</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Section -->
+    <section class="preparation" id="preparation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Your Journey Begins</span>
+                <h2 class="section-title">Expedition Preparation</h2>
+                <p class="section-subtitle">Comprehensive training and preparation for summit success</p>
+            </div>
+            <div class="prep-timeline">
+                <div class="timeline-item" data-step="01">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Assessment & Planning</h3>
+                        <p>Personal fitness evaluation, goal setting, and customized training plan development with our expedition team.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="02">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Physical Conditioning</h3>
+                        <p>Structured cardio, strength, and endurance training program designed for high-altitude performance.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="03">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Technical Skills Training</h3>
+                        <p>Hands-on instruction in rope work, crampon use, ice axe techniques, and glacier travel safety.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="04">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Summit Day</h3>
+                        <p>With preparation complete, reach your summit with confidence, guided by our experienced mountain team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mountain-divider">
+            <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+                <path d="M0,200 L0,100 L180,150 L360,80 L540,140 L720,60 L900,120 L1080,50 L1260,130 L1440,90 L1440,200 Z" fill="currentColor"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section class="guides" id="guides">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Expert Leadership</span>
+                <h2 class="section-title">Our Guides</h2>
+                <p class="section-subtitle">Certified professionals with decades of high-altitude experience</p>
+            </div>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <div class="guide-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Marcus Chen</h3>
+                        <span class="guide-title">Lead Expedition Guide</span>
+                        <div class="guide-stats">
+                            <div class="guide-stat">
+                                <span class="stat-value">8</span>
+                                <span class="stat-desc">8000m+ Summits</span>
+                            </div>
+                            <div class="guide-stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-desc">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="guide-certifications">
+                            <span>IFMGA Certified</span>
+                            <span>WFR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <div class="guide-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Elena Kowalski</h3>
+                        <span class="guide-title">High Altitude Specialist</span>
+                        <div class="guide-stats">
+                            <div class="guide-stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-desc">Everest Summits</span>
+                            </div>
+                            <div class="guide-stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-desc">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="guide-certifications">
+                            <span>AMGA Certified</span>
+                            <span>EMT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <div class="guide-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Tenzin Norbu</h3>
+                        <span class="guide-title">Technical Climbing Lead</span>
+                        <div class="guide-stats">
+                            <div class="guide-stat">
+                                <span class="stat-value">50+</span>
+                                <span class="stat-desc">Expeditions Led</span>
+                            </div>
+                            <div class="guide-stat">
+                                <span class="stat-value">20</span>
+                                <span class="stat-desc">Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="guide-certifications">
+                            <span>UIAGM Guide</span>
+                            <span>WAFA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories" id="stories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Climber Testimonials</span>
+                <h2 class="section-title">Summit Stories</h2>
+                <p class="section-subtitle">Real experiences from our expedition community</p>
+            </div>
+            <div class="stories-carousel">
+                <div class="story-card active">
+                    <div class="story-quote">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <blockquote>
+                            "Standing on the summit of Kilimanjaro, watching the sunrise paint the clouds below pink and gold - that moment changed everything. The Summit team didn't just guide me up a mountain; they helped me discover strength I never knew I had."
+                        </blockquote>
+                    </div>
+                    <div class="story-author">
+                        <div class="author-avatar">
+                            <span>SJ</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Sarah Johnson</strong>
+                            <span>Kilimanjaro Summit, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-quote">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <blockquote>
+                            "As a complete beginner, I was terrified of mountaineering. The preparation program was thorough and reassuring. On summit day, I felt completely prepared. This experience taught me that impossible is just a word."
+                        </blockquote>
+                    </div>
+                    <div class="story-author">
+                        <div class="author-avatar">
+                            <span>MP</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Michael Park</strong>
+                            <span>Mt. Rainier Summit, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-quote">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <blockquote>
+                            "Summiting Everest was a lifelong dream. The Summit Expeditions team made it possible with their meticulous planning, expert guidance, and unwavering support. They don't just get you to the top - they get you back safely."
+                        </blockquote>
+                    </div>
+                    <div class="story-author">
+                        <div class="author-avatar">
+                            <span>AT</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Alexandra Torres</strong>
+                            <span>Everest Summit, 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" aria-label="Previous story">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <div class="carousel-dots">
+                    <button class="dot active" aria-label="Story 1"></button>
+                    <button class="dot" aria-label="Story 2"></button>
+                    <button class="dot" aria-label="Story 3"></button>
+                </div>
+                <button class="carousel-btn next" aria-label="Next story">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section class="contact" id="contact">
+        <div class="contact-bg">
+            <div class="summit-glow"></div>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag light">Begin Your Ascent</span>
+                    <h2 class="section-title light">Ready to Summit?</h2>
+                    <p class="contact-description">
+                        Take the first step toward your mountain adventure. Our expedition planners
+                        will help you choose the perfect climb and prepare you for success.
+                    </p>
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <span>expeditions@summit.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Basecamp Office</strong>
+                                <span>Boulder, Colorado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="expedition">Interested Expedition</label>
+                        <select id="expedition" name="expedition" required>
+                            <option value="">Select an expedition</option>
+                            <option value="rainier">Mt. Rainier - First Summit</option>
+                            <option value="kilimanjaro">Kilimanjaro - Intermediate</option>
+                            <option value="aconcagua">Aconcagua - Advanced</option>
+                            <option value="everest">Everest - Elite</option>
+                            <option value="custom">Custom Expedition</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Climbing Experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select your experience level</option>
+                            <option value="none">No prior experience</option>
+                            <option value="beginner">Beginner (1-2 climbs)</option>
+                            <option value="intermediate">Intermediate (3-10 climbs)</option>
+                            <option value="advanced">Advanced (10+ climbs)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your mountaineering goals..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Start Your Journey</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L35 35H5L20 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 12L28 30H12L20 12Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        <span>SUMMIT</span>
+                    </a>
+                    <p>Expert-led mountaineering expeditions for adventurers of all skill levels.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Expeditions</h4>
+                        <ul>
+                            <li><a href="#expeditions">First Summit</a></li>
+                            <li><a href="#expeditions">Intermediate Climbs</a></li>
+                            <li><a href="#expeditions">Advanced Peaks</a></li>
+                            <li><a href="#expeditions">Elite Challenges</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#preparation">Preparation Guide</a></li>
+                            <li><a href="#">Gear Checklist</a></li>
+                            <li><a href="#">Training Programs</a></li>
+                            <li><a href="#">Safety Protocols</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#guides">Our Team</a></li>
+                            <li><a href="#stories">Success Stories</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Summit Expeditions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
