@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad | Where Teen Founders Start</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">LaunchPad</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#success">Success</a>
+                <a href="#community">Community</a>
+            </div>
+            <a href="#start" class="nav-cta">Start Now</a>
+            <button class="mobile-menu" id="mobileMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Join 10k+ teen founders</span>
+            </div>
+            <h1 class="hero-title">
+                Your idea.
+                <span class="gradient-text">Your business.</span>
+                Your rules.
+            </h1>
+            <p class="hero-subtitle">
+                We give teens the skills, funding, and mentors to turn wild ideas into real businesses. No permission needed.
+            </p>
+            <div class="hero-actions">
+                <a href="#start" class="btn btn-primary">
+                    <span>Get Started Free</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>Watch Demo</span>
+                    <span class="play-icon">▶</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="10000">0</span>
+                    <span class="stat-label">Teen Founders</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Businesses Launched</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">M+ Funded</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why LaunchPad?</span>
+                <h2 class="section-title">Built different. <span class="gradient-text">For real.</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-icon">💡</div>
+                    <h3>Learn By Doing</h3>
+                    <p>No boring lectures. Build real projects, make real money, learn from real mistakes.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">💰</div>
+                    <h3>Micro-Funding</h3>
+                    <p>Get $100-$5000 to test your idea. No credit checks. No adult co-signer needed.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🤝</div>
+                    <h3>Real Mentors</h3>
+                    <p>Connect with founders who've been there. Not teachers—actual entrepreneurs.</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">🌐</div>
+                    <h3>Your Squad</h3>
+                    <p>Join a community of ambitious teens. Collab, compete, and grow together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Programs</span>
+                <h2 class="section-title">Pick your <span class="gradient-text">path</span></h2>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card featured">
+                    <div class="program-badge">Most Popular</div>
+                    <div class="program-icon">⚡</div>
+                    <h3>Starter Sprint</h3>
+                    <p class="program-duration">4 weeks</p>
+                    <ul class="program-features">
+                        <li>Find your billion-dollar idea</li>
+                        <li>Build your first MVP</li>
+                        <li>Get your first customer</li>
+                        <li>$500 micro-grant</li>
+                    </ul>
+                    <a href="#start" class="btn btn-primary btn-full">Join Sprint</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🔥</div>
+                    <h3>Accelerator</h3>
+                    <p class="program-duration">12 weeks</p>
+                    <ul class="program-features">
+                        <li>Scale your existing business</li>
+                        <li>1-on-1 mentor matching</li>
+                        <li>Investor pitch prep</li>
+                        <li>Up to $5000 funding</li>
+                    </ul>
+                    <a href="#start" class="btn btn-outline btn-full">Apply Now</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🎯</div>
+                    <h3>Creator Track</h3>
+                    <p class="program-duration">8 weeks</p>
+                    <ul class="program-features">
+                        <li>Monetize your content</li>
+                        <li>Build your personal brand</li>
+                        <li>Sponsorship strategies</li>
+                        <li>Creator toolkit access</li>
+                    </ul>
+                    <a href="#start" class="btn btn-outline btn-full">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success" id="success">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Real Stories</span>
+                <h2 class="section-title">They started at <span class="gradient-text">your age</span></h2>
+            </div>
+            <div class="success-slider">
+                <div class="success-track" id="successTrack">
+                    <div class="success-card">
+                        <div class="success-image">
+                            <div class="avatar-placeholder">👩‍💻</div>
+                        </div>
+                        <div class="success-content">
+                            <div class="success-stats">
+                                <span class="revenue">$12k/mo</span>
+                                <span class="age">Started at 15</span>
+                            </div>
+                            <h3>Maya Chen</h3>
+                            <p class="business-name">StudySync App</p>
+                            <p class="quote">"I thought I was too young. Turns out, being young is actually an advantage."</p>
+                        </div>
+                    </div>
+                    <div class="success-card">
+                        <div class="success-image">
+                            <div class="avatar-placeholder">👨‍🎨</div>
+                        </div>
+                        <div class="success-content">
+                            <div class="success-stats">
+                                <span class="revenue">$8k/mo</span>
+                                <span class="age">Started at 14</span>
+                            </div>
+                            <h3>Jordan Taylor</h3>
+                            <p class="business-name">PixelDrop Designs</p>
+                            <p class="quote">"The micro-funding let me buy equipment. Now I have 3 employees."</p>
+                        </div>
+                    </div>
+                    <div class="success-card">
+                        <div class="success-image">
+                            <div class="avatar-placeholder">👩‍🔬</div>
+                        </div>
+                        <div class="success-content">
+                            <div class="success-stats">
+                                <span class="revenue">$25k/mo</span>
+                                <span class="age">Started at 16</span>
+                            </div>
+                            <h3>Priya Sharma</h3>
+                            <p class="business-name">EcoPackage Co</p>
+                            <p class="quote">"My mentor showed me how to pitch investors. Got funded in 3 months."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn" aria-label="Previous">←</button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next" id="nextBtn" aria-label="Next">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="community-content">
+                <div class="community-text">
+                    <span class="section-tag">Community</span>
+                    <h2 class="section-title">Join the <span class="gradient-text">movement</span></h2>
+                    <p>10,000+ teens building the future. Weekly challenges, live workshops, and a Discord that actually hits different.</p>
+                    <div class="community-features">
+                        <div class="feature">
+                            <span class="feature-icon">💬</span>
+                            <span>Active Discord</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📺</span>
+                            <span>Weekly Workshops</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🏆</span>
+                            <span>Challenges & Prizes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="community-visual">
+                    <div class="discord-preview">
+                        <div class="discord-header">
+                            <span class="discord-icon">💬</span>
+                            <span>LaunchPad Community</span>
+                            <span class="online-count">🟢 2,847 online</span>
+                        </div>
+                        <div class="discord-messages">
+                            <div class="message">
+                                <span class="msg-user">@alex_builds</span>
+                                <span class="msg-text">just hit $1k MRR 🎉</span>
+                            </div>
+                            <div class="message">
+                                <span class="msg-user">@codeWithSara</span>
+                                <span class="msg-text">congrats!! what's your stack?</span>
+                            </div>
+                            <div class="message">
+                                <span class="msg-user">@marketingMax</span>
+                                <span class="msg-text">anyone wanna collab on a TikTok shop?</span>
+                            </div>
+                            <div class="message typing">
+                                <span class="msg-user">@you</span>
+                                <span class="typing-indicator">
+                                    <span></span><span></span><span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="start">
+        <div class="cta-bg">
+            <div class="gradient-orb orb-4"></div>
+            <div class="gradient-orb orb-5"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to start?</h2>
+                <p class="cta-subtitle">Takes 2 minutes. No credit card. Just your idea.</p>
+                <form class="signup-form" id="signupForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="your@email.com" required class="form-input" id="emailInput">
+                        <button type="submit" class="btn btn-primary">
+                            <span>Let's Go</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">By signing up, you agree to our terms. We're teen-friendly, promise.</p>
+                </form>
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span>🔒</span>
+                        <span>100% Free to Start</span>
+                    </div>
+                    <div class="badge">
+                        <span>✨</span>
+                        <span>No Experience Needed</span>
+                    </div>
+                    <div class="badge">
+                        <span>🌟</span>
+                        <span>Ages 13-19</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">LaunchPad</span>
+                    </a>
+                    <p>Empowering the next generation of founders.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="TikTok">📱</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Discord">💬</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Programs</h4>
+                        <a href="#">Starter Sprint</a>
+                        <a href="#">Accelerator</a>
+                        <a href="#">Creator Track</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">Podcast</a>
+                        <a href="#">Free Tools</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LaunchPad. Made with 💜 for teen founders.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Parent Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
