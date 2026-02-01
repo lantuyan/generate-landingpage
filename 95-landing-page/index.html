@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echosphere Studios | Premium Audio Drama Productions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio Waveform Background -->
+    <div class="waveform-bg" aria-hidden="true">
+        <svg class="waveform-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path class="wave wave-1" d="M0,160 C320,220 420,100 720,160 C1020,220 1120,100 1440,160 L1440,320 L0,320 Z"></path>
+            <path class="wave wave-2" d="M0,180 C320,240 420,120 720,180 C1020,240 1120,120 1440,180 L1440,320 L0,320 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Echosphere</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#shows">Shows</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#creators">Creators</a></li>
+                <li><a href="#subscribe" class="btn btn-nav">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>Now Streaming Season 3</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Stories That</span>
+                <span class="title-line accent">Speak to You</span>
+            </h1>
+            <p class="hero-subtitle">Premium audio dramas with full casts, cinematic sound design, and production values that rival prestige television. Close your eyes and see everything.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary play-btn">
+                    <span class="play-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                    </span>
+                    <span>Start Listening</span>
+                </button>
+                <button class="btn btn-secondary">Explore Shows</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="42">0</span>
+                    <span class="stat-label">Original Series</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="850">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Listeners</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waveform">
+            <div class="waveform-bars">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Featured Shows Section -->
+    <section class="shows" id="shows">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Productions</span>
+                <h2 class="section-title">Immersive Audio Experiences</h2>
+                <p class="section-subtitle">Serialized fiction crafted by award-winning writers, performed by acclaimed actors, engineered for total immersion.</p>
+            </div>
+            <div class="shows-grid">
+                <!-- Show Card 1 -->
+                <article class="show-card featured">
+                    <div class="show-artwork">
+                        <div class="artwork-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+                        <div class="artwork-content">
+                            <span class="genre-icon">🌌</span>
+                            <h3>The Last Signal</h3>
+                            <span class="genre-tag">Sci-Fi Thriller</span>
+                        </div>
+                        <button class="play-overlay" aria-label="Play The Last Signal">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.1)"/>
+                                <polygon points="20,16 34,24 20,32" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="show-info">
+                        <div class="show-meta">
+                            <span class="episodes">24 Episodes</span>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p class="show-desc">A lone astronaut receives a mysterious transmission from beyond the known universe. What she discovers will change humanity forever.</p>
+                        <div class="show-waveform">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Show Card 2 -->
+                <article class="show-card">
+                    <div class="show-artwork">
+                        <div class="artwork-bg" style="background: linear-gradient(135deg, #2d1b2d 0%, #4a1942 50%, #6b2d5b 100%);"></div>
+                        <div class="artwork-content">
+                            <span class="genre-icon">🏚️</span>
+                            <h3>Hollow House</h3>
+                            <span class="genre-tag">Horror</span>
+                        </div>
+                        <button class="play-overlay" aria-label="Play Hollow House">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.1)"/>
+                                <polygon points="20,16 34,24 20,32" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="show-info">
+                        <div class="show-meta">
+                            <span class="episodes">18 Episodes</span>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p class="show-desc">The Morrow family moves into their dream home. But the house has other plans for them.</p>
+                    </div>
+                </article>
+
+                <!-- Show Card 3 -->
+                <article class="show-card">
+                    <div class="show-artwork">
+                        <div class="artwork-bg" style="background: linear-gradient(135deg, #1b3a2d 0%, #2d5a45 50%, #3d7a5d 100%);"></div>
+                        <div class="artwork-content">
+                            <span class="genre-icon">🗡️</span>
+                            <h3>Crown of Echoes</h3>
+                            <span class="genre-tag">Epic Fantasy</span>
+                        </div>
+                        <button class="play-overlay" aria-label="Play Crown of Echoes">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.1)"/>
+                                <polygon points="20,16 34,24 20,32" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="show-info">
+                        <div class="show-meta">
+                            <span class="episodes">36 Episodes</span>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p class="show-desc">Three kingdoms. One prophecy. A young scribe holds the key to an ancient power.</p>
+                    </div>
+                </article>
+
+                <!-- Show Card 4 -->
+                <article class="show-card">
+                    <div class="show-artwork">
+                        <div class="artwork-bg" style="background: linear-gradient(135deg, #3a2d1b 0%, #5a4528 50%, #7a5d35 100%);"></div>
+                        <div class="artwork-content">
+                            <span class="genre-icon">🔍</span>
+                            <h3>The Bellwood Files</h3>
+                            <span class="genre-tag">Mystery</span>
+                        </div>
+                        <button class="play-overlay" aria-label="Play The Bellwood Files">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+                                <circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.1)"/>
+                                <polygon points="20,16 34,24 20,32" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="show-info">
+                        <div class="show-meta">
+                            <span class="episodes">12 Episodes</span>
+                            <span class="rating">★ 4.7</span>
+                        </div>
+                        <p class="show-desc">Private detective Vera Bellwood takes on cases the police won't touch.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="shows-cta">
+                <a href="#" class="btn btn-outline">View All 42 Shows</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-text">
+                    <span class="section-tag">The Echosphere Difference</span>
+                    <h2 class="section-title">Cinematic Sound. <br>Intimate Experience.</h2>
+                    <p>Every production features full-cast performances, original scores, and immersive soundscapes that transport you into the story. Our audio engineers craft 3D audio environments that make you forget you're wearing headphones.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18V5l12-2v13"/>
+                                    <circle cx="6" cy="18" r="3"/>
+                                    <circle cx="18" cy="16" r="3"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <strong>Original Scores</strong>
+                                <span>Composed specifically for each production by Hollywood composers</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                    <line x1="12" y1="19" x2="12" y2="23"/>
+                                    <line x1="8" y1="23" x2="16" y2="23"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <strong>Full Cast Performances</strong>
+                                <span>Award-winning voice actors bring every character to life</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10,8 16,12 10,16"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <strong>Binaural 3D Audio</strong>
+                                <span>Immersive soundscapes that place you inside the scene</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="experience-visual">
+                    <div class="audio-player-demo">
+                        <div class="player-artwork">
+                            <div class="vinyl-record">
+                                <div class="vinyl-label"></div>
+                            </div>
+                        </div>
+                        <div class="player-controls">
+                            <div class="now-playing">
+                                <span class="np-label">Now Playing</span>
+                                <span class="np-title">The Last Signal - Episode 1</span>
+                                <span class="np-subtitle">"First Contact"</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                                <div class="progress-handle"></div>
+                            </div>
+                            <div class="time-display">
+                                <span>12:34</span>
+                                <span>45:22</span>
+                            </div>
+                            <div class="control-buttons">
+                                <button class="control-btn" aria-label="Previous">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="19,20 9,12 19,4"/>
+                                        <rect x="5" y="4" width="2" height="16"/>
+                                    </svg>
+                                </button>
+                                <button class="control-btn main-play" aria-label="Play">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5,3 19,12 5,21"/>
+                                    </svg>
+                                </button>
+                                <button class="control-btn" aria-label="Next">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5,4 15,12 5,20"/>
+                                        <rect x="17" y="4" width="2" height="16"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equalizer">
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section class="creators" id="creators">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Behind the Sound</span>
+                <h2 class="section-title">World-Class Creators</h2>
+                <p class="section-subtitle">Our productions feature talent from Broadway, Hollywood, and the finest audio drama studios worldwide.</p>
+            </div>
+            <div class="creators-grid">
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <div class="avatar-placeholder">SR</div>
+                    </div>
+                    <h3>Sarah Reinholt</h3>
+                    <span class="creator-role">Executive Producer</span>
+                    <p>Former NPR producer with 15 years in audio storytelling</p>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <div class="avatar-placeholder">MK</div>
+                    </div>
+                    <h3>Marcus Keane</h3>
+                    <span class="creator-role">Sound Designer</span>
+                    <p>Emmy-winning sound designer from Game of Thrones</p>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <div class="avatar-placeholder">EW</div>
+                    </div>
+                    <h3>Elena Vasquez</h3>
+                    <span class="creator-role">Voice Director</span>
+                    <p>Broadway veteran with credits in 40+ productions</p>
+                </div>
+                <div class="creator-card">
+                    <div class="creator-avatar">
+                        <div class="avatar-placeholder">JT</div>
+                    </div>
+                    <h3>James Thornton</h3>
+                    <span class="creator-role">Composer</span>
+                    <p>Hollywood composer with 3 Academy Award nominations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <blockquote>
+                        <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p>"I've never experienced storytelling like this. The Last Signal made me forget I was on the subway—I was in space, feeling every moment."</p>
+                        <cite>
+                            <strong>— Alex Chen</strong>
+                            <span>Premium Subscriber</span>
+                        </cite>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p>"This is what audio drama should be. Production values that rival Netflix, with the intimacy only audio can provide."</p>
+                        <cite>
+                            <strong>— The Podcast Review</strong>
+                            <span>Industry Publication</span>
+                        </cite>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p>"Crown of Echoes has replaced my TV habit. I close my eyes and see entire worlds. Echosphere has redefined audio entertainment."</p>
+                        <cite>
+                            <strong>— Maya Johnson</strong>
+                            <span>Founding Member</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="dot active" aria-label="Testimonial 1"></button>
+                <button class="dot" aria-label="Testimonial 2"></button>
+                <button class="dot" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe" id="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="subscribe-header">
+                    <span class="section-tag">Join Echosphere</span>
+                    <h2 class="section-title">Begin Your Listening Journey</h2>
+                    <p>Unlock every production. New episodes weekly. Cancel anytime.</p>
+                </div>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <h3>Monthly</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">9</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Access to all 42 productions</li>
+                            <li>New episodes every week</li>
+                            <li>Offline listening</li>
+                            <li>Ad-free experience</li>
+                        </ul>
+                        <button class="btn btn-outline">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <span class="popular-badge">Most Popular</span>
+                        <h3>Annual</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/year</span>
+                        </div>
+                        <span class="savings">Save $29</span>
+                        <ul class="plan-features">
+                            <li>Everything in Monthly</li>
+                            <li>Early access to new shows</li>
+                            <li>Exclusive bonus content</li>
+                            <li>Behind-the-scenes features</li>
+                        </ul>
+                        <button class="btn btn-primary">Start Free Trial</button>
+                    </div>
+                </div>
+                <p class="trial-note">Start with a 14-day free trial. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Echosphere</span>
+                    </a>
+                    <p>Premium audio drama productions for the modern listener.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Spotify">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Apple Podcasts">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0zm6.525 2.568c4.988 0 9.037 4.062 9.037 9.068 0 4.39-3.286 8.61-8.253 9.13v-3.9c2.75-.46 4.876-2.913 4.876-5.863 0-3.27-2.655-5.925-5.925-5.925-3.27 0-5.925 2.655-5.925 5.925 0 2.95 2.127 5.403 4.876 5.863v3.9c-4.967-.52-8.253-4.74-8.253-9.13 0-5.006 4.05-9.068 9.037-9.068zm0 3.7a5.362 5.362 0 015.368 5.369c0 2.343-1.543 4.322-3.659 5.015v-3.602a1.875 1.875 0 10-3.418 0v3.602c-2.116-.693-3.659-2.672-3.659-5.015a5.362 5.362 0 015.368-5.369zm0 8.923c.727 0 1.32.593 1.32 1.32v4.143a1.32 1.32 0 01-2.64 0v-4.143c0-.727.593-1.32 1.32-1.32z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Shows</h4>
+                        <ul>
+                            <li><a href="#">All Productions</a></li>
+                            <li><a href="#">New Releases</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Genres</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Echosphere Studios. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
