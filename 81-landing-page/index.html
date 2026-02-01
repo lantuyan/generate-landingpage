@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATELIER | Luxury Fashion Rental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ATELIER</a>
+            <ul class="nav-links">
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+            <button class="nav-cta">Reserve Access</button>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu-links">
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#" class="mobile-cta">Reserve Access</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">The New Definition of Luxury</p>
+            <h1 class="hero-title">Access the<br>Extraordinary</h1>
+            <p class="hero-description">Curated designer pieces for those who understand that true luxury lies not in possession, but in experience.</p>
+            <a href="#collection" class="hero-cta">
+                <span>Discover the Collection</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Luxury fashion editorial" loading="eager">
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Statement Section -->
+    <section class="statement">
+        <div class="statement-container">
+            <p class="statement-label">Our Philosophy</p>
+            <h2 class="statement-text">
+                <span class="reveal-text">Luxury reimagined for the conscious generation.</span>
+                <span class="reveal-text">Access over ownership. Experience over excess.</span>
+                <span class="reveal-text">Sustainability meets splendor.</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection" id="collection">
+        <div class="collection-header">
+            <p class="section-label">The Collection</p>
+            <h2 class="section-title">Curated for the Extraordinary</h2>
+        </div>
+        <div class="collection-grid">
+            <article class="collection-item">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600&q=80" alt="Evening Gowns Collection" loading="lazy">
+                    <div class="collection-overlay">
+                        <span>View Collection</span>
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>Evening Gowns</h3>
+                    <p>Red carpet ready</p>
+                </div>
+            </article>
+            <article class="collection-item collection-item-large">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Couture Pieces" loading="lazy">
+                    <div class="collection-overlay">
+                        <span>View Collection</span>
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>Couture Pieces</h3>
+                    <p>One-of-a-kind artistry</p>
+                </div>
+            </article>
+            <article class="collection-item">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80" alt="Designer Ready-to-Wear" loading="lazy">
+                    <div class="collection-overlay">
+                        <span>View Collection</span>
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>Ready-to-Wear</h3>
+                    <p>Everyday exceptional</p>
+                </div>
+            </article>
+            <article class="collection-item">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Accessories Collection" loading="lazy">
+                    <div class="collection-overlay">
+                        <span>View Collection</span>
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>Accessories</h3>
+                    <p>Finishing touches</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Editorial Section -->
+    <section class="editorial">
+        <div class="editorial-container">
+            <div class="editorial-image">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=80" alt="Fashion editorial shoot" loading="lazy">
+            </div>
+            <div class="editorial-content">
+                <p class="section-label">The Experience</p>
+                <h2 class="editorial-title">Wear the Dream</h2>
+                <p class="editorial-description">From runway to reality—access pieces from Chanel, Valentino, Dior, and over 200 luxury houses. Each rental includes white-glove delivery, professional styling consultation, and complimentary alterations.</p>
+                <ul class="editorial-features">
+                    <li>
+                        <span class="feature-number">01</span>
+                        <span class="feature-text">Curated selection from 200+ designers</span>
+                    </li>
+                    <li>
+                        <span class="feature-number">02</span>
+                        <span class="feature-text">Personal styling consultation included</span>
+                    </li>
+                    <li>
+                        <span class="feature-number">03</span>
+                        <span class="feature-text">White-glove delivery & collection</span>
+                    </li>
+                    <li>
+                        <span class="feature-number">04</span>
+                        <span class="feature-text">Complimentary alterations service</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-header">
+            <p class="section-label">How It Works</p>
+            <h2 class="section-title">A Seamless Journey</h2>
+        </div>
+        <div class="experience-steps">
+            <div class="experience-step">
+                <div class="step-visual">
+                    <span class="step-number">01</span>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <h3>Browse & Select</h3>
+                    <p>Explore our curated collection of over 5,000 designer pieces. Filter by occasion, designer, or let our stylists guide you.</p>
+                </div>
+            </div>
+            <div class="experience-step">
+                <div class="step-visual">
+                    <span class="step-number">02</span>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <h3>Reserve & Customize</h3>
+                    <p>Book your piece for your special date. Our concierge arranges fitting appointments and alterations as needed.</p>
+                </div>
+            </div>
+            <div class="experience-step">
+                <div class="step-visual">
+                    <span class="step-number">03</span>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <h3>Receive & Revel</h3>
+                    <p>Your selection arrives in signature packaging, ready for your moment. White-glove delivery ensures perfection.</p>
+                </div>
+            </div>
+            <div class="experience-step">
+                <div class="step-visual">
+                    <span class="step-number">04</span>
+                </div>
+                <div class="step-content">
+                    <h3>Return & Repeat</h3>
+                    <p>Simply schedule collection when you're done. No cleaning required—we handle everything. Until next time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <p class="section-label">Voices</p>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <blockquote>
+                        <p>"Atelier transformed how I approach special occasions. The Valentino gown I wore to the gala made me feel like the best version of myself—without the guilt of a purchase I'd rarely repeat."</p>
+                    </blockquote>
+                    <cite>
+                        <span class="cite-name">Alexandra Chen</span>
+                        <span class="cite-title">Creative Director</span>
+                    </cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"As a fashion editor, I've seen it all. Atelier's curation rivals the best showrooms in Paris. Their service is impeccable, and the sustainability angle makes it feel right for today."</p>
+                    </blockquote>
+                    <cite>
+                        <span class="cite-name">Marie Dubois</span>
+                        <span class="cite-title">Fashion Editor, Vogue</span>
+                    </cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"For my wedding week, I had five different designer looks. The total cost was less than buying one off-the-rack dress. Atelier made my dream wedding wardrobe a reality."</p>
+                    </blockquote>
+                    <cite>
+                        <span class="cite-name">Sofia Rosetti</span>
+                        <span class="cite-title">Bride, Milan</span>
+                    </cite>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <div class="testimonial-dots">
+                    <button class="dot active" aria-label="Testimonial 1"></button>
+                    <button class="dot" aria-label="Testimonial 2"></button>
+                    <button class="dot" aria-label="Testimonial 3"></button>
+                </div>
+                <button class="testimonial-next" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <div class="membership-container">
+            <div class="membership-content">
+                <p class="section-label">Membership</p>
+                <h2 class="membership-title">Join the Inner Circle</h2>
+                <p class="membership-description">Membership unlocks priority access to new arrivals, exclusive pieces reserved for members only, and personalized styling services that understand your unique aesthetic.</p>
+            </div>
+            <div class="membership-tiers">
+                <div class="tier">
+                    <h3 class="tier-name">Atelier</h3>
+                    <div class="tier-price">
+                        <span class="price-amount">$299</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>4 rentals per month</li>
+                        <li>Standard designer selection</li>
+                        <li>Styling consultation</li>
+                        <li>Free delivery & returns</li>
+                    </ul>
+                    <button class="tier-cta">Select Atelier</button>
+                </div>
+                <div class="tier tier-featured">
+                    <span class="tier-badge">Most Popular</span>
+                    <h3 class="tier-name">Maison</h3>
+                    <div class="tier-price">
+                        <span class="price-amount">$599</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>8 rentals per month</li>
+                        <li>Full designer access</li>
+                        <li>Priority booking</li>
+                        <li>Personal stylist assigned</li>
+                        <li>Complimentary alterations</li>
+                    </ul>
+                    <button class="tier-cta">Select Maison</button>
+                </div>
+                <div class="tier">
+                    <h3 class="tier-name">Haute</h3>
+                    <div class="tier-price">
+                        <span class="price-amount">$1,299</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Unlimited rentals</li>
+                        <li>Couture & archival access</li>
+                        <li>24/7 concierge service</li>
+                        <li>Home fitting sessions</li>
+                        <li>Event wardrobe planning</li>
+                    </ul>
+                    <button class="tier-cta">Select Haute</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Begin Your Journey</h2>
+            <p class="cta-description">Join by invitation or request access to become part of the Atelier experience.</p>
+            <form class="cta-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Request Access</button>
+                </div>
+            </form>
+            <p class="cta-note">Currently accepting applications for Spring 2026 membership.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">ATELIER</a>
+                <p class="footer-tagline">Redefining luxury for the conscious generation.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Designers</a></li>
+                        <li><a href="#">Occasions</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Sizing Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v12M9 15l3 3 3-3"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="2"/>
+                        <path d="M7 10v7M12 10v7M12 13a3 3 0 016 0v4"/>
+                        <circle cx="7" cy="7" r="1"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Atelier. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
