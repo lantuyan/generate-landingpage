@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floraison Parfumerie | Botanical Artisan Fragrances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative SVG Filters -->
+    <svg class="svg-filters" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="organic-blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">❀</span>
+                <span class="logo-text">Floraison</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#process">The Art</a></li>
+                <li><a href="#testimonials">Whispers</a></li>
+                <li><a href="#contact" class="nav-cta">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-ornament hero-ornament-left">
+            <svg viewBox="0 0 200 600" class="ornament-svg">
+                <path class="vine-path" d="M180,0 C150,50 120,100 100,150 C80,200 60,250 80,300 C100,350 120,400 100,450 C80,500 60,550 80,600" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="flower-dot" cx="100" cy="150" r="8"/>
+                <circle class="flower-dot" cx="80" cy="300" r="10"/>
+                <circle class="flower-dot" cx="100" cy="450" r="8"/>
+                <path class="leaf-path" d="M100,150 Q60,130 80,100" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path class="leaf-path" d="M80,300 Q40,280 60,250" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path class="leaf-path" d="M100,450 Q60,430 80,400" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <div class="hero-ornament hero-ornament-right">
+            <svg viewBox="0 0 200 600" class="ornament-svg">
+                <path class="vine-path" d="M20,0 C50,50 80,100 100,150 C120,200 140,250 120,300 C100,350 80,400 100,450 C120,500 140,550 120,600" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="flower-dot" cx="100" cy="150" r="8"/>
+                <circle class="flower-dot" cx="120" cy="300" r="10"/>
+                <circle class="flower-dot" cx="100" cy="450" r="8"/>
+                <path class="leaf-path" d="M100,150 Q140,130 120,100" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path class="leaf-path" d="M120,300 Q160,280 140,250" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path class="leaf-path" d="M100,450 Q140,430 120,400" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-frame">
+                <div class="frame-corner frame-corner-tl"></div>
+                <div class="frame-corner frame-corner-tr"></div>
+                <div class="frame-corner frame-corner-bl"></div>
+                <div class="frame-corner frame-corner-br"></div>
+                <span class="hero-tagline">Est. 1892 • Artisan Botanical Perfumery</span>
+                <h1 class="hero-title">
+                    <span class="title-line">Where Nature</span>
+                    <span class="title-line">Becomes</span>
+                    <span class="title-line title-accent">Fragrance</span>
+                </h1>
+                <p class="hero-description">Small-batch perfumes crafted from rare flowers, harvested sustainably, and distilled through generations of artisan wisdom.</p>
+                <a href="#collection" class="btn btn-primary">
+                    <span class="btn-text">Explore Our Garden</span>
+                    <span class="btn-ornament">✿</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Descend into beauty</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-ornament section-ornament-top">
+            <svg viewBox="0 0 400 60" class="ornament-horizontal">
+                <path class="ornament-line" d="M0,30 C50,30 75,10 100,10 C125,10 150,50 200,50 C250,50 275,10 300,10 C325,10 350,30 400,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="ornament-dot" cx="100" cy="10" r="5"/>
+                <circle class="ornament-dot" cx="200" cy="50" r="6"/>
+                <circle class="ornament-dot" cx="300" cy="10" r="5"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <div class="botanical-illustration">
+                                <svg viewBox="0 0 300 400" class="botanical-svg">
+                                    <path class="stem" d="M150,400 C150,350 140,300 150,250 C160,200 145,150 150,100" fill="none" stroke="currentColor" stroke-width="3"/>
+                                    <ellipse class="petal" cx="150" cy="80" rx="30" ry="50" transform="rotate(-20 150 80)"/>
+                                    <ellipse class="petal" cx="150" cy="80" rx="30" ry="50" transform="rotate(20 150 80)"/>
+                                    <ellipse class="petal" cx="150" cy="80" rx="30" ry="50" transform="rotate(-50 150 80)"/>
+                                    <ellipse class="petal" cx="150" cy="80" rx="30" ry="50" transform="rotate(50 150 80)"/>
+                                    <ellipse class="petal" cx="150" cy="80" rx="25" ry="40"/>
+                                    <circle class="flower-center" cx="150" cy="80" r="15"/>
+                                    <path class="leaf" d="M150,250 Q100,230 80,280 Q100,270 150,250" fill="currentColor"/>
+                                    <path class="leaf" d="M150,300 Q200,280 220,330 Q200,320 150,300" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">Our Heritage</span>
+                    <h2 class="section-title">A Legacy Rooted in Petals</h2>
+                    <div class="decorative-line"></div>
+                    <p>For over a century, the Floraison atelier has cultivated the art of botanical perfumery in the verdant valleys where rare flowers bloom under morning mists. Our founders believed that true fragrance cannot be hurried—it must unfurl naturally, like petals greeting the dawn.</p>
+                    <p>Each generation has passed down the sacred techniques: the patience to harvest at perfect bloom, the wisdom to extract without diminishing, the artistry to compose scents that speak to the soul. We work only with flowers grown in harmony with the land, ensuring that our fragrances carry not just beauty, but integrity.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">❧</span>
+                            <span class="feature-text">Sustainable Harvesting</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">❧</span>
+                            <span class="feature-text">Small-Batch Distillation</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">❧</span>
+                            <span class="feature-text">Four Generations of Craft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Garden</span>
+                <h2 class="section-title">Our Signature Collection</h2>
+                <div class="decorative-line decorative-line-center"></div>
+                <p class="section-intro">Each fragrance is a journey through botanical landscapes, capturing the essence of rare blooms at their most ethereal moment.</p>
+            </div>
+            <div class="collection-grid">
+                <article class="perfume-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="perfume-bottle">
+                                <svg viewBox="0 0 100 160" class="bottle-svg">
+                                    <rect class="bottle-cap" x="38" y="5" width="24" height="15" rx="2"/>
+                                    <path class="bottle-neck" d="M42,20 L42,35 L35,50 L35,50 L65,50 L65,50 L58,35 L58,20" fill="currentColor"/>
+                                    <rect class="bottle-body" x="25" y="50" width="50" height="100" rx="5"/>
+                                    <ellipse class="bottle-liquid" cx="50" cy="110" rx="20" ry="30"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="perfume-name">Iris Nocturne</h3>
+                            <p class="perfume-notes">Florentine Iris • Night Jasmine • Aged Sandalwood</p>
+                            <p class="perfume-description">A twilight reverie where powdery iris meets the intoxicating whispers of jasmine blooming under moonlight.</p>
+                            <span class="perfume-price">€285</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="perfume-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="perfume-bottle bottle-rose">
+                                <svg viewBox="0 0 100 160" class="bottle-svg">
+                                    <ellipse class="bottle-cap" cx="50" cy="12" rx="12" ry="8"/>
+                                    <path class="bottle-neck" d="M42,20 L42,40 L30,55 L70,55 L58,40 L58,20" fill="currentColor"/>
+                                    <ellipse class="bottle-body" cx="50" cy="105" rx="30" ry="50"/>
+                                    <ellipse class="bottle-liquid" cx="50" cy="115" rx="22" ry="35"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="perfume-name">Rosa Damascena</h3>
+                            <p class="perfume-notes">Bulgarian Rose • Saffron • Oud Essence</p>
+                            <p class="perfume-description">The queen of flowers in her most opulent form, enriched with precious saffron threads and rare oud.</p>
+                            <span class="perfume-price">€340</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="perfume-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="perfume-bottle bottle-vert">
+                                <svg viewBox="0 0 100 160" class="bottle-svg">
+                                    <rect class="bottle-cap" x="40" y="5" width="20" height="20" rx="1"/>
+                                    <path class="bottle-neck" d="M44,25 L44,45 L25,60 L75,60 L56,45 L56,25" fill="currentColor"/>
+                                    <path class="bottle-body" d="M20,60 L20,145 Q20,155 30,155 L70,155 Q80,155 80,145 L80,60 Z"/>
+                                    <ellipse class="bottle-liquid" cx="50" cy="115" rx="25" ry="30"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="perfume-name">Jardin Sauvage</h3>
+                            <p class="perfume-notes">Wild Fig • Verbena • Forest Moss</p>
+                            <p class="perfume-description">An untamed garden where fig trees cast dappled shadows and wild herbs perfume the morning air.</p>
+                            <span class="perfume-price">€265</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="collection-cta">
+                <a href="#contact" class="btn btn-secondary">
+                    <span class="btn-text">View Full Collection</span>
+                    <span class="btn-ornament">❀</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="section-ornament section-ornament-top">
+            <svg viewBox="0 0 400 60" class="ornament-horizontal">
+                <path class="ornament-line" d="M0,30 C50,30 75,10 100,10 C125,10 150,50 200,50 C250,50 275,10 300,10 C325,10 350,30 400,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="ornament-dot" cx="100" cy="10" r="5"/>
+                <circle class="ornament-dot" cx="200" cy="50" r="6"/>
+                <circle class="ornament-dot" cx="300" cy="10" r="5"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Craft</span>
+                <h2 class="section-title">From Petal to Perfume</h2>
+                <div class="decorative-line decorative-line-center"></div>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                <div class="process-step">
+                    <div class="step-number">I</div>
+                    <div class="step-content">
+                        <h3>Cultivation</h3>
+                        <p>Our gardens bloom with rare botanicals—Florentine iris, Bulgarian roses, night-blooming jasmine—each tended by hand in soil enriched over generations.</p>
+                    </div>
+                    <div class="step-ornament">
+                        <svg viewBox="0 0 60 60" class="step-svg">
+                            <circle class="step-circle" cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path class="step-icon" d="M30,15 L30,45 M20,25 Q30,35 40,25" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">II</div>
+                    <div class="step-content">
+                        <h3>Harvest</h3>
+                        <p>At dawn, when essential oils concentrate in the petals, our artisans harvest by hand—each flower cut at its moment of perfection.</p>
+                    </div>
+                    <div class="step-ornament">
+                        <svg viewBox="0 0 60 60" class="step-svg">
+                            <circle class="step-circle" cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path class="step-icon" d="M20,40 L30,20 L40,40 M25,30 L35,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">III</div>
+                    <div class="step-content">
+                        <h3>Distillation</h3>
+                        <p>In copper alembics passed down through generations, we coax essence from petal through gentle steam—never rushing, never forcing.</p>
+                    </div>
+                    <div class="step-ornament">
+                        <svg viewBox="0 0 60 60" class="step-svg">
+                            <circle class="step-circle" cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <ellipse class="step-icon" cx="30" cy="35" rx="12" ry="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path class="step-icon" d="M30,27 L30,15 Q35,12 30,10" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">IV</div>
+                    <div class="step-content">
+                        <h3>Composition</h3>
+                        <p>Our master perfumer blends essences in ratios refined over a century—each formula a family secret, each bottle a work of living art.</p>
+                    </div>
+                    <div class="step-ornament">
+                        <svg viewBox="0 0 60 60" class="step-svg">
+                            <circle class="step-circle" cx="30" cy="30" r="25" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle class="step-icon" cx="30" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle class="step-icon" cx="30" cy="30" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Whispers</span>
+                <h2 class="section-title">Words from Our Garden</h2>
+                <div class="decorative-line decorative-line-center"></div>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-frame">
+                        <div class="quote-ornament">"</div>
+                        <blockquote>
+                            <p>Wearing Iris Nocturne is like walking through a moonlit garden where every flower has a secret to share. It evolves on my skin like a living poem.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="author-name">Marguerite D.</span>
+                            <span class="author-location">Paris, France</span>
+                        </cite>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-frame">
+                        <div class="quote-ornament">"</div>
+                        <blockquote>
+                            <p>I have sought the perfect rose fragrance for decades. Rosa Damascena ended my search—it captures the soul of the flower, not just its scent.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="author-name">Elena V.</span>
+                            <span class="author-location">Vienna, Austria</span>
+                        </cite>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-frame">
+                        <div class="quote-ornament">"</div>
+                        <blockquote>
+                            <p>The attention to craft is apparent in every detail. These are not perfumes—they are bottled memories of gardens that exist only in dreams.</p>
+                        </blockquote>
+                        <cite>
+                            <span class="author-name">James W.</span>
+                            <span class="author-location">London, England</span>
+                        </cite>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
+                    <span>❮</span>
+                </button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-btn carousel-next" aria-label="Next testimonial">
+                    <span>❯</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-ornament section-ornament-top">
+            <svg viewBox="0 0 400 60" class="ornament-horizontal">
+                <path class="ornament-line" d="M0,30 C50,30 75,10 100,10 C125,10 150,50 200,50 C250,50 275,10 300,10 C325,10 350,30 400,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="ornament-dot" cx="100" cy="10" r="5"/>
+                <circle class="ornament-dot" cx="200" cy="50" r="6"/>
+                <circle class="ornament-dot" cx="300" cy="10" r="5"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-label">Visit Our Atelier</span>
+                    <h2 class="section-title">Begin Your Journey</h2>
+                    <div class="decorative-line"></div>
+                    <p>We invite you to experience our fragrances in person at our historic atelier. Schedule a private consultation where our perfumers will guide you through our collection and help discover your signature scent.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">❧</span>
+                            <div>
+                                <strong>Atelier Address</strong>
+                                <p>23 Rue des Fleurs<br>Grasse, Provence 06130</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">❧</span>
+                            <div>
+                                <strong>Correspondence</strong>
+                                <p>atelier@floraison.com<br>+33 4 93 XX XX XX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">❧</span>
+                            <div>
+                                <strong>Visiting Hours</strong>
+                                <p>Tuesday – Saturday<br>10:00 – 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="form-frame">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="input-ornament"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-ornament"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Area of Interest</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Select an option</option>
+                                    <option value="consultation">Private Consultation</option>
+                                    <option value="collection">View Collection</option>
+                                    <option value="custom">Bespoke Fragrance</option>
+                                    <option value="atelier">Atelier Visit</option>
+                                </select>
+                                <div class="input-ornament"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                                <div class="input-ornament"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">Send Inquiry</span>
+                                <span class="btn-ornament">✿</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-ornament">
+            <svg viewBox="0 0 600 100" class="footer-svg">
+                <path class="footer-vine" d="M0,50 C100,30 150,70 200,50 C250,30 300,70 350,50 C400,30 450,70 500,50 C550,30 600,50 600,50" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle class="footer-flower" cx="100" cy="40" r="8"/>
+                <circle class="footer-flower" cx="200" cy="50" r="10"/>
+                <circle class="footer-flower" cx="300" cy="40" r="8"/>
+                <circle class="footer-flower" cx="400" cy="50" r="10"/>
+                <circle class="footer-flower" cx="500" cy="40" r="8"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">❀</span>
+                    <span class="logo-text">Floraison</span>
+                    <p class="footer-tagline">Botanical Artisan Perfumery since 1892</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#about">Our Story</a></li>
+                            <li><a href="#collection">Collection</a></li>
+                            <li><a href="#process">The Art</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Visit Atelier</a></li>
+                            <li><a href="#contact">Inquiries</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <span>✦</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <span>✦</span>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <span>✦</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Floraison Parfumerie. All rights reserved.</p>
+                <p class="footer-crafted">Crafted with botanical devotion in Provence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
