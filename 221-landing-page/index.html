@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminisce — Preserve Your Life's Moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Paper Grain Overlay -->
+    <div class="grain-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-brand">
+            <span class="nav-logo">Reminisce</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#ai" class="nav-link">AI Enhancement</a>
+            <a href="#privacy" class="nav-link">Privacy</a>
+            <a href="#journey" class="nav-link">Journey</a>
+        </div>
+        <button class="nav-cta neumorphic-btn">Begin Preserving</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">A journal for your lifetime</p>
+            <h1 class="hero-title">
+                <span class="title-line">What moments</span>
+                <span class="title-line">deserve to be</span>
+                <span class="title-line accent">remembered?</span>
+            </h1>
+            <p class="hero-subtitle">
+                Daily prompts, photo memories, and AI-powered enhancement to help you capture 
+                life's significant moments with richer detail and deeper meaning.
+            </p>
+            <div class="hero-actions">
+                <button class="hero-btn primary neumorphic-btn-pulse">
+                    <span>Start Your Journey</span>
+                </button>
+                <button class="hero-btn secondary neumorphic-btn-soft">
+                    <span>Explore Features</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="memory-island island-1">
+                <div class="island-content">
+                    <span class="island-date">March 14, 2023</span>
+                    <p class="island-text">"The way sunlight filtered through the kitchen window as we laughed about nothing at all..."</p>
+                </div>
+            </div>
+            <div class="memory-island island-2">
+                <div class="island-content">
+                    <span class="island-icon">📸</span>
+                    <p class="island-text">Captured moments enhanced with AI context</p>
+                </div>
+            </div>
+            <div class="memory-island island-3">
+                <div class="island-content">
+                    <span class="island-prompt">Today's Prompt</span>
+                    <p class="island-text">"Describe a sound that instantly transports you to childhood..."</p>
+                </div>
+            </div>
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section - Floating Islands -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <p class="section-eyebrow">Memory Categories</p>
+            <h2 class="section-title">Separate territories<br>connected by time</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-island neumorphic-card">
+                <div class="feature-icon">📝</div>
+                <h3 class="feature-title">Daily Prompts</h3>
+                <p class="feature-desc">Thoughtfully crafted questions that unlock memories you didn't know you had. From the ordinary to the extraordinary.</p>
+                <div class="feature-example">
+                    <span class="example-label">Example prompt</span>
+                    <p>"What scent carries you back to a specific moment in time?"</p>
+                </div>
+            </div>
+            <div class="feature-island neumorphic-card">
+                <div class="feature-icon">🖼️</div>
+                <h3 class="feature-title">Photo Memories</h3>
+                <p class="feature-desc">Your visual history organized by emotion, not just date. Attach stories to images before they fade into obscurity.</p>
+                <div class="feature-visual">
+                    <div class="photo-stack">
+                        <div class="photo-card"></div>
+                        <div class="photo-card"></div>
+                        <div class="photo-card"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-island neumorphic-card">
+                <div class="feature-icon">✨</div>
+                <h3 class="feature-title">AI Enhancement</h3>
+                <p class="feature-desc">Intelligent context that helps you remember details you've forgotten. Weather, news, locations—automatically enriched.</p>
+                <div class="feature-tags">
+                    <span class="tag">Weather data</span>
+                    <span class="tag">Location context</span>
+                    <span class="tag">Historical events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Enhancement Section -->
+    <section id="ai" class="ai-section">
+        <div class="ai-visual">
+            <div class="memory-transformation">
+                <div class="memory-before neumorphic-inset">
+                    <span class="memory-label">Your memory</span>
+                    <p>"That summer at the lake house..."</p>
+                </div>
+                <div class="transformation-arrow">→</div>
+                <div class="memory-after neumorphic-inset">
+                    <span class="memory-label">AI enhanced</span>
+                    <p>"August 2019 at Lake Tahoe. The wildfires painted sunsets in unusual purples. You mentioned the smell of pine and woodsmoke mixing..."</p>
+                </div>
+            </div>
+        </div>
+        <div class="ai-content">
+            <p class="section-eyebrow">Intelligent Context</p>
+            <h2 class="section-title">Memories enhanced,<br>not fabricated</h2>
+            <p class="ai-description">
+                Our AI doesn't invent your past—it gently fills in the gaps. Weather on that day, 
+                news that shaped the world around you, places you visited. Your memories, 
+                simply preserved with the context that makes them whole.
+            </p>
+            <ul class="ai-features">
+                <li class="ai-feature">
+                    <span class="feature-bullet"></span>
+                    <span>Automatic weather and location context</span>
+                </li>
+                <li class="ai-feature">
+                    <span class="feature-bullet"></span>
+                    <span>Historical event integration</span>
+                </li>
+                <li class="ai-feature">
+                    <span class="feature-bullet"></span>
+                    <span>Emotional sentiment analysis</span>
+                </li>
+                <li class="ai-feature">
+                    <span class="feature-bullet"></span>
+                    <span>Smart photo organization</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="privacy-content">
+            <p class="section-eyebrow">Sacred Trust</p>
+            <h2 class="section-title">Your memories<br>belong to you</h2>
+            <p class="privacy-description">
+                Memories are the most personal data we possess. We treat them accordingly—
+                with bank-grade encryption, local-first storage, and a commitment that 
+                your private history will never be a product.
+            </p>
+            <div class="privacy-promises">
+                <div class="promise neumorphic-soft">
+                    <span class="promise-icon">🔒</span>
+                    <h4>End-to-end encryption</h4>
+                    <p>Your memories are encrypted before they leave your device</p>
+                </div>
+                <div class="promise neumorphic-soft">
+                    <span class="promise-icon">💾</span>
+                    <h4>Local-first storage</h4>
+                    <p>Your data lives on your device by default, not our servers</p>
+                </div>
+                <div class="promise neumorphic-soft">
+                    <span class="promise-icon">🚫</span>
+                    <h4>No data mining</h4>
+                    <p>We will never sell, share, or analyze your memories for profit</p>
+                </div>
+            </div>
+        </div>
+        <div class="privacy-visual">
+            <div class="vault-container neumorphic-inset">
+                <div class="vault-content">
+                    <span class="vault-icon">📓</span>
+                    <p class="vault-text">Your memories, sealed and safe</p>
+                </div>
+                <div class="vault-ring ring-1"></div>
+                <div class="vault-ring ring-2"></div>
+                <div class="vault-ring ring-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey/Workflow Section -->
+    <section id="journey" class="journey">
+        <div class="section-header centered">
+            <p class="section-eyebrow">The Practice</p>
+            <h2 class="section-title">A ritual of remembrance</h2>
+        </div>
+        <div class="journey-timeline">
+            <div class="timeline-step">
+                <div class="step-number neumorphic-circle">1</div>
+                <h3 class="step-title">Receive</h3>
+                <p class="step-desc">A gentle prompt arrives—sometimes daily, sometimes when inspiration strikes.</p>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="step-number neumorphic-circle">2</div>
+                <h3 class="step-title">Reflect</h3>
+                <p class="step-desc">Write, speak, or photograph your response. However the memory wants to be captured.</p>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="step-number neumorphic-circle">3</div>
+                <h3 class="step-title">Enrich</h3>
+                <p class="step-desc">AI quietly adds context—weather, location, the world as it was that day.</p>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="step-number neumorphic-circle">4</div>
+                <h3 class="step-title">Preserve</h3>
+                <p class="step-desc">Your memory is secured, encrypted, and preserved for the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2 class="cta-title">Begin preserving<br>what matters</h2>
+            <p class="cta-subtitle">
+                The best time to capture a memory is now. The second best time was yesterday.
+                Start your practice of remembrance today.
+            </p>
+            <div class="cta-actions">
+                <button class="cta-btn primary neumorphic-btn-pulse">
+                    <span>Start Free Trial</span>
+                </button>
+                <p class="cta-note">14 days free • No credit card required</p>
+            </div>
+        </div>
+        <div class="cta-accent orb-large"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">
+            <span class="footer-logo">Reminisce</span>
+            <p class="footer-tagline">Preserving life's significant moments</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Product</h4>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Download</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Reminisce. All memories respected.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
