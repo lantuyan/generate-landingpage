@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateAxis — Municipal Climate Intelligence Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-mark">◆</span>
+                <span class="logo-text">ClimateAxis</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact" class="nav-cta">Request Demo</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#contact" class="nav-cta">Request Demo</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-label reveal-up">Municipal Climate Intelligence</div>
+                <h1 class="hero-title">
+                    <span class="title-line reveal-up" style="--delay: 0.1s">Transform</span>
+                    <span class="title-line reveal-up" style="--delay: 0.2s">Environmental</span>
+                    <span class="title-line title-accent reveal-up" style="--delay: 0.3s">Data</span>
+                    <span class="title-line reveal-up" style="--delay: 0.4s">Into Action</span>
+                </h1>
+                <p class="hero-description reveal-up" style="--delay: 0.5s">
+                    Empowering cities with precision climate analytics. Track carbon footprints,
+                    predict climate risks, and architect sustainable infrastructure with
+                    institutional-grade data visualization.
+                </p>
+                <div class="hero-actions reveal-up" style="--delay: 0.6s">
+                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="#platform" class="btn btn-secondary">Explore Platform</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="typographic-sculpture">
+                    <div class="sculpture-layer layer-1">CO₂</div>
+                    <div class="sculpture-layer layer-2">2.4°</div>
+                    <div class="sculpture-layer layer-3">NET</div>
+                    <div class="sculpture-layer layer-4">ZERO</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-up">
+                    <span class="stat-number" data-target="142">0</span>
+                    <span class="stat-label">Municipalities Served</span>
+                </div>
+                <div class="stat-item reveal-up" style="--delay: 0.1s">
+                    <span class="stat-number" data-target="2.8" data-suffix="M">0</span>
+                    <span class="stat-label">Tons CO₂ Tracked</span>
+                </div>
+                <div class="stat-item reveal-up" style="--delay: 0.2s">
+                    <span class="stat-number" data-target="97" data-suffix="%">0</span>
+                    <span class="stat-label">Prediction Accuracy</span>
+                </div>
+                <div class="stat-item reveal-up" style="--delay: 0.3s">
+                    <span class="stat-number" data-target="23" data-suffix="%">0</span>
+                    <span class="stat-label">Avg. Emission Reduction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform" id="platform">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">The Platform</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    Climate Intelligence<br>Built for Governance
+                </h2>
+                <p class="section-description reveal-up" style="--delay: 0.2s">
+                    A comprehensive suite of tools designed for municipal decision-makers.
+                    Complex environmental metrics translated into clear, actionable dashboards.
+                </p>
+            </div>
+            <div class="platform-grid">
+                <div class="platform-card reveal-up" style="--delay: 0.1s">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="36" height="36" stroke="currentColor" stroke-width="2"/>
+                            <line x1="6" y1="18" x2="42" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="18" y1="18" x2="18" y2="42" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Carbon Dashboard</h3>
+                    <p class="card-description">
+                        Real-time emissions tracking across all municipal sectors.
+                        Granular data from transportation, buildings, and industry.
+                    </p>
+                </div>
+                <div class="platform-card reveal-up" style="--delay: 0.2s">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 36L18 24L26 32L42 12" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="42" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <line x1="6" y1="42" x2="42" y2="42" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Predictive Analytics</h3>
+                    <p class="card-description">
+                        Machine learning models forecasting climate risks,
+                        extreme weather patterns, and infrastructure vulnerabilities.
+                    </p>
+                </div>
+                <div class="platform-card reveal-up" style="--delay: 0.3s">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="8" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="26" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+                            <rect x="26" y="26" width="14" height="14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Infrastructure Mapping</h3>
+                    <p class="card-description">
+                        Spatial analysis of urban assets, identifying optimal
+                        locations for renewable installations and green corridors.
+                    </p>
+                </div>
+                <div class="platform-card reveal-up" style="--delay: 0.4s">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 8V24L34 34" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Compliance Tracking</h3>
+                    <p class="card-description">
+                        Automated monitoring against national and international
+                        climate commitments. Audit-ready reporting systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics" id="metrics">
+        <div class="container">
+            <div class="metrics-layout">
+                <div class="metrics-content">
+                    <span class="section-label reveal-up">Data Clarity</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                        Complex Metrics,<br>Clear Decisions
+                    </h2>
+                    <p class="section-description reveal-up" style="--delay: 0.2s">
+                        Our visualization engine transforms terabytes of environmental
+                        data into intuitive dashboards. Every metric designed for
+                        municipal governance, not data scientists.
+                    </p>
+                    <ul class="metrics-list">
+                        <li class="reveal-up" style="--delay: 0.3s">
+                            <span class="metric-icon">◆</span>
+                            <span>Scope 1, 2, and 3 emissions breakdowns</span>
+                        </li>
+                        <li class="reveal-up" style="--delay: 0.35s">
+                            <span class="metric-icon">◆</span>
+                            <span>Heat island effect mapping</span>
+                        </li>
+                        <li class="reveal-up" style="--delay: 0.4s">
+                            <span class="metric-icon">◆</span>
+                            <span>Flood risk probability zones</span>
+                        </li>
+                        <li class="reveal-up" style="--delay: 0.45s">
+                            <span class="metric-icon">◆</span>
+                            <span>Green infrastructure ROI projections</span>
+                        </li>
+                        <li class="reveal-up" style="--delay: 0.5s">
+                            <span class="metric-icon">◆</span>
+                            <span>Renewable energy potential analysis</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="metrics-visual reveal-up" style="--delay: 0.3s">
+                    <div class="data-sculpture">
+                        <div class="data-bar" style="--height: 85%; --delay: 0.1s">
+                            <span class="bar-label">Transportation</span>
+                            <span class="bar-value">34%</span>
+                        </div>
+                        <div class="data-bar" style="--height: 70%; --delay: 0.2s">
+                            <span class="bar-label">Buildings</span>
+                            <span class="bar-value">28%</span>
+                        </div>
+                        <div class="data-bar" style="--height: 55%; --delay: 0.3s">
+                            <span class="bar-label">Industry</span>
+                            <span class="bar-value">22%</span>
+                        </div>
+                        <div class="data-bar accent" style="--height: 40%; --delay: 0.4s">
+                            <span class="bar-label">Other</span>
+                            <span class="bar-value">16%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">Implementation</span>
+                <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                    Pathways to<br>Net Zero Cities
+                </h2>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-item reveal-up" style="--delay: 0.1s">
+                    <span class="solution-number">01</span>
+                    <div class="solution-content">
+                        <h3>Baseline Assessment</h3>
+                        <p>Comprehensive audit of current emissions, infrastructure, and climate vulnerabilities. Establishing measurable benchmarks for transformation.</p>
+                    </div>
+                </div>
+                <div class="solution-item reveal-up" style="--delay: 0.2s">
+                    <span class="solution-number">02</span>
+                    <div class="solution-content">
+                        <h3>Scenario Modeling</h3>
+                        <p>Interactive projections showing impact of policy decisions. Compare pathways to carbon neutrality with cost-benefit analyses.</p>
+                    </div>
+                </div>
+                <div class="solution-item reveal-up" style="--delay: 0.3s">
+                    <span class="solution-number">03</span>
+                    <div class="solution-content">
+                        <h3>Action Planning</h3>
+                        <p>Prioritized roadmaps for infrastructure upgrades, renewable integration, and behavioral change programs. Budget-aligned recommendations.</p>
+                    </div>
+                </div>
+                <div class="solution-item reveal-up" style="--delay: 0.4s">
+                    <span class="solution-number">04</span>
+                    <div class="solution-content">
+                        <h3>Progress Monitoring</h3>
+                        <p>Continuous tracking against targets with automated alerts. Quarterly reports for stakeholders and public transparency dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content reveal-up">
+                <blockquote>
+                    "ClimateAxis transformed how our city approaches climate policy.
+                    What once required months of analysis is now available at a glance.
+                    The clarity of data has accelerated our council's decision-making tenfold."
+                </blockquote>
+                <div class="testimonial-author">
+                    <span class="author-name">Dr. Helena Voss</span>
+                    <span class="author-title">Chief Sustainability Officer, City of Rotterdam</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-content">
+                    <span class="section-label reveal-up">Partnership</span>
+                    <h2 class="section-title reveal-up" style="--delay: 0.1s">
+                        Begin Your City's<br>Climate Transformation
+                    </h2>
+                    <p class="section-description reveal-up" style="--delay: 0.2s">
+                        Schedule a consultation with our municipal climate specialists.
+                        Discover how ClimateAxis can accelerate your sustainability agenda.
+                    </p>
+                    <div class="contact-info reveal-up" style="--delay: 0.3s">
+                        <div class="info-item">
+                            <span class="info-label">General Inquiries</span>
+                            <a href="mailto:hello@climateaxis.gov">hello@climateaxis.gov</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Municipal Partnerships</span>
+                            <a href="mailto:cities@climateaxis.gov">cities@climateaxis.gov</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-up" style="--delay: 0.2s">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Official Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="municipality">Municipality / Organization</label>
+                            <input type="text" id="municipality" name="municipality" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="population">Population Served</label>
+                            <select id="population" name="population" required>
+                                <option value="">Select range</option>
+                                <option value="<50k">Under 50,000</option>
+                                <option value="50k-250k">50,000 — 250,000</option>
+                                <option value="250k-1m">250,000 — 1,000,000</option>
+                                <option value=">1m">Over 1,000,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">How can we assist your climate goals?</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-mark">◆</span>
+                        <span class="logo-text">ClimateAxis</span>
+                    </a>
+                    <p>Municipal climate intelligence for a sustainable future.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#platform">Features</a></li>
+                        <li><a href="#metrics">Data Metrics</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Data Security</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ClimateAxis. All rights reserved.</p>
+                <p>Committed to carbon-neutral operations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
