@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorPulse - Your Unified Creator Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="industrial-grid"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">CreatorPulse</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Sign In</a>
+                <a href="#cta" class="btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu glass-panel">
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#platforms">Platforms</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#cta" class="btn-primary">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge glass-badge pulse-in">
+                <span class="badge-dot"></span>
+                <span>Now tracking $2.4B+ in creator earnings</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Your creative empire,</span>
+                <span class="title-line gradient-text">one luminous dashboard.</span>
+            </h1>
+            <p class="hero-description">
+                Unite your YouTube, Patreon, Substack, and TikTok earnings in a crystalline command center.
+                See the full picture of your creator business with the clarity it deserves.
+            </p>
+            <div class="hero-cta">
+                <a href="#cta" class="btn-primary btn-large">
+                    <span>Start Your Free Trial</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn-secondary">
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item glass-micro">
+                    <span class="stat-value">50K+</span>
+                    <span class="stat-label">Active Creators</span>
+                </div>
+                <div class="stat-item glass-micro">
+                    <span class="stat-value">4.9★</span>
+                    <span class="stat-label">Creator Rating</span>
+                </div>
+                <div class="stat-item glass-micro">
+                    <span class="stat-value">6</span>
+                    <span class="stat-label">Platforms Unified</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="dashboard-preview glass-panel floating-island">
+                <div class="preview-header">
+                    <div class="preview-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="preview-title">Dashboard Overview</span>
+                </div>
+                <div class="preview-content">
+                    <div class="mini-chart">
+                        <div class="chart-bar" style="--height: 60%"></div>
+                        <div class="chart-bar" style="--height: 80%"></div>
+                        <div class="chart-bar" style="--height: 45%"></div>
+                        <div class="chart-bar" style="--height: 90%"></div>
+                        <div class="chart-bar" style="--height: 70%"></div>
+                        <div class="chart-bar active" style="--height: 95%"></div>
+                    </div>
+                    <div class="preview-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Total Revenue</span>
+                            <span class="metric-value">$12,847</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">This Month</span>
+                            <span class="metric-value positive">+23%</span>
+                        </div>
+                    </div>
+                    <div class="platform-icons">
+                        <div class="platform-icon youtube"></div>
+                        <div class="platform-icon patreon"></div>
+                        <div class="platform-icon substack"></div>
+                        <div class="platform-icon tiktok"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-card glass-card card-1">
+                <span class="card-icon">📈</span>
+                <span class="card-text">Revenue up 23%</span>
+            </div>
+            <div class="floating-card glass-card card-2">
+                <span class="card-icon">👥</span>
+                <span class="card-text">1,247 new followers</span>
+            </div>
+            <div class="floating-card glass-card card-3">
+                <span class="card-icon">💰</span>
+                <span class="card-text">$847 from Patreon</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <span class="section-tag glass-badge">Features</span>
+            <h2 class="section-title">Every stream, every dollar,<br><span class="gradient-text">one clear vision.</span></h2>
+            <p class="section-description">
+                Your mentor for the creator economy. We've built the tools we wished existed
+                when we started our own creator journeys.
+            </p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card glass-panel floating-island" data-pulse="1">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3v18h18"/>
+                            <path d="M7 16l4-4 4 4 5-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Unified Analytics</h3>
+                <p class="feature-description">
+                    See all your platforms in one crystalline view. Compare performance,
+                    spot trends, and understand your audience across every channel.
+                </p>
+            </div>
+            <div class="feature-card glass-panel floating-island" data-pulse="2">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Real-Time Tracking</h3>
+                <p class="feature-description">
+                    Watch your earnings flow in live. Every subscription, tip, and ad dollar
+                    appears the moment it happens, not days later.
+                </p>
+            </div>
+            <div class="feature-card glass-panel floating-island" data-pulse="3">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Smart Insights</h3>
+                <p class="feature-description">
+                    AI-powered recommendations that feel like advice from a trusted mentor.
+                    Know what's working and why, without the complexity.
+                </p>
+            </div>
+            <div class="feature-card glass-panel floating-island" data-pulse="4">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2"/>
+                            <path d="M7 11V7a5 5 0 0110 0v4"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Bank-Grade Security</h3>
+                <p class="feature-description">
+                    Your financial data deserves protection. End-to-end encryption and
+                    read-only platform access keeps your accounts safe.
+                </p>
+            </div>
+            <div class="feature-card glass-panel floating-island" data-pulse="5">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <path d="M14 2v6h6"/>
+                            <path d="M16 13H8"/>
+                            <path d="M16 17H8"/>
+                            <path d="M10 9H8"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Tax-Ready Reports</h3>
+                <p class="feature-description">
+                    Export beautiful, accountant-friendly reports. Track expenses,
+                    categorize income, and make tax season stress-free.
+                </p>
+            </div>
+            <div class="feature-card glass-panel floating-island" data-pulse="6">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="feature-title">Audience Intelligence</h3>
+                <p class="feature-description">
+                    Understand who supports you and why. Unified audience insights
+                    reveal your true fans across every platform.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms" class="platforms">
+        <div class="section-header">
+            <span class="section-tag glass-badge">Integrations</span>
+            <h2 class="section-title">Connect the platforms<br><span class="gradient-text">you already love.</span></h2>
+            <p class="section-description">
+                One-click integrations with the platforms powering the creator economy.
+                New connections added monthly.
+            </p>
+        </div>
+        <div class="platforms-showcase">
+            <div class="platform-card glass-panel floating-island">
+                <div class="platform-logo youtube-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </div>
+                <h3>YouTube</h3>
+                <p>Ad revenue, memberships, Super Chats & merchandise</p>
+                <span class="platform-status connected">Connected</span>
+            </div>
+            <div class="platform-card glass-panel floating-island">
+                <div class="platform-logo patreon-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.386.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.614-3.864 8.614-8.613C24 4.4 20.136.524 15.386.524M.003 23.537h4.22V.524H.003"/>
+                    </svg>
+                </div>
+                <h3>Patreon</h3>
+                <p>Recurring pledges, per-creation earnings & tiers</p>
+                <span class="platform-status connected">Connected</span>
+            </div>
+            <div class="platform-card glass-panel floating-island">
+                <div class="platform-logo substack-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                    </svg>
+                </div>
+                <h3>Substack</h3>
+                <p>Paid subscriptions, founding members & tips</p>
+                <span class="platform-status connected">Connected</span>
+            </div>
+            <div class="platform-card glass-panel floating-island">
+                <div class="platform-logo tiktok-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                </div>
+                <h3>TikTok</h3>
+                <p>Creator Fund, LIVE gifts & brand partnerships</p>
+                <span class="platform-status connected">Connected</span>
+            </div>
+            <div class="platform-card glass-panel floating-island coming-soon">
+                <div class="platform-logo twitch-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                    </svg>
+                </div>
+                <h3>Twitch</h3>
+                <p>Subscriptions, bits & ad revenue</p>
+                <span class="platform-status">Coming Soon</span>
+            </div>
+            <div class="platform-card glass-panel floating-island coming-soon">
+                <div class="platform-logo gumroad-logo">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 16.229a7.048 7.048 0 01-4.477 2.46v-2.231c1.258-.235 2.39-.9 3.188-1.9l.098-.122 1.191 1.793zm-9.625-9.4c1.01-.77 2.218-1.233 3.549-1.356V3.25a9.072 9.072 0 015.259 1.783l-1.191 1.795a6.983 6.983 0 00-3.886-1.277V7.78a4.81 4.81 0 012.591 1.016c.767.587 1.332 1.414 1.614 2.36.281.944.269 1.959-.036 2.897a4.813 4.813 0 01-1.683 2.315l-.088.067v2.236a9.047 9.047 0 01-5.311-1.814l1.191-1.793c.98.744 2.151 1.182 3.392 1.275v-2.224a4.81 4.81 0 01-2.591-1.016 4.812 4.812 0 01-1.614-2.36 4.815 4.815 0 01.036-2.897 4.815 4.815 0 011.768-2.361z"/>
+                    </svg>
+                </div>
+                <h3>Gumroad</h3>
+                <p>Digital products, memberships & tips</p>
+                <span class="platform-status">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="testimonials-wrapper">
+            <div class="testimonial-card glass-panel floating-island">
+                <div class="testimonial-content">
+                    <p>"Finally, I can see my entire creative business in one place. It's like having a CFO who actually understands creators."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <span class="author-name">Sarah Mitchell</span>
+                        <span class="author-title">YouTuber • 1.2M subscribers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card glass-panel floating-island">
+                <div class="testimonial-content">
+                    <p>"The tax reports alone saved me 20 hours this year. Now I actually know where my money comes from."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JC</div>
+                    <div class="author-info">
+                        <span class="author-name">James Chen</span>
+                        <span class="author-title">Substack Writer • 45K subscribers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card glass-panel floating-island">
+                <div class="testimonial-content">
+                    <p>"Went from spreadsheet chaos to crystal clarity. This is how creator tools should feel—empowering, not overwhelming."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AL</div>
+                    <div class="author-info">
+                        <span class="author-name">Aisha Lee</span>
+                        <span class="author-title">Multi-platform Creator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <span class="section-tag glass-badge">Pricing</span>
+            <h2 class="section-title">Invest in clarity,<br><span class="gradient-text">not complexity.</span></h2>
+            <p class="section-description">
+                Simple pricing that grows with you. Start free, upgrade when you're ready.
+            </p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card glass-panel floating-island">
+                <div class="pricing-header">
+                    <h3 class="plan-name">Starter</h3>
+                    <p class="plan-description">For creators just getting started</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="price">0</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> 2 platform connections</li>
+                    <li><span class="check">✓</span> Basic analytics dashboard</li>
+                    <li><span class="check">✓</span> Monthly revenue reports</li>
+                    <li><span class="check">✓</span> Email support</li>
+                </ul>
+                <a href="#cta" class="btn-secondary btn-full">Get Started Free</a>
+            </div>
+            <div class="pricing-card glass-panel floating-island featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3 class="plan-name">Pro</h3>
+                    <p class="plan-description">For serious creators scaling up</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="price">19</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> Unlimited platforms</li>
+                    <li><span class="check">✓</span> Real-time analytics</li>
+                    <li><span class="check">✓</span> Smart AI insights</li>
+                    <li><span class="check">✓</span> Tax-ready exports</li>
+                    <li><span class="check">✓</span> Audience intelligence</li>
+                    <li><span class="check">✓</span> Priority support</li>
+                </ul>
+                <a href="#cta" class="btn-primary btn-full">Start 14-Day Trial</a>
+            </div>
+            <div class="pricing-card glass-panel floating-island">
+                <div class="pricing-header">
+                    <h3 class="plan-name">Studio</h3>
+                    <p class="plan-description">For teams and creator businesses</p>
+                </div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span>
+                    <span class="price">49</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> Everything in Pro</li>
+                    <li><span class="check">✓</span> Team collaboration</li>
+                    <li><span class="check">✓</span> Manager dashboard</li>
+                    <li><span class="check">✓</span> API access</li>
+                    <li><span class="check">✓</span> Custom reports</li>
+                    <li><span class="check">✓</span> Dedicated support</li>
+                </ul>
+                <a href="#cta" class="btn-secondary btn-full">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="cta-container glass-panel">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to see your creator business<br><span class="gradient-text">in crystalline clarity?</span></h2>
+                <p class="cta-description">
+                    Join 50,000+ creators who've transformed financial chaos into empowering insight.
+                    Your unified command center awaits.
+                </p>
+                <form class="cta-form" id="signup-form">
+                    <div class="input-group glass-input">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">
+                            <span>Get Started</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Free 14-day trial • No credit card required</p>
+                </form>
+            </div>
+            <div class="cta-visual">
+                <div class="pulse-ring ring-1"></div>
+                <div class="pulse-ring ring-2"></div>
+                <div class="pulse-ring ring-3"></div>
+                <div class="cta-icon">◈</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">CreatorPulse</span>
+                </a>
+                <p>Your unified financial command center for the creator economy.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#platforms">Integrations</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Creator Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CreatorPulse. Built with love for creators.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
