@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbarium Atelier — Botanical Illustration Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Woven Fabric Texture Overlay -->
+    <div class="texture-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Herbarium Atelier</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#techniques">Techniques</a></li>
+                <li><a href="#herbarium">Herbarium</a></li>
+                <li><a href="#enroll" class="nav-cta">Begin Study</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-blob hero-blob-3"></div>
+        
+        <div class="hero-content">
+            <div class="museum-label" data-label="Collection I">
+                <span class="label-catalog">HA-2024-I</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">The Art of</span>
+                <span class="title-line title-accent">Botanical Truth</span>
+            </h1>
+            <p class="hero-description">
+                Learn to render the living world with scientific precision and artistic soul. 
+                From field sketch to finished plate, master the timeless craft of botanical 
+                illustration guided by working illustrators and herbarium curators.
+            </p>
+            <div class="hero-actions">
+                <a href="#curriculum" class="btn btn-primary">
+                    <span>Explore Courses</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+                <a href="#techniques" class="btn btn-ghost">View Techniques</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="specimen-frame">
+                <div class="frame-inner">
+                    <div class="specimen-placeholder">
+                        <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="plant-stem" d="M100 220 C100 180, 100 140, 95 100 C90 60, 85 40, 100 20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <path class="plant-leaf leaf-1" d="M95 100 C70 90, 50 100, 40 120 C35 140, 50 160, 70 155 C85 150, 95 130, 95 100" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <path class="plant-leaf leaf-2" d="M95 80 C120 70, 145 75, 155 95 C160 115, 145 135, 125 130 C110 125, 95 105, 95 80" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <path class="plant-leaf leaf-3" d="M100 50 C85 40, 70 45, 65 60 C60 75, 70 90, 85 85 C95 82, 100 65, 100 50" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <path class="plant-flower" d="M100 20 C90 10, 80 15, 75 25 C70 35, 80 45, 100 40 C120 45, 130 35, 125 25 C120 15, 110 10, 100 20" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <circle cx="100" cy="28" r="3" stroke="currentColor" stroke-width="1" fill="none"/>
+                            <path class="leaf-vein" d="M70 130 Q80 125, 90 110" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.5"/>
+                            <path class="leaf-vein" d="M130 105 Q120 100, 105 90" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="frame-label">
+                    <span class="frame-caption">Papaver orientalis</span>
+                    <span class="frame-credit">Field study, watercolor on paper</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Introduction Statement -->
+    <section class="statement">
+        <div class="container">
+            <div class="statement-inner">
+                <div class="museum-label" data-label="Curatorial Note">
+                    <span class="label-catalog">CN-001</span>
+                </div>
+                <blockquote class="statement-quote">
+                    "Botanical illustration is the intersection where scientific inquiry 
+                    meets devotional observation. Every line is a question answered; 
+                    every wash, a season preserved."
+                </blockquote>
+                <cite class="statement-attribution">
+                    — Eleanor Vance, Lead Curator
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum / Courses Section -->
+    <section class="curriculum" id="curriculum">
+        <div class="section-blob curriculum-blob"></div>
+        
+        <div class="container">
+            <header class="section-header">
+                <div class="museum-label" data-label="Curriculum">
+                    <span class="label-catalog">HA-CUR-2024</span>
+                </div>
+                <h2 class="section-title">The Learning Path</h2>
+                <p class="section-subtitle">
+                    Five progressive stages from first mark to finished plate, 
+                    each building the skills of observation and rendering.
+                </p>
+            </header>
+            
+            <div class="curriculum-grid">
+                <article class="course-card" data-course="1">
+                    <div class="card-blob"></div>
+                    <div class="card-content">
+                        <div class="course-number">I</div>
+                        <h3 class="course-title">Field Foundations</h3>
+                        <p class="course-description">
+                            Learn to see before you draw. Field sketching techniques, 
+                            botanical observation ethics, and the essentials of plant morphology.
+                        </p>
+                        <ul class="course-details">
+                            <li>6 weeks guided study</li>
+                            <li>Field notebook methods</li>
+                            <li>Pencil & ink foundations</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span class="course-level">Beginner</span>
+                            <span class="course-arrow">→</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="course-card" data-course="2">
+                    <div class="card-blob"></div>
+                    <div class="card-content">
+                        <div class="course-number">II</div>
+                        <h3 class="course-title">Form & Structure</h3>
+                        <p class="course-description">
+                            Understanding plant architecture. Root systems, stem structures, 
+                            leaf arrangements, and the geometry of botanical forms.
+                        </p>
+                        <ul class="course-details">
+                            <li>8 weeks guided study</li>
+                            <li>Scientific accuracy</li>
+                            <li>Anatomical rendering</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span class="course-level">Foundation</span>
+                            <span class="course-arrow">→</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="course-card" data-course="3">
+                    <div class="card-blob"></div>
+                    <div class="card-content">
+                        <div class="course-number">III</div>
+                        <h3 class="course-title">Watercolor Mastery</h3>
+                        <p class="course-description">
+                            The transparent medium of botanical art. Layering washes, 
+                            color mixing from limited palettes, and achieving luminosity.
+                        </p>
+                        <ul class="course-details">
+                            <li>10 weeks guided study</li>
+                            <li>Wet-on-wet techniques</li>
+                            <li>Color theory for botanicals</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-arrow">→</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="course-card" data-course="4">
+                    <div class="card-blob"></div>
+                    <div class="card-content">
+                        <div class="course-number">IV</div>
+                        <h3 class="course-title">Dissection & Detail</h3>
+                        <p class="course-description">
+                            The scientific plate. Floral diagrams, cross-sections, 
+                            and the precise rendering required for publication.
+                        </p>
+                        <ul class="course-details">
+                            <li>8 weeks guided study</li>
+                            <li>Magnification techniques</li>
+                            <li>Publication standards</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span class="course-level">Advanced</span>
+                            <span class="course-arrow">→</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="course-card" data-course="5">
+                    <div class="card-blob"></div>
+                    <div class="card-content">
+                        <div class="course-number">V</div>
+                        <h3 class="course-title">The Finished Plate</h3>
+                        <p class="course-description">
+                            Creating exhibition-worthy work. Composition, scale, 
+                            and the integration of habit and detail in a single plate.
+                        </p>
+                        <ul class="course-details">
+                            <li>12 weeks guided study</li>
+                            <li>Portfolio development</li>
+                            <li>Exhibition preparation</li>
+                        </ul>
+                        <div class="course-meta">
+                            <span class="course-level">Master</span>
+                            <span class="course-arrow">→</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="techniques" id="techniques">
+        <div class="container">
+            <header class="section-header">
+                <div class="museum-label" data-label="Techniques">
+                    <span class="label-catalog">HA-TECH-24</span>
+                </div>
+                <h2 class="section-title">Methods & Materials</h2>
+            </header>
+            
+            <div class="techniques-showcase">
+                <div class="technique-item">
+                    <div class="technique-visual">
+                        <div class="technique-icon">
+                            <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M30 55 V15 M30 15 L15 5 M30 15 L45 5" class="pencil-stroke"/>
+                                <path d="M25 55 L35 55 L30 50 Z" class="pencil-tip"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3 class="technique-name">Graphite Studies</h3>
+                        <p class="technique-description">
+                            The foundation of precision. Learn controlled pressure, 
+                            stippling, and cross-hatching for tonal botanical drawings.
+                        </p>
+                    </div>
+                    <div class="technique-specimen">
+                        <span class="specimen-id">Specimen A-1</span>
+                    </div>
+                </div>
+                
+                <div class="technique-item">
+                    <div class="technique-visual">
+                        <div class="technique-icon">
+                            <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10 50 Q30 20, 50 50" class="brush-stroke"/>
+                                <path d="M15 45 Q30 25, 45 45" class="brush-stroke-2" opacity="0.6"/>
+                                <circle cx="30" cy="15" r="5" class="paint-drop"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3 class="technique-name">Watercolor Washes</h3>
+                        <p class="technique-description">
+                            Transparent layers that glow. Master flat washes, graded tones, 
+                            and the wet-on-wet techniques that bring plants to life.
+                        </p>
+                    </div>
+                    <div class="technique-specimen">
+                        <span class="specimen-id">Specimen B-3</span>
+                    </div>
+                </div>
+                
+                <div class="technique-item">
+                    <div class="technique-visual">
+                        <div class="technique-icon">
+                            <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10 30 H50 M30 10 V50" class="cross-grid"/>
+                                <circle cx="30" cy="30" r="12" class="dissection-circle"/>
+                                <path d="M30 18 L30 42 M18 30 L42 30" class="dissection-lines"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3 class="technique-name">Scientific Dissection</h3>
+                        <p class="technique-description">
+                            Revealing inner structures. The art of floral diagrams, 
+                            cross-sections, and magnified detail for identification.
+                        </p>
+                    </div>
+                    <div class="technique-specimen">
+                        <span class="specimen-id">Specimen C-7</span>
+                    </div>
+                </div>
+                
+                <div class="technique-item">
+                    <div class="technique-visual">
+                        <div class="technique-icon">
+                            <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="15" y="10" width="30" height="40" rx="2" class="plate-outline"/>
+                                <path d="M20 45 L25 35 L30 40 L35 25 L40 45" class="plate-graph"/>
+                                <circle cx="22" cy="20" r="3" class="plate-detail"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3 class="technique-name">Composite Plates</h3>
+                        <p class="technique-description">
+                            The complete botanical portrait. Integration of habit, 
+                            detail, and scale in the tradition of the great florilegia.
+                        </p>
+                    </div>
+                    <div class="technique-specimen">
+                        <span class="specimen-id">Specimen D-2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors" id="instructors">
+        <div class="instructors-blob"></div>
+        
+        <div class="container">
+            <header class="section-header">
+                <div class="museum-label" data-label="Faculty">
+                    <span class="label-catalog">HA-FAC-2024</span>
+                </div>
+                <h2 class="section-title">The Instructors</h2>
+                <p class="section-subtitle">
+                    Learn from working professionals who balance artistic practice 
+                    with scientific dedication to the plant world.
+                </p>
+            </header>
+            
+            <div class="instructors-grid">
+                <article class="instructor-card">
+                    <div class="instructor-portrait">
+                        <div class="portrait-frame">
+                            <div class="portrait-placeholder">
+                                <span class="portrait-initials">EV</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">Dr. Eleanor Vance</h3>
+                        <p class="instructor-role">Lead Curator & Scientific Illustrator</p>
+                        <p class="instructor-bio">
+                            Former Kew Gardens botanical illustrator with 25 years documenting 
+                            rare flora. Specialist in orchid morphology and scientific accuracy.
+                        </p>
+                        <div class="instructor-credentials">
+                            <span class="credential">Kew Gardens, 1998-2015</span>
+                            <span class="credential">RHS Gold Medal, 2012</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="instructor-card">
+                    <div class="instructor-portrait">
+                        <div class="portrait-frame">
+                            <div class="portrait-placeholder portrait-2">
+                                <span class="portrait-initials">MK</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">Marcus Chen</h3>
+                        <p class="instructor-role">Watercolor Specialist</p>
+                        <p class="instructor-bio">
+                            Contemporary botanical artist whose work bridges traditional 
+                            technique with modern conservation themes. Published in Curtis's Botanical Magazine.
+                        </p>
+                        <div class="instructor-credentials">
+                            <span class="credential">Royal Academy Schools</span>
+                            <span class="credential">Shirley Sherwood Collection</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="instructor-card">
+                    <div class="instructor-portrait">
+                        <div class="portrait-frame">
+                            <div class="portrait-placeholder portrait-3">
+                                <span class="portrait-initials">SO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">Sarah Okafor</h3>
+                        <p class="instructor-role">Field Sketching & Ethnobotany</p>
+                        <p class="instructor-bio">
+                            Botanical illustrator and ethnobotanist with extensive field 
+                            experience in West African flora. Advocate for documenting traditional plant knowledge.
+                        </p>
+                        <div class="instructor-credentials">
+                            <span class="credential">Oxford University</span>
+                            <span class="credential">Linnean Society Fellow</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herbarium Gallery Section -->
+    <section class="herbarium" id="herbarium">
+        <div class="container">
+            <header class="section-header">
+                <div class="museum-label" data-label="Student Gallery">
+                    <span class="label-catalog">HA-GAL-2024</span>
+                </div>
+                <h2 class="section-title">From the Herbarium</h2>
+                <p class="section-subtitle">
+                    Selected works from our community of botanical artists, 
+                    showing the progression from study to finished plate.
+                </p>
+            </header>
+            
+            <div class="gallery-grid">
+                <figure class="gallery-item gallery-item-large">
+                    <div class="gallery-frame">
+                        <div class="gallery-artwork artwork-1">
+                            <svg viewBox="0 0 200 280" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M100 260 C100 220, 95 180, 90 140 C85 100, 88 60, 100 30" stroke-width="1.5"/>
+                                <path d="M90 140 C60 125, 40 135, 30 160 C25 185, 45 210, 70 205 C85 200, 90 170, 90 140"/>
+                                <path d="M90 110 C120 95, 150 100, 160 125 C165 150, 145 175, 120 170 C105 165, 90 140, 90 110"/>
+                                <path d="M95 70 C75 55, 55 62, 48 82 C42 102, 58 122, 78 118 C90 115, 95 90, 95 70"/>
+                                <path d="M100 30 C85 15, 70 20, 62 38 C55 56, 72 78, 92 74 C100 72, 105 50, 100 30"/>
+                                <circle cx="82" cy="50" r="4"/>
+                                <path d="M50 170 Q65 160, 80 145" opacity="0.4"/>
+                                <path d="M130 140 Q115 130, 95 115" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <figcaption class="gallery-caption">
+                        <span class="caption-title">Fritillaria meleagris</span>
+                        <span class="caption-artist">Student work, Level III</span>
+                    </figcaption>
+                </figure>
+                
+                <figure class="gallery-item">
+                    <div class="gallery-frame">
+                        <div class="gallery-artwork artwork-2">
+                            <svg viewBox="0 0 160 200" fill="none" stroke="currentColor" stroke-width="1">
+                                <ellipse cx="80" cy="60" rx="35" ry="40" stroke-width="1.5"/>
+                                <path d="M80 100 L80 180" stroke-width="2"/>
+                                <path d="M80 130 C60 125, 40 130, 30 145 C25 160, 40 175, 60 170 C72 167, 80 150, 80 130"/>
+                                <path d="M80 120 C100 115, 120 120, 130 135 C135 150, 120 165, 100 160 C88 157, 80 140, 80 120"/>
+                                <path d="M60 55 Q80 45, 100 55" opacity="0.5"/>
+                                <path d="M55 70 Q80 60, 105 70" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <figcaption class="gallery-caption">
+                        <span class="caption-title">Tulipa sylvestris</span>
+                        <span class="caption-artist">Dissection study</span>
+                    </figcaption>
+                </figure>
+                
+                <figure class="gallery-item">
+                    <div class="gallery-frame">
+                        <div class="gallery-artwork artwork-3">
+                            <svg viewBox="0 0 160 200" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M80 180 C80 150, 78 120, 75 90 C72 60, 74 35, 80 15" stroke-width="1.5"/>
+                                <path d="M75 90 C50 80, 30 88, 22 110 C18 130, 32 150, 55 145 C68 142, 75 115, 75 90"/>
+                                <path d="M75 65 C100 55, 125 60, 135 80 C140 100, 125 120, 100 115 C85 112, 75 90, 75 65"/>
+                                <path d="M78 35 C62 25, 48 30, 42 48 C37 66, 52 85, 70 80 C78 78, 82 55, 78 35"/>
+                                <ellipse cx="80" cy="18" rx="12" ry="8" stroke-width="1"/>
+                                <path d="M45 120 Q60 112, 72 100" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <figcaption class="gallery-caption">
+                        <span class="caption-title">Convallaria majalis</span>
+                        <span class="caption-artist">Field study</span>
+                    </figcaption>
+                </figure>
+                
+                <figure class="gallery-item gallery-item-wide">
+                    <div class="gallery-frame">
+                        <div class="gallery-artwork artwork-4">
+                            <svg viewBox="0 0 280 160" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M40 120 C50 90, 60 70, 80 60 C100 50, 130 55, 150 70" stroke-width="1.5"/>
+                                <path d="M150 70 C170 85, 190 90, 210 80 C230 70, 240 50, 245 30" stroke-width="1.5"/>
+                                <path d="M80 60 C65 50, 55 55, 50 70 C46 85, 58 100, 75 95 C85 92, 88 75, 80 60"/>
+                                <path d="M150 70 C135 60, 125 65, 120 80 C116 95, 128 110, 145 105 C155 102, 158 85, 150 70"/>
+                                <path d="M210 80 C195 70, 185 75, 180 90 C176 105, 188 120, 205 115 C215 112, 218 95, 210 80"/>
+                                <circle cx="245" cy="25" r="8" stroke-width="1.5"/>
+                                <circle cx="245" cy="25" r="3"/>
+                                <path d="M50 85 Q65 78, 78 72" opacity="0.4"/>
+                                <path d="M120 82 Q135 75, 148 75" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <figcaption class="gallery-caption">
+                        <span class="caption-title">Lonicera periclymenum</span>
+                        <span class="caption-artist">Habit composition, Level V</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment CTA Section -->
+    <section class="enroll" id="enroll">
+        <div class="enroll-blob enroll-blob-1"></div>
+        <div class="enroll-blob enroll-blob-2"></div>
+        
+        <div class="container">
+            <div class="enroll-inner">
+                <div class="museum-label" data-label="Admission">
+                    <span class="label-catalog">HA-ADM-2024</span>
+                </div>
+                
+                <h2 class="enroll-title">Begin Your Study</h2>
+                <p class="enroll-description">
+                    Join a community of artists, naturalists, and plant enthusiasts 
+                    dedicated to the preservation of botanical knowledge through art. 
+                    New cohorts begin at the equinox.
+                </p>
+                
+                <div class="enroll-options">
+                    <div class="enroll-card">
+                        <div class="enroll-price">
+                            <span class="price-amount">$1,200</span>
+                            <span class="price-period">per course</span>
+                        </div>
+                        <h3 class="enroll-tier">Individual Course</h3>
+                        <ul class="enroll-features">
+                            <li>12 weeks instructor access</li>
+                            <li>Video demonstrations</li>
+                            <li>Weekly critiques</li>
+                            <li>Community forum access</li>
+                        </ul>
+                        <button class="btn btn-secondary enroll-btn">Select Course</button>
+                    </div>
+                    
+                    <div class="enroll-card enroll-card-featured">
+                        <div class="enroll-badge">Recommended</div>
+                        <div class="enroll-price">
+                            <span class="price-amount">$4,800</span>
+                            <span class="price-period">full program</span>
+                        </div>
+                        <h3 class="enroll-tier">Complete Atelier</h3>
+                        <ul class="enroll-features">
+                            <li>All 5 courses + capstone</li>
+                            <li>Lifetime video access</li>
+                            <li>Priority critique scheduling</li>
+                            <li>Annual virtual exhibition</li>
+                            <li>Certificate of completion</li>
+                            <li>Alumni network access</li>
+                        </ul>
+                        <button class="btn btn-primary enroll-btn">Begin Application</button>
+                    </div>
+                    
+                    <div class="enroll-card">
+                        <div class="enroll-price">
+                            <span class="price-amount">$350</span>
+                            <span class="price-period">per month</span>
+                        </div>
+                        <h3 class="enroll-tier">Monthly Atelier</h3>
+                        <ul class="enroll-features">
+                            <li>Self-paced progression</li>
+                            <li>Monthly critiques</li>
+                            <li>Technique library access</li>
+                            <li>Cancel anytime</li>
+                        </ul>
+                        <button class="btn btn-secondary enroll-btn">Start Free Trial</button>
+                    </div>
+                </div>
+                
+                <p class="enroll-note">
+                    Scholarships available for emerging artists and botanical researchers. 
+                    <a href="#" class="enroll-link">Learn about our grant program →</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">Herbarium Atelier</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Preserving the art of botanical illustration 
+                        for the next generation of artist-naturalists.
+                    </p>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Learn</h4>
+                        <ul class="footer-links">
+                            <li><a href="#curriculum">Curriculum</a></li>
+                            <li><a href="#instructors">Instructors</a></li>
+                            <li><a href="#techniques">Techniques</a></li>
+                            <li><a href="#herbarium">Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Supply Guide</a></li>
+                            <li><a href="#">Plant Database</a></li>
+                            <li><a href="#">Technique Library</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Virtual Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-credit">
+                    <span class="credit-symbol">✦</span>
+                    Established 2024 — Dedicated to the intersection of art and botany
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <span class="legal-separator">·</span>
+                    <a href="#">Terms</a>
+                    <span class="legal-separator">·</span>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
