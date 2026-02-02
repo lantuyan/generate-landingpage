@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanQuest - City Adventures Await</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">UrbanQuest</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#cities" class="nav-link">Cities</a></li>
+                <li><a href="#stories" class="nav-link">Stories</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="#book" class="btn btn-primary">Start Adventure</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Now in 40+ cities worldwide</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Turn Your City</span>
+                <span class="title-line highlight">Into a Playground</span>
+            </h1>
+            <p class="hero-subtitle">
+                GPS-powered scavenger hunts, puzzles, and photo challenges. 
+                Discover hidden gems, bond with your team, and rediscover urban magic.
+            </p>
+            <div class="hero-actions">
+                <a href="#games" class="btn btn-large btn-primary">
+                    <span>Explore Games</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#how-it-works" class="btn btn-large btn-ghost">
+                    <span class="play-icon">▶</span>
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Adventures</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Cities</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Joy Rate</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="map-container">
+                <div class="map-grid">
+                    <div class="map-node active" data-city="NYC">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">NYC</span>
+                    </div>
+                    <div class="map-node" data-city="LDN">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">LDN</span>
+                    </div>
+                    <div class="map-node" data-city="TYO">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">TYO</span>
+                    </div>
+                    <div class="map-node" data-city="BER">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">BER</span>
+                    </div>
+                    <div class="map-node" data-city="PAR">
+                        <span class="node-pulse"></span>
+                        <span class="node-label">PAR</span>
+                    </div>
+                </div>
+                <div class="route-lines">
+                    <svg viewBox="0 0 400 300" class="route-svg">
+                        <path class="route-line" d="M80,150 Q150,100 200,180 T320,120" />
+                        <path class="route-line" d="M60,200 Q120,250 180,220 T280,240" />
+                    </svg>
+                </div>
+            </div>
+            <div class="floating-card card-challenge">
+                <span class="card-icon">📸</span>
+                <span class="card-text">Photo Challenge!</span>
+            </div>
+            <div class="floating-card card-hint">
+                <span class="card-icon">💡</span>
+                <span class="card-text">Hint Unlocked</span>
+            </div>
+        </div>
+        <div class="ink-bleed ink-1"></div>
+    </section>
+
+    <!-- Game Types Section -->
+    <section class="section section-games" id="games">
+        <div class="section-header">
+            <span class="section-tag">Choose Your Adventure</span>
+            <h2 class="section-title">Games For Every Explorer</h2>
+            <p class="section-subtitle">From team building to solo discovery, find your perfect urban quest</p>
+        </div>
+        <div class="games-grid">
+            <div class="game-card" data-game="team">
+                <div class="game-visual">
+                    <div class="game-icon">🤝</div>
+                    <div class="confetti-burst"></div>
+                </div>
+                <h3 class="game-title">Team Builders</h3>
+                <p class="game-desc">Strengthen bonds with collaborative challenges designed for corporate groups and friend squads.</p>
+                <ul class="game-features">
+                    <li>4-20 players</li>
+                    <li>2-3 hours</li>
+                    <li>Facilitated debrief</li>
+                </ul>
+                <a href="#" class="game-link">Explore teams →</a>
+            </div>
+            <div class="game-card featured" data-game="tourist">
+                <div class="game-badge">Most Popular</div>
+                <div class="game-visual">
+                    <div class="game-icon">🗺️</div>
+                    <div class="confetti-burst"></div>
+                </div>
+                <h3 class="game-title">City Discovery</h3>
+                <p class="game-desc">The ultimate tourist experience—uncover hidden stories and local secrets in neighborhoods.</p>
+                <ul class="game-features">
+                    <li>1-6 players</li>
+                    <li>Self-paced</li>
+                    <li>Audio stories</li>
+                </ul>
+                <a href="#" class="game-link">Explore cities →</a>
+            </div>
+            <div class="game-card" data-game="locals">
+                <div class="game-visual">
+                    <div class="game-icon">🏠</div>
+                    <div class="confetti-burst"></div>
+                </div>
+                <h3 class="game-title">Local Adventures</h3>
+                <p class="game-desc">Rediscover your hometown through fresh eyes. Even natives find surprises.</p>
+                <ul class="game-features">
+                    <li>Solo or pairs</li>
+                    <li>Flexible timing</li>
+                    <li>Seasonal updates</li>
+                </ul>
+                <a href="#" class="game-link">Explore local →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-how" id="how-it-works">
+        <div class="how-container">
+            <div class="how-content">
+                <span class="section-tag">The Journey</span>
+                <h2 class="section-title">Four Steps to Discovery</h2>
+                <div class="steps">
+                    <div class="step" data-step="1">
+                        <div class="step-number">
+                            <span>1</span>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Choose Your City</h3>
+                            <p>Browse 40+ destinations or let us recommend based on your location and interests.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">
+                            <span>2</span>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Assemble Your Crew</h3>
+                            <p>Solo mission or group expedition? Invite teammates with a simple link.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">
+                            <span>3</span>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Follow the Clues</h3>
+                            <p>Your phone becomes a compass. Navigate, solve puzzles, capture moments.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">
+                            <span>4</span>
+                            <div class="step-pulse"></div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Celebrate Discovery</h3>
+                            <p>Complete challenges, earn badges, and share your urban adventure story.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="how-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="screen-content">
+                            <div class="screen-header">
+                                <span class="screen-dots">•••</span>
+                            </div>
+                            <div class="screen-map">
+                                <div class="screen-route"></div>
+                                <div class="screen-marker start">A</div>
+                                <div class="screen-marker end">B</div>
+                            </div>
+                            <div class="screen-card">
+                                <span class="screen-emoji">🎯</span>
+                                <p>Find the hidden mural behind the old clock tower!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ink-bleed ink-2"></div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="section section-cities" id="cities">
+        <div class="section-header">
+            <span class="section-tag">Destinations</span>
+            <h2 class="section-title">40+ Cities, Infinite Stories</h2>
+            <p class="section-subtitle">From iconic metros to hidden gems waiting to be discovered</p>
+        </div>
+        <div class="cities-mosaic">
+            <div class="city-card city-large" data-city="new-york">
+                <div class="city-image">
+                    <div class="city-pattern pattern-nyc"></div>
+                </div>
+                <div class="city-info">
+                    <h3>New York</h3>
+                    <span class="city-games">12 games</span>
+                </div>
+                <div class="city-confetti"></div>
+            </div>
+            <div class="city-card city-medium" data-city="london">
+                <div class="city-image">
+                    <div class="city-pattern pattern-ldn"></div>
+                </div>
+                <div class="city-info">
+                    <h3>London</h3>
+                    <span class="city-games">8 games</span>
+                </div>
+                <div class="city-confetti"></div>
+            </div>
+            <div class="city-card city-small" data-city="tokyo">
+                <div class="city-image">
+                    <div class="city-pattern pattern-tyo"></div>
+                </div>
+                <div class="city-info">
+                    <h3>Tokyo</h3>
+                    <span class="city-games">6 games</span>
+                </div>
+                <div class="city-confetti"></div>
+            </div>
+            <div class="city-card city-small" data-city="berlin">
+                <div class="city-image">
+                    <div class="city-pattern pattern-ber"></div>
+                </div>
+                <div class="city-info">
+                    <h3>Berlin</h3>
+                    <span class="city-games">5 games</span>
+                </div>
+                <div class="city-confetti"></div>
+            </div>
+            <div class="city-card city-medium" data-city="paris">
+                <div class="city-image">
+                    <div class="city-pattern pattern-par"></div>
+                </div>
+                <div class="city-info">
+                    <h3>Paris</h3>
+                    <span class="city-games">7 games</span>
+                </div>
+                <div class="city-confetti"></div>
+            </div>
+        </div>
+        <div class="cities-cta">
+            <a href="#" class="btn btn-secondary">View All Cities</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-stories" id="stories">
+        <div class="section-header">
+            <span class="section-tag">Adventurer Tales</span>
+            <h2 class="section-title">Stories from the Streets</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">Our team has done countless bonding activities. UrbanQuest was the first where everyone was genuinely engaged from start to finish.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MK</div>
+                    <div class="author-info">
+                        <span class="author-name">Maya K.</span>
+                        <span class="author-role">Product Lead, TechCorp</span>
+                    </div>
+                </div>
+                <div class="testimonial-tags">
+                    <span class="tag">Team Building</span>
+                    <span class="tag">NYC</span>
+                </div>
+            </div>
+            <div class="testimonial-card featured">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">I've lived in London for 15 years and discovered three places I'd never noticed. The puzzles made me see my own city with fresh eyes.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JR</div>
+                    <div class="author-info">
+                        <span class="author-name">James R.</span>
+                        <span class="author-role">Local Adventurer</span>
+                    </div>
+                </div>
+                <div class="testimonial-tags">
+                    <span class="tag">Local</span>
+                    <span class="tag">London</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">Best way to explore Tokyo! The cultural puzzles taught us so much more than any guidebook. Already planning our next quest.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SL</div>
+                    <div class="author-info">
+                        <span class="author-name">Sarah & Leo</span>
+                        <span class="author-role">Travel Enthusiasts</span>
+                    </div>
+                </div>
+                <div class="testimonial-tags">
+                    <span class="tag">Tourist</span>
+                    <span class="tag">Tokyo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-pricing" id="pricing">
+        <div class="section-header">
+            <span class="section-tag">Investment</span>
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Solo Explorer</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">19</span>
+                        <span class="period">/person</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Single game access</li>
+                    <li>✓ Self-paced exploration</li>
+                    <li>✓ Digital badge on completion</li>
+                    <li>✓ Photo sharing</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Choose Solo</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Best Value</div>
+                <div class="pricing-header">
+                    <h3>Squad Adventure</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">49</span>
+                        <span class="period">/group</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Up to 6 players</li>
+                    <li>✓ Multiple game routes</li>
+                    <li>✓ Live leaderboard</li>
+                    <li>✓ Custom team photo album</li>
+                    <li>✓ Priority hints</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose Squad</a>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise Quest</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">Custom</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ 20+ participants</li>
+                    <li>✓ Dedicated facilitator</li>
+                    <li>✓ Custom challenges</li>
+                    <li>✓ Post-game analysis</li>
+                    <li>✓ Private events</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Booking Section -->
+    <section class="section section-cta" id="book">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Your City Adventure Starts Now</h2>
+                <p class="cta-subtitle">Join 50,000+ explorers who've discovered the joy of urban discovery</p>
+                <div class="cta-form">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email">
+                        <button class="btn btn-large btn-primary">
+                            <span>Get Started</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </div>
+                    <p class="form-note">Free cancellation • Instant confirmation</p>
+                </div>
+            </div>
+            <div class="cta-visual">
+                <div class="confetti-cluster">
+                    <span class="confetti-piece" style="--delay:0s;--x:-50px;--y:-30px">🎉</span>
+                    <span class="confetti-piece" style="--delay:0.1s;--x:40px;--y:-50px">✨</span>
+                    <span class="confetti-piece" style="--delay:0.2s;--x:60px;--y:20px">🎯</span>
+                    <span class="confetti-piece" style="--delay:0.3s;--x:-40px;--y:40px">🏆</span>
+                    <span class="confetti-piece" style="--delay:0.4s;--x:20px;--y:-40px">🌟</span>
+                </div>
+            </div>
+        </div>
+        <div class="ink-bleed ink-3"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">UrbanQuest</span>
+                </a>
+                <p class="footer-tagline">Turning cities into playgrounds since 2022</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">All Cities</a></li>
+                        <li><a href="#">Game Types</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 UrbanQuest. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
