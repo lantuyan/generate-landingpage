@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construct | Construction Project Management Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">CONSTRUCT</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#phases" class="nav-link">Phases</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#cases" class="nav-link">Projects</a></li>
+                <li><a href="#integration" class="nav-link">Integration</a></li>
+            </ul>
+            <a href="#cta" class="btn btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="metal-texture"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Construction Management Reimagined</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line title-line-1">BUILD</span>
+                <span class="title-line title-line-2">WITH</span>
+                <span class="title-line title-line-3">PRECISION</span>
+            </h1>
+            <p class="hero-subtitle">Coordinate subcontractors. Track materials. Manage schedules. Bring software sophistication to every construction project.</p>
+            <div class="hero-actions">
+                <a href="#phases" class="btn btn-primary btn-large">
+                    <span>Start Building</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#cases" class="btn btn-secondary btn-large">View Projects</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="847">0</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">% On-Time Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2400">0</span>
+                    <span class="stat-label">Active Contractors</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="construction-stack">
+                <div class="stack-layer layer-1" data-delay="0">
+                    <div class="layer-content">
+                        <span class="layer-icon">▣</span>
+                        <span class="layer-text">FOUNDATION</span>
+                    </div>
+                </div>
+                <div class="stack-layer layer-2" data-delay="100">
+                    <div class="layer-content">
+                        <span class="layer-icon">▥</span>
+                        <span class="layer-text">STRUCTURE</span>
+                    </div>
+                </div>
+                <div class="stack-layer layer-3" data-delay="200">
+                    <div class="layer-content">
+                        <span class="layer-icon">▤</span>
+                        <span class="layer-text">SYSTEMS</span>
+                    </div>
+                </div>
+                <div class="stack-layer layer-4" data-delay="300">
+                    <div class="layer-content">
+                        <span class="layer-icon">▦</span>
+                        <span class="layer-text">FINISH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-confetti">
+                <div class="confetti confetti-1"></div>
+                <div class="confetti confetti-2"></div>
+                <div class="confetti confetti-3"></div>
+                <div class="confetti confetti-4"></div>
+                <div class="confetti confetti-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Phases - Staircase Section -->
+    <section class="phases" id="phases">
+        <div class="section-header">
+            <span class="section-tag">Project Journey</span>
+            <h2 class="section-title">ASCEND THROUGH<br>EVERY PHASE</h2>
+            <p class="section-desc">Staircase progression through construction milestones, each plateau marking systematic achievement.</p>
+        </div>
+        <div class="staircase">
+            <div class="stair-step" data-step="1">
+                <div class="step-marker">
+                    <span class="step-number">01</span>
+                    <div class="step-confetti"></div>
+                </div>
+                <div class="step-content tile">
+                    <div class="tile-header">
+                        <span class="tile-icon">◈</span>
+                        <span class="tile-phase">Phase One</span>
+                    </div>
+                    <h3 class="tile-title">Planning & Coordination</h3>
+                    <p class="tile-desc">Blueprint your vision with precision. Coordinate all stakeholders before breaking ground. Material estimates, subcontractor scheduling, and timeline architecture.</p>
+                    <ul class="tile-features">
+                        <li>3D Site Modeling</li>
+                        <li>Resource Allocation</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stair-step" data-step="2">
+                <div class="step-marker">
+                    <span class="step-number">02</span>
+                    <div class="step-confetti"></div>
+                </div>
+                <div class="step-content tile">
+                    <div class="tile-header">
+                        <span class="tile-icon">▣</span>
+                        <span class="tile-phase">Phase Two</span>
+                    </div>
+                    <h3 class="tile-title">Foundation & Structure</h3>
+                    <p class="tile-desc">The backbone of every build. Track concrete pours, steel deliveries, and structural inspections in real-time. Ground truth meets digital precision.</p>
+                    <ul class="tile-features">
+                        <li>Material Tracking</li>
+                        <li>Quality Control</li>
+                        <li>Inspector Coordination</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stair-step" data-step="3">
+                <div class="step-marker">
+                    <span class="step-number">03</span>
+                    <div class="step-confetti"></div>
+                </div>
+                <div class="step-content tile">
+                    <div class="tile-header">
+                        <span class="tile-icon">▥</span>
+                        <span class="tile-phase">Phase Three</span>
+                    </div>
+                    <h3 class="tile-title">MEP & Systems</h3>
+                    <p class="tile-desc">Mechanical, electrical, and plumbing orchestration. Coordinate trades without conflict. Every pipe, wire, and duct mapped to millimeter accuracy.</p>
+                    <ul class="tile-features">
+                        <li>Trade Scheduling</li>
+                        <li>Clash Detection</li>
+                        <li>Permit Tracking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stair-step" data-step="4">
+                <div class="step-marker">
+                    <span class="step-number">04</span>
+                    <div class="step-confetti"></div>
+                </div>
+                <div class="step-content tile">
+                    <div class="tile-header">
+                        <span class="tile-icon">▦</span>
+                        <span class="tile-phase">Phase Four</span>
+                    </div>
+                    <h3 class="tile-title">Finishing & Handover</h3>
+                    <p class="tile-desc">The final mile with full visibility. Punch lists, client walkthroughs, and documentation delivery. Complete projects with confidence and clarity.</p>
+                    <ul class="tile-features">
+                        <li>Punch List Management</li>
+                        <li>Client Portal</li>
+                        <li>As-Built Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features - Modular Tiles -->
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="features-intro">
+                <span class="section-tag">Platform Capabilities</span>
+                <h2 class="section-title">MODULAR<br>CONTROL</h2>
+                <p class="section-desc">Card-based components like building modules. Construction as assembly, managed with clinical precision.</p>
+                <div class="feature-cta">
+                    <a href="#cta" class="btn btn-primary">Explore Platform</a>
+                </div>
+            </div>
+            <div class="tile-grid">
+                <div class="feature-tile tile-large">
+                    <div class="tile-glow"></div>
+                    <div class="tile-accent"></div>
+                    <div class="tile-content">
+                        <div class="tile-icon-large">⚙</div>
+                        <h3>Subcontractor Coordination</h3>
+                        <p>Unified scheduling across all trades. Automated conflict detection and resolution. Every crew aligned to the master timeline.</p>
+                        <div class="tile-meta">
+                            <span class="meta-tag">Real-time</span>
+                            <span class="meta-tag">AI-Powered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-tile tile-medium">
+                    <div class="tile-glow"></div>
+                    <div class="tile-content">
+                        <div class="tile-icon-large">📦</div>
+                        <h3>Material Tracking</h3>
+                        <p>From order to installation. Inventory visibility, delivery coordination, and waste reduction.</p>
+                    </div>
+                </div>
+                <div class="feature-tile tile-medium">
+                    <div class="tile-glow"></div>
+                    <div class="tile-content">
+                        <div class="tile-icon-large">📊</div>
+                        <h3>Schedule Management</h3>
+                        <p>Gantt charts meet agility. Critical path analysis with adaptive rescheduling.</p>
+                    </div>
+                </div>
+                <div class="feature-tile tile-wide">
+                    <div class="tile-glow"></div>
+                    <div class="tile-accent tile-accent-right"></div>
+                    <div class="tile-content">
+                        <div class="tile-icon-large">👁</div>
+                        <h3>Client Visibility Portal</h3>
+                        <p>Transparent progress reporting for stakeholders. Photo documentation, budget tracking, and milestone celebrations in one unified dashboard.</p>
+                        <div class="tile-visual">
+                            <div class="mini-progress">
+                                <div class="mini-bar" style="--progress: 78%"></div>
+                                <span>78% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="cases" id="cases">
+        <div class="section-header centered">
+            <span class="section-tag">Built with Construct</span>
+            <h2 class="section-title">PROJECT<br>DOCUMENTATION</h2>
+            <p class="section-desc">Systematic achievement across residential and commercial builds. Trust through verified delivery.</p>
+        </div>
+        <div class="cases-slider">
+            <div class="case-card">
+                <div class="case-image">
+                    <div class="case-placeholder case-1">
+                        <div class="case-icon">🏢</div>
+                    </div>
+                    <div class="case-badge">
+                        <span class="badge-check">✓</span>
+                        <span>Delivered</span>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <span class="case-type">Commercial</span>
+                    <h3>Apex Office Complex</h3>
+                    <p>12-story Class A office building delivered 3 weeks ahead of schedule. Coordinated 34 subcontractors with zero safety incidents.</p>
+                    <div class="case-stats">
+                        <div class="case-stat">
+                            <span class="case-stat-value">$42M</span>
+                            <span class="case-stat-label">Project Value</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="case-stat-value">18mo</span>
+                            <span class="case-stat-label">Timeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card featured">
+                <div class="case-image">
+                    <div class="case-placeholder case-2">
+                        <div class="case-icon">🏘</div>
+                    </div>
+                    <div class="case-badge featured-badge">
+                        <span class="badge-check">★</span>
+                        <span>Featured</span>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <span class="case-type">Residential Development</span>
+                    <h3>Meridian Heights</h3>
+                    <p>127-unit luxury residential community. Full lifecycle management from land development to owner move-ins. 98% client satisfaction.</p>
+                    <div class="case-stats">
+                        <div class="case-stat">
+                            <span class="case-stat-value">127</span>
+                            <span class="case-stat-label">Units</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="case-stat-value">98%</span>
+                            <span class="case-stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-image">
+                    <div class="case-placeholder case-3">
+                        <div class="case-icon">🏭</div>
+                    </div>
+                    <div class="case-badge">
+                        <span class="badge-check">✓</span>
+                        <span>Delivered</span>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <span class="case-type">Industrial</span>
+                    <h3>Vertex Distribution Center</h3>
+                    <p>450,000 sq ft automated logistics facility. Complex MEP coordination completed flawlessly. LEED Platinum certified.</p>
+                    <div class="case-stats">
+                        <div class="case-stat">
+                            <span class="case-stat-value">450K</span>
+                            <span class="case-stat-label">Sq Ft</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="case-stat-value">Platinum</span>
+                            <span class="case-stat-label">LEED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="integration" id="integration">
+        <div class="integration-container">
+            <div class="integration-content">
+                <span class="section-tag">Ecosystem</span>
+                <h2 class="section-title">SEAMLESS<br>INTEGRATION</h2>
+                <p class="section-desc">Connect your existing tools. Our platform integrates with industry-standard software, creating a unified command center for construction management.</p>
+                <div class="integration-features">
+                    <div class="int-feature">
+                        <span class="int-check">◉</span>
+                        <span>AutoCAD & Revit Sync</span>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-check">◉</span>
+                        <span>Procore & PlanGrid Import</span>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-check">◉</span>
+                        <span>QuickBooks Integration</span>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-check">◉</span>
+                        <span>Drone Survey Data</span>
+                    </div>
+                </div>
+            </div>
+            <div class="integration-visual">
+                <div class="hub-center">
+                    <div class="hub-core">
+                        <span>◈</span>
+                        <span class="hub-label">CONSTRUCT</span>
+                    </div>
+                </div>
+                <div class="hub-orbit">
+                    <div class="orbit-node node-1">
+                        <div class="node-content">
+                            <span class="node-icon">📐</span>
+                            <span class="node-label">CAD</span>
+                        </div>
+                    </div>
+                    <div class="orbit-node node-2">
+                        <div class="node-content">
+                            <span class="node-icon">💰</span>
+                            <span class="node-label">ERP</span>
+                        </div>
+                    </div>
+                    <div class="orbit-node node-3">
+                        <div class="node-content">
+                            <span class="node-icon">📋</span>
+                            <span class="node-label">PM</span>
+                        </div>
+                    </div>
+                    <div class="orbit-node node-4">
+                        <div class="node-content">
+                            <span class="node-icon">🤖</span>
+                            <span class="node-label">BIM</span>
+                        </div>
+                    </div>
+                    <div class="orbit-node node-5">
+                        <div class="node-content">
+                            <span class="node-icon">✈</span>
+                            <span class="node-label">DRONE</span>
+                        </div>
+                    </div>
+                    <div class="orbit-node node-6">
+                        <div class="node-content">
+                            <span class="node-icon">📱</span>
+                            <span class="node-label">FIELD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg">
+            <div class="grid-overlay"></div>
+            <div class="metal-texture metal-dark"></div>
+        </div>
+        <div class="cta-content">
+            <div class="cta-badge">
+                <span class="confetti-burst"></span>
+                <span>Ready to Build?</span>
+            </div>
+            <h2 class="cta-title">START YOUR<br>PROJECT TODAY</h2>
+            <p class="cta-subtitle">Join hundreds of construction teams coordinating excellence. From first blueprint to final handover.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-primary btn-cta">
+                    <span>Schedule Demo</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#" class="btn btn-outline btn-cta">
+                    <span>Contact Sales</span>
+                </a>
+            </div>
+            <div class="cta-trust">
+                <div class="trust-logos">
+                    <span class="trust-logo">ACME</span>
+                    <span class="trust-logo">APEX</span>
+                    <span class="trust-logo">VERTEX</span>
+                    <span class="trust-logo">MERIDIAN</span>
+                </div>
+                <p class="trust-text">Trusted by leading construction firms</p>
+            </div>
+        </div>
+        <div class="floating-confetti cta-confetti">
+            <div class="confetti confetti-1"></div>
+            <div class="confetti confetti-2"></div>
+            <div class="confetti confetti-3"></div>
+            <div class="confetti confetti-4"></div>
+            <div class="confetti confetti-5"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">CONSTRUCT</span>
+                </a>
+                <p class="footer-tagline">Construction management with clinical precision. Building excellence through coordinated effort.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">tw</a>
+                    <a href="#" class="social-link">yt</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Construct Inc. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
