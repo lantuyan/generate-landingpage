@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Health | Your Personal Health Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◎</span>
+                <span class="logo-text">Chronos</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#story">Your Story</a></li>
+                <li><a href="#patterns">Patterns</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#begin" class="nav-cta">Begin Your Timeline</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grain"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-overline breathing">Personal Health Chronology</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Every symptom.</span>
+                    <span class="title-line">Every visit.</span>
+                    <span class="title-line">Every answer—</span>
+                    <span class="title-line title-accent">finally connected.</span>
+                </h1>
+                <p class="hero-description">
+                    Transform scattered medical records into a comprehensive health narrative.
+                    Our AI reveals patterns hidden across years of doctor visits, lab results,
+                    and prescriptions—turning chaos into clarity.
+                </p>
+                <div class="hero-actions">
+                    <a href="#begin" class="btn btn-primary">Create Your Timeline</a>
+                    <a href="#story" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="timeline-preview">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-node node-1 breathing">
+                        <span class="node-year">2019</span>
+                        <span class="node-label">First symptoms</span>
+                    </div>
+                    <div class="timeline-node node-2 breathing">
+                        <span class="node-year">2021</span>
+                        <span class="node-label">Pattern identified</span>
+                    </div>
+                    <div class="timeline-node node-3 breathing">
+                        <span class="node-year">2024</span>
+                        <span class="node-label">Diagnosis confirmed</span>
+                    </div>
+                    <div class="timeline-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="section-grain"></div>
+        <div class="story-container">
+            <div class="story-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">The Story You Never Knew You Had</h2>
+            </div>
+            <div class="story-grid">
+                <div class="story-content">
+                    <p class="story-lead">
+                        Somewhere in your medical history lies a pattern—a thread connecting
+                        that unexplained fatigue in 2018 to the vitamin deficiency discovered
+                        in 2023. But who has time to piece it together?
+                    </p>
+                    <p class="story-text">
+                        Chronos does. We aggregate your scattered health records—from
+                        handwritten notes to digital portals, from pharmacy receipts to
+                        specialist referrals—and weave them into a single, comprehensible
+                        timeline of your health journey.
+                    </p>
+                    <div class="story-quote">
+                        <blockquote>
+                            "I spent three years bouncing between specialists. Chronos
+                            showed me—and my new doctor—the connection in fifteen minutes."
+                        </blockquote>
+                        <cite>— Sarah M., Portland</cite>
+                    </div>
+                </div>
+                <div class="story-visual">
+                    <div class="document-stack">
+                        <div class="document doc-1">
+                            <div class="doc-header"></div>
+                            <div class="doc-lines">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="document doc-2">
+                            <div class="doc-header"></div>
+                            <div class="doc-lines">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="document doc-3">
+                            <div class="doc-header"></div>
+                            <div class="doc-lines">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="arrow-transform">→</div>
+                        <div class="unified-timeline">
+                            <div class="unified-line"></div>
+                            <div class="unified-dots">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patterns Section -->
+    <section class="patterns-section" id="patterns">
+        <div class="section-grain"></div>
+        <div class="patterns-container">
+            <div class="patterns-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Patterns Revealed, Trajectories Predicted</h2>
+                <p class="section-subtitle">
+                    Our AI doesn't just organize—it illuminates. Discover connections
+                    that would take years to notice on your own.
+                </p>
+            </div>
+            <div class="patterns-grid">
+                <article class="pattern-card">
+                    <div class="pattern-icon breathing">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M12 24h24M24 12v24"/>
+                            <circle cx="24" cy="24" r="8"/>
+                        </svg>
+                    </div>
+                    <h3 class="pattern-title">Symptom Correlation</h3>
+                    <p class="pattern-description">
+                        Identify recurring symptoms and their triggers across your entire
+                        medical history. See what your body has been trying to tell you.
+                    </p>
+                </article>
+                <article class="pattern-card">
+                    <div class="pattern-icon breathing">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 32 L16 24 L24 28 L32 16 L40 20"/>
+                            <circle cx="16" cy="24" r="2" fill="currentColor"/>
+                            <circle cx="24" cy="28" r="2" fill="currentColor"/>
+                            <circle cx="32" cy="16" r="2" fill="currentColor"/>
+                            <circle cx="40" cy="20" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="pattern-title">Trend Analysis</h3>
+                    <p class="pattern-description">
+                        Watch your health markers evolve over time. Understand whether
+                        you're improving, stable, or heading toward concern.
+                    </p>
+                </article>
+                <article class="pattern-card">
+                    <div class="pattern-icon breathing">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 8 L24 40"/>
+                            <path d="M16 16 L24 8 L32 16"/>
+                            <circle cx="24" cy="24" r="12" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="pattern-title">Predictive Insights</h3>
+                    <p class="pattern-description">
+                        Based on your unique health trajectory, receive personalized
+                        insights about potential future considerations.
+                    </p>
+                </article>
+                <article class="pattern-card">
+                    <div class="pattern-icon breathing">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="12" width="32" height="24" rx="2"/>
+                            <path d="M8 20h32"/>
+                            <path d="M16 28h8M16 32h12"/>
+                        </svg>
+                    </div>
+                    <h3 class="pattern-title">Doctor-Ready Reports</h3>
+                    <p class="pattern-description">
+                        Generate comprehensive summaries for new physicians. Never repeat
+                        your medical history from memory again.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process-section" id="process">
+        <div class="section-grain"></div>
+        <div class="process-container">
+            <div class="process-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">From Chaos to Clarity</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">I</div>
+                    <h3 class="step-title">Gather</h3>
+                    <p class="step-description">
+                        Connect your patient portals, upload documents, or simply
+                        photograph old records. We accept everything from hospital
+                        discharge papers to pharmacy receipts.
+                    </p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">II</div>
+                    <h3 class="step-title">Synthesize</h3>
+                    <p class="step-description">
+                        Our AI reads, extracts, and organizes every piece of health
+                        information—dates, diagnoses, medications, lab values—into
+                        your unified timeline.
+                    </p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">III</div>
+                    <h3 class="step-title">Illuminate</h3>
+                    <p class="step-description">
+                        Discover patterns and connections across your health history.
+                        See your story unfold in a way that finally makes sense.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy-section" id="privacy">
+        <div class="section-grain"></div>
+        <div class="privacy-container">
+            <div class="privacy-content">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Your Data. Your Control. Always.</h2>
+                <p class="privacy-lead">
+                    We understand the profound sensitivity of health information.
+                    That's why we've built Chronos with privacy as the foundation,
+                    not an afterthought.
+                </p>
+                <ul class="privacy-features">
+                    <li>
+                        <span class="privacy-icon">◆</span>
+                        <div>
+                            <strong>End-to-End Encryption</strong>
+                            <p>Your data is encrypted before it leaves your device and remains encrypted at rest.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="privacy-icon">◆</span>
+                        <div>
+                            <strong>Zero Data Selling</strong>
+                            <p>We will never sell, share, or monetize your health information. Period.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="privacy-icon">◆</span>
+                        <div>
+                            <strong>Complete Deletion</strong>
+                            <p>Request deletion at any time and every trace of your data is permanently removed.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="privacy-icon">◆</span>
+                        <div>
+                            <strong>HIPAA Compliant</strong>
+                            <p>Built to exceed healthcare privacy standards from day one.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="privacy-visual">
+                <div class="shield-container breathing">
+                    <div class="shield">
+                        <div class="shield-inner">
+                            <span class="shield-icon">◎</span>
+                        </div>
+                    </div>
+                    <div class="shield-rings">
+                        <span class="ring ring-1"></span>
+                        <span class="ring ring-2"></span>
+                        <span class="ring ring-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="begin">
+        <div class="section-grain"></div>
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Begin Your Health Story</h2>
+                <p class="cta-description">
+                    Join thousands who have transformed their scattered medical records
+                    into clear, actionable health narratives. Your timeline awaits.
+                </p>
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Get Early Access</button>
+                    </div>
+                    <p class="form-note">Free to start. No credit card required.</p>
+                </form>
+            </div>
+            <div class="cta-timeline">
+                <div class="timeline-horizon"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-icon">◎</span>
+                    <span class="logo-text">Chronos Health</span>
+                </a>
+                <p class="footer-tagline">Your health story, finally told.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#story">How It Works</a></li>
+                        <li><a href="#patterns">Features</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">HIPAA Notice</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Chronos Health. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
