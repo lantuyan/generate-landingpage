@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Noctis | Night Photography Tours</title>
+    <meta name="description" content="Connect with expert guides for after-dark photography experiences—astrophotography, urban night scenes, bioluminescence, and aurora chasing worldwide.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◉</span>
+                <span class="logo-text">Lumina Noctis</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#journeys" class="nav-link">Journeys</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#guides" class="nav-link">Guides</a></li>
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#book" class="nav-link nav-link-cta">Begin Journey</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-stars"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">After Dark Photography</div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Where Darkness</span>
+                <span class="hero-title-line hero-title-line--accent">Becomes Visible</span>
+            </h1>
+            <p class="hero-description">
+                Connect with expert guides for transformative night photography experiences. 
+                From aurora chasing in Arctic wilderness to bioluminescent shores—discover 
+                the world's most luminous mysteries.
+            </p>
+            <div class="hero-actions">
+                <a href="#journeys" class="btn btn-primary">
+                    <span>Explore Journeys</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+                <a href="#philosophy" class="btn btn-ghost">Our Philosophy</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Types / Floating Islands -->
+    <section class="journeys" id="journeys">
+        <div class="section-header">
+            <span class="section-eyebrow">The Experience</span>
+            <h2 class="section-title">Four Territories<br>Under Different Skies</h2>
+        </div>
+        
+        <div class="islands-container">
+            <article class="island island-astro" data-island="astro">
+                <div class="island-glow"></div>
+                <div class="island-content">
+                    <div class="island-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="8"/>
+                            <path d="M24 8V4M24 44V40M40 24H44M4 24H8M35 13L38 10M10 38L13 35M35 35L38 38M10 10L13 13"/>
+                        </svg>
+                    </div>
+                    <h3 class="island-title">Astrophotography</h3>
+                    <p class="island-description">Milky Way mastery in designated dark sky reserves. Learn star tracking, long exposure, and celestial composition from astronomer-photographers.</p>
+                    <ul class="island-features">
+                        <li>Dark sky certified locations</li>
+                        <li>Telescope-assisted framing</li>
+                        <li>Star trail workshops</li>
+                    </ul>
+                    <a href="#book" class="island-link">Discover Locations →</a>
+                </div>
+                <div class="island-reflection"></div>
+            </article>
+
+            <article class="island island-urban" data-island="urban">
+                <div class="island-glow"></div>
+                <div class="island-content">
+                    <div class="island-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 40V20L24 8L40 20V40H8Z"/>
+                            <path d="M16 40V28H20V40M28 40V28H32V40"/>
+                            <circle cx="24" cy="18" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="island-title">Urban Nocturnes</h3>
+                    <p class="island-description">City lights as your canvas. Master blue hour transitions, light trails, and the reflective poetry of metropolitan nights.</p>
+                    <ul class="island-features">
+                        <li>Rooftop vantage points</li>
+                        <li>Light painting techniques</li>
+                        <li>Architectural night studies</li>
+                    </ul>
+                    <a href="#book" class="island-link">Explore Cities →</a>
+                </div>
+                <div class="island-reflection"></div>
+            </article>
+
+            <article class="island island-bio" data-island="bio">
+                <div class="island-glow"></div>
+                <div class="island-content">
+                    <div class="island-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4C16 4 12 12 12 20C12 32 24 44 24 44C24 44 36 32 36 20C36 12 32 4 24 4Z"/>
+                            <circle cx="24" cy="20" r="4"/>
+                            <path d="M20 32C20 32 22 36 24 36C26 36 28 32 28 32"/>
+                        </svg>
+                    </div>
+                    <h3 class="island-title">Bioluminescence</h3>
+                    <p class="island-description">Capture nature's living light. From glowing tides to firefly forests—rare phenomena guided by local naturalists.</p>
+                    <ul class="island-features">
+                        <li>Seasonal phenomenon tracking</li>
+                        <li>Underwater housing available</li>
+                        <li>Conservation-focused approach</li>
+                    </ul>
+                    <a href="#book" class="island-link">Find the Glow →</a>
+                </div>
+                <div class="island-reflection"></div>
+            </article>
+
+            <article class="island island-aurora" data-island="aurora">
+                <div class="island-glow"></div>
+                <div class="island-content">
+                    <div class="island-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 36C12 28 16 32 24 24C32 16 36 20 40 12"/>
+                            <path d="M8 28C12 20 16 24 24 16C32 8 36 12 40 4"/>
+                            <circle cx="24" cy="24" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="island-title">Aurora Chasing</h3>
+                    <p class="island-description">Arctic expeditions for the celestial dance. Real-time KP tracking with guides who read solar wind like weather.</p>
+                    <ul class="island-features">
+                        <li>Satellite data monitoring</li>
+                        <li>Mobile basecamp setups</li>
+                        <li>Sub-zero gear expertise</li>
+                    </ul>
+                    <a href="#book" class="island-link">Chase Lights →</a>
+                </div>
+                <div class="island-reflection"></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Destinations Gallery -->
+    <section class="destinations" id="destinations">
+        <div class="destinations-header">
+            <span class="section-eyebrow">The Atlas</span>
+            <h2 class="section-title">Destinations Under<br>Different Darkness</h2>
+        </div>
+        
+        <div class="destinations-grid">
+            <figure class="destination-card destination-featured">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-iceland"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">Iceland</span>
+                    <h3 class="destination-name">Jökulsárlón Lagoon</h3>
+                    <p class="destination-detail">Icebergs under aurora with volcanic black sand foregrounds</p>
+                </figcaption>
+            </figure>
+
+            <figure class="destination-card">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-namibia"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">Namibia</span>
+                    <h3 class="destination-name">Namib Desert</h3>
+                    <p class="destination-detail">Deadvlei trees against the galactic core</p>
+                </figcaption>
+            </figure>
+
+            <figure class="destination-card">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-japan"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">Japan</span>
+                    <h3 class="destination-name">Kyoto Lantern Alleys</h3>
+                    <p class="destination-detail">Traditional machiya in golden hour transitions</p>
+                </figcaption>
+            </figure>
+
+            <figure class="destination-card">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-newzealand"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">New Zealand</span>
+                    <h3 class="destination-name">Waitomo Caves</h3>
+                    <p class="destination-detail">Glowworm galaxies underground</p>
+                </figcaption>
+            </figure>
+
+            <figure class="destination-card">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-norway"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">Norway</span>
+                    <h3 class="destination-name">Lofoten Islands</h3>
+                    <p class="destination-detail">Arctic beaches with mountain reflections</p>
+                </figcaption>
+            </figure>
+
+            <figure class="destination-card">
+                <div class="destination-image">
+                    <div class="destination-placeholder destination-usa"></div>
+                </div>
+                <figcaption class="destination-info">
+                    <span class="destination-location">USA</span>
+                    <h3 class="destination-name">Death Valley</h3>
+                    <p class="destination-detail">Lowest elevation Milky Way photography</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section class="guides" id="guides">
+        <div class="guides-content">
+            <div class="guides-text">
+                <span class="section-eyebrow">The Guides</span>
+                <h2 class="section-title">Masters of<br>Darkness & Light</h2>
+                <p class="guides-description">
+                    Every guide is a published night photographer with years of location-specific expertise. 
+                    They're not just instructors—they're collaborators in your creative vision, 
+                    reading weather patterns, moon phases, and local conditions to position you 
+                    at the perfect moment.
+                </p>
+                <div class="guides-stats">
+                    <div class="stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Expert Guides</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Published Works</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guides-showcase">
+                <div class="guide-card guide-active">
+                    <div class="guide-image">
+                        <div class="guide-placeholder guide-1"></div>
+                    </div>
+                    <div class="guide-info">
+                        <h3 class="guide-name">Elena Voss</h3>
+                        <p class="guide-specialty">Arctic Aurora Specialist</p>
+                        <p class="guide-quote">"The northern lights wait for no one, but patience reveals their secrets."</p>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <div class="guide-placeholder guide-2"></div>
+                    </div>
+                    <div class="guide-info">
+                        <h3 class="guide-name">Marcus Chen</h3>
+                        <p class="guide-specialty">Urban Night Architect</p>
+                        <p class="guide-quote">"Every city writes a different poem after dark."</p>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <div class="guide-placeholder guide-3"></div>
+                    </div>
+                    <div class="guide-info">
+                        <h3 class="guide-name">Sofia Andersson</h3>
+                        <p class="guide-specialty">Dark Sky Conservationist</p>
+                        <p class="guide-quote">"Preserving darkness is preserving wonder."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="philosophy-container">
+            <div class="philosophy-visual">
+                <div class="philosophy-frame">
+                    <div class="philosophy-image">
+                        <div class="philosophy-placeholder"></div>
+                    </div>
+                    <div class="philosophy-accent"></div>
+                </div>
+            </div>
+            <div class="philosophy-text">
+                <span class="section-eyebrow">Philosophy</span>
+                <h2 class="section-title">Night Photography<br>as Meditation</h2>
+                <div class="philosophy-paragraphs">
+                    <p>
+                        Long exposure teaches us patience. In a world of instant images, 
+                        night photography demands stillness. You become a witness to light 
+                        accumulated over seconds, minutes—time made visible.
+                    </p>
+                    <p>
+                        Our tours are designed around this contemplative practice. Small 
+                        groups, unhurried schedules, locations chosen not just for their 
+                        visual drama but for their capacity to transform. We believe the 
+                        best night images emerge when photographer and landscape enter 
+                        a dialogue of silence.
+                    </p>
+                    <p>
+                        This is photography as pilgrimage. Each journey an opportunity 
+                        to see the world—and yourself—illuminated by starlight.
+                    </p>
+                </div>
+                <blockquote class="philosophy-quote">
+                    <span class="quote-mark">"</span>
+                    <p>In darkness, we find what the day conceals.</p>
+                    <cite>— The Lumina Noctis Manifesto</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section -->
+    <section class="booking" id="book">
+        <div class="booking-bg">
+            <div class="booking-gradient"></div>
+        </div>
+        <div class="booking-content">
+            <span class="section-eyebrow">Begin Your Journey</span>
+            <h2 class="booking-title">The Night<br>Awaits</h2>
+            <p class="booking-description">
+                Join a small group expedition or arrange a private guided experience. 
+                All skill levels welcome. Equipment consultation included.
+            </p>
+            
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="interest">Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select experience type</option>
+                            <option value="astro">Astrophotography</option>
+                            <option value="urban">Urban Nocturnes</option>
+                            <option value="bio">Bioluminescence</option>
+                            <option value="aurora">Aurora Chasing</option>
+                            <option value="custom">Custom Expedition</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="month">Preferred Month</label>
+                        <select id="month" name="month" required>
+                            <option value="">Select month</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="jun">June</option>
+                            <option value="jul">July</option>
+                            <option value="aug">August</option>
+                            <option value="sep">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-field form-field-full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Tell us about your photography experience and goals..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">
+                    <span>Request Consultation</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                    </svg>
+                </button>
+            </form>
+            
+            <p class="booking-note">Response within 24 hours. No commitment required.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◉</span>
+                    <span class="logo-text">Lumina Noctis</span>
+                </a>
+                <p class="footer-tagline">Guided night photography experiences worldwide</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Experiences</h4>
+                    <ul>
+                        <li><a href="#journeys">Astrophotography</a></li>
+                        <li><a href="#journeys">Urban Nocturnes</a></li>
+                        <li><a href="#journeys">Bioluminescence</a></li>
+                        <li><a href="#journeys">Aurora Chasing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#guides">Our Guides</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lumina Noctis. All rights reserved.</p>
+            <p class="footer-credit">Designed for the night seekers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
