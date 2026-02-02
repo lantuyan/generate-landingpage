@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kintsugi Coffee — The Daily Ceremony</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">◯</span>
+                <span class="logo-text">Kintsugi</span>
+            </a>
+            <div class="nav-links">
+                <a href="#journey" class="nav-link">The Journey</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#roasters" class="nav-link">Roasters</a>
+                <a href="#subscribe" class="nav-link nav-link--cta">Begin</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#journey" class="mobile-link">The Journey</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#roasters" class="mobile-link">Roasters</a>
+        <a href="#subscribe" class="mobile-link mobile-link--cta">Begin Your Journey</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-glaze"></div>
+        <div class="sunset-haze">
+            <div class="sunset-blob sunset-blob--1"></div>
+            <div class="sunset-blob sunset-blob--2"></div>
+            <div class="sunset-blob sunset-blob--3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Monthly Coffee Ceremony</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Where the</span>
+                <span class="title-line title-line--emphasis">daily ritual</span>
+                <span class="title-line">becomes art</span>
+            </h1>
+            <p class="hero-subtitle">
+                Single-origin beans matched to your equipment. Pour-over, espresso, or cold brew—
+                each box arrives with the knowledge to honor what you brew.
+            </p>
+            <div class="hero-actions">
+                <a href="#subscribe" class="btn btn--primary">
+                    <span>Begin Your Journey</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="btn btn--text">
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Partner Roasters</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">48h</span>
+                    <span class="stat-label">Roast to Ship</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">Member Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="brewing-device">
+                <div class="device-base">
+                    <div class="device-stand"></div>
+                    <div class="device-vessel">
+                        <div class="vessel-inner">
+                            <div class="coffee-surface"></div>
+                        </div>
+                    </div>
+                    <div class="steam steam--1"></div>
+                    <div class="steam steam--2"></div>
+                    <div class="steam steam--3"></div>
+                </div>
+                <div class="device-shadow"></div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- The Journey Section -->
+    <section class="journey" id="journey">
+        <div class="section-glaze"></div>
+        <div class="container">
+            <div class="journey-header">
+                <div class="section-eyebrow">
+                    <span class="section-eyebrow-text">01 — The Journey</span>
+                </div>
+                <h2 class="section-title">
+                    From crop to cup,<br>
+                    <em>curated for your craft</em>
+                </h2>
+            </div>
+            <div class="journey-grid">
+                <div class="journey-card journey-card--wide" data-animate="fade-up">
+                    <div class="card-glaze"></div>
+                    <div class="card-number">①</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tell us your tools</h3>
+                        <p class="card-text">
+                            V60, Chemex, AeroPress, espresso machine—each method extracts different truths 
+                            from the bean. We match origins to your equipment's character.
+                        </p>
+                    </div>
+                    <div class="card-visual">
+                        <div class="icon-tools">
+                            <div class="tool-icon tool-icon--1">⚗</div>
+                            <div class="tool-icon tool-icon--2">◯</div>
+                            <div class="tool-icon tool-icon--3">△</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journey-card" data-animate="fade-up" data-delay="100">
+                    <div class="card-glaze"></div>
+                    <div class="card-number">②</div>
+                    <h3 class="card-title">Receive with intention</h3>
+                    <p class="card-text">
+                        Fresh-roasted beans arrive within 48 hours, accompanied by origin stories 
+                        and brewing parameters measured to the gram.
+                    </p>
+                    <div class="card-note">
+                        <span class="note-marker">∗</span>
+                        <span class="note-text">Shipped in ceramic-inspired vessels</span>
+                    </div>
+                </div>
+                <div class="journey-card journey-card--tall" data-animate="fade-up" data-delay="200">
+                    <div class="card-glaze"></div>
+                    <div class="card-number">③</div>
+                    <h3 class="card-title">Brew with knowledge</h3>
+                    <p class="card-text">
+                        Each delivery includes video guidance from the roaster—watch their technique, 
+                        hear the bloom, understand the timing.
+                    </p>
+                    <div class="brewing-illustration">
+                        <div class="pour-stream"></div>
+                        <div class="drip-ripple drip-ripple--1"></div>
+                        <div class="drip-ripple drip-ripple--2"></div>
+                        <div class="drip-ripple drip-ripple--3"></div>
+                    </div>
+                </div>
+                <div class="journey-card" data-animate="fade-up" data-delay="300">
+                    <div class="card-glaze"></div>
+                    <div class="card-number">④</div>
+                    <h3 class="card-title">Refine your ritual</h3>
+                    <p class="card-text">
+                        Rate each origin. Adjust your preferences. Over time, your subscription 
+                        becomes a reflection of your palate's evolution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="hiw-layout">
+                <div class="hiw-visual">
+                    <div class="coffee-wheel">
+                        <div class="wheel-center">
+                            <span class="wheel-label">Your<br>Profile</span>
+                        </div>
+                        <div class="wheel-segment wheel-segment--1" data-segment="pour">
+                            <span class="segment-label">Pour-over</span>
+                        </div>
+                        <div class="wheel-segment wheel-segment--2" data-segment="espresso">
+                            <span class="segment-label">Espresso</span>
+                        </div>
+                        <div class="wheel-segment wheel-segment--3" data-segment="cold">
+                            <span class="segment-label">Cold Brew</span>
+                        </div>
+                        <div class="wheel-segment wheel-segment--4" data-segment="immersion">
+                            <span class="segment-label">Immersion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiw-content">
+                    <div class="section-eyebrow">
+                        <span class="section-eyebrow-text">02 — The Method</span>
+                    </div>
+                    <h2 class="section-title">
+                        Equipment shapes<br>
+                        <em>the expression</em>
+                    </h2>
+                    <div class="method-tabs">
+                        <button class="method-tab active" data-method="pour">
+                            <span class="tab-indicator"></span>
+                            <span class="tab-name">Pour-over</span>
+                            <span class="tab-note">Clarity & complexity</span>
+                        </button>
+                        <button class="method-tab" data-method="espresso">
+                            <span class="tab-indicator"></span>
+                            <span class="tab-name">Espresso</span>
+                            <span class="tab-note">Intensity & body</span>
+                        </button>
+                        <button class="method-tab" data-method="cold">
+                            <span class="tab-indicator"></span>
+                            <span class="tab-name">Cold Brew</span>
+                            <span class="tab-note">Smooth & sweet</span>
+                        </button>
+                        <button class="method-tab" data-method="immersion">
+                            <span class="tab-indicator"></span>
+                            <span class="tab-name">Immersion</span>
+                            <span class="tab-note">Full & round</span>
+                        </button>
+                    </div>
+                    <div class="method-content">
+                        <p class="method-description" id="methodDescription">
+                            Light-roasted Ethiopians and Kenyans shine here—floral aromatics, 
+                            bright acidity, the full spectrum of origin character revealed 
+                            through careful extraction.
+                        </p>
+                        <div class="method-stats">
+                            <div class="m-stat">
+                                <span class="m-stat-value">1:16</span>
+                                <span class="m-stat-label">Ratio</span>
+                            </div>
+                            <div class="m-stat">
+                                <span class="m-stat-value">205°F</span>
+                                <span class="m-stat-label">Temp</span>
+                            </div>
+                            <div class="m-stat">
+                                <span class="m-stat-value">3:00</span>
+                                <span class="m-stat-label">Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roasters Section -->
+    <section class="roasters" id="roasters">
+        <div class="sunset-haze sunset-haze--subtle">
+            <div class="sunset-blob sunset-blob--4"></div>
+            <div class="sunset-blob sunset-blob--5"></div>
+        </div>
+        <div class="container">
+            <div class="roasters-header">
+                <div class="section-eyebrow">
+                    <span class="section-eyebrow-text">03 — The Artisans</span>
+                </div>
+                <h2 class="section-title">
+                    Roasters who speak<br>
+                    <em>the language of terroir</em>
+                </h2>
+            </div>
+            <div class="roasters-grid">
+                <div class="roaster-card" data-animate="fade-up">
+                    <div class="roaster-glaze"></div>
+                    <div class="roaster-region">Portland, OR</div>
+                    <h3 class="roaster-name">Heart Coffee</h3>
+                    <p class="roaster-description">
+                        Nordic-style roasting that preserves the bean's inherent sweetness. 
+                        Known for transparent expressions of Ethiopian and Colombian origins.
+                    </p>
+                    <div class="roaster-meta">
+                        <span class="meta-item">Since 2009</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item">Direct trade</span>
+                    </div>
+                </div>
+                <div class="roaster-card" data-animate="fade-up" data-delay="100">
+                    <div class="roaster-glaze"></div>
+                    <div class="roaster-region">San Francisco, CA</div>
+                    <h3 class="roaster-name">Sightglass Coffee</h3>
+                    <p class="roaster-description">
+                        Balance seekers. Their espresso roasts develop caramelization 
+                        without sacrificing origin character—perfect for milk or black.
+                    </p>
+                    <div class="roaster-meta">
+                        <span class="meta-item">Since 2009</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item">Family owned</span>
+                    </div>
+                </div>
+                <div class="roaster-card" data-animate="fade-up" data-delay="200">
+                    <div class="roaster-glaze"></div>
+                    <div class="roaster-region">Brooklyn, NY</div>
+                    <h3 class="roaster-name">Sey Coffee</h3>
+                    <p class="roaster-description">
+                        The pursuit of acidity and florality. These are delicate, 
+                        tea-like coffees for those who brew with precision and patience.
+                    </p>
+                    <div class="roaster-meta">
+                        <span class="meta-item">Since 2017</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item">Micro-lot focus</span>
+                    </div>
+                </div>
+                <div class="roaster-card" data-animate="fade-up" data-delay="300">
+                    <div class="roaster-glaze"></div>
+                    <div class="roaster-region">Los Angeles, CA</div>
+                    <h3 class="roaster-name">Maru Coffee</h3>
+                    <p class="roaster-description">
+                        Minimal intervention, maximum clarity. Korean-inspired approach 
+                        to roasting that highlights clean, structured cups.
+                    </p>
+                    <div class="roaster-meta">
+                        <span class="meta-item">Since 2016</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item">Seasonal rotation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscribe" id="subscribe">
+        <div class="section-glaze"></div>
+        <div class="container">
+            <div class="subscribe-layout">
+                <div class="subscribe-content">
+                    <div class="section-eyebrow">
+                        <span class="section-eyebrow-text">04 — Begin</span>
+                    </div>
+                    <h2 class="section-title">
+                        Your ritual<br>
+                        <em>awaits</em>
+                    </h2>
+                    <p class="subscribe-lead">
+                        Choose your frequency. Pause anytime. Each shipment is an invitation 
+                        to slow down and participate in something crafted.
+                    </p>
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <span class="badge-icon">✦</span>
+                            <span class="badge-text">Free shipping</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">◯</span>
+                            <span class="badge-text">Pause anytime</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">◇</span>
+                            <span class="badge-text">Satisfaction promise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-options">
+                    <div class="plan-card" data-animate="fade-up">
+                        <div class="plan-header">
+                            <h3 class="plan-name">The Explorer</h3>
+                            <div class="plan-price">
+                                <span class="price-currency">$</span>
+                                <span class="price-value">28</span>
+                                <span class="price-period">/ shipment</span>
+                            </div>
+                        </div>
+                        <p class="plan-description">
+                            One 12oz bag of rotating single-origin, matched to your equipment 
+                            with brewing guide and tasting notes.
+                        </p>
+                        <ul class="plan-features">
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>12oz fresh-roasted beans</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Equipment-matched brewing guide</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Origin story & flavor notes</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Monthly video from the roaster</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn--secondary btn--full">Choose Explorer</button>
+                    </div>
+                    <div class="plan-card plan-card--featured" data-animate="fade-up" data-delay="150">
+                        <div class="plan-badge">Most Chosen</div>
+                        <div class="plan-header">
+                            <h3 class="plan-name">The Devotee</h3>
+                            <div class="plan-price">
+                                <span class="price-currency">$</span>
+                                <span class="price-value">48</span>
+                                <span class="price-period">/ shipment</span>
+                            </div>
+                        </div>
+                        <p class="plan-description">
+                            Two complementary origins—one for daily drinking, one for weekend 
+                            exploration. Complete brewing kit included quarterly.
+                        </p>
+                        <ul class="plan-features">
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Two 12oz bags (24oz total)</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Everything in Explorer</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Quarterly brewing accessory</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Priority access to limited lots</span>
+                            </li>
+                            <li class="feature">
+                                <span class="feature-check">—</span>
+                                <span>Direct roaster chat access</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn--primary btn--full">Choose Devotee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◯</span>
+                        <span class="logo-text">Kintsugi</span>
+                    </a>
+                    <p class="footer-tagline">
+                        The daily ceremony of craft coffee, delivered.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Explore</h4>
+                        <a href="#journey" class="footer-link">The Journey</a>
+                        <a href="#how-it-works" class="footer-link">How It Works</a>
+                        <a href="#roasters" class="footer-link">Our Roasters</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Support</h4>
+                        <a href="#" class="footer-link">Brewing Guides</a>
+                        <a href="#" class="footer-link">Equipment Care</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Sustainability</a>
+                        <a href="#" class="footer-link">Careers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Kintsugi Coffee. Crafted with intention.
+                </p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Privacy</a>
+                    <a href="#" class="footer-legal-link">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
