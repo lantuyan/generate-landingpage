@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatherly - Plan Celebrations Effortlessly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ink Bleed Texture Overlay -->
+    <div class="ink-texture"></div>
+    
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Gatherly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#stories" class="nav-link">Stories</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="#download" class="btn btn-primary nav-cta">Get Started</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features" class="mobile-nav-link">Features</a></li>
+            <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+            <li><a href="#stories" class="mobile-nav-link">Stories</a></li>
+            <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="#download" class="btn btn-primary">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="bounce-in">
+                <span class="badge-star">✦</span>
+                <span>Plan together, celebrate better</span>
+            </div>
+            <h1 class="hero-title" data-animate="fade-up">
+                Where Every<br>
+                <span class="gradient-text">Celebration</span><br>
+                Comes Together
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="100">
+                From spontaneous gatherings to milestone moments—coordinate dates, 
+                poll friends, split costs, and create memories without the stress.
+            </p>
+            <div class="hero-cta" data-animate="fade-up" data-delay="200">
+                <a href="#download" class="btn btn-primary btn-large">
+                    Start Planning Free
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary btn-large">
+                    See How It Works
+                </a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="300">
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Parties Planned</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">2M+</span>
+                    <span class="stat-label">Friends Connected</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-label">App Store Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual" data-animate="float-in" data-delay="400">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="app-header">
+                        <span class="app-avatar">👋</span>
+                        <span class="app-title">Sarah's Birthday</span>
+                        <span class="app-menu">⋯</span>
+                    </div>
+                    <div class="app-poll">
+                        <p class="poll-question">Which date works best?</p>
+                        <div class="poll-options">
+                            <div class="poll-option selected">
+                                <span class="option-date">Fri, Dec 15</span>
+                                <span class="option-votes">8 votes</span>
+                                <div class="poll-bar" style="--percent: 80%"></div>
+                            </div>
+                            <div class="poll-option">
+                                <span class="option-date">Sat, Dec 16</span>
+                                <span class="option-votes">2 votes</span>
+                                <div class="poll-bar" style="--percent: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-friends">
+                        <div class="friend-avatars">
+                            <div class="avatar" style="--bg: #FF6B6B">A</div>
+                            <div class="avatar" style="--bg: #4ECDC4">M</div>
+                            <div class="avatar" style="--bg: #FFE66D">J</div>
+                            <div class="avatar more">+5</div>
+                        </div>
+                        <span class="friends-text">8 friends joining</span>
+                    </div>
+                </div>
+                <div class="phone-glow"></div>
+            </div>
+            <div class="floating-card card-1">
+                <span class="card-icon">🎉</span>
+                <span class="card-text">Venue booked!</span>
+            </div>
+            <div class="floating-card card-2">
+                <span class="card-icon">💰</span>
+                <span class="card-text">$45/person</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Features</span>
+            <h2 class="section-title">Everything You Need to<br><span class="gradient-text">Plan Perfectly</span></h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card feature-large" data-animate="float-up" data-delay="0">
+                <div class="feature-content">
+                    <div class="feature-icon-wrap">
+                        <span class="feature-icon">📅</span>
+                    </div>
+                    <h3 class="feature-title">Smart Scheduling</h3>
+                    <p class="feature-desc">Poll friends on the best dates, find common availability automatically, and sync with everyone's calendars.</p>
+                    <ul class="feature-list">
+                        <li>Automatic conflict detection</li>
+                        <li>Calendar integrations</li>
+                        <li>Reminder notifications</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="mini-calendar">
+                        <div class="cal-header">December</div>
+                        <div class="cal-days">
+                            <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                        </div>
+                        <div class="cal-dates">
+                            <span></span><span></span><span></span><span></span><span>1</span><span>2</span><span>3</span>
+                            <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                            <span>11</span><span>12</span><span>13</span><span>14</span><span class="highlight">15</span><span>16</span><span>17</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card" data-animate="float-up" data-delay="100">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">🗳️</span>
+                </div>
+                <h3 class="feature-title">Group Voting</h3>
+                <p class="feature-desc">Democratically decide on venues, activities, and themes with real-time polling.</p>
+            </div>
+            <div class="feature-card" data-animate="float-up" data-delay="200">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">💳</span>
+                </div>
+                <h3 class="feature-title">Easy Cost Split</h3>
+                <p class="feature-desc">No awkward money talks. Split bills automatically and collect payments in-app.</p>
+            </div>
+            <div class="feature-card" data-animate="float-up" data-delay="300">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">📍</span>
+                </div>
+                <h3 class="feature-title">Venue Booking</h3>
+                <p class="feature-desc">Browse, compare, and book venues directly through the app with exclusive rates.</p>
+            </div>
+            <div class="feature-card" data-animate="float-up" data-delay="400">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">🔔</span>
+                </div>
+                <h3 class="feature-title">Smart Reminders</h3>
+                <p class="feature-desc">Keep everyone on track with automated reminders for payments, arrivals, and tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="hiw-bg"></div>
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">How It Works</span>
+            <h2 class="section-title">From Idea to<br><span class="gradient-text">Celebration</span></h2>
+        </div>
+        <div class="steps-container">
+            <div class="step-connector">
+                <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+                    <path class="step-path" d="M 50 100 Q 200 50 400 100 T 750 100" fill="none" stroke="url(#gradient)" stroke-width="3" stroke-dasharray="8 8"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="steps">
+                <div class="step" data-animate="bounce-in" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">✨</div>
+                        <h3 class="step-title">Create Event</h3>
+                        <p class="step-desc">Set up your celebration in seconds with our intuitive event builder.</p>
+                    </div>
+                </div>
+                <div class="step" data-animate="bounce-in" data-delay="150">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">👥</div>
+                        <h3 class="step-title">Invite Friends</h3>
+                        <p class="step-desc">Share with your group and let everyone vote on dates and preferences.</p>
+                    </div>
+                </div>
+                <div class="step" data-animate="bounce-in" data-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">🎯</div>
+                        <h3 class="step-title">Confirm Details</h3>
+                        <p class="step-desc">Lock in the venue, split costs, and assign tasks automatically.</p>
+                    </div>
+                </div>
+                <div class="step" data-animate="bounce-in" data-delay="450">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">🎊</div>
+                        <h3 class="step-title">Celebrate</h3>
+                        <p class="step-desc">Show up and enjoy—everything else is handled.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories" id="stories">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Success Stories</span>
+            <h2 class="section-title">Celebrations Made<br><span class="gradient-text">Effortless</span></h2>
+        </div>
+        <div class="stories-grid">
+            <div class="story-card" data-animate="fade-up" data-delay="0">
+                <div class="story-image">
+                    <div class="story-placeholder" style="--bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                        <span>🎂</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="story-quote">"Planned my 30th birthday for 20 people in under an hour. The app handled everything—from finding a venue to collecting money."</div>
+                    <div class="story-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Jenkins</span>
+                            <span class="author-event">Birthday Bash, NYC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card" data-animate="fade-up" data-delay="100">
+                <div class="story-image">
+                    <div class="story-placeholder" style="--bg: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                        <span>💍</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="story-quote">"My bachelorette party was a dream. Voting on activities meant everyone got something they wanted. Zero drama!"</div>
+                    <div class="story-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <span class="author-name">Maria Rodriguez</span>
+                            <span class="author-event">Bachelorette, Miami</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card" data-animate="fade-up" data-delay="200">
+                <div class="story-image">
+                    <div class="story-placeholder" style="--bg: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                        <span>🏢</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <div class="story-quote">"Our company retreat finally happened after 3 failed attempts. Gatherly made coordination across 3 time zones seamless."</div>
+                    <div class="story-author">
+                        <div class="author-avatar">DK</div>
+                        <div class="author-info">
+                            <span class="author-name">David Kim</span>
+                            <span class="author-event">Team Retreat, Austin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Pricing</span>
+            <h2 class="section-title">Simple, Transparent<br><span class="gradient-text">Pricing</span></h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card" data-animate="float-up" data-delay="0">
+                <div class="pricing-header">
+                    <span class="pricing-name">Free</span>
+                    <span class="pricing-price">$0</span>
+                    <span class="pricing-period">forever</span>
+                </div>
+                <p class="pricing-desc">Perfect for small gatherings and trying things out.</p>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> Up to 5 events per month</li>
+                    <li><span class="check">✓</span> 10 friends per event</li>
+                    <li><span class="check">✓</span> Basic polling</li>
+                    <li><span class="check">✓</span> Email reminders</li>
+                </ul>
+                <a href="#download" class="btn btn-secondary btn-full">Get Started</a>
+            </div>
+            <div class="pricing-card pricing-popular" data-animate="float-up" data-delay="100">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <span class="pricing-name">Pro</span>
+                    <span class="pricing-price">$9</span>
+                    <span class="pricing-period">per month</span>
+                </div>
+                <p class="pricing-desc">For the social butterflies who celebrate often.</p>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> Unlimited events</li>
+                    <li><span class="check">✓</span> Unlimited friends</li>
+                    <li><span class="check">✓</span> Advanced polls & voting</li>
+                    <li><span class="check">✓</span> Cost splitting & payments</li>
+                    <li><span class="check">✓</span> Venue booking discounts</li>
+                    <li><span class="check">✓</span> Priority support</li>
+                </ul>
+                <a href="#download" class="btn btn-primary btn-full">Start Free Trial</a>
+            </div>
+            <div class="pricing-card" data-animate="float-up" data-delay="200">
+                <div class="pricing-header">
+                    <span class="pricing-name">Team</span>
+                    <span class="pricing-price">$29</span>
+                    <span class="pricing-period">per month</span>
+                </div>
+                <p class="pricing-desc">For organizations and frequent event planners.</p>
+                <ul class="pricing-features">
+                    <li><span class="check">✓</span> Everything in Pro</li>
+                    <li><span class="check">✓</span> Multiple organizers</li>
+                    <li><span class="check">✓</span> Corporate billing</li>
+                    <li><span class="check">✓</span> Analytics & reporting</li>
+                    <li><span class="check">✓</span> Dedicated account manager</li>
+                </ul>
+                <a href="#download" class="btn btn-secondary btn-full">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="download">
+        <div class="cta-bg"></div>
+        <div class="cta-content" data-animate="fade-up">
+            <h2 class="cta-title">Ready to Plan Your<br><span class="gradient-text">Perfect Celebration?</span></h2>
+            <p class="cta-subtitle">Join 50,000+ party planners who've discovered stress-free celebration coordination.</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Enter your email" class="cta-input">
+                <button class="btn btn-primary btn-large cta-btn">
+                    Get Early Access
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+            <p class="cta-note">✦ Free forever plan available • No credit card required</p>
+        </div>
+        <div class="cta-visual" data-animate="float-in">
+            <div class="floating-island island-1">
+                <span class="island-icon">🎈</span>
+            </div>
+            <div class="floating-island island-2">
+                <span class="island-icon">🎂</span>
+            </div>
+            <div class="floating-island island-3">
+                <span class="island-icon">🎁</span>
+            </div>
+            <div class="floating-island island-4">
+                <span class="island-icon">🎊</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">Gatherly</span>
+                    </a>
+                    <p class="footer-tagline">Making celebration planning joyful, social, and effortless.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gatherly. All rights reserved.</p>
+                <p class="footer-made">Made with <span class="heart">♥</span> for celebration</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
