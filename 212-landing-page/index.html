@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RankUp - Performance Coaching for Competitive Gamers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">RankUp</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#coaches" class="nav-link">Coaches</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Start Training</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    <span>Proven by 10,000+ Rank-Ups</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="line">Your gameplay</span>
+                    <span class="line highlight">deserves precision</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Professional esports coaching that transforms raw potential into 
+                    competitive dominance. Video analysis, strategic mastery, and 
+                    personalized training from players who've been there.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Begin Your Ascent</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#methodology" class="btn btn-secondary">See How It Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-label">Pro Coaches</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">50K+</span>
+                        <span class="stat-label">Players Coached</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">94%</span>
+                        <span class="stat-label">Rank Improvement</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="monolith-card">
+                    <div class="card-glare"></div>
+                    <div class="card-content">
+                        <div class="rank-display">
+                            <span class="rank-tier">DIAMOND</span>
+                            <span class="rank-division">II</span>
+                        </div>
+                        <div class="progress-ring">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="progress-bg" cx="50" cy="50" r="45"/>
+                                <circle class="progress-fill" cx="50" cy="50" r="45"/>
+                            </svg>
+                            <span class="progress-text">87%</span>
+                        </div>
+                    </div>
+                    <div class="card-confetti">
+                        <span class="confetti confetti-1">✦</span>
+                        <span class="confetti confetti-2">◆</span>
+                        <span class="confetti confetti-3">▲</span>
+                    </div>
+                </div>
+                <div class="floating-badge badge-replay">
+                    <span class="badge-icon">▶</span>
+                    <span>VOD Analysis</span>
+                </div>
+                <div class="floating-badge badge-macro">
+                    <span class="badge-icon">◈</span>
+                    <span>Macro Training</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches" id="coaches">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Coaches</span>
+                <h2 class="section-title">Mentors who've <span class="accent">climbed</span></h2>
+                <p class="section-subtitle">Learn from professionals who understand the grind because they've lived it.</p>
+            </div>
+            <div class="coaches-grid">
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>MK</span>
+                        </div>
+                        <div class="coach-tier">Grandmaster</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Max "Vortex" Kim</h3>
+                        <p class="coach-role">Former LCS Pro • Macro Specialist</p>
+                        <div class="coach-tags">
+                            <span class="tag">League</span>
+                            <span class="tag">Strategy</span>
+                        </div>
+                        <div class="coach-achievements">
+                            <div class="achievement">
+                                <span class="achievement-icon">🏆</span>
+                                <span>2x Regional Champion</span>
+                            </div>
+                            <div class="achievement">
+                                <span class="achievement-icon">📈</span>
+                                <span>500+ Students to Diamond</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card featured">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>SJ</span>
+                        </div>
+                        <div class="coach-tier">Radiant</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Sarah "Phoenix" Jones</h3>
+                        <p class="coach-role">VCT Analyst • Mechanics Coach</p>
+                        <div class="coach-tags">
+                            <span class="tag">Valorant</span>
+                            <span class="tag">Aim Training</span>
+                        </div>
+                        <div class="coach-achievements">
+                            <div class="achievement">
+                                <span class="achievement-icon">🎯</span>
+                                <span>VCT Masters Analyst</span>
+                            </div>
+                            <div class="achievement">
+                                <span class="achievement-icon">⭐</span>
+                                <span>Top 0.1% Player</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <div class="coach-placeholder">
+                            <span>DR</span>
+                        </div>
+                        <div class="coach-tier">Immortal</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>David "Rush" Reyes</h3>
+                        <p class="coach-role">Apex Predator • IGL Coach</p>
+                        <div class="coach-tags">
+                            <span class="tag">Apex</span>
+                            <span class="tag">Leadership</span>
+                        </div>
+                        <div class="coach-achievements">
+                            <div class="achievement">
+                                <span class="achievement-icon">🎖️</span>
+                                <span>ALGS Coach</span>
+                            </div>
+                            <div class="achievement">
+                                <span class="achievement-icon">🔥</span>
+                                <span>20k Kills Leader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology" id="methodology">
+        <div class="methodology-accent"></div>
+        <div class="container">
+            <div class="methodology-layout">
+                <div class="methodology-content">
+                    <span class="section-tag">Our Methodology</span>
+                    <h2 class="section-title">Precision through <span class="accent">practice</span></h2>
+                    <p class="methodology-lead">Like a ballet rehearsal, we strip down every movement to its essence. No fluff. Just the focused repetition that builds mastery.</p>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">
+                                <span>01</span>
+                                <div class="step-pulse"></div>
+                            </div>
+                            <div class="step-content">
+                                <h3>VOD Analysis</h3>
+                                <p>Every frame scrutinized. We identify micro-decisions that separate good from great.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">
+                                <span>02</span>
+                                <div class="step-pulse"></div>
+                            </div>
+                            <div class="step-content">
+                                <h3>Personalized Drills</h3>
+                                <p>Custom training routines targeting your specific weaknesses, not generic exercises.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">
+                                <span>03</span>
+                                <div class="step-pulse"></div>
+                            </div>
+                            <div class="step-content">
+                                <h3>Live Review</h3>
+                                <p>Real-time feedback during your games. Instant correction, immediate improvement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="methodology-visual">
+                    <div class="stone-block">
+                        <div class="stone-surface"></div>
+                        <div class="stone-highlight"></div>
+                        <div class="metrics-overlay">
+                            <div class="metric">
+                                <span class="metric-label">APM</span>
+                                <span class="metric-value">342</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Decision Speed</span>
+                                <span class="metric-value">0.23s</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Accuracy</span>
+                                <span class="metric-value">94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Training Programs</span>
+                <h2 class="section-title">Choose your <span class="accent">path</span></h2>
+                <p class="section-subtitle">Structured improvement at every level. From fundamentals to pro-level refinement.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Foundation</h3>
+                        <div class="program-price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/session</span>
+                        </div>
+                    </div>
+                    <p class="program-desc">Build solid mechanics and game understanding from the ground up.</p>
+                    <ul class="program-features">
+                        <li><span class="check">✓</span> 1-on-1 Coaching Session</li>
+                        <li><span class="check">✓</span> VOD Review (1 Match)</li>
+                        <li><span class="check">✓</span> Personalized Drill Plan</li>
+                        <li><span class="check">✓</span> Discord Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="program-card featured">
+                    <div class="program-badge">Most Popular</div>
+                    <div class="program-header">
+                        <h3>Ascension</h3>
+                        <div class="program-price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <p class="program-desc">Intensive monthly training for serious climbers targeting major rank gains.</p>
+                    <ul class="program-features">
+                        <li><span class="check">✓</span> 4 Weekly Sessions</li>
+                        <li><span class="check">✓</span> Unlimited VOD Reviews</li>
+                        <li><span class="check">✓</span> Live Game Coaching</li>
+                        <li><span class="check">✓</span> Custom Training Regimen</li>
+                        <li><span class="check">✓</span> 24/7 Coach Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Start Climbing</a>
+                    <div class="program-confetti">
+                        <span class="confetti-dot"></span>
+                        <span class="confetti-dot"></span>
+                        <span class="confetti-dot"></span>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Pro Team</h3>
+                        <div class="program-price">
+                            <span class="currency">$</span>
+                            <span class="amount">599</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <p class="program-desc">Full team analysis and coaching for competitive squads.</p>
+                    <ul class="program-features">
+                        <li><span class="check">✓</span> Team VOD Analysis</li>
+                        <li><span class="check">✓</span> Scrimmage Reviews</li>
+                        <li><span class="check">✓</span> Strategy Development</li>
+                        <li><span class="check">✓</span> Tournament Prep</li>
+                        <li><span class="check">✓</span> Dedicated Coach</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">Proof in <span class="accent">progress</span></h2>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-rank">
+                        <span class="rank-from">Gold IV</span>
+                        <svg class="rank-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                        <span class="rank-to">Diamond I</span>
+                    </div>
+                    <p class="result-quote">"Three months of focused coaching completely transformed my game sense. I finally understand WHY the right plays work."</p>
+                    <div class="result-author">
+                        <div class="author-avatar">JT</div>
+                        <div class="author-info">
+                            <span class="author-name">Jake T.</span>
+                            <span class="author-game">League of Legends</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-card featured">
+                    <div class="result-rank">
+                        <span class="rank-from">Platinum</span>
+                        <svg class="rank-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                        <span class="rank-to">Radiant</span>
+                    </div>
+                    <p class="result-quote">"The aim training regimen alone was worth it. But the mental coaching? That's what got me to the top 500."</p>
+                    <div class="result-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <span class="author-name">Alex M.</span>
+                            <span class="author-game">Valorant</span>
+                        </div>
+                    </div>
+                    <div class="result-confetti">✦</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-rank">
+                        <span class="rank-from">Diamond</span>
+                        <svg class="rank-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                        <span class="rank-to">Predator</span>
+                    </div>
+                    <p class="result-quote">"Our team went from struggling in qualifiers to placing top 10 in regionals. The IGL coaching was game-changing."</p>
+                    <div class="result-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <span class="author-name">Team Striker</span>
+                            <span class="author-game">Apex Legends</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="results-stats">
+                <div class="big-stat">
+                    <span class="big-stat-value">2.3</span>
+                    <span class="big-stat-label">Average Rank Jump</span>
+                </div>
+                <div class="big-stat">
+                    <span class="big-stat-value">87%</span>
+                    <span class="big-stat-label">Reach Goals in 3 Months</span>
+                </div>
+                <div class="big-stat">
+                    <span class="big-stat-value">4.9</span>
+                    <span class="big-stat-label">Coach Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-accent cta-accent-1"></div>
+        <div class="cta-accent cta-accent-2"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to rank up?</h2>
+                <p class="cta-subtitle">Your next rank isn't just possible—it's probable with the right guidance. Start your ascent today.</p>
+                <form class="cta-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="game" required>
+                            <option value="" disabled selected>Select Your Game</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="apex">Apex Legends</option>
+                            <option value="csgo">CS:GO / CS2</option>
+                            <option value="overwatch">Overwatch 2</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Get Matched With a Coach</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+                <p class="cta-note">Free 15-minute consultation. No commitment required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">RankUp</span>
+                    </a>
+                    <p>Performance coaching for competitive gamers who refuse to plateau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#coaches">Find a Coach</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">VOD Library</a></li>
+                        <li><a href="#">Rank Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Become a Coach</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RankUp Coaching. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
