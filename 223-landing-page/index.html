@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NourishFlow — Mindful Eating, Intuitive Living</title>
+    <meta name="description" content="Develop intuitive eating practices without calorie counting or restrictive rules. Mindful portion awareness, eating pace tracking, and hunger check-ins.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 8C14 8 12 14 12 20C12 28 16 32 20 32C24 32 28 28 28 20C28 14 26 8 20 8Z" fill="currentColor" opacity="0.3"/>
+                        <circle cx="20" cy="18" r="4" fill="currentColor"/>
+                    </svg>
+                </span>
+                <span class="logo-text">NourishFlow</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#download" class="nav-link nav-link--cta">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-texture"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-line"></span>
+                    <span>Mindful Eating App</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-word">Eat</span>
+                    <span class="title-word">with</span>
+                    <span class="title-word title-word--accent">Intention</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Develop a peaceful relationship with food through portion awareness, 
+                    pace tracking, and intuitive hunger check-ins—no calorie counting, 
+                    no restrictive rules, just mindful presence.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn--primary">
+                        <span class="btn-text">Start Your Journey</span>
+                        <span class="btn-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#methodology" class="btn btn--ghost">Explore Method</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">87%</span>
+                        <span class="stat-label">Report reduced anxiety around meals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12min</span>
+                        <span class="stat-label">Average mindful eating session</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Intuitive eaters in community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="container">
+            <div class="section-header philosophy-header">
+                <span class="section-eyebrow">Our Philosophy</span>
+                <h2 class="section-title">Food as Contemplative Practice</h2>
+                <p class="section-lead">
+                    Like a zen garden invites meditation, each meal becomes an opportunity 
+                    for presence and self-connection.
+                </p>
+            </div>
+            
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M24 14v10l6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="principle-title">Mindful Pace</h3>
+                    <p class="principle-text">
+                        Your eating rhythm reveals your relationship with food. 
+                        We guide you toward natural, unhurried meals that honor 
+                        your body's timing.
+                    </p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4v40M4 24h40"/>
+                            <circle cx="24" cy="24" r="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="principle-title">Portion Awareness</h3>
+                    <p class="principle-text">
+                        Not measurement, but attunement. Learn to recognize 
+                        satisfaction signals and serve yourself with confident 
+                        intuition rather than rigid rules.
+                    </p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 36c0-8 6-16 12-20 6 4 12 12 12 20H12z"/>
+                            <circle cx="24" cy="18" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="principle-title">Hunger Fluency</h3>
+                    <p class="principle-text">
+                        Decode your body's language. Distinguish physical hunger 
+                        from emotional cravings with gentle check-ins that build 
+                        body trust over time.
+                    </p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 40c0-12 8-20 16-24 8 4 16 12 16 24H8z"/>
+                            <circle cx="24" cy="20" r="6"/>
+                        </svg>
+                    </div>
+                    <h3 class="principle-title">Fullness Wisdom</h3>
+                    <p class="principle-text">
+                        Satisfaction is an art. Discover your personal satiety 
+                        signals and learn to stop at enough—neither deprived 
+                        nor overstuffed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology" id="methodology">
+        <div class="methodology-sunset"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">The Method</span>
+                <h2 class="section-title">Your Daily Practice</h2>
+            </div>
+            
+            <div class="method-flow">
+                <div class="method-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">The Pause</h3>
+                        <p class="step-text">
+                            Before eating, take three conscious breaths. 
+                            Check in with your hunger level and set an 
+                            intention for nourishment.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="breathing-circle">
+                            <div class="breathing-ring ring-1"></div>
+                            <div class="breathing-ring ring-2"></div>
+                            <div class="breathing-ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-step method-step--reverse">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Attuned Eating</h3>
+                        <p class="step-text">
+                            Our gentle pace guide helps you slow down and 
+                            savor. Notice textures, flavors, and how your 
+                            body responds bite by bite.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="pace-indicator">
+                            <div class="pace-wave"></div>
+                            <div class="pace-wave"></div>
+                            <div class="pace-wave"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="method-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">The Completion</h3>
+                        <p class="step-text">
+                            Honor your body's signals. Log your fullness 
+                            level and reflect on satisfaction—building 
+                            your personal eating wisdom over time.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="completion-bowl">
+                            <div class="bowl-rim"></div>
+                            <div class="bowl-fill"></div>
+                            <div class="satisfaction-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research" id="research">
+        <div class="container">
+            <div class="research-grid">
+                <div class="research-content">
+                    <span class="section-eyebrow">Research-Backed</span>
+                    <h2 class="section-title">Grounded in Nutritional Science</h2>
+                    <p class="research-lead">
+                        Intuitive eating isn't just philosophy—it's supported by 
+                        decades of research demonstrating improved metabolic health, 
+                        psychological wellbeing, and sustainable eating behaviors.
+                    </p>
+                    
+                    <div class="research-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-marker"></div>
+                            <div class="highlight-text">
+                                <strong>Lower BMI variability</strong> over 2-year follow-up 
+                                compared to diet cycling (Bacon et al., 2005)
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-marker"></div>
+                            <div class="highlight-text">
+                                <strong>Reduced binge eating</strong> episodes and emotional 
+                                eating behaviors (Smith & Hawks, 2006)
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-marker"></div>
+                            <div class="highlight-text">
+                                <strong>Improved cholesterol</strong> and blood pressure 
+                                markers without restriction (Mensinger et al., 2016)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-visual">
+                    <div class="chart-container">
+                        <h4 class="chart-title">Diet Cycling vs. Intuitive Eating</h4>
+                        <div class="chart" id="outcomesChart">
+                            <div class="chart-bars">
+                                <div class="chart-bar-group">
+                                    <div class="bar-label">Wellbeing</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar bar--diet" style="--height: 35%"></div>
+                                        <div class="bar bar--intuitive" style="--height: 82%"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-bar-group">
+                                    <div class="bar-label">Sustainability</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar bar--diet" style="--height: 22%"></div>
+                                        <div class="bar bar--intuitive" style="--height: 91%"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-bar-group">
+                                    <div class="bar-label">Body Trust</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar bar--diet" style="--height: 28%"></div>
+                                        <div class="bar bar--intuitive" style="--height: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-bar-group">
+                                    <div class="bar-label">Metabolic Health</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar bar--diet" style="--height: 45%"></div>
+                                        <div class="bar bar--intuitive" style="--height: 78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color legend-color--diet"></span>
+                                    <span>Restrictive Dieting</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color legend-color--intuitive"></span>
+                                    <span>Intuitive Eating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-texture"></div>
+        <div class="container">
+            <div class="section-header features-header">
+                <span class="section-eyebrow">App Features</span>
+                <h2 class="section-title">Tools for Food Freedom</h2>
+            </div>
+            
+            <div class="features-tiles">
+                <div class="feature-tile feature-tile--large">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="16" cy="16" r="12"/>
+                            <path d="M16 10v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="tile-title">Mindful Timer</h3>
+                    <p class="tile-text">
+                        A gentle, non-intrusive pace guide that helps you slow down 
+                        without rushing. Customizable intervals based on your eating style.
+                    </p>
+                    <div class="tile-visual timer-visual">
+                        <div class="timer-ring">
+                            <span class="timer-display">12:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-tile">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 28h24M8 28v-8a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v8"/>
+                            <path d="M20 28v-12a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="tile-title">Hunger Scale</h3>
+                    <p class="tile-text">
+                        Pre and post-meal check-ins using a research-validated 
+                        hunger/fullness scale.
+                    </p>
+                </div>
+                
+                <div class="feature-tile">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 26c0-8 6-14 10-18 4 4 10 10 10 18H6z"/>
+                            <circle cx="16" cy="16" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="tile-title">Satisfaction Journal</h3>
+                    <p class="tile-text">
+                        Track meal satisfaction and discover patterns in what 
+                        truly nourishes you.
+                    </p>
+                </div>
+                
+                <div class="feature-tile">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4v4M16 24v4M4 16h4M24 16h4"/>
+                            <circle cx="16" cy="16" r="6"/>
+                        </svg>
+                    </div>
+                    <h3 class="tile-title">Portion Guide</h3>
+                    <p class="tile-text">
+                        Visual hand-based portion references for intuitive 
+                        serving sizes without weighing.
+                    </p>
+                </div>
+                
+                <div class="feature-tile">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 16h4l4-10 6 20 4-10h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="tile-title">Progress Insights</h3>
+                    <p class="tile-text">
+                        Weekly reflections on your eating patterns, pace trends, 
+                        and satisfaction scores.
+                    </p>
+                </div>
+                
+                <div class="feature-tile feature-tile--wide">
+                    <div class="tile-content">
+                        <div class="tile-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="16" cy="12" r="6"/>
+                                <path d="M8 28c0-6 4-10 8-10s8 4 8 10"/>
+                            </svg>
+                        </div>
+                        <h3 class="tile-title">Guided Meditations</h3>
+                        <p class="tile-text">
+                            Pre-meal centering practices and post-meal gratitude exercises 
+                            led by nutrition psychologists. Build your mindful eating 
+                            skills through audio guidance.
+                        </p>
+                    </div>
+                    <div class="tile-wave">
+                        <div class="audio-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <svg viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M12 24c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8c0 8-8 16-8 16s-4-8-4-8zm24 0c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8c0 8-8 16-8 16s-4-8-4-8z"/>
+                    </svg>
+                </div>
+                <blockquote class="testimonial-text">
+                    After years of calorie counting and guilt, NourishFlow taught me 
+                    to trust my body again. I finally enjoy meals without anxiety, 
+                    and I've never felt more at peace with food.
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <span class="author-name">Sarah Mitchell</span>
+                        <span class="author-title">Member for 18 months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Download Section -->
+    <section class="download" id="download">
+        <div class="download-sunset">
+            <div class="sunset-layer layer-1"></div>
+            <div class="sunset-layer layer-2"></div>
+            <div class="sunset-layer layer-3"></div>
+        </div>
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Begin Your Mindful Eating Journey</h2>
+                <p class="download-lead">
+                    Join 50,000+ people who have discovered food freedom through 
+                    intuitive eating. Start free, upgrade when you're ready.
+                </p>
+                
+                <div class="download-apps">
+                    <a href="#" class="app-store-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" class="app-store-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        <span>Google Play</span>
+                    </a>
+                </div>
+                
+                <div class="pricing-note">
+                    <p>Free forever plan includes core mindful eating tools. Premium adds guided meditations, advanced insights, and community features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 8C14 8 12 14 12 20C12 28 16 32 20 32C24 32 28 28 28 20C28 14 26 8 20 8Z" fill="currentColor" opacity="0.3"/>
+                                <circle cx="20" cy="18" r="4" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">NourishFlow</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Mindful eating for intuitive living
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#research">Research</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NourishFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
