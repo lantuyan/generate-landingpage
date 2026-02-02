@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakerNet — Your Gateway to Making</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">MakerNet</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#equipment" class="nav-link">Equipment</a></li>
+                <li><a href="#locations" class="nav-link">Locations</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+                <li><a href="#join" class="nav-cta">Join Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-pulse"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>500+ Locations Worldwide</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Make anything.</span>
+                    <span class="title-line">Anywhere.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Access professional fabrication equipment across our global network of makerspaces. 
+                    One membership. Unlimited possibilities. Skills that travel with you.
+                </p>
+                <div class="hero-actions">
+                    <a href="#join" class="btn btn-primary">
+                        <span>Start Making</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#equipment" class="btn btn-secondary">
+                        <span class="btn-icon">▸</span>
+                        <span>Explore Equipment</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Locations</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15000">0</span>
+                        <span class="stat-label">Active Makers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Equipment Types</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line">
+                    <div class="scroll-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Equipment</span>
+                <h2 class="section-title">Tools for every project</h2>
+                <p class="section-desc">From rapid prototyping to precision manufacturing, access the equipment you need, when you need it.</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card" data-delay="0">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="32" height="32" rx="4"/>
+                            <line x1="8" y1="20" x2="40" y2="20"/>
+                            <line x1="20" y1="20" x2="20" y2="40"/>
+                            <line x1="32" y1="20" x2="32" y2="40"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">3D Printing</h3>
+                    <p class="card-desc">FDM, resin, and multi-material printers for rapid prototyping and detailed models.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">PLA</span>
+                        <span class="meta-tag">Resin</span>
+                        <span class="meta-tag">Nylon</span>
+                    </div>
+                </div>
+                <div class="equipment-card featured" data-delay="100">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="16"/>
+                            <path d="M24 8v8M24 32v8M8 24h8M32 24h8"/>
+                            <circle cx="24" cy="24" r="6"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Laser Cutting</h3>
+                    <p class="card-desc">CO2 and fiber lasers for cutting and engraving wood, acrylic, metal, and more.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">CO2</span>
+                        <span class="meta-tag">Fiber</span>
+                        <span class="meta-tag">Diode</span>
+                    </div>
+                </div>
+                <div class="equipment-card" data-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="14" width="36" height="20" rx="2"/>
+                            <line x1="6" y1="20" x2="42" y2="20"/>
+                            <line x1="6" y1="28" x2="42" y2="28"/>
+                            <circle cx="14" cy="34" r="2"/>
+                            <circle cx="34" cy="34" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">CNC Machining</h3>
+                    <p class="card-desc">Precision mills and lathes for aluminum, steel, brass, and engineering plastics.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">Mills</span>
+                        <span class="meta-tag">Lathes</span>
+                        <span class="meta-tag">Routers</span>
+                    </div>
+                </div>
+                <div class="equipment-card" data-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="12" y="6" width="24" height="36" rx="2"/>
+                            <line x1="16" y1="12" x2="32" y2="12"/>
+                            <line x1="16" y1="18" x2="32" y2="18"/>
+                            <circle cx="24" cy="30" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Electronics</h3>
+                    <p class="card-desc">Soldering stations, oscilloscopes, power supplies, and component libraries.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">Soldering</span>
+                        <span class="meta-tag">Testing</span>
+                        <span class="meta-tag">PCB</span>
+                    </div>
+                </div>
+                <div class="equipment-card" data-delay="400">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 40V16l16-8 16 8v24"/>
+                            <path d="M8 16l16 8 16-8"/>
+                            <path d="M24 24v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Woodworking</h3>
+                    <p class="card-desc">Table saws, band saws, planers, and joinery equipment for fine woodworking.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">Cutting</span>
+                        <span class="meta-tag">Joinery</span>
+                        <span class="meta-tag">Finishing</span>
+                    </div>
+                </div>
+                <div class="equipment-card" data-delay="500">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4v8"/>
+                            <path d="M24 36v8"/>
+                            <path d="M4 24h8"/>
+                            <path d="M36 24h8"/>
+                            <circle cx="24" cy="24" r="12"/>
+                            <path d="M18 24h12"/>
+                            <path d="M24 18v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Metalworking</h3>
+                    <p class="card-desc">Welders, grinders, presses, and forming tools for custom metal fabrication.</p>
+                    <div class="card-meta">
+                        <span class="meta-tag">Welding</span>
+                        <span class="meta-tag">Grinding</span>
+                        <span class="meta-tag">Forming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Three steps to making</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Join the Network</h3>
+                        <p class="step-desc">Choose a membership tier that fits your making needs. Activate instantly and get your maker ID.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-core"></div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Get Certified</h3>
+                        <p class="step-desc">Complete online and hands-on training for each equipment type. Certifications work at every location.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-core"></div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Start Making</h3>
+                        <p class="step-desc">Reserve equipment at any location. Your projects, files, and certifications travel with you.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-core"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="locations-grid">
+                <div class="locations-content">
+                    <span class="section-tag">Locations</span>
+                    <h2 class="section-title">A makerspace wherever you go</h2>
+                    <p class="section-desc">From downtown hubs to suburban workshops, find a location near you or near your next project.</p>
+                    <div class="location-features">
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <span>24/7 access with Pro membership</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <span>Consistent equipment across all sites</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <span>Staffed hours for assistance</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">◆</span>
+                            <span>Project storage at each location</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">
+                        <span>Find a Location</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="locations-visual">
+                    <div class="map-container">
+                        <div class="map-grid">
+                            <div class="map-node active" style="top: 30%; left: 20%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node" style="top: 25%; left: 45%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node" style="top: 35%; left: 70%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node active" style="top: 55%; left: 25%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node" style="top: 50%; left: 50%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node" style="top: 60%; left: 75%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node" style="top: 75%; left: 40%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                            <div class="map-node active" style="top: 70%; left: 65%;">
+                                <span class="node-pulse"></span>
+                                <span class="node-dot"></span>
+                            </div>
+                        </div>
+                        <div class="location-card floating">
+                            <div class="location-card-header">
+                                <span class="location-status">● Open Now</span>
+                                <span class="location-distance">0.8 mi</span>
+                            </div>
+                            <h4 class="location-name">Downtown Workshop</h4>
+                            <p class="location-address">342 Innovation Blvd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-title">Skills that travel with you</h2>
+                <p class="section-desc">Universal certifications recognized across all 500+ locations. Learn once, make anywhere.</p>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-category">
+                    <h3 class="cert-category-title">Foundation</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Shop Safety</span>
+                            <span class="cert-badge">Required</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Tool Basics</span>
+                            <span class="cert-badge">Required</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Material Handling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-category">
+                    <h3 class="cert-category-title">Digital Fabrication</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">3D Printing Fundamentals</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Laser Operation</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">CNC Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-category">
+                    <h3 class="cert-category-title">Traditional Crafts</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Woodworking I & II</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Metalworking</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Welding Certification</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-category">
+                    <h3 class="cert-category-title">Advanced</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">PCB Design</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Advanced CAM</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">◆</span>
+                            <span class="cert-name">Machine Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Community</span>
+                <h2 class="section-title">Stories from the network</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I started with a simple 3D printed phone stand. Now I'm running a small product business, using three different MakerNet locations depending on what equipment I need."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <span class="author-name">Jamie Miller</span>
+                            <span class="author-title">Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <p>"The certifications actually mean something. I walked into a makerspace in Berlin and they immediately set me up on their CNC because my credentials transferred."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <span class="author-name">Raj Kapoor</span>
+                            <span class="author-title">Mechanical Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a teacher, I bring students here for hands-on learning. The staff treats them like real makers from day one, not just kids playing with tools."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SC</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Chen</span>
+                            <span class="author-title">STEM Educator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Membership</span>
+                <h2 class="section-title">Choose your making level</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Explorer</h3>
+                        <p class="pricing-desc">For curious beginners</p>
+                        <div class="pricing-price">
+                            <span class="price">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Access to 1 home location</li>
+                        <li><span class="check">✓</span> 20 hours/month machine time</li>
+                        <li><span class="check">✓</span> Basic safety training</li>
+                        <li><span class="check">✓</span> Community workspace</li>
+                        <li><span class="cross">×</span> <span class="disabled">24/7 access</span></li>
+                        <li><span class="cross">×</span> <span class="disabled">Project storage</span></li>
+                    </ul>
+                    <a href="#join" class="btn btn-outline btn-full">Choose Explorer</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Maker</h3>
+                        <p class="pricing-desc">For dedicated creators</p>
+                        <div class="pricing-price">
+                            <span class="price">$99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Access to all locations</li>
+                        <li><span class="check">✓</span> 60 hours/month machine time</li>
+                        <li><span class="check">✓</span> All certification courses</li>
+                        <li><span class="check">✓</span> Priority booking</li>
+                        <li><span class="check">✓</span> 10GB project storage</li>
+                        <li><span class="cross">×</span> <span class="disabled">24/7 access</span></li>
+                    </ul>
+                    <a href="#join" class="btn btn-primary btn-full">Choose Maker</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <p class="pricing-desc">For professionals & businesses</p>
+                        <div class="pricing-price">
+                            <span class="price">$199</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Unlimited location access</li>
+                        <li><span class="check">✓</span> Unlimited machine time</li>
+                        <li><span class="check">✓</span> All certifications + advanced</li>
+                        <li><span class="check">✓</span> 24/7 access</li>
+                        <li><span class="check">✓</span> 100GB project storage</li>
+                        <li><span class="check">✓</span> Private project room access</li>
+                    </ul>
+                    <a href="#join" class="btn btn-outline btn-full">Choose Pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="join">
+        <div class="cta-bg">
+            <div class="cta-grid"></div>
+            <div class="cta-confetti" id="confettiContainer"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to start making?</h2>
+                <p class="cta-subtitle">Join thousands of makers already creating with MakerNet. Your first project is waiting.</p>
+                <form class="signup-form" id="signupForm">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span>Get Started</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">Free trial. No credit card required. Cancel anytime.</p>
+                </form>
+                <div class="cta-trust">
+                    <span>Trusted by teams at</span>
+                    <div class="trust-logos">
+                        <span class="trust-logo">Autodesk</span>
+                        <span class="trust-logo">Formlabs</span>
+                        <span class="trust-logo">Glowforge</span>
+                        <span class="trust-logo">Bantam Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">MakerNet</span>
+                    </a>
+                    <p class="footer-tagline">Your gateway to making. Access professional fabrication equipment worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#equipment">Equipment</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#membership">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MakerNet. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
