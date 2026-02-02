@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATELIER VELO | Bespoke Bicycle Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-primary">ATELIER</span>
+                <span class="logo-secondary">VELO</span>
+            </a>
+            <div class="nav-links">
+                <a href="#craft" class="nav-link">Craft</a>
+                <a href="#builders" class="nav-link">Builders</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#atelier" class="nav-link nav-cta">Atelier</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#craft" class="mobile-link">Craft</a>
+        <a href="#builders" class="mobile-link">Builders</a>
+        <a href="#process" class="mobile-link">Process</a>
+        <a href="#atelier" class="mobile-link">Atelier</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-accent"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow magnetic-snap">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Est. 2024 — Frame Builders Collective</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line magnetic-snap">Machines</span>
+                <span class="title-line magnetic-snap title-accent">Worn</span>
+                <span class="title-line magnetic-snap">Not Owned</span>
+            </h1>
+            <p class="hero-description magnetic-snap">
+                Where master frame builders meet your physiology. Bespoke bicycles 
+                engineered to your geometry, crafted to your essence.
+            </p>
+            <div class="hero-actions magnetic-snap">
+                <a href="#craft" class="btn btn-primary">
+                    <span class="btn-text">Begin Configuration</span>
+                    <span class="btn-spark"></span>
+                </a>
+                <a href="#builders" class="btn btn-secondary">Meet the Builders</a>
+            </div>
+        </div>
+        <div class="hero-specs">
+            <div class="spec-item magnetic-snap">
+                <span class="spec-value">01</span>
+                <span class="spec-label">Geometry Analysis</span>
+            </div>
+            <div class="spec-item magnetic-snap">
+                <span class="spec-value">12</span>
+                <span class="spec-label">Master Builders</span>
+            </div>
+            <div class="spec-item magnetic-snap">
+                <span class="spec-value">∞</span>
+                <span class="spec-label">Configurations</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <span class="scroll-line"></span>
+        </div>
+    </section>
+
+    <!-- Craft Section - Customization -->
+    <section class="craft" id="craft">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">The Configuration</h2>
+                <p class="section-subtitle">Modular components. Infinite assembly.</p>
+            </div>
+            
+            <div class="config-grid">
+                <div class="config-tile magnetic-tile" data-tile="frame">
+                    <div class="tile-frame">
+                        <span class="tile-corner tl"></span>
+                        <span class="tile-corner tr"></span>
+                        <span class="tile-corner bl"></span>
+                        <span class="tile-corner br"></span>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-category">Foundation</span>
+                        <h3 class="tile-title">Frame Architecture</h3>
+                        <p class="tile-description">
+                            Steel, titanium, or carbon. Tubing selected by 
+                            ride character and body metrics.
+                        </p>
+                        <div class="tile-options">
+                            <span class="option-tag">Road</span>
+                            <span class="option-tag">Gravel</span>
+                            <span class="option-tag">Tour</span>
+                        </div>
+                    </div>
+                    <div class="tile-spark"></div>
+                </div>
+
+                <div class="config-tile magnetic-tile" data-tile="geometry">
+                    <div class="tile-frame">
+                        <span class="tile-corner tl"></span>
+                        <span class="tile-corner tr"></span>
+                        <span class="tile-corner bl"></span>
+                        <span class="tile-corner br"></span>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-category">Precision</span>
+                        <h3 class="tile-title">Body Geometry</h3>
+                        <p class="tile-description">
+                            27-point measurement protocol. Power analysis. 
+                            Flexibility mapping. Your machine fits only you.
+                        </p>
+                        <div class="tile-data">
+                            <div class="data-point">
+                                <span class="data-label">Stack</span>
+                                <span class="data-value">Custom</span>
+                            </div>
+                            <div class="data-point">
+                                <span class="data-label">Reach</span>
+                                <span class="data-value">Custom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile-spark"></div>
+                </div>
+
+                <div class="config-tile magnetic-tile" data-tile="finish">
+                    <div class="tile-frame">
+                        <span class="tile-corner tl"></span>
+                        <span class="tile-corner tr"></span>
+                        <span class="tile-corner bl"></span>
+                        <span class="tile-corner br"></span>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-category">Expression</span>
+                        <h3 class="tile-title">Finish & Detail</h3>
+                        <p class="tile-description">
+                            Powder coat, paint, or raw metal. Hand-brushed 
+                            logos. Custom head badge engraving.
+                        </p>
+                        <div class="tile-palette">
+                            <span class="color-swatch" style="--color: #1a1a1a"></span>
+                            <span class="color-swatch" style="--color: #8B7355"></span>
+                            <span class="color-swatch" style="--color: #4A6741"></span>
+                            <span class="color-swatch" style="--color: #B8860B"></span>
+                        </div>
+                    </div>
+                    <div class="tile-spark"></div>
+                </div>
+
+                <div class="config-tile magnetic-tile tile-wide" data-tile="components">
+                    <div class="tile-frame">
+                        <span class="tile-corner tl"></span>
+                        <span class="tile-corner tr"></span>
+                        <span class="tile-corner bl"></span>
+                        <span class="tile-corner br"></span>
+                    </div>
+                    <div class="tile-content">
+                        <span class="tile-category">Assembly</span>
+                        <h3 class="tile-title">Component Selection</h3>
+                        <p class="tile-description">
+                            Curated groupsets from Campagnolo, Shimano, SRAM. 
+                            Wheel builds by master mechanics. Cockpit tailored 
+                            to your reach and grip preference.
+                        </p>
+                        <div class="tile-brands">
+                            <span class="brand-mark">Campagnolo</span>
+                            <span class="brand-divider"></span>
+                            <span class="brand-mark">Shimano</span>
+                            <span class="brand-divider"></span>
+                            <span class="brand-mark">SRAM</span>
+                        </div>
+                    </div>
+                    <div class="tile-spark"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Builders Section -->
+    <section class="builders" id="builders">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">The Artisans</h2>
+                <p class="section-subtitle">Master builders. Documented excellence.</p>
+            </div>
+
+            <div class="builders-showcase">
+                <div class="builder-card magnetic-card">
+                    <div class="builder-image">
+                        <div class="builder-placeholder">
+                            <span class="builder-initials">MV</span>
+                        </div>
+                        <div class="builder-overlay">
+                            <span class="builder-specialty">Steel / Titanium</span>
+                        </div>
+                    </div>
+                    <div class="builder-info">
+                        <h3 class="builder-name">Marco Vossen</h3>
+                        <p class="builder-origin">Milan, Italy</p>
+                        <p class="builder-bio">
+                            Three decades of lugged steel. Marco's fillet brazing 
+                            is whispered about in pelotons across Europe.
+                        </p>
+                        <div class="builder-stats">
+                            <div class="stat">
+                                <span class="stat-value">847</span>
+                                <span class="stat-label">Frames</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">32</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="builder-card magnetic-card">
+                    <div class="builder-image">
+                        <div class="builder-placeholder builder-accent">
+                            <span class="builder-initials">SK</span>
+                        </div>
+                        <div class="builder-overlay">
+                            <span class="builder-specialty">Carbon Composite</span>
+                        </div>
+                    </div>
+                    <div class="builder-info">
+                        <h3 class="builder-name">Sarah Kowalski</h3>
+                        <p class="builder-origin">Portland, Oregon</p>
+                        <p class="builder-bio">
+                            Aerospace engineer turned frame builder. Sarah's 
+                            carbon layups defy conventional weight limits.
+                        </p>
+                        <div class="builder-stats">
+                            <div class="stat">
+                                <span class="stat-value">412</span>
+                                <span class="stat-label">Frames</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">15</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="builder-card magnetic-card">
+                    <div class="builder-image">
+                        <div class="builder-placeholder">
+                            <span class="builder-initials">YT</span>
+                        </div>
+                        <div class="builder-overlay">
+                            <span class="builder-specialty">Traditional Lug</span>
+                        </div>
+                    </div>
+                    <div class="builder-info">
+                        <h3 class="builder-name">Yuki Tanaka</h3>
+                        <p class="builder-origin">Nara, Japan</p>
+                        <p class="builder-bio">
+                            Third-generation builder. Yuki's hand-cut lugs are 
+                            collected as art objects before they become frames.
+                        </p>
+                        <div class="builder-stats">
+                            <div class="stat">
+                                <span class="stat-value">623</span>
+                                <span class="stat-label">Frames</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">28</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">The Process</h2>
+                <p class="section-subtitle">From measurement to machine.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="process-step" data-step="1">
+                    <div class="step-marker">
+                        <span class="step-number">01</span>
+                        <span class="step-dot"></span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Assessment</h3>
+                        <p class="step-description">
+                            Virtual or in-studio fitting. We capture your 
+                            biomechanics, riding style, and aspirations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-marker">
+                        <span class="step-number">02</span>
+                        <span class="step-dot"></span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-description">
+                            Your builder creates digital blueprints. 
+                            Geometry finalized. Materials selected.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-marker">
+                        <span class="step-number">03</span>
+                        <span class="step-dot"></span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Fabrication</h3>
+                        <p class="step-description">
+                            8-16 weeks of meticulous craft. Progress 
+                            documentation shared throughout.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-marker">
+                        <span class="step-number">04</span>
+                        <span class="step-dot"></span>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Delivery</h3>
+                        <p class="step-description">
+                            Final fitting at your chosen atelier. 
+                            Your machine. Your geometry. Ready to ride.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atelier CTA Section -->
+    <section class="atelier" id="atelier">
+        <div class="atelier-bg">
+            <div class="atelier-grid"></div>
+        </div>
+        <div class="atelier-content">
+            <div class="atelier-header">
+                <span class="atelier-eyebrow">Begin Your Build</span>
+                <h2 class="atelier-title">
+                    <span class="title-line">The Machine</span>
+                    <span class="title-line">Awaits</span>
+                </h2>
+                <p class="atelier-description">
+                    Commission consultations are complimentary. 
+                    Connect with our curation team to match with 
+                    the perfect builder for your vision.
+                </p>
+            </div>
+
+            <form class="atelier-form" id="atelierForm">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                        <span class="form-line"></span>
+                    </div>
+                </div>
+                <div class="form-field form-full">
+                    <label for="interest" class="form-label">Interest</label>
+                    <select id="interest" name="interest" class="form-select" required>
+                        <option value="">Select your focus</option>
+                        <option value="road">Road Performance</option>
+                        <option value="gravel">Gravel & All-Road</option>
+                        <option value="touring">Touring & Randonneur</option>
+                        <option value="custom">Unsure / Explore</option>
+                    </select>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-field form-full">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your riding..." required></textarea>
+                    <span class="form-line"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">
+                    <span class="btn-text">Request Consultation</span>
+                    <span class="btn-spark"></span>
+                </button>
+            </form>
+
+            <div class="atelier-locations">
+                <div class="location">
+                    <span class="location-city">New York</span>
+                    <span class="location-detail">By appointment</span>
+                </div>
+                <div class="location">
+                    <span class="location-city">London</span>
+                    <span class="location-detail">By appointment</span>
+                </div>
+                <div class="location">
+                    <span class="location-city">Tokyo</span>
+                    <span class="location-detail">By appointment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-primary">ATELIER</span>
+                    <span class="logo-secondary">VELO</span>
+                </a>
+                <p class="footer-tagline">
+                    Bespoke bicycles for those who understand 
+                    that machines can be art.
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Explore</h4>
+                    <a href="#craft" class="footer-link">Configuration</a>
+                    <a href="#builders" class="footer-link">Builders</a>
+                    <a href="#process" class="footer-link">Process</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <a href="#" class="footer-link">Instagram</a>
+                    <a href="#" class="footer-link">Newsletter</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="copyright">© 2024 Atelier Velo. All rights reserved.</span>
+            <span class="footer-craft">Crafted with precision</span>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+            </div>
+            <h3 class="modal-title">Request Received</h3>
+            <p class="modal-message">
+                Our curation team will contact you within 48 hours 
+                to schedule your consultation.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
