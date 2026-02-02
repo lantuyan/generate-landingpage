@@ -1,0 +1,7 @@
+# Cinematic Subtitles Landing Page
+
+A Cinematic Subtitles aesthetic with slow shock and diagrammatic romance, built for a quiet finance companion that helps individuals navigate money decisions without anxiety. The emotional register moves between clarity and mystery, discipline and warmth—translating financial complexity into readable moments. Color logic uses two-tone duotone with one forbidden color: warm sepia and cool silver dominate like old film stock, while a forbidden gold appears only at moments of financial clarity like treasure discovered in the frame.
+
+Typography appears with subtitle timing, emerging at the bottom of visual fields with the precision of translation bridging worlds. Spacing reads as the pause between spoken lines, breathing room that lets financial concepts land before the next revelation. The scrolling choreography performs stair-step certainty, each financial concept building reliably on the last like ascending toward comprehension. Motion embodies a museum-slow mood, number transitions that respect the weight of financial decisions. The spatial metaphor creates an archive drawer experience, where financial tools slide open to reveal organized resources like scenes filed for review.
+
+Reference anchors: The layered narrative of Terrence Malick's visual compositions, the humanist typography of mid-century Italian film credits, and the meditative repetition of block printing—creating a finance platform where money becomes story and numbers become understandable dialogue.

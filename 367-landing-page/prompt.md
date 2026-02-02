@@ -1,0 +1,7 @@
+# Archaeological UI Landing Page
+
+An Archaeological UI aesthetic with polite glitch and calm chaos, designed for a private learning studio that treats knowledge acquisition as excavation of buried understanding. The emotional layers shift between nostalgia and futurism, quiet and spectacle—each lesson revealing something ancient yet relevant to tomorrow. Color logic follows warm grayscale with sudden sunrise band: sedimentary tans and fossil grays accumulate, with a horizon of coral and gold appearing at mastery moments like light breaking through an excavation shaft.
+
+Typography emerges like inscriptions brushed free from centuries, letterforms that carry the weight of recovered knowledge. Spacing operates as the careful distance between dig sites, room for each discovery to be documented before moving to the next. The scrolling choreography embodies a chaptered long-take, each learning module unfolding as a complete stratum before descending deeper. Motion carries a subtle tremor mood, the slight vibration of discovery as tools meet artifact. The spatial metaphor extends through a museum corridor, where lessons line the walls like chronological exhibits tracing the evolution of understanding.
+
+Reference anchors: The layered excavation approach of Louis Kahn's archaeological site museums, the visual translation of Egyptian revival typography, and the patient brushwork of fresco restoration—creating a learning platform where knowledge feels discovered rather than delivered, earned rather than consumed.

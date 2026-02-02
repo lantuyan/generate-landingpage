@@ -1,0 +1,7 @@
+# Ink & Signal Landing Page
+
+An Ink & Signal aesthetic with museum-grade whimsy and precision fog, built for a health routine architect that merges the permanence of handwritten wellness journals with the pulse of biometric data. The emotional frequency moves between clarity and mystery, nostalgia and futurism—making health tracking feel both eternal and immediate. Color logic uses stormy blues interrupted by ember red: inkwell black and prescription white set the base, while a heartbeat red appears at vital sign alerts like urgent ink underscoring important symptoms.
+
+Typography writes with the authority of medical notation traditions, varying line weights that suggest urgency levels and careful observation. Spacing breathes like the pause between pulse beats, moments of observation before the next data point. The scrolling choreography follows a tide in / tide out rhythm, health metrics flowing forward with new readings and receding to reveal patterns over time. Motion embodies a signal pulse mood, micro-animations flickering between journal permanence and real-time vitals. The spatial metaphor inhabits an archive drawer, where health records are filed with the care of important medical correspondence.
+
+Reference anchors: The clinical precision of Alvar Aalto's sanatorium architecture, the documentary tradition of vintage medical illustration, and the meticulous craft of fountain pen nib manufacturing—creating a wellness platform where health is inscribed with intention and the body's signals become legible text.

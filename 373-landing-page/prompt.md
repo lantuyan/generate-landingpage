@@ -1,0 +1,7 @@
+# Weather System Editorial Landing Page
+
+A Weather System Editorial aesthetic with dusty neon and slow shock, designed for a health routine architect that treats wellness as atmospheric conditions to be read and responded to. The emotional climate shifts between serenity and urgency, trust and curiosity—making health data feel like weather patterns to be understood. Color logic follows stormy blues interrupted by ember red: atmospheric grays and pressure-front whites dominate, while a warning amber appears at health alerts like sunset before a storm.
+
+Typography broadcasts with the clarity of weather bulletins, each health metric delivered with the authority of forecast certainty. Spacing operates as atmospheric pressure zones, compression and expansion that guides the eye like fronts moving across a personal body-map. The scrolling choreography performs a slow zoom, beginning with overall wellness climate and focusing down to specific micro-conditions. Motion embodies a signal pulse mood, data points flickering with the rhythm of monitoring equipment. The spatial metaphor extends through a subway platform wayfinding system, where health guidance is posted for quick reference as decisions approach.
+
+Reference anchors: The transparent functionality of Richard Rogers' visible systems architecture, the visual poetry of vintage weather map iconography, and the calibrated precision of barometer manufacturing—creating a wellness platform where health becomes readable climate and routine becomes responsive adaptation.

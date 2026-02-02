@@ -1,0 +1,7 @@
+# Hyperlocal Craft Ledger Landing Page
+
+A Hyperlocal Craft Ledger aesthetic with diagrammatic romance and slow shock, crafted for a climate-adaptive home guidance platform that records environmental decisions with the gravity of official documentation. The emotional register holds between nostalgia and futurism, discipline and warmth—treating each climate action as a ledger entry for the future. Color logic employs two-tone duotone with one forbidden color: ledger cream and carbon-copy blue form the base, while a forbidden green appears at environmental wins like a stamp of ecological approval.
+
+Typography carries the character of typewritten reports and handwritten addenda, mixing official precision with personal notation. Spacing operates as ruled columns, creating order from complex climate data while leaving room for contextual notes. The scrolling choreography follows stair-step certainty, climate impact building visibly with each scroll like a growing account of positive change. Motion holds a paper-flip mood, transitions suggesting pages turning in a well-maintained record book. The spatial metaphor inhabits an archive drawer, where climate decisions are filed with the importance of legal documents.
+
+Reference anchors: The democratic accessibility of public library architecture traditions, the documentary power of governmental record-keeping aesthetics, and the enduring craft of ledger book binding—creating a climate platform where environmental action becomes official record and sustainability is properly documented.

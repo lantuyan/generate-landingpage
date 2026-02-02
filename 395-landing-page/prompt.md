@@ -1,0 +1,7 @@
+# Ritual Minimalism Landing Page
+
+A Ritual Minimalism aesthetic with tender machinery and anti-symmetry elegance, built for a local maker marketplace that treats commerce as ceremony and buying as meaningful exchange. The emotional atmosphere holds between quiet and spectacle, awe and intimacy—making each transaction feel like a ritual worth performing. Color logic uses a single strange accent that appears like a clue: altar white and incense gray dominate, while a ceremonial copper appears only at purchase moments like an offering bowl receiving its due.
+
+Typography appears with liturgical weight, each product name measured and significant, never casual or throwaway. Spacing functions as the silence between ritual gestures, intentional pauses that give each product its proper gravity. The scrolling choreography follows a chaptered long-take, each maker category unfolding as a complete ceremony before the next begins. Motion embodies a museum-slow mood, products entering with the deliberate pacing of processional movement. The spatial metaphor creates a theatre stage, where handmade goods are presented with the attention usually reserved for sacred objects.
+
+Reference anchors: The sacred minimalism of Claudio Silvestrin's gallery spaces, the ritualized commerce of Japanese department store traditions, and the ceremonial craft of incense production—creating a marketplace where buying becomes practice and commerce becomes meaningful observance.

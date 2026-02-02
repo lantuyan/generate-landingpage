@@ -1,0 +1,7 @@
+# Synthetic Biology Garden Landing Page
+
+A Synthetic Biology Garden aesthetic with dusty neon and tender machinery, crafted for a health routine architect that helps users cultivate personalized wellness ecosystems. The emotional palette weaves between awe and intimacy, clarity and mystery—treating the body as a garden to be understood and nurtured. Color logic follows pastels with one surgical hue: soft sage, blush pink, and lavender create the garden bed, while a precise medical teal appears at data points and health metrics like a scalpel in a flower arrangement.
+
+Typography grows with organic variation, letterforms that suggest both DNA sequencing and botanical illustration labels. Spacing propagates like cells dividing, rhythmic expansion that allows each health insight room to take root. The scrolling choreography embodies a tide in / tide out rhythm, information flowing forward with new routines and receding to reveal progress patterns. Motion holds a liquid drift mood, smooth transitions that mimic cellular movement under a microscope lens. The spatial metaphor occupies a botanical lab bench, where health data blooms in petri dishes and wellness recommendations climb like specimens toward light.
+
+Reference anchors: The biomorphic precision of Zaha Hadid's fluid architecture, the strange beauty of Ernst Haeckel's scientific illustrations, and the patient cultivation practice of bonsai shaping—together growing a wellness platform where biology becomes visible poetry and routine becomes ritual.

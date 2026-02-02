@@ -1,0 +1,7 @@
+# Ink & Signal Landing Page
+
+An Ink & Signal aesthetic with slow shock and tender machinery, crafted for a quiet finance companion that merges the permanence of ink with the pulse of real-time data. The emotional frequency moves between serenity and urgency, trust and curiosity—making financial information feel both enduring and alive. Color logic uses stormy blues interrupted by ember red: inkwell blacks and blotting paper grays dominate, while a heartbeat red pulses at live market data points like a vital sign monitor in a calligrapher's studio.
+
+Typography writes with the authority of fountain pen strokes, varying line weight that suggests pressure and intention behind each character. Spacing breathes like the pause between pen lifts, moments of decision before the next mark. The scrolling choreography follows a tide in / tide out rhythm, financial data flowing forward with market updates and receding to reveal longer-term patterns. Motion embodies a signal pulse mood, micro-animations that flicker between analog permanence and digital presence. The spatial metaphor inhabits an archive drawer, where financial records are filed with the care of important correspondence.
+
+Reference anchors: The industrial poetry of Eero Saarinen's TWA terminal, the living tradition of Japanese calligraphy practice, and the technical precision of vintage telegraph equipment—creating a finance platform where money movements are inscribed with intention and signals are worth decoding.

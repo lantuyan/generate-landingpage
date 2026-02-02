@@ -1,0 +1,7 @@
+# Negative Space Theatre Landing Page
+
+A Negative Space Theatre aesthetic with whispered maximalism and bureaucracy but beautiful, designed for an ethical AI toolkit that stages algorithmic decisions as performances to be witnessed. The emotional drama oscillates between quiet and spectacle, awe and intimacy—making invisible machine logic theatrically visible. Color logic applies two-tone duotone with one forbidden color: deep black and stark white create the stage, while a forbidden violet appears at ethical violation warnings like a spotlight on a troubled character.
+
+Typography enters with dramatic timing, words appearing as if spoken by an unseen narrator, weighted with meaning beyond their literal content. Spacing acts as the wings of the stage, the hidden spaces from which revelations emerge into the light. The scrolling choreography unfolds through scene cuts, each ethical framework presented as a new act with its own cast and conflict. Motion carries a magnetic snap mood, interface elements arriving with the certainty of blocking marks on a stage floor. The spatial metaphor inhabits a theatre stage, where AI decisions are performed for an audience that deserves to see what happens behind the algorithmic curtain.
+
+Reference anchors: The suspended tension of Peter Brook's empty stage philosophy, the visual language of German Expressionist cinema, and the shadow art tradition of wayang kulit puppetry—creating an AI ethics platform where transparency is theatrical and accountability requires an audience.

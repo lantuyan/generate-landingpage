@@ -1,0 +1,7 @@
+# Hyperlocal Craft Ledger Landing Page
+
+A Hyperlocal Craft Ledger aesthetic with bureaucracy but beautiful and museum-grade whimsy, built for a local maker marketplace connecting neighborhood artisans with appreciative buyers. The emotional register navigates between trust and curiosity, nostalgia and futurism—transforming commerce into community record-keeping. Color logic applies stormy blues interrupted by ember red: slate and steel blue tones evoke the ledger's seriousness, while a burnt sienna marks sales, favorites, and maker highlights like entries worth remembering.
+
+Typography carries the character of typewritten invoices and handwritten margins, mixing mechanical precision with human annotation. Spacing reads like ruled ledger columns, orderly yet alive with the slight irregularities of actual use. The scrolling choreography follows an accordion expansion, product categories unfolding from compressed headers into full catalogs of local abundance. Motion embodies a subtle tremor mood, the gentle vibration of a workshop in constant quiet production. The spatial metaphor inhabits a workshop table, where goods are laid out for inspection like samples brought to market.
+
+Reference anchors: The honest materiality of Alvaro Siza's neighborhood libraries, the archival tenderness of vernacular photography collections, and the functional beauty of handbound accounting books—creating a marketplace where every transaction feels like an entry in the community's ongoing story.

@@ -1,0 +1,7 @@
+# Gravity-Defying Catalog Landing Page
+
+A Gravity-Defying Catalog aesthetic with dusty neon and museum-grade whimsy, designed for a local maker marketplace where handcrafted goods seem to float in impossible arrangements. The emotional suspension balances gravity and lightness, awe and intimacy—treating each product as a small miracle of making. Color logic employs two-tone duotone with one forbidden color: cream and deep indigo create the base, while a forbidden hot pink appears at featured items like a Vegas sign in a library, wrong but thrilling.
+
+Typography hovers with the confidence of mid-century catalog headlines, bold and optimistic, promising wonders within reach. Spacing operates as the air beneath levitating objects, generous voids that make products seem to defy physics. The scrolling choreography performs a slow zoom, beginning with the entire marketplace cosmos and focusing down to individual maker stories. Motion carries a gentle orbit mood, products rotating slowly in space as if suspended by invisible threads in a department store of dreams. The spatial metaphor extends through an observatory deck, where products are displayed like celestial objects to be studied and desired.
+
+Reference anchors: The suspended installations of Alexander Calder's kinetic mobiles, the playful commercial art of mid-century advertising illustration, and the precise suspension techniques of shadow box diorama craft—creating a marketplace where commerce feels like curation and buying feels like collecting.

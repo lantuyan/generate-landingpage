@@ -1,0 +1,7 @@
+# Optical Field Notes Landing Page
+
+An Optical Field Notes aesthetic with dusty neon and tender machinery, built for a health routine architect that documents wellness like a naturalist documenting specimens. The emotional field oscillates between clarity and mystery, trust and curiosity—treating every health metric as an observation worth recording. Color logic employs stormy blues interrupted by ember red: field-note sepia and specimen white dominate, while a vital red appears at health alerts like blood under a field microscope.
+
+Typography reads like expedition annotations, mixing precise measurement labels with excited margin discoveries. Spacing breathes like the gaps between field sketches, room for the observer to rest before the next detailed study of the body's territory. The scrolling choreography follows a map journey, health domains unfolding like pages in a naturalist's guide to the self. Motion holds a subtle tremor mood, micro-movements suggesting notes taken in situ while the organism continues living. The spatial metaphor occupies a botanical lab bench, where health data is pressed and mounted like specimens for longitudinal observation.
+
+Reference anchors: The observational architecture of natural history museum research wings, the documentary romance of 19th-century medical illustration, and the portable precision of the explorer's field specimen kit—creating a wellness platform where the body becomes territory and health becomes expedition.

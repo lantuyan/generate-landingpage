@@ -1,0 +1,7 @@
+# Ritual Minimalism Landing Page
+
+A Ritual Minimalism aesthetic with formal play and precision fog, crafted for a health routine architect that transforms daily wellness into meaningful ceremony. The emotional atmosphere holds between quiet and spectacle, gravity and lightness—making each health habit feel like a devotional practice worth keeping. Color logic uses a single strange accent that appears like a clue: vast expanses of bone white and soft charcoal, with a ceremonial burgundy appearing only at ritual completion moments like incense rising from a clean altar.
+
+Typography appears with the weight of liturgical text, each word measured and significant, never casual or throwaway. Spacing functions as the silence between bells, the intentional pauses that give ritual its rhythm and power. The scrolling choreography follows a chaptered long-take, each health practice unfolding as a complete ritual before the next begins. Motion embodies a museum-slow mood, transitions so deliberate they become meditative, inviting presence rather than haste. The spatial metaphor creates a theatre stage, where daily health practices are performed with the attention usually reserved for important ceremonies.
+
+Reference anchors: The sacred minimalism of Tadao Ando's meditation spaces, the structured devotion of Gregorian chant notation, and the repetitive discipline of tea ceremony preparation—creating a wellness platform where health becomes practice and practice becomes meaning.

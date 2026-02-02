@@ -1,0 +1,7 @@
+# Negative Space Theatre Landing Page
+
+A Negative Space Theatre aesthetic with dusty neon and misaligned perfection, built for a local maker marketplace that stages products as performers in an ongoing show about craftsmanship. The emotional drama oscillates between awe and intimacy, quiet and spectacle—each product arriving like an actor entering from the wings. Color logic applies a mineral palette with radioactive highlight: stage black and spotlight white set the scene, while a radioactive pink appears at featured products like a neon sign in an otherwise austere theatre lobby.
+
+Typography enters with dramatic timing, product names appearing as if announced by an unseen voice, weighted with expectation. Spacing acts as the empty stage before the performance, charged voids that make each product's entrance significant. The scrolling choreography unfolds through scene cuts, each maker category transitioning like a new act with its own lighting and mood. Motion carries a magnetic snap mood, products arriving at their marks with the precision of professional blocking. The spatial metaphor inhabits a theatre stage, where handmade goods are presented as the stars of their own production.
+
+Reference anchors: The theatrical architecture of Oscar Niemeyer's cultural centers, the visual drama of Russian Constructivist stage design, and the precise craft of theatrical lighting gel manufacturing—creating a marketplace where commerce becomes performance and makers become auteurs.

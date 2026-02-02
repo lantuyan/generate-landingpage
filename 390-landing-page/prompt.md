@@ -1,0 +1,7 @@
+# Cinematic Subtitles Landing Page
+
+A Cinematic Subtitles aesthetic with silent comedy and tender machinery, crafted for a private learning studio that translates complex knowledge into readable moments of understanding. The emotional screenplay balances nostalgia and futurism, discipline and warmth—each lesson arriving with the weight of cinema's most memorable lines. Color logic uses warm grayscale with sudden sunrise band: projection black and screen gray dominate, while a sunrise orange appears at breakthrough moments like credits rolling after a transformative film.
+
+Typography appears with subtitle precision, emerging at carefully timed moments with the clarity of translation bridging worlds of expertise. Spacing reads as the pause between spoken lines, breathing room that lets each concept land before the next revelation. The scrolling choreography follows scene cuts, each learning module transitioning with the rhythm of well-edited cinema. Motion carries a museum-slow mood, concepts drifting into frame with the deliberate pacing of art house narrative. The spatial metaphor creates a theatre stage, where ideas are presented as performers in an educational production.
+
+Reference anchors: The visual poetry of Andrei Tarkovsky's meditative sequences, the typographic innovation of early French New Wave title design, and the narrative craft of zoetrope animation—creating a learning platform where knowledge becomes cinema and understanding unfolds like a film worth rewatching.

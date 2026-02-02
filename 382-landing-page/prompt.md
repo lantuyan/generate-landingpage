@@ -1,0 +1,7 @@
+# Ink & Signal Landing Page
+
+An Ink & Signal aesthetic with calm chaos and anti-symmetry elegance, designed for a mindful travel planner that merges the permanence of handwritten journals with the pulse of real-time travel data. The emotional frequency moves between nostalgia and futurism, serenity and urgency—making journey planning feel both timeless and immediate. Color logic uses two-tone duotone with one forbidden color: inkwell black and parchment cream set the base, while a forbidden cyan appears at live updates like a digital transmission interrupting an analog world.
+
+Typography writes with the authority of fountain pen correspondence, varying line weights that suggest pressure and intention behind each destination. Spacing breathes like the pause between paragraphs of travel writing, moments of reflection before the next revelation. The scrolling choreography follows a tide in / tide out rhythm, destination options flowing forward and receding to reveal curated selections. Motion embodies a signal pulse mood, micro-animations that flicker between handwritten permanence and real-time presence. The spatial metaphor inhabits a map room, where journeys are planned with the same gravitas as historical expeditions.
+
+Reference anchors: The industrial elegance of Eero Saarinen's airport terminals, the personal poetry of travel journal traditions, and the technical precision of vintage telegraph operation—creating a travel platform where journeys are inscribed with intention and signals guide the way.

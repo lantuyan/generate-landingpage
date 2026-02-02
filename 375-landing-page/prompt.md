@@ -1,0 +1,7 @@
+# Micro-Museum Labels Landing Page
+
+A Micro-Museum Labels aesthetic with silent comedy and formal play, crafted for a climate-adaptive home guidance platform that curates environmental wisdom like specimens for study. The emotional register oscillates between trust and curiosity, discipline and warmth—treating each climate tip as an artifact deserving careful labeling. Color logic applies warm grayscale with sudden sunrise band: archival tans and specimen whites dominate, with a horizon of amber and rose appearing at climate success moments like golden hour through museum windows.
+
+Typography reads like specimen labels under glass, compact and precise, designed to inform without competing with the subject. Spacing functions as the air around displayed objects, protective voids that make each climate strategy feel singular and important. The scrolling choreography unfolds through an accordion expansion, climate categories opening to reveal nested recommendations like drawers in a natural history collection. Motion holds a paper-flip mood, interactions that suggest turning collection cards to discover what's cataloged behind. The spatial metaphor inhabits a museum corridor, where climate adaptations line the walls like exhibits in a gallery of sustainable futures.
+
+Reference anchors: The reverent display architecture of Renzo Piano's museum additions, the taxonomic wonder of Victorian natural history collections, and the meticulous craft of scientific illustration—creating a climate platform where sustainable choices are elevated to exhibit quality.

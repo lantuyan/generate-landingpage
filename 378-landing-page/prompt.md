@@ -1,0 +1,7 @@
+# Algorithmic Quilt Landing Page
+
+An Algorithmic Quilt aesthetic with misaligned perfection and slow shock, crafted for a community logistics hub that pieces together neighborhood resources into patterns of mutual support. The emotional patchwork weaves between discipline and warmth, quiet and spectacle—treating community organizing as collaborative pattern-making. Color logic follows pastels with one surgical hue: soft blocks of lavender, mint, and peach piece together, while a surgical red appears at urgent needs like a bold accent square demanding attention.
+
+Typography stitches across the layout with quilting rhythm, letterforms that suggest hand-lettered labels on pattern pieces. Spacing operates as seam allowances, the structural gaps between content blocks that allow the whole to hold together under use. The scrolling choreography performs a spiral reveal, community resources circling inward toward matched needs like a log cabin quilt building toward center. Motion carries a gentle orbit mood, resource markers rotating slowly to show their connection possibilities from different angles. The spatial metaphor inhabits a workshop table, where community needs and offerings are laid out like fabric squares awaiting the quilter's arrangement.
+
+Reference anchors: The communal geometry of Gees Bend quilt-making traditions, the pattern logic of Bauhaus textile workshops, and the collaborative craft of community quilting bees—creating a logistics platform where helping is pieced together and support becomes a blanket large enough to cover everyone.

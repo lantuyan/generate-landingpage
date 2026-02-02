@@ -1,0 +1,7 @@
+# Cinematic Subtitles Landing Page
+
+A Cinematic Subtitles aesthetic with polite glitch and calm chaos, built for a local maker marketplace that translates craft stories into visual narrative. The emotional screenplay balances awe and intimacy, quiet and spectacle—each product arriving with the weight of a scene in a film worth watching. Color logic uses a mineral palette with radioactive highlight: celluloid amber and projection-room black set the mood, while a radioactive green appears at featured products like a subtitle translating something important.
+
+Typography appears with subtitle precision, emerging at the lower edge of visual frames with timing that suggests spoken words being translated for understanding. Spacing reads as the pause between dialogue lines, room for the previous revelation to land before the next begins. The scrolling choreography follows scene cuts, each maker story transitioning with cinematic rhythm from wide establishing shots to intimate close-ups. Motion carries a museum-slow mood, products drifting into frame with the deliberate pacing of art house cinema. The spatial metaphor creates a theatre stage, where products are presented as performers in a production about the meaning of handmade.
+
+Reference anchors: The visual storytelling of Wim Wenders' meditative films, the graphic power of Saul Bass title sequences, and the sequential art of hand-pulled screen printing—creating a marketplace where commerce feels like narrative and buying becomes part of a larger story.

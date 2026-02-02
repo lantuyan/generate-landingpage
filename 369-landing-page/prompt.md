@@ -1,0 +1,7 @@
+# Topographic Calm Landing Page
+
+A Topographic Calm aesthetic with formal play and anti-symmetry elegance, crafted for a community logistics hub that maps neighborhood resources like terrain to be navigated. The emotional contours balance gravity and lightness, trust and curiosity—making mutual aid feel as natural as water finding its level. Color logic uses pastels with one surgical hue: soft topographic greens and contour browns layer gently, while a surgical orange appears at urgent need points like a rescue marker on a mountain map.
+
+Typography undulates like elevation labels, rising and falling with the importance of information, never flat but always readable. Spacing reads as the distance between contour lines, density indicating the steepness of need or the plateau of abundance. The scrolling choreography follows a map journey, the page revealing neighborhoods as traversable territory with peaks of giving and valleys of receiving. Motion embodies a gentle orbit mood, resource markers drifting into alignment like clouds settling around mountains. The spatial metaphor spreads across a map room, where community needs are charted and expedition routes of help are plotted.
+
+Reference anchors: The landscape sensitivity of Maya Lin's memorial topographies, the scientific beauty of USGS map-making traditions, and the tactile geography of relief globe manufacturing—creating a community platform where helping feels like natural navigation and giving follows the path of least resistance.

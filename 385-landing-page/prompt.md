@@ -1,0 +1,7 @@
+# Topographic Calm Landing Page
+
+A Topographic Calm aesthetic with precision fog and bureaucracy but beautiful, designed for an ethical AI toolkit that maps algorithmic decisions like terrain to be surveyed and understood. The emotional contours balance serenity and urgency, trust and curiosity—making AI governance feel as natural as reading a landscape. Color logic uses stormy blues interrupted by ember red: topographic green and contour gray form the map, while a warning ember appears at ethical risk zones like elevation markers for dangerous territory.
+
+Typography undulates like elevation labels on survey maps, rising and falling with the importance and risk level of information. Spacing reads as the distance between contour lines, density indicating the complexity of ethical terrain. The scrolling choreography follows a map journey, AI governance frameworks unfolding like territories to be navigated with care. Motion embodies a gentle orbit mood, ethical checkpoints drifting into alignment like weather systems approaching. The spatial metaphor spreads across a map room, where AI decisions are charted and ethical routes are plotted with expedition seriousness.
+
+Reference anchors: The landscape sensitivity of Lawrence Halprin's topographic urban design, the precise beauty of USGS cartographic standards, and the tactile craft of relief map construction—creating an AI ethics platform where governance becomes geography and decisions follow the path of responsible terrain.

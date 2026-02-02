@@ -1,0 +1,7 @@
+# Negative Space Theatre Landing Page
+
+A Negative Space Theatre aesthetic embracing silent comedy and formal play, designed for a creative workflow atelier serving designers and artists who need structured spontaneity. The emotional arc balances quiet and spectacle, discipline and warmth—staging each interface moment like a scene awaiting its performer. Color logic deploys a single strange accent that appears like a clue: vast fields of warm off-white and soft black, with a theatrical vermillion appearing only at decision points like a spotlight finding its mark.
+
+Typography performs with the timing of silent film intertitles, appearing with deliberate pause, each word earning its entrance. Spacing acts as the empty stage before the actor speaks, charged with potential. The scrolling choreography follows scene cuts, each scroll-stop a new act with its own lighting and blocking. Motion carries a paper-flip mood, transitions that suggest hands turning pages of a well-worn script. The spatial metaphor unfolds across a theatre stage, where tools and workflows wait in the wings until their cue is called.
+
+Reference anchors: The suspended drama of Carlo Scarpa's exhibition architecture, the visual wit of early Dada typography, and the ritualized precision of Japanese furoshiki wrapping—these three sensibilities stage a creative platform where the negative space works as hard as the visible elements, and silence speaks louder than noise.

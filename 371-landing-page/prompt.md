@@ -1,0 +1,7 @@
+# Hyperlocal Craft Ledger Landing Page
+
+A Hyperlocal Craft Ledger aesthetic with misaligned perfection and tender machinery, built for a micro-volunteering network that documents small acts of community care with the gravity of historical record. The emotional register holds between nostalgia and futurism, discipline and warmth—treating each volunteer hour as an entry worth preserving. Color logic employs a single strange accent that appears like a clue: ledger cream and pencil gray form the base, while an unexpected turquoise appears at impact moments like a rare stamp in an otherwise orderly book.
+
+Typography carries the character of handwritten ledger entries, mechanical enough to be official yet human enough to show care. Spacing operates as ruled columns, creating order from the chaos of community contribution while leaving room for margin notes. The scrolling choreography follows stair-step certainty, volunteer impact building visibly with each scroll like account balances growing. Motion holds a paper-flip mood, transitions that suggest turning pages in a well-used record book. The spatial metaphor inhabits an archive drawer, where volunteer contributions are filed with the reverence of important documents.
+
+Reference anchors: The democratic architecture of community libraries by Alvar Aalto, the amateur documentation spirit of outsider art collections, and the enduring practice of hand bookbinding—creating a volunteer platform where small contributions accumulate into ledgers worth keeping.

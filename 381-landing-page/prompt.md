@@ -1,0 +1,7 @@
+# Gravity-Defying Catalog Landing Page
+
+A Gravity-Defying Catalog aesthetic with polite glitch and formal play, crafted for a private learning studio where knowledge seems to float free of traditional constraints. The emotional suspension balances awe and intimacy, discipline and warmth—treating each course as an object hovering in educational space. Color logic applies a mineral palette with radioactive highlight: slate blues and asteroid grays create the void, while a radioactive orange appears at enrollment moments like a planet demanding attention.
+
+Typography hovers with the confidence of exhibition signage, bold declarations that seem to exist independent of surface. Spacing operates as the vacuum between celestial objects, generous voids that make each course feel like its own gravitational center. The scrolling choreography performs a slow zoom, beginning with the constellation of all learning possibilities and focusing down to individual course orbits. Motion carries a gentle orbit mood, courses rotating slowly as if suspended in an educational orrery. The spatial metaphor extends through an observatory deck, where learning paths are tracked like celestial movements to be studied and joined.
+
+Reference anchors: The suspended installations of James Turrell's skyspaces, the cosmic optimism of Space Age design movements, and the delicate balance of mobile sculpture construction—creating a learning platform where knowledge floats free and understanding requires only the right trajectory.

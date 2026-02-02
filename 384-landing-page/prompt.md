@@ -1,0 +1,7 @@
+# Sonic Blueprint Landing Page
+
+A Sonic Blueprint aesthetic with whispered maximalism and tender machinery, crafted for a quiet finance companion that translates money into audible frequencies and visible waveforms. The emotional register navigates between clarity and mystery, discipline and warmth—making financial complexity feel like composed sound. Color logic employs warm grayscale with sudden sunrise band: studio gray and waveform white dominate, while a sunrise gold appears at financial goals achieved like the triumphant swell of a symphony's resolution.
+
+Typography resonates with the rhythm of musical notation, spacing between characters that suggests tempo markings and dynamic instructions. Spacing functions as the rests in a financial score, calculated silences that give the numbers around them meaning. The scrolling choreography performs a spiral reveal, financial data circling inward toward understanding like a melody resolving to its home key. Motion holds a liquid drift mood, numbers flowing into position with the smooth inevitability of sound waves. The spatial metaphor creates an observatory deck, where financial patterns are monitored like cosmic signals being translated into comprehensible harmonies.
+
+Reference anchors: The acoustic perfection of concert hall architecture by Yasuhisa Toyota, the visual music experiments of Oskar Fischinger's animations, and the meticulous craft of speaker cabinet woodworking—creating a finance platform where money becomes melody and wealth becomes resonance.

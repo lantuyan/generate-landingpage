@@ -1,0 +1,7 @@
+# Optical Field Notes Landing Page
+
+An Optical Field Notes aesthetic with bureaucracy but beautiful and silent comedy, crafted for an ethical AI toolkit that observes algorithmic behavior with the attention of a naturalist studying specimens. The emotional field oscillates between discipline and warmth, gravity and lightness—treating AI systems as organisms deserving careful documentation. Color logic employs warm grayscale with sudden sunrise band: field-note sepia and specimen white dominate, while a sunrise amber appears at ethical insights like the golden hour of understanding.
+
+Typography reads like naturalist annotations, mixing precise categorization with excited margin notes capturing unexpected AI behaviors. Spacing breathes like the gaps between field sketches, room for the observer to rest before the next detailed study. The scrolling choreography follows a map journey, AI governance domains unfolding like pages in a field guide to algorithmic wildlife. Motion holds a subtle tremor mood, micro-movements suggesting notes taken in situ while systems continue operating. The spatial metaphor occupies a botanical lab bench, where AI decisions are pressed and mounted like specimens for longitudinal ethical study.
+
+Reference anchors: The observational patience of field research station architecture, the documentary romance of Victorian naturalist illustration, and the portable precision of brass microscope manufacturing—creating an AI ethics platform where algorithms become specimens and governance becomes careful observation.

@@ -1,0 +1,7 @@
+# Synthetic Biology Garden Landing Page
+
+A Synthetic Biology Garden aesthetic with diagrammatic romance and museum-grade whimsy, crafted for a mindful travel planner that cultivates journeys like living ecosystems of experience. The emotional cultivation moves between clarity and mystery, gravity and lightness—treating each trip as an organism to be grown and nurtured. Color logic uses pastels with one surgical hue: biome greens and petal pinks create the garden, while a laboratory cyan appears at planning tools like a pH indicator revealing the health of an itinerary.
+
+Typography grows with organic intention, letterforms that suggest both species labels and genetic sequences, categorizing wonder. Spacing propagates like growth patterns, elements distributed with the logic of phyllotaxis and the poetry of garden paths. The scrolling choreography embodies a tide in / tide out rhythm, destination options blooming forward and receding to reveal the cultivated selections. Motion carries a liquid drift mood, smooth transitions that mimic cellular movement and seasonal change. The spatial metaphor occupies a botanical lab bench, where travel plans are cultivated in controlled conditions before being transplanted into reality.
+
+Reference anchors: The greenhouse architecture of the Eden Project's biomes, the systematic beauty of Linnaean botanical classification, and the patient practice of bonsai cultivation—creating a travel platform where journeys are grown with care and destinations bloom in their proper season.

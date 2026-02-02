@@ -1,0 +1,7 @@
+# Synthetic Biology Garden Landing Page
+
+A Synthetic Biology Garden aesthetic with formal play and calm chaos, designed for a creative workflow atelier that treats design process as an ecosystem to be cultivated. The emotional cultivation moves between gravity and lightness, clarity and mystery—making creative workflow feel like tending a garden of interconnected ideas. Color logic uses pastels with one surgical hue: growth greens and petal pinks form the garden, while a laboratory white appears at milestone moments like a sterile sample being extracted for analysis.
+
+Typography grows with organic variation, letterforms suggesting both species classification and genetic notation. Spacing propagates like cell division patterns, rhythmic expansion that allows each workflow element room to develop. The scrolling choreography embodies a tide in / tide out rhythm, project phases blooming forward and receding to reveal pruned priorities. Motion carries a liquid drift mood, smooth transitions that mimic growth patterns under time-lapse observation. The spatial metaphor occupies a botanical lab bench, where creative projects are cultivated in controlled conditions before being transplanted into the world.
+
+Reference anchors: The biophilic architecture of WOHA's vertical gardens, the systematic beauty of herbarium specimen collections, and the patient cultivation practice of espalier fruit training—creating a creative platform where workflow is grown, not forced, and ideas develop in their natural season.

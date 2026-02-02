@@ -1,0 +1,7 @@
+# Paper Engineering Landing Page
+
+A Paper Engineering aesthetic with silent comedy and tender machinery, crafted for a community logistics hub that coordinates neighborhood resource-sharing and mutual aid. The emotional structure balances gravity and lightness, awe and intimacy—making complex logistics feel as approachable as a pop-up book. Color logic uses warm grayscale with sudden sunrise band: soft whites and warm grays stack like paper layers, with a band of saffron and coral appearing at connection moments like a page unfolding to reveal hidden depth.
+
+Typography folds into the layout like tabs and slots, letterforms that suggest assembly instructions and handwritten annotations. Spacing operates as the depth between paper layers, creating parallax as elements overlap and reveal. The scrolling choreography follows a spiral reveal, community resources orbiting a central neighborhood map like cards arranged in a mobile. Motion embodies a paper-flip mood, transitions that curl, fold, and unfold with the tactile satisfaction of well-engineered paper craft. The spatial metaphor spreads across a workshop table, where community needs and resources are laid out for matching like patterns before cutting.
+
+Reference anchors: The structural poetry of Shigeru Ban's paper architecture, the kinetic surprise of Bruno Munari's artist books, and the precision engineering of origami mathematics—creating a community platform where connection is constructed visibly, fold by fold.

@@ -1,0 +1,7 @@
+# Algorithmic Quilt Landing Page
+
+An Algorithmic Quilt aesthetic with polite glitch and diagrammatic romance, designed for a quiet finance companion that pieces together financial strategies into patterns of stability. The emotional patchwork weaves between clarity and mystery, serenity and urgency—treating money management as collaborative pattern-making across time. Color logic follows pastels with one surgical hue: soft blocks of sage, dusty blue, and cream piece together, while a surgical gold appears at wealth milestones like a bold thread binding the pattern together.
+
+Typography stitches across the layout with quilting rhythm, letterforms connected in running lines of financial narrative. Spacing operates as seam allowances, the structural gaps between content blocks that allow the financial quilt to hold together under life's stress. The scrolling choreography performs a spiral reveal, financial strategies circling inward toward security like a log cabin pattern building toward center. Motion carries a gentle orbit mood, investment options rotating slowly to show their connections from different angles. The spatial metaphor inhabits a workshop table, where financial pieces are laid out like fabric squares awaiting the planner's arrangement.
+
+Reference anchors: The mathematical precision of Amish quilt traditions, the pattern logic of Sol LeWitt's systematic art, and the communal craft of historical quilting circles—creating a finance platform where wealth is pieced together thoughtfully and security becomes a blanket of considered decisions.

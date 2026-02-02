@@ -1,0 +1,7 @@
+# Micro-Museum Labels Landing Page
+
+A Micro-Museum Labels aesthetic with museum-grade whimsy and polite glitch, designed for a micro-volunteering network that connects busy people with small acts of meaningful contribution. The emotional palette balances quiet and spectacle, trust and curiosity—treating every volunteer moment as an artifact worthy of documentation. Color logic applies a single strange accent that appears like a clue: institutional cream and archival gray form the foundation, while an unexpected persimmon appears at impact moments like a docent's pointing finger.
+
+Typography reads like specimen labels—compact, informative, designed to illuminate without overwhelming the subject matter. Spacing functions as the air around museum objects, protective yet inviting close inspection of each volunteer opportunity. The scrolling choreography unfolds through accordion expansion, cause categories opening to reveal nested opportunities like drawers in a cabinet of curiosities. Motion carries a paper-flip mood, micro-interactions that suggest turning cards to discover what's behind. The spatial metaphor inhabits a museum corridor, where volunteer opportunities line the walls like exhibits in a gallery of possible impact.
+
+Reference anchors: The reverent display logic of David Chipperfield's museum restorations, the cataloging wonder of Wunderkammer collections, and the precise handwork of entomological specimen mounting—creating a volunteer platform where small actions are elevated to the significance they deserve.

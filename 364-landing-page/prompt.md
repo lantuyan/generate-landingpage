@@ -1,0 +1,7 @@
+# Optical Field Notes Landing Page
+
+An Optical Field Notes aesthetic with diagrammatic romance and anti-symmetry elegance, built for a mindful travel planner that documents journeys through the lens of careful observation. The emotional field oscillates between trust and curiosity, clarity and mystery—treating every destination as a specimen worthy of study. Color logic applies a mineral palette with radioactive highlight: earth tones of umber and sienna combine with field-note sepia, while a bioluminescent green appears at discovery moments like strange light in an unexplored cave.
+
+Typography reads like naturalist annotations, a mix of precise labeling and excited margin notes capturing fleeting observations. Spacing breathes like the gaps between field sketches, room for the eye to rest before the next detailed study. The scrolling choreography follows a map journey, destinations unfolding like pages in a well-used field guide held together by love and wear. Motion holds a subtle tremor mood, micro-movements that suggest the hand-held quality of notes taken in situ. The spatial metaphor occupies a botanical lab bench, where travel memories are pressed and mounted like specimens for future reference.
+
+Reference anchors: The observational architecture of Louis Kahn's Salk Institute laboratories, the documentary romance of hand-drawn cartography traditions, and the portable precision of watercolor field kits—creating a travel platform where journeys are recorded with the attention of scientific expeditions and the heart of personal pilgrimage.

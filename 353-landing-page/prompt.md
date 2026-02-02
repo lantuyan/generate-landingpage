@@ -1,0 +1,7 @@
+# Topographic Calm Landing Page
+
+A Topographic Calm aesthetic with whispered maximalism and calm chaos, built for a mindful travel planner that curates slow journeys through overlooked landscapes. The emotional terrain shifts between nostalgia and futurism, gravity and lightness—each contour line of the interface suggesting both remembered paths and routes yet to be discovered. Color logic follows warm grayscale with sudden sunrise band: soft charcoals and paper whites yield to a horizon stripe of amber and rose that appears mid-scroll like dawn breaking.
+
+Typography reads like elevation markers on vintage survey maps, functional yet poetic in its precision. Spacing breathes like mountain air, expanding at high altitudes of key content and compressing through valleys of supporting detail. The scrolling choreography embodies a map journey, the page revealing itself as territory to be traversed rather than consumed. Motion holds a gentle orbit mood, elements drifting into position like satellites finding their paths around a planetary destination. The spatial metaphor inhabits a map room, where travel possibilities spread across surfaces like expedition plans awaiting the decisive pin.
+
+Reference anchors: The terraced humility of Peter Zumthor's landscape interventions, the wandering intentionality of the Situationist derive movement, and the layered patience of paper marbling craft—together creating a travel platform where getting lost is the point, and every fold in the earth holds an invitation.

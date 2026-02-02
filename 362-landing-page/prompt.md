@@ -1,0 +1,7 @@
+# Algorithmic Quilt Landing Page
+
+An Algorithmic Quilt aesthetic with whispered maximalism and calm chaos, designed for an ethical AI toolkit that visualizes machine learning decisions as patchwork patterns. The emotional texture weaves between clarity and mystery, discipline and warmth—making algorithmic logic feel handmade and therefore understandable. Color logic follows pastels with one surgical hue: soft blocks of dusty rose, sage, and butter yellow piece together, while a sharp cobalt blue appears at bias detection points like a single striking square in a traditional pattern.
+
+Typography stitches across the layout with the regularity of running stitch, each letterform connected to the next in continuous lines of meaning. Spacing operates as seam allowances, the necessary gaps between pattern pieces that let the quilt hold together. The scrolling choreography performs an accordion expansion, ethical frameworks unfolding from compressed blocks into full pattern views. Motion carries a gentle orbit mood, pattern pieces rotating slowly to show their connections from different angles. The spatial metaphor inhabits a workshop table, where AI decisions are laid out like quilt squares awaiting arrangement.
+
+Reference anchors: The patterned logic of Anni Albers' Bauhaus textiles, the mathematical beauty of Islamic geometric art, and the community tradition of quilting bees—creating an AI ethics platform where complex decisions are pieced together visibly, and responsibility is a shared craft.

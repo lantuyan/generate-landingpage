@@ -1,0 +1,7 @@
+# Sonic Blueprint Landing Page
+
+A Sonic Blueprint aesthetic infused with polite glitch and diagrammatic romance, crafted for a private learning studio that offers personalized skill-building through audio-first instruction. The mood navigates between serenity and urgency, trust and curiosity—creating an interface where sound becomes visible structure. Color logic employs a two-tone duotone with one forbidden color: deep navy and warm cream dominate, while an almost-neon coral appears only at moments of breakthrough, forbidden yet essential.
+
+Typography pulses with rhythmic intention, letterforms that suggest waveforms and frequency notations. Spacing functions as rests in a musical score, calculated silences that give meaning to what surrounds them. The scrolling choreography moves through a spiral reveal, each lesson module circling inward toward mastery. Motion carries a signal pulse mood, micro-animations that flicker like audio visualizations responding to invisible frequencies. The spatial metaphor evokes an observatory deck, where learners scan the horizons of knowledge like astronomers charting sound waves from distant expertise.
+
+Reference anchors: The acoustic precision of Renzo Piano's concert hall interiors, the visual rhythm of Fluxus performance scores, and the deliberate imperfection of hand-stitched Japanese sashiko textiles—these references create an educational platform that treats learning as composed experience, where every glitch in understanding becomes part of the beautiful pattern.

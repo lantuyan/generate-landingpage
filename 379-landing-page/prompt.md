@@ -1,0 +1,7 @@
+# Ritual Minimalism Landing Page
+
+A Ritual Minimalism aesthetic with bureaucracy but beautiful and diagrammatic romance, designed for an ethical AI toolkit that approaches machine learning governance with ceremonial gravity. The emotional atmosphere holds between serenity and urgency, gravity and lightness—making compliance feel like devotional practice. Color logic uses a single strange accent that appears like a clue: monastic white and incense gray dominate, while a ceremonial gold appears only at ethical certification moments like light through stained glass.
+
+Typography appears with liturgical weight, each policy word measured and significant, carrying meaning beyond mere regulation. Spacing functions as the silence between ritual responses, intentional pauses that give ethical frameworks their proper gravity. The scrolling choreography follows a chaptered long-take, each governance principle unfolding as a complete meditation before the next begins. Motion embodies a museum-slow mood, transitions so deliberate they invite contemplation rather than haste. The spatial metaphor creates an archive drawer, where ethical guidelines are preserved with the reverence of sacred texts.
+
+Reference anchors: The sacred minimalism of John Pawson's monastery designs, the structured devotion of illuminated manuscript traditions, and the ritual precision of incense ceremony—creating an AI ethics platform where governance becomes practice and compliance becomes meaningful observance.
