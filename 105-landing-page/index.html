@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroPATH | Adaptive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Neon Thread SVG -->
+    <svg class="neon-thread" viewBox="0 0 100 4000" preserveAspectRatio="none">
+        <path id="neonPath" class="neon-line" d="M50,0 Q80,200 50,400 Q20,600 50,800 Q80,1000 50,1200 Q20,1400 50,1600 Q80,1800 50,2000 Q20,2200 50,2400 Q80,2600 50,2800 Q20,3000 50,3200 Q80,3400 50,3600 Q20,3800 50,4000" />
+    </svg>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-orbit">
+                    <span class="logo-core"></span>
+                </div>
+                <span class="logo-text">NeuroPATH</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <a href="#start" class="nav-cta">Begin Journey</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#start" class="mobile-cta">Begin Journey</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="concentric-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <div class="ring ring-4"></div>
+                <div class="ring ring-5"></div>
+            </div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span class="badge-text">Tomorrow's Education, Today</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Learning That</span>
+                <span class="title-line title-accent">Adapts to You</span>
+            </h1>
+            <p class="hero-subtitle">AI-powered pathways that evolve in real-time—adjusting difficulty, style, and pacing to match your unique cognitive rhythm.</p>
+            <div class="hero-actions">
+                <a href="#start" class="btn btn-primary">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">Start Your Pathway</span>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    <span class="btn-text">Explore the Science</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric">
+                    <span class="metric-value" data-count="2.4">0</span>
+                    <span class="metric-unit">M+</span>
+                    <span class="metric-label">Learners Optimized</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" data-count="47">0</span>
+                    <span class="metric-unit">%</span>
+                    <span class="metric-label">Faster Mastery</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value" data-count="98">0</span>
+                    <span class="metric-unit">%</span>
+                    <span class="metric-label">Completion Rate</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pathway-visualization">
+                <div class="pathway-node node-center">
+                    <div class="node-core"></div>
+                    <div class="node-pulse"></div>
+                </div>
+                <div class="pathway-orbit orbit-1">
+                    <div class="orbit-node"></div>
+                </div>
+                <div class="pathway-orbit orbit-2">
+                    <div class="orbit-node"></div>
+                    <div class="orbit-node"></div>
+                </div>
+                <div class="pathway-orbit orbit-3">
+                    <div class="orbit-node"></div>
+                    <div class="orbit-node"></div>
+                    <div class="orbit-node"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to discover</span>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">The Process</span>
+                <h2 class="section-title">Education Engineered for <span class="text-gradient">Your Mind</span></h2>
+                <p class="section-subtitle">Our AI observes, learns, and adapts—creating a learning experience as unique as your neural pathways.</p>
+            </div>
+            <div class="spiral-timeline">
+                <div class="timeline-item" data-step="01">
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="8" fill="currentColor"/>
+                                <path d="M24 4V12M24 36V44M4 24H12M36 24H44" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Signal Detection</h3>
+                        <p>We analyze micro-signals—pause patterns, response timing, engagement fluctuations—building a real-time model of your comprehension state.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="02">
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 14L34 24L24 34L14 24L24 14Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Pathway Calculation</h3>
+                        <p>Our parametric algorithms compute optimal learning sequences, balancing challenge and flow to maintain peak cognitive engagement.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="03">
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M12 24C12 17.4 17.4 12 24 12" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 12C30.6 12 36 17.4 36 24" stroke="currentColor" stroke-width="2"/>
+                                <path d="M36 24C36 30.6 30.6 36 24 36" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 36C17.4 36 12 30.6 12 24" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="12" r="4" fill="currentColor"/>
+                                <circle cx="36" cy="24" r="4" fill="currentColor"/>
+                                <circle cx="24" cy="36" r="4" fill="currentColor"/>
+                                <circle cx="12" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Content Morphing</h3>
+                        <p>Lessons dynamically reshape—examples shift, explanations modulate, difficulty scales—all in microseconds, invisible to you.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-step="04">
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4V24L36 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Continuous Evolution</h3>
+                        <p>With each session, your pathway refines—an ever-improving model of your optimal learning state, compounding growth over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Precision Instruments for <span class="text-gradient">Optimal Growth</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-large">
+                    <div class="feature-visual">
+                        <div class="instrument-panel">
+                            <div class="gauge gauge-1">
+                                <div class="gauge-fill"></div>
+                                <div class="gauge-needle"></div>
+                            </div>
+                            <div class="gauge gauge-2">
+                                <div class="gauge-fill"></div>
+                                <div class="gauge-needle"></div>
+                            </div>
+                            <div class="readout">
+                                <span class="readout-label">COGNITIVE LOAD</span>
+                                <span class="readout-value">OPTIMAL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Real-Time Adaptation Engine</h3>
+                        <p>Like a thermostat for your brain—constantly measuring, constantly adjusting. Our AI detects when you're in flow and when you're struggling, modulating content difficulty within milliseconds.</p>
+                        <ul class="feature-list">
+                            <li>Engagement pattern recognition</li>
+                            <li>Difficulty auto-calibration</li>
+                            <li>Pacing optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-orbit">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <h3>Multi-Modal Learning</h3>
+                    <p>Visual, auditory, kinesthetic—we detect your dominant processing style and weight content delivery accordingly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <h3>Spaced Repetition 2.0</h3>
+                    <p>Memory science meets machine learning. We predict exactly when you'll forget and intervene at the optimal moment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-nodes">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <h3>Knowledge Mapping</h3>
+                    <p>See your understanding as a living network. Watch concepts connect and competencies expand in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-pulse">
+                            <span></span>
+                        </div>
+                    </div>
+                    <h3>Flow State Optimization</h3>
+                    <p>We track cognitive load indicators to keep you in the zone—challenged enough to grow, never overwhelmed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="science" id="science">
+        <div class="section-container">
+            <div class="science-content">
+                <div class="section-header">
+                    <span class="section-tag">The Research</span>
+                    <h2 class="section-title">Built on <span class="text-gradient">Cognitive Science</span></h2>
+                </div>
+                <div class="science-stats">
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <svg class="stat-ring" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
+                                <circle class="stat-progress" cx="50" cy="50" r="45" fill="none" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="70"/>
+                            </svg>
+                            <span class="stat-value">47%</span>
+                        </div>
+                        <p class="stat-label">Faster skill acquisition vs. traditional methods</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <svg class="stat-ring" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
+                                <circle class="stat-progress" cx="50" cy="50" r="45" fill="none" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="28"/>
+                            </svg>
+                            <span class="stat-value">3.2x</span>
+                        </div>
+                        <p class="stat-label">Better long-term retention scores</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-visual">
+                            <svg class="stat-ring" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
+                                <circle class="stat-progress" cx="50" cy="50" r="45" fill="none" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="14"/>
+                            </svg>
+                            <span class="stat-value">89%</span>
+                        </div>
+                        <p class="stat-label">Learners report higher engagement</p>
+                    </div>
+                </div>
+                <div class="science-quote">
+                    <blockquote>
+                        <p>"NeuroPATH represents a fundamental shift in educational technology—moving from static content delivery to truly responsive learning environments."</p>
+                        <cite>
+                            <span class="cite-name">Dr. Elena Vasquez</span>
+                            <span class="cite-title">Director, MIT Learning Sciences Lab</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="science-visual">
+                <div class="brain-visualization">
+                    <div class="brain-core"></div>
+                    <div class="synapse synapse-1"></div>
+                    <div class="synapse synapse-2"></div>
+                    <div class="synapse synapse-3"></div>
+                    <div class="synapse synapse-4"></div>
+                    <div class="synapse synapse-5"></div>
+                    <div class="neural-ring neural-ring-1"></div>
+                    <div class="neural-ring neural-ring-2"></div>
+                    <div class="neural-ring neural-ring-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Investment</span>
+                <h2 class="section-title">Choose Your <span class="text-gradient">Growth Trajectory</span></h2>
+                <p class="section-subtitle">Every plan includes our core adaptive engine. Scale your journey as your ambitions expand.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Explorer</h3>
+                        <p class="pricing-desc">Begin your adaptive journey</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="price">$0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Core AI adaptation</li>
+                        <li><span class="check">✓</span> 3 learning pathways</li>
+                        <li><span class="check">✓</span> Basic progress analytics</li>
+                        <li><span class="check">✓</span> Community access</li>
+                    </ul>
+                    <a href="#start" class="btn btn-outline">Start Free</a>
+                </div>
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">Most Chosen</div>
+                    <div class="pricing-header">
+                        <h3>Accelerator</h3>
+                        <p class="pricing-desc">Serious about mastery</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="price">$29</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Advanced AI adaptation</li>
+                        <li><span class="check">✓</span> Unlimited pathways</li>
+                        <li><span class="check">✓</span> Deep analytics dashboard</li>
+                        <li><span class="check">✓</span> Spaced repetition engine</li>
+                        <li><span class="check">✓</span> Multi-modal content</li>
+                        <li><span class="check">✓</span> Priority support</li>
+                    </ul>
+                    <a href="#start" class="btn btn-primary">
+                        <span class="btn-glow"></span>
+                        <span class="btn-text">Get Started</span>
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-desc">Transform your organization</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="price">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Everything in Accelerator</li>
+                        <li><span class="check">✓</span> Custom pathway creation</li>
+                        <li><span class="check">✓</span> Team analytics</li>
+                        <li><span class="check">✓</span> SSO & integrations</li>
+                        <li><span class="check">✓</span> Dedicated success manager</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="start">
+        <div class="cta-bg">
+            <div class="cta-rings">
+                <div class="cta-ring cta-ring-1"></div>
+                <div class="cta-ring cta-ring-2"></div>
+                <div class="cta-ring cta-ring-3"></div>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>Ready to Learn Smarter?</h2>
+                <p>Join millions who've discovered the future of education. Your personalized pathway begins with a single step.</p>
+                <form class="cta-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-glow"></span>
+                            <span class="btn-text">Begin Journey</span>
+                        </button>
+                    </div>
+                    <p class="form-note">Free to start. No credit card required.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-orbit">
+                            <span class="logo-core"></span>
+                        </div>
+                        <span class="logo-text">NeuroPATH</span>
+                    </a>
+                    <p>The future of learning is personal. AI-powered education that adapts to your unique cognitive rhythm.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#science">Research</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NeuroPATH. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
