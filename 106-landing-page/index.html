@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteForge | Smart Logistics Orchestration Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">RouteForge</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Capabilities</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#integration">Integrate</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-secondary">Log In</a>
+                <a href="#contact" class="btn-primary">Request Demo</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features">Capabilities</a></li>
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#integration">Integrate</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" class="btn-secondary">Log In</a></li>
+            <li><a href="#contact" class="btn-primary">Request Demo</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-container">
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM OPERATIONAL</span>
+                <span class="status-metric">99.97% UPTIME</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Orchestrate</span>
+                <span class="title-line title-accent">Last-Mile</span>
+                <span class="title-line">Delivery</span>
+            </h1>
+            <p class="hero-subtitle">
+                Coordinate thousands of packages across multiple carriers with intelligent route optimization, predictive delay analysis, and real-time visibility—all from one command center.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary btn-large">
+                    <span>Start Orchestrating</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#features" class="btn-ghost">
+                    <span>Explore Capabilities</span>
+                </a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric-card">
+                    <span class="metric-value" data-value="2.4">0</span>
+                    <span class="metric-suffix">M+</span>
+                    <span class="metric-label">Packages Routed Daily</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value" data-value="99.2">0</span>
+                    <span class="metric-suffix">%</span>
+                    <span class="metric-label">On-Time Delivery</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value" data-value="340">0</span>
+                    <span class="metric-suffix">ms</span>
+                    <span class="metric-label">Avg Response Time</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="route-display">
+                <div class="route-node origin">
+                    <span class="node-label">ORIGIN</span>
+                </div>
+                <div class="route-path">
+                    <div class="path-line"></div>
+                    <div class="package-indicator"></div>
+                </div>
+                <div class="route-hub">
+                    <span class="hub-icon">⬡</span>
+                    <span class="hub-label">HUB-7</span>
+                </div>
+                <div class="route-path">
+                    <div class="path-line"></div>
+                    <div class="package-indicator delay-2"></div>
+                </div>
+                <div class="route-node destination">
+                    <span class="node-label">DEST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">CAPABILITIES</span>
+                <h2 class="section-title">Command Center<br>for Modern Logistics</h2>
+                <p class="section-subtitle">Every tool precision-engineered for orchestrating complex delivery networks at scale.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="1">
+                    <div class="feature-frame">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 24L44 14M24 24L4 14M24 24V44" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Multi-Carrier Orchestration</h3>
+                        <p class="feature-description">Unified API connecting 50+ carriers. Route decisions made in milliseconds based on cost, speed, and reliability metrics.</p>
+                        <div class="feature-stat">
+                            <span class="stat-value">50+</span>
+                            <span class="stat-label">Carriers Integrated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="2">
+                    <div class="feature-frame">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <rect x="6" y="6" width="36" height="36" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M6 18H42M18 18V42" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
+                                <path d="M34 34L40 40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Predictive Analytics</h3>
+                        <p class="feature-description">ML-powered delay prediction with 94% accuracy. Know about disruptions before they impact your customers.</p>
+                        <div class="feature-stat">
+                            <span class="stat-value">94%</span>
+                            <span class="stat-label">Prediction Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="3">
+                    <div class="feature-frame">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 12V24L32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Real-Time Visibility</h3>
+                        <p class="feature-description">Track every package across every carrier. Live updates every 30 seconds with intelligent status normalization.</p>
+                        <div class="feature-stat">
+                            <span class="stat-value">30s</span>
+                            <span class="stat-label">Update Interval</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card" data-feature="4">
+                    <div class="feature-frame">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M8 38L16 26L24 32L32 18L40 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="26" r="3" fill="currentColor"/>
+                                <circle cx="24" cy="32" r="3" fill="currentColor"/>
+                                <circle cx="32" cy="18" r="3" fill="currentColor"/>
+                                <circle cx="40" cy="24" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Route Optimization</h3>
+                        <p class="feature-description">Dynamic routing algorithms reduce transit time by 23% on average. Factor in weather, traffic, and carrier capacity.</p>
+                        <div class="feature-stat">
+                            <span class="stat-value">23%</span>
+                            <span class="stat-label">Faster Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card feature-wide" data-feature="5">
+                    <div class="feature-frame">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <rect x="4" y="8" width="40" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M4 16H44" stroke="currentColor" stroke-width="2"/>
+                                <rect x="8" y="12" width="4" height="2" fill="currentColor"/>
+                                <rect x="14" y="12" width="4" height="2" fill="currentColor"/>
+                                <rect x="20" y="12" width="4" height="2" fill="currentColor"/>
+                                <path d="M12 24H20M12 30H28M12 36H24" stroke="currentColor" stroke-width="2"/>
+                                <rect x="32" y="22" width="8" height="14" rx="1" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Unified Dashboard</h3>
+                            <p class="feature-description">One interface to rule all carriers. Monitor shipments, analyze performance, and identify bottlenecks instantly. Export reports or connect to your BI tools via API.</p>
+                        </div>
+                        <div class="feature-metrics">
+                            <div class="mini-metric">
+                                <span class="mini-value">∞</span>
+                                <span class="mini-label">Custom Reports</span>
+                            </div>
+                            <div class="mini-metric">
+                                <span class="mini-value">API</span>
+                                <span class="mini-label">BI Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics" id="metrics">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">PERFORMANCE</span>
+                <h2 class="section-title">Operational Metrics<br>You Can Trust</h2>
+            </div>
+            <div class="metrics-dashboard">
+                <div class="dashboard-frame">
+                    <div class="dashboard-header">
+                        <span class="dashboard-title">LIVE SYSTEM STATUS</span>
+                        <span class="dashboard-time" id="live-time">--:--:--</span>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="dash-metric large">
+                            <div class="metric-gauge">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="50" fill="none" stroke="var(--color-surface)" stroke-width="8"/>
+                                    <circle cx="60" cy="60" r="50" fill="none" stroke="var(--color-accent)" stroke-width="8"
+                                            stroke-dasharray="314" stroke-dashoffset="16" stroke-linecap="round"
+                                            class="gauge-fill"/>
+                                </svg>
+                                <div class="gauge-value">
+                                    <span class="gauge-number">99.2</span>
+                                    <span class="gauge-unit">%</span>
+                                </div>
+                            </div>
+                            <span class="metric-name">On-Time Rate</span>
+                        </div>
+                        <div class="dash-metric">
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="--fill: 87%"></div>
+                            </div>
+                            <div class="bar-stats">
+                                <span class="bar-value">87%</span>
+                                <span class="bar-label">First Attempt Success</span>
+                            </div>
+                        </div>
+                        <div class="dash-metric">
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="--fill: 94%"></div>
+                            </div>
+                            <div class="bar-stats">
+                                <span class="bar-value">94%</span>
+                                <span class="bar-label">Delay Prediction</span>
+                            </div>
+                        </div>
+                        <div class="dash-metric counter">
+                            <div class="counter-display">
+                                <span class="counter-value" id="package-counter">2,847,293</span>
+                            </div>
+                            <span class="counter-label">Packages Tracked Today</span>
+                        </div>
+                        <div class="dash-metric mini-chart">
+                            <div class="chart-header">
+                                <span>Carrier Performance</span>
+                                <span class="chart-period">Last 24h</span>
+                            </div>
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="--height: 85%"><span>FDX</span></div>
+                                <div class="chart-bar" style="--height: 92%"><span>UPS</span></div>
+                                <div class="chart-bar highlight" style="--height: 97%"><span>DHL</span></div>
+                                <div class="chart-bar" style="--height: 78%"><span>USPS</span></div>
+                                <div class="chart-bar" style="--height: 88%"><span>ONT</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="integration" id="integration">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">INTEGRATION</span>
+                <h2 class="section-title">Connect in Minutes,<br>Not Months</h2>
+                <p class="section-subtitle">Single API endpoint. Comprehensive documentation. Production-ready in one sprint.</p>
+            </div>
+            <div class="integration-demo">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="code-filename">integration.js</span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-comment">// Initialize RouteForge client</span>
+<span class="code-keyword">import</span> { RouteForge } <span class="code-keyword">from</span> <span class="code-string">'@routeforge/sdk'</span>;
+
+<span class="code-keyword">const</span> rf = <span class="code-keyword">new</span> <span class="code-function">RouteForge</span>({
+  apiKey: process.env.<span class="code-property">ROUTEFORGE_KEY</span>,
+  environment: <span class="code-string">'production'</span>
+});
+
+<span class="code-comment">// Orchestrate a shipment</span>
+<span class="code-keyword">const</span> shipment = <span class="code-keyword">await</span> rf.<span class="code-function">orchestrate</span>({
+  origin: { zip: <span class="code-string">'10001'</span>, country: <span class="code-string">'US'</span> },
+  destination: { zip: <span class="code-string">'90210'</span>, country: <span class="code-string">'US'</span> },
+  package: { weight: <span class="code-number">2.5</span>, dimensions: [<span class="code-number">12</span>, <span class="code-number">8</span>, <span class="code-number">6</span>] },
+  priority: <span class="code-string">'optimal'</span> <span class="code-comment">// cost vs speed</span>
+});
+
+<span class="code-comment">// Response with optimal carrier selected</span>
+console.<span class="code-function">log</span>(shipment);
+<span class="code-comment">// → { carrier: 'UPS', rate: 12.47, eta: '2024-01-15' }</span></code></pre>
+                </div>
+                <div class="integration-features">
+                    <div class="int-feature">
+                        <span class="int-icon">⬡</span>
+                        <div class="int-content">
+                            <h4>REST & GraphQL</h4>
+                            <p>Choose your preferred API style</p>
+                        </div>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-icon">◈</span>
+                        <div class="int-content">
+                            <h4>Webhooks</h4>
+                            <p>Real-time event notifications</p>
+                        </div>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-icon">◇</span>
+                        <div class="int-content">
+                            <h4>SDKs</h4>
+                            <p>Node, Python, Go, Ruby, PHP</p>
+                        </div>
+                    </div>
+                    <div class="int-feature">
+                        <span class="int-icon">▣</span>
+                        <div class="int-content">
+                            <h4>Sandbox</h4>
+                            <p>Test without live shipments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">PRICING</span>
+                <h2 class="section-title">Scale Without<br>Surprise Costs</h2>
+                <p class="section-subtitle">Transparent pricing that grows with your shipment volume.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-frame">
+                        <span class="pricing-tier">STARTUP</span>
+                        <div class="pricing-amount">
+                            <span class="price-value">$299</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <span class="pricing-volume">Up to 10,000 shipments</span>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> 10 Carrier integrations</li>
+                            <li><span class="check">✓</span> Basic route optimization</li>
+                            <li><span class="check">✓</span> Real-time tracking</li>
+                            <li><span class="check">✓</span> Email support</li>
+                            <li><span class="check">✓</span> API access</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary btn-block">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">MOST POPULAR</div>
+                    <div class="pricing-frame">
+                        <span class="pricing-tier">GROWTH</span>
+                        <div class="pricing-amount">
+                            <span class="price-value">$899</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <span class="pricing-volume">Up to 50,000 shipments</span>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> 30 Carrier integrations</li>
+                            <li><span class="check">✓</span> Advanced ML optimization</li>
+                            <li><span class="check">✓</span> Predictive analytics</li>
+                            <li><span class="check">✓</span> Priority support</li>
+                            <li><span class="check">✓</span> Custom webhooks</li>
+                            <li><span class="check">✓</span> Dashboard analytics</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary btn-block">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-frame">
+                        <span class="pricing-tier">ENTERPRISE</span>
+                        <div class="pricing-amount">
+                            <span class="price-value">Custom</span>
+                        </div>
+                        <span class="pricing-volume">Unlimited shipments</span>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> All 50+ carriers</li>
+                            <li><span class="check">✓</span> Custom integrations</li>
+                            <li><span class="check">✓</span> Dedicated account manager</li>
+                            <li><span class="check">✓</span> SLA guarantee</li>
+                            <li><span class="check">✓</span> On-premise option</li>
+                            <li><span class="check">✓</span> White-label available</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary btn-block">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="section-container">
+            <div class="cta-frame">
+                <div class="cta-content">
+                    <span class="section-tag">START NOW</span>
+                    <h2 class="cta-title">Ready to Orchestrate<br>Your Logistics?</h2>
+                    <p class="cta-subtitle">Join 2,400+ e-commerce businesses shipping smarter with RouteForge.</p>
+                    <form class="cta-form" id="demo-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="volume">Monthly Shipments</label>
+                                <select id="volume" name="volume" required>
+                                    <option value="">Select volume</option>
+                                    <option value="1000">Less than 1,000</option>
+                                    <option value="10000">1,000 - 10,000</option>
+                                    <option value="50000">10,000 - 50,000</option>
+                                    <option value="100000">50,000 - 100,000</option>
+                                    <option value="100001">100,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large btn-block">
+                            <span>Request Demo</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="cta-visual">
+                    <div class="orbit-container">
+                        <div class="orbit orbit-1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-3">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="center-node">
+                            <span>◈</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">RouteForge</span>
+                    </a>
+                    <p class="footer-tagline">Smart logistics orchestration for modern e-commerce.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#integration">Integration</a></li>
+                            <li><a href="#">API Docs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RouteForge. All rights reserved.</p>
+                <div class="footer-status">
+                    <span class="status-indicator"></span>
+                    <span>All Systems Operational</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
